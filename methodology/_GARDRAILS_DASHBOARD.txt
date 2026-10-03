@@ -1,0 +1,83 @@
+## Correction UX — Séparation interface décisionnelle / interface technique
+
+### Principe
+
+Le dashboard doit être conçu prioritairement pour un **décideur non technique**.
+
+Les pages principales doivent répondre à quatre questions :
+
+1. **Quelle est la situation ?**
+2. **Où sont les principaux problèmes ?**
+3. **Pourquoi ces territoires retiennent-ils l'attention ?**
+4. **Quelle action peut être engagée ?**
+
+### À retirer des pages principales
+
+Ne pas afficher dans les pages Synthèse, Infrastructures, Couverture et Population × Offre :
+
+- noms des fichiers CSV ;
+- noms des scripts Python ;
+- références aux étapes 05 / 06 / 07 / 08 ;
+- familles A, B, A×B ;
+- détails de recalcul ;
+- détails techniques de maille ;
+- contrôles d'exhaustivité ;
+- noms internes des variables ;
+- codes L1 / L2 / L3 / L4 lorsqu'ils ne sont pas compréhensibles pour le décideur ;
+- références techniques du pipeline.
+
+### À afficher à la place
+
+Les informations doivent être reformulées en langage décisionnel :
+
+- KPI clés ;
+- écarts territoriaux ;
+- déficits ;
+- territoires concernés ;
+- population exposée ;
+- niveau de priorité ;
+- niveau de confiance ;
+- réserve méthodologique lorsque nécessaire ;
+- horizon ;
+- action recommandée ;
+- conclusion stratégique.
+
+### Sources
+
+Dans les pages principales, afficher uniquement une mention générale du type :
+
+> **Données : portail national de données géographiques du Togo et sources institutionnelles complémentaires.**
+
+Le détail des datasets, fichiers, millésimes, variables, méthodes et limites est conservé dans la page **Méthodologie**.
+
+### Actions
+
+Les blocs « Pistes d'actions prioritaires » doivent être formulés comme des **actions territoriales concrètes**.
+
+Éviter :
+
+> « Prioriser les territoires cumulant plusieurs déficits. »
+
+Préférer :
+
+> « Renforcer la présence des services télécoms et Mobile Money dans Kpendjal et Mô. »
+
+ou :
+
+> « Engager une validation technique pour une extension de couverture dans les territoires présentant un déficit D3. »
+
+### Titres
+
+Privilégier des titres courts, orientés vers le résultat :
+
+- « Où sont les principaux déficits ? »
+- « Quels territoires doivent retenir l'attention ? »
+- « Pourquoi ces territoires sont-ils prioritaires ? »
+- « Quelle action engager ? »
+- « Où l'offre est-elle concentrée ? »
+
+Les titres sous forme de question sont pertinents lorsqu'ils facilitent la lecture décisionnelle, mais ne doivent pas être utilisés systématiquement.
+
+### Règle générale
+
+**Le dashboard montre la décision et son fondement ; la page Méthodologie explique comment cette décision a été produite.**
