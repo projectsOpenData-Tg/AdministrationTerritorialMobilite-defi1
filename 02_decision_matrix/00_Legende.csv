@@ -1,0 +1,53 @@
+Feuille,Colonne,Signification,Valeurs admises
+Classeur,Version,1.1 — 2026-10-03,
+Classeur,Historique,"1.0 : première version. 1.1 : O2-14 (causes déclarées) ; tranche horaire et PA-09 ; P1 limité à l’état du réseau ; combinaison des profils (05_Priorisation) ; colonne « Rôle » des données ; réserve de P5 rattachée à R-10. Figé le 2026-10-03 en v1.1, valeurs chiffrées validées par l’équipe",
+Classeur,Statut,Figé le 2026-10-03,
+Classeur,Sources,"01_problem_definition.md (v1.3, figé) ; plan 02_decision_matrix.md",
+Classeur,Règle,"Le classeur fait foi. Les CSV de 02_decision_matrix/ en sont exportés par scripts/export_02_csv.py, jamais édités à la main",
+Classeur,Renvois,Chaque information est écrite à un seul endroit ; les autres feuilles y renvoient par son identifiant,"O1-01…O5-04 ; S1…S5, H1…H12 ; SE-01…, PA-01… ; P1…P6 ; D1…D13 ; R-01…R-20"
+01_Matrice,—,Une ligne par indicateur : question → calcul → seuil → décision,
+01_Matrice,ID,Identifiant de l’indicateur,O<objectif>-<n°>
+01_Matrice,Objectif,Objectif du 01,"O1, O2, O3, O4, O5"
+01_Matrice,Question,La question précise à laquelle l’indicateur répond,Texte
+01_Matrice,Indicateur,Nom court,Texte
+01_Matrice,Définition,L’indicateur en une phrase,Texte
+01_Matrice,Formule,"Calcul exact ; t = territoire, cat = catégorie",Texte
+01_Matrice,Unité,Unité de lecture,Texte
+01_Matrice,Sens,Sens de lecture,Plus haut = pire ; Plus haut = mieux ; Neutre
+01_Matrice,Données,Jeux de données nécessaires,Codes D de 06_Donnees_requises
+01_Matrice,Maille cible,Maille visée,"National, zone, préfecture, tronçon, point"
+01_Matrice,Maille de repli,Maille utilisée si la maille cible manque,"Idem, ou —"
+01_Matrice,Temporalité,Pas de temps,"Annuelle, mensuelle, par relevé…"
+01_Matrice,Désagrégations,"Déclinaisons de l’indicateur, sur la même ligne",Texte
+01_Matrice,Condition de disponibilité,Ce qui doit exister pour calculer,Texte
+01_Matrice,Règle de repli,Que faire si la condition n’est pas remplie,Texte
+01_Matrice,Seuil,Seuil ou paramètre utilisé,"IDs de 03_Seuils, ou « Aucun »"
+01_Matrice,Hypothèses liées,Hypothèses testées avec cet indicateur,"Codes de 02_Hypotheses, ou —"
+01_Matrice,Visualisation,Graphique ou carte prévus,Texte
+01_Matrice,Décision possible,Ce que le décideur peut faire de l’indicateur,Texte
+01_Matrice,Preuve attendue,Niveau de preuve attendu (R-17),"A, B, C, ou condition"
+01_Matrice,Statut,"Exigé par l’énoncé, ou dépendant des désagrégations disponibles",Socle ; Si données
+01_Matrice,Note,Réserve propre à l’indicateur,Texte
+02_Hypotheses,—,Une ligne par hypothèse du 01 (§5) : comment la tester,
+02_Hypotheses,Code,Code du 01,"S1…S5, H1…H12"
+02_Hypotheses,Type,Nature de l’hypothèse,Sujet ; Écart ; Lien ; Cumul
+02_Hypotheses,Ordre de test,Ordre du 01 §5,0 vérification ; 1 écart ; 2 lien ; 3 cumul
+02_Hypotheses,Indicateurs utilisés,Indicateurs de 01_Matrice,IDs
+02_Hypotheses,Confirmée si,Critère écrit avant le calcul. Les valeurs chiffrées des critères sont des choix d’équipe ; elles concluent le test et ne déclenchent aucun profil,Texte
+02_Hypotheses,Infirmée si,Critère écrit avant le calcul,Texte
+02_Hypotheses,Conséquence pour la décision,Ce qui change dans les recommandations selon le résultat,Texte
+02_Hypotheses,Limite,Ce que le test ne prouve pas,Texte
+03_Seuils,—,"Une ligne par seuil ou paramètre chiffré, avec sa justification",
+03_Seuils,ID,Identifiant,SE-<n°> (seuil) ; PA-<n°> (paramètre)
+03_Seuils,Nature,Un seuil déclenche « élevé » ou « faible » ; un paramètre entre dans une formule,Seuil ; Paramètre
+03_Seuils,Indicateur,Indicateur concerné,"ID de 01_Matrice, ou « Transversal »"
+03_Seuils,Déplaçable par le lecteur,Le lecteur peut-il le modifier dans le tableau de bord ? Au moins un doit l’être,Oui ; Non
+04_Profils,—,"Les profils de territoire de l’objectif 5 (01 §3.5), plus P6 pour que chaque territoire en reçoive un",
+04_Profils,Condition de déclenchement,Combinaison d’indicateurs et de seuils,IDs O… et SE-…
+04_Profils,Horizon,Délai de l’action,"1, 3 ou 5 ans"
+05_Priorisation,—,"La méthode de classement, paramètre par paramètre",
+06_Donnees_requises,—,"Le besoin uniquement. Disponibilité, producteur, licence et date de téléchargement relèvent de l’inventaire du 03",
+06_Donnees_requises,Rôle,Ce que le jeu apporte. Seul un jeu « Calcul » doit avoir des indicateurs liés,"Calcul ; Référentiel ; Repère ; Contexte, suivi d’une précision"
+06_Donnees_requises,Indicateurs liés,Calculée depuis la colonne « Données » de 01_Matrice,IDs
+06_Donnees_requises,Bloquant,"Sans ce jeu, un objectif socle ne peut pas être traité",Oui ; Non
+07_Regles,—,Règles communes à toutes les feuilles. Les règles de seuil et de classement sont dans 03_Seuils et 05_Priorisation,
