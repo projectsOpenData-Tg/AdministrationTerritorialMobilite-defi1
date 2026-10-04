@@ -28,3 +28,82 @@ Le réseau routier reste inégalement entretenu selon les régions.
 
 
 ##  RESOURCES ET données
+
+- Dataset 1: Données Ouvertes sur les Statistiques Clés des Transports Terrestres au Togo DSCTT-TG
+    * Description: 
+        Les statistiques clés des transports terrestres au Togo fournissent une vue d'ensemble des principaux indicateurs relatifs aux infrastructures, à la circulation et à la mobilité sur route. 
+        Lien vers la source:cliquez ici: https://togo.opendataforafrica.org/rkrlfab/statistiques-cl%C3%A9es-des-transports-terrestres
+    * URL data: https://opendata.gouv.tg/fr/datasets/donnees-ouvertes-sur-les-statistiques-cles-des-transports-terrestres-au-togo/#/resources/251b5d4a-ba8f-4407-af80-a150a39fc492
+    * URL page source: https://opendata.gouv.tg/fr/datasets/donnees-ouvertes-sur-les-statistiques-cles-des-transports-terrestres-au-togo/
+    
+    * Data supplémentaires au cas ou vers Producteur: https://opendata.gouv.tg/fr/organizations/institut-national-de-la-statistique-et-des-etudes-economiques-et-demographiques/
+
+- Dataset 2: Données Ouvertes sur l'Évolution du Parc Automobile Immatriculé par Type de Véhicules DEPAITV-TG
+    * Description:
+        Ces données retracent l'évolution annuelle du parc automobile immatriculé, classé par types de véhicules. 
+        Elles offrent une vue d'ensemble sur la croissance et les tendances de motorisation au Togo, en mettant en lumière les dynamiques spécifiques à chaque segment de véhicules. 
+        Ces informations sont cruciales pour l'élaboration de politiques de transport, la planification urbaine, et l'optimisation des infrastructures routières. 
+        Lien vers la source: https://togo.opendataforafrica.org/caqzqvb/evolution-du-parc-automobile-immatricul%C3%A9-par-type-de-v%C3%A9hicules
+    * URL Data 1: https://opendata.gouv.tg/s/resources/donnees-ouvertes-sur-levolution-du-parc-automobile-immatricule-par-type-de-vehicules/20250106-164529/observationdata-akkouh.csv
+    * URL Data 2: https://opendata.gouv.tg/s/resources/donnees-ouvertes-sur-levolution-du-parc-automobile-immatricule-par-type-de-vehicules/20250106-162931/observationdata-wklhvw.csv
+    * URL page: https://opendata.gouv.tg/fr/datasets/donnees-ouvertes-sur-levolution-du-parc-automobile-immatricule-par-type-de-vehicules/
+
+    * Data supplémentaires : https://opendata.gouv.tg/fr/organizations/institut-national-de-la-statistique-et-des-etudes-economiques-et-demographiques/
+
+- Dataset 3: Données Ouvertes sur le Nombre de Permis de Conduire Délivrés par Catégorie au Togo DNPCDC-TG
+    * Description:
+        Ces données présentent le nombre de permis de conduire attribués selon les catégories (A, B, C, D, etc.) lors des examens de permis au Togo. 
+        Elles permettent d'analyser les tendances de délivrance par type de véhicule, de comprendre les préférences des candidats et d'évaluer l'efficacité des politiques de formation et de sécurité routière. Ces informations sont essentielles pour les organismes de transport, les décideurs politiques et les experts en mobilité pour anticiper les besoins en infrastructures routières et en formation des conducteurs. 
+        Lien vers la source: https://togo.opendataforafrica.org/rbcktmc/nombre-de-permis-de-conduire-d%C3%A9livr%C3%A9s-par-cat%C3%A9gorie-aux-examens-de-permis-de-conduire
+    * URL Data: https://opendata.gouv.tg/s/resources/donnees-ouvertes-sur-le-nombre-de-permis-de-conduire-delivres-par-categorie-au-togo/20250106-173650/observationdata-wvtolmb.csv
+
+    * Data supplémentaires: https://opendata.gouv.tg/fr/organizations/institut-national-de-la-statistique-et-des-etudes-economiques-et-demographiques/
+
+
+- Dataset 4: Données Ouvertes sur l'État du Réseau Routier au Togo DERR-TG
+    * Description:
+        Ces données fournissent des informations détaillées sur l'état des infrastructures routières au Togo. Elles incluent des données sur la qualité des routes (en bon état, endommagées, nécessitant des réparations) et la répartition géographique des routes nationales, régionales et locales.
+
+    * URL Data: https://opendata.gouv.tg/s/resources/donnees-ouvertes-sur-letat-du-reseau-routier-au-togo/20241227-101241/observationdata-tmdtnad.csv
+    * URL Data 2: https://opendata.gouv.tg/fr/datasets/r/4a55941a-759c-41ff-9680-4376f10c984b
+
+    * Data supplémentaires: https://opendata.gouv.tg/fr/organizations/ministere-des-travaux-publics-et-des-infrastructures/
+
+
+- Dataset 5: Données Ouvertes sur les Routes - Routes Classées au Togo DORRC-TG
+    * Description:
+        Les données sur les routes classées au Togo fournissent des informations détaillées sur les infrastructures routières officielles, réparties en catégories telles que routes nationales, régionales et locales. Elles incluent la localisation, l’état et la longueur des routes. Ces informations sont essentielles pour évaluer l’état du réseau routier, planifier les travaux d’entretien et de modernisation, et améliorer la mobilité ainsi que la connectivité entre les différentes régions du pays.
+        Lien source: https://geodata.gouv.tg/donnees/30adce43-597d-4cbd-ba36-914cbcfcbbe5
+    * URL Data 1: https://opendata.gouv.tg/s/resources/donnees-ouvertes-sur-les-routes-routes-classees-au-togo/20241218-203810/file-routes-routes-classees-18-12-2024-20-38-02.csv
+    * URL Data 1 stable: https://opendata.gouv.tg/fr/datasets/r/98de5165-ed9c-4dc7-9669-023e78ae8123
+    * URL Data 2: https://opendata.gouv.tg/s/resources/donnees-ouvertes-sur-les-routes-routes-classees-au-togo/20241218-150814/routes-routes-classees.csv
+    * URL Data 2 stable: https://opendata.gouv.tg/fr/datasets/r/e3deb3e6-1e95-415a-9bb8-82a9a2cb6eab
+
+    * Data supplémentaires: https://opendata.gouv.tg/fr/organizations/ministere-des-transports/
+
+- Dataset 6: Données Ouvertes sur les Entreprises Auto-écoles au Togo DEA-TG
+    * Description:
+        Base d'informations détaillées sur Entreprises - Auto-écoles (caractéristiques, services et infrastructures) au Togo.
+        Lien vers la source :https://geodata.gouv.tg/donnees/0dfdbe30-36bb-4b40-b1e6-f5fc8068fa84
+    * URL Data 1: https://opendata.gouv.tg/s/resources/donnees-ouvertes-sur-les-entreprises-auto-ecoles-au-togo/20250102-162842/file-entreprises-auto-ecoles-02-01-2025-16-28-05.csv
+    * URL Data 1 stable: https://opendata.gouv.tg/fr/datasets/r/98bbdce0-4386-4dd7-869e-2fe0b2bd81c5
+    * URL Data 2: https://opendata.gouv.tg/s/resources/donnees-ouvertes-entreprises-auto-ecoles/20241218-100922/entreprises-auto-ecoles.csv
+    * URL Data 2 stable: https://opendata.gouv.tg/fr/datasets/r/06b16fb1-99a4-4134-a1f5-c7eb1d2561f0
+    * URL page : https://opendata.gouv.tg/fr/datasets/donnees-ouvertes-sur-les-entreprises-auto-ecoles-au-togo/
+
+    * Data supplémentaires: https://opendata.gouv.tg/fr/organizations/ministere-des-transports/
+
+
+- Dataset 7: 
+    * Description: 
+        Le Recensement Général de la Population et de l'Habitat (RGPH) est une opération statistique majeure réalisée périodiquement pour collecter des données essentielles sur la population et les caractéristiques des ménages d’un pays. Au Togo, le RGPH constitue une source cruciale d'informations pour mieux comprendre la dynamique démographique, les conditions de vie, ainsi que les besoins en termes d'infrastructures et de services.
+    * URL Page: https://opendata.gouv.tg/fr/datasets/donnee-ouverte-de-recensement-general-de-la-population-et-de-lhabitat-rgph/
+    * URL Data: https://opendata.gouv.tg/s/resources/donnee-ouverte-de-recensement-general-de-la-population-et-de-lhabitat-rgph/20241227-082722/observationdata-kwwolwb.csv
+    * URL stable: https://opendata.gouv.tg/fr/datasets/r/318f3a4d-c09f-490e-afea-44e045ebf20e
+
+    * Data supplémentaires: https://opendata.gouv.tg/fr/organizations/institut-national-de-la-statistique-et-des-etudes-economiques-et-demographiques/
+    
+
+
+
+

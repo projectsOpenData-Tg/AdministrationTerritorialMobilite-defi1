@@ -1,0 +1,40 @@
+Code HDX,Préfecture,Région,Zone,Nom routes classées (D5),Nom auto-écoles (D6),Nom recensement CSV (D7),Nom Livret 02 (D7),Nom HDX (D8),Codes HDX regroupés,Remarque
+TG0101,Blitta,Centrale,Centrale,Blitta,Blitta,BLITTA,Blitta,Blitta,TG0101,
+TG0102,Mô,Centrale,Centrale,,,MO,Mô,Plaine du Mo,TG0102,"HDX « Plaine du Mo » (TG0102) : ancien nom de Mô ; aucun tronçon dans les routes classées : vrai vide ou défaut de rattachement, à vérifier en 04"
+TG0103,Sotouboua,Centrale,Centrale,Sotouboua,Sotouboua,SOTOUBOUA,Sotouboua,Sotouboua,TG0103,libellé « SOTOUBOUA » présent 2 fois dans le recensement CSV (préfecture et commune ou canton homonymes)
+TG0104,Tchamba,Centrale,Centrale,Tchamba,Tchamba,TCHAMBA,Tchamba,Tchamba,TG0104,libellé « TCHAMBA » présent 2 fois dans le recensement CSV (préfecture et commune ou canton homonymes)
+TG0105,Tchaoudjo,Centrale,Centrale,Tchaoudjo,Tchaoudjo,TCHAOUDJO,Tchaoudjo,Tchaoudjo,TG0105,
+TG0201,Assoli,Kara,Kara,Assoli,Assoli,ASSOLI,Assoli,Assoli,TG0201,
+TG0202,Bassar,Kara,Kara,Bassar,Bassar,BASSAR,Bassar,Bassar,TG0202,libellé « BASSAR » présent 2 fois dans le recensement CSV (préfecture et commune ou canton homonymes)
+TG0203,Binah,Kara,Kara,Binah,,BINAH,Binah,Binah,TG0203,
+TG0204,Dankpen,Kara,Kara,Dankpen,,DANKPEN,Dankpen,Dankpen,TG0204,
+TG0205,Doufelgou,Kara,Kara,Doufelgou,,DOUFELGOU,Doufelgou,Doufelgou,TG0205,
+TG0206,Kéran,Kara,Kara,Kéran,,KERAN,Kéran,Keran,TG0206,
+TG0207,Kozah,Kara,Kara,Kozah,Kozah,KOZAH,Kozah,Kozah,TG0207,
+TG0309,Agoè-Nyivé,Maritime,Grand Lomé,Agoè-Nyivé,Agoè-Nyivé,AGOE-NYIVE,Agoè-Nyivé,Agoe-Nyive,TG0309,
+TG0301,Avé,Maritime,Maritime hors Grand Lomé,Avé,,TOTOAL AVE,Avé,Ave,TG0301,libellé « TOTOAL AVE » dans le recensement CSV (coquille)
+TG0302,Bas-Mono,Maritime,Maritime hors Grand Lomé,Bas-Mono,Bas-Mono,BAS-MONO,Bas-Mono,Bas-Mono,TG0302,
+TG0303,Golfe,Maritime,Grand Lomé,Golfe,Golfe,GOLFE,Golfe,Golfe + Lome Commune,"TG0303, TG0305","HDX « Lome Commune » (TG0305) : fusionnée avec Golfe, car Lomé Commune n’est plus une préfecture"
+TG0304,Lacs,Maritime,Maritime hors Grand Lomé,Lacs,Lacs,LACS,Lacs,Lacs,TG0304,
+TG0306,Vo,Maritime,Maritime hors Grand Lomé,Vo,Vo,VO,Vo,Vo,TG0306,
+TG0307,Yoto,Maritime,Maritime hors Grand Lomé,Yoto,Yoto,YOTO,Yoto,Yoto,TG0307,
+TG0308,Zio,Maritime,Maritime hors Grand Lomé,Zio,Zio,ZIO,Zio,Zio,TG0308,
+TG0403,Agou,Plateaux,Plateaux,Agou,Agou,AGOU,Agou,Agou,TG0403,
+TG0410,Akébou,Plateaux,Plateaux,Akébou,,AKEBOU,Akebou,Akebou,TG0410,
+TG0401,Amou,Plateaux,Plateaux,Amou,Amou,AMOU,Amou,Amou,TG0401,
+TG0411,Anié,Plateaux,Plateaux,Anié,Anié,ANIE,Anié,Anie,TG0411,libellé « ANIE » présent 2 fois dans le recensement CSV (préfecture et commune ou canton homonymes)
+TG0404,Danyi,Plateaux,Plateaux,Danyi,,DANYI,Danyi,Danyi,TG0404,
+TG0405,Est-Mono,Plateaux,Plateaux,Est-Mono,,EST-MONO,Est-Mono,Est-Mono,TG0405,
+TG0406,Haho,Plateaux,Plateaux,Haho,,HAHO,Haho,Haho,TG0406,
+TG0412,Kloto,Plateaux,Plateaux,Kloto,Kloto,KLOTO,Kloto,Kloto,TG0412,
+TG0407,Kpélé,Plateaux,Plateaux,Kpélé,Kpélé,KPELE,Kpele,Kpele,TG0407,
+TG0408,Moyen-Mono,Plateaux,Plateaux,Moyen-Mono,,MOYEN-MONO,Moyen-Mono,Moyen-Mono,TG0408,
+TG0409,Ogou,Plateaux,Plateaux,Ogou,Ogou,OGOU,Ogou,Ogou,TG0409,
+TG0402,Wawa,Plateaux,Plateaux,Wawa,Wawa,WAWA,Wawa,Wawa,TG0402,
+TG0517,Cinkassé,Savanes,Savanes,Cinkassé,Cinkassé,CINKASSE,Cinkassé,Cinkasse,TG0517,libellé « CINKASSE » présent 2 fois dans le recensement CSV (préfecture et commune ou canton homonymes)
+TG0513,Kpendjal,Savanes,Savanes,Kpendjal,,KPENDJAL,Kpendjal,Kpendjal,TG0513,
+TG0518,Kpendjal-Ouest,Savanes,Savanes,Kpendjal-Ouest,,KPENDJAL-OUEST,Kpendjal-Ouest,Naki-Ouest,TG0518,"HDX « Naki-Ouest » (TG0518) : rattachée à Kpendjal-Ouest par élimination (7 préfectures des Savanes dans les deux sources) ; libellé douteux, Naki-Ouest étant un canton de Tône au recensement : à vérifier sur la carte en 04"
+TG0514,Oti,Savanes,Savanes,Oti,Oti,OTI,Oti,Oti,TG0514,
+TG0519,Oti-Sud,Savanes,Savanes,Oti-Sud,,OTI-SUD,Oti-Sud,Oti-Sud,TG0519,
+TG0515,Tandjoaré,Savanes,Savanes,Tandjoaré,,TANDJOARE,Tandjoare,Tandjoare,TG0515,
+TG0516,Tône,Savanes,Savanes,Tône,Tône,TONE,Tône,Tone,TG0516,

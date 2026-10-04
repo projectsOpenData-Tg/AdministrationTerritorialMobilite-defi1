@@ -221,3 +221,11 @@ __marimo__/
 
 
 tmp/
+# Données brutes : les PDF restent téléchargeables à la source (registre data/raw/_SOURCES.csv)
+data/raw/*.pdf
+
+# Jeton d’accès à l’API de l’ONU : ne jamais versionner
+workspace/onu-creds.py
+
+# EHCVM 2021-2022 : conditions d'usage de la Banque mondiale, ni copie ni redistribution
+data/raw/ehcvm_2021_2022_csv.zip
