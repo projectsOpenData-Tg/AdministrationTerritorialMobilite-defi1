@@ -229,3 +229,6 @@ workspace/onu-creds.py
 
 # EHCVM 2021-2022 : conditions d'usage de la Banque mondiale, ni copie ni redistribution
 data/raw/ehcvm_2021_2022_csv.zip
+
+# Rapports ydata-profiling de l’étape 04 : lourds, régénérés par scripts/profil_04.py
+data/analysis/04_understanding/rapports/

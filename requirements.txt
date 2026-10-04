@@ -1,0 +1,21 @@
+# Environnement Python du projet : Python 3.11, versions figées.
+# ydata-profiling compile phik sur aarch64 : g++ requis (sudo dnf install -y gcc-c++).
+
+# Tableaux, Excel, PDF
+pandas==2.3.3  # < 3.0, exigé par ydata-profiling
+openpyxl==3.1.5
+pypdf==6.19.0
+
+# Géométries, reprojetées en UTM 31N (R-16)
+geopandas==1.2.0
+shapely==2.1.2
+pyproj==3.7.2
+
+# Figures
+matplotlib==3.10.0  # <= 3.10.0, exigé par ydata-profiling
+
+# Profil des fichiers (04 §3)
+ydata-profiling==4.18.4
+
+# Notebooks (inclut ipykernel, le noyau utilisé par VS Code)
+jupyterlab==4.6.4
