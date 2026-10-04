@@ -10,7 +10,8 @@ registre précédent), la ligne précédente est conservée et l'échec est not�
 Population par âge simple (WPP, ONU) : l'API du Data Portal exige un jeton, lu dans la variable
 d'environnement ONU_DATAPORTAL_TOKEN (ou dans la ligne du même nom du fichier .env, ignoré par git).
 Sans jeton, le script se replie sur le fichier mondial publié (62 Mo, tous pays) : il n'en garde
-que les lignes du Togo, et le registre note la taille et l'empreinte du fichier publié.
+que les lignes du Togo, et le registre note la taille et l'empreinte du fichier publié. Si le
+fichier local vient déjà de l'API et reste intact, il est conservé au lieu d'être remplacé.
 
 EHCVM 2021-2022 (catalogue de microdonnées de la Banque mondiale) : le téléchargement exige un compte,
 lu dans les variables d'environnement BM_MICRODATA_EMAIL et BM_MICRODATA_PASSWORD (ou dans les lignes
@@ -362,6 +363,9 @@ def main():
                     taille, sha = telecharger(url, chemin, {"Authorization": f"Bearer {jeton_onu()}"})
                     ligne["Remarque"] = "Réponse de l’API du Data Portal (jeton requis) : indicateur 47, Togo (768), 1990–2024"
                 elif url == WPP_API:
+                    if precedent.get(fichier, {}).get("Remarque", "").startswith("Réponse de l’API"):
+                        # Le fichier de l'API couvre 1990–2024 ; l'extrait ne le remplace jamais.
+                        raise RuntimeError("jeton de l’ONU absent")
                     ligne["URL"] = WPP_MONDIAL
                     ligne["Remarque"] = extraire_togo_wpp(WPP_MONDIAL, chemin)
                     contenu = chemin.read_bytes()
