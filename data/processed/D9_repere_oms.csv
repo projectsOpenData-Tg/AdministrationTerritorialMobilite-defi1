@@ -1,0 +1,6 @@
+Indicateur,Pays,Année,Valeur,Borne basse,Borne haute,Unité,Source,Niveau
+Tués estimés pour 100 000 habitants,GHA,2021,25.9,,,pour 100 000 habitants,"OMS, Global Health Observatory (RS_198)",C
+Tués estimés pour 100 000 habitants,BFA,2021,27.8,,,pour 100 000 habitants,"OMS, Global Health Observatory (RS_198)",C
+Tués estimés pour 100 000 habitants,BEN,2021,24.8,,,pour 100 000 habitants,"OMS, Global Health Observatory (RS_198)",C
+Tués estimés pour 100 000 habitants,TGO,2021,22.7,,,pour 100 000 habitants,"OMS, Global Health Observatory (RS_198)",C
+"Tués estimés par l'OMS (repère SE-03, jamais une correction des tués déclarés)",TGO,2021,1961.0,1644.0,2277.0,tués,"OMS, profil de sécurité routière 2023",C

@@ -1,0 +1,7 @@
+Jointure,Clé,Attendu,Rattachés,Total,Taux (%),Non rattachés
+D5 × D8 : tracé → préfectures,polygone,tout le tracé du Togo rattaché,799,799,100.0,"5.1 km hors des 39 polygones (hors du Togo, 4.3-05)"
+D4 × D5 : état → tracé,nom du tronçon ; table de correspondance,84 tronçons sur 84,84,84,100.0,aucun
+D6 × D8 : auto-écoles → préfectures,point dans le polygone,272 sur 272,272,272,100.0,aucun
+D7 × D8 : population → préfectures,libellé du Livret 02,39 sur 39,39,39,100.0,aucun
+D13 × D8 : points de départ de O4-08 → préfectures,préfecture,39 sur 39,39,39,100.0,aucun
+Hors 02 : équipements → préfectures,point dans le polygone,plus de 99 % (4.3-10),16768,16797,99.8,aucun

@@ -1,0 +1,19 @@
+Fichier,Lignes brutes,Lignes gardées,Lignes retirées,Motifs,Note
+parc_immatricule_par_type_1.csv,264,231,33,"ligne « Total », après contrôle total = somme des types : 33",
+"annuaire 2024, tableau 40.1 (2023-2024)",20,16,4,"ligne « Total » : 2 ; « 4 Roues moto », absent du portail : 2","2 roues + 3 roues regroupés en « deux-roues et assimilées », comme le portail (contrôlé sur 2020–2022)"
+permis_par_categorie.csv,106,90,16,"ligne « Total », après contrôle total = somme des catégories : 16","2013 : aucune catégorie, total à 0 → catégories « non renseignées » (R-10, écart 14)"
+"annuaire 2024, tableau 40.4 (2023-2024)",14,12,2,ligne « Total » : 2,
+accidents_police_gendarmerie.csv,27,0,27,contrôle seulement : identique à la série de référence (4.4-05) : 27,
+accidents_bilan_police_gendarmerie.csv,18,0,18,contrôle seulement : identique à la série de référence (4.4-05) : 18,
+transports_statistiques_cles.csv,209,57,152,"« Accidents mortels /100 000 hab », exclu (anomalie 4) : 13 ; autres séries : contrôles du 04 ou hors besoin (parc, permis, fret, rail) : 139","Gardées : accidents, tués et blessés (D3) ; trafic (D10)"
+"annuaire 2024, tableau 7.2",15,6,9,"années 2020–2022 : contrôle seulement, identiques : 9",
+etat_reseau_routier.csv,371,353,18,"lignes de total (tronçon « TOTAL… ») : 10 ; lignes des voiries, sans tronçon : 8","84 tronçons ; état sans ligne = 0 km, prouvé par la somme des états publiés (4.1-05) : km_travaux 67"
+routes_classees.csv,799,799,0,aucun,"0 voie → non renseigné : 8 ; sans nom, gardés : 2"
+auto_ecoles.csv,272,272,0,aucun,"« Nsp » ou « Néant » → non renseigné : adresse_etablissement 171, journee_ouverture 16, agregation 2 ; colonne activite_categorie retirée : une seule valeur, « {Auto-école} » (04 §6)"
+Livret 02 (extraction du 04),8883,7371,1512,"niveaux pays, région et district : contrôles et série nationale : 1512",cellules « - » non renseignées : 143
+profil OMS (extraction du 04),17,8,9,"« Kilomètres revêtus », exclu (anomalie 5) : 1 ; doublons de D1, D3 ou du repère RS_198 (4.4-04) : 8",
+longueur_route_entretenue.csv,8,4,4,"taux de couverture de l'entretien, exclu (anomalie 6) : 4",
+equipements_feux_tricolores.csv,546,546,0,aucun,
+equipements_panneaux_signalisation.csv,9089,9089,0,aucun,
+equipements_passages_pietons.csv,1041,1041,0,aucun,géométries invalides réparées : 24
+equipements_ralentisseurs.csv,6121,6121,0,aucun,
