@@ -1,0 +1,313 @@
+Préfecture A,Préfecture B,Frontière commune (km),Variable,Valeur A,Valeur B,Position A,Position B,Très différentes
+Agou,Avé,32.8,Km pour 10 000 habitants,15.17,10.86,haut,haut,False
+Agou,Avé,32.8,Auto-écoles comptées pour 100 000 habitants,0.0,0.0,bas,bas,False
+Agou,Avé,32.8,Part en mauvais état (%),40.0,2.7,haut,bas,True
+Agou,Avé,32.8,Part non évaluée (%),1.9,0.0,haut,bas,True
+Agou,Haho,30.0,Km pour 10 000 habitants,15.17,4.31,haut,milieu,False
+Agou,Haho,30.0,Auto-écoles comptées pour 100 000 habitants,0.0,0.0,bas,bas,False
+Agou,Haho,30.0,Part en mauvais état (%),40.0,11.5,haut,milieu,False
+Agou,Haho,30.0,Part non évaluée (%),1.9,0.0,haut,bas,True
+Agou,Kloto,42.2,Km pour 10 000 habitants,15.17,5.39,haut,milieu,False
+Agou,Kloto,42.2,Auto-écoles comptées pour 100 000 habitants,0.0,2.05,bas,haut,True
+Agou,Kloto,42.2,Part en mauvais état (%),40.0,65.0,haut,haut,False
+Agou,Kloto,42.2,Part non évaluée (%),1.9,5.4,haut,haut,False
+Agou,Kpélé,28.1,Km pour 10 000 habitants,15.17,6.18,haut,milieu,False
+Agou,Kpélé,28.1,Auto-écoles comptées pour 100 000 habitants,0.0,1.24,bas,haut,True
+Agou,Kpélé,28.1,Part en mauvais état (%),40.0,14.3,haut,milieu,False
+Agou,Kpélé,28.1,Part non évaluée (%),1.9,0.0,haut,bas,True
+Agou,Zio,21.0,Km pour 10 000 habitants,15.17,2.12,haut,bas,True
+Agou,Zio,21.0,Auto-écoles comptées pour 100 000 habitants,0.0,0.2,bas,milieu,False
+Agou,Zio,21.0,Part en mauvais état (%),40.0,17.2,haut,milieu,False
+Agou,Zio,21.0,Part non évaluée (%),1.9,0.0,haut,bas,True
+Agoè-Nyivé,Avé,4.1,Km pour 10 000 habitants,0.74,10.86,bas,haut,True
+Agoè-Nyivé,Avé,4.1,Auto-écoles comptées pour 100 000 habitants,3.29,0.0,haut,bas,True
+Agoè-Nyivé,Avé,4.1,Part en mauvais état (%),26.0,2.7,haut,bas,True
+Agoè-Nyivé,Avé,4.1,Part non évaluée (%),20.0,0.0,haut,bas,True
+Agoè-Nyivé,Golfe,28.6,Km pour 10 000 habitants,0.74,0.74,bas,bas,False
+Agoè-Nyivé,Golfe,28.6,Auto-écoles comptées pour 100 000 habitants,3.29,5.67,haut,haut,False
+Agoè-Nyivé,Golfe,28.6,Part en mauvais état (%),26.0,0.5,haut,bas,True
+Agoè-Nyivé,Golfe,28.6,Part non évaluée (%),20.0,12.2,haut,haut,False
+Agoè-Nyivé,Zio,45.5,Km pour 10 000 habitants,0.74,2.12,bas,bas,False
+Agoè-Nyivé,Zio,45.5,Auto-écoles comptées pour 100 000 habitants,3.29,0.2,haut,milieu,False
+Agoè-Nyivé,Zio,45.5,Part en mauvais état (%),26.0,17.2,haut,milieu,False
+Agoè-Nyivé,Zio,45.5,Part non évaluée (%),20.0,0.0,haut,bas,True
+Akébou,Amou,41.0,Km pour 10 000 habitants,0.94,8.21,bas,haut,True
+Akébou,Amou,41.0,Auto-écoles comptées pour 100 000 habitants,0.0,0.0,bas,bas,False
+Akébou,Amou,41.0,Part en mauvais état (%),7.8,4.5,milieu,bas,False
+Akébou,Amou,41.0,Part non évaluée (%),0.0,0.0,bas,bas,False
+Akébou,Anié,11.7,Km pour 10 000 habitants,0.94,2.21,bas,bas,False
+Akébou,Anié,11.7,Auto-écoles comptées pour 100 000 habitants,0.0,0.56,bas,milieu,False
+Akébou,Anié,11.7,Part en mauvais état (%),7.8,23.0,milieu,milieu,False
+Akébou,Anié,11.7,Part non évaluée (%),0.0,0.0,bas,bas,False
+Akébou,Blitta,71.0,Km pour 10 000 habitants,0.94,7.88,bas,milieu,False
+Akébou,Blitta,71.0,Auto-écoles comptées pour 100 000 habitants,0.0,0.0,bas,bas,False
+Akébou,Blitta,71.0,Part en mauvais état (%),7.8,68.2,milieu,haut,False
+Akébou,Blitta,71.0,Part non évaluée (%),0.0,19.8,bas,haut,True
+Akébou,Wawa,43.2,Km pour 10 000 habitants,0.94,13.17,bas,haut,True
+Akébou,Wawa,43.2,Auto-écoles comptées pour 100 000 habitants,0.0,1.97,bas,haut,True
+Akébou,Wawa,43.2,Part en mauvais état (%),7.8,29.5,milieu,haut,False
+Akébou,Wawa,43.2,Part non évaluée (%),0.0,1.7,bas,haut,True
+Amou,Anié,23.6,Km pour 10 000 habitants,8.21,2.21,haut,bas,True
+Amou,Anié,23.6,Auto-écoles comptées pour 100 000 habitants,0.0,0.56,bas,milieu,False
+Amou,Anié,23.6,Part en mauvais état (%),4.5,23.0,bas,milieu,False
+Amou,Anié,23.6,Part non évaluée (%),0.0,0.0,bas,bas,False
+Amou,Danyi,14.0,Km pour 10 000 habitants,8.21,12.16,haut,haut,False
+Amou,Danyi,14.0,Auto-écoles comptées pour 100 000 habitants,0.0,0.0,bas,bas,False
+Amou,Danyi,14.0,Part en mauvais état (%),4.5,100.0,bas,haut,True
+Amou,Danyi,14.0,Part non évaluée (%),0.0,0.0,bas,bas,False
+Amou,Haho,19.5,Km pour 10 000 habitants,8.21,4.31,haut,milieu,False
+Amou,Haho,19.5,Auto-écoles comptées pour 100 000 habitants,0.0,0.0,bas,bas,False
+Amou,Haho,19.5,Part en mauvais état (%),4.5,11.5,bas,milieu,False
+Amou,Haho,19.5,Part non évaluée (%),0.0,0.0,bas,bas,False
+Amou,Kpélé,19.6,Km pour 10 000 habitants,8.21,6.18,haut,milieu,False
+Amou,Kpélé,19.6,Auto-écoles comptées pour 100 000 habitants,0.0,1.24,bas,haut,True
+Amou,Kpélé,19.6,Part en mauvais état (%),4.5,14.3,bas,milieu,False
+Amou,Kpélé,19.6,Part non évaluée (%),0.0,0.0,bas,bas,False
+Amou,Ogou,71.3,Km pour 10 000 habitants,8.21,5.23,haut,milieu,False
+Amou,Ogou,71.3,Auto-écoles comptées pour 100 000 habitants,0.0,0.79,bas,milieu,False
+Amou,Ogou,71.3,Part en mauvais état (%),4.5,27.2,bas,haut,True
+Amou,Ogou,71.3,Part non évaluée (%),0.0,9.7,bas,haut,True
+Amou,Wawa,63.4,Km pour 10 000 habitants,8.21,13.17,haut,haut,False
+Amou,Wawa,63.4,Auto-écoles comptées pour 100 000 habitants,0.0,1.97,bas,haut,True
+Amou,Wawa,63.4,Part en mauvais état (%),4.5,29.5,bas,haut,True
+Amou,Wawa,63.4,Part non évaluée (%),0.0,1.7,bas,haut,True
+Anié,Blitta,12.7,Km pour 10 000 habitants,2.21,7.88,bas,milieu,False
+Anié,Blitta,12.7,Auto-écoles comptées pour 100 000 habitants,0.56,0.0,milieu,bas,False
+Anié,Blitta,12.7,Part en mauvais état (%),23.0,68.2,milieu,haut,False
+Anié,Blitta,12.7,Part non évaluée (%),0.0,19.8,bas,haut,True
+Anié,Est-Mono,99.8,Km pour 10 000 habitants,2.21,6.71,bas,milieu,False
+Anié,Est-Mono,99.8,Auto-écoles comptées pour 100 000 habitants,0.56,0.0,milieu,bas,False
+Anié,Est-Mono,99.8,Part en mauvais état (%),23.0,17.2,milieu,milieu,False
+Anié,Est-Mono,99.8,Part non évaluée (%),0.0,0.0,bas,bas,False
+Anié,Ogou,109.9,Km pour 10 000 habitants,2.21,5.23,bas,milieu,False
+Anié,Ogou,109.9,Auto-écoles comptées pour 100 000 habitants,0.56,0.79,milieu,milieu,False
+Anié,Ogou,109.9,Part en mauvais état (%),23.0,27.2,milieu,haut,False
+Anié,Ogou,109.9,Part non évaluée (%),0.0,9.7,bas,haut,True
+Assoli,Bassar,32.4,Km pour 10 000 habitants,12.01,12.75,haut,haut,False
+Assoli,Bassar,32.4,Auto-écoles comptées pour 100 000 habitants,1.51,0.0,haut,bas,True
+Assoli,Bassar,32.4,Part en mauvais état (%),21.8,28.0,milieu,haut,False
+Assoli,Bassar,32.4,Part non évaluée (%),0.0,17.2,bas,haut,True
+Assoli,Kozah,59.6,Km pour 10 000 habitants,12.01,6.39,haut,milieu,False
+Assoli,Kozah,59.6,Auto-écoles comptées pour 100 000 habitants,1.51,2.11,haut,haut,False
+Assoli,Kozah,59.6,Part en mauvais état (%),21.8,23.3,milieu,milieu,False
+Assoli,Kozah,59.6,Part non évaluée (%),0.0,0.0,bas,bas,False
+Assoli,Tchaoudjo,51.6,Km pour 10 000 habitants,12.01,5.05,haut,milieu,False
+Assoli,Tchaoudjo,51.6,Auto-écoles comptées pour 100 000 habitants,1.51,0.83,haut,haut,False
+Assoli,Tchaoudjo,51.6,Part en mauvais état (%),21.8,36.9,milieu,haut,False
+Assoli,Tchaoudjo,51.6,Part non évaluée (%),0.0,0.0,bas,bas,False
+Avé,Golfe,5.8,Km pour 10 000 habitants,10.86,0.74,haut,bas,True
+Avé,Golfe,5.8,Auto-écoles comptées pour 100 000 habitants,0.0,5.67,bas,haut,True
+Avé,Golfe,5.8,Part en mauvais état (%),2.7,0.5,bas,bas,False
+Avé,Golfe,5.8,Part non évaluée (%),0.0,12.2,bas,haut,True
+Avé,Zio,67.2,Km pour 10 000 habitants,10.86,2.12,haut,bas,True
+Avé,Zio,67.2,Auto-écoles comptées pour 100 000 habitants,0.0,0.2,bas,milieu,False
+Avé,Zio,67.2,Part en mauvais état (%),2.7,17.2,bas,milieu,False
+Avé,Zio,67.2,Part non évaluée (%),0.0,0.0,bas,bas,False
+Bas-Mono,Lacs,23.7,Km pour 10 000 habitants,3.68,3.68,milieu,milieu,False
+Bas-Mono,Lacs,23.7,Auto-écoles comptées pour 100 000 habitants,0.0,0.83,bas,haut,True
+Bas-Mono,Lacs,23.7,Part en mauvais état (%),21.1,9.4,milieu,milieu,False
+Bas-Mono,Lacs,23.7,Part non évaluée (%),0.0,1.0,bas,milieu,False
+Bas-Mono,Vo,37.4,Km pour 10 000 habitants,3.68,2.81,milieu,bas,False
+Bas-Mono,Vo,37.4,Auto-écoles comptées pour 100 000 habitants,0.0,0.89,bas,haut,True
+Bas-Mono,Vo,37.4,Part en mauvais état (%),21.1,4.6,milieu,bas,False
+Bas-Mono,Vo,37.4,Part non évaluée (%),0.0,0.0,bas,bas,False
+Bas-Mono,Yoto,10.3,Km pour 10 000 habitants,3.68,3.34,milieu,milieu,False
+Bas-Mono,Yoto,10.3,Auto-écoles comptées pour 100 000 habitants,0.0,0.0,bas,bas,False
+Bas-Mono,Yoto,10.3,Part en mauvais état (%),21.1,8.1,milieu,milieu,False
+Bas-Mono,Yoto,10.3,Part non évaluée (%),0.0,0.0,bas,bas,False
+Bassar,Dankpen,76.6,Km pour 10 000 habitants,12.75,2.43,haut,bas,True
+Bassar,Dankpen,76.6,Auto-écoles comptées pour 100 000 habitants,0.0,0.0,bas,bas,False
+Bassar,Dankpen,76.6,Part en mauvais état (%),28.0,0.0,haut,bas,True
+Bassar,Dankpen,76.6,Part non évaluée (%),17.2,3.7,haut,haut,False
+Bassar,Doufelgou,6.4,Km pour 10 000 habitants,12.75,11.78,haut,haut,False
+Bassar,Doufelgou,6.4,Auto-écoles comptées pour 100 000 habitants,0.0,0.0,bas,bas,False
+Bassar,Doufelgou,6.4,Part en mauvais état (%),28.0,3.4,haut,bas,True
+Bassar,Doufelgou,6.4,Part non évaluée (%),17.2,0.0,haut,bas,True
+Bassar,Kozah,31.9,Km pour 10 000 habitants,12.75,6.39,haut,milieu,False
+Bassar,Kozah,31.9,Auto-écoles comptées pour 100 000 habitants,0.0,2.11,bas,haut,True
+Bassar,Kozah,31.9,Part en mauvais état (%),28.0,23.3,haut,milieu,False
+Bassar,Kozah,31.9,Part non évaluée (%),17.2,0.0,haut,bas,True
+Bassar,Mô,35.2,Km pour 10 000 habitants,12.75,0.0,haut,bas,True
+Bassar,Mô,35.2,Auto-écoles comptées pour 100 000 habitants,0.0,0.0,bas,bas,False
+Bassar,Mô,35.2,Part en mauvais état (%),28.0,,haut,non défini,False
+Bassar,Mô,35.2,Part non évaluée (%),17.2,,haut,non défini,False
+Bassar,Sotouboua,25.4,Km pour 10 000 habitants,12.75,5.96,haut,milieu,False
+Bassar,Sotouboua,25.4,Auto-écoles comptées pour 100 000 habitants,0.0,1.44,bas,haut,True
+Bassar,Sotouboua,25.4,Part en mauvais état (%),28.0,22.3,haut,milieu,False
+Bassar,Sotouboua,25.4,Part non évaluée (%),17.2,1.4,haut,milieu,False
+Bassar,Tchaoudjo,35.7,Km pour 10 000 habitants,12.75,5.05,haut,milieu,False
+Bassar,Tchaoudjo,35.7,Auto-écoles comptées pour 100 000 habitants,0.0,0.83,bas,haut,True
+Bassar,Tchaoudjo,35.7,Part en mauvais état (%),28.0,36.9,haut,haut,False
+Bassar,Tchaoudjo,35.7,Part non évaluée (%),17.2,0.0,haut,bas,True
+Binah,Doufelgou,41.8,Km pour 10 000 habitants,5.37,11.78,milieu,haut,False
+Binah,Doufelgou,41.8,Auto-écoles comptées pour 100 000 habitants,0.0,0.0,bas,bas,False
+Binah,Doufelgou,41.8,Part en mauvais état (%),3.3,3.4,bas,bas,False
+Binah,Doufelgou,41.8,Part non évaluée (%),0.0,0.0,bas,bas,False
+Binah,Kozah,47.6,Km pour 10 000 habitants,5.37,6.39,milieu,milieu,False
+Binah,Kozah,47.6,Auto-écoles comptées pour 100 000 habitants,0.0,2.11,bas,haut,True
+Binah,Kozah,47.6,Part en mauvais état (%),3.3,23.3,bas,milieu,False
+Binah,Kozah,47.6,Part non évaluée (%),0.0,0.0,bas,bas,False
+Blitta,Est-Mono,56.9,Km pour 10 000 habitants,7.88,6.71,milieu,milieu,False
+Blitta,Est-Mono,56.9,Auto-écoles comptées pour 100 000 habitants,0.0,0.0,bas,bas,False
+Blitta,Est-Mono,56.9,Part en mauvais état (%),68.2,17.2,haut,milieu,False
+Blitta,Est-Mono,56.9,Part non évaluée (%),19.8,0.0,haut,bas,True
+Blitta,Sotouboua,65.1,Km pour 10 000 habitants,7.88,5.96,milieu,milieu,False
+Blitta,Sotouboua,65.1,Auto-écoles comptées pour 100 000 habitants,0.0,1.44,bas,haut,True
+Blitta,Sotouboua,65.1,Part en mauvais état (%),68.2,22.3,haut,milieu,False
+Blitta,Sotouboua,65.1,Part non évaluée (%),19.8,1.4,haut,milieu,False
+Cinkassé,Tône,38.4,Km pour 10 000 habitants,3.05,2.44,milieu,bas,False
+Cinkassé,Tône,38.4,Auto-écoles comptées pour 100 000 habitants,0.78,0.77,milieu,milieu,False
+Cinkassé,Tône,38.4,Part en mauvais état (%),12.1,9.2,milieu,milieu,False
+Cinkassé,Tône,38.4,Part non évaluée (%),11.3,0.0,haut,bas,True
+Dankpen,Doufelgou,24.4,Km pour 10 000 habitants,2.43,11.78,bas,haut,True
+Dankpen,Doufelgou,24.4,Auto-écoles comptées pour 100 000 habitants,0.0,0.0,bas,bas,False
+Dankpen,Doufelgou,24.4,Part en mauvais état (%),0.0,3.4,bas,bas,False
+Dankpen,Doufelgou,24.4,Part non évaluée (%),3.7,0.0,haut,bas,True
+Dankpen,Kéran,29.1,Km pour 10 000 habitants,2.43,6.53,bas,milieu,False
+Dankpen,Kéran,29.1,Auto-écoles comptées pour 100 000 habitants,0.0,0.0,bas,bas,False
+Dankpen,Kéran,29.1,Part en mauvais état (%),0.0,0.2,bas,bas,False
+Dankpen,Kéran,29.1,Part non évaluée (%),3.7,0.0,haut,bas,True
+Dankpen,Oti-Sud,46.9,Km pour 10 000 habitants,2.43,8.54,bas,haut,True
+Dankpen,Oti-Sud,46.9,Auto-écoles comptées pour 100 000 habitants,0.0,0.0,bas,bas,False
+Dankpen,Oti-Sud,46.9,Part en mauvais état (%),0.0,14.4,bas,milieu,False
+Dankpen,Oti-Sud,46.9,Part non évaluée (%),3.7,0.3,haut,milieu,False
+Danyi,Kloto,6.6,Km pour 10 000 habitants,12.16,5.39,haut,milieu,False
+Danyi,Kloto,6.6,Auto-écoles comptées pour 100 000 habitants,0.0,2.05,bas,haut,True
+Danyi,Kloto,6.6,Part en mauvais état (%),100.0,65.0,haut,haut,False
+Danyi,Kloto,6.6,Part non évaluée (%),0.0,5.4,bas,haut,True
+Danyi,Kpélé,32.7,Km pour 10 000 habitants,12.16,6.18,haut,milieu,False
+Danyi,Kpélé,32.7,Auto-écoles comptées pour 100 000 habitants,0.0,1.24,bas,haut,True
+Danyi,Kpélé,32.7,Part en mauvais état (%),100.0,14.3,haut,milieu,False
+Danyi,Kpélé,32.7,Part non évaluée (%),0.0,0.0,bas,bas,False
+Danyi,Wawa,17.8,Km pour 10 000 habitants,12.16,13.17,haut,haut,False
+Danyi,Wawa,17.8,Auto-écoles comptées pour 100 000 habitants,0.0,1.97,bas,haut,True
+Danyi,Wawa,17.8,Part en mauvais état (%),100.0,29.5,haut,haut,False
+Danyi,Wawa,17.8,Part non évaluée (%),0.0,1.7,bas,haut,True
+Doufelgou,Kozah,37.0,Km pour 10 000 habitants,11.78,6.39,haut,milieu,False
+Doufelgou,Kozah,37.0,Auto-écoles comptées pour 100 000 habitants,0.0,2.11,bas,haut,True
+Doufelgou,Kozah,37.0,Part en mauvais état (%),3.4,23.3,bas,milieu,False
+Doufelgou,Kozah,37.0,Part non évaluée (%),0.0,0.0,bas,bas,False
+Doufelgou,Kéran,66.8,Km pour 10 000 habitants,11.78,6.53,haut,milieu,False
+Doufelgou,Kéran,66.8,Auto-écoles comptées pour 100 000 habitants,0.0,0.0,bas,bas,False
+Doufelgou,Kéran,66.8,Part en mauvais état (%),3.4,0.2,bas,bas,False
+Doufelgou,Kéran,66.8,Part non évaluée (%),0.0,0.0,bas,bas,False
+Est-Mono,Sotouboua,2.3,Km pour 10 000 habitants,6.71,5.96,milieu,milieu,False
+Est-Mono,Sotouboua,2.3,Auto-écoles comptées pour 100 000 habitants,0.0,1.44,bas,haut,True
+Est-Mono,Sotouboua,2.3,Part en mauvais état (%),17.2,22.3,milieu,milieu,False
+Est-Mono,Sotouboua,2.3,Part non évaluée (%),0.0,1.4,bas,milieu,False
+Est-Mono,Tchamba,52.6,Km pour 10 000 habitants,6.71,6.14,milieu,milieu,False
+Est-Mono,Tchamba,52.6,Auto-écoles comptées pour 100 000 habitants,0.0,0.0,bas,bas,False
+Est-Mono,Tchamba,52.6,Part en mauvais état (%),17.2,34.0,milieu,haut,False
+Est-Mono,Tchamba,52.6,Part non évaluée (%),0.0,0.0,bas,bas,False
+Golfe,Lacs,5.9,Km pour 10 000 habitants,0.74,3.68,bas,milieu,False
+Golfe,Lacs,5.9,Auto-écoles comptées pour 100 000 habitants,5.67,0.83,haut,haut,False
+Golfe,Lacs,5.9,Part en mauvais état (%),0.5,9.4,bas,milieu,False
+Golfe,Lacs,5.9,Part non évaluée (%),12.2,1.0,haut,milieu,False
+Golfe,Zio,21.9,Km pour 10 000 habitants,0.74,2.12,bas,bas,False
+Golfe,Zio,21.9,Auto-écoles comptées pour 100 000 habitants,5.67,0.2,haut,milieu,False
+Golfe,Zio,21.9,Part en mauvais état (%),0.5,17.2,bas,milieu,False
+Golfe,Zio,21.9,Part non évaluée (%),12.2,0.0,haut,bas,True
+Haho,Kpélé,45.4,Km pour 10 000 habitants,4.31,6.18,milieu,milieu,False
+Haho,Kpélé,45.4,Auto-écoles comptées pour 100 000 habitants,0.0,1.24,bas,haut,True
+Haho,Kpélé,45.4,Part en mauvais état (%),11.5,14.3,milieu,milieu,False
+Haho,Kpélé,45.4,Part non évaluée (%),0.0,0.0,bas,bas,False
+Haho,Moyen-Mono,52.0,Km pour 10 000 habitants,4.31,6.4,milieu,milieu,False
+Haho,Moyen-Mono,52.0,Auto-écoles comptées pour 100 000 habitants,0.0,0.0,bas,bas,False
+Haho,Moyen-Mono,52.0,Part en mauvais état (%),11.5,0.0,milieu,bas,False
+Haho,Moyen-Mono,52.0,Part non évaluée (%),0.0,0.0,bas,bas,False
+Haho,Ogou,56.0,Km pour 10 000 habitants,4.31,5.23,milieu,milieu,False
+Haho,Ogou,56.0,Auto-écoles comptées pour 100 000 habitants,0.0,0.79,bas,milieu,False
+Haho,Ogou,56.0,Part en mauvais état (%),11.5,27.2,milieu,haut,False
+Haho,Ogou,56.0,Part non évaluée (%),0.0,9.7,bas,haut,True
+Haho,Yoto,42.1,Km pour 10 000 habitants,4.31,3.34,milieu,milieu,False
+Haho,Yoto,42.1,Auto-écoles comptées pour 100 000 habitants,0.0,0.0,bas,bas,False
+Haho,Yoto,42.1,Part en mauvais état (%),11.5,8.1,milieu,milieu,False
+Haho,Yoto,42.1,Part non évaluée (%),0.0,0.0,bas,bas,False
+Haho,Zio,42.6,Km pour 10 000 habitants,4.31,2.12,milieu,bas,False
+Haho,Zio,42.6,Auto-écoles comptées pour 100 000 habitants,0.0,0.2,bas,milieu,False
+Haho,Zio,42.6,Part en mauvais état (%),11.5,17.2,milieu,milieu,False
+Haho,Zio,42.6,Part non évaluée (%),0.0,0.0,bas,bas,False
+Kloto,Kpélé,18.3,Km pour 10 000 habitants,5.39,6.18,milieu,milieu,False
+Kloto,Kpélé,18.3,Auto-écoles comptées pour 100 000 habitants,2.05,1.24,haut,haut,False
+Kloto,Kpélé,18.3,Part en mauvais état (%),65.0,14.3,haut,milieu,False
+Kloto,Kpélé,18.3,Part non évaluée (%),5.4,0.0,haut,bas,True
+Kpendjal,Kpendjal-Ouest,53.2,Km pour 10 000 habitants,6.54,3.7,milieu,milieu,False
+Kpendjal,Kpendjal-Ouest,53.2,Auto-écoles comptées pour 100 000 habitants,0.0,0.0,bas,bas,False
+Kpendjal,Kpendjal-Ouest,53.2,Part en mauvais état (%),5.2,6.0,milieu,milieu,False
+Kpendjal,Kpendjal-Ouest,53.2,Part non évaluée (%),0.0,0.0,bas,bas,False
+Kpendjal,Oti,22.6,Km pour 10 000 habitants,6.54,10.98,milieu,haut,False
+Kpendjal,Oti,22.6,Auto-écoles comptées pour 100 000 habitants,0.0,0.0,bas,bas,False
+Kpendjal,Oti,22.6,Part en mauvais état (%),5.2,21.1,milieu,milieu,False
+Kpendjal,Oti,22.6,Part non évaluée (%),0.0,0.0,bas,bas,False
+Kpendjal,Oti-Sud,24.8,Km pour 10 000 habitants,6.54,8.54,milieu,haut,False
+Kpendjal,Oti-Sud,24.8,Auto-écoles comptées pour 100 000 habitants,0.0,0.0,bas,bas,False
+Kpendjal,Oti-Sud,24.8,Part en mauvais état (%),5.2,14.4,milieu,milieu,False
+Kpendjal,Oti-Sud,24.8,Part non évaluée (%),0.0,0.3,bas,milieu,False
+Kpendjal-Ouest,Oti,28.1,Km pour 10 000 habitants,3.7,10.98,milieu,haut,False
+Kpendjal-Ouest,Oti,28.1,Auto-écoles comptées pour 100 000 habitants,0.0,0.0,bas,bas,False
+Kpendjal-Ouest,Oti,28.1,Part en mauvais état (%),6.0,21.1,milieu,milieu,False
+Kpendjal-Ouest,Oti,28.1,Part non évaluée (%),0.0,0.0,bas,bas,False
+Kpendjal-Ouest,Tône,57.0,Km pour 10 000 habitants,3.7,2.44,milieu,bas,False
+Kpendjal-Ouest,Tône,57.0,Auto-écoles comptées pour 100 000 habitants,0.0,0.77,bas,milieu,False
+Kpendjal-Ouest,Tône,57.0,Part en mauvais état (%),6.0,9.2,milieu,milieu,False
+Kpendjal-Ouest,Tône,57.0,Part non évaluée (%),0.0,0.0,bas,bas,False
+Kéran,Oti-Sud,80.5,Km pour 10 000 habitants,6.53,8.54,milieu,haut,False
+Kéran,Oti-Sud,80.5,Auto-écoles comptées pour 100 000 habitants,0.0,0.0,bas,bas,False
+Kéran,Oti-Sud,80.5,Part en mauvais état (%),0.2,14.4,bas,milieu,False
+Kéran,Oti-Sud,80.5,Part non évaluée (%),0.0,0.3,bas,milieu,False
+Lacs,Vo,48.4,Km pour 10 000 habitants,3.68,2.81,milieu,bas,False
+Lacs,Vo,48.4,Auto-écoles comptées pour 100 000 habitants,0.83,0.89,haut,haut,False
+Lacs,Vo,48.4,Part en mauvais état (%),9.4,4.6,milieu,bas,False
+Lacs,Vo,48.4,Part non évaluée (%),1.0,0.0,milieu,bas,False
+Lacs,Zio,4.3,Km pour 10 000 habitants,3.68,2.12,milieu,bas,False
+Lacs,Zio,4.3,Auto-écoles comptées pour 100 000 habitants,0.83,0.2,haut,milieu,False
+Lacs,Zio,4.3,Part en mauvais état (%),9.4,17.2,milieu,milieu,False
+Lacs,Zio,4.3,Part non évaluée (%),1.0,0.0,milieu,bas,False
+Moyen-Mono,Ogou,25.7,Km pour 10 000 habitants,6.4,5.23,milieu,milieu,False
+Moyen-Mono,Ogou,25.7,Auto-écoles comptées pour 100 000 habitants,0.0,0.79,bas,milieu,False
+Moyen-Mono,Ogou,25.7,Part en mauvais état (%),0.0,27.2,bas,haut,True
+Moyen-Mono,Ogou,25.7,Part non évaluée (%),0.0,9.7,bas,haut,True
+Mô,Sotouboua,74.2,Km pour 10 000 habitants,0.0,5.96,bas,milieu,False
+Mô,Sotouboua,74.2,Auto-écoles comptées pour 100 000 habitants,0.0,1.44,bas,haut,True
+Mô,Sotouboua,74.2,Part en mauvais état (%),,22.3,non défini,milieu,False
+Mô,Sotouboua,74.2,Part non évaluée (%),,1.4,non défini,milieu,False
+Oti,Oti-Sud,106.1,Km pour 10 000 habitants,10.98,8.54,haut,haut,False
+Oti,Oti-Sud,106.1,Auto-écoles comptées pour 100 000 habitants,0.0,0.0,bas,bas,False
+Oti,Oti-Sud,106.1,Part en mauvais état (%),21.1,14.4,milieu,milieu,False
+Oti,Oti-Sud,106.1,Part non évaluée (%),0.0,0.3,bas,milieu,False
+Oti,Tandjoaré,55.5,Km pour 10 000 habitants,10.98,1.78,haut,bas,True
+Oti,Tandjoaré,55.5,Auto-écoles comptées pour 100 000 habitants,0.0,0.0,bas,bas,False
+Oti,Tandjoaré,55.5,Part en mauvais état (%),21.1,1.1,milieu,bas,False
+Oti,Tandjoaré,55.5,Part non évaluée (%),0.0,0.0,bas,bas,False
+Oti,Tône,6.0,Km pour 10 000 habitants,10.98,2.44,haut,bas,True
+Oti,Tône,6.0,Auto-écoles comptées pour 100 000 habitants,0.0,0.77,bas,milieu,False
+Oti,Tône,6.0,Part en mauvais état (%),21.1,9.2,milieu,milieu,False
+Oti,Tône,6.0,Part non évaluée (%),0.0,0.0,bas,bas,False
+Sotouboua,Tchamba,38.4,Km pour 10 000 habitants,5.96,6.14,milieu,milieu,False
+Sotouboua,Tchamba,38.4,Auto-écoles comptées pour 100 000 habitants,1.44,0.0,haut,bas,True
+Sotouboua,Tchamba,38.4,Part en mauvais état (%),22.3,34.0,milieu,haut,False
+Sotouboua,Tchamba,38.4,Part non évaluée (%),1.4,0.0,milieu,bas,False
+Sotouboua,Tchaoudjo,77.8,Km pour 10 000 habitants,5.96,5.05,milieu,milieu,False
+Sotouboua,Tchaoudjo,77.8,Auto-écoles comptées pour 100 000 habitants,1.44,0.83,haut,haut,False
+Sotouboua,Tchaoudjo,77.8,Part en mauvais état (%),22.3,36.9,milieu,haut,False
+Sotouboua,Tchaoudjo,77.8,Part non évaluée (%),1.4,0.0,milieu,bas,False
+Tandjoaré,Tône,66.8,Km pour 10 000 habitants,1.78,2.44,bas,bas,False
+Tandjoaré,Tône,66.8,Auto-écoles comptées pour 100 000 habitants,0.0,0.77,bas,milieu,False
+Tandjoaré,Tône,66.8,Part en mauvais état (%),1.1,9.2,bas,milieu,False
+Tandjoaré,Tône,66.8,Part non évaluée (%),0.0,0.0,bas,bas,False
+Tchamba,Tchaoudjo,90.6,Km pour 10 000 habitants,6.14,5.05,milieu,milieu,False
+Tchamba,Tchaoudjo,90.6,Auto-écoles comptées pour 100 000 habitants,0.0,0.83,bas,haut,True
+Tchamba,Tchaoudjo,90.6,Part en mauvais état (%),34.0,36.9,haut,haut,False
+Tchamba,Tchaoudjo,90.6,Part non évaluée (%),0.0,0.0,bas,bas,False
+Vo,Yoto,36.3,Km pour 10 000 habitants,2.81,3.34,bas,milieu,False
+Vo,Yoto,36.3,Auto-écoles comptées pour 100 000 habitants,0.89,0.0,haut,bas,True
+Vo,Yoto,36.3,Part en mauvais état (%),4.6,8.1,bas,milieu,False
+Vo,Yoto,36.3,Part non évaluée (%),0.0,0.0,bas,bas,False
+Vo,Zio,20.0,Km pour 10 000 habitants,2.81,2.12,bas,bas,False
+Vo,Zio,20.0,Auto-écoles comptées pour 100 000 habitants,0.89,0.2,haut,milieu,False
+Vo,Zio,20.0,Part en mauvais état (%),4.6,17.2,bas,milieu,False
+Vo,Zio,20.0,Part non évaluée (%),0.0,0.0,bas,bas,False
+Yoto,Zio,46.6,Km pour 10 000 habitants,3.34,2.12,milieu,bas,False
+Yoto,Zio,46.6,Auto-écoles comptées pour 100 000 habitants,0.0,0.2,bas,milieu,False
+Yoto,Zio,46.6,Part en mauvais état (%),8.1,17.2,milieu,milieu,False
+Yoto,Zio,46.6,Part non évaluée (%),0.0,0.0,bas,bas,False
