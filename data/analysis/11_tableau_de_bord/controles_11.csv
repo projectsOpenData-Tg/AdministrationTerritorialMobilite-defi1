@@ -1,0 +1,10 @@
+ID,Contrôle,Attendu,Mesure,Résultat
+11-01,Conséquences,"Les 17 codes de hypotheses_09.csv ont chacun une conséquence, et une seule ; aucun code en trop",17 sur 17 ; en double : aucun ; en trop : aucun,conforme
+11-02,Verdicts,Le verdict écrit au 09 §10 est celui de hypotheses_09.csv,discordants : aucun,conforme
+11-03,Données manquantes,Chaque hypothèse non testable a sa donnée manquante ; aucun code en trop,7 sur 7 ; sans donnée : aucune ; en trop : aucun,conforme
+11-04,Règle des codes,"Aucun code, renvoi ou mention technique dans les colonnes affichées (11 §4.2)",textes en défaut : aucun,conforme
+11-05,Réécritures,Chaque réécriture vise un texte du 09 §10 et n’ajoute ni ne change aucun nombre,nombres changés : aucun ; réécritures sans texte : 0,conforme
+11-06,Phrases,"Une phrase du 09 §6 pour chacune des 18 lignes de diagnostic_09.csv (10 préfectures, Mô, 6 zones, la région Maritime), et aucune autre",18 phrases ; manquantes : aucune ; en trop : aucune,conforme
+11-07,Rangs des phrases,"Le rang écrit au 09 §6 est le rang de diagnostic_09.csv (préfectures, zones)",discordants : aucun,conforme
+11-08,"Règle des codes, phrases","Aucun code, « comptée » ni « tests sur 6 » dans les phrases affichées (11 §4.2)",phrases en défaut : aucune,conforme
+11-09,Réécritures des phrases,Les réécritures n’ajoutent ni ne changent aucun nombre,nombres changés : aucun,conforme

@@ -224,6 +224,9 @@ tmp/
 # Données brutes : les PDF restent téléchargeables à la source (registre data/raw/_SOURCES.csv)
 data/raw/*.pdf
 
+# Grille WorldPop de l'annexe A1 (32 Mo) : retéléchargée par scripts/horizon_A1.py, empreinte vérifiée
+data/raw/worldpop_tgo_2020.tif
+
 # Jeton d’accès à l’API de l’ONU : ne jamais versionner
 workspace/onu-creds.py
 

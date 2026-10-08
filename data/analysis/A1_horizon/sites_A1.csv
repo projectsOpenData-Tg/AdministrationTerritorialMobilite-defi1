@@ -1,0 +1,49 @@
+Préfecture,Zone,Ordre,Site,Type,x_utm,y_utm,Habitants gagnés (2022),Niveau,Source
+Danyi,Plateaux,1,Elavagnon/Atigba,point de canton,245971.0,804193.0,21441,C,lieux candidats HDX (D13) ; grille WorldPop 2020 ramenée au recensement 2022
+Blitta,Centrale,1,Blitta Village,point de canton,282926.0,921016.0,113945,C,lieux candidats HDX (D13) ; grille WorldPop 2020 ramenée au recensement 2022
+Blitta,Centrale,2,Pagala Gare,point de canton,279036.0,904530.0,9619,C,lieux candidats HDX (D13) ; grille WorldPop 2020 ramenée au recensement 2022
+Agou,Plateaux,1,Agou Atigbe,point de canton,251256.0,751125.0,34172,C,lieux candidats HDX (D13) ; grille WorldPop 2020 ramenée au recensement 2022
+Agou,Plateaux,2,Adzakpa,point de canton,252536.0,731697.0,14251,C,lieux candidats HDX (D13) ; grille WorldPop 2020 ramenée au recensement 2022
+Tchamba,Centrale,1,Tchamba,point de canton,330142.0,994360.0,35981,C,lieux candidats HDX (D13) ; grille WorldPop 2020 ramenée au recensement 2022
+Tchamba,Centrale,2,Tchamba,point de préfecture,332527.0,975166.0,24719,C,lieux candidats HDX (D13) ; grille WorldPop 2020 ramenée au recensement 2022
+Tchamba,Centrale,3,Goubi,point de canton,335321.0,954293.0,23635,C,lieux candidats HDX (D13) ; grille WorldPop 2020 ramenée au recensement 2022
+Bassar,Kara,1,Bassar,point de préfecture,254850.0,1023431.0,33529,C,lieux candidats HDX (D13) ; grille WorldPop 2020 ramenée au recensement 2022
+Bassar,Kara,2,Kabou,point de canton,256820.0,1051782.0,24594,C,lieux candidats HDX (D13) ; grille WorldPop 2020 ramenée au recensement 2022
+Oti,Savanes,1,Mango,chef-lieu,223040.0,1146223.0,47340,C,lieux candidats HDX (D13) ; grille WorldPop 2020 ramenée au recensement 2022
+Oti,Savanes,2,Barkoissi,point de canton,207804.0,1171246.0,25006,C,lieux candidats HDX (D13) ; grille WorldPop 2020 ramenée au recensement 2022
+Bas-Mono,Maritime hors Grand Lomé,1,Bas-Mono,point de préfecture,351973.0,715495.0,84839,C,lieux candidats HDX (D13) ; grille WorldPop 2020 ramenée au recensement 2022
+Bas-Mono,Maritime hors Grand Lomé,2,Afagnan / Afagnagan,point de canton,348739.0,719135.0,7097,C,lieux candidats HDX (D13) ; grille WorldPop 2020 ramenée au recensement 2022
+Est-Mono,Plateaux,1,Kamina,point de canton,342230.0,895782.0,24912,C,lieux candidats HDX (D13) ; grille WorldPop 2020 ramenée au recensement 2022
+Est-Mono,Plateaux,2,Elavagnon,chef-lieu,312635.0,884685.0,20187,C,lieux candidats HDX (D13) ; grille WorldPop 2020 ramenée au recensement 2022
+Oti-Sud,Savanes,1,Oti-Sud,point de préfecture,250124.0,1138098.0,27376,C,lieux candidats HDX (D13) ; grille WorldPop 2020 ramenée au recensement 2022
+Oti-Sud,Savanes,2,Takpamba,point de canton,235615.0,1101867.0,21169,C,lieux candidats HDX (D13) ; grille WorldPop 2020 ramenée au recensement 2022
+Haho,Plateaux,1,Notse,chef-lieu,297451.0,768614.0,70056,C,lieux candidats HDX (D13) ; grille WorldPop 2020 ramenée au recensement 2022
+Haho,Plateaux,2,Assrama,point de canton,329695.0,772944.0,33977,C,lieux candidats HDX (D13) ; grille WorldPop 2020 ramenée au recensement 2022
+Haho,Plateaux,3,Dalia,point de canton,299117.0,753898.0,32890,C,lieux candidats HDX (D13) ; grille WorldPop 2020 ramenée au recensement 2022
+Haho,Plateaux,4,Djemegni,point de canton,313994.0,777523.0,27987,C,lieux candidats HDX (D13) ; grille WorldPop 2020 ramenée au recensement 2022
+Yoto,Maritime hors Grand Lomé,1,Amoussime,point de canton,335335.0,733959.0,75627,C,lieux candidats HDX (D13) ; grille WorldPop 2020 ramenée au recensement 2022
+Yoto,Maritime hors Grand Lomé,2,Ahepe,point de canton,325710.0,726481.0,42495,C,lieux candidats HDX (D13) ; grille WorldPop 2020 ramenée au recensement 2022
+Yoto,Maritime hors Grand Lomé,3,Kouve,point de canton,323398.0,743603.0,16947,C,lieux candidats HDX (D13) ; grille WorldPop 2020 ramenée au recensement 2022
+Akébou,Plateaux,1,Djon,point de canton,257959.0,856046.0,20312,C,lieux candidats HDX (D13) ; grille WorldPop 2020 ramenée au recensement 2022
+Kpendjal-Ouest,Savanes,1,Nayega,point de canton,217369.0,1188714.0,55052,C,lieux candidats HDX (D13) ; grille WorldPop 2020 ramenée au recensement 2022
+Kpendjal-Ouest,Savanes,2,Namoundjoga,point de canton,220770.0,1205926.0,47600,C,lieux candidats HDX (D13) ; grille WorldPop 2020 ramenée au recensement 2022
+Kpendjal,Savanes,1,Borgou,point de canton,239952.0,1190756.0,23470,C,lieux candidats HDX (D13) ; grille WorldPop 2020 ramenée au recensement 2022
+Kpendjal,Savanes,2,Mandouri,point de canton,259888.0,1204204.0,20227,C,lieux candidats HDX (D13) ; grille WorldPop 2020 ramenée au recensement 2022
+Amou,Plateaux,1,Ouma-Amlame,point de canton,270439.0,825202.0,26066,C,lieux candidats HDX (D13) ; grille WorldPop 2020 ramenée au recensement 2022
+Amou,Plateaux,2,Hiheatro,point de canton,284646.0,838486.0,20276,C,lieux candidats HDX (D13) ; grille WorldPop 2020 ramenée au recensement 2022
+Doufelgou,Kara,1,Tenega,point de canton,296359.0,1087664.0,37551,C,lieux candidats HDX (D13) ; grille WorldPop 2020 ramenée au recensement 2022
+Doufelgou,Kara,2,Niamtougou,point de canton,283400.0,1073909.0,15501,C,lieux candidats HDX (D13) ; grille WorldPop 2020 ramenée au recensement 2022
+Binah,Kara,1,Pagouda,chef-lieu,316570.0,1078502.0,50023,C,lieux candidats HDX (D13) ; grille WorldPop 2020 ramenée au recensement 2022
+Binah,Kara,2,Kemerida,point de canton,318863.0,1063515.0,15208,C,lieux candidats HDX (D13) ; grille WorldPop 2020 ramenée au recensement 2022
+Avé,Maritime hors Grand Lomé,1,Ave,point de préfecture,269322.0,712226.0,39500,C,lieux candidats HDX (D13) ; grille WorldPop 2020 ramenée au recensement 2022
+Avé,Maritime hors Grand Lomé,2,Badja,point de canton,280795.0,705232.0,15052,C,lieux candidats HDX (D13) ; grille WorldPop 2020 ramenée au recensement 2022
+Tandjoaré,Savanes,1,Goundoga,point de canton,190424.0,1185834.0,66415,C,lieux candidats HDX (D13) ; grille WorldPop 2020 ramenée au recensement 2022
+Tandjoaré,Savanes,2,Tandjoare,point de préfecture,189277.0,1173879.0,24599,C,lieux candidats HDX (D13) ; grille WorldPop 2020 ramenée au recensement 2022
+Kéran,Kara,1,Warengo,point de canton,293043.0,1115068.0,29450,C,lieux candidats HDX (D13) ; grille WorldPop 2020 ramenée au recensement 2022
+Kéran,Kara,2,Kande,chef-lieu,285643.0,1101377.0,25772,C,lieux candidats HDX (D13) ; grille WorldPop 2020 ramenée au recensement 2022
+Dankpen,Kara,1,Dankpen,point de préfecture,235904.0,1076105.0,41317,C,lieux candidats HDX (D13) ; grille WorldPop 2020 ramenée au recensement 2022
+Dankpen,Kara,2,Kidjaboun,point de canton,219328.0,1081164.0,26801,C,lieux candidats HDX (D13) ; grille WorldPop 2020 ramenée au recensement 2022
+Dankpen,Kara,3,Katchamba,point de canton,227422.0,1092504.0,18208,C,lieux candidats HDX (D13) ; grille WorldPop 2020 ramenée au recensement 2022
+Moyen-Mono,Plateaux,1,Tohoun,point de canton,345392.0,779821.0,36607,C,lieux candidats HDX (D13) ; grille WorldPop 2020 ramenée au recensement 2022
+Moyen-Mono,Plateaux,2,Kpekpleme,point de canton,344039.0,807236.0,31318,C,lieux candidats HDX (D13) ; grille WorldPop 2020 ramenée au recensement 2022
+Mô,Centrale,1,Tindjassi,point de canton,226396.0,957902.0,12655,C,lieux candidats HDX (D13) ; grille WorldPop 2020 ramenée au recensement 2022

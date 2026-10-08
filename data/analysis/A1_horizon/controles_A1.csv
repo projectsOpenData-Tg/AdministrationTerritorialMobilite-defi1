@@ -1,0 +1,16 @@
+ID,Contrôle,Attendu,Mesure,Résultat
+10-01,Population,"Somme des préfectures = total national, chaque année et chaque variante (R-04)",7 années × 2 variantes ; 2031 : 9 767 000,conforme
+10-02,Population en 2022 ; méthode des 18 ans et plus,"(a) = (b) = recensement, préfecture par préfecture ; la coupe à 18 ans retrouve D7 en 2023 et 2024",écart maximal en 2022 : 0.000000 ; écart sur les 18 ans et plus : 0.4,conforme
+10-03,Reproduction du 07 et du 08,"En 2022, les sommes des colonnes O5-04 de classement_08.csv","ae_levier : 41,0 pour 41,0 ; km_levier : 304,6 pour 304,6 ; ae_tous : 54,0 pour 54,0 ; km_tous : 327,9 pour 327,9",conforme
+10-04,Reproduction du 10,"En 2022, les quantités de recommandations_10.csv et les ruraux de zones_10.csv","REC-R1 : 175,6 pour 175,6 ; REC-R2 : 129,0 pour 129,0 ; REC-F1 : 25,0 pour 25,0 ; REC-F2 : 16,0 pour 16,0 ; REC-R4 : 28,3 pour 28,3 ; REC-F3 : 5 513 pour 5 513 ; ruraux à plus de 2 km : 3 828 051 pour 3 828 051",conforme
+10-05,Bornes,"Borne basse ≤ valeur ≤ borne haute, sur chaque ligne",981 lignes,conforme
+10-06,Sens,"Quantités positives ou nulles ; non décroissantes de 2026 à 2031 (auto-écoles, Mô, permis)",0 quantité négative ; 0 baisse,conforme
+10-07,Agrégats,"6 zones, 5 régions ; agrégat = somme des préfectures (R-02, R-03) ; REC-R1 + REC-R2 et REC-F1 + REC-F2 = pays, sans double compte","6 zones, 5 régions ; écart maximal 2.00 (arrondis) ; double compte : aucun",conforme
+10-08,Niveaux,"Toute valeur projetée en C, avec sa source",879 lignes projetées,conforme
+10-09,Cible de la Décennie,"En 2030 : moitié de la valeur de 2021, blessés et tués",Blessés : 4 688 pour 9 376 en 2021 ; Tués : 340 pour 680 en 2021,conforme
+10-10,Maille nationale,Aucune ligne territoriale pour les permis et les accidents,0 ligne territoriale ; national_A1.csv sans colonne de territoire,conforme
+10-11,Plafond du casque,Produit de la part des deux-roues parmi les tués (OMS) et de l’effet du casque (Cochrane),"60 % × 42 % = 25,2 % des tués",conforme
+10-12,Grille WorldPop,Grille ramenée = population et population rurale de chaque préfecture,6718506 carreaux peuplés ; 8 786 923 habitants dans la grille brute ; écart maximal 0.0000,conforme
+10-13,Chiffres du document,Chaque nombre des blocs de résultats se retrouve dans les CSV,"6 blocs, 179 nombres, 0 introuvable(s)",conforme
+10-14,Sources,Fichiers bruts identiques au registre du 03 ; empreinte de la grille consignée,4 sur 4 identiques ; grille f9c0ed84b8e3…,conforme
+10-15,Erratum et formules,"Chaque ligne de l’erratum nomme le document, la source et la conséquence ; chaque formule dit d’où viennent ses valeurs","1 correction(s), 1 réserve(s), 8 formules",conforme

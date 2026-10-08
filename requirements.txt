@@ -10,6 +10,7 @@ pypdf==6.19.0
 geopandas==1.2.0
 shapely==2.1.2
 pyproj==3.7.2
+rasterio==1.4.4  # grille WorldPop de l'annexe A1 (partie 3)
 
 # Figures
 matplotlib==3.10.0  # <= 3.10.0, exigé par ydata-profiling

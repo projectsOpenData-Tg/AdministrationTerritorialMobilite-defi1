@@ -1,0 +1,275 @@
+Mesure,Série,Année,Palier,Valeur,Borne basse,Borne haute,Unité,Niveau,Source,Note
+Population,observée,2007,,5690677.0,,,habitants,C,D7 ; projections de l'INSEED,
+Population,observée,2008,,5856632.0,,,habitants,C,D7 ; projections de l'INSEED,
+Population,observée,2009,,6024964.0,,,habitants,C,D7 ; projections de l'INSEED,
+Population,observée,2010,,6191155.0,,,habitants,A,D7 ; projections de l'INSEED,
+Population,observée,2011,,6202000.0,,,habitants,C,D7 ; projections de l'INSEED,
+Population,observée,2012,,6353000.0,,,habitants,C,D7 ; projections de l'INSEED,
+Population,observée,2013,,6509000.0,,,habitants,C,D7 ; projections de l'INSEED,
+Population,observée,2014,,6669000.0,,,habitants,C,D7 ; projections de l'INSEED,
+Population,observée,2015,,6835000.0,,,habitants,C,D7 ; projections de l'INSEED,
+Population,observée,2016,,7006000.0,,,habitants,C,D7 ; projections de l'INSEED,
+Population,observée,2017,,7178000.0,,,habitants,C,D7 ; projections de l'INSEED,
+Population,observée,2018,,7352000.0,,,habitants,C,D7 ; projections de l'INSEED,
+Population,observée,2019,,7528000.0,,,habitants,C,D7 ; projections de l'INSEED,
+Population,observée,2020,,7706000.0,,,habitants,C,D7 ; projections de l'INSEED,
+Population,observée,2021,,7886000.0,,,habitants,C,D7 ; projections de l'INSEED,
+Population,observée,2022,Passé,8095498.0,,,habitants,A,D7 ; projections de l'INSEED,
+Population,observée,2023,,8251000.0,,,habitants,C,D7 ; projections de l'INSEED,
+Population,observée,2024,,8437000.0,,,habitants,C,D7 ; projections de l'INSEED,
+Population,projetée,2025,,8624000.0,,,habitants,C,D7 ; projections de l'INSEED,
+Population,projetée,2026,Actuel,8812000.0,,,habitants,C,D7 ; projections de l'INSEED,
+Population,projetée,2027,+1 an,9002000.0,,,habitants,C,D7 ; projections de l'INSEED,
+Population,projetée,2028,,9192000.0,,,habitants,C,D7 ; projections de l'INSEED,
+Population,projetée,2029,+3 ans,9384000.0,,,habitants,C,D7 ; projections de l'INSEED,
+Population,projetée,2030,,9575000.0,,,habitants,C,D7 ; projections de l'INSEED,
+Population,projetée,2031,+5 ans,9767000.0,,,habitants,C,D7 ; projections de l'INSEED,
+Population de 18 ans et plus,observée,2007,,2948776.0,,,habitants,C,D7_population_age_conduire.csv,
+Population de 18 ans et plus,observée,2008,,3041626.0,,,habitants,C,D7_population_age_conduire.csv,
+Population de 18 ans et plus,observée,2009,,3133765.0,,,habitants,C,D7_population_age_conduire.csv,
+Population de 18 ans et plus,observée,2010,,3221461.0,,,habitants,C,D7_population_age_conduire.csv,
+Population de 18 ans et plus,observée,2011,,3195240.0,,,habitants,C,D7_population_age_conduire.csv,
+Population de 18 ans et plus,observée,2012,,3284434.0,,,habitants,C,D7_population_age_conduire.csv,
+Population de 18 ans et plus,observée,2013,,3376517.0,,,habitants,C,D7_population_age_conduire.csv,
+Population de 18 ans et plus,observée,2014,,3468917.0,,,habitants,C,D7_population_age_conduire.csv,
+Population de 18 ans et plus,observée,2015,,3570716.0,,,habitants,C,D7_population_age_conduire.csv,
+Population de 18 ans et plus,observée,2016,,3681007.0,,,habitants,C,D7_population_age_conduire.csv,
+Population de 18 ans et plus,observée,2017,,3794850.0,,,habitants,C,D7_population_age_conduire.csv,
+Population de 18 ans et plus,observée,2018,,3915009.0,,,habitants,C,D7_population_age_conduire.csv,
+Population de 18 ans et plus,observée,2019,,4040709.0,,,habitants,C,D7_population_age_conduire.csv,
+Population de 18 ans et plus,observée,2020,,4176944.0,,,habitants,C,D7_population_age_conduire.csv,
+Population de 18 ans et plus,observée,2021,,4312969.0,,,habitants,C,D7_population_age_conduire.csv,
+Population de 18 ans et plus,observée,2022,Passé,4193458.0,,,habitants,A,D7_population_age_conduire.csv,
+Population de 18 ans et plus,projetée,2023,,4323704.0,,,habitants,C,"recensement 2022 × croissance des projections de l'INSEED par âge (groupe 15-19 coupé avec WPP), A1-5","raccord : 18 ans et plus = 51,8 % de la population au recensement 2022, 55,6 % dans les projections de 2023"
+Population de 18 ans et plus,projetée,2024,,4459505.0,,,habitants,C,"recensement 2022 × croissance des projections de l'INSEED par âge (groupe 15-19 coupé avec WPP), A1-5","raccord : 18 ans et plus = 51,8 % de la population au recensement 2022, 55,6 % dans les projections de 2023"
+Population de 18 ans et plus,projetée,2025,,4597594.0,,,habitants,C,"recensement 2022 × croissance des projections de l'INSEED par âge (groupe 15-19 coupé avec WPP), A1-5","raccord : 18 ans et plus = 51,8 % de la population au recensement 2022, 55,6 % dans les projections de 2023"
+Population de 18 ans et plus,projetée,2026,Actuel,4736037.0,,,habitants,C,"recensement 2022 × croissance des projections de l'INSEED par âge (groupe 15-19 coupé avec WPP), A1-5","raccord : 18 ans et plus = 51,8 % de la population au recensement 2022, 55,6 % dans les projections de 2023"
+Population de 18 ans et plus,projetée,2027,+1 an,4864611.0,,,habitants,C,"recensement 2022 × croissance des projections de l'INSEED par âge (groupe 15-19 coupé avec WPP), A1-5","raccord : 18 ans et plus = 51,8 % de la population au recensement 2022, 55,6 % dans les projections de 2023"
+Population de 18 ans et plus,projetée,2028,,4996485.0,,,habitants,C,"recensement 2022 × croissance des projections de l'INSEED par âge (groupe 15-19 coupé avec WPP), A1-5","raccord : 18 ans et plus = 51,8 % de la population au recensement 2022, 55,6 % dans les projections de 2023"
+Population de 18 ans et plus,projetée,2029,+3 ans,5131425.0,,,habitants,C,"recensement 2022 × croissance des projections de l'INSEED par âge (groupe 15-19 coupé avec WPP), A1-5","raccord : 18 ans et plus = 51,8 % de la population au recensement 2022, 55,6 % dans les projections de 2023"
+Population de 18 ans et plus,projetée,2030,,5262717.0,,,habitants,C,"recensement 2022 × croissance des projections de l'INSEED par âge (groupe 15-19 coupé avec WPP), A1-5","raccord : 18 ans et plus = 51,8 % de la population au recensement 2022, 55,6 % dans les projections de 2023"
+Population de 18 ans et plus,projetée,2031,+5 ans,5398017.0,,,habitants,C,"recensement 2022 × croissance des projections de l'INSEED par âge (groupe 15-19 coupé avec WPP), A1-5","raccord : 18 ans et plus = 51,8 % de la population au recensement 2022, 55,6 % dans les projections de 2023"
+Permis A,observé,2007,,205.0,,,permis délivrés,A,D2_permis.csv,
+Permis A,observé,2008,,198.0,,,permis délivrés,A,D2_permis.csv,
+Permis A,observé,2009,,398.0,,,permis délivrés,A,D2_permis.csv,
+Permis A,observé,2010,,206.0,,,permis délivrés,A,D2_permis.csv,
+Permis A,observé,2011,,157.0,,,permis délivrés,A,D2_permis.csv,
+Permis A,observé,2012,,129.0,,,permis délivrés,A,D2_permis.csv,
+Permis A,observé,2013,,,,,permis délivrés,A,D2_permis.csv,
+Permis A,observé,2014,,283.0,,,permis délivrés,A,D2_permis.csv,
+Permis A,observé,2015,,104.0,,,permis délivrés,A,D2_permis.csv,
+Permis A,observé,2016,,387.0,,,permis délivrés,A,D2_permis.csv,
+Permis A,observé,2017,,312.0,,,permis délivrés,A,D2_permis.csv,
+Permis A,observé,2018,,406.0,,,permis délivrés,A,D2_permis.csv,
+Permis A,observé,2019,,2425.0,,,permis délivrés,A,D2_permis.csv,
+Permis A,observé,2020,,236.0,,,permis délivrés,A,D2_permis.csv,
+Permis A,observé,2021,,211.0,,,permis délivrés,A,D2_permis.csv,
+Permis A,observé,2022,Passé,4837.0,,,permis délivrés,A,D2_permis.csv,
+Permis A,observé,2023,,1538.0,,,permis délivrés,A,D2_permis.csv,
+Permis A,observé,2024,,10165.0,,,permis délivrés,A,D2_permis.csv,
+Permis A,Permis A pour garder le taux,2022,Passé,5345.0,,,permis délivrés,C,A1 §4 (A1-5) : taux moyen de 2022–2024 × population de 18 ans et plus,"taux : 1,275 pour 1 000"
+Permis A,Permis A pour garder le taux,2023,,5511.0,,,permis délivrés,C,A1 §4 (A1-5) : taux moyen de 2022–2024 × population de 18 ans et plus,"taux : 1,275 pour 1 000"
+Permis A,Permis A pour garder le taux,2024,,5684.0,,,permis délivrés,C,A1 §4 (A1-5) : taux moyen de 2022–2024 × population de 18 ans et plus,"taux : 1,275 pour 1 000"
+Permis A,Permis A pour garder le taux,2025,,5860.0,,,permis délivrés,C,A1 §4 (A1-5) : taux moyen de 2022–2024 × population de 18 ans et plus,"taux : 1,275 pour 1 000"
+Permis A,Permis A pour garder le taux,2026,Actuel,6037.0,,,permis délivrés,C,A1 §4 (A1-5) : taux moyen de 2022–2024 × population de 18 ans et plus,"taux : 1,275 pour 1 000"
+Permis A,Permis A pour garder le taux,2027,+1 an,6200.0,,,permis délivrés,C,A1 §4 (A1-5) : taux moyen de 2022–2024 × population de 18 ans et plus,"taux : 1,275 pour 1 000"
+Permis A,Permis A pour garder le taux,2028,,6368.0,,,permis délivrés,C,A1 §4 (A1-5) : taux moyen de 2022–2024 × population de 18 ans et plus,"taux : 1,275 pour 1 000"
+Permis A,Permis A pour garder le taux,2029,+3 ans,6540.0,,,permis délivrés,C,A1 §4 (A1-5) : taux moyen de 2022–2024 × population de 18 ans et plus,"taux : 1,275 pour 1 000"
+Permis A,Permis A pour garder le taux,2030,,6708.0,,,permis délivrés,C,A1 §4 (A1-5) : taux moyen de 2022–2024 × population de 18 ans et plus,"taux : 1,275 pour 1 000"
+Permis A,Permis A pour garder le taux,2031,+5 ans,6880.0,,,permis délivrés,C,A1 §4 (A1-5) : taux moyen de 2022–2024 × population de 18 ans et plus,"taux : 1,275 pour 1 000"
+Accidents constatés,observé,2010,,3101.0,,,nombre,A,D3_accidents.csv,
+Accidents constatés pour 100 000 habitants,observé,2010,,50.09,,,pour 100 000 habitants,A,D3 ; D7,
+Accidents constatés,observé,2011,,7889.0,,,nombre,A,D3_accidents.csv,
+Accidents constatés pour 100 000 habitants,observé,2011,,127.2,,,pour 100 000 habitants,C,D3 ; D7,
+Accidents constatés,observé,2012,,8155.0,,,nombre,A,D3_accidents.csv,
+Accidents constatés pour 100 000 habitants,observé,2012,,128.36,,,pour 100 000 habitants,C,D3 ; D7,
+Accidents constatés,observé,2013,,5401.0,,,nombre,A,D3_accidents.csv,
+Accidents constatés pour 100 000 habitants,observé,2013,,82.98,,,pour 100 000 habitants,C,D3 ; D7,
+Accidents constatés,observé,2014,,5390.0,,,nombre,A,D3_accidents.csv,
+Accidents constatés pour 100 000 habitants,observé,2014,,80.82,,,pour 100 000 habitants,C,D3 ; D7,
+Accidents constatés,observé,2015,,2851.0,,,nombre,A,D3_accidents.csv,
+Accidents constatés pour 100 000 habitants,observé,2015,,41.71,,,pour 100 000 habitants,C,D3 ; D7,
+Accidents constatés,observé,2016,,5393.0,,,nombre,A,D3_accidents.csv,
+Accidents constatés pour 100 000 habitants,observé,2016,,76.98,,,pour 100 000 habitants,C,D3 ; D7,
+Accidents constatés,observé,2017,,5181.0,,,nombre,A,D3_accidents.csv,
+Accidents constatés pour 100 000 habitants,observé,2017,,72.18,,,pour 100 000 habitants,C,D3 ; D7,
+Accidents constatés,observé,2018,,5814.0,,,nombre,A,D3_accidents.csv,
+Accidents constatés pour 100 000 habitants,observé,2018,,79.08,,,pour 100 000 habitants,C,D3 ; D7,
+Accidents constatés,observé,2019,,5402.0,,,nombre,A,D3_accidents.csv,
+Accidents constatés pour 100 000 habitants,observé,2019,,71.76,,,pour 100 000 habitants,C,D3 ; D7,
+Accidents constatés,observé,2020,,7130.0,,,nombre,A,D3_accidents.csv,
+Accidents constatés pour 100 000 habitants,observé,2020,,92.53,,,pour 100 000 habitants,C,D3 ; D7,
+Accidents constatés,observé,2021,,7392.0,,,nombre,A,D3_accidents.csv,
+Accidents constatés pour 100 000 habitants,observé,2021,,93.74,,,pour 100 000 habitants,C,D3 ; D7,
+Accidents constatés,observé,2022,Passé,7507.0,,,nombre,A,D3_accidents.csv,
+Accidents constatés pour 100 000 habitants,observé,2022,Passé,92.73,,,pour 100 000 habitants,A,D3 ; D7,
+Accidents constatés,observé,2023,,6906.0,,,nombre,A,D3_accidents.csv,
+Accidents constatés pour 100 000 habitants,observé,2023,,83.7,,,pour 100 000 habitants,C,D3 ; D7,
+Accidents constatés,observé,2024,,6529.0,,,nombre,A,D3_accidents.csv,
+Accidents constatés pour 100 000 habitants,observé,2024,,77.39,,,pour 100 000 habitants,C,D3 ; D7,
+Accidents constatés,Taux inchangé,2025,,7296.0,7074.0,7296.0,nombre,C,A1 §5 (A1-6) : taux moyen de 2022–2024 × population,"taux : 84,60 pour 100 000"
+Accidents constatés,Tendance,2025,,7074.0,7074.0,7296.0,nombre,C,A1 §5 (A1-6) : variation annuelle entre 2010–2012 et 2022–2024,"variation annuelle : -1,54 %"
+Accidents constatés,Taux inchangé,2026,Actuel,7455.0,7117.0,7455.0,nombre,C,A1 §5 (A1-6) : taux moyen de 2022–2024 × population,"taux : 84,60 pour 100 000"
+Accidents constatés,Tendance,2026,Actuel,7117.0,7117.0,7455.0,nombre,C,A1 §5 (A1-6) : variation annuelle entre 2010–2012 et 2022–2024,"variation annuelle : -1,54 %"
+Accidents constatés,Taux inchangé,2027,+1 an,7616.0,7159.0,7616.0,nombre,C,A1 §5 (A1-6) : taux moyen de 2022–2024 × population,"taux : 84,60 pour 100 000"
+Accidents constatés,Tendance,2027,+1 an,7159.0,7159.0,7616.0,nombre,C,A1 §5 (A1-6) : variation annuelle entre 2010–2012 et 2022–2024,"variation annuelle : -1,54 %"
+Accidents constatés,Taux inchangé,2028,,7777.0,7197.0,7777.0,nombre,C,A1 §5 (A1-6) : taux moyen de 2022–2024 × population,"taux : 84,60 pour 100 000"
+Accidents constatés,Tendance,2028,,7197.0,7197.0,7777.0,nombre,C,A1 §5 (A1-6) : variation annuelle entre 2010–2012 et 2022–2024,"variation annuelle : -1,54 %"
+Accidents constatés,Taux inchangé,2029,+3 ans,7939.0,7235.0,7939.0,nombre,C,A1 §5 (A1-6) : taux moyen de 2022–2024 × population,"taux : 84,60 pour 100 000"
+Accidents constatés,Tendance,2029,+3 ans,7235.0,7235.0,7939.0,nombre,C,A1 §5 (A1-6) : variation annuelle entre 2010–2012 et 2022–2024,"variation annuelle : -1,54 %"
+Accidents constatés,Taux inchangé,2030,,8101.0,7269.0,8101.0,nombre,C,A1 §5 (A1-6) : taux moyen de 2022–2024 × population,"taux : 84,60 pour 100 000"
+Accidents constatés,Tendance,2030,,7269.0,7269.0,8101.0,nombre,C,A1 §5 (A1-6) : variation annuelle entre 2010–2012 et 2022–2024,"variation annuelle : -1,54 %"
+Accidents constatés,Taux inchangé,2031,+5 ans,8263.0,7300.0,8263.0,nombre,C,A1 §5 (A1-6) : taux moyen de 2022–2024 × population,"taux : 84,60 pour 100 000"
+Accidents constatés,Tendance,2031,+5 ans,7300.0,7300.0,8263.0,nombre,C,A1 §5 (A1-6) : variation annuelle entre 2010–2012 et 2022–2024,"variation annuelle : -1,54 %"
+Blessés,observé,2010,,6241.0,,,nombre,A,D3_accidents.csv,
+Blessés pour 100 000 habitants,observé,2010,,100.81,,,pour 100 000 habitants,A,D3 ; D7,
+Blessés,observé,2011,,9376.0,,,nombre,A,D3_accidents.csv,
+Blessés pour 100 000 habitants,observé,2011,,151.18,,,pour 100 000 habitants,C,D3 ; D7,
+Blessés,observé,2012,,9589.0,,,nombre,A,D3_accidents.csv,
+Blessés pour 100 000 habitants,observé,2012,,150.94,,,pour 100 000 habitants,C,D3 ; D7,
+Blessés,observé,2013,,7636.0,,,nombre,A,D3_accidents.csv,
+Blessés pour 100 000 habitants,observé,2013,,117.31,,,pour 100 000 habitants,C,D3 ; D7,
+Blessés,observé,2014,,5565.0,,,nombre,A,D3_accidents.csv,
+Blessés pour 100 000 habitants,observé,2014,,83.45,,,pour 100 000 habitants,C,D3 ; D7,
+Blessés,observé,2015,,3871.0,,,nombre,A,D3_accidents.csv,
+Blessés pour 100 000 habitants,observé,2015,,56.63,,,pour 100 000 habitants,C,D3 ; D7,
+Blessés,observé,2016,,6846.0,,,nombre,A,D3_accidents.csv,
+Blessés pour 100 000 habitants,observé,2016,,97.72,,,pour 100 000 habitants,C,D3 ; D7,
+Blessés,observé,2017,,8624.0,,,nombre,A,D3_accidents.csv,
+Blessés pour 100 000 habitants,observé,2017,,120.14,,,pour 100 000 habitants,C,D3 ; D7,
+Blessés,observé,2018,,7951.0,,,nombre,A,D3_accidents.csv,
+Blessés pour 100 000 habitants,observé,2018,,108.15,,,pour 100 000 habitants,C,D3 ; D7,
+Blessés,observé,2019,,7520.0,,,nombre,A,D3_accidents.csv,
+Blessés pour 100 000 habitants,observé,2019,,99.89,,,pour 100 000 habitants,C,D3 ; D7,
+Blessés,observé,2020,,9514.0,,,nombre,A,D3_accidents.csv,
+Blessés pour 100 000 habitants,observé,2020,,123.46,,,pour 100 000 habitants,C,D3 ; D7,
+Blessés,observé,2021,,9376.0,,,nombre,A,D3_accidents.csv,
+Blessés pour 100 000 habitants,observé,2021,,118.89,,,pour 100 000 habitants,C,D3 ; D7,
+Blessés,observé,2022,Passé,9918.0,,,nombre,A,D3_accidents.csv,
+Blessés pour 100 000 habitants,observé,2022,Passé,122.51,,,pour 100 000 habitants,A,D3 ; D7,
+Blessés,observé,2023,,9504.0,,,nombre,A,D3_accidents.csv,
+Blessés pour 100 000 habitants,observé,2023,,115.19,,,pour 100 000 habitants,C,D3 ; D7,
+Blessés,observé,2024,,9079.0,,,nombre,A,D3_accidents.csv,
+Blessés pour 100 000 habitants,observé,2024,,107.61,,,pour 100 000 habitants,C,D3 ; D7,
+Blessés,Taux inchangé,2025,,9926.0,9674.0,9926.0,nombre,C,A1 §5 (A1-6) : taux moyen de 2022–2024 × population,"taux : 115,10 pour 100 000"
+Blessés,Tendance,2025,,9674.0,9674.0,9926.0,nombre,C,A1 §5 (A1-6) : variation annuelle entre 2010–2012 et 2022–2024,"variation annuelle : -1,28 %"
+Blessés,Écart à la cible (taux inchangé),2025,,2634.0,,,nombre,C,A1 §5 ; résolution A/RES/74/299 de l'Assemblée générale des Nations unies (2020),
+Blessés,Écart à la cible (tendance),2025,,2382.0,,,nombre,C,A1 §5 ; résolution A/RES/74/299 de l'Assemblée générale des Nations unies (2020),
+Blessés,Taux inchangé,2026,Actuel,10143.0,9759.0,10143.0,nombre,C,A1 §5 (A1-6) : taux moyen de 2022–2024 × population,"taux : 115,10 pour 100 000"
+Blessés,Tendance,2026,Actuel,9759.0,9759.0,10143.0,nombre,C,A1 §5 (A1-6) : variation annuelle entre 2010–2012 et 2022–2024,"variation annuelle : -1,28 %"
+Blessés,Écart à la cible (taux inchangé),2026,Actuel,3371.0,,,nombre,C,A1 §5 ; résolution A/RES/74/299 de l'Assemblée générale des Nations unies (2020),
+Blessés,Écart à la cible (tendance),2026,Actuel,2987.0,,,nombre,C,A1 §5 ; résolution A/RES/74/299 de l'Assemblée générale des Nations unies (2020),
+Blessés,Taux inchangé,2027,+1 an,10362.0,9842.0,10362.0,nombre,C,A1 §5 (A1-6) : taux moyen de 2022–2024 × population,"taux : 115,10 pour 100 000"
+Blessés,Tendance,2027,+1 an,9842.0,9842.0,10362.0,nombre,C,A1 §5 (A1-6) : variation annuelle entre 2010–2012 et 2022–2024,"variation annuelle : -1,28 %"
+Blessés,Écart à la cible (taux inchangé),2027,+1 an,4111.0,,,nombre,C,A1 §5 ; résolution A/RES/74/299 de l'Assemblée générale des Nations unies (2020),
+Blessés,Écart à la cible (tendance),2027,+1 an,3591.0,,,nombre,C,A1 §5 ; résolution A/RES/74/299 de l'Assemblée générale des Nations unies (2020),
+Blessés,Taux inchangé,2028,,10580.0,9921.0,10580.0,nombre,C,A1 §5 (A1-6) : taux moyen de 2022–2024 × population,"taux : 115,10 pour 100 000"
+Blessés,Tendance,2028,,9921.0,9921.0,10580.0,nombre,C,A1 §5 (A1-6) : variation annuelle entre 2010–2012 et 2022–2024,"variation annuelle : -1,28 %"
+Blessés,Écart à la cible (taux inchangé),2028,,4850.0,,,nombre,C,A1 §5 ; résolution A/RES/74/299 de l'Assemblée générale des Nations unies (2020),
+Blessés,Écart à la cible (tendance),2028,,4192.0,,,nombre,C,A1 §5 ; résolution A/RES/74/299 de l'Assemblée générale des Nations unies (2020),
+Blessés,Taux inchangé,2029,+3 ans,10801.0,9999.0,10801.0,nombre,C,A1 §5 (A1-6) : taux moyen de 2022–2024 × population,"taux : 115,10 pour 100 000"
+Blessés,Tendance,2029,+3 ans,9999.0,9999.0,10801.0,nombre,C,A1 §5 (A1-6) : variation annuelle entre 2010–2012 et 2022–2024,"variation annuelle : -1,28 %"
+Blessés,Écart à la cible (taux inchangé),2029,+3 ans,5592.0,,,nombre,C,A1 §5 ; résolution A/RES/74/299 de l'Assemblée générale des Nations unies (2020),
+Blessés,Écart à la cible (tendance),2029,+3 ans,4790.0,,,nombre,C,A1 §5 ; résolution A/RES/74/299 de l'Assemblée générale des Nations unies (2020),
+Blessés,Taux inchangé,2030,,11021.0,10072.0,11021.0,nombre,C,A1 §5 (A1-6) : taux moyen de 2022–2024 × population,"taux : 115,10 pour 100 000"
+Blessés,Tendance,2030,,10072.0,10072.0,11021.0,nombre,C,A1 §5 (A1-6) : variation annuelle entre 2010–2012 et 2022–2024,"variation annuelle : -1,28 %"
+Blessés,Écart à la cible (taux inchangé),2030,,6333.0,,,nombre,C,A1 §5 ; résolution A/RES/74/299 de l'Assemblée générale des Nations unies (2020),
+Blessés,Écart à la cible (tendance),2030,,5384.0,,,nombre,C,A1 §5 ; résolution A/RES/74/299 de l'Assemblée générale des Nations unies (2020),
+Blessés,Taux inchangé,2031,+5 ans,11242.0,10143.0,11242.0,nombre,C,A1 §5 (A1-6) : taux moyen de 2022–2024 × population,"taux : 115,10 pour 100 000"
+Blessés,Tendance,2031,+5 ans,10143.0,10143.0,11242.0,nombre,C,A1 §5 (A1-6) : variation annuelle entre 2010–2012 et 2022–2024,"variation annuelle : -1,28 %"
+Blessés,Écart à la cible (taux inchangé),2031,+5 ans,6554.0,,,nombre,C,A1 §5 ; résolution A/RES/74/299 de l'Assemblée générale des Nations unies (2020),
+Blessés,Écart à la cible (tendance),2031,+5 ans,5455.0,,,nombre,C,A1 §5 ; résolution A/RES/74/299 de l'Assemblée générale des Nations unies (2020),
+Blessés,Cible de la Décennie,2021,,9376.0,,,nombre,C,résolution A/RES/74/299 de l'Assemblée générale des Nations unies (2020),trajectoire linéaire depuis 2021 ; 2031 garde la cible de 2030
+Blessés,Cible de la Décennie,2022,Passé,8855.0,,,nombre,C,résolution A/RES/74/299 de l'Assemblée générale des Nations unies (2020),trajectoire linéaire depuis 2021 ; 2031 garde la cible de 2030
+Blessés,Cible de la Décennie,2023,,8334.0,,,nombre,C,résolution A/RES/74/299 de l'Assemblée générale des Nations unies (2020),trajectoire linéaire depuis 2021 ; 2031 garde la cible de 2030
+Blessés,Cible de la Décennie,2024,,7813.0,,,nombre,C,résolution A/RES/74/299 de l'Assemblée générale des Nations unies (2020),trajectoire linéaire depuis 2021 ; 2031 garde la cible de 2030
+Blessés,Cible de la Décennie,2025,,7292.0,,,nombre,C,résolution A/RES/74/299 de l'Assemblée générale des Nations unies (2020),trajectoire linéaire depuis 2021 ; 2031 garde la cible de 2030
+Blessés,Cible de la Décennie,2026,Actuel,6772.0,,,nombre,C,résolution A/RES/74/299 de l'Assemblée générale des Nations unies (2020),trajectoire linéaire depuis 2021 ; 2031 garde la cible de 2030
+Blessés,Cible de la Décennie,2027,+1 an,6251.0,,,nombre,C,résolution A/RES/74/299 de l'Assemblée générale des Nations unies (2020),trajectoire linéaire depuis 2021 ; 2031 garde la cible de 2030
+Blessés,Cible de la Décennie,2028,,5730.0,,,nombre,C,résolution A/RES/74/299 de l'Assemblée générale des Nations unies (2020),trajectoire linéaire depuis 2021 ; 2031 garde la cible de 2030
+Blessés,Cible de la Décennie,2029,+3 ans,5209.0,,,nombre,C,résolution A/RES/74/299 de l'Assemblée générale des Nations unies (2020),trajectoire linéaire depuis 2021 ; 2031 garde la cible de 2030
+Blessés,Cible de la Décennie,2030,,4688.0,,,nombre,C,résolution A/RES/74/299 de l'Assemblée générale des Nations unies (2020),trajectoire linéaire depuis 2021 ; 2031 garde la cible de 2030
+Blessés,Cible de la Décennie,2031,+5 ans,4688.0,,,nombre,C,résolution A/RES/74/299 de l'Assemblée générale des Nations unies (2020),trajectoire linéaire depuis 2021 ; 2031 garde la cible de 2030
+Tués,observé,2010,,470.0,,,nombre,A,D3_accidents.csv,
+Tués pour 100 000 habitants,observé,2010,,7.59,,,pour 100 000 habitants,A,D3 ; D7,
+Tués,observé,2011,,739.0,,,nombre,A,D3_accidents.csv,
+Tués pour 100 000 habitants,observé,2011,,11.92,,,pour 100 000 habitants,C,D3 ; D7,
+Tués,observé,2012,,753.0,,,nombre,A,D3_accidents.csv,
+Tués pour 100 000 habitants,observé,2012,,11.85,,,pour 100 000 habitants,C,D3 ; D7,
+Tués,observé,2013,,640.0,,,nombre,A,D3_accidents.csv,
+Tués pour 100 000 habitants,observé,2013,,9.83,,,pour 100 000 habitants,C,D3 ; D7,
+Tués,observé,2014,,802.0,,,nombre,A,D3_accidents.csv,
+Tués pour 100 000 habitants,observé,2014,,12.03,,,pour 100 000 habitants,C,D3 ; D7,
+Tués,observé,2015,,473.0,,,nombre,A,D3_accidents.csv,
+Tués pour 100 000 habitants,observé,2015,,6.92,,,pour 100 000 habitants,C,D3 ; D7,
+Tués,observé,2016,,514.0,,,nombre,A,D3_accidents.csv,
+Tués pour 100 000 habitants,observé,2016,,7.34,,,pour 100 000 habitants,C,D3 ; D7,
+Tués,observé,2017,,580.0,,,nombre,A,D3_accidents.csv,
+Tués pour 100 000 habitants,observé,2017,,8.08,,,pour 100 000 habitants,C,D3 ; D7,
+Tués,observé,2018,,592.0,,,nombre,A,D3_accidents.csv,
+Tués pour 100 000 habitants,observé,2018,,8.05,,,pour 100 000 habitants,C,D3 ; D7,
+Tués,observé,2019,,580.0,,,nombre,A,D3_accidents.csv,
+Tués pour 100 000 habitants,observé,2019,,7.7,,,pour 100 000 habitants,C,D3 ; D7,
+Tués,observé,2020,,576.0,,,nombre,A,D3_accidents.csv,
+Tués pour 100 000 habitants,observé,2020,,7.47,,,pour 100 000 habitants,C,D3 ; D7,
+Tués,observé,2021,,680.0,,,nombre,A,D3_accidents.csv,
+Tués pour 100 000 habitants,observé,2021,,8.62,,,pour 100 000 habitants,C,D3 ; D7,
+Tués,observé,2022,Passé,683.0,,,nombre,A,D3_accidents.csv,
+Tués pour 100 000 habitants,observé,2022,Passé,8.44,,,pour 100 000 habitants,A,D3 ; D7,
+Tués,observé,2023,,546.0,,,nombre,A,D3_accidents.csv,
+Tués pour 100 000 habitants,observé,2023,,6.62,,,pour 100 000 habitants,C,D3 ; D7,
+Tués,observé,2024,,597.0,,,nombre,A,D3_accidents.csv,
+Tués pour 100 000 habitants,observé,2024,,7.08,,,pour 100 000 habitants,C,D3 ; D7,
+Tués,Taux inchangé,2025,,636.0,600.0,636.0,nombre,C,A1 §5 (A1-6) : taux moyen de 2022–2024 × population,"taux : 7,38 pour 100 000"
+Tués,Tendance,2025,,600.0,600.0,636.0,nombre,C,A1 §5 (A1-6) : variation annuelle entre 2010–2012 et 2022–2024,"variation annuelle : -2,86 %"
+Tués,Écart à la cible (taux inchangé),2025,,107.0,,,nombre,C,A1 §5 ; résolution A/RES/74/299 de l'Assemblée générale des Nations unies (2020),
+Tués,Écart à la cible (tendance),2025,,71.0,,,nombre,C,A1 §5 ; résolution A/RES/74/299 de l'Assemblée générale des Nations unies (2020),
+Tués,Plafond du casque (taux inchangé),2025,,160.0,122.0,191.0,tués évitables au plus,C,"D3_victimes_usager_2021.csv (OMS) ; revue Cochrane CD004333 (Liu et al., 2008) : risque de décès réduit de 42 % (OR 0,58 ; IC 95 % 0,50–0,68)",plafond : suppose qu’aucun usager de deux-roues tué ne portait de casque ; taux de port non publié (OMS 2023)
+Tués,Plafond du casque (tendance),2025,,151.0,115.0,180.0,tués évitables au plus,C,"D3_victimes_usager_2021.csv (OMS) ; revue Cochrane CD004333 (Liu et al., 2008) : risque de décès réduit de 42 % (OR 0,58 ; IC 95 % 0,50–0,68)",plafond : suppose qu’aucun usager de deux-roues tué ne portait de casque ; taux de port non publié (OMS 2023)
+Tués,Taux inchangé,2026,Actuel,650.0,596.0,650.0,nombre,C,A1 §5 (A1-6) : taux moyen de 2022–2024 × population,"taux : 7,38 pour 100 000"
+Tués,Tendance,2026,Actuel,596.0,596.0,650.0,nombre,C,A1 §5 (A1-6) : variation annuelle entre 2010–2012 et 2022–2024,"variation annuelle : -2,86 %"
+Tués,Écart à la cible (taux inchangé),2026,Actuel,159.0,,,nombre,C,A1 §5 ; résolution A/RES/74/299 de l'Assemblée générale des Nations unies (2020),
+Tués,Écart à la cible (tendance),2026,Actuel,105.0,,,nombre,C,A1 §5 ; résolution A/RES/74/299 de l'Assemblée générale des Nations unies (2020),
+Tués,Plafond du casque (taux inchangé),2026,Actuel,164.0,125.0,195.0,tués évitables au plus,C,"D3_victimes_usager_2021.csv (OMS) ; revue Cochrane CD004333 (Liu et al., 2008) : risque de décès réduit de 42 % (OR 0,58 ; IC 95 % 0,50–0,68)",plafond : suppose qu’aucun usager de deux-roues tué ne portait de casque ; taux de port non publié (OMS 2023)
+Tués,Plafond du casque (tendance),2026,Actuel,150.0,114.0,179.0,tués évitables au plus,C,"D3_victimes_usager_2021.csv (OMS) ; revue Cochrane CD004333 (Liu et al., 2008) : risque de décès réduit de 42 % (OR 0,58 ; IC 95 % 0,50–0,68)",plafond : suppose qu’aucun usager de deux-roues tué ne portait de casque ; taux de port non publié (OMS 2023)
+Tués,Taux inchangé,2027,+1 an,664.0,591.0,664.0,nombre,C,A1 §5 (A1-6) : taux moyen de 2022–2024 × population,"taux : 7,38 pour 100 000"
+Tués,Tendance,2027,+1 an,591.0,591.0,664.0,nombre,C,A1 §5 (A1-6) : variation annuelle entre 2010–2012 et 2022–2024,"variation annuelle : -2,86 %"
+Tués,Écart à la cible (taux inchangé),2027,+1 an,211.0,,,nombre,C,A1 §5 ; résolution A/RES/74/299 de l'Assemblée générale des Nations unies (2020),
+Tués,Écart à la cible (tendance),2027,+1 an,138.0,,,nombre,C,A1 §5 ; résolution A/RES/74/299 de l'Assemblée générale des Nations unies (2020),
+Tués,Plafond du casque (taux inchangé),2027,+1 an,167.0,127.0,199.0,tués évitables au plus,C,"D3_victimes_usager_2021.csv (OMS) ; revue Cochrane CD004333 (Liu et al., 2008) : risque de décès réduit de 42 % (OR 0,58 ; IC 95 % 0,50–0,68)",plafond : suppose qu’aucun usager de deux-roues tué ne portait de casque ; taux de port non publié (OMS 2023)
+Tués,Plafond du casque (tendance),2027,+1 an,149.0,114.0,177.0,tués évitables au plus,C,"D3_victimes_usager_2021.csv (OMS) ; revue Cochrane CD004333 (Liu et al., 2008) : risque de décès réduit de 42 % (OR 0,58 ; IC 95 % 0,50–0,68)",plafond : suppose qu’aucun usager de deux-roues tué ne portait de casque ; taux de port non publié (OMS 2023)
+Tués,Taux inchangé,2028,,678.0,586.0,678.0,nombre,C,A1 §5 (A1-6) : taux moyen de 2022–2024 × population,"taux : 7,38 pour 100 000"
+Tués,Tendance,2028,,586.0,586.0,678.0,nombre,C,A1 §5 (A1-6) : variation annuelle entre 2010–2012 et 2022–2024,"variation annuelle : -2,86 %"
+Tués,Écart à la cible (taux inchangé),2028,,263.0,,,nombre,C,A1 §5 ; résolution A/RES/74/299 de l'Assemblée générale des Nations unies (2020),
+Tués,Écart à la cible (tendance),2028,,171.0,,,nombre,C,A1 §5 ; résolution A/RES/74/299 de l'Assemblée générale des Nations unies (2020),
+Tués,Plafond du casque (taux inchangé),2028,,171.0,130.0,203.0,tués évitables au plus,C,"D3_victimes_usager_2021.csv (OMS) ; revue Cochrane CD004333 (Liu et al., 2008) : risque de décès réduit de 42 % (OR 0,58 ; IC 95 % 0,50–0,68)",plafond : suppose qu’aucun usager de deux-roues tué ne portait de casque ; taux de port non publié (OMS 2023)
+Tués,Plafond du casque (tendance),2028,,148.0,113.0,176.0,tués évitables au plus,C,"D3_victimes_usager_2021.csv (OMS) ; revue Cochrane CD004333 (Liu et al., 2008) : risque de décès réduit de 42 % (OR 0,58 ; IC 95 % 0,50–0,68)",plafond : suppose qu’aucun usager de deux-roues tué ne portait de casque ; taux de port non publié (OMS 2023)
+Tués,Taux inchangé,2029,+3 ans,692.0,582.0,692.0,nombre,C,A1 §5 (A1-6) : taux moyen de 2022–2024 × population,"taux : 7,38 pour 100 000"
+Tués,Tendance,2029,+3 ans,582.0,582.0,692.0,nombre,C,A1 §5 (A1-6) : variation annuelle entre 2010–2012 et 2022–2024,"variation annuelle : -2,86 %"
+Tués,Écart à la cible (taux inchangé),2029,+3 ans,314.0,,,nombre,C,A1 §5 ; résolution A/RES/74/299 de l'Assemblée générale des Nations unies (2020),
+Tués,Écart à la cible (tendance),2029,+3 ans,204.0,,,nombre,C,A1 §5 ; résolution A/RES/74/299 de l'Assemblée générale des Nations unies (2020),
+Tués,Plafond du casque (taux inchangé),2029,+3 ans,174.0,133.0,208.0,tués évitables au plus,C,"D3_victimes_usager_2021.csv (OMS) ; revue Cochrane CD004333 (Liu et al., 2008) : risque de décès réduit de 42 % (OR 0,58 ; IC 95 % 0,50–0,68)",plafond : suppose qu’aucun usager de deux-roues tué ne portait de casque ; taux de port non publié (OMS 2023)
+Tués,Plafond du casque (tendance),2029,+3 ans,147.0,112.0,174.0,tués évitables au plus,C,"D3_victimes_usager_2021.csv (OMS) ; revue Cochrane CD004333 (Liu et al., 2008) : risque de décès réduit de 42 % (OR 0,58 ; IC 95 % 0,50–0,68)",plafond : suppose qu’aucun usager de deux-roues tué ne portait de casque ; taux de port non publié (OMS 2023)
+Tués,Taux inchangé,2030,,706.0,576.0,706.0,nombre,C,A1 §5 (A1-6) : taux moyen de 2022–2024 × population,"taux : 7,38 pour 100 000"
+Tués,Tendance,2030,,576.0,576.0,706.0,nombre,C,A1 §5 (A1-6) : variation annuelle entre 2010–2012 et 2022–2024,"variation annuelle : -2,86 %"
+Tués,Écart à la cible (taux inchangé),2030,,366.0,,,nombre,C,A1 §5 ; résolution A/RES/74/299 de l'Assemblée générale des Nations unies (2020),
+Tués,Écart à la cible (tendance),2030,,236.0,,,nombre,C,A1 §5 ; résolution A/RES/74/299 de l'Assemblée générale des Nations unies (2020),
+Tués,Plafond du casque (taux inchangé),2030,,178.0,136.0,212.0,tués évitables au plus,C,"D3_victimes_usager_2021.csv (OMS) ; revue Cochrane CD004333 (Liu et al., 2008) : risque de décès réduit de 42 % (OR 0,58 ; IC 95 % 0,50–0,68)",plafond : suppose qu’aucun usager de deux-roues tué ne portait de casque ; taux de port non publié (OMS 2023)
+Tués,Plafond du casque (tendance),2030,,145.0,111.0,173.0,tués évitables au plus,C,"D3_victimes_usager_2021.csv (OMS) ; revue Cochrane CD004333 (Liu et al., 2008) : risque de décès réduit de 42 % (OR 0,58 ; IC 95 % 0,50–0,68)",plafond : suppose qu’aucun usager de deux-roues tué ne portait de casque ; taux de port non publié (OMS 2023)
+Tués,Taux inchangé,2031,+5 ans,720.0,571.0,720.0,nombre,C,A1 §5 (A1-6) : taux moyen de 2022–2024 × population,"taux : 7,38 pour 100 000"
+Tués,Tendance,2031,+5 ans,571.0,571.0,720.0,nombre,C,A1 §5 (A1-6) : variation annuelle entre 2010–2012 et 2022–2024,"variation annuelle : -2,86 %"
+Tués,Écart à la cible (taux inchangé),2031,+5 ans,380.0,,,nombre,C,A1 §5 ; résolution A/RES/74/299 de l'Assemblée générale des Nations unies (2020),
+Tués,Écart à la cible (tendance),2031,+5 ans,231.0,,,nombre,C,A1 §5 ; résolution A/RES/74/299 de l'Assemblée générale des Nations unies (2020),
+Tués,Plafond du casque (taux inchangé),2031,+5 ans,182.0,138.0,216.0,tués évitables au plus,C,"D3_victimes_usager_2021.csv (OMS) ; revue Cochrane CD004333 (Liu et al., 2008) : risque de décès réduit de 42 % (OR 0,58 ; IC 95 % 0,50–0,68)",plafond : suppose qu’aucun usager de deux-roues tué ne portait de casque ; taux de port non publié (OMS 2023)
+Tués,Plafond du casque (tendance),2031,+5 ans,144.0,110.0,171.0,tués évitables au plus,C,"D3_victimes_usager_2021.csv (OMS) ; revue Cochrane CD004333 (Liu et al., 2008) : risque de décès réduit de 42 % (OR 0,58 ; IC 95 % 0,50–0,68)",plafond : suppose qu’aucun usager de deux-roues tué ne portait de casque ; taux de port non publié (OMS 2023)
+Tués,Cible de la Décennie,2021,,680.0,,,nombre,C,résolution A/RES/74/299 de l'Assemblée générale des Nations unies (2020),trajectoire linéaire depuis 2021 ; 2031 garde la cible de 2030
+Tués,Cible de la Décennie,2022,Passé,642.0,,,nombre,C,résolution A/RES/74/299 de l'Assemblée générale des Nations unies (2020),trajectoire linéaire depuis 2021 ; 2031 garde la cible de 2030
+Tués,Cible de la Décennie,2023,,604.0,,,nombre,C,résolution A/RES/74/299 de l'Assemblée générale des Nations unies (2020),trajectoire linéaire depuis 2021 ; 2031 garde la cible de 2030
+Tués,Cible de la Décennie,2024,,567.0,,,nombre,C,résolution A/RES/74/299 de l'Assemblée générale des Nations unies (2020),trajectoire linéaire depuis 2021 ; 2031 garde la cible de 2030
+Tués,Cible de la Décennie,2025,,529.0,,,nombre,C,résolution A/RES/74/299 de l'Assemblée générale des Nations unies (2020),trajectoire linéaire depuis 2021 ; 2031 garde la cible de 2030
+Tués,Cible de la Décennie,2026,Actuel,491.0,,,nombre,C,résolution A/RES/74/299 de l'Assemblée générale des Nations unies (2020),trajectoire linéaire depuis 2021 ; 2031 garde la cible de 2030
+Tués,Cible de la Décennie,2027,+1 an,453.0,,,nombre,C,résolution A/RES/74/299 de l'Assemblée générale des Nations unies (2020),trajectoire linéaire depuis 2021 ; 2031 garde la cible de 2030
+Tués,Cible de la Décennie,2028,,416.0,,,nombre,C,résolution A/RES/74/299 de l'Assemblée générale des Nations unies (2020),trajectoire linéaire depuis 2021 ; 2031 garde la cible de 2030
+Tués,Cible de la Décennie,2029,+3 ans,378.0,,,nombre,C,résolution A/RES/74/299 de l'Assemblée générale des Nations unies (2020),trajectoire linéaire depuis 2021 ; 2031 garde la cible de 2030
+Tués,Cible de la Décennie,2030,,340.0,,,nombre,C,résolution A/RES/74/299 de l'Assemblée générale des Nations unies (2020),trajectoire linéaire depuis 2021 ; 2031 garde la cible de 2030
+Tués,Cible de la Décennie,2031,+5 ans,340.0,,,nombre,C,résolution A/RES/74/299 de l'Assemblée générale des Nations unies (2020),trajectoire linéaire depuis 2021 ; 2031 garde la cible de 2030
