@@ -1,0 +1,12 @@
+# Tableau de bord — mobilité et sécurité routière au Togo (Défi 1)
+# Dépendances d'exécution du dashboard Streamlit, pour un déploiement sur Streamlit Community Cloud.
+# Streamlit Cloud lit ce fichier (placé à côté de app.py) pour installer l'environnement. Python 3.11.
+# Le tableau de bord ne fait que lire des CSV et des GeoJSON déjà produits ; aucun calcul lourd ici.
+
+streamlit==1.61.0
+plotly==7.1.0
+pandas==2.3.3
+geopandas==1.2.0
+pyogrio==0.13.0   # moteur de lecture des GeoJSON pour geopandas (sinon ImportError sur un env propre)
+shapely==2.1.2
+pyproj==3.7.2

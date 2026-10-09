@@ -25,6 +25,7 @@ Le réseau routier reste inégalement entretenu selon les régions.
 ## Livrables attendus
 - Un tableau de bord interactif (.zip) : Réalisé avec Power BI (.pbix) ou Python.
 
+- Un rapport PowerPoint (maximum 10 diapositives) expliquant les analyses effectuées, les résultats obtenus et les recommandations stratégiques.
 
 
 ##  RESOURCES ET données
