@@ -40,7 +40,11 @@ h1, h2, h3 { font-family: 'Fraunces', Georgia, serif !important; font-weight: 60
   padding-right: 1.5rem !important; max-width: 100% !important; }
 /* Streamlit place un en-tête opaque dès qu'il affiche un bouton (Fork/GitHub sur Streamlit Cloud, réouverture de la
    barre latérale) : on ne réserve sa hauteur que dans ce cas (maquette §4, règle à appliquer). */
-body:has([data-testid="stHeader"] [data-testid="stToolbar"]) [data-testid="stMainBlockContainer"] { padding-top: 4.4rem; }
+/* L'en-tête de Streamlit est rendu transparent et se superpose à notre barre du haut : ses boutons (Share, GitHub… sur
+   Streamlit Cloud) s'affichent dans le coin droit de la barre blanche, dont la marge droite leur laisse la place. */
+[data-testid="stHeader"] { background: transparent !important; pointer-events: none; }
+[data-testid="stHeader"] * { pointer-events: auto; }
+body:has([data-testid="stHeader"] [data-testid="stToolbar"]) div.st-key-topbar_droite { padding-right: 230px; }
 
 /* Barre latérale */
 [data-testid="stSidebar"] [data-testid="stSidebarNavLink"] span { font-size: 0.93rem; }
@@ -93,8 +97,10 @@ body:has([data-testid="stHeader"] [data-testid="stToolbar"]) [data-testid="stMai
 .kpi-grille.une-ligne .kpi-valeur { font-size: 1.75rem; }
 .kpi-grille.une-ligne .kpi-phrase { font-size: 0.86rem; }
 .kpi-grille.une-ligne .kpi-contexte { font-size: 0.78rem; }
-.kpi-grille.une-ligne .kpi-libelle { text-transform: none; letter-spacing: 0; font-size: 0.84rem; line-height: 1.3; hyphens: auto; overflow-wrap: normal; }
-.kpi-grille.une-ligne .kpi-tete { gap: 8px; }
+.kpi-grille.une-ligne .kpi-libelle { font-size: 0.72rem; letter-spacing: 0.01em; color: #141413; overflow-wrap: normal; }
+.kpi-periode { font-size: 0.8rem; font-weight: 500; text-transform: none; letter-spacing: 0; color: #55534e; margin-top: 2px; }
+.kpi-grille.une-ligne .kpi-tete { gap: 10px; min-height: 3.9rem; }
+.kpi-grille.une-ligne .kpi-tete .kpi-libelle { align-self: flex-start; padding-top: 1px; }
 @media (max-width: 1350px) { .kpi-grille.une-ligne { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 @media (max-width: 760px) { .kpi-grille.une-ligne { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 /* Pastille d'icône du thème, à gauche du libellé (même forme arrondie que les étiquettes A/B/C) */
@@ -184,6 +190,7 @@ div.st-key-topbar { background: #ffffff; min-height: 92px; padding: 16px 22px; b
   margin-bottom: 0.6rem; box-sizing: border-box; border: 1px solid #e2dfd6; border-radius: 18px; }
 div.st-key-topbar [data-testid="stHorizontalBlock"] { align-items: center; }
 div.st-key-topbar_droite { display: flex; align-items: center; justify-content: flex-end; }
+div.st-key-topbar_droite [data-testid="stMarkdownContainer"] { display: flex; justify-content: flex-end; }
 
 /* Graphiques et cartes sur fond blanc */
 [data-testid="stPlotlyChart"] { background: #ffffff; border-radius: 10px; }

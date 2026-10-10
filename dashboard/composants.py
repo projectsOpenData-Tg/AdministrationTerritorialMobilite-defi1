@@ -112,15 +112,18 @@ def icone_kpi(nom: str) -> str:
 
 
 def carte_kpi(libelle: str, valeur: str, phrase: str, contexte: str = "", reserve: str = "", etiquette: str | None = None,
-              ton: str = "neutre", unite: str = "", icone: str | None = None) -> str:
+              ton: str = "neutre", unite: str = "", icone: str | None = None, periode: str = "") -> str:
     """Chiffre clé (maquette §8.4) : la valeur se lit avec sa phrase ; la réserve, en bas, dit ce que le chiffre ne
-    mesure pas (aucune si vide). `icone` (clé de ICONES) ajoute la pastille du thème à gauche du libellé."""
+    mesure pas (aucune si vide). `icone` (clé de ICONES) ajoute la pastille du thème à gauche du libellé ; `periode`
+    s'écrit entre parenthèses sous le libellé."""
     tag = f'<span class="etiquette {ton}">{html.escape(etiquette)}</span>' if etiquette else ""
     u = f'<span class="kpi-unite">{html.escape(unite)}</span>' if unite else ""
     ctx = f'<div class="kpi-contexte">{_insecable(contexte)}</div>' if contexte else ""
     res = f'<div class="kpi-reserve">{_insecable(html.escape(reserve))}</div>' if reserve else ""
     ico = icone_kpi(icone) if icone else ""
-    return (f'<div class="kpi"><div class="kpi-tete">{ico}<div class="kpi-libelle" lang="fr">{html.escape(libelle)}</div>{tag}</div>'
+    per = f'<div class="kpi-periode">({html.escape(periode)})</div>' if periode else ""
+    return (f'<div class="kpi"><div class="kpi-tete">{ico}<div class="kpi-libelle" lang="fr">{html.escape(libelle)}{per}</div>'
+            f'{tag}</div>'
             f'<div class="kpi-valeur">{_insecable(html.escape(valeur))}{u}</div>'
             f'<div class="kpi-phrase">{_insecable(html.escape(phrase))}</div>{ctx}{res}</div>')
 
