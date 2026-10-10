@@ -98,3 +98,17 @@ Couleurs fixes par donnée, dans `theme.py`, pour qu'un indicateur garde sa coul
 - Section des thèmes renommée **« Les quatre thèmes confirmés »** ; chaque thème dans une **carte blanche arrondie**,
   liseré bas de la couleur de son titre (bleu, ambre, brique, vert), légère élévation au survol, sans balayage.
 - **R4 refusé** : les émojis des cartes de thème restent tels quels.
+
+## 7. Section carte, cartes de thème, contrôles (Vue nationale)
+
+- Légende des régions : nombre de préfectures par région, lu dans `prefectures_10` — Maritime (8), Plateaux (12),
+  Centrale (5), Kara (7), Savanes (7).
+- Les deux précisions sous les légendes passent dans des **bandes-cartes** (même style que les légendes) ;
+  « niveau C » retiré de la précision sur le réseau.
+- **Boutons radio** de la couche : contour visible (2 px gris ardoise) même quand ils ne sont pas sélectionnés.
+- **« Voir le détail »** : survol bleu `#1769AA`, texte blanc, comme la navigation de la barre latérale.
+- Cartes de thème de même hauteur ; **« Voir le détail » toujours en bas** de chaque carte (Couverture comprise).
+- Carte Réseau : précision « Relevé de 2020, niveau C. » retirée.
+- **En attente de validation** : section « Permis de conduire délivrés » (titre sans 2024, sous-titre « Total et
+  décomposition par catégorie », total à gauche, barres par catégorie aux couleurs de la page Évolutions).
+

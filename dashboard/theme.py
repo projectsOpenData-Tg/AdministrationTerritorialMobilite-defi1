@@ -161,6 +161,16 @@ div[class*="st-key-carte_reco_"]:hover { transform: translateY(-4px); box-shadow
 [data-testid="stColumn"]:has(.reco-theme.res) { border-bottom-color: #b4451a; }
 [data-testid="stColumn"]:has(.reco-theme.couv) { border-bottom-color: #11613f; }
 @media (prefers-reduced-motion: reduce) { [data-testid="stColumn"]:has(.reco-theme):hover { transform: none; } }
+/* Bouton « Voir le détail » toujours en bas de sa carte : cartes de même hauteur, dernier élément poussé en bas */
+[data-testid="stHorizontalBlock"]:has(.reco-theme) { align-items: stretch; }
+[data-testid="stColumn"]:has(.reco-theme) > [data-testid="stVerticalBlock"] { height: 100%; }
+[data-testid="stColumn"]:has(.reco-theme) [data-testid="stElementContainer"]:has(button) { margin-top: auto; }
+/* « Voir le détail » : survol bleu, comme la navigation de la barre latérale */
+[class*="st-key-vn_t_"] button { transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease; }
+[class*="st-key-vn_t_"] button:hover { background: #1769aa !important; border-color: #1769aa !important; color: #ffffff !important; }
+[class*="st-key-vn_t_"] button:hover p { color: #ffffff !important; }
+/* Boutons radio : contour visible même non sélectionnés */
+[data-testid="stRadioOption"]:not([data-selected="true"]) > div > div > div:first-child { box-shadow: inset 0 0 0 2px #64748b; background: #ffffff; }
 .reco-theme { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
 .reco-pastille { width: 34px; height: 34px; border-radius: 10px; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; }
 .reco-theme-lib { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }

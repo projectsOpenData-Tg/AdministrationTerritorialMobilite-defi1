@@ -224,9 +224,11 @@ with gauche:
                                                  "modeBarButtonsToRemove": ["select2d", "lasso2d"]})
 
 with droite:
+    nb_pref = pcarte.groupby("Région")["code"].nunique()          # préfectures par région (prefectures_10)
     pastilles_reg = "".join(
         f'<span style="display:inline-flex;align-items:center;gap:5px;margin-right:12px;font-size:.74rem">'
-        f'<span style="width:16px;height:0;border-top:3px solid {c};display:inline-block"></span>{r}</span>'
+        f'<span style="width:16px;height:0;border-top:3px solid {c};display:inline-block"></span>{r} '
+        f'({nb_pref[r]} préfectures)</span>'
         for r, c in COULEUR_REGION.items())
     st.markdown(f'<div class="filtres-actifs"><b>Les 5 régions :</b> {pastilles_reg}</div>', unsafe_allow_html=True)
 
@@ -243,10 +245,11 @@ with droite:
     st.markdown('<div class="filtres-actifs"><b>Permis : données nationales seulement.</b> '
                 '38 531 permis délivrés en 2024, dont 10 165 permis moto. Les permis n\'ont ni territoire, ni âge, ni mois.</div>',
                 unsafe_allow_html=True)
-    st.caption("Les 5 régions sont tracées en couleur sur toutes les couches (Maritime, Plateaux, Centrale, Kara, "
-               "Savanes). Survolez une préfecture pour sa zone, sa région, sa population, ses auto-écoles agréées et "
-               "l'état de son réseau.")
-    st.caption("Réseau : relevé de 2020, niveau C. Auto-écoles : collecte 2021-2022, activité non vérifiée.")
+    st.markdown('<div class="filtres-actifs">Les 5 régions sont tracées en couleur sur toutes les couches (Maritime, '
+                'Plateaux, Centrale, Kara, Savanes). Survolez une préfecture pour sa zone, sa région, sa population, '
+                'ses auto-écoles agréées et l\'état de son réseau.</div>', unsafe_allow_html=True)
+    st.markdown('<div class="filtres-actifs">Réseau : relevé de 2020. Auto-écoles : collecte 2021-2022, activité non '
+                'vérifiée.</div>', unsafe_allow_html=True)
     if st.button("Voir la carte détaillée →", key="vn_lien_carte"):
         st.switch_page("views/carte.py")
 
@@ -318,7 +321,6 @@ with c3:
     f.update_layout(height=110, margin=dict(l=0, r=0, t=0, b=0), paper_bgcolor="#ffffff", showlegend=False)
     st.plotly_chart(f, key="vn_mini_res", config={"displayModeBar": False, "staticPlot": True})
     st.caption("Part en mauvais état par préfecture.")
-    st.caption("Relevé de 2020, niveau C.")
     if st.button("Voir le détail →", key="vn_t_res"):
         st.switch_page("views/carte.py")
 with c4:
