@@ -73,6 +73,8 @@ body:has([data-testid="stHeader"] [data-testid="stToolbar"]) [data-testid="stMai
 .surtitre { font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: #0d366b; font-weight: 600; }
 .question { font-family: 'Fraunces', Georgia, serif; font-size: 2.6rem; font-weight: 600; line-height: 1.1; margin: 0.2rem 0 0.5rem; color: #141413; }
 .reponse { font-size: 1.05rem; line-height: 1.5; color: #3a3935; max-width: 880px; margin-bottom: 0.6rem; }
+.reponse.en-carte { max-width: none; background: #ffffff; border: 1px solid #e2dfd6; border-left: 4px solid #0d366b; border-radius: 14px;
+  padding: 16px 22px; margin: 0.4rem 0 1rem; box-shadow: 0 1px 8px rgba(13,54,107,0.06); }
 .filtres-actifs { font-size: 0.85rem; color: #3a3935; background: #ffffff; border: 1px solid #e2dfd6; border-radius: 10px; padding: 8px 12px; margin-bottom: 0.6rem; }
 
 /* Chiffres clés */
@@ -85,6 +87,20 @@ body:has([data-testid="stHeader"] [data-testid="stToolbar"]) [data-testid="stMai
 .kpi:hover { transform: translateY(-3px); border-color: #fce588; box-shadow: 0 0 0 3px rgba(252,229,136,0.35), 0 10px 24px rgba(13,54,107,0.12); }
 .kpi:hover::after { left: 130%; transition: left 0.8s ease; }
 @media (prefers-reduced-motion: reduce) { .kpi, .kpi:hover { transform: none; transition: none; } .kpi::after { display: none; } }
+/* Six chiffres clés sur une ligne (Vue nationale) : 3 puis 2 colonnes sur écran étroit */
+.kpi-grille.une-ligne { grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 10px; }
+.kpi-grille.une-ligne .kpi { padding: 14px 14px; }
+.kpi-grille.une-ligne .kpi-valeur { font-size: 1.75rem; }
+.kpi-grille.une-ligne .kpi-phrase { font-size: 0.86rem; }
+.kpi-grille.une-ligne .kpi-contexte { font-size: 0.78rem; }
+.kpi-grille.une-ligne .kpi-libelle { text-transform: none; letter-spacing: 0; font-size: 0.84rem; line-height: 1.3; hyphens: auto; overflow-wrap: normal; }
+.kpi-grille.une-ligne .kpi-tete { gap: 8px; }
+@media (max-width: 1350px) { .kpi-grille.une-ligne { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 760px) { .kpi-grille.une-ligne { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+/* Pastille d'icône du thème, à gauche du libellé (même forme arrondie que les étiquettes A/B/C) */
+.kpi-icone { flex: 0 0 auto; width: 34px; height: 34px; border-radius: 10px; display: inline-flex; align-items: center; justify-content: center; }
+.kpi-icone svg { width: 19px; height: 19px; }
+.kpi-tete .kpi-libelle { flex: 1 1 auto; min-width: 0; align-self: center; }
 .kpi-tete { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; min-height: 2.5rem; }
 .kpi-libelle { font-size: 0.76rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.02em; line-height: 1.35; color: #0d366b; }
 .kpi-valeur { font-family: 'Fraunces', Georgia, serif; font-size: 2.2rem; font-weight: 600; line-height: 1.1; color: #141413; }

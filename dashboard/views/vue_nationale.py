@@ -36,28 +36,27 @@ entete("Vue nationale", "La mobilité et la sécurité routière au Togo : où e
        "Le parc immatriculé a <strong>plus que quadruplé en vingt ans</strong>, porté par les motos. "
        "Les accidents augmentent en volume — <strong>683 tués</strong> et <strong>7 507 accidents</strong> en 2022 — "
        "mais les six taux de risque baissent. Le réseau reste inégalement entretenu, et "
-       "<strong>23 préfectures sur 39</strong> n'ont aucune auto-école agréée.")
+       "<strong>23 préfectures sur 39</strong> n'ont aucune auto-école agréée.", carte=True)
 
 # ---------------------------------------------------------------- Section 1 — 6 chiffres clés
 immat24 = val("O1-01", 2024, "Ensemble")
 motos24 = val("O1-01", 2024, "Moto")
 rangee_kpi("La situation en bref", [
     carte_kpi("Population 2022", fr(pays.Population), "habitants, recensement de 2022",
-              "La population de référence de tous les taux.", etiquette="A", ton="ok"),
+              "La population de référence de tous les taux.", etiquette="A", ton="ok", icone="population"),
     carte_kpi("Immatriculations 2024", fr(immat24), f"dont {fr(motos24 / immat24 * 100, 1)} % de motos ({fr(motos24)})",
-              "Immatriculations de l'année, pas le parc en circulation.", etiquette="A", ton="ok"),
+              "Immatriculations de l'année, pas le parc en circulation.", etiquette="A", ton="ok", icone="vehicule"),
     carte_kpi("Tués 2022", fr(val("O2-01", 2022, "Tués")), "tués déclarés par la police et la gendarmerie",
-              f"{fr(val('O2-01', 2022, 'Accidents constatés'))} accidents constatés la même année.", etiquette="A", ton="ok"),
-])
-rangee_kpi("", [
+              f"{fr(val('O2-01', 2022, 'Accidents constatés'))} accidents constatés la même année.", etiquette="A", ton="ok",
+              icone="tues"),
     carte_kpi("Blessés 2022", fr(val("O2-01", 2022, "Blessés")), "blessés déclarés",
-              "Accidents déclarés, données nationales seulement.", etiquette="A", ton="ok"),
+              "Accidents déclarés, données nationales seulement.", etiquette="A", ton="ok", icone="blesses"),
     carte_kpi("Réseau évalué", f"{fr(pays['Km évalués'] / 1000, 1)} ", "milliers de km, relevé de 2020",
               f"84 tronçons ; {fr(pays['O3-02'], 1)} % en mauvais état ({fr(pays['Km en mauvais état'], 0)} km).",
-              etiquette="C", ton="alerte", unite="k km"),
+              etiquette="C", ton="alerte", unite="k km", icone="route"),
     carte_kpi("Préfectures sans auto-école agréée", "23 sur 39", "n'ont aucune auto-école agréée",
-              "2 932 492 habitants concernés.", etiquette="B", ton="alerte"),
-])
+              "2 932 492 habitants concernés.", etiquette="B", ton="alerte", icone="ecole"),
+], une_ligne=True)
 
 # ---------------------------------------------------------------- Section 2 — Carte du Togo
 st.markdown("")
