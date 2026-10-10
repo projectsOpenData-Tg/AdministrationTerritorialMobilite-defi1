@@ -96,7 +96,7 @@ body:has([data-testid="stHeader"] [data-testid="stToolbar"]) div.st-key-topbar_d
 .kpi-grille.une-ligne .kpi { padding: 14px 14px; }
 .kpi-grille.une-ligne .kpi-valeur { font-size: 1.75rem; }
 .kpi-grille.une-ligne .kpi-phrase { font-size: 0.86rem; }
-.kpi-grille.une-ligne .kpi-contexte { font-size: 0.78rem; }
+.kpi-grille.une-ligne .kpi-contexte { font-size: 0.78rem; margin-top: 8px; }
 .kpi-grille.une-ligne .kpi-libelle { font-size: 0.72rem; letter-spacing: 0.01em; color: #141413; overflow-wrap: normal; }
 .kpi-periode { font-size: 0.8rem; font-weight: 500; text-transform: none; letter-spacing: 0; color: #55534e; margin-top: 2px; }
 .kpi-grille.une-ligne .kpi-tete { gap: 10px; min-height: 3.9rem; }
