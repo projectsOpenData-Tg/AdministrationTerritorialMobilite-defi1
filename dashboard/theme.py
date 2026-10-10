@@ -44,7 +44,19 @@ body:has([data-testid="stHeader"] [data-testid="stToolbar"]) [data-testid="stMai
 
 /* Barre latérale */
 [data-testid="stSidebar"] [data-testid="stSidebarNavLink"] span { font-size: 0.93rem; }
-[data-testid="stSidebarHeader"] img { height: 2.6rem !important; max-width: 100% !important; }
+/* Logo (st.logo) : Togo en miniature et nom du tableau de bord, en face du bouton qui replie la barre */
+[data-testid="stSidebarHeader"] { height: auto !important; min-height: 6.6rem; align-items: center; padding-top: 1rem !important; padding-bottom: 0.4rem !important; }
+[data-testid="stSidebarHeader"] img { height: auto !important; width: 100% !important; max-width: 100% !important; max-height: 7rem; object-fit: contain; object-position: left center; }
+[data-testid="stSidebarHeader"] > div:first-child { flex: 1 1 auto !important; min-width: 0; max-width: none !important; width: auto !important; margin-right: 0.6rem; }
+/* Slogan et illustration de route, poussés en bas de la barre latérale quand la place le permet */
+[data-testid="stSidebarContent"] { display: flex; flex-direction: column; }
+[data-testid="stSidebarUserContent"] { flex: 1 0 auto; display: flex; flex-direction: column; }
+[data-testid="stSidebarUserContent"] > div, [data-testid="stSidebarUserContent"] > div > [data-testid="stVerticalBlock"] { flex: 1 0 auto; display: flex; flex-direction: column; }
+[data-testid="stSidebarUserContent"] [data-testid="stElementContainer"]:has(.slogan-barre) { margin-top: auto; }
+.slogan-barre { padding: 1.6rem 0 0; }
+.slogan-texte { font-style: italic; font-size: 1.02rem; line-height: 1.5; color: #e7eef8; margin: 0 0 0.9rem; }
+.slogan-filet { width: 1.6rem; height: 2px; background: #2ec4b6; border-radius: 2px; margin-bottom: 1.4rem; }
+.slogan-illustration { display: block; width: 100%; height: auto; opacity: 0.95; }
 [data-testid="stSidebar"] [data-testid="stNavSectionHeader"] { text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.72rem; color: #9fb2c6; }
 [data-testid="stSidebarNavLink"] { border: 1.5px solid transparent; border-radius: 8px; }
 [data-testid="stSidebarNavLink"][aria-current="page"] { border-color: #fce588 !important; }

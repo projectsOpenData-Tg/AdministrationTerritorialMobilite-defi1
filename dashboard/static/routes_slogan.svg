@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 96" width="260" height="96" role="img" aria-label="Montagnes et route sinueuse">
+  <defs>
+    <linearGradient id="route" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#5b86c9"/>
+      <stop offset="1" stop-color="#9fbde9"/>
+    </linearGradient>
+    <linearGradient id="sol" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5b86c9" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#5b86c9" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#5b86c9" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <!-- Massifs, de l'arrière-plan au premier plan -->
+  <path d="M30,74 L62,46 L74,54 L98,26 L118,48 L130,40 L156,66 L182,44 L196,54 L214,40 L240,74 Z" fill="#2b4f8a"/>
+  <path d="M98,26 L106,36 L101,35 L97,40 L93,34 Z M214,40 L221,48 L216,47 L212,51 L209,45 Z" fill="#9fbde9" fill-opacity="0.75"/>
+  <path d="M14,78 L48,56 L70,66 L92,50 L122,72 L150,58 L172,68 L196,56 L226,70 L250,78 Z" fill="#3a66a8"/>
+  <!-- Route sinueuse qui part de l'horizon et s'élargit au premier plan -->
+  <path d="M132,58 C140,62 150,64 146,68 C140,73 104,74 98,80 C92,86 112,92 128,96 L96,96 C80,90 70,84 82,78 C94,72 132,71 138,67 C142,64 136,62 128,59 Z" fill="url(#route)"/>
+  <path d="M130,59 C140,63 144,66 141,68 C134,72 100,73 92,79 C85,85 98,91 112,96" fill="none" stroke="#ffffff" stroke-width="1.1" stroke-dasharray="3 3" stroke-linecap="round" opacity="0.9"/>
+  <path d="M0,82 C60,78 200,78 260,82 L260,84 C200,81 60,81 0,84 Z" fill="url(#sol)"/>
+  <!-- Arbres -->
+  <g fill="#3a66a8">
+    <path d="M200,80 l3,-9 l3,9 Z"/><path d="M207,80 l2.4,-7 l2.4,7 Z"/><path d="M40,80 l2.6,-8 l2.6,8 Z"/>
+  </g>
+</svg>

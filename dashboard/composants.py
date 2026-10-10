@@ -53,6 +53,18 @@ def topbar():
                 st.markdown(f'<div class="ai-lab-logo-carte">{logo}</div>', unsafe_allow_html=True)
 
 
+SLOGAN = "Des routes plus sûres pour une mobilité durable au Togo"
+
+
+def pied_barre_laterale():
+    """Bas de la barre latérale : le slogan, puis l'illustration des montagnes et de la route (static/routes_slogan.svg).
+    Le CSS (theme.py, .slogan-barre) le pousse en bas de la barre quand la place le permet."""
+    st.markdown(f'<div class="slogan-barre"><p class="slogan-texte">“{html.escape(SLOGAN)}”</p>'
+                '<div class="slogan-filet"></div>'
+                '<img class="slogan-illustration" src="app/static/routes_slogan.svg" alt=""></div>',
+                unsafe_allow_html=True)
+
+
 def ariane(page: str):
     st.markdown(f'<div class="ariane">Tableau de bord › <b>{html.escape(page)}</b></div>', unsafe_allow_html=True)
 

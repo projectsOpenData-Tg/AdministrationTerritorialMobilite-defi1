@@ -16,13 +16,17 @@ ICI = Path(__file__).resolve().parent
 if str(ICI) not in sys.path:
     sys.path.insert(0, str(ICI))
 
-from composants import topbar  # noqa: E402
+from composants import pied_barre_laterale, topbar  # noqa: E402
 from donnees import ZONES  # noqa: E402
 from theme import appliquer_theme  # noqa: E402
 
 st.set_page_config(page_title="Mobilité et sécurité routière au Togo", page_icon=":material/directions_car:",
                    layout="wide", initial_sidebar_state="expanded")
 appliquer_theme()
+# Logo de la barre latérale (Togo en miniature et nom du tableau de bord), en face du bouton qui la replie ;
+# silhouette seule quand la barre est repliée. Fichiers produits par scripts/logo_barre_laterale.py.
+st.logo(str(ICI / "static" / "logo_barre_laterale.svg"), size="large",
+        icon_image=str(ICI / "static" / "logo_togo_icone.svg"))
 topbar()
 
 # ----------------------------------------------------------------- Filtres globaux, conservés d'une page à l'autre
@@ -67,5 +71,6 @@ with st.sidebar:
     st.pills("Levier", LEVIERS, selection_mode="multi", key="f_leviers")
     st.button("Réinitialiser les filtres", on_click=reinitialiser, use_container_width=True, icon=":material/restart_alt:")
     st.caption("39 préfectures · 6 zones · population 2022 · réseau relevé en 2020 · auto-écoles 2021-2022")
+    pied_barre_laterale()
 
 navigation.run()
