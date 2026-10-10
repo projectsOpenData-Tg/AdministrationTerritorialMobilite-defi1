@@ -100,7 +100,7 @@ body:has([data-testid="stHeader"] [data-testid="stToolbar"]) div.st-key-topbar_d
 .kpi-grille { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px; margin-bottom: 6px; }
 .kpi { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; box-shadow: 0 1px 2px rgba(11,38,61,0.04); padding: 16px 18px; display: flex; flex-direction: column; gap: 6px; box-sizing: border-box;
        position: relative; overflow: hidden; transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease; }
-.kpi::after { display: none; content: ""; position: absolute; top: 0; left: -80%; width: 50%; height: 100%; pointer-events: none;
+.kpi::after { content: ""; position: absolute; top: 0; left: -80%; width: 50%; height: 100%; pointer-events: none;
               background: linear-gradient(115deg, transparent, rgba(252,229,136,0.45), transparent); transform: skewX(-20deg); }
 .kpi:hover { transform: translateY(-2px); border-color: #1769aa; box-shadow: 0 8px 20px rgba(11,38,61,0.08); }
 .kpi:hover::after { left: 130%; transition: left 0.8s ease; }
@@ -151,6 +151,16 @@ div[class*="st-key-carte_reco_"] { background: #ffffff; border: 1px solid #e2e8f
   box-shadow: 0 1px 6px rgba(13,54,107,0.06); transition: transform 0.25s ease, box-shadow 0.25s ease; }
 div[class*="st-key-carte_reco_"]:hover { transform: translateY(-4px); box-shadow: 0 12px 28px rgba(13,54,107,0.14); }
 @media (prefers-reduced-motion: reduce) { div[class*="st-key-carte_reco_"], div[class*="st-key-carte_reco_"]:hover { transform: none; transition: none; } }
+/* Cartes des quatre thèmes : carte blanche arrondie, liseré bas de la couleur du titre, survol sans balayage */
+[data-testid="stColumn"]:has(.reco-theme) { background: #ffffff; border: 1px solid #e2e8f0;
+  border-bottom: 3px solid #0b263d; border-radius: 12px; padding: 16px 16px 12px; box-shadow: 0 1px 2px rgba(11,38,61,0.04);
+  transition: transform 0.25s ease, box-shadow 0.25s ease; }
+[data-testid="stColumn"]:has(.reco-theme):hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(11,38,61,0.08); }
+[data-testid="stColumn"]:has(.reco-theme.mob) { border-bottom-color: #1c5cab; }
+[data-testid="stColumn"]:has(.reco-theme.sec) { border-bottom-color: #b45309; }
+[data-testid="stColumn"]:has(.reco-theme.res) { border-bottom-color: #b4451a; }
+[data-testid="stColumn"]:has(.reco-theme.couv) { border-bottom-color: #11613f; }
+@media (prefers-reduced-motion: reduce) { [data-testid="stColumn"]:has(.reco-theme):hover { transform: none; } }
 .reco-theme { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
 .reco-pastille { width: 34px; height: 34px; border-radius: 10px; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; }
 .reco-theme-lib { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }

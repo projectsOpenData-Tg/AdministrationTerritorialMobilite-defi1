@@ -131,10 +131,14 @@ pcarte = _table_carte()
 geo = contours("prefectures")
 geo_reg = contours_regions()
 
-gauche, droite = st.columns([1.6, 1], vertical_alignment="top")
+titre_bloc("Le Togo, préfecture par préfecture",
+           "Les 5 régions sont tracées en couleur. Molette ou barre d'outils pour zoomer.")
+constat("Le Togo compte <strong>8 095 498</strong> habitants, très inégalement répartis : le Grand Lomé en "
+        "concentre près du quart. La densité des auto-écoles agréées suit les grandes villes, tandis que "
+        f"<strong style='color:{ROUGE_DRAPEAU}'>23 préfectures</strong> rurales n'en ont aucune.")
+
+gauche, droite = st.columns([1.25, 1], vertical_alignment="top")   # carte resserrée ; légendes et notes à droite
 with gauche:
-    titre_bloc("Le Togo, préfecture par préfecture",
-               "Les 5 régions sont tracées en couleur. Molette ou barre d'outils pour zoomer.")
     couche_choisie = st.radio(
         "Couche", ["Toutes les couches", "Population", "Régions", "Auto-écoles", "Routes classées",
                    "Routes nationales seules"],
@@ -219,6 +223,7 @@ with gauche:
                                                  "displaylogo": False,
                                                  "modeBarButtonsToRemove": ["select2d", "lasso2d"]})
 
+with droite:
     pastilles_reg = "".join(
         f'<span style="display:inline-flex;align-items:center;gap:5px;margin-right:12px;font-size:.74rem">'
         f'<span style="width:16px;height:0;border-top:3px solid {c};display:inline-block"></span>{r}</span>'
@@ -238,21 +243,17 @@ with gauche:
     st.markdown('<div class="filtres-actifs"><b>Permis : données nationales seulement.</b> '
                 '38 531 permis délivrés en 2024, dont 10 165 permis moto. Les permis n\'ont ni territoire, ni âge, ni mois.</div>',
                 unsafe_allow_html=True)
-    if st.button("Voir la carte détaillée →", key="vn_lien_carte"):
-        st.switch_page("views/carte.py")
-with droite:
-    constat("Le Togo compte <strong>8 095 498</strong> habitants, très inégalement répartis : le Grand Lomé en "
-            "concentre près du quart. La densité des auto-écoles agréées suit les grandes villes, tandis que "
-            f"<strong style='color:{ROUGE_DRAPEAU}'>23 préfectures</strong> rurales n'en ont aucune.")
     st.caption("Les 5 régions sont tracées en couleur sur toutes les couches (Maritime, Plateaux, Centrale, Kara, "
                "Savanes). Survolez une préfecture pour sa zone, sa région, sa population, ses auto-écoles agréées et "
                "l'état de son réseau.")
     st.caption("Réseau : relevé de 2020, niveau C. Auto-écoles : collecte 2021-2022, activité non vérifiée.")
+    if st.button("Voir la carte détaillée →", key="vn_lien_carte"):
+        st.switch_page("views/carte.py")
 
 
 # ---------------------------------------------------------------- Section 3 — 4 cartes de thème
 st.markdown("")
-titre_bloc("Les quatre thèmes de l'énoncé")
+titre_bloc("Les quatre thèmes confirmés")
 
 
 def _mini(fig, cle, hauteur=110):
@@ -266,7 +267,7 @@ def _mini(fig, cle, hauteur=110):
 c1, c2, c3, c4 = st.columns(4)
 mult = 4.56
 with c1:
-    st.markdown('<div class="reco-theme"><span class="reco-pastille" style="background:#dbeafe">🚗</span>'
+    st.markdown('<div class="reco-theme mob"><span class="reco-pastille" style="background:#dbeafe">🚗</span>'
                 '<span class="reco-theme-lib" style="color:#1c5cab">Mobilité</span></div>', unsafe_allow_html=True)
     st.markdown(f"**{fr(immat24)}** immatriculations (2024)  \n"
                 f"**×{fr(mult, 2)}** en 20 ans (2002 → 2022)  \n"
@@ -286,7 +287,7 @@ with c1:
         st.session_state["evolutions_rang"] = 1
         st.switch_page("views/evolutions.py")
 with c2:
-    st.markdown('<div class="reco-theme"><span class="reco-pastille" style="background:#fef3c7">🚦</span>'
+    st.markdown('<div class="reco-theme sec"><span class="reco-pastille" style="background:#fef3c7">🚦</span>'
                 '<span class="reco-theme-lib" style="color:#b45309">Sécurité routière</span></div>', unsafe_allow_html=True)
     st.markdown(f"**{fr(val('O2-01', 2022, 'Tués'))}** tués (2022)  \n"
                 f"**{fr(val('O2-01', 2022, 'Accidents constatés'))}** accidents constatés (2022)  \n"
@@ -303,7 +304,7 @@ with c2:
         st.session_state["evolutions_rang"] = 2
         st.switch_page("views/evolutions.py")
 with c3:
-    st.markdown('<div class="reco-theme"><span class="reco-pastille" style="background:#fce7f3">🛣️</span>'
+    st.markdown('<div class="reco-theme res"><span class="reco-pastille" style="background:#fce7f3">🛣️</span>'
                 '<span class="reco-theme-lib" style="color:#b4451a">Réseau</span></div>', unsafe_allow_html=True)
     st.markdown(f"**{fr(pays['Km évalués'], 0)} km** évalués (relevé de 2020)  \n"
                 f"**{fr(pays['O3-02'], 1)} %** en mauvais état ({fr(pays['Km en mauvais état'], 0)} km)  \n"
@@ -321,7 +322,7 @@ with c3:
     if st.button("Voir le détail →", key="vn_t_res"):
         st.switch_page("views/carte.py")
 with c4:
-    st.markdown('<div class="reco-theme"><span class="reco-pastille" style="background:#e2f4ec">🏫</span>'
+    st.markdown('<div class="reco-theme couv"><span class="reco-pastille" style="background:#e2f4ec">🏫</span>'
                 '<span class="reco-theme-lib" style="color:#11613f">Couverture</span></div>', unsafe_allow_html=True)
     st.markdown("**132** auto-écoles agréées, sur 272 recensées  \n"
                 "**23 sur 39** préfectures sans auto-école agréée  \n"

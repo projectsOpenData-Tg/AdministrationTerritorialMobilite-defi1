@@ -85,7 +85,16 @@ Couleurs fixes par donnée, dans `theme.py`, pour qu'un indicateur garde sa coul
   haut aligné pour que les chiffres restent sur une même ligne.
 - R5 (passer les accidents en 2024) écarté : on garde 2022, année de la population de référence.
 
-## En attente de validation
+## 6. Ajustements des cartes et des sections (Vue nationale)
 
-- **R4** — remplacer les émojis des 4 cartes de thème (Mobilité, Sécurité routière, Réseau, Couverture) par des
-  icônes au trait, dans le style des chiffres clés. Maquette fournie, non codée.
+- Couleur (pastille d'icône et liseré bas) : **Immatriculations en vert** `#16834A`, **Morts sur la route en rouge**
+  `#CE1126`, **Blessés en jaune-or** `#E6B422` (le jaune drapeau `#FCD116` est trop clair sur fond blanc pour une
+  icône et un liseré lisibles).
+- **Balayage lumineux au survol des chiffres clés rétabli** (il avait été retiré par la règle « pas de dégradés
+  décoratifs » de la palette A).
+- Section « Le Togo, préfecture par préfecture » : encadré **Constat placé sous le titre**, sur toute la largeur ;
+  carte resserrée (colonnes 1,25 / 1 au lieu de 1,6 / 1) ; à droite, les légendes (régions, classes de population),
+  la note sur les permis, les précisions et le lien « Voir la carte détaillée ».
+- Section des thèmes renommée **« Les quatre thèmes confirmés »** ; chaque thème dans une **carte blanche arrondie**,
+  liseré bas de la couleur de son titre (bleu, ambre, brique, vert), légère élévation au survol, sans balayage.
+- **R4 refusé** : les émojis des cartes de thème restent tels quels.
