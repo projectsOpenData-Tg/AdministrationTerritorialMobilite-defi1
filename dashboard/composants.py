@@ -112,20 +112,29 @@ def icone_kpi(nom: str) -> str:
 
 
 def carte_kpi(libelle: str, valeur: str, phrase: str, contexte: str = "", reserve: str = "", etiquette: str | None = None,
-              ton: str = "neutre", unite: str = "", icone: str | None = None, periode: str = "") -> str:
+              ton: str = "neutre", unite: str = "", icone: str | None = None, periode: str = "",
+              tendance: tuple[str, str, str] | None = None) -> str:
     """Chiffre clé (maquette §8.4) : la valeur se lit avec sa phrase ; la réserve, en bas, dit ce que le chiffre ne
     mesure pas (aucune si vide). `icone` (clé de ICONES) ajoute la pastille du thème à gauche du libellé ; `periode`
-    s'écrit entre parenthèses sous le libellé."""
+    s'écrit entre parenthèses sous le libellé ; `tendance` = (variation, référence, sens) s'affiche en badge sous la
+    valeur, sens ∈ {"pire", "mieux", "neutre"}."""
     tag = f'<span class="etiquette {ton}">{html.escape(etiquette)}</span>' if etiquette else ""
     u = f'<span class="kpi-unite">{html.escape(unite)}</span>' if unite else ""
     ctx = f'<div class="kpi-contexte">{_insecable(contexte)}</div>' if contexte else ""
     res = f'<div class="kpi-reserve">{_insecable(html.escape(reserve))}</div>' if reserve else ""
     ico = icone_kpi(icone) if icone else ""
     per = f'<div class="kpi-periode">({html.escape(periode)})</div>' if periode else ""
-    return (f'<div class="kpi"><div class="kpi-tete">{ico}<div class="kpi-libelle" lang="fr">{html.escape(libelle)}{per}</div>'
-            f'{tag}</div>'
-            f'<div class="kpi-valeur">{_insecable(html.escape(valeur))}{u}</div>'
-            f'<div class="kpi-phrase">{_insecable(html.escape(phrase))}</div>{ctx}{res}</div>')
+    tend = ""
+    if tendance:
+        variation, reference, sens = tendance
+        fleche = "↗" if variation.startswith("+") else "↘" if variation.startswith(("−", "-")) else "→"
+        tend = (f'<span class="kpi-tendance {sens}">{fleche} {_insecable(html.escape(variation))} '
+                f'<small>{html.escape(reference)}</small></span>')
+    bas = f' style="border-bottom-color:{ICONES[icone][1]}"' if icone else ""   # liseré du bas, couleur du thème
+    return (f'<div class="kpi"{bas}><div class="kpi-tete">{ico}<div class="kpi-libelle" lang="fr">{html.escape(libelle)}{per}</div>'
+            f'{tag}</div><div class="kpi-centre">'
+            f'<div class="kpi-valeur">{_insecable(html.escape(valeur))}{u}</div>{tend}'
+            f'<div class="kpi-phrase">{_insecable(html.escape(phrase))}</div></div>{ctx}{res}</div>')
 
 
 def rangee_kpi(groupe: str, cartes: list[str], une_ligne: bool = False):

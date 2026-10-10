@@ -41,16 +41,30 @@ entete("Vue nationale", "La mobilité et la sécurité routière au Togo : où e
 # ---------------------------------------------------------------- Section 1 — 6 chiffres clés
 immat24 = val("O1-01", 2024, "Ensemble")
 motos24 = val("O1-01", 2024, "Moto")
+
+
+def variation(idc, cat, annee, sens_hausse):
+    """Badge de tendance : variation sur un an lue dans indicateurs_07 (aucun calcul autre que le rapport).
+    `sens_hausse` dit ce que signifie une hausse : "pire" (victimes) ou "neutre" (immatriculations)."""
+    v, avant = val(idc, annee, cat), val(idc, annee - 1, cat)
+    pct = (v / avant - 1) * 100
+    signe = "+" if pct > 0 else "−"
+    sens = sens_hausse if pct > 0 else ("mieux" if sens_hausse == "pire" else "neutre")
+    return f"{signe}{fr(abs(pct), 1)} %", f"vs {annee - 1}", sens
+
+
 rangee_kpi("La situation en bref", [
     carte_kpi("Population", fr(pays.Population), "habitants", "La population de référence de tous les taux.",
               periode="2022", icone="population"),
     carte_kpi("Immatriculations", fr(immat24), f"dont {fr(motos24 / immat24 * 100, 1)} % de motos ({fr(motos24)})",
-              "Immatriculations de l'année, pas le parc en circulation.", periode="2024", icone="vehicule"),
+              "Immatriculations de l'année, pas le parc en circulation.", periode="2024", icone="vehicule",
+              tendance=variation("O1-01", "Ensemble", 2024, "neutre")),
     carte_kpi("Morts sur la route", fr(val("O2-01", 2022, "Tués")), "tués déclarés par la police et la gendarmerie",
               f"{fr(val('O2-01', 2022, 'Accidents constatés'))} accidents constatés la même année.", periode="2022",
-              icone="tues"),
+              icone="tues", tendance=variation("O2-01", "Tués", 2022, "pire")),
     carte_kpi("Blessés sur la route", fr(val("O2-01", 2022, "Blessés")), "blessés déclarés",
-              "Accidents déclarés, données nationales seulement.", periode="2022", icone="blesses"),
+              "Accidents déclarés, données nationales seulement.", periode="2022", icone="blesses",
+              tendance=variation("O2-01", "Blessés", 2022, "pire")),
     carte_kpi("Réseau routier évalué", f"{fr(pays['Km évalués'] / 1000, 1)} ", "dont 84 tronçons",
               f"{fr(pays['O3-02'], 1)} % en mauvais état ({fr(pays['Km en mauvais état'], 0)} km).",
               unite="k km", periode="2020", icone="route"),

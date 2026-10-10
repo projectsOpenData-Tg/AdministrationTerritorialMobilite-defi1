@@ -9,7 +9,7 @@ et au français seul.
 import streamlit as st
 
 # --- Neutres et structure (maquette §2.2) -----------------------------------------------------------------
-ENCRE, ENCRE2, DISCRET, FILET, FOND, CARTE = "#172b3a", "#334155", "#64748b", "#e2e8f0", "#f7f8f5", "#ffffff"
+ENCRE, ENCRE2, DISCRET, FILET, FOND, CARTE = "#172b3a", "#334155", "#64748b", "#e2e8f0", "#f4f2ec", "#ffffff"   # fond café conservé
 BLEU_FONCE = "#0b263d"                     # bleu nuit : barre latérale, titres, chiffres clés
 BLEU_ACTIF = "#1769aa"                     # navigation active, sélection des filtres
 # Accents nationaux (drapeau) : vert = favorable, jaune = mise en évidence ou avertissement, rouge = risque élevé
@@ -115,6 +115,17 @@ body:has([data-testid="stHeader"] [data-testid="stToolbar"]) div.st-key-topbar_d
 .kpi-periode { font-size: 0.8rem; font-weight: 500; text-transform: none; letter-spacing: 0; color: #64748b; margin-top: 2px; }
 .kpi-grille.une-ligne .kpi-tete { gap: 10px; min-height: 3.9rem; }
 .kpi-grille.une-ligne .kpi-tete .kpi-libelle { align-self: flex-start; padding-top: 1px; }
+/* Bloc central (chiffre, tendance, phrase), centré dans la carte ; liseré fin en bas, couleur du thème */
+.kpi-grille.une-ligne .kpi-centre { flex: 1 0 auto; display: flex; flex-direction: column; align-items: center; justify-content: flex-start;
+  text-align: center; gap: 6px; padding: 12px 0 8px; }   /* haut aligné : les chiffres restent sur une même ligne */
+.kpi-grille.une-ligne .kpi { border-bottom-width: 3px; }
+/* Tendance : badge arrondi coloré (rouge = aggravation, vert = amélioration démontrée, gris = variation neutre) */
+.kpi-tendance { display: inline-flex; align-items: center; gap: 5px; padding: 3px 10px; border-radius: 999px; font-size: 0.78rem;
+  font-weight: 700; white-space: nowrap; }
+.kpi-tendance small { font-weight: 500; opacity: 0.85; }
+.kpi-tendance.pire { background: #fbe3e5; color: #a00d1e; }
+.kpi-tendance.mieux { background: #dff1e7; color: #005a35; }
+.kpi-tendance.neutre { background: #eef2f6; color: #475569; }
 @media (max-width: 1350px) { .kpi-grille.une-ligne { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 @media (max-width: 760px) { .kpi-grille.une-ligne { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 /* Pastille d'icône du thème, à gauche du libellé (même forme arrondie que les étiquettes A/B/C) */
@@ -154,7 +165,7 @@ div[class*="st-key-carte_reco_"]:hover { transform: translateY(-4px); box-shadow
 /* Blocs, constat, synthèse, limite */
 .bloc-titre { font-family: 'Fraunces', Georgia, serif; font-size: 1.3rem; font-weight: 600; color: #172b3a; margin-bottom: 0.2rem; }
 .bloc-sous-titre { font-size: 0.86rem; color: #64748b; line-height: 1.45; margin-bottom: 0.4rem; }
-.constat { background: #e8f0fb; border: 1px solid #c7d8f0; border-radius: 14px; padding: 16px 18px; margin-bottom: 14px; }
+.constat { background: #ffffff; border: 1px solid #e2e8f0; border-left: 4px solid #fcd116; border-radius: 14px; padding: 16px 18px; margin-bottom: 14px; }
 .constat-titre, .limite-titre, .synthese-titre { font-size: 0.78rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; }
 .constat-titre { color: #0b263d; }
 .constat-texte { font-size: 0.95rem; line-height: 1.5; color: #172b3a; margin-top: 4px; }
@@ -195,7 +206,7 @@ div[class*="st-key-carte_reco_"]:hover { transform: translateY(-4px); box-shadow
 .topbar-centre { text-align: center; }
 .topbar-titre { font-family: 'Fraunces', Georgia, serif; font-size: 1.2rem; font-weight: 600; color: #0b263d; }
 .topbar-centre::after { content: ""; display: block; width: 56px; height: 3px; margin: 7px auto 0; border-radius: 2px;
-  background: linear-gradient(90deg, #006b3f 0 50%, #fcd116 50% 100%); }
+  background: linear-gradient(90deg, #006b3f 0 34%, #fcd116 34% 67%, #ce1126 67% 100%); }
 .topbar-sous-titre { font-size: 0.76rem; color: #64748b; font-style: italic; margin-top: 1px; }
 .ai-lab-logo-carte { display: inline-flex; align-items: center; justify-content: center; background: #ffffff;
   border: 2px solid #ffce00; border-radius: 12px; padding: 7px 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.08); height: 56px; }

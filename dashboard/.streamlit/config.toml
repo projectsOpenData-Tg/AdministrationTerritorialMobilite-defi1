@@ -11,7 +11,7 @@ toolbarMode = "minimal"
 [theme]
 base = "light"
 primaryColor = "#1769aa"            # bleu soutenu : boutons actifs, onglet actif, liens
-backgroundColor = "#f7f8f5"         # blanc cassé
+backgroundColor = "#f4f2ec"         # fond café (conservé)
 secondaryBackgroundColor = "#ffffff"
 textColor = "#172b3a"
 borderColor = "#e2e8f0"
