@@ -345,15 +345,21 @@ with c4:
 st.markdown("")
 g, d = st.columns([1.5, 1], vertical_alignment="top")
 with g:
-    titre_bloc("Permis de conduire délivrés en 2024", "Par catégorie. L'objectif 1 demande les permis par catégorie.")
+    titre_bloc("Permis de conduire délivrés", "Total et décomposition par catégorie")
     permis = NAT[(NAT.ID == "O1-06") & (NAT["Année"].astype(str) == "2024")][["Catégorie", "Valeur"]].copy()
     lib = {"A": "A — Moto", "B": "B — Voiture légère", "C": "C — Poids lourd", "D": "D — Transport en commun",
            "E": "E — Semi-remorque", "F": "F — Voiture spéciale"}
     permis["lib"] = permis["Catégorie"].map(lib)
     permis = permis.sort_values("Valeur")
-    fig = go.Figure(go.Bar(x=permis.Valeur, y=permis.lib, orientation="h", marker_color=BLEUS[2],
-                           text=[fr(v) for v in permis.Valeur], textposition="outside"))
+    # Une couleur par catégorie, celle de la page Évolutions (PERMIS_COUL) ; E, vert de C éclairci (pointillé là-bas)
+    coul_permis = {"A": "#2a78d6", "B": "#eb6834", "C": "#1baf7a", "E": "#8fd7bd", "D": "#eda100", "F": "#8a8780"}
+    fig = go.Figure(go.Bar(x=permis.Valeur, y=permis.lib, orientation="h",
+                           marker_color=[coul_permis[c] for c in permis["Catégorie"]]))
+    for lib_c, v in zip(permis.lib, permis.Valeur):          # chiffres alignés à droite, hors des barres
+        fig.add_annotation(x=1, xref="paper", xanchor="left", xshift=10, y=lib_c, text=f"<b>{fr(v)}</b>",
+                           showarrow=False, font=dict(size=12, color=ENCRE))
     habiller(fig, 300, xaxis=dict(gridcolor="#efece4"), yaxis=dict(gridcolor="rgba(0,0,0,0)"), legend=dict(x=0, y=1))
+    fig.update_layout(margin=dict(r=70))
     tracer(fig, "vn_permis")
     note("Les permis moto ont bondi : 4 837 en 2022 et 10 165 en 2024, contre 211 en 2021.", forte=True)
 with d:
@@ -427,8 +433,9 @@ fig.add_annotation(x=2013, y=0.06, yref="y domain", text="2013 non renseignée",
                    font=dict(color="#8a8780", size=9), row=2, col=1)
 tracer(fig, "vn_immat_permis")
 note("En 2021, 310 motos ont été immatriculées pour un permis moto délivré ; en 2024, 6.", forte=True)
-note("Une date situe une variation ; elle ne l'explique pas. Repères : ① 2019 permis moto obligatoire · "
-     "② 2022 décret d'application du code de la route · ③ 2023 tournée d'immatriculation des motos.")
+st.markdown('<div class="note-carte">Une date situe une variation ; elle ne l\'explique pas.<br>'
+            '<b>Repères :</b> ① 2019 permis moto obligatoire · ② 2022 décret d\'application du code de la route · '
+            '③ 2023 tournée d\'immatriculation des motos.</div>', unsafe_allow_html=True)
 
 etage_haut = immat.pivot(index="Année", columns="Catégorie", values="Valeur")
 etage_bas = NAT[NAT.ID == "O1-06"].copy()
@@ -443,15 +450,17 @@ export_csv(etage_haut.join(etage_bas, how="outer").reset_index(),
 st.markdown("")
 g, d = st.columns([1.3, 1], vertical_alignment="top")
 with g:
-    titre_bloc("À retenir")
-    for m in ["**Les immatriculations ont plus que quadruplé en 20 ans** : ×4,56 de 2002 à 2022.",
-              "**Les motos portent la hausse** : 80,6 % des immatriculations supplémentaires entre 2002 et 2022.",
-              "**Plus de véhicules, pas une route plus dangereuse** : les accidents déclarés augmentent (+9,4 % entre "
-              "2010–2012 et 2022–2024), mais les 6 taux baissent.",
-              "**60 % des tués de 2021 sont des usagers de deux et trois-roues motorisés**, un peu plus que leur part "
-              "du parc (1,01 à 1,10 fois).",
-              "**7 questions restent sans réponse**, faute d'accidents par préfecture, par mois et par âge."]:
-        st.markdown(f"- {m}")
+    messages = [
+        "<strong>Les immatriculations ont plus que quadruplé en 20 ans</strong> : ×4,56 de 2002 à 2022.",
+        "<strong>Les motos portent la hausse</strong> : 80,6 % des immatriculations supplémentaires entre 2002 et 2022.",
+        "<strong>Plus de véhicules, pas une route plus dangereuse</strong> : les accidents déclarés augmentent "
+        "(+9,4 % entre 2010–2012 et 2022–2024), mais les 6 taux baissent.",
+        "<strong>60 % des tués de 2021 sont des usagers de deux et trois-roues motorisés</strong>, un peu plus que "
+        "leur part du parc (1,01 à 1,10 fois).",
+        "<strong>7 questions restent sans réponse</strong>, faute d'accidents par préfecture, par mois et par âge."]
+    puces = "".join(f'<li><span class="retenir-num">{i}</span><span>{m}</span></li>' for i, m in enumerate(messages, 1))
+    st.markdown(f'<div class="retenir"><div class="retenir-titre">À retenir</div><ol>{puces}</ol></div>',
+                unsafe_allow_html=True)
 with d:
     synthese("8 095 498", "habitants, recensement de 2022",
              ["5 préfectures cumulent un réseau dégradé et aucune auto-école agréée (641 955 habitants).",

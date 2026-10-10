@@ -109,6 +109,14 @@ Couleurs fixes par donnée, dans `theme.py`, pour qu'un indicateur garde sa coul
 - **« Voir le détail »** : survol bleu `#1769AA`, texte blanc, comme la navigation de la barre latérale.
 - Cartes de thème de même hauteur ; **« Voir le détail » toujours en bas** de chaque carte (Couverture comprise).
 - Carte Réseau : précision « Relevé de 2020, niveau C. » retirée.
-- **En attente de validation** : section « Permis de conduire délivrés » (titre sans 2024, sous-titre « Total et
-  décomposition par catégorie », total à gauche, barres par catégorie aux couleurs de la page Évolutions).
+
+## 8. Bas de page (Vue nationale)
+
+- « Voir le détail » : survol **bleu clair** `#E8F0FB` (texte bleu nuit), au lieu du bleu soutenu jugé trop foncé.
+- **Permis de conduire délivrés** (titre sans 2024 ; sous-titre « Total et décomposition par catégorie ») : graphique
+  et axes conservés ; chaque barre prend la couleur de sa catégorie, celle de la page Évolutions (A bleu, B orange,
+  C vert, E vert clair, D ambre, F gris) ; chiffres alignés à droite des barres.
+- **Immatriculations et permis, 1990–2024** : note de fin dans une carte (fond bleu clair, filet bleu), sur deux
+  lignes — « Une date situe une variation… » puis « Repères : ① … ② … ③ … » (`.note-carte`).
+- **À retenir** : carte blanche, cinq messages numérotés dans des pastilles rondes (`.retenir`).
 

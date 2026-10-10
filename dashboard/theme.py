@@ -167,8 +167,8 @@ div[class*="st-key-carte_reco_"]:hover { transform: translateY(-4px); box-shadow
 [data-testid="stColumn"]:has(.reco-theme) [data-testid="stElementContainer"]:has(button) { margin-top: auto; }
 /* « Voir le détail » : survol bleu, comme la navigation de la barre latérale */
 [class*="st-key-vn_t_"] button { transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease; }
-[class*="st-key-vn_t_"] button:hover { background: #1769aa !important; border-color: #1769aa !important; color: #ffffff !important; }
-[class*="st-key-vn_t_"] button:hover p { color: #ffffff !important; }
+[class*="st-key-vn_t_"] button:hover { background: #e8f0fb !important; border-color: #9fbde9 !important; color: #0b263d !important; }
+[class*="st-key-vn_t_"] button:hover p { color: #0b263d !important; }
 /* Boutons radio : contour visible même non sélectionnés */
 [data-testid="stRadioOption"]:not([data-selected="true"]) > div > div > div:first-child { box-shadow: inset 0 0 0 2px #64748b; background: #ffffff; }
 .reco-theme { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
@@ -256,6 +256,16 @@ div.st-key-topbar_droite [data-testid="stMarkdownContainer"] { display: flex; ju
 .onglets-repere { font-size: 0.82rem; font-style: italic; color: #64748b; margin: 0.1rem 0 0.4rem; }
 .note-graphique { font-size: 0.875rem; line-height: 1.5; color: #0b263d; margin: 0.2rem 0 0.6rem; }
 .note-graphique.forte { font-weight: 700; }
+/* Note en carte (repères sous un graphique) : fond bleu clair, filet bleu à gauche */
+.note-carte { background: #eef4fd; border-left: 4px solid #1769aa; border-radius: 8px; padding: 12px 16px; margin: 0.4rem 0 0.8rem;
+  font-size: 0.9rem; line-height: 1.7; color: #172b3a; }
+/* À retenir : carte blanche, messages numérotés en pastille */
+.retenir { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 14px; padding: 20px 24px; box-shadow: 0 1px 2px rgba(11,38,61,0.04); }
+.retenir-titre { font-weight: 700; font-size: 1.05rem; color: #0b263d; margin-bottom: 10px; }
+.retenir ol { list-style: none; margin: 0; padding: 0; }
+.retenir li { display: flex; align-items: flex-start; gap: 12px; padding: 7px 0; font-size: 0.93rem; line-height: 1.5; color: #172b3a; }
+.retenir-num { flex: 0 0 26px; height: 26px; border-radius: 50%; background: #e3ebfb; color: #0b263d; font-weight: 700; font-size: 0.82rem;
+  display: inline-flex; align-items: center; justify-content: center; }
 </style>
 """
 
