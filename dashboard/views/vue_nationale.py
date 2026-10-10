@@ -12,7 +12,7 @@ from plotly.subplots import make_subplots  # noqa: E402
 from composants import (ariane, carte_kpi, constat, entete, export_csv, fenetre_geo, habiller, limite,  # noqa: E402
                         note, pied, rangee_kpi, synthese, titre_bloc, tracer)
 from donnees import contours, contours_regions, couche, fr, lire  # noqa: E402
-from theme import BLEUS, COULEUR_REGION, ENCRE, THEME  # noqa: E402
+from theme import BLEUS, COULEUR_REGION, ENCRE, ROUGE_DRAPEAU, SERIE, THEME  # noqa: E402
 
 ind = lire("07_indicateurs", "indicateurs_07")
 reg = lire("08_priorisation", "regions_08")
@@ -229,7 +229,7 @@ with gauche:
 with droite:
     constat("Le Togo compte <strong>8 095 498</strong> habitants, très inégalement répartis : le Grand Lomé en "
             "concentre près du quart. La densité des auto-écoles agréées suit les grandes villes, tandis que "
-            "<strong style='color:#eb6834'>23 préfectures</strong> rurales n'en ont aucune.")
+            f"<strong style='color:{ROUGE_DRAPEAU}'>23 préfectures</strong> rurales n'en ont aucune.")
     st.caption("Les 5 régions sont tracées en couleur sur toutes les couches (Maritime, Plateaux, Centrale, Kara, "
                "Savanes). Survolez une préfecture pour sa zone, sa région, sa population, ses auto-écoles agréées et "
                "l'état de son réseau.")
@@ -263,7 +263,7 @@ with c1:
     ens = ens.sort_values("Année")
     f = go.Figure(go.Scatter(x=ens["Année"], y=ens["Valeur"], mode="lines",
                              line=dict(color=THEME["Mobilité"], width=2), fill="tozeroy",
-                             fillcolor="rgba(42,120,214,0.12)"))
+                             fillcolor="rgba(36,116,198,0.12)"))
     for an in (1995, 2004):
         f.add_vline(x=an, line=dict(color="#b9b6ad", width=1, dash="dot"))
     _mini(f, "vn_mini_mob")
@@ -350,7 +350,7 @@ with d:
 st.markdown("")
 titre_bloc("Immatriculations et permis, 1990–2024",
            "Deux étages sur la même échelle des années : une date se lit sur les deux séries à la fois.")
-COUL = {"Moto": "#2a78d6", "Voiture": "#eb6834", "Poids lourd": "#1baf7a", "Bus et car": "#eda100", "Autres": "#e87ba4"}
+COUL = {k: SERIE[k] for k in ("Moto", "Voiture", "Poids lourd", "Bus et car", "Autres")}
 PERMIS_COUL = {"A": "#2a78d6", "B": "#eb6834", "C": "#1baf7a", "E": "#1baf7a", "D": "#eda100", "F": "#8a8780"}
 PERMIS_TRAIT = {"A": "solid", "B": "solid", "C": "solid", "E": "dash", "D": "solid", "F": "dot"}
 

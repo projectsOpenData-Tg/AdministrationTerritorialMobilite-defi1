@@ -10,15 +10,15 @@ toolbarMode = "minimal"
 
 [theme]
 base = "light"
-primaryColor = "#0d366b"            # bleu foncé : boutons actifs, onglet actif, liens
-backgroundColor = "#f4f2ec"         # fond crème de la page
+primaryColor = "#1769aa"            # bleu soutenu : boutons actifs, onglet actif, liens
+backgroundColor = "#f7f8f5"         # blanc cassé
 secondaryBackgroundColor = "#ffffff"
-textColor = "#141413"
-borderColor = "#e2dfd6"
+textColor = "#172b3a"
+borderColor = "#e2e8f0"
 
 [theme.sidebar]
-backgroundColor = "#0f2438"         # bleu nuit
-secondaryBackgroundColor = "#1b3552"
-textColor = "#ffffff"
-primaryColor = "#cde2fb"
-borderColor = "#2c4866"
+backgroundColor = "#0b263d"         # bleu nuit
+secondaryBackgroundColor = "#123552"
+textColor = "#f8fafc"
+primaryColor = "#1769aa"
+borderColor = "#24415c"
