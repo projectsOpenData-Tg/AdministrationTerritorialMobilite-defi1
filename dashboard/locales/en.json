@@ -15,188 +15,40 @@
   "texte": "(Valued 101.1 km)",
   "relu": false
  },
- "(101,1 km)": {
-  "texte": "(A total of 101.1 km)",
-  "relu": false
- },
- "(101,2 km)": {
-  "texte": "(A total of 101,2 km)",
-  "relu": false
- },
  "(110,7 km évalués)": {
   "texte": "(evaluated 110,7 km)",
-  "relu": false
- },
- "(110,7 km)": {
-  "texte": "(A total of 110,7 km)",
-  "relu": false
- },
- "(110,8 km)": {
-  "texte": "(A total of 110,8 km)",
-  "relu": false
- },
- "(113,5 km)": {
-  "texte": "(A total of 113.5 km)",
   "relu": false
  },
  "(120,3 km évalués)": {
   "texte": "(Valued at 120.3 km)",
   "relu": false
  },
- "(120,3 km)": {
-  "texte": "The Commission shall adopt delegated acts in accordance with the opinion of the Committee.",
-  "relu": false
- },
  "(124,1 km évalués)": {
   "texte": "(124,1 km assessed)",
-  "relu": false
- },
- "(124,1 km)": {
-  "texte": "(124.1 km)",
-  "relu": false
- },
- "(124,9 km)": {
-  "texte": "(124.9 km)",
   "relu": false
  },
  "(125,7 km évalués)": {
   "texte": "(125,7 km assessed)",
   "relu": false
  },
- "(125,7 km)": {
-  "texte": "(125.7 km)",
-  "relu": false
- },
- "(129,9 km)": {
-  "texte": "(129.9 km)",
-  "relu": false
- },
  "(131,7 km évalués)": {
   "texte": "(Valued 131,7 km)",
-  "relu": false
- },
- "(131,7 km)": {
-  "texte": "(131.7 km)",
   "relu": false
  },
  "(140,6 km évalués)": {
   "texte": "(140,6 km assessed)",
   "relu": false
  },
- "(140,6 km)": {
-  "texte": "The following is a list of the countries of the European Union:",
-  "relu": false
- },
- "(161,4 km)": {
-  "texte": "(161.4 km)",
-  "relu": false
- },
  "(167,5 km évalués)": {
   "texte": "(evaluated 167,5 km)",
-  "relu": false
- },
- "(167,5 km)": {
-  "texte": "(167.5 km)",
-  "relu": false
- },
- "(24,8 km)": {
-  "texte": "(8.4 miles)",
-  "relu": false
- },
- "(27,8 km)": {
-  "texte": "(7.8 km)",
   "relu": false
  },
  "(35,8 km évalués)": {
   "texte": "(evaluated 35,8 km)",
   "relu": false
  },
- "(35,8 km)": {
-  "texte": "(including roads)",
-  "relu": false
- },
- "(36,0 km)": {
-  "texte": "(6.0 km)",
-  "relu": false
- },
- "(40,3 km)": {
-  "texte": "(8.3 km)",
-  "relu": false
- },
- "(41,5 km)": {
-  "texte": "(8.5 km)",
-  "relu": false
- },
- "(45,2 km)": {
-  "texte": "(4,5 km)",
-  "relu": false
- },
- "(46,1 km)": {
-  "texte": "The following is a list of the Member States of the European Union:",
-  "relu": false
- },
  "(49,8 km évalués)": {
   "texte": "(evaluated at 49,8 km)",
-  "relu": false
- },
- "(49,8 km)": {
-  "texte": "(9.8 km)",
-  "relu": false
- },
- "(57,9 km)": {
-  "texte": "The following is the list of countries and territories:",
-  "relu": false
- },
- "(58,5 km)": {
-  "texte": "(8.5 km)",
-  "relu": false
- },
- "(58,8 km)": {
-  "texte": "(8.8 km)",
-  "relu": false
- },
- "(63,1 km)": {
-  "texte": "(63.1 km)",
-  "relu": false
- },
- "(7,0 km)": {
-  "texte": "(7.0 km)",
-  "relu": false
- },
- "(70,0 km)": {
-  "texte": "(70 km)",
-  "relu": false
- },
- "(72,5 km)": {
-  "texte": "(7.2 km)",
-  "relu": false
- },
- "(75,6 km)": {
-  "texte": "(75 km)",
-  "relu": false
- },
- "(82,5 km)": {
-  "texte": "(8.2 km)",
-  "relu": false
- },
- "(84,0 km)": {
-  "texte": "(8.4 km)",
-  "relu": false
- },
- "(87,9 km)": {
-  "texte": "(8.7 km)",
-  "relu": false
- },
- "(90,1 km)": {
-  "texte": "(90 km)",
-  "relu": false
- },
- "(90,5 km)": {
-  "texte": "(90 km)",
-  "relu": false
- },
- "(96,6 km)": {
-  "texte": "(90 km)",
   "relu": false
  },
  "(la formation)": {
@@ -263,626 +115,6 @@
   "texte": "Each stage was frozen before the next, and no figures were copied by hand.",
   "relu": false
  },
- ".ai-lab-logo-carte": {
-  "texte": ".ai-lab-logo-card",
-  "relu": false
- },
- ".ai-lab-logo-carte img": {
-  "texte": ".ai-lab-logo-card img",
-  "relu": false
- },
- ".ai-lab-logo-repli": {
-  "texte": ". lab-logo-replied",
-  "relu": false
- },
- ".ariane": {
-  "texte": ". Ariane",
-  "relu": false
- },
- ".ariane b": {
-  "texte": ". Ariane b",
-  "relu": false
- },
- ".armoiries": {
-  "texte": ".Armouries",
-  "relu": false
- },
- ".armoiries-repli": {
-  "texte": ". . . . . . . .",
-  "relu": false
- },
- ".bloc-sous-titre": {
-  "texte": ". subtitled block",
-  "relu": false
- },
- ".bloc-titre": {
-  "texte": ".title block",
-  "relu": false
- },
- ".constat": {
-  "texte": ".constat",
-  "relu": false
- },
- ".constat-texte": {
-  "texte": ".context",
-  "relu": false
- },
- ".constat-titre": {
-  "texte": ".title",
-  "relu": false
- },
- ".constat-titre, .limite-titre, .synthese-titre": {
-  "texte": ".constat-title, .limit-title, .synthese-title",
-  "relu": false
- },
- ".etape": {
-  "texte": ".step",
-  "relu": false
- },
- ".etape-desc": {
-  "texte": ". step-desc",
-  "relu": false
- },
- ".etape-num": {
-  "texte": ".step number",
-  "relu": false
- },
- ".etape-sortie": {
-  "texte": ". exit step",
-  "relu": false
- },
- ".etape-titre": {
-  "texte": ".title step",
-  "relu": false
- },
- ".etape:last-child": {
-  "texte": ".stage: last-child",
-  "relu": false
- },
- ".etapes": {
-  "texte": ". stages",
-  "relu": false
- },
- ".etiquette": {
-  "texte": ".label",
-  "relu": false
- },
- ".etiquette.alerte": {
-  "texte": ".label. warning",
-  "relu": false
- },
- ".etiquette.critique": {
-  "texte": ".label.criticism",
-  "relu": false
- },
- ".etiquette.national": {
-  "texte": ".label.national",
-  "relu": false
- },
- ".etiquette.neutre": {
-  "texte": ".label .neutral",
-  "relu": false
- },
- ".etiquette.ok": {
-  "texte": ". etiquette .",
-  "relu": false
- },
- ".etiquette.reco-horizon": {
-  "texte": ".label.back horizon",
-  "relu": false
- },
- ".etiquette.reco-nature": {
-  "texte": ".label.reco-nature",
-  "relu": false
- },
- ".etiquette.reco-priorite": {
-  "texte": ".label.reco-priority",
-  "relu": false
- },
- ".filtres-actifs": {
-  "texte": ".active filters",
-  "relu": false
- },
- ".groupe": {
-  "texte": ".group",
-  "relu": false
- },
- ".kpi": {
-  "texte": ".kpi",
-  "relu": false
- },
- ".kpi-contexte": {
-  "texte": ".kpi-context",
-  "relu": false
- },
- ".kpi-grille": {
-  "texte": ".kpi-grill",
-  "relu": false
- },
- ".kpi-grille.une-ligne": {
-  "texte": ".kpi-grill.one-line",
-  "relu": false
- },
- ".kpi-grille.une-ligne .kpi": {
-  "texte": ".kpi-grill.one-line .kpi",
-  "relu": false
- },
- ".kpi-grille.une-ligne .kpi-centre": {
-  "texte": ".kpi-grid .one-line .kpi-center",
-  "relu": false
- },
- ".kpi-grille.une-ligne .kpi-contexte": {
-  "texte": ".kpi-grid.one-line .kpi-context",
-  "relu": false
- },
- ".kpi-grille.une-ligne .kpi-libelle": {
-  "texte": "♪ I'm going to be a little bit more like that ♪",
-  "relu": false
- },
- ".kpi-grille.une-ligne .kpi-phrase": {
-  "texte": ".kpi-grill.one-line .kpi-phrase",
-  "relu": false
- },
- ".kpi-grille.une-ligne .kpi-tete": {
-  "texte": ".kpi-grill.one-line .kpi-tete",
-  "relu": false
- },
- ".kpi-grille.une-ligne .kpi-tete .kpi-libelle": {
-  "texte": "♪ I'm not gonna let you down ♪",
-  "relu": false
- },
- ".kpi-grille.une-ligne .kpi-valeur": {
-  "texte": ".kpi-grid.one-line .kpi-value",
-  "relu": false
- },
- ".kpi-icone": {
-  "texte": ".kpi-icon",
-  "relu": false
- },
- ".kpi-icone svg": {
-  "texte": ".kpi-icon svg",
-  "relu": false
- },
- ".kpi-libelle": {
-  "texte": "- I 'm not . - I 'm not .",
-  "relu": false
- },
- ".kpi-periode": {
-  "texte": ".kpi period",
-  "relu": false
- },
- ".kpi-phrase": {
-  "texte": ".kpi-phrase",
-  "relu": false
- },
- ".kpi-reserve": {
-  "texte": ".kpi-reserve",
-  "relu": false
- },
- ".kpi-tendance": {
-  "texte": ".kpi-tendance",
-  "relu": false
- },
- ".kpi-tendance small": {
-  "texte": ".kpi-tendance small",
-  "relu": false
- },
- ".kpi-tendance.mieux": {
-  "texte": ".kpi-tendance . better",
-  "relu": false
- },
- ".kpi-tendance.neutre": {
-  "texte": ".kpi-tendance.neutral",
-  "relu": false
- },
- ".kpi-tendance.pire": {
-  "texte": ".kpi-tendance. worse",
-  "relu": false
- },
- ".kpi-tete": {
-  "texte": "- What ?",
-  "relu": false
- },
- ".kpi-tete .kpi-libelle": {
-  "texte": "♪ I 'm going to be a good boy ♪",
-  "relu": false
- },
- ".kpi-unite": {
-  "texte": ".kpi-unit",
-  "relu": false
- },
- ".kpi-valeur": {
-  "texte": ".kpi-value",
-  "relu": false
- },
- ".kpi::after": {
-  "texte": ".kpi::after",
-  "relu": false
- },
- ".kpi:hover": {
-  "texte": ".kpi: hover",
-  "relu": false
- },
- ".kpi:hover::after": {
-  "texte": ".kpi:hover::after",
-  "relu": false
- },
- ".langue-lib": {
-  "texte": ". language-free",
-  "relu": false
- },
- ".limite": {
-  "texte": ".Limit",
-  "relu": false
- },
- ".limite-texte": {
-  "texte": ".Limited text",
-  "relu": false
- },
- ".limite-titre": {
-  "texte": ".title limit",
-  "relu": false
- },
- ".limite.discret": {
-  "texte": ".Limited. discreet .",
-  "relu": false
- },
- ".limite.discret .limite-texte": {
-  "texte": ".limit. discreet .limit-text",
-  "relu": false
- },
- ".limite.discret .limite-titre": {
-  "texte": ".limit. discreet .limit-title",
-  "relu": false
- },
- ".note-carte": {
-  "texte": ".note-card",
-  "relu": false
- },
- ".note-carte.blanche": {
-  "texte": ".note-card . white",
-  "relu": false
- },
- ".note-carte.blanche.risque": {
-  "texte": ".note-card . white . risk",
-  "relu": false
- },
- ".note-graphique": {
-  "texte": ".graphic note",
-  "relu": false
- },
- ".note-graphique.forte": {
-  "texte": ".graphic note.forte",
-  "relu": false
- },
- ".onglets-aide": {
-  "texte": ".Help tabs .",
-  "relu": false
- },
- ".onglets-repere": {
-  "texte": ". . . . . .",
-  "relu": false
- },
- ".pied": {
-  "texte": ".foot",
-  "relu": false
- },
- ".pied-identite": {
-  "texte": ".foot-identity",
-  "relu": false
- },
- ".pied-identite-sous-titre": {
-  "texte": ".foot-identity-under-title",
-  "relu": false
- },
- ".pied-identite-titre": {
-  "texte": ".foot-identity-title",
-  "relu": false
- },
- ".question": {
-  "texte": ".question",
-  "relu": false
- },
- ".reco-cible": {
-  "texte": ".reco-target",
-  "relu": false
- },
- ".reco-contexte": {
-  "texte": ".reco-context",
-  "relu": false
- },
- ".reco-horizon2031": {
-  "texte": ".reco-horizon2031",
-  "relu": false
- },
- ".reco-pastille": {
-  "texte": ".reco-paddle",
-  "relu": false
- },
- ".reco-theme": {
-  "texte": ".reco-theme",
-  "relu": false
- },
- ".reco-theme-lib": {
-  "texte": ".reco-theme-lib",
-  "relu": false
- },
- ".reco-titre": {
-  "texte": ".reco-title",
-  "relu": false
- },
- ".reponse": {
-  "texte": "Answer .",
-  "relu": false
- },
- ".reponse.en-carte": {
-  "texte": ".response. by card",
-  "relu": false
- },
- ".retenir": {
-  "texte": ". to maintain",
-  "relu": false
- },
- ".retenir li": {
-  "texte": ". keep li",
-  "relu": false
- },
- ".retenir ol": {
-  "texte": ".to maintain",
-  "relu": false
- },
- ".retenir-num": {
-  "texte": ". hold-num",
-  "relu": false
- },
- ".retenir-titre": {
-  "texte": ".to hold the title",
-  "relu": false
- },
- ".slogan-barre": {
-  "texte": ".slogan bar",
-  "relu": false
- },
- ".slogan-filet": {
-  "texte": ".slogan-filet",
-  "relu": false
- },
- ".slogan-illustration": {
-  "texte": ".slogan-illustration",
-  "relu": false
- },
- ".slogan-texte": {
-  "texte": ".slogan-text",
-  "relu": false
- },
- ".stTabs .react-aria-SelectionIndicator": {
-  "texte": ".stTabs .react-area-SelectionIndicator",
-  "relu": false
- },
- ".stTabs [data-testid=\"stTab\"]": {
-  "texte": ".stTabs [data-testid=\"stTab\"]",
-  "relu": false
- },
- ".stTabs [data-testid=\"stTab\"] p": {
-  "texte": ".stTabs [data-testid=\"stTab\"] p",
-  "relu": false
- },
- ".stTabs [data-testid=\"stTab\"]:hover": {
-  "texte": ".stTabs [data-testid=\"stTab\"]:hover",
-  "relu": false
- },
- ".stTabs [data-testid=\"stTab\"]:hover p": {
-  "texte": ".stTabs [data-testid=\"stTab\"]:hover p",
-  "relu": false
- },
- ".stTabs [data-testid=\"stTab\"][aria-selected=\"true\"]": {
-  "texte": ".stTabs [data-testid=\"stTab\"][aria-selected=\"true\"]",
-  "relu": false
- },
- ".stTabs [data-testid=\"stTab\"][aria-selected=\"true\"] p": {
-  "texte": ".stTabs [data-testid=\"stTab\"][aria-selected=\"true\"] p",
-  "relu": false
- },
- ".stTabs [role=\"tablist\"]": {
-  "texte": ".stTabs [role=\"tablist\"]",
-  "relu": false
- },
- ".surtitre": {
-  "texte": "- I 'm not sure .",
-  "relu": false
- },
- ".synthese": {
-  "texte": ". synthesis",
-  "relu": false
- },
- ".synthese ul": {
-  "texte": ". synthesis ul",
-  "relu": false
- },
- ".synthese-chiffre": {
-  "texte": ".synthesis-number",
-  "relu": false
- },
- ".synthese-legende": {
-  "texte": ". synthesis-legend",
-  "relu": false
- },
- ".synthese-titre": {
-  "texte": ". synthesis-title",
-  "relu": false
- },
- ".topbar-centre": {
-  "texte": ".topbar-center",
-  "relu": false
- },
- ".topbar-centre::after": {
-  "texte": ".topbar-center::after",
-  "relu": false
- },
- ".topbar-ligne": {
-  "texte": ".topbar-line",
-  "relu": false
- },
- ".topbar-ministere": {
-  "texte": ".topbar-ministere",
-  "relu": false
- },
- ".topbar-sous-titre": {
-  "texte": ".topbar-under-title",
-  "relu": false
- },
- ".topbar-titre": {
-  "texte": ".topbar title",
-  "relu": false
- },
- ".total-carte": {
-  "texte": ".total-card",
-  "relu": false
- },
- ".total-chiffre": {
-  "texte": ".total figure",
-  "relu": false
- },
- ".total-legende": {
-  "texte": ".total-legend",
-  "relu": false
- },
- ".total-note": {
-  "texte": ".total note",
-  "relu": false
- },
- "/* Barre du haut (maquette §4) : armoiries + ministère": {
-  "texte": "/* Upper bar (model §4): armories + ministry",
-  "relu": false
- },
- "/* Barre latérale */": {
-  "texte": "/* side bar */",
-  "relu": false
- },
- "/* Bloc central (chiffre, tendance, phrase), centré dans la carte ; liseré fin en bas, couleur du thème */": {
-  "texte": "/* Central block (figure, trend, phrase), centered in the map; read at the bottom, theme colour */",
-  "relu": false
- },
- "/* Blocs, constat, synthèse, limite */": {
-  "texte": "/* Blocks, report, summary, limit */",
-  "relu": false
- },
- "/* Bouton « Voir le détail » toujours en bas de sa carte : cartes de même hauteur, dernier élément poussé en bas */": {
-  "texte": "/* Button  ⁇  See the detail  ⁇  always at the bottom of the map: cards of the same height, last item pushed down */",
-  "relu": false
- },
- "/* Boutons radio : contour visible même non sélectionnés */": {
-  "texte": "/* Radio buttons: visible outline even if not selected */",
-  "relu": false
- },
- "/* Cartes de recommandation */": {
-  "texte": "/* Cards of recommendation */",
-  "relu": false
- },
- "/* Cartes des quatre thèmes : carte blanche arrondie, liseré bas de la couleur du titre, survol sans balayage */": {
-  "texte": "/* Maps of the four themes: rounded white card, read low in title colour, flying without a scan */",
-  "relu": false
- },
- "/* Chiffres clés */": {
-  "texte": "/* Key figures */",
-  "relu": false
- },
- "/* Contenu : largeur fluide, espacement latéral fixe (maquette §2.4) */": {
-  "texte": "/* Content: fluid width, fixed lateral spacing (model §2.4) */",
-  "relu": false
- },
- "/* Contenu centré verticalement dans la carte ; liste alignée à gauche */": {
-  "texte": "/* Vertically centred content in the map; list aligned to the left */",
-  "relu": false
- },
- "/* En-tête de page */": {
-  "texte": "/* Page headings */",
-  "relu": false
- },
- "/* Filtres : fond blanc, bordure gris clair, état sélectionné bleu */": {
-  "texte": "/* Filters: white background, light gray edge, selected blue state */",
-  "relu": false
- },
- "/* Graphiques et cartes sur fond blanc */": {
-  "texte": "/* Graphs and maps on white background */",
-  "relu": false
- },
- "/* L'en-tête de Streamlit est rendu transparent et se superpose à notre barre du haut : ses boutons (Share, GitHub… sur": {
-  "texte": "/* Streamlit's header is transparent and overlaps with our bar at the top: its buttons (Share, GitHub... on",
-  "relu": false
- },
- "/* Listes (étapes, écarts, actions) */": {
-  "texte": "/* Lists (steps, deviations, actions) */",
-  "relu": false
- },
- "/* Logo (st.logo) : Togo en miniature et nom du tableau de bord, en face du bouton qui replie la barre */": {
-  "texte": "/* Logo (st.logo): Togo in miniature and name of the dashboard, in front of the button that folds the bar */",
-  "relu": false
- },
- "/* Navigation active : bleu soutenu (le jaune du drapeau reste réservé aux mises en évidence) */": {
-  "texte": "/* Active navigation: supporting blue (yellow of the flag remains for highlights only) */",
-  "relu": false
- },
- "/* Note en carte (repères sous un graphique) : fond bleu clair, filet bleu à gauche */": {
-  "texte": "/* Map note (references below a chart): light blue background, blue net to the left */",
-  "relu": false
- },
- "/* Pastille d'icône du thème, à gauche du libellé (même forme arrondie que les étiquettes A/B/C) */": {
-  "texte": "/* Theme icon tablet to the left of the wording (same rounded shape as A/B/C labels) */",
-  "relu": false
- },
- "/* Pied de page */": {
-  "texte": "/* Footnote */",
-  "relu": false
- },
- "/* Six chiffres clés sur une ligne (Vue nationale) : 3 puis 2 colonnes sur écran étroit */": {
-  "texte": "/* Six key digits on a line (National view): 3 and then 2 columns on the narrow screen */",
-  "relu": false
- },
- "/* Slogan et illustration de route, poussés en bas de la barre latérale quand la place le permet */": {
-  "texte": "/* Slogan and road illustration, pushed to the bottom of the side bar when the space permits */",
-  "relu": false
- },
- "/* Sous-onglets en pastilles */": {
-  "texte": "/* Sub-tabs made of pellets */",
-  "relu": false
- },
- "/* Streamlit place un en-tête opaque dès qu'il affiche un bouton (Fork/GitHub sur Streamlit Cloud, réouverture de la": {
-  "texte": "/* Streamlit puts an opaque header as soon as it displays a button (Fork/GitHub on Streamlit Cloud, reopening the",
-  "relu": false
- },
- "/* Synthèse chiffrée (Vue nationale) : carte vert clair, bouton dedans, même hauteur que « À retenir » */": {
-  "texte": "/* Encrypted synthesis (National view): light green card, button inside, same height as  ⁇  Remember  ⁇  */",
-  "relu": false
- },
- "/* Sélecteur de langue : sous le logo, au-dessus du menu (il est rendu dans le contenu de la barre, puis remonté) */": {
-  "texte": "/* Language selector: under the logo, above the menu (it is rendered into the content of the bar, then taken up) */",
-  "relu": false
- },
- "/* Tendance : badge arrondi coloré (rouge = aggravation, vert = amélioration démontrée, gris = variation neutre) */": {
-  "texte": "/* Trend: coloured rounded badge (red = worsening, green = demonstrated improvement, grey = neutral variation) */",
-  "relu": false
- },
- "/* Total des permis : carte bleu clair (même bleu que le survol de « Voir le détail ») */": {
-  "texte": "/* Total permits: light blue card (same blue as the flyover of  ⁇  See details  ⁇ ) */",
-  "relu": false
- },
- "/* chiffre à gauche, liste à droite */": {
-  "texte": "/* number on the left, list on the right */",
-  "relu": false
- },
- "/* haut aligné : les chiffres restent sur une même ligne */": {
-  "texte": "/* high aligned: the numbers remain on the same line */",
-  "relu": false
- },
- "/* « Voir le détail » : survol bleu, comme la navigation de la barre latérale */": {
-  "texte": "/*  ⁇  See detail  ⁇ : blue flying, such as navigation on the side bar */",
-  "relu": false
- },
- "/* À retenir : carte blanche, messages numérotés en pastille */": {
-  "texte": "/* To be remembered: white card, numbered messages in pastel */",
-  "relu": false
- },
  "0 auto-écoles à ouvrir": {
   "texte": "Driving schools to be opened",
   "relu": false
@@ -899,32 +131,8 @@
   "texte": "0.2% of roads in poor condition (87.9 km assessed, 2 critical sections).",
   "relu": false
  },
- "0,2 km": {
-  "texte": "0.2 km",
-  "relu": false
- },
- "0,4 km": {
-  "texte": "0,4 km",
-  "relu": false
- },
  "0,5 % des routes en mauvais état (70,0 km évalués, 2 tronçons critiques).": {
   "texte": "0.5 per cent of roads in poor condition (70.0 km assessed, 2 critical sections).",
-  "relu": false
- },
- "0,5 km": {
-  "texte": "0,5 km",
-  "relu": false
- },
- "0,6 km": {
-  "texte": "0,6 km",
-  "relu": false
- },
- "0,7 km": {
-  "texte": "0,7 km",
-  "relu": false
- },
- "0,8 km": {
-  "texte": "0,8 km",
   "relu": false
  },
  "1 110 446 habitants concernés": {
@@ -941,10 +149,6 @@
  },
  "1 822 046 habitants concernés": {
   "texte": "1 822 046 inhabitants concerned",
-  "relu": false
- },
- "1 an": {
-  "texte": "1 year",
   "relu": false
  },
  "1 auto-écoles à ouvrir": {
@@ -979,14 +183,6 @@
   "texte": "1,275 × population aged 18 years and over ÷ 1 000",
   "relu": false
  },
- "1,6 km": {
-  "texte": "One and a half miles",
-  "relu": false
- },
- "1,8 km": {
-  "texte": "1.8 km",
-  "relu": false
- },
  "1. Danyi": {
   "texte": "1. Danyi",
   "relu": false
@@ -1003,14 +199,6 @@
   "texte": "10 thresholds",
   "relu": false
  },
- "10 à 20 km": {
-  "texte": "10 to 20 km",
-  "relu": false
- },
- "10,45 en 2010–2012, 7,38 en 2022–2024": {
-  "texte": "This is the same as in the previous year.",
-  "relu": false
- },
  "10. Tchaoudjo": {
   "texte": "10 Chaudjo",
   "relu": false
@@ -1023,16 +211,8 @@
   "texte": "101 300 inhabitants",
   "relu": false
  },
- "101,1 km": {
-  "texte": "101,1 km",
-  "relu": false
- },
  "101,1 km évalués": {
   "texte": "101,1 km assessed",
-  "relu": false
- },
- "101,2 km": {
-  "texte": "101,2 km",
   "relu": false
  },
  "101,2 km évalués": {
@@ -1047,28 +227,12 @@
   "texte": "103 of the 132 licensed driving schools in Greater Lomé.",
   "relu": false
  },
- "11,0 km": {
-  "texte": "The following is the list of countries:",
-  "relu": false
- },
  "11,5 % des routes en mauvais état (124,9 km évalués, 3 tronçons critiques).": {
   "texte": "11.5% of roads in poor condition (124.9 km assessed, 3 critical sections).",
   "relu": false
  },
- "11,6 km": {
-  "texte": "11.6 km",
-  "relu": false
- },
- "110,7 km": {
-  "texte": "It is 110.7 km.",
-  "relu": false
- },
  "110,7 km évalués": {
   "texte": "110,7 km assessed",
-  "relu": false
- },
- "110,8 km": {
-  "texte": "110,8 km",
   "relu": false
  },
  "110,8 km évalués": {
@@ -1079,16 +243,8 @@
   "texte": "The population of the municipality is 111,214",
   "relu": false
  },
- "113,5 km": {
-  "texte": "113.5 km",
-  "relu": false
- },
  "113,5 km évalués": {
   "texte": "113,5 km assessed",
-  "relu": false
- },
- "113,6 km": {
-  "texte": "113.6 km",
   "relu": false
  },
  "114 172 habitants": {
@@ -1103,14 +259,6 @@
   "texte": "12.1% of roads in poor condition (36.0 km assessed, 2 critical sections).",
   "relu": false
  },
- "12,9 km": {
-  "texte": "12,9 km",
-  "relu": false
- },
- "120,3 km": {
-  "texte": "120,3 km",
-  "relu": false
- },
  "120,3 km évalués": {
   "texte": "120,3 km assessed",
   "relu": false
@@ -1123,24 +271,12 @@
   "texte": "The population is 124,848",
   "relu": false
  },
- "124,1 km": {
-  "texte": "124,1 km",
-  "relu": false
- },
  "124,1 km évalués": {
   "texte": "124,1 km assessed",
   "relu": false
  },
- "124,9 km": {
-  "texte": "124.9 km",
-  "relu": false
- },
  "124,9 km évalués": {
   "texte": "124,9 km assessed",
-  "relu": false
- },
- "125,7 km": {
-  "texte": "125,7 km",
   "relu": false
  },
  "125,7 km évalués": {
@@ -1153,10 +289,6 @@
  },
  "128 959 habitants": {
   "texte": "128 959 inhabitants",
-  "relu": false
- },
- "129,9 km": {
-  "texte": "129.9 km",
   "relu": false
  },
  "129,9 km évalués": {
@@ -1177,14 +309,6 @@
  },
  "13 sur 38": {
   "texte": "13 out of 38",
-  "relu": false
- },
- "13,5 km": {
-  "texte": "13.5 km",
-  "relu": false
- },
- "131,7 km": {
-  "texte": "131.7 km",
   "relu": false
  },
  "131,7 km évalués": {
@@ -1215,20 +339,8 @@
   "texte": "14.4% of roads in poor condition (131.7 km assessed, 3 critical sections).",
   "relu": false
  },
- "14,4 km": {
-  "texte": "14.4 km",
-  "relu": false
- },
- "14,6 km": {
-  "texte": "14.6 km",
-  "relu": false
- },
  "140 non agréées ou au statut non renseigné": {
   "texte": "140 unlicensed or unlisted status",
-  "relu": false
- },
- "140,6 km": {
-  "texte": "It is 140.6 km.",
   "relu": false
  },
  "140,6 km évalués": {
@@ -1263,20 +375,12 @@
   "texte": "150 376 inhabitants",
   "relu": false
  },
- "150,5 km": {
-  "texte": "150,5 km",
-  "relu": false
- },
  "152 065 habitants": {
   "texte": "152 065 inhabitants",
   "relu": false
  },
  "16 préfectures sur 39": {
   "texte": "16 out of 39 prefectures",
-  "relu": false
- },
- "161,4 km": {
-  "texte": "161.4 km",
   "relu": false
  },
  "161,4 km évalués": {
@@ -1289,10 +393,6 @@
  },
  "164 460 habitants": {
   "texte": "164 460 inhabitants",
-  "relu": false
- },
- "167,5 km": {
-  "texte": "167.5 km",
   "relu": false
  },
  "167,5 km évalués": {
@@ -1329,10 +429,6 @@
  },
  "185 662 habitants": {
   "texte": "185 662 inhabitants",
-  "relu": false
- },
- "19,7 km": {
-  "texte": "19.7 km",
   "relu": false
  },
  "2 226 568 habitants concernés": {
@@ -1395,10 +491,6 @@
   "texte": "2 samples taken",
   "relu": false
  },
- "2,6 km": {
-  "texte": "2,6 km",
-  "relu": false
- },
  "2,7 % des routes en mauvais état (110,8 km évalués, un tronçon critique).": {
   "texte": "2.7 per cent of roads in poor condition (110.8 km assessed, a critical stretch).",
   "relu": false
@@ -1413,10 +505,6 @@
  },
  "20 règles": {
   "texte": "20 rules",
-  "relu": false
- },
- "20 à 30 km": {
-  "texte": "20 to 30 km",
   "relu": false
  },
  "200 585 habitants": {
@@ -1453,10 +541,6 @@
  },
  "2023 tournée d'immatriculation des motos.": {
   "texte": "2023 motorcycle registration round.",
-  "relu": false
- },
- "2024 : 597 ÷ 751 398 × 10 000 = 7,95 (de 6,18 à 10,30)": {
-  "texte": "2024: 597 ÷ 751 398 × 10 000 = 7.95 (from 6.18 to 10.30)",
   "relu": false
  },
  "2025-2031, sans action nouvelle": {
@@ -1499,20 +583,8 @@
   "texte": "21.8% of roads in poor condition (72.5 km assessed, 2 critical sections).",
   "relu": false
  },
- "22,2 % en 1990.": {
-  "texte": "22.2% in 1990.",
-  "relu": false
- },
  "22,3 % des routes en mauvais état (90,1 km évalués, un tronçon critique).": {
   "texte": "22.3% of roads in poor condition (90.1 km assessed, a critical stretch).",
-  "relu": false
- },
- "22,3 km": {
-  "texte": "22.3 km",
-  "relu": false
- },
- "22,9 km": {
-  "texte": "22.9 km",
   "relu": false
  },
  "224 411 habitants": {
@@ -1551,22 +623,6 @@
   "texte": "23.3% of roads in poor condition (161.4 km assessed, 3 critical sections).",
   "relu": false
  },
- "23,7 km": {
-  "texte": "The total area of the municipality is 23.7 km",
-  "relu": false
- },
- "24,3 km": {
-  "texte": "24,3 km",
-  "relu": false
- },
- "24,7 km": {
-  "texte": "24.7 km",
-  "relu": false
- },
- "24,8 km": {
-  "texte": "24.8 km",
-  "relu": false
- },
  "24,8 km évalués": {
   "texte": "24,8 km assessed",
   "relu": false
@@ -1577,14 +633,6 @@
  },
  "241 247 habitants": {
   "texte": "241 247 inhabitants",
-  "relu": false
- },
- "25,2 km": {
-  "texte": "25,2 km",
-  "relu": false
- },
- "25,9 km": {
-  "texte": "25,9 km",
   "relu": false
  },
  "253 467 habitants": {
@@ -1607,24 +655,8 @@
   "texte": "26.0% of roads in poor condition (27.8 km assessed, 2 critical sections).",
   "relu": false
  },
- "26,3 km": {
-  "texte": "26,3 km",
-  "relu": false
- },
- "27,0 km": {
-  "texte": "The following conditions shall apply:",
-  "relu": false
- },
  "27,2 % des routes en mauvais état (113,5 km évalués, 2 tronçons critiques).": {
   "texte": "27.2% of roads in poor condition (113.5 km assessed, 2 critical sections).",
-  "relu": false
- },
- "27,4 km": {
-  "texte": "27,4 km",
-  "relu": false
- },
- "27,8 km": {
-  "texte": "It is 27.8 km",
   "relu": false
  },
  "27,8 km évalués": {
@@ -1637,18 +669,6 @@
  },
  "28,0 % des routes en mauvais état (167,5 km évalués, un tronçon critique).": {
   "texte": "28.0% of roads in poor condition (167.5 km assessed, a critical stretch).",
-  "relu": false
- },
- "28,3 km": {
-  "texte": "28,3 km",
-  "relu": false
- },
- "28,4 km": {
-  "texte": "28,4 km",
-  "relu": false
- },
- "28,5 km": {
-  "texte": "28 and a half km",
   "relu": false
  },
  "283 738 habitants": {
@@ -1683,10 +703,6 @@
   "texte": "2 932 492 inhabitants were affected.",
   "relu": false
  },
- "3 163 km": {
-  "texte": "3 163 km",
-  "relu": false
- },
  "3 311 579 habitants concernés": {
   "texte": "3 311 579 inhabitants concerned",
   "relu": false
@@ -1719,10 +735,6 @@
   "texte": "3 pieces taken",
   "relu": false
  },
- "3,2 km": {
-  "texte": "3,2 km",
-  "relu": false
- },
  "3,3 % des routes en mauvais état (45,2 km évalués, 2 tronçons critiques).": {
   "texte": "3.3% of roads in poor condition (45.2 km assessed, 2 critical sections).",
   "relu": false
@@ -1731,16 +743,12 @@
   "texte": "3.4% of roads in poor condition (101.2 km assessed, a critical stretch).",
   "relu": false
  },
- "3,5 km": {
-  "texte": "It's three miles.",
-  "relu": false
- },
  "3. Agou": {
   "texte": "3 - Agou",
   "relu": false
  },
  "3. L'état du réseau vient du relevé des tronçons de 2020, avec une méthode de notation non publiée. L'annuaire national de la même année donne d'autres parts par état ; aucune ne concorde.": {
-  "texte": "3. The status of the network comes from a survey of the 2020 sections, with an unpublished rating method. The National Yearbook of the same year gives further statistical breakdowns; none agree.",
+  "texte": "3. The state of the network is derived from a survey of 2020 sections with an unpublished rating method.",
   "relu": false
  },
  "30 % ou plus": {
@@ -1755,16 +763,8 @@
   "texte": "30 sets of data; 32 indicators, 17 of which in C.",
   "relu": false
  },
- "30 à 40 km": {
-  "texte": "30 to 40 km",
-  "relu": false
- },
  "300 000 ou plus": {
   "texte": "300 000 or more",
-  "relu": false
- },
- "304,6 km": {
-  "texte": "304,6 km",
   "relu": false
  },
  "304,6 km à remettre en état": {
@@ -1777,22 +777,6 @@
  },
  "31 téléchargés, 3 recensés seulement.": {
   "texte": "31 downloads, only 3 listed.",
-  "relu": false
- },
- "31,1 km": {
-  "texte": "31 and 1 km",
-  "relu": false
- },
- "31,2 km": {
-  "texte": "31,2 km",
-  "relu": false
- },
- "31,3 km": {
-  "texte": "The total length of the route is 31.3 km",
-  "relu": false
- },
- "31,8 km": {
-  "texte": "31,8 km",
   "relu": false
  },
  "310 immatriculations de motos pour chaque permis moto délivré": {
@@ -1827,16 +811,8 @@
   "texte": "34.0% of roads in poor condition (120.3 km assessed, a critical stretch).",
   "relu": false
  },
- "35,8 km": {
-  "texte": "The total area of the municipality",
-  "relu": false
- },
  "35,8 km évalués": {
   "texte": "35,8 km assessed",
-  "relu": false
- },
- "36,0 km": {
-  "texte": "36,0 km",
   "relu": false
  },
  "36,0 km évalués": {
@@ -1847,20 +823,12 @@
   "texte": "36.9% of roads in poor condition (125.7 km assessed, 3 critical sections).",
   "relu": false
  },
- "37,3 km": {
-  "texte": "It is 37.3 km",
-  "relu": false
- },
  "38 531 permis délivrés en 2024, dont 10 165 permis moto. Les permis n'ont ni territoire, ni âge, ni mois.": {
   "texte": "38 531 permits issued in 2024, of which 10 165 motorcycle permits.",
   "relu": false
  },
  "38 préfectures classées": {
   "texte": "38 classified prefectures",
-  "relu": false
- },
- "38,2 km": {
-  "texte": "38,2 km",
   "relu": false
  },
  "388 775 habitants": {
@@ -1939,16 +907,8 @@
   "texte": "40 240 inhabitants",
   "relu": false
  },
- "40 à 50 km": {
-  "texte": "40 to 50 km",
-  "relu": false
- },
  "40,0 % des routes en mauvais état (124,1 km évalués, 5 tronçons critiques).": {
   "texte": "40.0% of roads in poor condition (124.1 km assessed, 5 critical sections).",
-  "relu": false
- },
- "40,3 km": {
-  "texte": "40.3 km",
   "relu": false
  },
  "40,3 km évalués": {
@@ -1963,48 +923,20 @@
   "texte": "41 driving schools to be opened",
   "relu": false
  },
- "41 en 2022 à 50 en 2031": {
-  "texte": "41 in 2022 to 50 in 2031",
-  "relu": false
- },
- "41,5 km": {
-  "texte": "41 and a half kilometres",
-  "relu": false
- },
  "41,5 km évalués": {
   "texte": "41,5 km assessed",
-  "relu": false
- },
- "42,7 km": {
-  "texte": "42.7 km",
   "relu": false
  },
  "43 indicateurs": {
   "texte": "43 indicators",
   "relu": false
  },
- "45,2 km": {
-  "texte": "45 and a half km",
-  "relu": false
- },
  "45,2 km évalués": {
   "texte": "45,2 km assessed",
   "relu": false
  },
- "46,1 km": {
-  "texte": "46 and 1 km",
-  "relu": false
- },
  "46,1 km évalués": {
   "texte": "46,1 km assessed",
-  "relu": false
- },
- "47,2 km": {
-  "texte": "It is 47.2 km",
-  "relu": false
- },
- "47,5 km": {
-  "texte": "It is 47.5 km",
   "relu": false
  },
  "48 auto-écoles": {
@@ -2041,10 +973,6 @@
  },
  "49 tronçons sur 84 en mauvais état, 669,34 km, dont 292,15 km sur les Plateaux (Réseau).": {
   "texte": "49 of the 84 sections in poor condition, 669.34 km, of which 292.15 km on the Plateaux (Network).",
-  "relu": false
- },
- "49,8 km": {
-  "texte": "The total area of the municipality",
   "relu": false
  },
  "49,8 km évalués": {
@@ -2119,20 +1047,8 @@
   "texte": "5. The cost of shares is not in the data: quantities are orders of magnitude, not quotes.",
   "relu": false
  },
- "50 en 2031": {
-  "texte": "50 in 2031",
-  "relu": false
- },
- "50 à 60 km": {
-  "texte": "50 to 60 km",
-  "relu": false
- },
  "500 032 habitants": {
   "texte": "500 032 inhabitants",
-  "relu": false
- },
- "51,7 km": {
-  "texte": "51.7 km",
   "relu": false
  },
  "52 448 habitants": {
@@ -2143,32 +1059,12 @@
   "texte": "52 448 inhabitants",
   "relu": false
  },
- "52,2 km": {
-  "texte": "52 and 2 km",
-  "relu": false
- },
- "54,5 km": {
-  "texte": "54,5 km",
-  "relu": false
- },
- "57,9 km": {
-  "texte": "57,9 km",
-  "relu": false
- },
  "57,9 km évalués": {
   "texte": "57,9 km assessed",
   "relu": false
  },
- "58,5 km": {
-  "texte": "58,5 km",
-  "relu": false
- },
  "58,5 km évalués": {
   "texte": "58,5 km assessed",
-  "relu": false
- },
- "58,8 km": {
-  "texte": "58,8 km",
   "relu": false
  },
  "58,8 km évalués": {
@@ -2231,18 +1127,6 @@
   "texte": "60% or more",
   "relu": false
  },
- "60 à 70 km": {
-  "texte": "60 to 70 km",
-  "relu": false
- },
- "62,0 km": {
-  "texte": "62.0 km",
-  "relu": false
- },
- "63,1 km": {
-  "texte": "63,1 km",
-  "relu": false
- },
  "63,1 km évalués": {
   "texte": "63,1 km assessed",
   "relu": false
@@ -2255,20 +1139,8 @@
   "texte": "65.0% of roads in poor condition (75.6 km assessed, 5 critical sections).",
   "relu": false
  },
- "65,3 km": {
-  "texte": "65,3 km",
-  "relu": false
- },
  "66 394 habitants": {
   "texte": "66 394 inhabitants",
-  "relu": false
- },
- "66,3 km": {
-  "texte": "66.3 km",
-  "relu": false
- },
- "669,34 km": {
-  "texte": "669,34 km",
   "relu": false
  },
  "68,2 % des routes en mauvais état (101,1 km évalués, 4 tronçons critiques).": {
@@ -2323,16 +1195,8 @@
   "texte": "7 confirmed checks out of 17, 2 confirmed, 1 shaded, 7 untested (Table Synthesis).",
   "relu": false
  },
- "7,0 km": {
-  "texte": "7.0 km",
-  "relu": false
- },
  "7,0 km évalués": {
   "texte": "7,0 km assessed",
-  "relu": false
- },
- "7,1 km": {
-  "texte": "7,1 km",
   "relu": false
  },
  "7,8 % des routes en mauvais état (7,0 km évalués, un tronçon critique).": {
@@ -2344,27 +1208,12 @@
   "relu": false
  },
  "7. La population en âge de conduire ne se raccorde pas d'une source à l'autre : les 18 ans et plus font 51,8 % de la population au recensement de 2022 et 55,6 % dans la projection de 2023 (réserve A1-R1).": {
-  "texte": "7. The driving-age population does not connect from one source to another: 18 years and older make up 51.8% of the population at the 2022 census and 55.6% in the 2023 projection (reserve A1-R1).",
-  "relu": false
- },
- "70 à 80 km": {
-  "texte": "70 to 80 km",
-  "relu": false
- },
- "70,0 km": {
-  "texte": "70 km",
-  "relu": false
+  "texte": "",
+  "relu": false,
+  "suspect": true
  },
  "70,0 km évalués": {
   "texte": "70,0 km assessed",
-  "relu": false
- },
- "72,4 km": {
-  "texte": "72.4 km",
-  "relu": false
- },
- "72,5 km": {
-  "texte": "72,5 km",
   "relu": false
  },
  "72,5 km évalués": {
@@ -2381,10 +1230,6 @@
  },
  "74,4 % des immatriculations de 2024 sont des motos ; 40 motos pour un permis moto sur 2007–2024 (Mobilité).": {
   "texte": "74.4% of 2024 registrations are motorcycles; 40 motorcycles for a motorcycle licence in 2007 ⁇ 2024 (Mobility).",
-  "relu": false
- },
- "75,6 km": {
-  "texte": "75,6 km",
   "relu": false
  },
  "75,6 km évalués": {
@@ -2423,10 +1268,6 @@
   "texte": "8.1% of roads in poor condition (58.5 km assessed, 3 critical sections).",
   "relu": false
  },
- "8,2 km": {
-  "texte": "8,2 km",
-  "relu": false
- },
  "8. Est-Mono": {
   "texte": "8. is Mono",
   "relu": false
@@ -2441,10 +1282,6 @@
  },
  "80 km ou plus": {
   "texte": "80 km or more",
-  "relu": false
- },
- "82,5 km": {
-  "texte": "82,5 km",
   "relu": false
  },
  "82,5 km évalués": {
@@ -2463,10 +1300,6 @@
   "texte": "Eighty-four pieces were pulled up.",
   "relu": false
  },
- "84,0 km": {
-  "texte": "84,0 km",
-  "relu": false
- },
  "84,0 km évalués": {
   "texte": "84,0 km assessed",
   "relu": false
@@ -2477,10 +1310,6 @@
  },
  "85 793 habitants": {
   "texte": "85 793 inhabitants",
-  "relu": false
- },
- "87,9 km": {
-  "texte": "87,9 km",
   "relu": false
  },
  "87,9 km évalués": {
@@ -2527,16 +1356,8 @@
   "texte": "90 505 inhabitants",
   "relu": false
  },
- "90,1 km": {
-  "texte": "90 and 1 km",
-  "relu": false
- },
  "90,1 km évalués": {
   "texte": "90,1 km assessed",
-  "relu": false
- },
- "90,5 km": {
-  "texte": "90 and a half km",
   "relu": false
  },
  "90,5 km évalués": {
@@ -2545,10 +1366,6 @@
  },
  "94 860 habitants": {
   "texte": "94 860 inhabitants",
-  "relu": false
- },
- "96,6 km": {
-  "texte": "96.6 km",
   "relu": false
  },
  "96,6 km évalués": {
@@ -2735,10 +1552,6 @@
   "texte": ": not defined: no classified roads",
   "relu": false
  },
- ": ×4,56 de 2002 à 2022.": {
-  "texte": ": ×4,56 from 2002 to 2022.",
-  "relu": false
- },
  "= calculé (formule maîtrisée)": {
   "texte": "= calculated (maintained formula)",
   "relu": false
@@ -2749,22 +1562,6 @@
  },
  "= mesuré (comptage direct)": {
   "texte": "= measured (direct counting)",
-  "relu": false
- },
- "@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap');": {
-  "texte": "@import url('https://fonts.googleapis.com/css2?family=French:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap');",
-  "relu": false
- },
- "@media (max-width: 1350px)": {
-  "texte": "@media (max-width: 1350px)",
-  "relu": false
- },
- "@media (max-width: 760px)": {
-  "texte": "@media (max-width: 760px)",
-  "relu": false
- },
- "@media (prefers-reduced-motion: reduce)": {
-  "texte": "@media (prefers-reduced-motion: reduce)",
   "relu": false
  },
  "A — Moto": {
@@ -2896,7 +1693,7 @@
   "relu": false
  },
  "Afagnan / Afagnagan": {
-  "texte": "The Commission shall adopt delegated acts in accordance with Article 21 of this Regulation.",
+  "texte": "Afghanistan / Afghanistan",
   "relu": false
  },
  "Affichage": {
@@ -3327,10 +2124,6 @@
   "texte": "CC BY 3.0 IGO",
   "relu": false
  },
- "CC BY 4.0": {
-  "texte": "CC BY 4.0",
-  "relu": false
- },
  "CC BY 4.0 ; grille de population 2020 (accès rural, emplacement des auto-écoles)": {
   "texte": "CC BY 4.0; population grid 2020 (rural access, location of driving schools)",
   "relu": false
@@ -3365,10 +2158,6 @@
  },
  "Catalogue des couches et des indicateurs du géoportail national": {
   "texte": "Catalogue of layers and indicators of the national geoportal",
-  "relu": false
- },
- "Ce qu": {
-  "texte": "What",
   "relu": false
  },
  "Ce qu'une analyse plus fine a corrigé": {
@@ -3696,7 +2485,7 @@
   "relu": false
  },
  "Dans les Plateaux, seuls 13,6 % des ruraux vivent à moins de 2 km d’une route revêtue (17,2 % dans le pays) : 1 094 908 ruraux en sont plus loin. 28,0 % des routes sont en mauvais état. Leurs 6 préfectures au réseau dégradé ont 150,5 km à remettre en état en premier, après vérification. 1 635 946 habitants concernés.": {
-  "texte": "In the Plateaux, only 13.6% of the rural population live within 2 km of a covered road (17.2% in the country): 1 094 908 rural areas are further away. 28.0% of the roads are in poor condition.",
+  "texte": "In the Plateaux, only 13.6% of rural people live less than 2 km from a paved road (17.2% in the country): 1 094 908 villages are further away. 28.0% of roads have fallen into disrepair.",
   "relu": false
  },
  "Danyi, Blitta, Agou, Tchamba et Bassar ont de 28 % à 100 % de leurs routes en mauvais état, et aucune auto-école agréée. 14 tronçons critiques les traversent. Les ramener à la médiane nationale (14,35 %) suppose de remettre en état 175,6 km, après vérification sur place. 641 955 habitants concernés.": {
@@ -3732,7 +2521,7 @@
   "relu": false
  },
  "Deux analyses désignent les mêmes 4 zones : le classement des zones et la desserte.": {
-  "texte": "Two analyses indicate the same 4 areas: the classification of the areas and the service.",
+  "texte": "Two analyses designate the same 4 areas: zone classification and service.",
   "relu": false
  },
  "Deux et trois-roues motorisés": {
@@ -3932,8 +2721,9 @@
   "relu": false
  },
  "EPSG:4326": {
-  "texte": "The Commission shall adopt delegated acts in accordance with Article 21 of this Regulation.",
-  "relu": false
+  "texte": "",
+  "relu": false,
+  "suspect": true
  },
  "Efficacité du Service Public et de la Transformation Numérique": {
   "texte": "Efficiency of the Public Service and Digital Transformation",
@@ -3944,7 +2734,7 @@
   "relu": false
  },
  "Elavagnon/Atigba": {
-  "texte": "The Commission shall adopt delegated acts in accordance with Article 21 of this Regulation.",
+  "texte": "Elavagnon and Atigba",
   "relu": false
  },
  "En 2021, 60 % des tués sont des usagers de deux et trois-roues motorisés, pour 54,7 % à 59,7 % de motos dans le parc. La surreprésentation est faible, mais elle tient dans toute la fourchette. À vérifier sur une seconde année, avant les contrôles du casque et du permis.": {
@@ -3955,20 +2745,12 @@
   "texte": "In 2021, we were counting",
   "relu": false
  },
- "En 2022": {
-  "texte": "In 2022",
-  "relu": false
- },
  "En 2024 : 751 398 véhicules (de 579 845 à 965 702), dont 449 226 motos. Le parc n": {
   "texte": "In 2024: 751 398 vehicles (from 579 845 to 965 702), including 449 226 motorcycles.",
   "relu": false
  },
- "En 2029": {
-  "texte": "In 2029",
-  "relu": false
- },
  "En km, relevé de 2020. Les 49 tronçons de la vue par défaut sont les tronçons critiques du 07 (669,34 km). FRE : frontière. Pour 7 tronçons, l": {
-  "texte": "In km, taken from 2020. The 49 sections of the default view are the critical sections of the 07 (669.34 km).",
+  "texte": "In km, as measured in 2020. The 49 sections of the default view are critical sections for 07 (669.34 km).",
   "relu": false
  },
  "En mauvais état": {
@@ -4001,10 +2783,6 @@
  },
  "Estimation de l'OMS pour le Togo": {
   "texte": "WHO estimate for Togo",
-  "relu": false
- },
- "Et d": {
-  "texte": "And d",
   "relu": false
  },
  "Exemple chiffré": {
@@ -4299,14 +3077,6 @@
   "texte": "Kidjaboun",
   "relu": false
  },
- "Km": {
-  "texte": "Km",
-  "relu": false
- },
- "Km /1 000 km²": {
-  "texte": "Km / 1 000 km2",
-  "relu": false
- },
  "Km /10 000 hab.": {
   "texte": "Km / 10,000 people.",
   "relu": false
@@ -4411,10 +3181,6 @@
   "texte": "The statement is verified, except  ⁇  accidents increase  ⁇ , which is",
   "relu": false
  },
- "La": {
-  "texte": "The",
-  "relu": false
- },
  "La campagne PRISE a relevé le personnel, l’activité, les horaires et les véhicules de 272 auto-écoles, sans les publier. Ces données diraient lesquelles fonctionnent, et vérifieraient le manque dans les 23 préfectures sans auto-école agréée.": {
   "texte": "The PRISE campaign recorded the staff, activity, schedules and vehicles of 272 driving schools, without publishing them.",
   "relu": false
@@ -4468,7 +3234,7 @@
   "relu": false
  },
  "La population de chaque préfecture suit la croissance de sa région entre les recensements de 2010 et de 2022, ramenée au total des projections nationales. L'autre variante garde les parts de 2022 : les deux donnent la fourchette (niveau C).": {
-  "texte": "The population of each prefecture follows the growth of its region between the 2010 and 2022 censuses, down from the total national projections.",
+  "texte": "The population of each prefecture follows the growth in its region between 2010 and 2022, down from total national projections.",
   "relu": false
  },
  "La population de référence de tous les taux.": {
@@ -4488,11 +3254,12 @@
   "relu": false
  },
  "La recommandation de zone de la Centrale garde sa priorité haute : la Centrale reste la zone au réseau le plus dégradé (40,3 % de km en mauvais état, contre 12,8 % dans les Savanes), et la lecture « formation » ne change pas. Un écart de 0,28 point ne sépare pas deux zones à ce niveau de preuve": {
-  "texte": "The Centre's area recommendation remains a high priority: the Centre remains the area with the most degraded network (40.3% of km in poor condition, compared with 12.8% in the Savannahs), and the reading  ⁇  training  ⁇  does not change.",
-  "relu": false
+  "texte": "",
+  "relu": false,
+  "suspect": true
  },
  "La recommandation de zone de la Centrale garde sa priorité haute : la Centrale reste la zone au réseau le plus dégradé, 40,3 % de km en mauvais état contre 12,8 % dans les Savanes, et la lecture « formation » ne change pas. Un écart de 0,28 point ne sépare pas deux zones à ce niveau de preuve.": {
-  "texte": "The Centre's area recommendation remains a high priority: the Centre remains the area with the most degraded network, with 40.3% of km in poor condition compared to 12.8% in the Savannahs, and the reading  ⁇  training  ⁇  remains unchanged.",
+  "texte": "The Centre's area recommendation maintains its high priority: the centre remains the most degraded network zone, with 40.3% of kilometres in poor condition compared to 12.8% in Savannah.",
   "relu": false
  },
  "La situation en bref": {
@@ -4504,8 +3271,9 @@
   "relu": false
  },
  "La zone qui cumule les deux retards est la Centrale dans la première mesure et les Savanes dans la seconde.": {
-  "texte": "The area that brings the two delays together is the Central in the first measure and the Savannah in the second.",
-  "relu": false
+  "texte": "",
+  "relu": false,
+  "suspect": true
  },
  "Langue": {
   "texte": "Language",
@@ -4528,7 +3296,7 @@
   "relu": false
  },
  "Le classement est stable si aucun test ne change plus de 2 des 10 premières. Toujours en tête : Danyi, Blitta, Agou, Tchamba, Bassar, Oti, Bas-Mono. Les moins sûres : Est-Mono et Oti-Sud (4 tests sur 6), Tchaoudjo (3 sur 6).": {
-  "texte": "The ranking is stable if no test changes more than 2 of the top 10. Still in the lead: Danyi, Blitta, Agou, Tchamba, Bassar, Oti, Bas-Mono. The least secure: Est-Mono and Oti-Sud (4 out of 6 tests), Tchaoudjo (3 out of 6).",
+  "texte": "The ranking is stable if no test changes more than 2 out of the top 10.",
   "relu": false
  },
  "Le classement tient-il ?": {
@@ -4544,7 +3312,7 @@
   "relu": false
  },
  "Le curseur est masqué dans cette maille : les seuils y sont les médianes des 6 zones, tracées en pointillé. À droite de la ligne rouge, le réseau est dégradé ; sous la ligne verte, l": {
-  "texte": "The cursor is hidden in this mesh: the thresholds are the medians of the 6 zones, drawn in dotted lines.",
+  "texte": "The cursor is hidden in this mesh: the thresholds are medians of 6 zones, marked with dots.",
   "relu": false
  },
  "Le déficit de formation est rural : ouverture d’auto-écoles hors des villes": {
@@ -4564,7 +3332,7 @@
   "relu": false
  },
  "Le mauvais état du réseau se concentre au centre du pays (": {
-  "texte": "The poor state of the network is concentrated in the centre of the country (",
+  "texte": "The poor network status is concentrated in the centre of the country (",
   "relu": false
  },
  "Le mauvais état se concentre sur": {
@@ -4580,7 +3348,7 @@
   "relu": false
  },
  "Le nombre laisse les 23 préfectures sans auto-école agréée toutes à zéro ; la distance les distingue : de 11,0 km (Agou) à 84,0 km (Oti-Sud). Ligne rouge : seuil de 10 km. Barre bleu foncé : aucune auto-école agréée. Le chiffre, au bout de la barre, prend la couleur de son palier de dix kilomètres.": {
-  "texte": "The number leaves the 23 prefectures without a licensed driving school all at zero; the distance separates them: from 11.0 km (Agou) to 84.0 km (Oti-Sud). Red line: threshold of 10 km. Dark blue bar: no licensed driving school. The number at the end of the bar takes the colour of its ten-kilometre platform.",
+  "texte": "The number leaves the 23 prefectures without a licensed driving school all at zero; the distance separates them: from 11.0 km (Agou) to 84.0km (Oti-Sud).",
   "relu": false
  },
  "Le parc immatriculé a": {
@@ -4636,7 +3404,7 @@
   "relu": false
  },
  "Le « parc automobile immatriculé » du portail compte les immatriculations de l’année, pas les véhicules en circulation. Un parc publié rendrait les taux par véhicule calculés, et non plus estimés. D’autres libellés sont à corriger, dont les « accidents mortels », qui sont des accidents constatés.": {
-  "texte": "⁇  the registered car park  ⁇  the portal counts the registrations of the year, not the vehicles in circulation. a published car park would make the rates per vehicle calculated, not estimated. other wording needs to be corrected, including the  ⁇  fatal accidents  ⁇ , which are accidents found.",
+  "texte": "The  ⁇  registered car park of the portal counts year's registrations, not vehicles in circulation. A published fleet would make rates per vehicle calculated rather than estimated.",
   "relu": false
  },
  "Les": {
@@ -4812,12 +3580,14 @@
   "relu": false
  },
  "Les km sont inscrits dans chaque segment ; la part en mauvais état se lit au bout de la barre, en rouge pour les zones au-dessus de la médiane. Centrale : 40,3 %, la part la plus forte. Détail par tronçon en page Carte.": {
-  "texte": "In each segment, the km are inscribed; the part in poor condition is read at the end of the bar, in red for areas above the median.",
-  "relu": false
+  "texte": "",
+  "relu": false,
+  "suspect": true
  },
  "Les km évalués sont écrits à côté de la part : le taux ne dit pas le volume. Danyi est en tête avec 100 % de km en mauvais état, sur 49,8 km évalués, pour 40 240 habitants. Les 10 premières comptent 1 416 859 habitants ; ni le Golfe ni Agoè-Nyivé n": {
-  "texte": "The estimated kilometres are written next to the section: the rate does not say the volume. Danyi leads with 100% of the estimated 49.8 kilometres in poor condition per 40 240 inhabitants.",
-  "relu": false
+  "texte": "",
+  "relu": false,
+  "suspect": true
  },
  "Les leviers restent à leur dernière observation : auto-écoles de 2021-2022, état du réseau relevé en 2020. Seule la population avance.": {
   "texte": "Levers remain at their latest observation: driving schools 2021-2022, network status in 2020. Only the population is advancing.",
@@ -4832,8 +3602,9 @@
   "relu": false
  },
  "Les mêmes classes que la carte. Recoupe le tableau de la page Comparaison territoriale, qui garde les seuils du classement.": {
-  "texte": "The same classes as the map. Cut the table from the Territorial Comparison page, which keeps the ranking thresholds.",
-  "relu": false
+  "texte": "",
+  "relu": false,
+  "suspect": true
  },
  "Les objectifs 3 et 4 demandent ces mesures par région et par préfecture.": {
   "texte": "Objectives 3 and 4 require these measures by region and prefecture.",
@@ -4852,8 +3623,9 @@
   "relu": false
  },
  "Les poids lourds en transit (corridor du port de Lomé vers le nord) pèsent sur l’accidentalité et l’usure de l’axe nord-sud": {
-  "texte": "The heavy loads in transit (the Lomé port corridor to the north) weigh on the accidents and wear of the north-south axis.",
-  "relu": false
+  "texte": "",
+  "relu": false,
+  "suspect": true
  },
  "Les quantités des recommandations de zone sont déjà comptées dans les leviers : elles ne s'additionnent pas.": {
   "texte": "The quantities of area recommendations are already counted in the levers: they are not added up.",
@@ -4872,7 +3644,7 @@
   "relu": false
  },
  "Les taux de 2023 et 2024 dépendent de ce saut ; leur niveau de preuve reste C. L’annexe garde le niveau du recensement et la seule croissance des projections : 4 193 458 habitants de 18 ans et plus en 2022, 5 398 017 en 2031. Le document 07 n’est pas corrigé : aucun de ses calculs n’est faux": {
-  "texte": "The rates for 2023 and 2024 depend on this jump; their level of evidence remains C. The Annex maintains the level of the census and the only growth in projections: 4 193 458 people aged 18 and over in 2022, 5 398 017 in 2031.",
+  "texte": "The rates for 2023 and 2024 depend on this leap; their level of evidence remains C. The Annex maintains the census level and only growth in projections: 4 193 458 people aged 18 years or older by 2022, 5 398 017 in 2031. Document 07 is uncorrected: none of its calculations are false",
   "relu": false
  },
  "Les territoires": {
@@ -4928,7 +3700,7 @@
   "relu": false
  },
  "Leviers :": {
-  "texte": "The following is a list of the countries of the European Union:",
+  "texte": "Levers:",
   "relu": false
  },
  "Licence": {
@@ -4992,8 +3764,9 @@
   "relu": false
  },
  "L’état du réseau vient d’un relevé de 2020, sans tracé ni méthode de notation publiée. Les couches de la collecte 2021–2022 existent au géoportail, mais ne sont pas ouvertes. Elles permettraient de vérifier l’état des 13 préfectures ciblées.": {
-  "texte": "The status of the network comes from a 2020 report, without a published map or rating method.The layers of the 2021-2022 collection exist in the geoportal but are not open.They would allow verification of the status of the 13 targeted prefectures.",
-  "relu": false
+  "texte": "",
+  "relu": false,
+  "suspect": true
  },
  "Maille": {
   "texte": "- What ?",
@@ -5064,7 +3837,7 @@
   "relu": false
  },
  "Mesuré avec une grille de population, l'accès rural change de lecture : les Savanes passent sous la médiane et la Centrale au-dessus. La Centrale garde la première place : elle reste la zone au réseau le plus dégradé, et sa formation ne change pas. Les deux mesures sont en page Méthodologie.": {
-  "texte": "Measured with a population grid, rural access changes reading: the savannahs pass below the median and the central above. The central retains the first place: it remains the area with the most degraded network, and its formation does not change. Both measurements are in the methodology page.",
+  "texte": "Measured using a population grid, rural access changes reading: the savannahs pass below the median and the central above.",
   "relu": false
  },
  "Ministère chargé des transports, auto-écoles": {
@@ -5836,8 +4609,9 @@
   "relu": false
  },
  "Projection Mercator, cadrée sur le Togo, sans fond de carte. Les contours des 5 régions sont toujours tracés ; le territoire choisi dans la barre latérale garde ses couleurs, les autres préfectures passent en beige.": {
-  "texte": "Mercator projection, framed on Togo, without background map. The contours of the 5 regions are still drawn; the selected territory in the sidebar retains its colours, the other prefectures are in beige.",
-  "relu": false
+  "texte": "",
+  "relu": false,
+  "suspect": true
  },
  "Préfecture": {
   "texte": "Prefecture",
@@ -5903,10 +4677,6 @@
   "texte": "Published nationwide only.",
   "relu": false
  },
- "Qu": {
-  "texte": "What ?",
-  "relu": false
- },
  "Quantité": {
   "texte": "Quantity",
   "relu": false
@@ -5932,11 +4702,11 @@
   "relu": false
  },
  "RN1 AMAKPAPE-ATAKPAME- BABAME": {
-  "texte": "The Commission shall adopt delegated acts in accordance with Article 21 of Regulation (EU) No 1303/2013.",
+  "texte": "This Regulation shall be binding in its entirety and directly applicable in all Member States.",
   "relu": false
  },
  "RN1 BABAME-SOKODE-ALEHERIDE": {
-  "texte": "The amount of the aid shall be calculated on the basis of the following information:",
+  "texte": "RN1 BABAME-SOKODE-ALEHERIDE",
   "relu": false
  },
  "RN1 BRETELLE D ALEDJO": {
@@ -5996,8 +4766,9 @@
   "relu": false
  },
  "RN17 KATCHAMBA-SADORI RN1": {
-  "texte": "The Commission shall adopt delegated acts in accordance with Article 21 of this Regulation.",
-  "relu": false
+  "texte": "",
+  "relu": false,
+  "suspect": true
  },
  "RN19 KARA-KABOU-FRE GHANA": {
   "texte": "RN19 KARA-KABOU-FRE GHANA",
@@ -6032,7 +4803,7 @@
   "relu": false
  },
  "RN25 RN1-KONG-RN1": {
-  "texte": "The amount of the aid shall be calculated on the basis of the following data:",
+  "texte": "RN25 RN1-KONG-RN1",
   "relu": false
  },
  "RN27 LANGABOU-YEGUE-FRE GHANA": {
@@ -6044,8 +4815,9 @@
   "relu": false
  },
  "RN29 DEGOU(RN10)-KOLOKOPE-ANIE(RN1)": {
-  "texte": "This appropriation is intended to cover the expenditure relating to the implementation of the budget of the European Union.",
-  "relu": false
+  "texte": "",
+  "relu": false,
+  "suspect": true
  },
  "RN30 ADETA(RN5)-NDIGBE-APEYEME-FRE GHANA": {
   "texte": "This appropriation is intended to cover expenditure relating to:",
@@ -6060,8 +4832,9 @@
   "relu": false
  },
  "RN33 AGOU GADJEPE(RN5)-AGOTIME-FRE GHANA": {
-  "texte": "This appropriation is intended to cover the expenditure of the European Parliament and of the Council in accordance with the opinion of the Committee on Budgets.",
-  "relu": false
+  "texte": "",
+  "relu": false,
+  "suspect": true
  },
  "RN35 AKOUMAKPE-TCHEKPO": {
   "texte": "This appropriation is intended to cover expenditure relating to:",
@@ -6072,7 +4845,7 @@
   "relu": false
  },
  "RN36 ANEHO-AKLAKOU": {
-  "texte": "The Commission shall adopt delegated acts in accordance with Article 21 of this Regulation.",
+  "texte": "RN36 ANEHO-AKLAKOU",
   "relu": false
  },
  "RN37 TABLIGBO-GBOTO-TOKPLI-FRT BENIN": {
@@ -6400,7 +5173,7 @@
   "relu": false
  },
  "Score = poids du réseau × rang percentile du réseau + poids de la formation × rang percentile de la formation ; à score égal, la préfecture la plus peuplée passe devant. Valeurs de contrôle : à 50 %, le classement publié ; à 65 %, Kloto et Ogou entrent, Est-Mono et Oti-Sud sortent ; à 35 %, Haho entre et Tchaoudjo sort.": {
-  "texte": "Score = network weight × network percentile rank + training weight × training percentile rank; at the same score, the most populous prefecture takes the lead. Control values: at 50%, the published ranking; at 65%, Kloto and Ogou enter, East-Mono and Oti-Sud exit; at 35%, Haho enter and Chaoudjo exit.",
+  "texte": "Score = network weight × per cent rank of the network + training weight × training percentile; with equal score, the most populous prefecture passes first. Control values: at 50%, published classification; at 65%, Kloto and Ogou enter, East-Mono and Oti-Sud exit; at 35%, Haho enters and Chaoudjo leaves.",
   "relu": false
  },
  "Score décomposé : la part du réseau et la part de la formation, et la robustesse.": {
@@ -6441,10 +5214,6 @@
  },
  "Statut, localisation et préfecture de rattachement (par la position).": {
   "texte": "Status, location and attachment prefecture (by position).",
-  "relu": false
- },
- "Streamlit Cloud) s'affichent dans le coin droit de la barre blanche, dont la marge droite leur laisse la place. */": {
-  "texte": "Streamlit Cloud) are displayed in the right corner of the white bar, the right margin of which allows them space.*/",
   "relu": false
  },
  "Suivi :": {
@@ -6640,7 +5409,7 @@
   "relu": false
  },
  "Tronçon": {
-  "texte": "The following is a list of the official languages of the European Union:",
+  "texte": "Cotton wool",
   "relu": false
  },
  "Tronçons critiques": {
@@ -6680,7 +5449,7 @@
   "relu": false
  },
  "Tués de 2021 : 60 % de deux et trois-roues motorisés (OMS) ; part des motos dans le parc estimé : centrale 57,6 %, parc bas 54,7 %, parc haut 59,7 % ; indice : valeur centrale 1,04, parc bas 1,10, parc haut 1,01": {
-  "texte": "Killed in 2021: 60% of two- and three-wheeled motorcycles (WHO); share of motorcycles in the estimated park: central 57.6%; low park 54.7%; high park 59.7%; index: central value 1.04, low park 1.10, high park 1.01",
+  "texte": "Killed in 2021: 60% of two and three-wheeled motorcycles (WHO); share of bikes in the estimated fleet: central 57.6%, low 54.7%, upper 59.7%; index: core value 1.04, lower 1.10, high 1.01",
   "relu": false
  },
  "Tués déclarés (police, gendarmerie)": {
@@ -6716,7 +5485,7 @@
   "relu": false
  },
  "Tués pour 100 000 habitants : baisse (-29,4 %) ; tués pour 10 000 véhicules : baisse (-40,4 %), parc haut : baisse, parc bas : baisse": {
-  "texte": "Killed per 100,000 inhabitants: decrease (-29.4%); killed per 10,000 vehicles: decrease (-40.4%), high park: decrease, low park: decrease",
+  "texte": "Killed per 100,000 inhabitants: decrease (-29.4%); killed for 10 000 vehicles: decline (-40.4%), high park: down, low park:.",
   "relu": false
  },
  "Tués pour 100 accidents": {
@@ -7035,206 +5804,6 @@
   "texte": "Cross-zones",
   "relu": false
  },
- "[class*=\"st-key-vn_t_\"] button": {
-  "texte": "[class*=\"st-key-vn_t_\"] button",
-  "relu": false
- },
- "[class*=\"st-key-vn_t_\"] button:hover": {
-  "texte": "[class*=\"st-key-vn_t_\"] button:hover",
-  "relu": false
- },
- "[class*=\"st-key-vn_t_\"] button:hover p": {
-  "texte": "[class*=\"st-key-vn_t_\"] button:hover p",
-  "relu": false
- },
- "[data-testid=\"stColumn\"]:has(.reco-theme)": {
-  "texte": "[data-testid=\"stColumn\"]:has(.reco-theme)",
-  "relu": false
- },
- "[data-testid=\"stColumn\"]:has(.reco-theme) > [data-testid=\"stVerticalBlock\"]": {
-  "texte": "[data-testid=\"stColumn\"]:has(.reco-theme) > [data-testid=\"stVerticalBlock\"]",
-  "relu": false
- },
- "[data-testid=\"stColumn\"]:has(.reco-theme) [data-testid=\"stElementContainer\"]:has(button)": {
-  "texte": "[data-tested=\"stColumn\"]:has(.reco-theme) [data-tested=\"stElementContainer\"]:has(button)",
-  "relu": false
- },
- "[data-testid=\"stColumn\"]:has(.reco-theme):hover": {
-  "texte": "[data-testid=\"stColumn\"]:has(.reco-theme):hover",
-  "relu": false
- },
- "[data-testid=\"stColumn\"]:has(.reco-theme.couv)": {
-  "texte": "[data-testid=\"stColumn\"]:has(.reco-theme.couv)",
-  "relu": false
- },
- "[data-testid=\"stColumn\"]:has(.reco-theme.mob)": {
-  "texte": "[data-testid=\"stColumn\"]:has(.reco-theme.mob)",
-  "relu": false
- },
- "[data-testid=\"stColumn\"]:has(.reco-theme.res)": {
-  "texte": "[data-testid=\"stColumn\"]:has(.reco-theme.res)",
-  "relu": false
- },
- "[data-testid=\"stColumn\"]:has(.reco-theme.sec)": {
-  "texte": "[data-testid=\"stColumn\"]:has(.reco-theme.sec)",
-  "relu": false
- },
- "[data-testid=\"stColumn\"]:has(.retenir) .retenir": {
-  "texte": "[data-testid=\"stColumn\"]:has(.maintain) .maintain",
-  "relu": false
- },
- "[data-testid=\"stColumn\"]:has(.retenir) .stMarkdown, [data-testid=\"stColumn\"]:has(.retenir) [data-testid=\"stMarkdownContainer\"],": {
-  "texte": "This is the first time that the data is stored in the database, and the data is stored in the database.",
-  "relu": false
- },
- "[data-testid=\"stColumn\"]:has(.retenir) > [data-testid=\"stVerticalBlock\"]": {
-  "texte": "[data-testid=\"stColumn\"]:has(.keep) > [data-testid=\"stVerticalBlock\"]",
-  "relu": false
- },
- "[data-testid=\"stColumn\"]:has(.retenir) [data-testid=\"stElementContainer\"]:has(.retenir)": {
-  "texte": "[data-testid=\"stColumn\"]:has(.keep) [data-testid=\"stElementContainer\"]:has(.keep)",
-  "relu": false
- },
- "[data-testid=\"stColumn\"]:has(.st-key-vn_synthese) > [data-testid=\"stVerticalBlock\"]": {
-  "texte": "This is the first time that the data has been collected.",
-  "relu": false
- },
- "[data-testid=\"stColumn\"]:has(.st-key-vn_synthese) [data-testid=\"stLayoutWrapper\"]:has(.st-key-vn_synthese)": {
-  "texte": "This is the first time that the data has been collected.",
-  "relu": false
- },
- "[data-testid=\"stHeader\"]": {
-  "texte": "[data-testid=\"stHeader\"]",
-  "relu": false
- },
- "[data-testid=\"stHeader\"] *": {
-  "texte": "[data-testid=\"stHeader\"] *",
-  "relu": false
- },
- "[data-testid=\"stHorizontalBlock\"]:has(.reco-theme)": {
-  "texte": "[data-testid=\"stHorizontalBlock\"]:has(.reco-theme)",
-  "relu": false
- },
- "[data-testid=\"stHorizontalBlock\"]:has(.retenir)": {
-  "texte": "[data-testid=\"stHorizontalBlock\"]:has(.hold)",
-  "relu": false
- },
- "[data-testid=\"stMainBlockContainer\"]": {
-  "texte": "[data-testid=\"stMainBlockContainer\"]",
-  "relu": false
- },
- "[data-testid=\"stPlotlyChart\"]": {
-  "texte": "[data-testid=\"stPlotlyChart\"]",
-  "relu": false
- },
- "[data-testid=\"stRadioOption\"]:not([data-selected=\"true\"]) > div > div > div:first-child": {
-  "texte": "[data-testid=\"stRadioOption\"]:not([data-selected=\"true\"]) > div > div > div:first-child",
-  "relu": false
- },
- "[data-testid=\"stSidebar\"] [data-testid=\"stNavSectionHeader\"]": {
-  "texte": "[data-testid=\"stSidebar\"] [data-testid=\"stNavSectionHeader\"]",
-  "relu": false
- },
- "[data-testid=\"stSidebar\"] [data-testid=\"stSidebarNavLink\"] span": {
-  "texte": "[data-testid=\"stSidebar\"] [data-testid=\"stSidebarNavLink\"] span",
-  "relu": false
- },
- "[data-testid=\"stSidebar\"] [data-testid=\"stWidgetLabel\"]": {
-  "texte": "[data-testid=\"stSidebar\"] [data-testid=\"stWidgetLabel\"]",
-  "relu": false
- },
- "[data-testid=\"stSidebar\"] [data-testid=\"stWidgetLabel\"] p": {
-  "texte": "This is the data set of the data set.",
-  "relu": false
- },
- "[data-testid=\"stSidebar\"] button[data-variant=\"pills\"]": {
-  "texte": "[data-testid=\"stSidebar\"] button[data-variant=\"pills\"]",
-  "relu": false
- },
- "[data-testid=\"stSidebar\"] button[data-variant=\"pills\"] p": {
-  "texte": "The following information is provided for in the Annex to Implementing Regulation (EU) No 1303/2013.",
-  "relu": false
- },
- "[data-testid=\"stSidebar\"] button[data-variant=\"pills\"][aria-pressed=\"true\"]": {
-  "texte": "[data-testid=\"stSidebar\"] button[data-variant=\"pills\"][aria-pressed=\"true\"]",
-  "relu": false
- },
- "[data-testid=\"stSidebar\"] div.st-key-selecteur_langue button[data-variant]": {
-  "texte": "[data-testid=\"stSidebar\"] div.st-key-selector_langue button[data-variant]",
-  "relu": false
- },
- "[data-testid=\"stSidebar\"] div.st-key-selecteur_langue button[data-variant][aria-pressed=\"true\"], [data-testid=\"stSidebar\"] div.st-key-selecteur_langue button[data-variant][aria-checked=\"true\"],": {
-  "texte": "[data-testid=\"stSidebar\"] div.st-key-selector_language button[data-variant][aria-pressed=\"true\"], [data-testid=\"stSidebar\"] div.st-key-selector_language button[data-variant][aria-checked=\"true\"],",
-  "relu": false
- },
- "[data-testid=\"stSidebar\"] div.st-key-selecteur_langue button[data-variant][data-selected=\"true\"]": {
-  "texte": "[data-testid=\"stSidebar\"] div.st-key-selector_langue button[data-variant][data-selected=\"true\"]",
-  "relu": false
- },
- "[data-testid=\"stSidebarCollapseButton\"] button, [data-testid=\"stExpandSidebarButton\"]": {
-  "texte": "This is the first time that the data has been collected.",
-  "relu": false
- },
- "[data-testid=\"stSidebarCollapseButton\"] button:hover, [data-testid=\"stExpandSidebarButton\"]:hover": {
-  "texte": "This is the first time that the data has been collected.",
-  "relu": false
- },
- "[data-testid=\"stSidebarCollapseButton\"], [data-testid=\"stExpandSidebarButton\"]": {
-  "texte": "[data-testid=\"stSidebarCollapseButton\"], [data-testid=\"stExpandSidebarButton\"]",
-  "relu": false
- },
- "[data-testid=\"stSidebarContent\"]": {
-  "texte": "[data-testid=\"stSidebarContent\"]",
-  "relu": false
- },
- "[data-testid=\"stSidebarHeader\"]": {
-  "texte": "[data-testid=\"stSidebarHeader\"]",
-  "relu": false
- },
- "[data-testid=\"stSidebarHeader\"] > div:first-child": {
-  "texte": "[stSidebarHeader] > div:first-child",
-  "relu": false
- },
- "[data-testid=\"stSidebarHeader\"] img": {
-  "texte": "[data-testid=\"stSidebarHeader\"] img",
-  "relu": false
- },
- "[data-testid=\"stSidebarNav\"]": {
-  "texte": "[data-testid=\"stSidebarNav\"]",
-  "relu": false
- },
- "[data-testid=\"stSidebarNavLink\"]": {
-  "texte": "[data-testid=\"stSidebarNavLink\"]",
-  "relu": false
- },
- "[data-testid=\"stSidebarNavLink\"]:hover": {
-  "texte": "[data-testid=\"stSidebarNavLink\"]:hover",
-  "relu": false
- },
- "[data-testid=\"stSidebarNavLink\"][aria-current=\"page\"]": {
-  "texte": "This is the first time that the data has been collected.",
-  "relu": false
- },
- "[data-testid=\"stSidebarNavLink\"][aria-current=\"page\"] span": {
-  "texte": "This is a list of the official languages of the United States of America.",
-  "relu": false
- },
- "[data-testid=\"stSidebarUserContent\"]": {
-  "texte": "[data-testid=\"stSidebarUserContent\"]",
-  "relu": false
- },
- "[data-testid=\"stSidebarUserContent\"] > div, [data-testid=\"stSidebarUserContent\"] > div > [data-testid=\"stVerticalBlock\"]": {
-  "texte": "This is the first time that the data has been collected.",
-  "relu": false
- },
- "[data-testid=\"stSidebarUserContent\"] [data-testid=\"stElementContainer\"]:has(.slogan-barre)": {
-  "texte": "[data-testid=\"stSidebarUserContent\"] [data-testid=\"stElementContainer\"]:has(.slogan bar)",
-  "relu": false
- },
- "[data-testid=\"stVerticalBlockBorderWrapper\"]:has(div.st-key-topbar)": {
-  "texte": "[data-testid=\"stVerticalBlockBorderWrapper\"]:has(div.st-key-topbar)",
-  "relu": false
- },
  "a aucun véhicule correspondant.": {
   "texte": "I don't have any corresponding vehicles.",
   "relu": false
@@ -7276,7 +5845,7 @@
   "relu": false
  },
  "accès rural change de lecture : les Savanes passent sous la médiane et la Centrale au-dessus. La Centrale garde la première place : elle reste la zone au réseau le plus dégradé, et sa formation ne change pas. Les deux mesures sont en page Méthodologie.": {
-  "texte": "Rural access changes reading: the savannahs pass below the median and the central above. the central retains the first place: it remains the area with the most degraded network, and its formation does not change. both measurements are in page methodology.",
+  "texte": "Rural access changes reading: the Savannah passes underneath the median and Central above.",
   "relu": false
  },
  "accès rural dit mieux qui est loin de la route.": {
@@ -7284,7 +5853,7 @@
   "relu": false
  },
  "accès rural est estimé : avec la population rurale supposée répartie uniformément dans chaque préfecture, ou placée par la grille de population WorldPop 2020 (carreaux de 100 m). Les deux mesures sont affichées ; la seconde est la plus fine, mais la grille est elle-même un modèle.": {
-  "texte": "Rural access is estimated: with the supposed rural population evenly distributed in each prefecture, or placed by the WorldPop 2020 population grid (100 m tiles). Both measures are displayed; the second is the finest, but the grid itself is a model.",
+  "texte": "Rural access is estimated: with the supposed rural population evenly distributed in each prefecture, or placed by the WorldPop 2020 population grid (100 m tiles).",
   "relu": false
  },
  "accès rural et placer les auto-écoles (page Horizon 2031). Son empreinte est dans sources_A1.csv. Le registre reste celui de l": {
@@ -7328,7 +5897,7 @@
   "relu": false
  },
  "annuaire national donne 29,75 % de routes nationales en mauvais état, le relevé des tronçons 21,2 % : les deux publications ne concordent pas. Le tableau de bord s": {
-  "texte": "The national yearbook gives 29.75% of the national roads in poor condition, the section report 21.2%: the two publications do not agree.",
+  "texte": "National Yearbook gives 29.75% of national roads in poor condition, the breakdowns 21.2%: The two publications do not agree.",
   "relu": false
  },
  "année, pas parc en circulation. Ruptures de série en 1995 et 2004. Permis de 2013 non renseignés. Le parc est estimé (C), et les taux par habitant hors 2010 et 2022 reposent sur une population projetée.": {
@@ -7459,10 +6028,6 @@
   "texte": "decrease;",
   "relu": false
  },
- "barre latérale) : on ne réserve sa hauteur que dans ce cas (maquette §4, règle à appliquer). */": {
-  "texte": "The height is reserved only in this case (model § 4, rule to be applied).",
-  "relu": false
- },
  "bdata": {
   "texte": "bdata",
   "relu": false
@@ -7481,14 +6046,6 @@
  },
  "blessés(an) / population(an) × 100 000 (R-06)": {
   "texte": "Injured (s) / population (s)",
-  "relu": false
- },
- "body:has([data-testid=\"stHeader\"] [data-testid=\"stToolbar\"]) div.st-key-topbar_droite": {
-  "texte": "This is a list of the official languages of the Republic of Moldova.",
-  "relu": false
- },
- "carte logo Togo AI Lab */": {
-  "texte": "Logo card Togo AI Lab */",
   "relu": false
  },
  "cas limite": {
@@ -7559,10 +6116,6 @@
   "texte": "in prefectures without a licensed driving school",
   "relu": false
  },
- "de 2002 à 2022": {
-  "texte": "from 2002 to 2022",
-  "relu": false
- },
  "de 2002 à 2022, et les motos font": {
   "texte": "from 2002 to 2022, and motorcycles are",
   "relu": false
@@ -7627,82 +6180,6 @@
   "texte": "displayModeBar",
   "relu": false
  },
- "div.st-key-selecteur_langue": {
-  "texte": "div.st-key-selector_language",
-  "relu": false
- },
- "div.st-key-selecteur_langue [data-testid=\"stButtonGroup\"]": {
-  "texte": "This is a list of the official languages of the European Union.",
-  "relu": false
- },
- "div.st-key-selecteur_langue button p": {
-  "texte": "div.st-key-selector_language button p",
-  "relu": false
- },
- "div.st-key-topbar": {
-  "texte": "the following is added:",
-  "relu": false
- },
- "div.st-key-topbar [data-testid=\"stHorizontalBlock\"]": {
-  "texte": "The following information shall be provided for the purposes of this Regulation:",
-  "relu": false
- },
- "div.st-key-topbar_droite": {
-  "texte": "div.st-key-topbar_right",
-  "relu": false
- },
- "div.st-key-topbar_droite [data-testid=\"stMarkdownContainer\"]": {
-  "texte": "The following information is provided by the Commission to the European Parliament and to the Council:",
-  "relu": false
- },
- "div.st-key-vn_synthese": {
-  "texte": "The following information is provided for in Annex I to Regulation (EU) No 1308/2013:",
-  "relu": false
- },
- "div.st-key-vn_synthese .synthese": {
-  "texte": "The following information is provided for in the Annex to Regulation (EU) No 1308/2013:",
-  "relu": false
- },
- "div.st-key-vn_synthese .synthese ul": {
-  "texte": "The Commission shall adopt implementing acts in accordance with Article 21 of Regulation (EC) No 1069/2009.",
-  "relu": false
- },
- "div.st-key-vn_synthese .synthese-chiffre": {
-  "texte": "Div.st-key-vn_synthese .synthese-number",
-  "relu": false
- },
- "div.st-key-vn_synthese .synthese-titre": {
-  "texte": "Div.st-key-vn_synthese .synthese-title",
-  "relu": false
- },
- "div.st-key-vn_synthese [data-testid=\"stElementContainer\"]:has(.synthese)": {
-  "texte": "This is the list of the official languages of the Republic of Moldova.",
-  "relu": false
- },
- "div.st-key-vn_synthese [data-testid=\"stElementContainer\"]:has(.synthese) > div": {
-  "texte": "This is a list of the official languages of the European Union.",
-  "relu": false
- },
- "div.st-key-vn_synthese [data-testid=\"stElementContainer\"]:has(button)": {
-  "texte": "This is a list of the official languages of the United States of America.",
-  "relu": false
- },
- "div.st-key-vn_synthese button": {
-  "texte": "The following information is provided for in Part II of Annex I to Regulation (EC) No 1907/2006:",
-  "relu": false
- },
- "div.st-key-vn_synthese button p": {
-  "texte": "div.st-key-vn_synthese button p",
-  "relu": false
- },
- "div[class*=\"st-key-carte_reco_\"]": {
-  "texte": "This item is intended to record the information referred to in point (a) of paragraph 1.",
-  "relu": false
- },
- "div[class*=\"st-key-carte_reco_\"]:hover": {
-  "texte": "This is a list of airports in the United Kingdom.",
-  "relu": false
- },
  "dont 132 agréées (85 agréées, 47 antennes)": {
   "texte": "Of which 132 are approved (85 approved, 47 antennas)",
   "relu": false
@@ -7743,10 +6220,6 @@
   "texte": "The network is still unevenly maintained, and",
   "relu": false
  },
- "en 2024.": {
-  "texte": "In 2024.",
-  "relu": false
- },
  "en 2024. Sur fond gris : les deux références sans action nouvelle (taux inchangé, tendance) et la cible de la Décennie, moitié de la valeur de 2021 en 2030. Les accidents constatés n": {
   "texte": "In 2024, on a gray background: the two non-new action benchmarks (unchanged rate, trend) and the Decade target, half of the 2021 value in 2030.",
   "relu": false
@@ -7764,7 +6237,7 @@
   "relu": false
  },
  "en ont aucun. La nature du zéro : 15 préfectures sans aucune auto-école recensée (25 auto-écoles), 8 avec des auto-écoles recensées non agréées (16 auto-écoles).": {
-  "texte": "The nature of zero: 15 prefectures without any registered driving schools (25 driving schools), 8 with registered driving schools not approved (16 driving schools).",
+  "texte": "The nature of the zero: 15 prefectures without any registered driving schools (25), 8 with unapproved registered drivers' colleges (16).",
   "relu": false
  },
  "en tête : Danyi (100,0 %).": {
@@ -7831,10 +6304,6 @@
   "texte": "Is it changing, and what does the data confirm?",
   "relu": false
  },
- "et": {
-  "texte": "and",
-  "relu": false
- },
  "exemple reprend une valeur affichée ailleurs dans le tableau de bord.": {
   "texte": "Example takes a value displayed elsewhere in the dashboard.",
   "relu": false
@@ -7872,7 +6341,7 @@
   "relu": false
  },
  "habitants, très inégalement répartis : le Grand Lomé en concentre près du quart. La densité des auto-écoles agréées suit les grandes villes, tandis que": {
-  "texte": "The number of accredited driving schools follows that of the major cities, while the number of accredited driving schools follows that of the major cities.",
+  "texte": "The population density of accredited driving schools follows that of the major cities, whereas",
   "relu": false
  },
  "horizon 2029 — niveau C": {
@@ -7880,7 +6349,7 @@
   "relu": false
  },
  "horizon 2029, préfecture par préfecture.": {
-  "texte": "The Commission shall adopt delegated acts in accordance with Article 21 of Regulation (EU) No 182/2011 of the European Parliament and of the Council.",
+  "texte": "Horizon 2029, Prefecture by prefecture.",
   "relu": false
  },
  "horizon : aucune donnée ne mesure l": {
@@ -7889,10 +6358,6 @@
  },
  "horizon choisi est marqué.": {
   "texte": "the selected horizon is marked.",
-  "relu": false
- },
- "html, body, [class*=\"css\"], .stMarkdown, .stText, button, input, label": {
-  "texte": "This is a list of the official languages of the European Union.",
   "relu": false
  },
  "hui en dehors du Grand Lomé, et l": {
@@ -7979,14 +6444,6 @@
   "texte": "invest; not d",
   "relu": false
  },
- "k km": {
-  "texte": "k km",
-  "relu": false
- },
- "km": {
-  "texte": "miles",
-  "relu": false
- },
  "km de routes classées": {
   "texte": "km of roads classified",
   "relu": false
@@ -8043,10 +6500,6 @@
   "texte": "km to be repaired",
   "relu": false
  },
- "km,": {
-  "texte": "- I'm not sure.",
-  "relu": false
- },
  "km, habitants": {
   "texte": "km, inhabitants",
   "relu": false
@@ -8060,7 +6513,7 @@
   "relu": false
  },
  "la formation. Les Plateaux sont en retard sur la route ; les Savanes et la Maritime hors Grand Lomé, sur la formation.": {
-  "texte": "The Plateaux are late on the road; the Savannes and the Maritime Offices outside Greater Lomé are on the train.",
+  "texte": "The Plateaux are late on the road; Savannah and Maritime outside Greater Lomé, in training.",
   "relu": false
  },
  "la pastille prend la couleur de sa classe sur la carte —": {
@@ -8165,10 +6618,6 @@
  },
  "ni la part du Grand Lomé dans les accidents ni son taux ne sont connus (écart 1)": {
   "texte": "Neither the share of the Grand Lomé in accidents nor its rate are known (disambiguation 1)",
-  "relu": false
- },
- "nom du projet + drapeau": {
-  "texte": "project name + flag",
   "relu": false
  },
  "non définie": {
@@ -8544,7 +6993,7 @@
   "relu": false
  },
  "tués(an) / parc(an) × 10 000 ; parc selon l’ordre de R-11 ; en fourchette si parc estimé (O1-05)": {
-  "texte": "total number of deaths per year × 10 000; total number of deaths per year × 10 000; total number of deaths per year × 10 000; total number of deaths per year × 10 000; total number of deaths per year × 10 000; total number of deaths per year × 10 000 × 10 000; total number of deaths per year × 10 000 per year × 10 000 per year × 10 000 per year × 10 000 per year × 10 000 per year × 10 000 per year × 10 000 per year × 10 000 per year × 10 000 per year × 10 000 per year; total number of deaths per year (O1-05)",
+  "texte": "total number of deaths per year × 10 000; parcel according to the order R-11; range if estimated (O1-05)",
   "relu": false
  },
  "tués(t, an) / population(t, an) × 100 000 ; sous SE-01 : cumul sur PA-02 années (R-09)": {
@@ -8611,14 +7060,6 @@
   "texte": "urban road (233,2 km)",
   "relu": false
  },
- "vs 2021": {
-  "texte": "vs. 2021",
-  "relu": false
- },
- "vs 2023": {
-  "texte": "compared to 2023",
-  "relu": false
- },
  "vue 1 sur 4": {
   "texte": "View 1 out of 4",
   "relu": false
@@ -8636,7 +7077,7 @@
   "relu": false
  },
  "À droite de chaque barre : le nombre de tests de robustesse, sur 6, où la préfecture reste dans les 10 premières.": {
-  "texte": "To the right of each bar: the number of robustness tests, out of 6, where the prefecture remains in the top 10.",
+  "texte": "To the right of each bar: number of robustness tests, out of 6, where prefecture remains in the top 10.",
   "relu": false
  },
  "À ouvrir": {
@@ -8852,7 +7293,7 @@
   "relu": false
  },
  "— Centrale est la seule zone au-dessus de la médiane pour le réseau et en dessous pour la formation : 40,3 % de km en mauvais état sur 437,2 km évalués, et 4 auto-écoles agréées pour 795 529 habitants (0,50 pour 100 000). 4 de ses 5 préfectures reçoivent le levier réseau (113,6 km à remettre en état), 3 le levier formation (6 auto-écoles).": {
-  "texte": "⁇  Central is the only area above the median for the network and below the median for training: 40.3% of the 437.2 km evaluated are in poor condition, and 4 licensed driving schools for 795 529 inhabitants (0.50 per 100,000).",
+  "texte": "⁇  Central is the only area above median for network and below average for training: 40.3% km in poor condition out of 437.2 km evaluated, 4 licensed driving schools per 795 529 people (0.50 per 100 000).",
   "relu": false
  },
  "— Danyi cumule 100 % de km en mauvais état sur 49,8 km évalués, traversés par 3 tronçons critiques, et aucune auto-école, ni agréée ni recensée, pour 40 240 habitants, à 12,9 km de la plus proche. En tête du classement dans les 6 tests de robustesse.": {
@@ -8868,7 +7309,7 @@
   "relu": false
  },
  "— Kara a le réseau au-dessus de la médiane : 15,2 % sur 694,5 km évalués. Pour 985 512 habitants, 2 de ses 7 préfectures reçoivent le levier réseau (37,3 km), 5 le levier formation (8 auto-écoles).": {
-  "texte": "⁇  Kara has the network above the median: 15.2% of the 694.5 km assessed. For 985 512 inhabitants, 2 of its 7 prefectures receive the network lever (37.3 km), 5 the training lever (8 driving schools).",
+  "texte": "⁇  Kara has the network above median: 15.2% over 694.5 km assessed. For 985 512 inhabitants, 2 of its 7 prefectures receive grid levy (37.3 km), 5 training levy (8 driving schools).",
   "relu": false
  },
  "— Maritime hors Grand Lomé a la formation et la desserte sous la médiane : 5 auto-écoles agréées pour 1 346 615 habitants (0,37 pour 100 000), 3,51 km de routes pour 10 000 habitants. 3 de ses 6 préfectures reçoivent le levier formation (6 auto-écoles).": {
@@ -8896,7 +7337,7 @@
   "relu": false
  },
  "— Plateaux a le réseau au-dessus de la médiane : 28,0 % de km en mauvais état sur 965,6 km évalués, traversés par 23 tronçons critiques. Pour 1 635 946 habitants, 6 de ses 12 préfectures reçoivent le levier réseau (150,5 km), 7 le levier formation (12 auto-écoles).": {
-  "texte": "⁇  Plateaux has the network above the median: 28.0% of km in poor condition out of 965.6 km assessed, crossed by 23 critical sections. For 1 635 946 inhabitants, 6 of its 12 prefectures receive the network lever (150.5 km), 7 the training lever (12 driving schools).",
+  "texte": "⁇  Plateaux has a network above the median: 28.0% km in poor condition out of 965.6 kilometres assessed, crossed by 23 critical sections. For 1 635 946, six of its 12 prefectures receive grid leverage (150.5 km), 7 training leverage (12 driving schools).",
   "relu": false
  },
  "— Savanes a la formation et la desserte sous la médiane : 4 auto-écoles agréées pour 1 143 520 habitants (0,35 pour 100 000), 4,62 km de routes pour 10 000 habitants. 5 de ses 7 préfectures reçoivent le levier formation (9 auto-écoles), aucune le levier réseau.": {

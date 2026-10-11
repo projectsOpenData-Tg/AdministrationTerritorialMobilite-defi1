@@ -15,188 +15,40 @@
   "texte": "(Kilometre 101,1 ƒe xexlẽme)",
   "relu": false
  },
- "(101,1 km)": {
-  "texte": "(101,1 km)",
-  "relu": false
- },
- "(101,2 km)": {
-  "texte": "(101,2 km)",
-  "relu": false
- },
  "(110,7 km évalués)": {
   "texte": "(Kilometre 110,7 ƒe xexlẽme)",
-  "relu": false
- },
- "(110,7 km)": {
-  "texte": "(10,7 km)",
-  "relu": false
- },
- "(110,8 km)": {
-  "texte": "(10,8 km)",
-  "relu": false
- },
- "(113,5 km)": {
-  "texte": "(Kilometre 113,5)",
   "relu": false
  },
  "(120,3 km évalués)": {
   "texte": "(120,3 km ƒe xexlẽme)",
   "relu": false
  },
- "(120,3 km)": {
-  "texte": "(120.3 km)",
-  "relu": false
- },
  "(124,1 km évalués)": {
   "texte": "(Kilometre 124,1 ƒe xexlẽme)",
-  "relu": false
- },
- "(124,1 km)": {
-  "texte": "(Kilometre 124,1)",
-  "relu": false
- },
- "(124,9 km)": {
-  "texte": "(Kilometre 124,9)",
   "relu": false
  },
  "(125,7 km évalués)": {
   "texte": "(Kilometre 125,7 ƒe xexlẽme)",
   "relu": false
  },
- "(125,7 km)": {
-  "texte": "(Kilometre 125,7)",
-  "relu": false
- },
- "(129,9 km)": {
-  "texte": "(Kilometre 129,9)",
-  "relu": false
- },
  "(131,7 km évalués)": {
   "texte": "(131,7 km le akɔntabubu me)",
-  "relu": false
- },
- "(131,7 km)": {
-  "texte": "(Kilometre 131,7)",
   "relu": false
  },
  "(140,6 km évalués)": {
   "texte": "(140,6 km ƒe didime)",
   "relu": false
  },
- "(140,6 km)": {
-  "texte": "(140,6 km)",
-  "relu": false
- },
- "(161,4 km)": {
-  "texte": "(Kilometre 161,4)",
-  "relu": false
- },
  "(167,5 km évalués)": {
   "texte": "(Kilometre 167,5 siwo ŋu woke ɖo)",
-  "relu": false
- },
- "(167,5 km)": {
-  "texte": "(167,5 km)",
-  "relu": false
- },
- "(24,8 km)": {
-  "texte": "(24,8 km)",
-  "relu": false
- },
- "(27,8 km)": {
-  "texte": "(27,8 km)",
   "relu": false
  },
  "(35,8 km évalués)": {
   "texte": "(35,8 km ƒe didime)",
   "relu": false
  },
- "(35,8 km)": {
-  "texte": "(35,8 km)",
-  "relu": false
- },
- "(36,0 km)": {
-  "texte": "(36,0 km)",
-  "relu": false
- },
- "(40,3 km)": {
-  "texte": "(40,3 km)",
-  "relu": false
- },
- "(41,5 km)": {
-  "texte": "(41,5 km)",
-  "relu": false
- },
- "(45,2 km)": {
-  "texte": "(45,2 km)",
-  "relu": false
- },
- "(46,1 km)": {
-  "texte": "(46,1 km)",
-  "relu": false
- },
  "(49,8 km évalués)": {
   "texte": "(49,8 km ƒe didime)",
-  "relu": false
- },
- "(49,8 km)": {
-  "texte": "(49,8 km)",
-  "relu": false
- },
- "(57,9 km)": {
-  "texte": "(57,9 km)",
-  "relu": false
- },
- "(58,5 km)": {
-  "texte": "(58,5 km)",
-  "relu": false
- },
- "(58,8 km)": {
-  "texte": "(58,8 km)",
-  "relu": false
- },
- "(63,1 km)": {
-  "texte": "(63,1 km)",
-  "relu": false
- },
- "(7,0 km)": {
-  "texte": "(7.0 km)",
-  "relu": false
- },
- "(70,0 km)": {
-  "texte": "(70,0 km)",
-  "relu": false
- },
- "(72,5 km)": {
-  "texte": "(72,5 km)",
-  "relu": false
- },
- "(75,6 km)": {
-  "texte": "(75,6 km)",
-  "relu": false
- },
- "(82,5 km)": {
-  "texte": "(82,5 km)",
-  "relu": false
- },
- "(84,0 km)": {
-  "texte": "(84,0 km)",
-  "relu": false
- },
- "(87,9 km)": {
-  "texte": "(87,9 km)",
-  "relu": false
- },
- "(90,1 km)": {
-  "texte": "(90,1 km)",
-  "relu": false
- },
- "(90,5 km)": {
-  "texte": "(90,5 km)",
-  "relu": false
- },
- "(96,6 km)": {
-  "texte": "(96,6 km)",
   "relu": false
  },
  "(la formation)": {
@@ -256,631 +108,11 @@
   "relu": false
  },
  ", un peu plus que leur part du parc (1,01 à 1,10 fois).": {
-  "texte": ", si wu woƒe anyigbamama ƒe akpa si le afi ma la ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ si le afi ma la ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ si le afi ma la ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ si le afi ma la ƒe agbɔsɔsɔ si le agbɔsɔsɔ si le afi ma la ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ si le afi ma la ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ si le agbɔsɔsɔsɔ si le afi ma la ƒe agbɔsɔsɔ si le agbɔsɔsɔ si le agbɔsɔsɔsɔ me la ƒe agbɔsɔsɔ si le agbɔsɔsɔsɔ si le agbɔsɔsɔsɔ me la ƒe agbɔsɔsɔsɔ si le agbɔsɔsɔsɔ si le agbɔsɔsɔsɔ si nye 1.01-1.",
+  "texte": ", si sɔ gbɔ wu woƒe gome le nutoa me (1.01 va se ɖe 1.10).",
   "relu": false
  },
  ". Chaque étape a été gelée avant la suivante, et aucun chiffre affiché n'a été recopié à la main.": {
   "texte": "Wotsrɔ̃a nu sia nu le afɔ sia afɔ nu, eye womeŋlɔa xexlẽdzesi siwo le afi ma la ɖe asi o.",
-  "relu": false
- },
- ".ai-lab-logo-carte": {
-  "texte": ".ai-lab-logo-card",
-  "relu": false
- },
- ".ai-lab-logo-carte img": {
-  "texte": ".ai-lab-logo-card img",
-  "relu": false
- },
- ".ai-lab-logo-repli": {
-  "texte": ".ai-lab-logo-repli",
-  "relu": false
- },
- ".ariane": {
-  "texte": ".ariane",
-  "relu": false
- },
- ".ariane b": {
-  "texte": ". ariane b",
-  "relu": false
- },
- ".armoiries": {
-  "texte": "Aʋawɔnuwo",
-  "relu": false
- },
- ".armoiries-repli": {
-  "texte": ".aɖakaɖakaɖakaɖaka",
-  "relu": false
- },
- ".bloc-sous-titre": {
-  "texte": ".title-sub-block",
-  "relu": false
- },
- ".bloc-titre": {
-  "texte": ".title block",
-  "relu": false
- },
- ".constat": {
-  "texte": ".woɖe",
-  "relu": false
- },
- ".constat-texte": {
-  "texte": ".gbeŋɔŋlɔ",
-  "relu": false
- },
- ".constat-titre": {
-  "texte": ".title",
-  "relu": false
- },
- ".constat-titre, .limite-titre, .synthese-titre": {
-  "texte": ".title, .title limit, .title synthesis",
-  "relu": false
- },
- ".etape": {
-  "texte": ".tape",
-  "relu": false
- },
- ".etape-desc": {
-  "texte": ".stepe-desc",
-  "relu": false
- },
- ".etape-num": {
-  "texte": ".ƒe gbãtɔ",
-  "relu": false
- },
- ".etape-sortie": {
-  "texte": ".ɖeɖeɖeƒe",
-  "relu": false
- },
- ".etape-titre": {
-  "texte": ".title-step",
-  "relu": false
- },
- ".etape:last-child": {
-  "texte": ".tape: last-child",
-  "relu": false
- },
- ".etapes": {
-  "texte": ".ɣeyiɣiwo",
-  "relu": false
- },
- ".etiquette": {
-  "texte": ".tiketi",
-  "relu": false
- },
- ".etiquette.alerte": {
-  "texte": ".Etiquette.Alert",
-  "relu": false
- },
- ".etiquette.critique": {
-  "texte": ". etiquette.critic",
-  "relu": false
- },
- ".etiquette.national": {
-  "texte": ". etiquette.national",
-  "relu": false
- },
- ".etiquette.neutre": {
-  "texte": ". etiquette. neutral",
-  "relu": false
- },
- ".etiquette.ok": {
-  "texte": ". etike.ok",
-  "relu": false
- },
- ".etiquette.reco-horizon": {
-  "texte": ".label.retro-horizon",
-  "relu": false
- },
- ".etiquette.reco-nature": {
-  "texte": ".tiketi.dzidziɖedzi",
-  "relu": false
- },
- ".etiquette.reco-priorite": {
-  "texte": ". etiquette.reco-priorite",
-  "relu": false
- },
- ".filtres-actifs": {
-  "texte": ".Akpeƒonuwo",
-  "relu": false
- },
- ".groupe": {
-  "texte": ".ha",
-  "relu": false
- },
- ".kpi": {
-  "texte": ".kpi",
-  "relu": false
- },
- ".kpi-contexte": {
-  "texte": ".kpi-gbe me nyawo",
-  "relu": false
- },
- ".kpi-grille": {
-  "texte": ".kpi-grill",
-  "relu": false
- },
- ".kpi-grille.une-ligne": {
-  "texte": ".kpi-grill.one-line",
-  "relu": false
- },
- ".kpi-grille.une-ligne .kpi": {
-  "texte": ".kpi-grill.one-line .kpi",
-  "relu": false
- },
- ".kpi-grille.une-ligne .kpi-centre": {
-  "texte": ".kpi-grill.one-line .kpi-centre",
-  "relu": false
- },
- ".kpi-grille.une-ligne .kpi-contexte": {
-  "texte": ".kpi-grill.one-line .kpi-text",
-  "relu": false
- },
- ".kpi-grille.une-ligne .kpi-libelle": {
-  "texte": ".kpi-grill.one-line .kpi-libelle",
-  "relu": false
- },
- ".kpi-grille.une-ligne .kpi-phrase": {
-  "texte": ".kpi-grill.one-line .kpi-phrase",
-  "relu": false
- },
- ".kpi-grille.une-ligne .kpi-tete": {
-  "texte": ".kpi-grill.one-line .kpi-tete",
-  "relu": false
- },
- ".kpi-grille.une-ligne .kpi-tete .kpi-libelle": {
-  "texte": ".kpi-grill.one-line .kpi-tete .kpi-libelle",
-  "relu": false
- },
- ".kpi-grille.une-ligne .kpi-valeur": {
-  "texte": ".kpi-grill.one-line .kpi-value",
-  "relu": false
- },
- ".kpi-icone": {
-  "texte": ".kpi-icon",
-  "relu": false
- },
- ".kpi-icone svg": {
-  "texte": ".kpi-icone svg",
-  "relu": false
- },
- ".kpi-libelle": {
-  "texte": ".kpi-libelle",
-  "relu": false
- },
- ".kpi-periode": {
-  "texte": ".kpi-periode",
-  "relu": false
- },
- ".kpi-phrase": {
-  "texte": ".kpi-phrase",
-  "relu": false
- },
- ".kpi-reserve": {
-  "texte": ".kpi-dzraɖoƒe",
-  "relu": false
- },
- ".kpi-tendance": {
-  "texte": ".kpi-tendence",
-  "relu": false
- },
- ".kpi-tendance small": {
-  "texte": ".kpi-tendance small",
-  "relu": false
- },
- ".kpi-tendance.mieux": {
-  "texte": ".kpi-trend.ɖe vi wu",
-  "relu": false
- },
- ".kpi-tendance.neutre": {
-  "texte": ".kpi-tendance.neither",
-  "relu": false
- },
- ".kpi-tendance.pire": {
-  "texte": ".kpi-tendence. Worse",
-  "relu": false
- },
- ".kpi-tete": {
-  "texte": ".kpi-tete",
-  "relu": false
- },
- ".kpi-tete .kpi-libelle": {
-  "texte": ".Kpi-tete .Kpi-libelle",
-  "relu": false
- },
- ".kpi-unite": {
-  "texte": ".kpi-nu ɖeka",
-  "relu": false
- },
- ".kpi-valeur": {
-  "texte": ".kpi-value",
-  "relu": false
- },
- ".kpi::after": {
-  "texte": ".kpi::after",
-  "relu": false
- },
- ".kpi:hover": {
-  "texte": ".kpi: dzi",
-  "relu": false
- },
- ".kpi:hover::after": {
-  "texte": ".kpi:hover::after",
-  "relu": false
- },
- ".langue-lib": {
-  "texte": ".gbegbedeasi",
-  "relu": false
- },
- ".limite": {
-  "texte": ".toɖoƒe",
-  "relu": false
- },
- ".limite-texte": {
-  "texte": ".gbe me nyawo",
-  "relu": false
- },
- ".limite-titre": {
-  "texte": ".title limit",
-  "relu": false
- },
- ".limite.discret": {
-  "texte": ".toɖoƒe. discrete",
-  "relu": false
- },
- ".limite.discret .limite-texte": {
-  "texte": ".gbe.gbe.gbe.gbe",
-  "relu": false
- },
- ".limite.discret .limite-titre": {
-  "texte": ".title. discrete .title-limit",
-  "relu": false
- },
- ".note-carte": {
-  "texte": ".kartiƒomegbalẽ",
-  "relu": false
- },
- ".note-carte.blanche": {
-  "texte": ".Kadi-ŋlɔgbalẽvi.",
-  "relu": false
- },
- ".note-carte.blanche.risque": {
-  "texte": ".Kadi-gbalẽvi.Agbalẽvi.Agbalẽvi.",
-  "relu": false
- },
- ".note-graphique": {
-  "texte": ". graphic-note",
-  "relu": false
- },
- ".note-graphique.forte": {
-  "texte": ".graphic-note. strong",
-  "relu": false
- },
- ".onglets-aide": {
-  "texte": ".Kpekpeɖeŋunaɖonuwo",
-  "relu": false
- },
- ".onglets-repere": {
-  "texte": ".ƒomevi siwo le ʋuʋum",
-  "relu": false
- },
- ".pied": {
-  "texte": "afɔ",
-  "relu": false
- },
- ".pied-identite": {
-  "texte": "Ŋutilã ƒe afɔ",
-  "relu": false
- },
- ".pied-identite-sous-titre": {
-  "texte": ". legba-nyateƒenya",
-  "relu": false
- },
- ".pied-identite-titre": {
-  "texte": ".foot-identity-title",
-  "relu": false
- },
- ".question": {
-  "texte": "Nyabiase",
-  "relu": false
- },
- ".reco-cible": {
-  "texte": ".ƒomevi",
-  "relu": false
- },
- ".reco-contexte": {
-  "texte": ".gbe me nyawo",
-  "relu": false
- },
- ".reco-horizon2031": {
-  "texte": ".gbegbedeƒe2031",
-  "relu": false
- },
- ".reco-pastille": {
-  "texte": ".gblegblegble",
-  "relu": false
- },
- ".reco-theme": {
-  "texte": ".gbeƒonya",
-  "relu": false
- },
- ".reco-theme-lib": {
-  "texte": ".reco-theme-lib",
-  "relu": false
- },
- ".reco-titre": {
-  "texte": ".title",
-  "relu": false
- },
- ".reponse": {
-  "texte": ".ɖo eŋu na mí",
-  "relu": false
- },
- ".reponse.en-carte": {
-  "texte": ".ɖo eŋu.",
-  "relu": false
- },
- ".retenir": {
-  "texte": ".si le edzi yim",
-  "relu": false
- },
- ".retenir li": {
-  "texte": ".lé ŋku ɖe eŋu",
-  "relu": false
- },
- ".retenir ol": {
-  "texte": ".be woalé wo ɖe te",
-  "relu": false
- },
- ".retenir-num": {
-  "texte": ".be-num",
-  "relu": false
- },
- ".retenir-titre": {
-  "texte": ".si le dzesideŋkɔ dzi",
-  "relu": false
- },
- ".slogan-barre": {
-  "texte": ".slogan-bar",
-  "relu": false
- },
- ".slogan-filet": {
-  "texte": ".slogan-filet",
-  "relu": false
- },
- ".slogan-illustration": {
-  "texte": ".slogan-illustration",
-  "relu": false
- },
- ".slogan-texte": {
-  "texte": ".slogan-text",
-  "relu": false
- },
- ".stTabs .react-aria-SelectionIndicator": {
-  "texte": ".stTabs .react-area-SelectionIndicator",
-  "relu": false
- },
- ".stTabs [data-testid=\"stTab\"]": {
-  "texte": ".stTabs [data-testid=\"stTab\"]",
-  "relu": false
- },
- ".stTabs [data-testid=\"stTab\"] p": {
-  "texte": ".stTabs [data-testid=\"stTab\"] kp",
-  "relu": false
- },
- ".stTabs [data-testid=\"stTab\"]:hover": {
-  "texte": ".stTabs [data-testid=\"stTab\"]:mlɔ",
-  "relu": false
- },
- ".stTabs [data-testid=\"stTab\"]:hover p": {
-  "texte": ".stTabs [data-testid=\"stTab\"]:hover p",
-  "relu": false
- },
- ".stTabs [data-testid=\"stTab\"][aria-selected=\"true\"]": {
-  "texte": ".stTabs [data-testid=\"stTab\"][aria-selected=\"true\"]",
-  "relu": false
- },
- ".stTabs [data-testid=\"stTab\"][aria-selected=\"true\"] p": {
-  "texte": ".stTabs [data-testid=\"stTab\"][aria-selected=\"true\"]",
-  "relu": false
- },
- ".stTabs [role=\"tablist\"]": {
-  "texte": ".stTabs [role=\"tablist\"]",
-  "relu": false
- },
- ".surtitre": {
-  "texte": ".to gbe ɖa",
-  "relu": false
- },
- ".synthese": {
-  "texte": ".synthesis",
-  "relu": false
- },
- ".synthese ul": {
-  "texte": ".synthesis",
-  "relu": false
- },
- ".synthese-chiffre": {
-  "texte": ".numera ƒe ƒuƒoƒo",
-  "relu": false
- },
- ".synthese-legende": {
-  "texte": ".synthese-legend",
-  "relu": false
- },
- ".synthese-titre": {
-  "texte": ".title synthesis",
-  "relu": false
- },
- ".topbar-centre": {
-  "texte": ".topbar-ƒe",
-  "relu": false
- },
- ".topbar-centre::after": {
-  "texte": ".topbar-centre::after",
-  "relu": false
- },
- ".topbar-ligne": {
-  "texte": ".topbar-line",
-  "relu": false
- },
- ".topbar-ministere": {
-  "texte": ".topbar-ministere",
-  "relu": false
- },
- ".topbar-sous-titre": {
-  "texte": ".topbar-subtitle",
-  "relu": false
- },
- ".topbar-titre": {
-  "texte": ".topbar-title",
-  "relu": false
- },
- ".total-carte": {
-  "texte": ".kpekpekpe",
-  "relu": false
- },
- ".total-chiffre": {
-  "texte": ".ƒome bliboa",
-  "relu": false
- },
- ".total-legende": {
-  "texte": ".wo katã ƒe ŋutinya",
-  "relu": false
- },
- ".total-note": {
-  "texte": ".total-note",
-  "relu": false
- },
- "/* Barre du haut (maquette §4) : armoiries + ministère": {
-  "texte": "/* Tsitretsiƒonu (nuto 4): aʋawɔnuwo + subɔsubɔdɔ",
-  "relu": false
- },
- "/* Barre latérale */": {
-  "texte": "/* Akpoƒonu */",
-  "relu": false
- },
- "/* Bloc central (chiffre, tendance, phrase), centré dans la carte ; liseré fin en bas, couleur du thème */": {
-  "texte": "/* Titinaƒonu (dzesi, nɔnɔme, nyagbɔgblɔ), si le eme le anyigbatata la me; woaxlẽe le ete, nuŋɔŋlɔa ƒe amadede */",
-  "relu": false
- },
- "/* Blocs, constat, synthèse, limite */": {
-  "texte": "/* Bloke, kpeɖodzi, nuƒo ƒu, seɖoƒe */",
-  "relu": false
- },
- "/* Bouton « Voir le détail » toujours en bas de sa carte : cartes de même hauteur, dernier élément poussé en bas */": {
-  "texte": "/* Akɔti la  ⁇  Kpɔ nu si le eme la kpɔ  ⁇  eƒe anyigbatata la ƒe ɖeɖeko me ɖaa: tasiaɖam ma ke ƒe ɖeɖeko, nu mamlɛtɔ si woƒo ɖe anyi */",
-  "relu": false
- },
- "/* Boutons radio : contour visible même non sélectionnés */": {
-  "texte": "/* Radiogbotowo: esiwo dze le gota ne womedzra wo ɖo o gɔ̃ hã",
-  "relu": false
- },
- "/* Cartes de recommandation */": {
-  "texte": "/* Ŋugbedolawo */",
-  "relu": false
- },
- "/* Cartes des quatre thèmes : carte blanche arrondie, liseré bas de la couleur du titre, survol sans balayage */": {
-  "texte": "/* Ŋutinya eneawo ƒe anyigbatatawo: blibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibliblibli",
-  "relu": false
- },
- "/* Chiffres clés */": {
-  "texte": "/* Taɖodzinuwo */",
-  "relu": false
- },
- "/* Contenu : largeur fluide, espacement latéral fixe (maquette §2.4) */": {
-  "texte": "/* Nu si le eme: gbadzae, teƒe si le axawo dzi ɖaa (nu si le eme)",
-  "relu": false
- },
- "/* Contenu centré verticalement dans la carte ; liste alignée à gauche */": {
-  "texte": "/* Nu siwo le anyigbatata la me le titina; nu siwo le tsitre ɖe miame */",
-  "relu": false
- },
- "/* En-tête de page */": {
-  "texte": "/* Axa ƒe taŋkɔ */",
-  "relu": false
- },
- "/* Filtres : fond blanc, bordure gris clair, état sélectionné bleu */": {
-  "texte": "/* Filterwo: nu ɣi, dzĩ legbe, nɔnɔme si wotia nye blɔ */",
-  "relu": false
- },
- "/* Graphiques et cartes sur fond blanc */": {
-  "texte": "/* Akpawo kple anyigbatatawo le nu ɣi dzi */",
-  "relu": false
- },
- "/* L'en-tête de Streamlit est rendu transparent et se superpose à notre barre du haut : ses boutons (Share, GitHub… sur": {
-  "texte": "/* Streamlit ƒe taŋtaŋ la dze le goawo dzi, eye eƒe dzikedzowo (Share, GitHub...",
-  "relu": false
- },
- "/* Listes (étapes, écarts, actions) */": {
-  "texte": "/* Ŋutilãwo (dzedzemewo, tɔtrɔwo, nuwɔnawo) */",
-  "relu": false
- },
- "/* Logo (st.logo) : Togo en miniature et nom du tableau de bord, en face du bouton qui replie la barre */": {
-  "texte": "/* Logo (st.logo): Togo si le ɖevime kple dzesideŋutiatia ƒe ŋkɔ, si le ŋgɔgbe si le ʋɔtrua dzi la */",
-  "relu": false
- },
- "/* Navigation active : bleu soutenu (le jaune du drapeau reste réservé aux mises en évidence) */": {
-  "texte": "/* Ʋuʋuwo ƒe mɔɖeɖe: blewu (dukplɔvia ƒe dzĩ nɔa anyi hena dzedzeme) */",
-  "relu": false
- },
- "/* Note en carte (repères sous un graphique) : fond bleu clair, filet bleu à gauche */": {
-  "texte": "/* Ŋɔŋlɔ si le takpegbalẽvi aɖe me (dzro nɔnɔmetata aɖe me): kɔtɛ si le dzĩ, kɔtɛ si le dzĩ le miame */",
-  "relu": false
- },
- "/* Pastille d'icône du thème, à gauche du libellé (même forme arrondie que les étiquettes A/B/C) */": {
-  "texte": "/* Nyatakaka ƒe dzesi si le nyagbɔgblɔa ƒe miame (siwo ƒo xlã abe A/B/C dzesideŋutigbalẽwo ene) */",
-  "relu": false
- },
- "/* Pied de page */": {
-  "texte": "/* Akpaɖodzinu */",
-  "relu": false
- },
- "/* Six chiffres clés sur une ligne (Vue nationale) : 3 puis 2 colonnes sur écran étroit */": {
-  "texte": "/* Dzesi ade le kadodo aɖe me (National View): 3 eye emegbe 2 ɖe kplakplakpla dzi */",
-  "relu": false
- },
- "/* Slogan et illustration de route, poussés en bas de la barre latérale quand la place le permet */": {
-  "texte": "/* Mɔ ƒe dzideƒonya kple mɔ ƒe nɔnɔmetata si woakplɔ ɖe megbe ne teƒea ɖe mɔ */",
-  "relu": false
- },
- "/* Sous-onglets en pastilles */": {
-  "texte": "/* Nubabla siwo wowɔna ɖe nubabla ŋu */",
-  "relu": false
- },
- "/* Streamlit place un en-tête opaque dès qu'il affiche un bouton (Fork/GitHub sur Streamlit Cloud, réouverture de la": {
-  "texte": "/* Streamlit ɖoa taŋtaŋ si me kɔna o ne ekpɔa dzudzɔ aɖe (Fork/GitHub le Streamlit Cloud dzi, eye wòʋu",
-  "relu": false
- },
- "/* Synthèse chiffrée (Vue nationale) : carte vert clair, bouton dedans, même hauteur que « À retenir » */": {
-  "texte": "/* Xexlẽdzesi si woɖe ɖe go (National View) : green card, dzogoe si le eme, si le kɔkɔme si  ⁇  Wòhiã be nàɖo ŋku edzi  ⁇  */",
-  "relu": false
- },
- "/* Sélecteur de langue : sous le logo, au-dessus du menu (il est rendu dans le contenu de la barre, puis remonté) */": {
-  "texte": "/* Gbegbɔgblɔtiatia: le logoa te, le menu la tame (woɖena ɖe nutata ŋu, eye woɖena ɖe edzi) */",
-  "relu": false
- },
- "/* Tendance : badge arrondi coloré (rouge = aggravation, vert = amélioration démontrée, gris = variation neutre) */": {
-  "texte": "/* Dzedzeme: amadede dzogoe (kpo = gbegblẽ, kewo = dzedzeme si dze, kewo = tsitretsitsi) */",
-  "relu": false
- },
- "/* Total des permis : carte bleu clair (même bleu que le survol de « Voir le détail ») */": {
-  "texte": "/* Mɔxeɖenuwo ƒe agbɔsɔsɔ: kɔnu dzĩ (si le blewu abe ale si yameʋua ƒona ene) */",
-  "relu": false
- },
- "/* chiffre à gauche, liste à droite */": {
-  "texte": "/* xexlẽdzesi le miame, nuŋlɔɖi le miame */",
-  "relu": false
- },
- "/* haut aligné : les chiffres restent sur une même ligne */": {
-  "texte": "/* si le tsitre ɖi: xexlẽdzesiwo nɔa tsitre ɖi le mɔ ɖeka dzi */",
-  "relu": false
- },
- "/* « Voir le détail » : survol bleu, comme la navigation de la barre latérale */": {
-  "texte": "/*  ⁇  Xlẽ nu tso eŋu nyuie  ⁇ : Blue Flying, abe ale si wòazɔa mɔna le alidziƒomɔ̃a dzi ene */",
-  "relu": false
- },
- "/* À retenir : carte blanche, messages numérotés en pastille */": {
-  "texte": "/* Ðo ŋku edzi: lɛta ɣi, gbedeasi siwo woŋlɔ ɖe pastel me */",
   "relu": false
  },
  "0 auto-écoles à ouvrir": {
@@ -899,32 +131,8 @@
   "texte": "Mɔ siwo me nɔnɔme sesẽwo le la ƒe alafa memama 0.2% (87.9 km, 2 kpekpeme).",
   "relu": false
  },
- "0,2 km": {
-  "texte": "0.2 km",
-  "relu": false
- },
- "0,4 km": {
-  "texte": "Km.",
-  "relu": false
- },
  "0,5 % des routes en mauvais état (70,0 km évalués, 2 tronçons critiques).": {
   "texte": "0,5 le alafa me le mɔ siwo mele nɔnɔme nyui me o la me (70.0 km, 2 ƒe akpa vevi).",
-  "relu": false
- },
- "0,5 km": {
-  "texte": "0,5 km",
-  "relu": false
- },
- "0,6 km": {
-  "texte": "Km.",
-  "relu": false
- },
- "0,7 km": {
-  "texte": "0.7 km",
-  "relu": false
- },
- "0,8 km": {
-  "texte": "0.8 km",
   "relu": false
  },
  "1 110 446 habitants concernés": {
@@ -941,10 +149,6 @@
  },
  "1 822 046 habitants concernés": {
   "texte": "1 822 046",
-  "relu": false
- },
- "1 an": {
-  "texte": "Ƒe 1",
   "relu": false
  },
  "1 auto-écoles à ouvrir": {
@@ -979,14 +183,6 @@
   "texte": "1,275 × ame siwo xɔ ƒe 18 kple edzivɔ ÷ 1,000",
   "relu": false
  },
- "1,6 km": {
-  "texte": "Kilometre ɖeka",
-  "relu": false
- },
- "1,8 km": {
-  "texte": "Kilometre 1.8",
-  "relu": false
- },
  "1. Danyi": {
   "texte": "1. Danyi",
   "relu": false
@@ -1003,14 +199,6 @@
   "texte": "10",
   "relu": false
  },
- "10 à 20 km": {
-  "texte": "Km 10 va se ɖe 20",
-  "relu": false
- },
- "10,45 en 2010–2012, 7,38 en 2022–2024": {
-  "texte": "10,45 le ƒe 2010 ⁇ 2012, 7,38 le ƒe 2022 ⁇ 2024 me",
-  "relu": false
- },
  "10. Tchaoudjo": {
   "texte": "10 Chaudjo",
   "relu": false
@@ -1023,16 +211,8 @@
   "texte": "Ame siwo katã le afi ma la ƒe xexlẽme nye 101 300",
   "relu": false
  },
- "101,1 km": {
-  "texte": "101,1 km",
-  "relu": false
- },
  "101,1 km évalués": {
   "texte": "101,1 km siwo ŋu woke ɖo",
-  "relu": false
- },
- "101,2 km": {
-  "texte": "101,2 km",
   "relu": false
  },
  "101,2 km évalués": {
@@ -1047,28 +227,12 @@
   "texte": "Ʋukulawo ƒe suku siwo le Great Lomé la dometɔ 103 le 132 me.",
   "relu": false
  },
- "11,0 km": {
-  "texte": "Km 11,0",
-  "relu": false
- },
  "11,5 % des routes en mauvais état (124,9 km évalués, 3 tronçons critiques).": {
   "texte": "Mɔwo ƒe nɔnɔme sesẽwo dometɔ 11.5% (124.9 km, 3 ƒe akpa vevi)",
   "relu": false
  },
- "11,6 km": {
-  "texte": "Km 11,6",
-  "relu": false
- },
- "110,7 km": {
-  "texte": "110,7 km",
-  "relu": false
- },
  "110,7 km évalués": {
   "texte": "110,7 km siwo ŋu woke ɖo",
-  "relu": false
- },
- "110,8 km": {
-  "texte": "110,8 km",
   "relu": false
  },
  "110,8 km évalués": {
@@ -1079,16 +243,8 @@
   "texte": "Ame siwo le afi ma nye 111,214",
   "relu": false
  },
- "113,5 km": {
-  "texte": "113,5 km",
-  "relu": false
- },
  "113,5 km évalués": {
   "texte": "113,5 km siwo ŋu woke ɖo",
-  "relu": false
- },
- "113,6 km": {
-  "texte": "113,6 km",
   "relu": false
  },
  "114 172 habitants": {
@@ -1103,14 +259,6 @@
   "texte": "Mɔ siwo me nɔnɔme sesẽwo le la ƒe alafa memama 12.1 (36.0 km, 2 kpekpeme).",
   "relu": false
  },
- "12,9 km": {
-  "texte": "Km 12,9",
-  "relu": false
- },
- "120,3 km": {
-  "texte": "120,3 km",
-  "relu": false
- },
  "120,3 km évalués": {
   "texte": "120,3 km siwo ŋu woke ɖo",
   "relu": false
@@ -1123,24 +271,12 @@
   "texte": "Ame siwo katã le afi ma nye 124,848",
   "relu": false
  },
- "124,1 km": {
-  "texte": "124,1 km",
-  "relu": false
- },
  "124,1 km évalués": {
   "texte": "124,1 km siwo ŋu woke ɖo",
   "relu": false
  },
- "124,9 km": {
-  "texte": "124,9 km",
-  "relu": false
- },
  "124,9 km évalués": {
   "texte": "124,9 km siwo ŋu woke ɖo",
-  "relu": false
- },
- "125,7 km": {
-  "texte": "125,7 km",
   "relu": false
  },
  "125,7 km évalués": {
@@ -1155,10 +291,6 @@
   "texte": "Ame siwo le afi ma nye 128,959",
   "relu": false
  },
- "129,9 km": {
-  "texte": "129,9 km",
-  "relu": false
- },
  "129,9 km évalués": {
   "texte": "129,9 km siwo ŋu woke ɖo",
   "relu": false
@@ -1168,7 +300,7 @@
   "relu": false
  },
  "13 préfectures au levier réseau (304,6 km) ; 23 au levier formation (41 auto-écoles).": {
-  "texte": "Mɔ̃ɖaŋunuwo ƒe akpa si dzi wotrɔ asi le le la ƒe akpa etɔ̃e nye kɔpi (30,4 km); mɔ̃ɖaŋunuwo ƒe akpa si dzi wotrɔ asi le le la ƒe akpa etɔ̃e nye kɔpi (41).",
+  "texte": "Mɔ̃ɖaŋudɔwɔƒe 13 (304.6 km); hehe ƒe mɔxenu 23 (41 nye ʋukulawo).",
   "relu": false
  },
  "13 préfectures au-delà du seuil de 22,13 %.": {
@@ -1177,14 +309,6 @@
  },
  "13 sur 38": {
   "texte": "13 le 38",
-  "relu": false
- },
- "13,5 km": {
-  "texte": "Km 13,5",
-  "relu": false
- },
- "131,7 km": {
-  "texte": "131,7 km",
   "relu": false
  },
  "131,7 km évalués": {
@@ -1215,20 +339,8 @@
   "texte": "Mɔwo ƒe nɔnɔme sesẽwo dometɔ 14.4 le alafa me (131.7 km, 3 ƒe akpa vevi).",
   "relu": false
  },
- "14,4 km": {
-  "texte": "Km 14,4",
-  "relu": false
- },
- "14,6 km": {
-  "texte": "Km 14,6",
-  "relu": false
- },
  "140 non agréées ou au statut non renseigné": {
   "texte": "140, si womede asi na o alo si womede asi na o",
-  "relu": false
- },
- "140,6 km": {
-  "texte": "140,6 km",
   "relu": false
  },
  "140,6 km évalués": {
@@ -1244,7 +356,7 @@
   "relu": false
  },
  "15 préfectures n’ont aucune auto-école, ni agréée ni recensée : l’auto-école agréée la plus proche est à 12,9 à 84,0 km, selon la préfecture. Atteindre la médiane des préfectures équipées (1,065 pour 100 000 habitants) suppose 25 auto-écoles, après vérification sur place. 1 822 046 habitants concernés.": {
-  "texte": "Ʋukulawo ƒe suku aɖeke mele nuto 15 me o, eye womexɔa mɔɖemɔ̃wo ƒe suku aɖeke o, eye womexɔa mɔɖemɔ̃wo ƒe suku aɖeke hã o: ʋukulawo ƒe suku si xɔa mɔɖemɔ̃wo ƒe suku si tsɔ ɖe wo gbɔ wu la le kilometa 12.9-84.0 dome, le nuto si me wole la nu.",
+  "texte": "Ʋukulawo ƒe suku aɖeke mele nuto 15 me o, eye womexɔa mɔɖemɔ̃ ŋuti nunɔamesiwo le wo si o: ʋukukuae nye nyuitɔ kekeake tso kilometa 12.9 va se ɖe 84.0 la dome.",
   "relu": false
  },
  "15 recommandations": {
@@ -1263,20 +375,12 @@
   "texte": "Ame 150 376",
   "relu": false
  },
- "150,5 km": {
-  "texte": "Km 150,5",
-  "relu": false
- },
  "152 065 habitants": {
   "texte": "Ame siwo le afi ma nye 152,065.",
   "relu": false
  },
  "16 préfectures sur 39": {
   "texte": "16 le 39 me",
-  "relu": false
- },
- "161,4 km": {
-  "texte": "161,4 km",
   "relu": false
  },
  "161,4 km évalués": {
@@ -1289,10 +393,6 @@
  },
  "164 460 habitants": {
   "texte": "Ame 164,460",
-  "relu": false
- },
- "167,5 km": {
-  "texte": "167,5 km",
   "relu": false
  },
  "167,5 km évalués": {
@@ -1329,10 +429,6 @@
  },
  "185 662 habitants": {
   "texte": "Ame 185,662",
-  "relu": false
- },
- "19,7 km": {
-  "texte": "Km 19,7",
   "relu": false
  },
  "2 226 568 habitants concernés": {
@@ -1395,10 +491,6 @@
   "texte": "2 Wotsrɔ̃e",
   "relu": false
  },
- "2,6 km": {
-  "texte": "Km 2,6",
-  "relu": false
- },
  "2,7 % des routes en mauvais état (110,8 km évalués, un tronçon critique).": {
   "texte": "Mɔ siwo le nɔnɔme gbegblẽ me la dometɔ 2.7 le alafa me (110.8 km, si nye ɣeyiɣi vevi aɖe).",
   "relu": false
@@ -1413,10 +505,6 @@
  },
  "20 règles": {
   "texte": "Se 20awo",
-  "relu": false
- },
- "20 à 30 km": {
-  "texte": "Km 20 va se ɖe 30",
   "relu": false
  },
  "200 585 habitants": {
@@ -1453,10 +541,6 @@
  },
  "2023 tournée d'immatriculation des motos.": {
   "texte": "Ƒe 2023 ƒe dzodzo si me míede mɔ̃memiwo ƒe mɔ̃ɖaŋunuwo me.",
-  "relu": false
- },
- "2024 : 597 ÷ 751 398 × 10 000 = 7,95 (de 6,18 à 10,30)": {
-  "texte": "2024: 597 ÷ 751 398 × 10,000 = 7,95 (tso 6,18 va ɖo 10,30)",
   "relu": false
  },
  "2025-2031, sans action nouvelle": {
@@ -1499,20 +583,8 @@
   "texte": "Mɔwo ƒe agbɔsɔsɔ si me nɔnɔmea mele o ƒe 21.8 le alafa me (72.5 km, 2 kpekpeme).",
   "relu": false
  },
- "22,2 % en 1990.": {
-  "texte": "22.2% le ƒe 1990 me.",
-  "relu": false
- },
  "22,3 % des routes en mauvais état (90,1 km évalués, un tronçon critique).": {
   "texte": "Mɔwo ƒe nɔnɔme sesẽwo dometɔ 22.3 le alafa me (90.1 km, si nye ɣeyiɣi vevi aɖe).",
-  "relu": false
- },
- "22,3 km": {
-  "texte": "Km 22,3",
-  "relu": false
- },
- "22,9 km": {
-  "texte": "Km 22,9",
   "relu": false
  },
  "224 411 habitants": {
@@ -1551,22 +623,6 @@
   "texte": "Mɔwo ƒe akpa 23.3 le alafa me le nɔnɔme gbegblẽ me (161.4 km, 3 ƒe akpa vevi).",
   "relu": false
  },
- "23,7 km": {
-  "texte": "Km 23,7",
-  "relu": false
- },
- "24,3 km": {
-  "texte": "Km 24.3",
-  "relu": false
- },
- "24,7 km": {
-  "texte": "Km 24,7",
-  "relu": false
- },
- "24,8 km": {
-  "texte": "Km 24,8",
-  "relu": false
- },
  "24,8 km évalués": {
   "texte": "24,8 km siwo ŋu woke ɖo",
   "relu": false
@@ -1577,14 +633,6 @@
  },
  "241 247 habitants": {
   "texte": "Ame siwo katã le afi ma nye 241 247",
-  "relu": false
- },
- "25,2 km": {
-  "texte": "Km 25.2",
-  "relu": false
- },
- "25,9 km": {
-  "texte": "Km 25,9",
   "relu": false
  },
  "253 467 habitants": {
@@ -1607,24 +655,8 @@
   "texte": "Mɔwo ƒe agbɔsɔsɔme si nye 26.0% le nɔnɔme gbegblẽ me (27.8 km, 2 kpekpeme).",
   "relu": false
  },
- "26,3 km": {
-  "texte": "Km 26,3",
-  "relu": false
- },
- "27,0 km": {
-  "texte": "Km 27,0",
-  "relu": false
- },
  "27,2 % des routes en mauvais état (113,5 km évalués, 2 tronçons critiques).": {
   "texte": "Mɔwo ƒe 27.2% le nɔnɔme gbegblẽ me (113.5 km, 2 ƒe akpa vevi).",
-  "relu": false
- },
- "27,4 km": {
-  "texte": "Km 27,4",
-  "relu": false
- },
- "27,8 km": {
-  "texte": "27.8 km",
   "relu": false
  },
  "27,8 km évalués": {
@@ -1637,18 +669,6 @@
  },
  "28,0 % des routes en mauvais état (167,5 km évalués, un tronçon critique).": {
   "texte": "Mɔwo ƒe agbɔsɔsɔ si me nɔnɔmea mele o la ƒe alafa memama 28.0 (167.5 km, si nye ɣeyiɣi vevi aɖe).",
-  "relu": false
- },
- "28,3 km": {
-  "texte": "Km 28.3",
-  "relu": false
- },
- "28,4 km": {
-  "texte": "Km 28,4",
-  "relu": false
- },
- "28,5 km": {
-  "texte": "Km 28.5",
   "relu": false
  },
  "283 738 habitants": {
@@ -1683,10 +703,6 @@
   "texte": "2 932 492 ye nɔ afi ma.",
   "relu": false
  },
- "3 163 km": {
-  "texte": "3 163 km",
-  "relu": false
- },
  "3 311 579 habitants concernés": {
   "texte": "3 311 579",
   "relu": false
@@ -1719,20 +735,12 @@
   "texte": "3 Wotsrɔ̃a akpa etɔ̃",
   "relu": false
  },
- "3,2 km": {
-  "texte": "Km 3,2",
-  "relu": false
- },
  "3,3 % des routes en mauvais état (45,2 km évalués, 2 tronçons critiques).": {
   "texte": "Mɔwo ƒe nɔnɔme sesẽwo dometɔ 3.3 le alafa me (45.2 km, 2 kpekpeme).",
   "relu": false
  },
  "3,4 % des routes en mauvais état (101,2 km évalués, un tronçon critique).": {
   "texte": "Mɔwo ƒe akpa 3.4 le alafa me le nɔnɔme gbegblẽ me (101,2 km, si nye ɣeyiɣi vevi aɖe).",
-  "relu": false
- },
- "3,5 km": {
-  "texte": "Kilometre 3.5",
   "relu": false
  },
  "3. Agou": {
@@ -1755,16 +763,8 @@
   "texte": "Numekugbalẽvi 30; nufialagã 32, siwo dometɔ 17 le C.",
   "relu": false
  },
- "30 à 40 km": {
-  "texte": "Km 30 va se ɖe 40",
-  "relu": false
- },
  "300 000 ou plus": {
   "texte": "Ame 300,000 alo esiwo wu nenema",
-  "relu": false
- },
- "304,6 km": {
-  "texte": "304,6 km",
   "relu": false
  },
  "304,6 km à remettre en état": {
@@ -1779,28 +779,12 @@
   "texte": "Wotsɔ Biblia 31 ƒu gbe, eye wo dometɔ etɔ̃ koe woɖe ɖe go.",
   "relu": false
  },
- "31,1 km": {
-  "texte": "Km 31,1",
-  "relu": false
- },
- "31,2 km": {
-  "texte": "Km 31,2",
-  "relu": false
- },
- "31,3 km": {
-  "texte": "Km 31,3",
-  "relu": false
- },
- "31,8 km": {
-  "texte": "Km 31,8",
-  "relu": false
- },
  "310 immatriculations de motos pour chaque permis moto délivré": {
   "texte": "310 ʋuʋudɔ ƒe mɔɖegbalẽvi ɖe sia ɖe si woɖe ɖe go",
   "relu": false
  },
  "32 indicateurs calculés : 5 mesurés, 10 calculés, 17 estimés": {
-  "texte": "32 Wode dzesi dzesiwo: Wode dzesi 5, Wode dzesi 10, Wode dzesi 17, Wode dzesi",
+  "texte": "Ŋutinya 32 siwo ŋu wotrɔ asi le: 5 si wodze, 10 si woɖɔ ɖo kple 17 si wobui",
   "relu": false
  },
  "32 écarts déclarés": {
@@ -1827,16 +811,8 @@
   "texte": "Mɔwo ƒe akpa 34.0 le alafa me le nɔnɔme gbegblẽ me (120.3 km, si nye ɣeyiɣi vevi aɖe).",
   "relu": false
  },
- "35,8 km": {
-  "texte": "Km 35,8",
-  "relu": false
- },
  "35,8 km évalués": {
   "texte": "35,8 km siwo ŋu woke ɖo",
-  "relu": false
- },
- "36,0 km": {
-  "texte": "Km 36,0",
   "relu": false
  },
  "36,0 km évalués": {
@@ -1847,20 +823,12 @@
   "texte": "Mɔwo ƒe akpa 36.9 le alafa me le nɔnɔme gbegblẽ me (125.7 km le akɔntabubu me, akpa etɔ̃ siwo me afɔku aɖeke mele o).",
   "relu": false
  },
- "37,3 km": {
-  "texte": "Km 37,3",
-  "relu": false
- },
  "38 531 permis délivrés en 2024, dont 10 165 permis moto. Les permis n'ont ni territoire, ni âge, ni mois.": {
   "texte": "Le ƒe 2024 me la, ame 38,531 ye xɔ mɔɖegbalẽwo, eye ame 10,165 ye xɔ mɔɖegbalẽwo.",
   "relu": false
  },
  "38 préfectures classées": {
   "texte": "Eyae nye be, nuto 38 siwo me wotia ɖo la",
-  "relu": false
- },
- "38,2 km": {
-  "texte": "Km 38,2",
   "relu": false
  },
  "388 775 habitants": {
@@ -1939,16 +907,8 @@
   "texte": "40 240 le dukɔa me",
   "relu": false
  },
- "40 à 50 km": {
-  "texte": "Km 40 va se ɖe 50",
-  "relu": false
- },
  "40,0 % des routes en mauvais état (124,1 km évalués, 5 tronçons critiques).": {
   "texte": "Mɔ siwo me nɔnɔme sesẽwo le la dometɔ 40.0 le alafa me (124.1 km le akɔntabubu me, 5 nye nu vevi aɖewo).",
-  "relu": false
- },
- "40,3 km": {
-  "texte": "Km 40,3",
   "relu": false
  },
  "40,3 km évalués": {
@@ -1963,48 +923,20 @@
   "texte": "Ʋukulawo ƒe suku 41",
   "relu": false
  },
- "41 en 2022 à 50 en 2031": {
-  "texte": "41 le ƒe 2022 me va ɖo 50 le ƒe 2031 me",
-  "relu": false
- },
- "41,5 km": {
-  "texte": "Km 41,5",
-  "relu": false
- },
  "41,5 km évalués": {
   "texte": "41,5 km siwo ŋu woke ɖo",
-  "relu": false
- },
- "42,7 km": {
-  "texte": "Km 42,7",
   "relu": false
  },
  "43 indicateurs": {
   "texte": "43",
   "relu": false
  },
- "45,2 km": {
-  "texte": "Km 45,2",
-  "relu": false
- },
  "45,2 km évalués": {
   "texte": "45,2 km siwo ŋu woke ɖo",
   "relu": false
  },
- "46,1 km": {
-  "texte": "46.1 km",
-  "relu": false
- },
  "46,1 km évalués": {
   "texte": "46,1 km siwo ŋu woke ɖo",
-  "relu": false
- },
- "47,2 km": {
-  "texte": "Km 47,2",
-  "relu": false
- },
- "47,5 km": {
-  "texte": "Km 47,5",
   "relu": false
  },
  "48 auto-écoles": {
@@ -2040,11 +972,7 @@
   "relu": false
  },
  "49 tronçons sur 84 en mauvais état, 669,34 km, dont 292,15 km sur les Plateaux (Réseau).": {
-  "texte": "Le teƒe 84 siwo mele nɔnɔme nyui aɖeke me o la, teƒe 49 le eme, eye teƒe 669,34 le eme, eye teƒe 292,15 le eme le Plateaux-towo dzi (Xexea).",
-  "relu": false
- },
- "49,8 km": {
-  "texte": "Km 49,8",
+  "texte": "Akpa 49 le 84 siwo mele nɔnɔme nyui me o la dometɔ 669.34 km, tso wo dome 292.15 km le Plateaux-towo dzi (Xexea).",
   "relu": false
  },
  "49,8 km évalués": {
@@ -2088,7 +1016,7 @@
   "relu": false
  },
  "5 préfectures cumulent les deux déficits, 26 en ont un, 8 n": {
-  "texte": "Dukɔ eveawo katã ƒe glitoto le nuto atɔ̃ me, 26 le glitoto ɖeka me, 8 le glitoto ɖeka me, 8 le glitoto ɖeka me.",
+  "texte": "Dukɔ eveawo katã ƒe glitoto le nuto atɔ̃ me, eye wo dometɔ ɖeka le 26 me.",
   "relu": false
  },
  "5 préfectures cumulent un réseau dégradé et aucune auto-école agréée (641 955 habitants).": {
@@ -2119,20 +1047,8 @@
   "texte": "5. Ga si wotsɔ wɔa dɔe la mele nyatakakawo me o: Ga siwo wotsɔ wɔa dɔe nye gãnyenye ƒe ɖoɖowo, ke menye ga siwo wotsɔ wɔa dɔe la ƒe ɖoɖowo o.",
   "relu": false
  },
- "50 en 2031": {
-  "texte": "50 le ƒe 2031 me",
-  "relu": false
- },
- "50 à 60 km": {
-  "texte": "Km 50 va se ɖe 60",
-  "relu": false
- },
  "500 032 habitants": {
   "texte": "Ame siwo katã le afi ma nye 500 032",
-  "relu": false
- },
- "51,7 km": {
-  "texte": "51.7 km",
   "relu": false
  },
  "52 448 habitants": {
@@ -2143,32 +1059,12 @@
   "texte": "52 448",
   "relu": false
  },
- "52,2 km": {
-  "texte": "Km 52,2",
-  "relu": false
- },
- "54,5 km": {
-  "texte": "54,5 km",
-  "relu": false
- },
- "57,9 km": {
-  "texte": "57,9 km",
-  "relu": false
- },
  "57,9 km évalués": {
   "texte": "57,9 km siwo ŋu woke ɖo",
   "relu": false
  },
- "58,5 km": {
-  "texte": "Kilometre 58.5",
-  "relu": false
- },
  "58,5 km évalués": {
   "texte": "58,5 km siwo ŋu woke ɖo",
-  "relu": false
- },
- "58,8 km": {
-  "texte": "Kilometre 58.8",
   "relu": false
  },
  "58,8 km évalués": {
@@ -2224,23 +1120,11 @@
   "relu": false
  },
  "60 % des tués sont des usagers de deux et trois-roues motorisés, pour 54,7 % à 59,7 % de motos dans le parc estimé : un peu plus que leur part du parc. Niveau C : une seule année, ni sexe ni âge.": {
-  "texte": "Ame siwo ku la dometɔ 60 le alafa me nye ame siwo zãa ʋu siwo le ʋuʋuwo me, eye ame siwo zãa ʋu siwo le ʋuʋuwo me la dometɔ 54.7 le alafa me va se ɖe 59.7 le alafa me le teƒe si wobu akɔnta le la me.",
+  "texte": "Amesiwo ku la dometɔ 60 le alafa me nye ame siwo zãa sɔti eve kple etɔ̃, eye amesiawo ƒe xexlẽme tso 54.7% va se ɖe 59.7 le alafa memama aɖe si ŋu wobu akɔnta tsoe - esiwo wu woƒe gome le afi ma vie.",
   "relu": false
  },
  "60 % ou plus": {
   "texte": "60 le alafa me kple edzivɔ",
-  "relu": false
- },
- "60 à 70 km": {
-  "texte": "Km 60 va ɖo 70",
-  "relu": false
- },
- "62,0 km": {
-  "texte": "62,0 km",
-  "relu": false
- },
- "63,1 km": {
-  "texte": "63,1 km",
   "relu": false
  },
  "63,1 km évalués": {
@@ -2255,20 +1139,8 @@
   "texte": "Mɔwo ƒe agbɔsɔsɔ si le nɔnɔme gbegblẽ me ƒe 65.0% (75.6 km, 5 ƒe akpa vevi)",
   "relu": false
  },
- "65,3 km": {
-  "texte": "65,3 km",
-  "relu": false
- },
  "66 394 habitants": {
   "texte": "Ame siwo katã le afi ma nye 66,394",
-  "relu": false
- },
- "66,3 km": {
-  "texte": "66,3 km",
-  "relu": false
- },
- "669,34 km": {
-  "texte": "669,34 km",
   "relu": false
  },
  "68,2 % des routes en mauvais état (101,1 km évalués, 4 tronçons critiques).": {
@@ -2320,19 +1192,11 @@
   "relu": false
  },
  "7 vérifications confirmées sur 17, 2 infirmées, 1 nuancée, 7 non testables (onglet Synthèse).": {
-  "texte": "Wova kpɔ ame siwo ŋu woda asi ɖo la dometɔ adre le ame 17, siwo ŋu woda asi le ame eve ŋu, siwo ŋu woda asi le ame ɖeka ŋu, siwo dometɔ adre mele be woada asi le o.",
-  "relu": false
- },
- "7,0 km": {
-  "texte": "Km 7,0",
+  "texte": "Wova kpɔ ame siwo ŋu woke ɖo la dometɔ adre le 17, 2 nye dɔnɔwo, 1 nye nuwɔametɔ eye 7 mele be woada asi ɖe edzi o (Kpɔ aɖaka si Nye Nuŋɔŋlɔ).",
   "relu": false
  },
  "7,0 km évalués": {
   "texte": "7,0 km siwo ŋu woke ɖo",
-  "relu": false
- },
- "7,1 km": {
-  "texte": "Km 7,1",
   "relu": false
  },
  "7,8 % des routes en mauvais état (7,0 km évalués, un tronçon critique).": {
@@ -2344,27 +1208,11 @@
   "relu": false
  },
  "7. La population en âge de conduire ne se raccorde pas d'une source à l'autre : les 18 ans et plus font 51,8 % de la population au recensement de 2022 et 55,6 % dans la projection de 2023 (réserve A1-R1).": {
-  "texte": "7. Ʋukulawo ƒe agbɔsɔsɔme medoa go tso ame aɖe gbɔ yi ame bubu gbɔ o: ame siwo xɔ ƒe 18 kple edzivɔ la nye ame 51.8% le ƒe 2022 ƒe akɔntabubu me eye ame 55.6% le ƒe 2023 ƒe akɔntabubu me (A1-R1 tɔdzraɖo).",
-  "relu": false
- },
- "70 à 80 km": {
-  "texte": "Km 70 va ɖo 80",
-  "relu": false
- },
- "70,0 km": {
-  "texte": "70.0 km",
+  "texte": "7. Ʋukulawo ƒe xexlẽme medoa go tso afi aɖe yi teƒe bubu o: ame siwo xɔ ƒe 18 kple edzivɔ la nye dukɔ bliboa me tɔ 51.8% le 2022 ŋuti akɔntabubu dzi, eye 55.6%e anɔ 2023 ŋu dɔ wɔm (A1-R1 dzedzeme).",
   "relu": false
  },
  "70,0 km évalués": {
   "texte": "70.0 km siwo ŋu woke ɖo",
-  "relu": false
- },
- "72,4 km": {
-  "texte": "72,4 km",
-  "relu": false
- },
- "72,5 km": {
-  "texte": "72,5 km",
   "relu": false
  },
  "72,5 km évalués": {
@@ -2380,11 +1228,7 @@
   "relu": false
  },
  "74,4 % des immatriculations de 2024 sont des motos ; 40 motos pour un permis moto sur 2007–2024 (Mobilité).": {
-  "texte": "Mɔ̃ɖaŋunuwo ƒe xexlẽme si le ƒe 2024 me la ƒe alafa memama 74,4 nye mɔ̃ɖaŋunuwo; mɔ̃ɖaŋunu 40 le mɔ̃ɖaŋunu ƒe mɔ̃ɖaŋunuwo ƒe mɔ̃ɖaŋunuwo dzi le ƒe 2007 ⁇ 2024 me (Dɔwɔwɔ ƒe Mɔ̃ɖaŋunuwo).",
-  "relu": false
- },
- "75,6 km": {
-  "texte": "75,6 km",
+  "texte": "Mɔfiamenuwo ƒe xexlẽme si ade 74.4% le 2024 me; 40e nye mɔ̃memi siwo dzi woato akpɔ ŋusẽ ɖe woƒe ʋukukuŋusẽgbalẽvi dzi le ƒe 2007 ⁇ 2024 (Dɔwɔwɔ) me.",
   "relu": false
  },
  "75,6 km évalués": {
@@ -2423,10 +1267,6 @@
   "texte": "Mɔ siwo me nɔnɔme sesẽwo le la dometɔ 8,1 le alafa me (58.5 km, 3 ƒe akpa vevi).",
   "relu": false
  },
- "8,2 km": {
-  "texte": "Km 8,2",
-  "relu": false
- },
  "8. Est-Mono": {
   "texte": "8 Est-Mono",
   "relu": false
@@ -2441,10 +1281,6 @@
  },
  "80 km ou plus": {
   "texte": "Km 80 kple edzivɔ",
-  "relu": false
- },
- "82,5 km": {
-  "texte": "82,5 km",
   "relu": false
  },
  "82,5 km évalués": {
@@ -2463,10 +1299,6 @@
   "texte": "Wotsrɔ̃e le teƒe 84 me.",
   "relu": false
  },
- "84,0 km": {
-  "texte": "84,0 km",
-  "relu": false
- },
  "84,0 km évalués": {
   "texte": "84,0 km siwo ŋu woke ɖo",
   "relu": false
@@ -2477,10 +1309,6 @@
  },
  "85 793 habitants": {
   "texte": "85 793",
-  "relu": false
- },
- "87,9 km": {
-  "texte": "87,9 km",
   "relu": false
  },
  "87,9 km évalués": {
@@ -2527,16 +1355,8 @@
   "texte": "90 505",
   "relu": false
  },
- "90,1 km": {
-  "texte": "90.1 km",
-  "relu": false
- },
  "90,1 km évalués": {
   "texte": "90.1 km siwo ŋu woke ɖo",
-  "relu": false
- },
- "90,5 km": {
-  "texte": "Km 90.5",
   "relu": false
  },
  "90,5 km évalués": {
@@ -2545,10 +1365,6 @@
  },
  "94 860 habitants": {
   "texte": "Ame siwo le afi ma ƒe xexlẽme nye 94,860",
-  "relu": false
- },
- "96,6 km": {
-  "texte": "96,6 km",
   "relu": false
  },
  "96,6 km évalués": {
@@ -2640,7 +1456,7 @@
   "relu": false
  },
  ": 3 en priorité haute, 10 en moyenne, 2 en faible ; 5 préfectures cumulent les deux déficits.": {
-  "texte": "Wo dometɔ aɖewoe nye: 3 nye nu vevitɔ, 10 nye nu vevitɔ, 2 nye nu ʋɛ; 5 nye nu vevitɔ wu.",
+  "texte": "Wo dometɔ aɖewoe nye: 3 le dziƒonutowo me, 10 nɔa edzi yim eye 2 mele eme o; 5 ƒo wo nɔewo ta.",
   "relu": false
  },
  ": 3,3 % des km évalués": {
@@ -2716,7 +1532,7 @@
   "relu": false
  },
  ": les accidents déclarés augmentent (+9,4 % entre 2010–2012 et 2022–2024), mais les 6 taux baissent.": {
-  "texte": "Le ƒe siwo va yi me la, afɔku siwo ŋu woke ɖo la dzi ɖe edzi (+9.4% le ƒe 2010 ⁇ 2012 kple ƒe 2022 ⁇ 2024) dome, gake le ƒe siwo va yi me la, afɔku siwo ŋu woke ɖo la dzi ɖe kpɔtɔ.",
+  "texte": ": afɔku siwo ŋu woƒo nu tsoe la le dzidzim ɖe edzi (+9.4% tso ƒe 2010 ⁇ 2012 va ɖo 2022 ⁇ 2024) gake woƒe xexlẽme ade kpɔtɔ.",
   "relu": false
  },
  ": les accidents déclarés augmentent (+9,4 %), mais les six taux de risque baissent.": {
@@ -2735,10 +1551,6 @@
   "texte": ": womeka ɖe eme o: mɔ aɖeke meli si woɖo anyi o",
   "relu": false
  },
- ": ×4,56 de 2002 à 2022.": {
-  "texte": ": ×4,56 tso ƒe 2002 va se ɖe ƒe 2022.",
-  "relu": false
- },
  "= calculé (formule maîtrisée)": {
   "texte": "= Xexlẽ (nu si me nunya le)",
   "relu": false
@@ -2751,22 +1563,6 @@
   "texte": "= dzidze (dzidze nu tẽ)",
   "relu": false
  },
- "@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap');": {
-  "texte": "@import url('https://fonts.googleapis.com/css2?family=French:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap');",
-  "relu": false
- },
- "@media (max-width: 1350px)": {
-  "texte": "@media (liƒo-liƒo: 1350px)",
-  "relu": false
- },
- "@media (max-width: 760px)": {
-  "texte": "@media (liƒo-liƒo: 760px)",
-  "relu": false
- },
- "@media (prefers-reduced-motion: reduce)": {
-  "texte": "@media (prefers-reduced-motion: reduce)",
-  "relu": false
- },
  "A — Moto": {
   "texte": "Moto",
   "relu": false
@@ -2776,7 +1572,7 @@
   "relu": false
  },
  "AZANHOUN FIAGBE-PRESIDENT COPE": {
-  "texte": "AZANHOUN FIAGBE-DZI DZI DZI DZI",
+  "texte": "AZANHOUN FIAGBE DUKPƆLA",
   "relu": false
  },
  "Acc /10 000 véhicules": {
@@ -2860,7 +1656,7 @@
   "relu": false
  },
  "Accès rural estimé, niveau C.": {
-  "texte": "Anyigbadzigbadzigbadzigbadzigbadzigbadzigbadzigbadzigbadzigbadzigbadzigbadzigbadzigbadzigbadzigbadzigbadzigbadzigbadzigbadzigbadzigbadzigbadzigbadzigbadzigbadzigbadzigbadzigbadzigbadzigbadzigbadzigbadzigbadzigbadzigbadzigbadzigbadzigbadzigbadzigbadzigbadzigbadzigbadzigbadzigbadzigbadzigbadzigbadzigbadzigbadzigbadzigbe",
+  "texte": "Anyigbadzinuwo ƒe agbɔsɔsɔ si ŋu wodea asixɔxɔe la, ɖoƒe C.",
   "relu": false
  },
  "Accès rural à une route revêtue": {
@@ -2972,7 +1768,7 @@
   "relu": false
  },
  "Aucune auto-école agréée ; 2 auto-écoles recensées sans agrément. La plus proche agréée est à 25,9 km.": {
-  "texte": "Ʋukulawo ƒe suku aɖeke meli si xɔ mɔɖeɖe o; ʋukulawo ƒe suku eve siwo mexɔ mɔɖeɖe aɖeke o la le mɔɖeɖe si dzi woxɔ mɔɖeɖe ɖo la nu.",
+  "texte": "Ʋukukuƒe aɖeke meli o; ʋukulawo ƒe suku evee nye esiwo womekpɔ mɔ ɖo ɖe ʋuʋudodo ŋu o, eye teƒe si tsɔtsɔe sɔ gbɔ wu la le kilometa 25.9.",
   "relu": false
  },
  "Aucune auto-école agréée ; 2 auto-écoles recensées sans agrément. La plus proche agréée est à 31,1 km.": {
@@ -3160,7 +1956,7 @@
   "relu": false
  },
  "Auto-écoles manquantes = arrondi supérieur(population(t) × médiane(O4-05) / 100 000) − auto-écoles(t) ; km à remettre en état = km en mauvais état(t) − médiane(O3-02) × km évalués(t) ; écart de tués = tués(t) − médiane(O2-02) × population(t) / 100 000": {
-  "texte": "Ʋukukuwo si womekpɔ o = ameƒomevi siwo le wo dome o(t) × vidzimee(O4-05) / 100,000) − ʋukukuwo(t) ; km siwo wòle be woatrɔ asi le wo ŋu = km siwo mele nɔnɔme gbegblẽ me o(t) − vidzimee(O3-02) × km siwo ŋu wotrɔ asi le(t) ; ame siwo ku la ƒe xexlẽme = ame siwo wowu(t) − vidzimee(O2-02) × ameƒomevi(t) / 100,000",
+  "texte": "Ʋukukuwo si womekpɔ o = ame siwo le wo dome la ƒe agbɔsɔsɔme* (t) × vidzimee* (O4-05) / 100,000)",
   "relu": false
  },
  "Auto-écoles pour 100 000 habitants": {
@@ -3327,10 +2123,6 @@
   "texte": "CC BY 3.0 IGO",
   "relu": false
  },
- "CC BY 4.0": {
-  "texte": "CC BY 4.0",
-  "relu": false
- },
  "CC BY 4.0 ; grille de population 2020 (accès rural, emplacement des auto-écoles)": {
   "texte": "CC BY 4.0; Ƒe 2020 ƒe ameƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒome, ʋukulawo ƒe sukuwo ƒe nɔƒe",
   "relu": false
@@ -3365,10 +2157,6 @@
  },
  "Catalogue des couches et des indicateurs du géoportail national": {
   "texte": "Xexeameƒomɔ̃a ƒe tasiaɖamwo kple dzesiwo ƒe tata",
-  "relu": false
- },
- "Ce qu": {
-  "texte": "Nu si",
   "relu": false
  },
  "Ce qu'une analyse plus fine a corrigé": {
@@ -3420,7 +2208,7 @@
   "relu": false
  },
  "Ce tableau de bord, qui lit des fichiers de résultats sans rien recalculer, et une présentation.": {
-  "texte": "Dɔdzraɖoɖonu sia si xlẽa nu tso nu siwo do tso eme la ŋu, eye meƒoa nu tso nu siwo do tso eme la ŋu.",
+  "texte": "Aɖaka sia, si xlẽa akɔntagbalẽvi siwo ku ɖe dɔwɔnawo ŋu eye womedzroa wo me o la kple nuƒo aɖe.",
   "relu": false
  },
  "Centrale (5 préfectures)": {
@@ -3440,7 +2228,7 @@
   "relu": false
  },
  "Ces 4 actions relèvent des producteurs de données, pas des régions. La base d'accidents par préfecture permettrait de trancher 7 questions que le diagnostic laisse ouvertes, dont le lien entre réseau dégradé et accidents. Les trois autres rendraient vérifiables les chiffres estimés de cette page.": {
-  "texte": "Numekuku ene siwo wowɔ la nye ame siwo nana nyatakakawo dzɔna, ke menye nutowo o. Numekuku siwo wowɔna ɖe nutowo dzi la ana woakpɔ nya adre siwo ŋu ŋu numekɔkɔa gblẽ nu tsoe, siwo dometɔ ɖekae nye nu siwo ku ɖe nu siwo gblẽa nu le kadodo si le Internet dzi kple afɔkuwo dome ŋu.",
+  "texte": "Numekuku ene siawo ku ɖe nyatakakadzraɖoƒea ŋu, ke menye anyigbamamawo me tɔwo o. Ʋufɔku siwo wowɔna le nutome gã aɖe dzi la ana woakpɔ nya adre aɖewo si wòle be woanya tso wo gbɔ - esiwo dometɔ ɖekae nye kadodo si nɔa vɔ̃ɖinyenye kple dzɔgbevɔ̃e dome.",
   "relu": false
  },
  "Ces chiffres sont des estimations, pas des prévisions. Ils supposent la population projetée par l": {
@@ -3652,7 +2440,7 @@
   "relu": false
  },
  "Croissance annuelle, taux de croissance annuel moyen et multiplicateur": {
-  "texte": "Ƒe Sia Ƒe Dzidziɖedzi, Ƒe Sia Ƒe Dzidziɖedzi Ƒe Dzidziɖedzi Kple Dzidziɖedzi Ƒe Dzidziɖedzi Ƒe Dzidziɖedzi",
+  "texte": "Ƒe Sia ƒe Dzidziɖedzi, Ƒesiagbe Gbedziname Kple Tsitretsitsi",
   "relu": false
  },
  "Créer une base d’accidents par préfecture": {
@@ -3692,7 +2480,7 @@
   "relu": false
  },
  "Dans la Centrale, seuls 13,2 % des ruraux vivent à moins de 2 km d’une route revêtue (17,2 % dans le pays), 40,3 % des routes sont en mauvais état, et l’offre est de 0,50 auto-école pour 100 000 habitants. C’est la seule zone en retard sur la route et sur la formation. 113,6 km à remettre en état et 6 auto-écoles à ouvrir en premier, après vérification. 795 529 habitants concernés.": {
-  "texte": "Le Central la, vidzidziwo dometɔ 13.2 le alafa me koe nɔa mɔ si dzi woɖɔ ɖo la ƒe didime le kilometa 2 me (17.2 le alafa me le dukɔa me), mɔ siwo dzi woɖɔ ɖo le la ƒe didime le alafa me 40.3 le alafa me, eye ʋukulawo ƒe suku 0.50 le ame 100,000 ɖe sia ɖe ƒe didimee.",
+  "texte": "Le nutoa me la, vidzidziwo dometɔ 13.2 le alafa memama dome koe nɔa mɔ si dzi woɖɔ ɖo ƒe didimee nye 2 km (17.2% le dukɔa me), mɔ siwo ŋu nɔnɔmea gblẽ ɖe edzii nye 40.3 le alafa me eye nudidi sia anye ʋukula suku 0.50 na ame 100,000.",
   "relu": false
  },
  "Dans les Plateaux, seuls 13,6 % des ruraux vivent à moins de 2 km d’une route revêtue (17,2 % dans le pays) : 1 094 908 ruraux en sont plus loin. 28,0 % des routes sont en mauvais état. Leurs 6 préfectures au réseau dégradé ont 150,5 km à remettre en état en premier, après vérification. 1 635 946 habitants concernés.": {
@@ -3708,7 +2496,7 @@
   "relu": false
  },
  "De 2007 à 2024, 40,2 deux-roues ont été immatriculés pour un permis moto délivré, contre 0,37 à 2,33 véhicules par permis dans les autres catégories. Le rapport est plus bas en 2022 et en 2024 (13,98 et 6,45), années de forte hausse des permis moto. 4 193 458 habitants en âge de conduire.": {
-  "texte": "Tso ƒe 2007 va se ɖe ƒe 2024 me la, woxe mɔɖemɔ̃ ƒe mɔɖegbalẽvi 40.2 ɖe mɔɖegbalẽvi si wodo la dzi, eye le ƒe siwo kplɔe ɖo me la, mɔɖegbalẽvi ɖe mɔɖegbalẽvi ɖe mɔɖegbalẽvi ɖe mɔɖegbalẽvi ɖe mɔɖegbalẽvi ɖe mɔɖegbalẽvi ɖe mɔɖegbalẽvi ɖe mɔɖegbalẽvi ɖe mɔɖegbalẽvi ɖe mɔɖegbalẽvi ɖe mɔɖegbalẽvi ɖe mɔɖegbalẽvi ɖe mɔɖegbalẽvi ɖe mɔɖegbalẽvi ɖe mɔɖegbalẽvi ɖe mɔɖegbalẽvi ɖe mɔɖegbalẽvi ɖe mɔɖegbalẽvi ɖe mɔɖegbalẽvi ɖe mɔɖegbalẽvi ɖe mɔɖegbalẽvi ɖe mɔɖegbalẽvi ɖe mɔɖegbalẽvi ɖe mɔɖegbalẽvi ɖe mɔɖegbalẽvi ɖe mɔɖegbalẽvi ɖe mɔɖegbalẽvi ɖe mɔɖegbalẽvi ɖe mɔɖegbalẽvi ɖe mɔɖegbalẽvi ɖe mɔɖegbalẽvi ɖe mɔɖegbalẽvi ɖe mɔɖegbalẽvi ɖe mɔɖegbalẽvi ɖe mɔɖegbalẽvi ɖe",
+  "texte": "Tso ƒe 2007 va se ɖe ƒe 2024 me la, woxe mɔɖemɔ̃ eveawo dometɔ 40.2 de asi na ʋukulawo le woƒe ʋuʋudzenugbalẽvi siwo woɖe do goe ta, tso 0.37 yi 2.33 gbɔ. Ʋuwo nɔa anyi vivia nu wu le ƒe 2022 kple 2024 (13.98 kpakple 6.45), esiwo nye ɣeyiɣi si dzi dzidziɖedzi gã aɖe nɔ mɔƒomɔɖeɖe ŋuti ŋusẽkpɔɖeamedziwo ŋu.",
   "relu": false
  },
  "Densité routière": {
@@ -3836,7 +2624,7 @@
   "relu": false
  },
  "Données Ouvertes sur l'Évolution du Parc Automobile Immatriculé par Type de Véhicules": {
-  "texte": "Xexeame ƒe Ʋuʋuwo Ƒe Ʋuʋuwo Ƒe Ʋuʋuwo Ƒe Ʋuʋuwo Ƒe Ʋuʋuwo Ƒe Ʋuʋuwo Ƒe Ʋuʋuwo",
+  "texte": "Xexeame ƒe Ʋuʋuwo Ƒe Dzedzeme Ŋuti Nyatakaka Siwo Me Wotsɔ Wo Ðo",
   "relu": false
  },
  "Données Ouvertes sur la Densité du Réseau Routier par Types de Routes au Togo": {
@@ -3948,23 +2736,15 @@
   "relu": false
  },
  "En 2021, 60 % des tués sont des usagers de deux et trois-roues motorisés, pour 54,7 % à 59,7 % de motos dans le parc. La surreprésentation est faible, mais elle tient dans toute la fourchette. À vérifier sur une seconde année, avant les contrôles du casque et du permis.": {
-  "texte": "Le ƒe 2021 me la, ame siwo ku la dometɔ 60 le alafa me nye ame siwo zãa ʋu siwo le ʋuʋuwo me, eye wo dometɔ siwo zãa ʋu siwo le ʋuʋuwo me ƒe alafa memama 54.7 le alafa me va se ɖe 59.7 le alafa me.",
+  "texte": "Le ƒe 2021 me la, amesiwo ku dometɔ 60 le alafa me nye ame siwo zãa ʋukuku eve kple etɔ̃ tsɔna dzoe. Woƒe xexlẽme ade 54.7% va se ɖe 59.7%.",
   "relu": false
  },
  "En 2021, on comptait": {
   "texte": "Le ƒe 2021 me la,",
   "relu": false
  },
- "En 2022": {
-  "texte": "Le ƒe 2022 me",
-  "relu": false
- },
  "En 2024 : 751 398 véhicules (de 579 845 à 965 702), dont 449 226 motos. Le parc n": {
   "texte": "Le ƒe 2024 me la: ʋu 751,398 (tso 579,845 va ɖo 965,702), siwo dometɔ 449,226 nye motowo.",
-  "relu": false
- },
- "En 2029": {
-  "texte": "Ƒe 2029",
   "relu": false
  },
  "En km, relevé de 2020. Les 49 tronçons de la vue par défaut sont les tronçons critiques du 07 (669,34 km). FRE : frontière. Pour 7 tronçons, l": {
@@ -4003,10 +2783,6 @@
   "texte": "WHO ƒe akɔnta tso Togo ŋu",
   "relu": false
  },
- "Et d": {
-  "texte": "Eye d",
-  "relu": false
- },
  "Exemple chiffré": {
   "texte": "Kpɔɖeŋu Nyui",
   "relu": false
@@ -4040,7 +2816,7 @@
   "relu": false
  },
  "Fichiers publics de la Banque mondiale : compte requis, ni copie ni redistribution, citation obligatoire": {
-  "texte": "Xexeame Gadzraɖoƒe Gomenɔamesi Ŋuti Gomenɔamesi Ŋuti Gomenɔamesi Ŋuti Gomenɔamesi Ŋuti Gomenɔamesi Ŋuti Gomenɔamesi Ŋuti Gomenɔamesi Ŋuti Gomenɔamesi Ŋuti Gomenɔamesi Ŋuti Gomenɔamesi Ŋuti Gomenɔamesi Ŋuti Gomenɔamesi Ŋuti Gomenɔamesi Ŋuti Gomenɔamesi Ŋuti Gomenɔamesi Ŋuti Gomenɔamesi Ŋuti Gomenɔamesi Ŋuti Gomenɔamesi Ŋuti",
+  "texte": "Xexeame Gadzraɖoƒe Dukɔwo ƒe Agbalẽwo: Ele be woaxlẽ nu tso eŋu, eye womegagblɔe o",
   "relu": false
  },
  "Filtre par zone dans la barre latérale ; tri au choix.": {
@@ -4228,7 +3004,7 @@
   "relu": false
  },
  "Immatriculations pour un permis, cumul 2007–2024": {
-  "texte": "Mɔxexeɖenuxexeɖenuxeɖenuxeɖenuxeɖenuxeɖenuxeɖenuxeɖenuxeɖenuxeɖenuxeɖenuxeɖenuxeɖenuxeɖenuxeɖenuxeɖenuxeɖenuxeɖenuxeɖenuxeɖenuxeɖenuxeɖenuxeɖenuxeɖenuxeɖenuxeɖenuxeɖenuxeɖenuxeɖenuxeɖenuxeɖenuxeɖenuxeɖenuxeɖenuxeɖenuxeɖenuxeɖenuxeɖenuxeɖenuxeɖenuxeɖenuxeɖenuxeɖenuxeɖenuxeɖenuxeɖenuxeɖenuxexeɖenuxeɖenuxeɖenuxeɖenuxexeɖenuxexexeɖenuxeɖenuxeɖenuxeɖenuxeɖenuxeɖenuxeɖenuxeɖenuxeɖenuxeɖenuxeɖenuxeɖenuxeɖenuxeɖenuxeɖenuxexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexe",
+  "texte": "Lɔlɔ̃ɖegbalẽwo ƒe xexlẽme 2007 ⁇ 2024",
   "relu": false
  },
  "Immatriculations sur 20 ans": {
@@ -4256,7 +3032,7 @@
   "relu": false
  },
  "Institut National de la Statistique et des Études Économiques et Démographiques": {
-  "texte": "Numekukuwo kple Numekukuwo Wɔwɔ le Dukɔa ƒe Numekukuwo Kple Numekukuwo Ŋuti Dɔwɔƒe",
+  "texte": "Numekulawo kple Amegbetɔwo Ƒe Ŋuti Nyatakaka Kple Nusɔsrɔ̃",
   "relu": false
  },
  "Jeu de données": {
@@ -4297,14 +3073,6 @@
  },
  "Kidjaboun": {
   "texte": "Kidjaboun",
-  "relu": false
- },
- "Km": {
-  "texte": "Km",
-  "relu": false
- },
- "Km /1 000 km²": {
-  "texte": "Km / 1,000 km2",
   "relu": false
  },
  "Km /10 000 hab.": {
@@ -4411,10 +3179,6 @@
   "texte": "Wotsɔ nyaa ɖo kpe edzi, negbe ɖeko ʋufɔkuwo le dzidzim ɖe edzi",
   "relu": false
  },
- "La": {
-  "texte": "Nu si dzɔ",
-  "relu": false
- },
  "La campagne PRISE a relevé le personnel, l’activité, les horaires et les véhicules de 272 auto-écoles, sans les publier. Ces données diraient lesquelles fonctionnent, et vérifieraient le manque dans les 23 préfectures sans auto-école agréée.": {
   "texte": "Le PRISE-kpekpe sia me la, wokpɔa dɔwɔlawo, dɔwɔnawo, ɣeyiɣiwo kple ʋukulawo le ʋukulawo ƒe suku 272 me, gake womena wo ɖe go o.",
   "relu": false
@@ -4436,7 +3200,7 @@
   "relu": false
  },
  "La desserte et la distance sont affichées à côté du classement, sans y entrer. Mô, hors classement, est présentée à part.": {
-  "texte": "Woŋlɔa afi si woɖua asii kple afi si woɖua asii la ɖe afi si woɖua asii, gake womeɖua asii o, eye woŋlɔa afi si woɖua asii o.",
+  "texte": "Míeŋlɔa afi si míedzra ɖo kple afisiafi, gake womeɖena ɖe eme o.",
   "relu": false
  },
  "La grille de population WorldPop, recensée seulement à l": {
@@ -4444,7 +3208,7 @@
   "relu": false
  },
  "La grille place la population là où elle vit, au lieu de l'étaler sur toute la préfecture : l'accès monte partout. Les Plateaux restent sous la médiane dans les deux mesures.": {
-  "texte": "Le afi si wodea afi si amewo le la, afi sia afi si wodea afi ma la, afi sia afi si wodea afi ma la, afi sia afi si wodea afi ma le afi sia afi.",
+  "texte": "Le kpɔɖeŋu me, ne ame aɖe le afi si wòdɔa nu ɖo la, ewɔa dɔ ɖe edzi be yeate ŋu akpɔ gome le eme godoo.",
   "relu": false
  },
  "La mobilité et la sécurité routière au Togo : où en est-on ?": {
@@ -4536,7 +3300,7 @@
   "relu": false
  },
  "Le constat, sans jugement : le parc a quadruplé, porté par les motos ; les accidents augmentent en volume mais les taux baissent ; le réseau est inégalement entretenu.": {
-  "texte": "Wobu akɔnta be: afi si ʋukukuwo le la dzi ɖe edzi zi ene, eye afɔkuwo le dzidzim ɖe edzi, gake woƒe xexlẽme le ɖiɖim ɖe edzi, eye nu siwo katã le edzi yim le Internet dzi la le sesẽm ɖe edzi.",
+  "texte": "Le nyateƒe me la, womebua nya sia ŋu kpɔ o: ʋuʋuwo ƒe agbɔsɔsɔ dzi ɖe edzi zi ene; afɔkuwo le dzidzim ɖe edzi gake woƒe xexlẽme ya nɔ ɖiɖem.",
   "relu": false
  },
  "Le corridor de la RN1 ne devient pas une cible commune d’entretien et de contrôle": {
@@ -4544,7 +3308,7 @@
   "relu": false
  },
  "Le curseur est masqué dans cette maille : les seuils y sont les médianes des 6 zones, tracées en pointillé. À droite de la ligne rouge, le réseau est dégradé ; sous la ligne verte, l": {
-  "texte": "Nu siwo le nuŋɔŋlɔdzesi sia me la le nuŋɔŋlɔdzesi sia me: nuŋɔŋlɔdzesi siwo le nuŋɔŋlɔdzesi sia me le nuŋɔŋlɔdzesi sia me la nye nuŋɔŋlɔdzesi siwo le nuŋɔŋlɔdzesi sia me.",
+  "texte": "Wotsɔa nuŋɔŋlɔa le teƒe sia me, eye woƒe ʋɔtruawo nye nuto adeawo ƒe titinawo.",
   "relu": false
  },
  "Le déficit de formation est rural : ouverture d’auto-écoles hors des villes": {
@@ -4552,7 +3316,7 @@
   "relu": false
  },
  "Le levier formation cible d’abord le permis moto": {
-  "texte": "Mɔxexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexexe",
+  "texte": "Mɔxeɖenua ƒe dzikpɔkpɔ teƒeteƒe gbãtɔe nye ʋukuku",
   "relu": false
  },
  "Le livrable": {
@@ -4588,7 +3352,7 @@
   "relu": false
  },
  "Le plafond suppose qu'aucun usager de deux-roues tué ne portait de casque : limite haute, pas une estimation. Rappel : 8,62 tués déclarés pour 100 000 habitants en 2021, contre 22,7 estimés par l'OMS — une baisse des déclarations ressemblerait à un progrès.": {
-  "texte": "Numekugbalẽa ɖee fia be ame siwo zãa sɔti eve siwo ku la dometɔ aɖeke metsɔa taɖodzinu o: xexlẽme kɔkɔ, menye akɔnta o. Ŋkuɖodzinya: Ame siwo wowu le ƒe 2021 me le ame 100,000 ɖe sia ɖe ƒe xexlẽme nye 8.62, eye ame siwo wowu le ƒe 2021 me nye 22.7 le WHO ƒe akɔnta nu.",
+  "texte": "Le ƒe 2021 me la, ame siwo ku le afɔɖekplɔ eveawo ŋu dometɔ ɖe sia ɖe metsɔa taŋti o: xexlẽme si sɔ gbɔ wu esiawo katã; menye akɔnta aɖeke.",
   "relu": false
  },
  "Le risque par habitant baisse.": {
@@ -4636,7 +3400,7 @@
   "relu": false
  },
  "Le « parc automobile immatriculé » du portail compte les immatriculations de l’année, pas les véhicules en circulation. Un parc publié rendrait les taux par véhicule calculés, et non plus estimés. D’autres libellés sont à corriger, dont les « accidents mortels », qui sont des accidents constatés.": {
-  "texte": "⁇  Ʋu siwo ŋu woŋlɔ agbalẽ ɖo  ⁇  ʋɔ siwo ŋu woŋlɔ agbalẽ ɖo le nyatakakadzraɖoƒea dzi le ƒea me, ke menye ʋu siwo le ʋuʋum o. Ʋu siwo ŋu woŋlɔ agbalẽ ɖo la ana woabu akɔnta le ʋu ɖesiaɖe dzi, ke menye be woabu akɔnta o.",
+  "texte": "⁇  Ʋukulawo ƒe ʋudzraɖoƒe si woɖo ɖe mɔ̃a dzi la ƒoa nu tso ame siwo ŋlɔe ɖi le ƒe sia me ŋu, ke menye ʋu siwo nɔ zɔzɔm o.",
   "relu": false
  },
  "Les": {
@@ -4700,7 +3464,7 @@
   "relu": false
  },
  "Les 6 taux, 2010–2012 face à 2022–2024 : tous en baisse.": {
-  "texte": "Le ƒe siwo va yi me la, ƒe alafa ade kple alafa ade kple alafa ade kple alafa ade kple alafa ade kple alafa ade kple alafa ade kple alafa ade kple alafa ade kple alafa ade kple alafa ade kple alafa ade kple alafa ade kple alafa ade kple alafa ade kple alafa ade kple alafa ade kple alafa ade kple alafa ade kple alafa ade kple alafa ade kple alafa ade kple alafa ade kple alafa ade kple alafa ade kple alafa ade kple alafa ade kple alafa ade kple alafa ade kple alafa ade kple alafa ade kple alafa ade kple alafa ade kple alafa ade kple alafa ade kple alafa ade kple alafa ade kple alafa ade kple alafa ade kple alafa ade kple alafa ade kple alafa ade kple alafa ade kple alafa ade kple alafa ade kple alafa ade kple alafa ade kple alafa ade kple alafa ade kple alafa ade kple alafa ade kple alafa enyi kple alafa ade kple alafa ade kple alafa ade kple alafa ade kple alafa enyi kple alafa eve kple alafa eve kple alafa ade kple alafa eve kple alafa ɖeka kple alafa ade kple alafa ɖeka kple alafa ɖeka kple alafa ɖeka kple alafa ɖeka kple alafa ɖeka kple alafa ɖeka kple alafa ɖeka kple alafa ɖeka kple alafa ɖeka kple alafa ɖeka kple alafa ɖeka kple alafa ɖeka kple alafa ɖeka kple alafa ɖeka kple alafa ɖeka kple alafa ɖeka kple alafa ɖeka kple alafa ɖeka kple alafa ɖeka kple",
+  "texte": "Le ƒe 2010 va se ɖe ƒe 2012 me la, nu siwo katã le ɖiɖim tso ƒe 2022 va ɖo 2024.",
   "relu": false
  },
  "Les 7 hypothèses non testables, et la donnée qui manque.": {
@@ -4716,7 +3480,7 @@
   "relu": false
  },
  "Les Savanes et la Maritime hors Grand Lomé ont le moins d’auto-écoles par habitant : 0,35 et 0,37 pour 100 000 habitants. 8 de leurs préfectures n’en ont aucune agréée : 15 auto-écoles à ouvrir en premier, après vérification. 2 490 135 habitants concernés.": {
-  "texte": "Le Savanes kple Maritime nutowo me la, ʋukulawo ƒe xexlẽme mede ame ɖekaɖekae o: ame 0.35 kple ame 0.37 le ame 100.000 dzi. Le woƒe nutowo dometɔ 8 me la, ame aɖeke mexɔ mɔɖegbalẽ aɖeke o: woʋu ʋukulawo ƒe xexlẽme ade 15 gbã, le numekuku megbe.",
+  "texte": "Savanes kple Maritime du siwo le Lomé ƒe nutowo me la dometɔ ʋɛ aɖewoe nye ʋukukuƒewo: 0.35 ɖe ame 100,000 dzi, eye 0,37 ɖe ame 100.000 dzi.",
   "relu": false
  },
  "Les Savanes sont un cas limite pour la route : 16,9 %, pour 17,2 % dans le pays.": {
@@ -5192,7 +3956,7 @@
   "relu": false
  },
  "Mô, hors classement, n’a aucune route classée : ni état, ni km évalué, et une desserte nulle. Elle n’a aucune auto-école, ni agréée ni recensée, pour 52 448 habitants, à 52,2 km de la plus proche.": {
-  "texte": "Mɔ aɖeke mele afi ma o, eye mɔ aɖeke mele afi ma o, si ŋu wodea dzesi ɖo o, si ŋu wodea dzesi ɖo o, si ŋu wodea dzesi ɖo o, eye dɔ aɖeke mele eme o, eye ʋukulawo ƒe suku aɖeke mele eme o, si dzi wodea dzesi ɖo o, eye womekpɔ mɔ ɖo o, si ŋu wodea dzesi ɖo o, eye womekpɔ mɔ ɖo o, eye womekpɔ mɔ ɖo o, si dzi wodea dzesi ɖo o, eye womekpɔ mɔ ɖo o, si dzi wodea dzesi ɖo o, eye womekpɔ mɔ ɖo o, si dzi wodea dzesi ɖo o, eye womekpɔ mɔ ɖo o, si dzi wodea dzesi ɖo o, eye ame 52,2 le afi si wodea dzesi ɖo o, si didi tso afi si wodea mɔ ɖo la gbɔ.",
+  "texte": "Mɔ aɖeke mele afi ma o, si ŋu woƒo nu tsoe le nyati sia me: mɔ siwo dzi wotɔ ɖo la dometɔ ɖeka pɛ hã meli o; ʋukulawo ƒe suku alo sukudedeƒe aɖeke mele eme o.",
   "relu": false
  },
  "Namoundjoga": {
@@ -5584,7 +4348,7 @@
   "relu": false
  },
  "Permis moto à délivrer dans l'année (C)": {
-  "texte": "Mɔxeɖenua ƒe mɔxeɖenua ƒe mɔxeɖenua ƒe mɔxeɖenua ƒe mɔxeɖenua ƒe mɔxeɖenua",
+  "texte": "Mɔɖeɖe be woana ablɔwo le ƒea me (C)",
   "relu": false
  },
  "Permis moto à délivrer dans l'année : 6 540.": {
@@ -5692,7 +4456,7 @@
   "relu": false
  },
  "Population 2020 par carreau de 100 m": {
-  "texte": "Amewo ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ ƒe 100 m",
+  "texte": "Amewo ƒe agbɔsɔsɔ le 100 m dzi",
   "relu": false
  },
  "Population 2022, 5 classes :": {
@@ -5901,10 +4665,6 @@
  },
  "Publié pour tout le pays seulement.": {
   "texte": "Wota agbalẽ sia ɖe dukɔ bliboa me ko.",
-  "relu": false
- },
- "Qu": {
-  "texte": "Nu ka tae?",
   "relu": false
  },
  "Quantité": {
@@ -6140,7 +4900,7 @@
   "relu": false
  },
  "Recensement des données ouvertes : immatriculations, permis, accidents, réseau, auto-écoles, population, enquêtes. Licences, mailles et années vérifiées une à une.": {
-  "texte": "Nyatakaka siwo le ʋuʋu me ƒe xexlẽdzesi: ame siwo xɔ ʋu, mɔɖegbalẽwo, afɔkuwo, kadodoa, ʋukulawo ƒe sukuwo, ame siwo le ʋuʋum, numekukuwo, mɔɖegbalẽwo, mɔ̃wo kple ƒe siwo woɖɔ ɖo ɖekaɖeka.",
+  "texte": "Nyatakakawo ƒe akɔntabubu: ame siwo xɔ ʋu, woƒe mɔɖegbalẽwo, afɔkuawo, kadodoa, ʋukulawo ƒe sukudedeƒewo, wo me tɔwo kple numekukuwo.",
   "relu": false
  },
  "Recensé, non téléchargé": {
@@ -6400,7 +5160,7 @@
   "relu": false
  },
  "Score = poids du réseau × rang percentile du réseau + poids de la formation × rang percentile de la formation ; à score égal, la préfecture la plus peuplée passe devant. Valeurs de contrôle : à 50 %, le classement publié ; à 65 %, Kloto et Ogou entrent, Est-Mono et Oti-Sud sortent ; à 35 %, Haho entre et Tchaoudjo sort.": {
-  "texte": "Dɔwɔƒe ƒe akpa si dzi ame akpa gãtɔ le la ƒe akpa si le ŋgɔ le akpa si ame akpa gãtɔ le la ƒe akpa si le ŋgɔ le akpa si ame akpa gãtɔ le la ƒe akpa si le ŋgɔ le akpa si ame akpa gãtɔ le la ƒe akpa si le ŋgɔ le akpa si ame akpa si ame akpa gãtɔ le la ƒe akpa si le akpa si le ŋgɔ le akpa si ame akpa gãtɔ le akpa si ame akpa gãtɔ le akpa si ame akpa gãtɔ le la ƒe akpa si le akpa si ame akpa si ame akpa gãtɔ le la ƒe akpa si le ŋgɔ le akpa si ame akpa si ame akpa gãtɔ le la ƒe akpa si le.",
+  "texte": "Akɔntaƒekpɔkpɔ = kadodoa ƒe agba × kadodowo ƒe akpaɖekedzimademade + kamedefeŋusẽxea ƒe agba x kamededeƒe; ne womawɔe nenema o la, nuto si me amewo sɔ gbɔ wu lae adze ŋgɔ.",
   "relu": false
  },
  "Score décomposé : la part du réseau et la part de la formation, et la robustesse.": {
@@ -6440,11 +5200,7 @@
   "relu": false
  },
  "Statut, localisation et préfecture de rattachement (par la position).": {
-  "texte": "Afi si wole, afi si wole kple afi si wole (le afi si wole)",
-  "relu": false
- },
- "Streamlit Cloud) s'affichent dans le coin droit de la barre blanche, dont la marge droite leur laisse la place. */": {
-  "texte": "(Streamlit Cloud) dze le dzogoe si le dzogoe si le dzogoe si le dzogoe si le dzogoe si le dzogoe si le dzogoe si le dzogoe si le dzogoe si le dzogoe si le dzogoe si le dzogoe si le dzogoe si le dzogoe si le dzogoe si le dzogoe si le dzogoe si le dzogoe si le dzogoe si le dzogoe si le dzogoe si le dzogoe si le dzogoe si le dzogoe si le dzogoe si le dzogoe si le dzogoe si le dzogoe si le dzogoe si le dzogoe si le dzogoe si le dzogoe la dzi.",
+  "texte": "Nɔnɔme, teƒe kple nuto si me wolé ɖe asi le (le nɔnɔmea nu).",
   "relu": false
  },
  "Suivi :": {
@@ -6676,11 +5432,11 @@
   "relu": false
  },
  "Tués : écart à la cible et plafond du casque, aux 4 horizons à venir": {
-  "texte": "Ame siwo wowu: nu si ŋu woƒo nu tsoe le nu si ŋu woƒo nu tsoe le afi ma kple nu si ŋu woƒo nu tsoe le nu si ŋu woƒo nu tsoe le afi ma la ƒe akpa ene",
+  "texte": "Ame Siwo Wodi Be Woawui: Nukpɔsusu si le woƒe nuŋɔŋlɔawo me kple taɖodzinu siwo ŋu woƒo nu tsoe la ƒe akpa aɖe",
   "relu": false
  },
  "Tués de 2021 : 60 % de deux et trois-roues motorisés (OMS) ; part des motos dans le parc estimé : centrale 57,6 %, parc bas 54,7 %, parc haut 59,7 % ; indice : valeur centrale 1,04, parc bas 1,10, parc haut 1,01": {
-  "texte": "Ame siwo wowu le ƒe 2021 me: 60 le alafa me le ʋuʋuwo kple ʋɔtru evewo me (WHO); ʋuʋuwo ƒe akpa si le afi si wolɔ̃a mɔ ɖo la ƒe akpa si le afi si wolɔ̃a mɔ ɖo la ƒe akpa si le afi si wolɔ̃a mɔ ɖo la ƒe akpa si le afi si wolɔ̃a mɔ ɖo la ƒe akpa si le afi si wolɔ̃a mɔ ɖo la ƒe akpa si le afi si wolɔ̃a mɔ ɖo la ƒe akpa si le afi si wolɔ̃a mɔ ɖo la ƒe akpa si le afi si wolɔ̃a mɔ ɖo la ƒe akpa si le afi si wolɔ̃a mɔ ɖo la ƒe akpa si le ƒe alafa me: afi si wolɔ̃a mɔ ɖo la ƒe akpa si le ƒe alafa me ƒe alafa me ƒe alafa me ƒe alafa me ƒe alafa me ƒe alafa me ƒe alafa me ƒe alafa me ƒe alafa me ƒe alafa me ƒe alafa me ƒe alafa me ƒe alafa me ƒe alafa me ƒe alafa me ƒe alafa me ƒe alafa me ƒe alafa me ƒe alafa me ƒe alafa me ƒe alafa me ƒe alafa me ƒe alafa me ƒe alafa me ƒe alafa me ƒe alafa me ƒe alafa me ƒe alafa me ƒe alafa me ƒe",
+  "texte": "Ame siwo ku le ƒe 2021 me: 60% tso ʋukuku eve kple etɔ̃ (WHO) ŋu; sɔ gbɔ ɖe ʋuʋudɔwɔƒe si ŋuti wobu akɔnta ɖo la dzi: dɔwɔƒegã 57.6%, dɔwɔɖui tsɛ 54.7%, teƒe kɔkɔe 59.7%; dzesideŋutinya: kpɔdzedze titina 1,04, dɔwɔƒea tsĩ 1,10, dɔwɔƒewo tɔsisia 1.01",
   "relu": false
  },
  "Tués déclarés (police, gendarmerie)": {
@@ -6784,7 +5540,7 @@
   "relu": false
  },
  "Une auto-école agréée, soit 1,24 pour 100 000 habitants, au-dessus de la cible.": {
-  "texte": "Ʋukulawo ƒe suku si xɔ asi la le ame 100,000 ɖe sia ɖe ƒe xexlẽme si nye 1.24 le ame 100,000 ɖe sia ɖe ƒe xexlẽme si le ame 100,000 ɖe sia ɖe ƒe xexlẽme si le ame 100,000 ɖe sia ɖe ƒe xexlẽme si le ame 100,000 ɖe sia ɖe ƒe xexlẽme si le ame 100,000 ɖe sia ɖe ƒe xexlẽme si le ame 100,000 ɖe sia ɖe ƒe xexlẽme si le ame 100,000 ɖe sia ɖe ƒe xexlẽme si le ame 100,000 ɖe sia ɖe ƒe xexlẽme la dzi.",
+  "texte": "Ʋukulawo ƒe sukudede si nye 1.24 le ame 100,000 ɖe sia ɖe dzi.",
   "relu": false
  },
  "Une auto-école agréée, soit 1,51 pour 100 000 habitants, au-dessus de la cible.": {
@@ -6836,7 +5592,7 @@
   "relu": false
  },
  "Victimes par type d’usager, sexe et âge": {
-  "texte": "Amesiwo ŋu wowɔ nu le, ŋutsu kple nyɔnu kple nyɔnu kple nyɔnu kple nyɔnu kple nyɔnu kple nyɔnu kple nyɔnu kple nyɔnu kple nyɔnu kple nyɔnu kple nyɔnu kple nyɔnu kple nyɔnu kple nyɔnu kple nyɔnu kple nyɔnu kple nyɔnu kple nyɔnu kple nyɔnu kple nyɔnu kple nyɔnu kpakple nyɔnu kple nyɔnu kple nyɔnu kple nyɔnu kpakple nyɔnu kple nyɔnu kpakple nyɔnu kple nyɔnu kpakple nyɔnu kple nyɔnu kpakple nyɔnu kple nyɔnu kpakple nyɔnu kpakple nyɔnu kple nyɔnu kpakple nyɔnu kple nyɔnu kpakple nyɔnu kple nyɔnu kpakple nyɔnu kple nyɔnu.",
+  "texte": "Amesiwo ŋu wowɔa dɔ le, ŋutsuwo kple nyɔnuwo kpakple woƒe ƒexɔxɔ",
   "relu": false
  },
  "Victimes, %": {
@@ -6952,7 +5708,7 @@
   "relu": false
  },
  "Vérifier l’état sur place, puis remettre en état 31,8 km. Vérifier l’activité et l’agrément de l’auto-école recensée, puis en ouvrir une si le manque est réel.": {
-  "texte": "Lé ŋku ɖe nɔnɔme si le ʋukulawo ŋu le teƒea ŋu, eye nàdzra wo ɖo ɖe nɔnɔme si le kilometa 31.8 la dzi. Lé ŋku ɖe ʋukulawo ƒe ʋukulawo ƒe dɔwɔna kple woƒe mɔɖeɖe ŋu, eye nàʋu ʋukulawo ƒe ʋukulawo ƒe ʋukulawo ƒe ʋukulawo ƒe ʋukulawo ƒe ʋukulawo ƒe ʋukulawo ƒe ʋukulawo ƒe ʋukulawo ƒe ʋukulawo ƒe ʋukulawo ƒe ʋukulawo ƒe ʋukulawo ƒe ʋukulawo ƒe ʋukulawo ƒe ʋukulawo ƒe ʋukulawo ƒe ʋukulawo ƒe ʋukulawo ƒe ʋukulawo ƒe ʋukulawo ƒe ʋukulawo ƒe ʋukulawo ƒe ʋukulawo ƒe ʋukulawo ƒe ʋukulawo ƒe ʋukulawo ƒe ʋukulawo ƒe ʋukulawo ƒe ʋukulawo kple ʋukulawo ƒe ʋukulawo ƒe ʋukulawo ŋu.",
+  "texte": "Lé ŋku ɖe nɔnɔmea ŋu le afi ma, eye nàtrɔ asi le eŋu.",
   "relu": false
  },
  "Vérifier l’état sur place, puis remettre en état 38,2 km.": {
@@ -7033,206 +5789,6 @@
  },
  "Zones traversées": {
   "texte": "Anyigbadzigbawo",
-  "relu": false
- },
- "[class*=\"st-key-vn_t_\"] button": {
-  "texte": "[class*=\"st-key-vn_t_\"] button",
-  "relu": false
- },
- "[class*=\"st-key-vn_t_\"] button:hover": {
-  "texte": "[class*=\"st-key-vn_t_\"] button:hover",
-  "relu": false
- },
- "[class*=\"st-key-vn_t_\"] button:hover p": {
-  "texte": "[class*=\"st-key-vn_t_\"] button:hover p",
-  "relu": false
- },
- "[data-testid=\"stColumn\"]:has(.reco-theme)": {
-  "texte": "[data-testid=\"stColumn\"]:has(.reco-theme)",
-  "relu": false
- },
- "[data-testid=\"stColumn\"]:has(.reco-theme) > [data-testid=\"stVerticalBlock\"]": {
-  "texte": "[data-testid=\"stColumn\"]:has(.reco-theme) > [data-testid=\"stVerticalBlock\"]",
-  "relu": false
- },
- "[data-testid=\"stColumn\"]:has(.reco-theme) [data-testid=\"stElementContainer\"]:has(button)": {
-  "texte": "[data-testid=\"stColumn\"]:has(.reco-theme) [data-testid=\"stElementContainer\"]:has(button)",
-  "relu": false
- },
- "[data-testid=\"stColumn\"]:has(.reco-theme):hover": {
-  "texte": "[data-testid=\"stColumn\"]:has(.reco-theme):hover",
-  "relu": false
- },
- "[data-testid=\"stColumn\"]:has(.reco-theme.couv)": {
-  "texte": "[data-testid=\"stColumn\"]:has(.reco-theme.couv)",
-  "relu": false
- },
- "[data-testid=\"stColumn\"]:has(.reco-theme.mob)": {
-  "texte": "[Data-testid=\"stColumn\"]:has(.reco-theme.mob)",
-  "relu": false
- },
- "[data-testid=\"stColumn\"]:has(.reco-theme.res)": {
-  "texte": "[data-testid=\"stColumn\"]:has(.reco-theme.res)",
-  "relu": false
- },
- "[data-testid=\"stColumn\"]:has(.reco-theme.sec)": {
-  "texte": "[data-testid=\"stColumn\"]:has(.reco-theme.sec)",
-  "relu": false
- },
- "[data-testid=\"stColumn\"]:has(.retenir) .retenir": {
-  "texte": "[data-testid=\"stColumn\"]:has(.keep) .keep",
-  "relu": false
- },
- "[data-testid=\"stColumn\"]:has(.retenir) .stMarkdown, [data-testid=\"stColumn\"]:has(.retenir) [data-testid=\"stMarkdownContainer\"],": {
-  "texte": "[data-testid=\"stColumn\"]:has(.ke ɖe edzi) .stMarkdown, [data-testid=\"stColumn\"]:has(.ke ɖe edzi) [data-testid=\"stMarkdownContainer\"],",
-  "relu": false
- },
- "[data-testid=\"stColumn\"]:has(.retenir) > [data-testid=\"stVerticalBlock\"]": {
-  "texte": "[data-testid=\"stColumn\"]:has(.keep) > [data-testid=\"stVerticalBlock\"]",
-  "relu": false
- },
- "[data-testid=\"stColumn\"]:has(.retenir) [data-testid=\"stElementContainer\"]:has(.retenir)": {
-  "texte": "[data-testid=\"stColumn\"]:has(.keep) [data-testid=\"stElementContainer\"]:has(.keep)",
-  "relu": false
- },
- "[data-testid=\"stColumn\"]:has(.st-key-vn_synthese) > [data-testid=\"stVerticalBlock\"]": {
-  "texte": "[data-testid=\"stColumn\"]:has(.st-key-vn_synthese) > [data-testid=\"stVerticalBlock\"]",
-  "relu": false
- },
- "[data-testid=\"stColumn\"]:has(.st-key-vn_synthese) [data-testid=\"stLayoutWrapper\"]:has(.st-key-vn_synthese)": {
-  "texte": "[data-testid=\"stColumn\"]:has(.st-key-vn_synthese) [data-testid=\"stLayoutWrapper\"]:has(.st-key-vn_synthese)",
-  "relu": false
- },
- "[data-testid=\"stHeader\"]": {
-  "texte": "[Data-testid=\"stHeader\"]",
-  "relu": false
- },
- "[data-testid=\"stHeader\"] *": {
-  "texte": "[Data-testid=\"stHeader\"] *",
-  "relu": false
- },
- "[data-testid=\"stHorizontalBlock\"]:has(.reco-theme)": {
-  "texte": "[Data-testid=\"stHorizontalBlock\"]:has(.reco-theme)",
-  "relu": false
- },
- "[data-testid=\"stHorizontalBlock\"]:has(.retenir)": {
-  "texte": "[data-testid=\"stHorizontalBlock\"]:has(.maɖo)",
-  "relu": false
- },
- "[data-testid=\"stMainBlockContainer\"]": {
-  "texte": "[Data-testid=\"stMainBlockContainer\"]",
-  "relu": false
- },
- "[data-testid=\"stPlotlyChart\"]": {
-  "texte": "[Data-testid=\"stPlotlyChart\"]",
-  "relu": false
- },
- "[data-testid=\"stRadioOption\"]:not([data-selected=\"true\"]) > div > div > div:first-child": {
-  "texte": "[data-testid=\"stRadioOption\"]:not([data-selected=\"true\"]) > div > div > div:first-child",
-  "relu": false
- },
- "[data-testid=\"stSidebar\"] [data-testid=\"stNavSectionHeader\"]": {
-  "texte": "[data-testid=\"stSidebar\"] [data-testid=\"stNavSectionHeader\"]",
-  "relu": false
- },
- "[data-testid=\"stSidebar\"] [data-testid=\"stSidebarNavLink\"] span": {
-  "texte": "[data-testid=\"stSidebar\"] [data-testid=\"stSidebarNavLink\"] span",
-  "relu": false
- },
- "[data-testid=\"stSidebar\"] [data-testid=\"stWidgetLabel\"]": {
-  "texte": "[data-testid=\"stSidebar\"] [data-testid=\"stWidgetLabel\"]",
-  "relu": false
- },
- "[data-testid=\"stSidebar\"] [data-testid=\"stWidgetLabel\"] p": {
-  "texte": "[data-testid=\"stSidebar\"] [data-testid=\"stWidgetLabel\"] kpl",
-  "relu": false
- },
- "[data-testid=\"stSidebar\"] button[data-variant=\"pills\"]": {
-  "texte": "[data-testid=\"stSidebar\"] button[data-variant=\"pills\"]",
-  "relu": false
- },
- "[data-testid=\"stSidebar\"] button[data-variant=\"pills\"] p": {
-  "texte": "[data-testid=\"stSidebar\"] button[data-variant=\"pills\"]",
-  "relu": false
- },
- "[data-testid=\"stSidebar\"] button[data-variant=\"pills\"][aria-pressed=\"true\"]": {
-  "texte": "[data-testid=\"stSidebar\"] button[data-variant=\"pills\"][aria-pressed=\"true\"]",
-  "relu": false
- },
- "[data-testid=\"stSidebar\"] div.st-key-selecteur_langue button[data-variant]": {
-  "texte": "[data-testid=\"stSidebar\"] div.st-key-selector_langue button[data-variant]",
-  "relu": false
- },
- "[data-testid=\"stSidebar\"] div.st-key-selecteur_langue button[data-variant][aria-pressed=\"true\"], [data-testid=\"stSidebar\"] div.st-key-selecteur_langue button[data-variant][aria-checked=\"true\"],": {
-  "texte": "[data-testid=\"stSidebar\"] div.st-key-selector_langue button[data-variant][aria-pressed=\"true\"], [data-testid=\"stSidebar\"] div.st-key-selector_langue button[data-variant][aria-checked=\"true\"],",
-  "relu": false
- },
- "[data-testid=\"stSidebar\"] div.st-key-selecteur_langue button[data-variant][data-selected=\"true\"]": {
-  "texte": "[data-testid=\"stSidebar\"] div.st-key-selector_langue button[data-variant][data-selected=\"true\"]",
-  "relu": false
- },
- "[data-testid=\"stSidebarCollapseButton\"] button, [data-testid=\"stExpandSidebarButton\"]": {
-  "texte": "[data-testid=\"stSidebarCollapseButton\"] button, [data-testid=\"stExpandSidebarButton\"]",
-  "relu": false
- },
- "[data-testid=\"stSidebarCollapseButton\"] button:hover, [data-testid=\"stExpandSidebarButton\"]:hover": {
-  "texte": "[data-testid=\"stSidebarCollapseButton\"] button:hover, [data-testid=\"stExpandSidebarButton\"]:hover",
-  "relu": false
- },
- "[data-testid=\"stSidebarCollapseButton\"], [data-testid=\"stExpandSidebarButton\"]": {
-  "texte": "[data-testid=\"stSidebarCollapseButton\"], [data-testid=\"stExpandSidebarButton\"]",
-  "relu": false
- },
- "[data-testid=\"stSidebarContent\"]": {
-  "texte": "[Data-testid=\"stSidebarContent\"]",
-  "relu": false
- },
- "[data-testid=\"stSidebarHeader\"]": {
-  "texte": "[Data-testid=\"stSidebarHeader\"]",
-  "relu": false
- },
- "[data-testid=\"stSidebarHeader\"] > div:first-child": {
-  "texte": "[data-testid=\"stSidebarHeader\"] > div:first-child",
-  "relu": false
- },
- "[data-testid=\"stSidebarHeader\"] img": {
-  "texte": "[data-testid=\"stSidebarHeader\"] img",
-  "relu": false
- },
- "[data-testid=\"stSidebarNav\"]": {
-  "texte": "[Data-testid=\"stSidebarNav\"]",
-  "relu": false
- },
- "[data-testid=\"stSidebarNavLink\"]": {
-  "texte": "[Data-testid=\"stSidebarNavLink\"]",
-  "relu": false
- },
- "[data-testid=\"stSidebarNavLink\"]:hover": {
-  "texte": "[data-testid=\"stSidebarNavLink\"]:",
-  "relu": false
- },
- "[data-testid=\"stSidebarNavLink\"][aria-current=\"page\"]": {
-  "texte": "[data-testid=\"stSidebarNavLink\"][aria-current=\"page\"]",
-  "relu": false
- },
- "[data-testid=\"stSidebarNavLink\"][aria-current=\"page\"] span": {
-  "texte": "[data-testid=\"stSidebarNavLink\"][aria-current=\"page\"] span",
-  "relu": false
- },
- "[data-testid=\"stSidebarUserContent\"]": {
-  "texte": "[data-testid=\"stSidebarUserContent\"]",
-  "relu": false
- },
- "[data-testid=\"stSidebarUserContent\"] > div, [data-testid=\"stSidebarUserContent\"] > div > [data-testid=\"stVerticalBlock\"]": {
-  "texte": "[data-testid=\"stSidebarUserContent\"] > div, [data-testid=\"stSidebarUserContent\"] > div > [data-testid=\"stVerticalBlock\"]",
-  "relu": false
- },
- "[data-testid=\"stSidebarUserContent\"] [data-testid=\"stElementContainer\"]:has(.slogan-barre)": {
-  "texte": "[data-testid=\"stSidebarUserContent\"] [data-testid=\"stElementContainer\"]:has(.slogan-bar)",
-  "relu": false
- },
- "[data-testid=\"stVerticalBlockBorderWrapper\"]:has(div.st-key-topbar)": {
-  "texte": "[Data-testid=\"stVerticalBlockBorderWrapper\"]:has(div.st-key-topbar)",
   "relu": false
  },
  "a aucun véhicule correspondant.": {
@@ -7316,7 +5872,7 @@
   "relu": false
  },
  "analyse. Les 3 derniers (accidents et blessés pour 10 000 véhicules, blessés pour 100 000 habitants) sont des compléments : hors cadre, aucun verdict. Volumes : niveau A ; les 6 taux : C.": {
-  "texte": "Numekuku. Nu etɔ̃ mamlɛawo (ku kple ame vevi siwo le ʋu 10,000 me, ame vevi siwo le ame 100,000 me) nye kpeɖeŋutɔwo: ame siwo mele te ɖe ɖoɖowo nu o.",
+  "texte": "Nyatakaka etɔ̃ mamlɛawo (aʋawɔwɔ kple ame vevi siwo le ʋu 10,000 me, amesiwo ŋu dɔ dzɔ ɖo ɖe amewo 100,000 dzi) nye kpeɖeŋutɔwo: nu si womekpɔ kpɔ o.",
   "relu": false
  },
  "annuaire national": {
@@ -7459,10 +6015,6 @@
   "texte": "wodzina;",
   "relu": false
  },
- "barre latérale) : on ne réserve sa hauteur que dans ce cas (maquette §4, règle à appliquer). */": {
-  "texte": "(Kpɔ etenuŋɔŋlɔdzesi si le § 4 lia me, si nye se si dzi woato awɔ esia)",
-  "relu": false
- },
  "bdata": {
   "texte": "bdata",
   "relu": false
@@ -7481,14 +6033,6 @@
  },
  "blessés(an) / population(an) × 100 000 (R-06)": {
   "texte": "ame siwo ŋu dɔ dzɔ ɖo (R-06)",
-  "relu": false
- },
- "body:has([data-testid=\"stHeader\"] [data-testid=\"stToolbar\"]) div.st-key-topbar_droite": {
-  "texte": "body:has([data-testid=\"stHeader\"] [data-testid=\"stToolbar\"]) div.st-key-topbar_right",
-  "relu": false
- },
- "carte logo Togo AI Lab */": {
-  "texte": "Togo AI Lab */",
   "relu": false
  },
  "cas limite": {
@@ -7559,10 +6103,6 @@
   "texte": "le nuto siwo me ʋukulawo ƒe suku aɖeke mele o me",
   "relu": false
  },
- "de 2002 à 2022": {
-  "texte": "tso ƒe 2002 va se ɖe ƒe 2022 me",
-  "relu": false
- },
  "de 2002 à 2022, et les motos font": {
   "texte": "tso ƒe 2002 va se ɖe ƒe 2022 me, eye ʋuʋuwo",
   "relu": false
@@ -7627,82 +6167,6 @@
   "texte": "displayModeBar",
   "relu": false
  },
- "div.st-key-selecteur_langue": {
-  "texte": "div.st-key-selector_langue",
-  "relu": false
- },
- "div.st-key-selecteur_langue [data-testid=\"stButtonGroup\"]": {
-  "texte": "[data-testid=\"stButtonGroup\"]",
-  "relu": false
- },
- "div.st-key-selecteur_langue button p": {
-  "texte": "div.st-key-selector_langue button p",
-  "relu": false
- },
- "div.st-key-topbar": {
-  "texte": "div.st-key-topbar",
-  "relu": false
- },
- "div.st-key-topbar [data-testid=\"stHorizontalBlock\"]": {
-  "texte": "[data-testid=\"stHorizontalBlock\"]",
-  "relu": false
- },
- "div.st-key-topbar_droite": {
-  "texte": "ɖek.st-key-topbar_right",
-  "relu": false
- },
- "div.st-key-topbar_droite [data-testid=\"stMarkdownContainer\"]": {
-  "texte": "[data-testid=\"stMarkdownContainer\"]",
-  "relu": false
- },
- "div.st-key-vn_synthese": {
-  "texte": "div.st-key-vn_synthese",
-  "relu": false
- },
- "div.st-key-vn_synthese .synthese": {
-  "texte": "div.st-key-vn_synthese .synthese",
-  "relu": false
- },
- "div.st-key-vn_synthese .synthese ul": {
-  "texte": "nuŋububu .synthese ul",
-  "relu": false
- },
- "div.st-key-vn_synthese .synthese-chiffre": {
-  "texte": "div.st-key-vn_synthese .synthese-digit",
-  "relu": false
- },
- "div.st-key-vn_synthese .synthese-titre": {
-  "texte": "div.st-key-vn_synthese .synthese-title",
-  "relu": false
- },
- "div.st-key-vn_synthese [data-testid=\"stElementContainer\"]:has(.synthese)": {
-  "texte": "[data-testid=\"stElementContainer\"]:has(.synthese)",
-  "relu": false
- },
- "div.st-key-vn_synthese [data-testid=\"stElementContainer\"]:has(.synthese) > div": {
-  "texte": "[data-testid=\"stElementContainer\"]:has(.synthese) > div",
-  "relu": false
- },
- "div.st-key-vn_synthese [data-testid=\"stElementContainer\"]:has(button)": {
-  "texte": "[data-testid=\"stElementContainer\"]:has(button)",
-  "relu": false
- },
- "div.st-key-vn_synthese button": {
-  "texte": "div.st-key-vn_synthese button",
-  "relu": false
- },
- "div.st-key-vn_synthese button p": {
-  "texte": "div.st-key-vn_synthese button p",
-  "relu": false
- },
- "div[class*=\"st-key-carte_reco_\"]": {
-  "texte": "div[class*=\"st-key-card_reco_\"]",
-  "relu": false
- },
- "div[class*=\"st-key-carte_reco_\"]:hover": {
-  "texte": "div[class*=\"st-key-carte_reco_\"]:hover",
-  "relu": false
- },
  "dont 132 agréées (85 agréées, 47 antennes)": {
   "texte": "Wo dometɔ 132 nye mɔ̃ɖaŋunuwo (85 nye mɔ̃ɖaŋunuwo, 47 nye mɔ̃ɖaŋunuwo)",
   "relu": false
@@ -7741,10 +6205,6 @@
  },
  "en 2022 — mais les six taux de risque baissent. Le réseau reste inégalement entretenu, et": {
   "texte": "Gake le ƒe 2022 me la, afɔku ƒe dzidzenu adeawo dzi kpɔtɔ le ɖiɖim.",
-  "relu": false
- },
- "en 2024.": {
-  "texte": "le ƒe 2024 me.",
   "relu": false
  },
  "en 2024. Sur fond gris : les deux références sans action nouvelle (taux inchangé, tendance) et la cible de la Décennie, moitié de la valeur de 2021 en 2030. Les accidents constatés n": {
@@ -7831,10 +6291,6 @@
   "texte": "Ðe nu sia trɔna, eye nu kae nyatakakawo ɖo kpe edzi?",
   "relu": false
  },
- "et": {
-  "texte": "kple",
-  "relu": false
- },
  "exemple reprend une valeur affichée ailleurs dans le tableau de bord.": {
   "texte": "Le kpɔɖeŋu me, xɔ ga si dze le teƒe bubu aɖe le takpegbalẽa me.",
   "relu": false
@@ -7889,10 +6345,6 @@
  },
  "horizon choisi est marqué.": {
   "texte": "Wode dzesi nu si tututu nèdi be yeawɔ.",
-  "relu": false
- },
- "html, body, [class*=\"css\"], .stMarkdown, .stText, button, input, label": {
-  "texte": "html, body, [class*=\"css\"], .stMarkdown, .stText, button, input, label",
   "relu": false
  },
  "hui en dehors du Grand Lomé, et l": {
@@ -7979,14 +6431,6 @@
   "texte": "tsotsom; g",
   "relu": false
  },
- "k km": {
-  "texte": "k km",
-  "relu": false
- },
- "km": {
-  "texte": "km",
-  "relu": false
- },
  "km de routes classées": {
   "texte": "Mɔ siwo ŋu woƒo ƒu ɖo ƒe km",
   "relu": false
@@ -8012,7 +6456,7 @@
   "relu": false
  },
  "km en mauvais état / km évalués × 100 ; km évalués = total − non évalués (R-14)": {
-  "texte": "Km si mele nɔnɔme nyui me o / Km si ŋu woke ɖo × 100; Km si ŋu woke ɖo = Km si ŋu woke ɖo − Km si ŋu woke ɖo o (R-14)",
+  "texte": "Km si mele nɔnɔme nyui me o / km siwo ŋu woke ɖo × 100; kpl siwo ŋu wokeke ɖo = katã − esiwo womeɖo dze tsoe o (R-14)",
   "relu": false
  },
  "km en mauvais état ÷ km évalués × 100 (évalués = bon+moyen+mauvais+travaux)": {
@@ -8041,10 +6485,6 @@
  },
  "km à remettre en état": {
   "texte": "km si wòle be woatrɔ",
-  "relu": false
- },
- "km,": {
-  "texte": "Km,",
   "relu": false
  },
  "km, habitants": {
@@ -8165,10 +6605,6 @@
  },
  "ni la part du Grand Lomé dans les accidents ni son taux ne sont connus (écart 1)": {
   "texte": "Womenya Grand Lomé ƒe akpa si le afɔkuwo me alo eƒe xexlẽme hã o (Kpɔ memama 1)",
-  "relu": false
- },
- "nom du projet + drapeau": {
-  "texte": "dɔa ƒe ŋkɔ + aflaga",
   "relu": false
  },
  "non définie": {
@@ -8336,7 +6772,7 @@
   "relu": false
  },
  "premières délivrances(cat, an) / population(âge ≥ âge minimal PA-05, an) × 1 000": {
-  "texte": "ameƒomeviwo ƒe ƒeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒomeƒ",
+  "texte": "ameƒomeviwo ƒe xexlẽme ≥ PA-05 Ƒe) × 1 000",
   "relu": false
  },
  "priorité et zone se choisissent dans la barre latérale.": {
@@ -8544,7 +6980,7 @@
   "relu": false
  },
  "tués(an) / parc(an) × 10 000 ; parc selon l’ordre de R-11 ; en fourchette si parc estimé (O1-05)": {
-  "texte": "(a) (a) (b) (b) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x) (x)) (x) (x) (x) (x) (x) (x) (x) (x) (x)) (x) (x)",
+  "texte": "(O1-05)",
   "relu": false
  },
  "tués(t, an) / population(t, an) × 100 000 ; sous SE-01 : cumul sur PA-02 années (R-09)": {
@@ -8611,14 +7047,6 @@
   "texte": "du me mɔwo (233,2 km)",
   "relu": false
  },
- "vs 2021": {
-  "texte": "kple ƒe 2021",
-  "relu": false
- },
- "vs 2023": {
-  "texte": "le ƒe 2023 me",
-  "relu": false
- },
  "vue 1 sur 4": {
   "texte": "kpɔ 1 le 4 me",
   "relu": false
@@ -8632,7 +7060,7 @@
   "relu": false
  },
  "« Les accidents augmentent » est nuancé : volume en hausse, taux en baisse.": {
-  "texte": "⁇  Ʋufɔkuwo le dzidzim ɖe edzi  ⁇  nuŋɔŋlɔwo le dzidzim ɖe edzi: ʋuʋudedi le dzidzim ɖe edzi, ʋuʋudedi le ɖiɖim ɖe edzi.",
+  "texte": "⁇  Dzɔdzɔmefɔkuwo le dzidzim ɖe edzi",
   "relu": false
  },
  "À droite de chaque barre : le nombre de tests de robustesse, sur 6, où la préfecture reste dans les 10 premières.": {
@@ -8780,7 +7208,7 @@
   "relu": false
  },
  "état du réseau, cartographier le réseau et les auto-écoles, recommander.": {
-  "texte": "Ne èle mɔ̃ dzi la, àte ŋu akpɔ mɔ̃ dzi ƒe nɔnɔmewo, àte ŋu akpɔ mɔ̃ dzi ƒe nɔnɔmewo, àte ŋu akpɔ mɔ̃ dzi ƒe ɖoɖowo kple mɔ̃ dzi ƒe sukuwo, àte ŋu aɖo aɖaŋu na wo.",
+  "texte": "Nu siwo wòle be woawɔ la dometɔ aɖewoe nye ʋukulawo ƒe ɖoɖowɔwɔ ɖe nuɖoanyi sia ŋu.",
   "relu": false
  },
  "état est réparti le long de l": {
@@ -8844,7 +7272,7 @@
   "relu": false
  },
  "— Blitta cumule 68,2 % de km en mauvais état sur 101,1 km évalués (4 tronçons critiques) et aucune auto-école agréée pour 163 272 habitants (2 recensées, non agréées), à 25,9 km de la plus proche. En tête du classement dans les 6 tests de robustesse.": {
-  "texte": "⁇  Blitta le kpekpem ɖe kpekpem ɖe kpekpem ɖe kpekpem ɖe kpekpem ɖe kpekpem ɖe kpekpem ɖe kpekpem ɖe kpekpem ɖe kpekpem ɖe kpekpem ɖe kpekpem ɖe kpekpem ɖe kpekpem ɖe kpekpem ɖe kpekpem ɖe kpekpem ɖe kpekpem ɖe kpekpem ɖe kpekpem ɖe kpekpem ɖe kpekpem ɖe kpekpem ɖe kpekpem ɖe kpekpem ɖe kpekpem ɖe kpekpem ɖe kpekpem ɖe kpekpem ɖe kpekpem ɖe kpekpem ɖe kpekpem ɖe kpekpem ɖe kpekpem ɖe kpekpem ɖe kpekpem ɖe kpekpem ɖe kpekpem ɖe kpekpem ɖe kpekpem ɖe kpekpem ɖe kpekpem ɖe kpekpem ɖe kpekpem ɖe kpekpem ɖe kpekpem ɖe kpekpem.",
+  "texte": "⁇  Blitta ƒo xlã kilometa 68.2% si le nɔnɔme gbegblẽ me tso km 101.1 siwo ŋu wodea dzesi ɖo (4 kpekpeme akpa) la dome, eye womexɔa ʋukulawo ƒe suku aɖeke ɖe ame 163,272 (2 woɖenɛ kpɔ alo womekpɔe de dzesii o), 25.9 kilometrewoe nye esia.",
   "relu": false
  },
  "— Bon :": {
@@ -8864,11 +7292,11 @@
   "relu": false
  },
  "— Grand Lomé a le réseau le moins dégradé (7,7 %) et la meilleure offre (103 auto-écoles agréées, 4,71 pour 100 000 habitants) ; seule sa desserte est sous la médiane (0,74 km pour 10 000 habitants), pour 2 188 376 habitants.": {
-  "texte": "⁇  Grand Lomé nye dugã si me nu vɔ̃ aɖeke mele o (7.7%) eye enye dugã si me ʋukulawo ƒe xexlẽme le wu le (103 nye ʋukulawo ƒe suku siwo xɔ mɔɖeɖe le, siwo ƒe xexlẽme nye 4.71 le ame 100,000 ɖe sia ɖe me); eya ɖeɖe koe nye dugã si me ʋukulawo ƒe xexlẽme le le ame 100,000 ɖe sia ɖe ƒe xexlẽme me (ame siwo le eme ƒe xexlẽme nye 0.74 km ɖe ame 10,000 ɖe sia ɖe ƒe xexlẽme nye 2,188,376).",
+  "texte": "⁇  Le Grand Lomé gome la, nu siwo le edzi yim nyuie wu (7.7%) kple nudidi nyuitɔ kekeakee li (103 nye ʋukulawo ƒe sukuxɔ xɔnyɔ̃awo; 4.71 ɖe ame 100,000 dzii) eye wo dometɔ ɖeka koe wɔa dɔ si mede vidzĩ me o (0.74 km na ame 10,000).",
   "relu": false
  },
  "— Kara a le réseau au-dessus de la médiane : 15,2 % sur 694,5 km évalués. Pour 985 512 habitants, 2 de ses 7 préfectures reçoivent le levier réseau (37,3 km), 5 le levier formation (8 auto-écoles).": {
-  "texte": "⁇  Kara ƒe kadodoa le edzivɔ: 15.2 le alafa me le akɔnta si wowɔ ɖe eŋu la me le kilometa 694.5 me. Le dukɔ 985 512 me la, 2 le eƒe nutome gã 7 me xɔ kadodoa ƒe kadodoa ƒe kadodoa ƒe kadodoa ƒe kadodoa ƒe kadodoa ƒe kadodoa ƒe kadodoa ƒe kadodoa ƒe kadodoa ƒe kadodoa ƒe kadodoa ƒe kadodoa ƒe kadodoa ƒe kadodoa ƒe kadodoa ƒe kadodoa ƒe kadodoa ƒe kadodoa ƒe kadodoa ƒe kadodoa ƒe kadodoa ƒe kadodoa ƒe kadodoa ƒe kadodoa ƒe kadodoa ƒe kadodoa ƒe kadodoa ƒe kadodoa ƒe kadodoa ƒe kadodoa ƒe kadodoa ƒe kadodoa ƒe kadodoa ƒe kadodoa ƒe kadodoa ƒe kadodoa ƒe kadodoa ƒe kadodoa ƒe kadodoa ƒe kadodoa ƒe kadodoa ƒe kadodoa ƒe kadodoa ƒe kadodoa ƒe kadodoa ƒe kadodoa ƒe kadodoa ƒe kadodoa ƒe kadodoa me.",
+  "texte": "⁇  Dɔwɔƒe si le Kara la ƒe kadodoa sɔ gbɔ wu vidzĩ: 15.2% tso kilometa 694.5 siwo ŋu woke ɖo me. Le ame 985 512 ɖesiaɖe dome, eƒe nutome gã 7awo dometɔ 2 xɔa dɔwɔƒewo (37.3 km) eye wofia nu woƒe dɔwɔlawo (5 (8 ʋukulawo).",
   "relu": false
  },
  "— Maritime hors Grand Lomé a la formation et la desserte sous la médiane : 5 auto-écoles agréées pour 1 346 615 habitants (0,37 pour 100 000), 3,51 km de routes pour 10 000 habitants. 3 de ses 6 préfectures reçoivent le levier formation (6 auto-écoles).": {
@@ -8892,7 +7320,7 @@
   "relu": false
  },
  "— Oti-Sud n’a aucune auto-école, ni agréée ni recensée, pour 150 376 habitants, à 84,0 km de la plus proche, la plus grande distance du pays. Réseau : 14,4 % sur 131,7 km. En tête du classement dans 4 des 6 tests de robustesse.": {
-  "texte": "⁇  Oti-Sud mexɔa ʋukulawo ƒe suku aɖeke o, eye womexɔa mɔɖolawo ƒe suku aɖeke hã o, eye womekpɔa mɔ ʋukulawo ƒe suku aɖeke hã o, le ame 150,376 siwo le dukɔa me la dome, eye wole ʋukulawo ƒe suku aɖeke me o.",
+  "texte": "⁇  Oti-Sud mexɔa ʋukulawo ƒe suku aɖeke o, eye womeɖenɛ ɖe mɔ̃ dzi kpɔna hã o; le ame 150,376 siwo nɔ afi ma dome la dometɔ ɖeka gomee.",
   "relu": false
  },
  "— Plateaux a le réseau au-dessus de la médiane : 28,0 % de km en mauvais état sur 965,6 km évalués, traversés par 23 tronçons critiques. Pour 1 635 946 habitants, 6 de ses 12 préfectures reçoivent le levier réseau (150,5 km), 7 le levier formation (12 auto-écoles).": {
@@ -8900,7 +7328,7 @@
   "relu": false
  },
  "— Savanes a la formation et la desserte sous la médiane : 4 auto-écoles agréées pour 1 143 520 habitants (0,35 pour 100 000), 4,62 km de routes pour 10 000 habitants. 5 de ses 7 préfectures reçoivent le levier formation (9 auto-écoles), aucune le levier réseau.": {
-  "texte": "⁇  Le Savanes la, ame siwo le hehe xɔm eye wole dɔ wɔm le wo domee nye: ʋukulawo ƒe suku ene siwo xɔ mɔ ɖe ame 1,143,520 (0.35 le ame 100,000 me) dzi, eye mɔwo ƒe kilometa 4,62 le ame 10,000 dzi.",
+  "texte": "⁇  Le Savanes la, ame siwo le hehe xɔm eye wowɔa dɔ na wo dometɔ aɖewoe nye: ʋu ʋukulawo ƒe suku ene si woɖo ɖe dukɔmevi 1,143,520 me (0.35 ɖe 100,000 dzi), mɔtata kilometa 4.62 ɖe 10,000 dzi.",
   "relu": false
  },
  "— Tchamba cumule 34,0 % de km en mauvais état sur 120,3 km évalués (1 tronçon critique) et aucune auto-école agréée pour 200 585 habitants (2 recensées, non agréées), à 31,1 km de la plus proche. En tête du classement dans les 6 tests de robustesse.": {
@@ -8908,7 +7336,7 @@
   "relu": false
  },
  "— Tchaoudjo cumule 36,9 % de km en mauvais état sur 125,7 km évalués (3 tronçons critiques) pour 240 360 habitants ; sa formation n’est pas en déficit (2 auto-écoles agréées, 0,83 pour 100 000 habitants). En tête du classement dans 3 des 6 tests de robustesse : la moins sûre des 10.": {
-  "texte": "⁇  Tchaoudjo ƒe didime le nɔnɔme gbegblẽ me le kilometa 125.7 siwo ŋu wobu akɔnta ɖo me (3 kpekpeme akpa) le ame 240 360 ta me la ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ ƒe agbɔsɔsɔsɔ ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ ƒe agbɔsɔsɔsɔ ƒe agbɔsɔsɔ ƒe agbɔ",
+  "texte": "⁇  Tchaoudjo ƒoa ƒu kilometa 36.9 le ame 125.7 siwo ŋu wobu akɔnta ɖo la dome (3 kpekpeme akpa) na 240 360; eƒe sukudede mebɔ o (2 ʋukulawo ƒe suku, 0.83 ɖe 100,000 ta).",
   "relu": false
  },
  "— Travaux :": {
