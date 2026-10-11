@@ -12,7 +12,7 @@ from plotly.subplots import make_subplots  # noqa: E402
 from composants import (ariane, carte_kpi, constat, entete, export_csv, fenetre_geo, habiller, limite,  # noqa: E402
                         note, pied, rangee_kpi, synthese, titre_bloc, tracer)
 from donnees import contours, contours_regions, couche, fr, lire  # noqa: E402
-from theme import BLEUS, COULEUR_REGION, ENCRE, THEME  # noqa: E402
+from theme import BLEUS, COULEUR_REGION, ENCRE, ROUGE_DRAPEAU, SERIE, THEME  # noqa: E402
 
 ind = lire("07_indicateurs", "indicateurs_07")
 reg = lire("08_priorisation", "regions_08")
@@ -41,16 +41,30 @@ entete("Vue nationale", "La mobilité et la sécurité routière au Togo : où e
 # ---------------------------------------------------------------- Section 1 — 6 chiffres clés
 immat24 = val("O1-01", 2024, "Ensemble")
 motos24 = val("O1-01", 2024, "Moto")
+
+
+def variation(idc, cat, annee, sens_hausse):
+    """Badge de tendance : variation sur un an lue dans indicateurs_07 (aucun calcul autre que le rapport).
+    `sens_hausse` dit ce que signifie une hausse : "pire" (victimes) ou "neutre" (immatriculations)."""
+    v, avant = val(idc, annee, cat), val(idc, annee - 1, cat)
+    pct = (v / avant - 1) * 100
+    signe = "+" if pct > 0 else "−"
+    sens = sens_hausse if pct > 0 else ("mieux" if sens_hausse == "pire" else "neutre")
+    return f"{signe}{fr(abs(pct), 1)} %", f"vs {annee - 1}", sens
+
+
 rangee_kpi("La situation en bref", [
     carte_kpi("Population", fr(pays.Population), "habitants", "La population de référence de tous les taux.",
               periode="2022", icone="population"),
     carte_kpi("Immatriculations", fr(immat24), f"dont {fr(motos24 / immat24 * 100, 1)} % de motos ({fr(motos24)})",
-              "Immatriculations de l'année, pas le parc en circulation.", periode="2024", icone="vehicule"),
+              "Immatriculations de l'année, pas le parc en circulation.", periode="2024", icone="vehicule",
+              tendance=variation("O1-01", "Ensemble", 2024, "neutre")),
     carte_kpi("Morts sur la route", fr(val("O2-01", 2022, "Tués")), "tués déclarés par la police et la gendarmerie",
               f"{fr(val('O2-01', 2022, 'Accidents constatés'))} accidents constatés la même année.", periode="2022",
-              icone="tues"),
+              icone="tues", tendance=variation("O2-01", "Tués", 2022, "pire")),
     carte_kpi("Blessés sur la route", fr(val("O2-01", 2022, "Blessés")), "blessés déclarés",
-              "Accidents déclarés, données nationales seulement.", periode="2022", icone="blesses"),
+              "Accidents déclarés, données nationales seulement.", periode="2022", icone="blesses",
+              tendance=variation("O2-01", "Blessés", 2022, "pire")),
     carte_kpi("Réseau routier évalué", f"{fr(pays['Km évalués'] / 1000, 1)} ", "dont 84 tronçons",
               f"{fr(pays['O3-02'], 1)} % en mauvais état ({fr(pays['Km en mauvais état'], 0)} km).",
               unite="k km", periode="2020", icone="route"),
@@ -117,10 +131,14 @@ pcarte = _table_carte()
 geo = contours("prefectures")
 geo_reg = contours_regions()
 
-gauche, droite = st.columns([1.6, 1], vertical_alignment="top")
+titre_bloc("Le Togo, préfecture par préfecture",
+           "Les 5 régions sont tracées en couleur. Molette ou barre d'outils pour zoomer.")
+constat("Le Togo compte <strong>8 095 498</strong> habitants, très inégalement répartis : le Grand Lomé en "
+        "concentre près du quart. La densité des auto-écoles agréées suit les grandes villes, tandis que "
+        f"<strong style='color:{ROUGE_DRAPEAU}'>23 préfectures</strong> rurales n'en ont aucune.")
+
+gauche, droite = st.columns([1.25, 1], vertical_alignment="top")   # carte resserrée ; légendes et notes à droite
 with gauche:
-    titre_bloc("Le Togo, préfecture par préfecture",
-               "Les 5 régions sont tracées en couleur. Molette ou barre d'outils pour zoomer.")
     couche_choisie = st.radio(
         "Couche", ["Toutes les couches", "Population", "Régions", "Auto-écoles", "Routes classées",
                    "Routes nationales seules"],
@@ -205,9 +223,12 @@ with gauche:
                                                  "displaylogo": False,
                                                  "modeBarButtonsToRemove": ["select2d", "lasso2d"]})
 
+with droite:
+    nb_pref = pcarte.groupby("Région")["code"].nunique()          # préfectures par région (prefectures_10)
     pastilles_reg = "".join(
         f'<span style="display:inline-flex;align-items:center;gap:5px;margin-right:12px;font-size:.74rem">'
-        f'<span style="width:16px;height:0;border-top:3px solid {c};display:inline-block"></span>{r}</span>'
+        f'<span style="width:16px;height:0;border-top:3px solid {c};display:inline-block"></span>{r} '
+        f'({nb_pref[r]} préfectures)</span>'
         for r, c in COULEUR_REGION.items())
     st.markdown(f'<div class="filtres-actifs"><b>Les 5 régions :</b> {pastilles_reg}</div>', unsafe_allow_html=True)
 
@@ -224,21 +245,18 @@ with gauche:
     st.markdown('<div class="filtres-actifs"><b>Permis : données nationales seulement.</b> '
                 '38 531 permis délivrés en 2024, dont 10 165 permis moto. Les permis n\'ont ni territoire, ni âge, ni mois.</div>',
                 unsafe_allow_html=True)
+    st.markdown('<div class="filtres-actifs">Les 5 régions sont tracées en couleur sur toutes les couches (Maritime, '
+                'Plateaux, Centrale, Kara, Savanes). Survolez une préfecture pour sa zone, sa région, sa population, '
+                'ses auto-écoles agréées et l\'état de son réseau.</div>', unsafe_allow_html=True)
+    st.markdown('<div class="filtres-actifs">Réseau : relevé de 2020. Auto-écoles : collecte 2021-2022, activité non '
+                'vérifiée.</div>', unsafe_allow_html=True)
     if st.button("Voir la carte détaillée →", key="vn_lien_carte"):
         st.switch_page("views/carte.py")
-with droite:
-    constat("Le Togo compte <strong>8 095 498</strong> habitants, très inégalement répartis : le Grand Lomé en "
-            "concentre près du quart. La densité des auto-écoles agréées suit les grandes villes, tandis que "
-            "<strong style='color:#eb6834'>23 préfectures</strong> rurales n'en ont aucune.")
-    st.caption("Les 5 régions sont tracées en couleur sur toutes les couches (Maritime, Plateaux, Centrale, Kara, "
-               "Savanes). Survolez une préfecture pour sa zone, sa région, sa population, ses auto-écoles agréées et "
-               "l'état de son réseau.")
-    st.caption("Réseau : relevé de 2020, niveau C. Auto-écoles : collecte 2021-2022, activité non vérifiée.")
 
 
 # ---------------------------------------------------------------- Section 3 — 4 cartes de thème
 st.markdown("")
-titre_bloc("Les quatre thèmes de l'énoncé")
+titre_bloc("Les quatre thèmes confirmés")
 
 
 def _mini(fig, cle, hauteur=110):
@@ -252,7 +270,7 @@ def _mini(fig, cle, hauteur=110):
 c1, c2, c3, c4 = st.columns(4)
 mult = 4.56
 with c1:
-    st.markdown('<div class="reco-theme"><span class="reco-pastille" style="background:#dbeafe">🚗</span>'
+    st.markdown('<div class="reco-theme mob"><span class="reco-pastille" style="background:#dbeafe">🚗</span>'
                 '<span class="reco-theme-lib" style="color:#1c5cab">Mobilité</span></div>', unsafe_allow_html=True)
     st.markdown(f"**{fr(immat24)}** immatriculations (2024)  \n"
                 f"**×{fr(mult, 2)}** en 20 ans (2002 → 2022)  \n"
@@ -263,7 +281,7 @@ with c1:
     ens = ens.sort_values("Année")
     f = go.Figure(go.Scatter(x=ens["Année"], y=ens["Valeur"], mode="lines",
                              line=dict(color=THEME["Mobilité"], width=2), fill="tozeroy",
-                             fillcolor="rgba(42,120,214,0.12)"))
+                             fillcolor="rgba(36,116,198,0.12)"))
     for an in (1995, 2004):
         f.add_vline(x=an, line=dict(color="#b9b6ad", width=1, dash="dot"))
     _mini(f, "vn_mini_mob")
@@ -272,7 +290,7 @@ with c1:
         st.session_state["evolutions_rang"] = 1
         st.switch_page("views/evolutions.py")
 with c2:
-    st.markdown('<div class="reco-theme"><span class="reco-pastille" style="background:#fef3c7">🚦</span>'
+    st.markdown('<div class="reco-theme sec"><span class="reco-pastille" style="background:#fef3c7">🚦</span>'
                 '<span class="reco-theme-lib" style="color:#b45309">Sécurité routière</span></div>', unsafe_allow_html=True)
     st.markdown(f"**{fr(val('O2-01', 2022, 'Tués'))}** tués (2022)  \n"
                 f"**{fr(val('O2-01', 2022, 'Accidents constatés'))}** accidents constatés (2022)  \n"
@@ -289,7 +307,7 @@ with c2:
         st.session_state["evolutions_rang"] = 2
         st.switch_page("views/evolutions.py")
 with c3:
-    st.markdown('<div class="reco-theme"><span class="reco-pastille" style="background:#fce7f3">🛣️</span>'
+    st.markdown('<div class="reco-theme res"><span class="reco-pastille" style="background:#fce7f3">🛣️</span>'
                 '<span class="reco-theme-lib" style="color:#b4451a">Réseau</span></div>', unsafe_allow_html=True)
     st.markdown(f"**{fr(pays['Km évalués'], 0)} km** évalués (relevé de 2020)  \n"
                 f"**{fr(pays['O3-02'], 1)} %** en mauvais état ({fr(pays['Km en mauvais état'], 0)} km)  \n"
@@ -303,11 +321,10 @@ with c3:
     f.update_layout(height=110, margin=dict(l=0, r=0, t=0, b=0), paper_bgcolor="#ffffff", showlegend=False)
     st.plotly_chart(f, key="vn_mini_res", config={"displayModeBar": False, "staticPlot": True})
     st.caption("Part en mauvais état par préfecture.")
-    st.caption("Relevé de 2020, niveau C.")
     if st.button("Voir le détail →", key="vn_t_res"):
         st.switch_page("views/carte.py")
 with c4:
-    st.markdown('<div class="reco-theme"><span class="reco-pastille" style="background:#e2f4ec">🏫</span>'
+    st.markdown('<div class="reco-theme couv"><span class="reco-pastille" style="background:#e2f4ec">🏫</span>'
                 '<span class="reco-theme-lib" style="color:#11613f">Couverture</span></div>', unsafe_allow_html=True)
     st.markdown("**132** auto-écoles agréées, sur 272 recensées  \n"
                 "**23 sur 39** préfectures sans auto-école agréée  \n"
@@ -326,31 +343,38 @@ with c4:
 
 # ---------------------------------------------------------------- Section 4 — Permis 2024
 st.markdown("")
-g, d = st.columns([1.5, 1], vertical_alignment="top")
-with g:
-    titre_bloc("Permis de conduire délivrés en 2024", "Par catégorie. L'objectif 1 demande les permis par catégorie.")
+titre_bloc("Permis de conduire délivrés", "Total et décomposition par catégorie")
+g_tot, d_graph = st.columns([1, 3.2], vertical_alignment="center")
+with d_graph:
     permis = NAT[(NAT.ID == "O1-06") & (NAT["Année"].astype(str) == "2024")][["Catégorie", "Valeur"]].copy()
     lib = {"A": "A — Moto", "B": "B — Voiture légère", "C": "C — Poids lourd", "D": "D — Transport en commun",
            "E": "E — Semi-remorque", "F": "F — Voiture spéciale"}
     permis["lib"] = permis["Catégorie"].map(lib)
     permis = permis.sort_values("Valeur")
-    fig = go.Figure(go.Bar(x=permis.Valeur, y=permis.lib, orientation="h", marker_color=BLEUS[2],
-                           text=[fr(v) for v in permis.Valeur], textposition="outside"))
+    # Une couleur par catégorie, celle de la page Évolutions (PERMIS_COUL) ; E, vert de C éclairci (pointillé là-bas)
+    coul_permis = {"A": "#2a78d6", "B": "#eb6834", "C": "#1baf7a", "E": "#8fd7bd", "D": "#eda100", "F": "#8a8780"}
+    fig = go.Figure(go.Bar(x=permis.Valeur, y=permis.lib, orientation="h",
+                           marker_color=[coul_permis[c] for c in permis["Catégorie"]]))
+    for lib_c, v in zip(permis.lib, permis.Valeur):          # chiffres alignés à droite, hors des barres
+        fig.add_annotation(x=1, xref="paper", xanchor="left", xshift=10, y=lib_c, text=f"<b>{fr(v)}</b>",
+                           showarrow=False, font=dict(size=12, color=ENCRE))
     habiller(fig, 300, xaxis=dict(gridcolor="#efece4"), yaxis=dict(gridcolor="rgba(0,0,0,0)"), legend=dict(x=0, y=1))
+    fig.update_layout(margin=dict(r=70))
     tracer(fig, "vn_permis")
-    note("Les permis moto ont bondi : 4 837 en 2022 et 10 165 en 2024, contre 211 en 2021.", forte=True)
-with d:
-    st.markdown("")
-    st.markdown(f'<div class="synthese-chiffre" style="font-size:3rem">{fr(sum(permis.Valeur))}</div>'
-                '<div class="synthese-legende">permis délivrés en 2024, toutes catégories</div>', unsafe_allow_html=True)
-    st.caption("Niveau A. Données nationales : les permis n'ont ni territoire, ni âge.")
+with g_tot:
+    st.markdown(f'<div class="total-carte"><div class="total-chiffre">{fr(sum(permis.Valeur))}</div>'
+                '<div class="total-legende">permis délivrés en 2024, toutes catégories</div>'
+                '<div class="total-note">Niveau A. Données nationales : les permis n\'ont ni territoire, ni âge.</div>'
+                '</div>', unsafe_allow_html=True)
+st.markdown('<div class="note-carte">Les permis moto ont bondi : 4 837 en 2022 et 10 165 en 2024, contre '
+            '211 en 2021.</div>', unsafe_allow_html=True)
 
 
 # ---------------------------------------------------------------- Section 5 — Immatriculations et permis (2 étages)
 st.markdown("")
 titre_bloc("Immatriculations et permis, 1990–2024",
            "Deux étages sur la même échelle des années : une date se lit sur les deux séries à la fois.")
-COUL = {"Moto": "#2a78d6", "Voiture": "#eb6834", "Poids lourd": "#1baf7a", "Bus et car": "#eda100", "Autres": "#e87ba4"}
+COUL = {k: SERIE[k] for k in ("Moto", "Voiture", "Poids lourd", "Bus et car", "Autres")}
 PERMIS_COUL = {"A": "#2a78d6", "B": "#eb6834", "C": "#1baf7a", "E": "#1baf7a", "D": "#eda100", "F": "#8a8780"}
 PERMIS_TRAIT = {"A": "solid", "B": "solid", "C": "solid", "E": "dash", "D": "solid", "F": "dot"}
 
@@ -409,9 +433,13 @@ fig.add_annotation(x=1998, y=0.46, xref="x domain", yref="paper", text="Permis n
 fig.add_annotation(x=2013, y=0.06, yref="y domain", text="2013 non renseignée", showarrow=False,
                    font=dict(color="#8a8780", size=9), row=2, col=1)
 tracer(fig, "vn_immat_permis")
-note("En 2021, 310 motos ont été immatriculées pour un permis moto délivré ; en 2024, 6.", forte=True)
-note("Une date situe une variation ; elle ne l'explique pas. Repères : ① 2019 permis moto obligatoire · "
-     "② 2022 décret d'application du code de la route · ③ 2023 tournée d'immatriculation des motos.")
+n_rouge, n_reperes = st.columns([1, 1.6], vertical_alignment="top")
+n_rouge.markdown('<div class="note-carte blanche risque">En 2021, on comptait <strong>310 immatriculations de motos '
+                 'pour chaque permis moto délivré</strong>, contre seulement <strong>6</strong> en 2024.</div>',
+                 unsafe_allow_html=True)
+n_reperes.markdown('<div class="note-carte blanche">Une date situe une variation ; elle ne l\'explique pas.<br>'
+            '<b>Repères :</b> ① 2019 permis moto obligatoire · ② 2022 décret d\'application du code de la route · '
+            '③ 2023 tournée d\'immatriculation des motos.</div>', unsafe_allow_html=True)
 
 etage_haut = immat.pivot(index="Année", columns="Catégorie", values="Valeur")
 etage_bas = NAT[NAT.ID == "O1-06"].copy()
@@ -426,23 +454,25 @@ export_csv(etage_haut.join(etage_bas, how="outer").reset_index(),
 st.markdown("")
 g, d = st.columns([1.3, 1], vertical_alignment="top")
 with g:
-    titre_bloc("À retenir")
-    for m in ["**Les immatriculations ont plus que quadruplé en 20 ans** : ×4,56 de 2002 à 2022.",
-              "**Les motos portent la hausse** : 80,6 % des immatriculations supplémentaires entre 2002 et 2022.",
-              "**Plus de véhicules, pas une route plus dangereuse** : les accidents déclarés augmentent (+9,4 % entre "
-              "2010–2012 et 2022–2024), mais les 6 taux baissent.",
-              "**60 % des tués de 2021 sont des usagers de deux et trois-roues motorisés**, un peu plus que leur part "
-              "du parc (1,01 à 1,10 fois).",
-              "**7 questions restent sans réponse**, faute d'accidents par préfecture, par mois et par âge."]:
-        st.markdown(f"- {m}")
-with d:
+    messages = [
+        "<strong>Les immatriculations ont plus que quadruplé en 20 ans</strong> : ×4,56 de 2002 à 2022.",
+        "<strong>Les motos portent la hausse</strong> : 80,6 % des immatriculations supplémentaires entre 2002 et 2022.",
+        "<strong>Plus de véhicules, pas une route plus dangereuse</strong> : les accidents déclarés augmentent "
+        "(+9,4 % entre 2010–2012 et 2022–2024), mais les 6 taux baissent.",
+        "<strong>60 % des tués de 2021 sont des usagers de deux et trois-roues motorisés</strong>, un peu plus que "
+        "leur part du parc (1,01 à 1,10 fois).",
+        "<strong>7 questions restent sans réponse</strong>, faute d'accidents par préfecture, par mois et par âge."]
+    puces = "".join(f'<li><span class="retenir-num">{i}</span><span>{m}</span></li>' for i, m in enumerate(messages, 1))
+    st.markdown(f'<div class="retenir"><div class="retenir-titre">À retenir</div><ol>{puces}</ol></div>',
+                unsafe_allow_html=True)
+with d, st.container(key="vn_synthese"):       # carte verte : synthèse et bouton, même hauteur que « À retenir »
     synthese("8 095 498", "habitants, recensement de 2022",
              ["5 préfectures cumulent un réseau dégradé et aucune auto-école agréée (641 955 habitants).",
               "15 recommandations, dont 3 en priorité haute.",
               "23 préfectures sur 39 sans auto-école agréée (2 932 492 habitants)."])
-    if st.button("Voir les recommandations →", key="vn_lien_reco"):
+    if st.button("Voir les recommandations →", key="vn_t_reco"):
         st.switch_page("views/recommandations.py")
 limite("Les accidents ne sont publiés qu'au niveau national. Les volumes et les taux portent sur les accidents "
        "déclarés par la police et la gendarmerie, pas sur l'ensemble des accidents. Les taux par véhicule dépendent "
-       "d'un parc estimé (niveau C). Le coût des actions n'est pas dans les données.")
+       "d'un parc estimé. Le coût des actions n'est pas dans les données.", titre="Limite")
 pied()
