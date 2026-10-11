@@ -216,3 +216,12 @@ Couleurs fixes par donnée, dans `theme.py`, pour qu'un indicateur garde sa coul
 - **i18n** : les blocs `<style>…</style>` sont désormais protégés comme un tout (au lieu d'exclure toute la chaîne),
   pour que le texte qui les entoure se traduise. Termes de verdict et d'interface fixés à la main en anglais.
 
+## 16. Évolutions — tous les onglets (chiffres clés)
+
+- **Liseré coloré en bas de chaque carte** de chiffre clé, sur les 4 onglets : Synthèse par verdict (vert/jaune/gris),
+  Mobilité bleu, Sécurité routière orange, Réseau jaune-or (`carte_kpi(bordure=…)`).
+- **Chiffre, phrase et constat (réserve) centrés** dans chaque carte (`rangee_kpi(centre=True)` ; la réserve est
+  centrée et sans filet séparateur en mode centré).
+- Carte « Confirmées » : texte « L'énoncé du défi est largement vérifié. » remplacé par
+  « Les données confirment les principaux constats. »
+

@@ -235,14 +235,14 @@ with ong[0]:
     n_nt = (hyp.Verdict == "non testable").sum()
     rangee_kpi("Les 17 vérifications et hypothèses du cadrage", [
         carte_kpi("Confirmées", str(n_conf), "sur 17 vérifications et hypothèses",
-                  "L'énoncé du défi est largement vérifié.", etiquette="A", ton="ok",
-                  pastille=("✅", VERDICT_BADGE["confirmée"][0])),
+                  "Les données confirment les principaux constats.", etiquette="A", ton="ok",
+                  pastille=("✅", VERDICT_BADGE["confirmée"][0]), bordure=VERDICT_COUL["confirmée"]),
         carte_kpi("Infirmées ou nuancées", f"{n_inf + n_nua}", f"{n_inf} infirmées, {n_nua} nuancée",
                   "« Les accidents augmentent » est nuancé : volume en hausse, taux en baisse.", etiquette="A",
-                  pastille=("⚠️", VERDICT_BADGE["nuancée"][0])),
+                  pastille=("⚠️", VERDICT_BADGE["nuancée"][0]), bordure=VERDICT_COUL["nuancée"]),
         carte_kpi("Non testables", str(n_nt), "faute de données par territoire, par mois ou par âge",
                   "7 questions restent ouvertes : voir la page Méthodologie.", etiquette="C", ton="alerte",
-                  pastille=("❓", VERDICT_BADGE["non testable"][0])),
+                  pastille=("❓", VERDICT_BADGE["non testable"][0]), bordure=VERDICT_COUL["non testable"]),
     ], centre=True)
     constat("L'énoncé est vérifié, sauf « les accidents augmentent », qui est <strong>nuancé</strong> : les accidents "
             "déclarés montent, mais les six taux de risque baissent sur la période.")
@@ -352,12 +352,12 @@ with ong[1]:
     motos24 = valn("O1-01", 2024, "Moto")
     rangee_kpi("Mobilité — ce qui change", [
         carte_kpi("Immatriculations sur 20 ans", "×4,56", "de 2002 à 2022",
-                  "×1,83 en 2024, depuis 2004 (année de rupture de série).", etiquette="B"),
+                  "×1,83 en 2024, depuis 2004 (année de rupture de série).", etiquette="B", bordure=THEME["Mobilité"]),
         carte_kpi("Croissance annuelle moyenne", "7,8 %", "par an, 1990–2024",
-                  "Motos : 11,7 % par an ; voitures : 4,2 %.", etiquette="B"),
+                  "Motos : 11,7 % par an ; voitures : 4,2 %.", etiquette="B", bordure=THEME["Mobilité"]),
         carte_kpi("Part des motos", "74,4 %", "des immatriculations de 2024",
-                  "22,2 % en 1990.", etiquette="B", ton="ok"),
-    ])
+                  "22,2 % en 1990.", etiquette="B", ton="ok", bordure=THEME["Mobilité"]),
+    ], centre=True)
     g, d = st.columns([1.7, 1], vertical_alignment="top")
     with g:
         titre_bloc("Immatriculations par groupe, 1990–2024")
@@ -480,12 +480,13 @@ with ong[1]:
 with ong[2]:
     rangee_kpi("Sécurité routière — ce qui change", [
         carte_kpi("Tués pour 100 000 habitants", "−29,4 %", "10,45 en 2010–2012, 7,38 en 2022–2024",
-                  "Le risque par habitant baisse.", etiquette="C", ton="ok"),
+                  "Le risque par habitant baisse.", etiquette="C", ton="ok", bordure=THEME["Sécurité routière"]),
         carte_kpi("Accidents constatés par an", "+9,4 %", "6 381,7 puis 6 980,7",
-                  "Le volume monte : plus de véhicules.", etiquette="A"),
+                  "Le volume monte : plus de véhicules.", etiquette="A", bordure=THEME["Sécurité routière"]),
         carte_kpi("Tués estimés par l'OMS", "×2,63", "le taux déclaré de 2021 : 22,7 contre 8,62 /100 000",
-                  "L'estimation de l'OMS ne corrige pas les tués déclarés.", etiquette="C", ton="alerte"),
-    ])
+                  "L'estimation de l'OMS ne corrige pas les tués déclarés.", etiquette="C", ton="alerte",
+                  bordure=THEME["Sécurité routière"]),
+    ], centre=True)
     g, d = st.columns([1.7, 1], vertical_alignment="top")
     with g:
         titre_bloc("Les 6 taux : 2010–2012 face à 2022–2024", "Les 3 taux du cadre, puis les 3 compléments à l'énoncé.")
@@ -574,12 +575,13 @@ with ong[2]:
 with ong[3]:
     rangee_kpi("Réseau — ce qui change", [
         carte_kpi("Réseau évalué", "3 163", "km de routes nationales, relevé de 2020",
-                  "84 tronçons relevés.", etiquette="C", unite=" km"),
+                  "84 tronçons relevés.", etiquette="C", unite=" km", bordure=THEME["Réseau"]),
         carte_kpi("En mauvais état", "21,2 %", "669,34 km",
-                  "Part des km évalués.", etiquette="C", ton="alerte"),
+                  "Part des km évalués.", etiquette="C", ton="alerte", bordure=THEME["Réseau"]),
         carte_kpi("Tronçons en mauvais état", "49 sur 84", "34 revêtus, 15 non revêtus",
-                  "Le mauvais état se concentre sur ces tronçons.", etiquette="C", ton="alerte"),
-    ])
+                  "Le mauvais état se concentre sur ces tronçons.", etiquette="C", ton="alerte",
+                  bordure=THEME["Réseau"]),
+    ], centre=True)
     g, d = st.columns([1.8, 1], vertical_alignment="top")
     with g:
         titre_bloc("Les 84 tronçons relevés et leur état", "Vue par défaut : les 49 tronçons en mauvais état.")

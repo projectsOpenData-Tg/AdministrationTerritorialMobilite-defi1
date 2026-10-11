@@ -3211,10 +3211,6 @@
   "texte": "Dɔwɔƒe si kpɔa lãmesẽnyawo gbɔ ƒe akɔntabubuwo meyɔ ame siwo wowu la ŋu nyuie o.",
   "relu": false
  },
- "L'énoncé du défi est largement vérifié.": {
-  "texte": "Míekpɔe be nu si gblɔm míele le nu si dzɔ ŋu la nye nyateƒe.",
-  "relu": false
- },
  "L'énoncé est vérifié, sauf « les accidents augmentent », qui est": {
   "texte": "Wotsɔ nyaa ɖo kpe edzi, negbe ɖeko ʋufɔkuwo le dzidzim ɖe edzi",
   "relu": false
@@ -3585,6 +3581,10 @@
  },
  "Les données": {
   "texte": "Nyatakakawo",
+  "relu": false
+ },
+ "Les données confirment les principaux constats.": {
+  "texte": "Nyatakakawo ɖo kpe nu siwo ŋu woke ɖo vevie la dzi.",
   "relu": false
  },
  "Les formules": {

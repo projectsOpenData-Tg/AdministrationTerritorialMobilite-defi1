@@ -113,7 +113,8 @@ def icone_kpi(nom: str) -> str:
 
 def carte_kpi(libelle: str, valeur: str, phrase: str, contexte: str = "", reserve: str = "", etiquette: str | None = None,
               ton: str = "neutre", unite: str = "", icone: str | None = None, periode: str = "",
-              tendance: tuple[str, str, str] | None = None, pastille: tuple[str, str] | None = None) -> str:
+              tendance: tuple[str, str, str] | None = None, pastille: tuple[str, str] | None = None,
+              bordure: str | None = None) -> str:
     """Chiffre clé (maquette §8.4) : la valeur se lit avec sa phrase ; la réserve, en bas, dit ce que le chiffre ne
     mesure pas (aucune si vide). `icone` (clé de ICONES) ajoute la pastille du thème à gauche du libellé ; `periode`
     s'écrit entre parenthèses sous le libellé ; `tendance` = (variation, référence, sens) s'affiche en badge sous la
@@ -132,7 +133,8 @@ def carte_kpi(libelle: str, valeur: str, phrase: str, contexte: str = "", reserv
         fleche = "↗" if variation.startswith("+") else "↘" if variation.startswith(("−", "-")) else "→"
         tend = (f'<span class="kpi-tendance {sens}">{fleche} {_insecable(html.escape(variation))} '
                 f'<small>{html.escape(reference)}</small></span>')
-    bas = f' style="border-bottom-color:{ICONES[icone][1]}"' if icone else ""   # liseré du bas, couleur du thème
+    coul_bas = bordure or (ICONES[icone][1] if icone else None)   # liseré du bas : couleur demandée ou celle de l'icône
+    bas = f' style="border-bottom-color:{coul_bas}"' if coul_bas else ""
     return (f'<div class="kpi"{bas}><div class="kpi-tete">{ico}<div class="kpi-libelle" lang="fr">{html.escape(libelle)}{per}</div>'
             f'{tag}</div><div class="kpi-centre">'
             f'<div class="kpi-valeur">{_insecable(html.escape(valeur))}{u}</div>{tend}'

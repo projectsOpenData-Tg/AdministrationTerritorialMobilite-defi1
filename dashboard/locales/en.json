@@ -3221,10 +3221,6 @@
   "texte": "The WHO estimate does not correct the reported deaths.",
   "relu": false
  },
- "L'énoncé du défi est largement vérifié.": {
-  "texte": "The statement of the challenge is widely verified.",
-  "relu": false
- },
  "L'énoncé est vérifié, sauf « les accidents augmentent », qui est": {
   "texte": "The statement is verified, except  ⁇  accidents increase  ⁇ , which is",
   "relu": false
@@ -3597,6 +3593,10 @@
  },
  "Les données": {
   "texte": "The data",
+  "relu": false
+ },
+ "Les données confirment les principaux constats.": {
+  "texte": "The data confirm the main findings.",
   "relu": false
  },
  "Les formules": {

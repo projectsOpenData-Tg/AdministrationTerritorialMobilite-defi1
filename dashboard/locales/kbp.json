@@ -3211,10 +3211,6 @@
   "texte": "WHO ñɩɣ niye se ɛyaa mba pasɩba yɔ, patɩpɩzɩ nɛ pala mbʋ.",
   "relu": false
  },
- "L'énoncé du défi est largement vérifié.": {
-  "texte": "Pɩtʋʋ fɛyɩ se tɔm ndʋ tɩ-tɔm pɔyɔɔdɩ yɔ, tɩkɛ toovenim.",
-  "relu": false
- },
  "L'énoncé est vérifié, sauf « les accidents augmentent », qui est": {
   "texte": "Tɔm ndʋ tɩ-tɔm pɔyɔɔdɩ yɔ tɩkɛ toovenim, pɩtasɩnɩ se  ⁇  asɛyʋʋ wɛɛ nɛ pɩpaɣlɩɣ",
   "relu": false
@@ -3585,6 +3581,10 @@
  },
  "Les données": {
   "texte": "Tɔm ndʋ tɩlɩnɩ tɔm ndʋ tɩ-taa yɔ",
+  "relu": false
+ },
+ "Les données confirment les principaux constats.": {
+  "texte": "Tɔm ndʋ tɩ-taa lɛ, tɩwɩlɩɣ se tɔm ndʋ tɩ-tɔm kɩlɩ cɛyʋʋ yɔ, tɩkɛ toovenim.",
   "relu": false
  },
  "Les formules": {

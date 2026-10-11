@@ -304,6 +304,9 @@ div.st-key-topbar_droite [data-testid="stMarkdownContainer"] { display: flex; ju
 .note-carte.lisere-vert { border-left-color: #16834a; } .note-carte.lisere-vert .info-i { background: #16834a; }
 .note-carte.lisere-rouge { border-left-color: #ce1126; } .note-carte.lisere-rouge .info-i { background: #ce1126; }
 /* Chiffres clés centrés (rangee_kpi(centre=True)) */
+.kpi-grille.centre .kpi { border-bottom-width: 3px; }
+.kpi-grille.centre .kpi-reserve { text-align: center; border-top: 0; margin-top: 8px; color: #64748b; }
+.kpi-grille.centre .kpi-contexte { text-align: center; }
 .kpi-grille.centre .kpi-centre { flex: 1 0 auto; display: flex; flex-direction: column; align-items: center; text-align: center;
   gap: 6px; padding: 8px 0 4px; }
 /* Carte horizontale à liseré bleu : chiffre à gauche, texte à droite */
