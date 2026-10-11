@@ -15,12 +15,12 @@ import streamlit as st  # noqa: E402
 from composants import (ariane, carte_kpi, constat, entete, export_csv, habiller, limite, note, pied,  # noqa: E402
                         rangee_kpi, synthese, titre_bloc, tracer)
 from donnees import fr, lire  # noqa: E402
-from theme import COULEUR_REGION, COULEUR_ZONE, ENCRE, ETAT  # noqa: E402
+from theme import COULEUR_REGION, COULEUR_ZONE, ENCRE, ETAT, ROUGE_DRAPEAU  # noqa: E402
 
 # Couleur de priorité, calée sur les valeurs réelles de la colonne (Haute / Moyenne / Aucune action).
 PRIO_COUL = {"Haute": "#0d366b", "Moyenne": "#3987e5", "Aucune action": "#b9b6ad"}
 # Un seuil franchi, une couleur (palette validée, 11 §4.1).
-SEUIL_COUL = {"réseau": "#bb537d", "formation": "#4a3aa7", "desserte": "#eda100"}
+SEUIL_COUL = {"réseau": "#bb537d", "formation": "#4a3aa7", "desserte": "#fcd116"}   # desserte : jaune drapeau
 # Lisibilité du texte inscrit dans une barre, selon la clarté de la couleur d'état.
 PALIERS_KM = [(0, 10, "moins de 10 km", "#11613f"), (10, 20, "10 à 20 km", "#ab6300"),
               (20, 30, "20 à 30 km", "#cb4b0c"), (30, 40, "30 à 40 km", "#e34948"),
@@ -41,7 +41,7 @@ def _palier_km(v) -> int:
 
 def _badge(texte: str, couleur: str) -> str:
     """Pastille colorée. Le texte passe en blanc sur un fond sombre, en encre sur un fond clair."""
-    clair = couleur in ("#eda100", "#b9b6ad", "#cde2fb")
+    clair = couleur in ("#eda100", "#fcd116", "#b9b6ad", "#cde2fb")
     return (f'<span style="display:inline-block;background:{couleur};'
             f'color:{"#141413" if clair else "#ffffff"};border-radius:999px;padding:1px 7px;'
             f'font-size:.69rem;font-weight:600;margin:1px 3px 1px 0;white-space:nowrap">'
@@ -88,100 +88,102 @@ def _resume(code: str) -> str:
 
 ariane("Comparaison territoriale")
 entete("Comparaison territoriale", "Quels territoires sont les moins bien équipés ?",
-       "La <strong>Centrale</strong> est la seule zone — et la seule région — qui cumule un réseau dégradé "
-       "(<strong>40,3 %</strong> de routes en mauvais état) et un déficit de formation. <strong>23 préfectures "
-       "sur 39</strong> n'ont aucune auto-école agréée ; <strong>13</strong> ont un réseau dégradé.")
+       f"La <strong style='color:{COULEUR_ZONE['Centrale']}'>Centrale</strong> est la seule zone — et la seule région — "
+       f"qui cumule un réseau dégradé (<strong style='color:{ROUGE_DRAPEAU}'>40,3 %</strong> de routes en mauvais état) "
+       "et un déficit de formation.<br>"
+       f"<strong style='color:{ROUGE_DRAPEAU}'>23 préfectures sur 39</strong> n'ont aucune auto-école agréée ; "
+       f"<strong style='color:{ROUGE_DRAPEAU}'>13</strong> ont un réseau dégradé.", carte=True)
 
-# ------------------------------------------------------------------ Section 1 — Maille
-titre_bloc("Choisir la maille", "Les objectifs 3 et 4 demandent ces mesures par région et par préfecture.")
+# ------------------------------------------------------------------ Section 1 — 3 chiffres clés (nationaux)
+rangee_kpi("Trois territoires à surveiller (chiffres nationaux)", [
+    carte_kpi("Préfectures au réseau dégradé", "13", "plus de 22,13 % de routes en mauvais état",
+              "2 868 523 habitants concernés.", etiquette="C", ton="alerte", pastille=("🛣️", "#fce7f3")),
+    carte_kpi("Préfectures sans auto-école agréée", "23 sur 39", "aucune auto-école agréée",
+              "2 932 492 habitants ; 15 n'en ont aucune, même non agréée (1 822 046 hab.).", etiquette="B", ton="alerte",
+              pastille=("🏫", "#e2f4ec")),
+    carte_kpi("Préfectures loin d'une auto-école", "26 sur 39", "chef-lieu à plus de 10 km de la plus proche agréée",
+              "3 482 856 habitants. Distance depuis le chef-lieu (un point central pour 9 préfectures).",
+              etiquette="C", ton="alerte", pastille=("📍", "#dbeafe")),
+])
+
+# ------------------------------------------------------------------ Section 2 — Maille
+titre_bloc("Choisir la maille")
 maille = st.radio("Maille", ["Zones (6)", "Régions (5)", "Préfectures (39)"], horizontal=True,
                   label_visibility="collapsed", key="cmp_maille")
 
-# ------------------------------------------------------------------ Section 2 — 3 chiffres clés (nationaux)
-rangee_kpi("Trois territoires à surveiller (chiffres nationaux)", [
-    carte_kpi("Préfectures au réseau dégradé", "13", "plus de 22,13 % de routes en mauvais état",
-              "2 868 523 habitants concernés.", etiquette="C", ton="alerte"),
-    carte_kpi("Préfectures sans auto-école agréée", "23 sur 39", "aucune auto-école agréée",
-              "2 932 492 habitants ; 15 n'en ont aucune, même non agréée (1 822 046 hab.).", etiquette="B", ton="alerte"),
-    carte_kpi("Préfectures loin d'une auto-école", "26 sur 39", "chef-lieu à plus de 10 km de la plus proche agréée",
-              "3 482 856 habitants. Distance depuis le chef-lieu (un point central pour 9 préfectures).",
-              etiquette="C", ton="alerte"),
-])
-
 # ------------------------------------------------------------------ Section 3 — Réseau et formation (nuage)
 st.markdown("")
-gauche, droite = st.columns([1.7, 1], vertical_alignment="top")
-with gauche:
-    titre_bloc("Réseau et formation", "Part de routes en mauvais état (horizontal) × auto-écoles agréées "
-               "pour 100 000 habitants (vertical). Taille : population.")
-    if maille.startswith("Préfectures"):
-        d = cla.copy()
-        d = d[d["O3-02"].notna()]  # Mô (aucune route classée) : part non définie, non placée
-        if f_zones:
-            d = d[d["Zone"].isin(f_zones)]
-        if f_prio:
-            # la priorité vient du 10 ; jointure par préfecture
-            prio = pref10.set_index("Préfecture")["Priorité"]
-            d = d[d["Préfecture"].map(prio).isin(f_prio)]
-        seuil = st.slider("Seuil — part de routes en mauvais état (%)", 0.0, 100.0, 22.13, 0.5, key="cmp_seuil")
-        fig = go.Figure()
+titre_bloc("Réseau et formation", "Part de routes en mauvais état (horizontal) × auto-écoles agréées "
+           "pour 100 000 habitants (vertical). Taille : population.")
+constat("La <strong style='color:#4a3aa7'>Centrale</strong> est seule à franchir les seuils du réseau "
+        "<em>et</em> de la formation : <strong>40,3 %</strong> de routes en mauvais état et "
+        "<strong>0,50</strong> auto-école agréée pour 100 000 habitants.")
+st.caption("Niveau C : état relevé en 2020, activité des auto-écoles non publiée.")
+
+if maille.startswith("Préfectures"):
+    d = cla.copy()
+    d = d[d["O3-02"].notna()]  # Mô (aucune route classée) : part non définie, non placée
+    if f_zones:
+        d = d[d["Zone"].isin(f_zones)]
+    if f_prio:
+        # la priorité vient du 10 ; jointure par préfecture
         prio = pref10.set_index("Préfecture")["Priorité"]
-        for p, coul in PRIO_COUL.items():
-            s = d[d["Préfecture"].map(prio) == p]
-            fig.add_trace(go.Scatter(
-                x=s["O3-02"], y=s["O4-05"], mode="markers", name=p,
-                marker=dict(size=(s["Population"] / 9000).clip(6, 42), color=coul, line=dict(width=0.6, color="#ffffff"),
-                            opacity=0.85),
-                text=s["Préfecture"], customdata=s["Population"],
-                hovertemplate="<b>%{text}</b><br>Mauvais état : %{x:.1f} %<br>Auto-écoles /100 000 : %{y:.2f}"
-                              "<br>Population : %{customdata:,.0f}<extra></extra>"))
-        habiller(fig, 440, xaxis=dict(title="Part en mauvais état (%)", gridcolor="#efece4"),
-                 yaxis=dict(title="Auto-écoles agréées / 100 000 hab.", gridcolor="#efece4"),
-                 legend=dict(orientation="h", y=1.12, x=0), margin=dict(l=10, r=10, t=46, b=10))
-        fig.add_vline(x=seuil, line_color="#e34948", line_width=2.2, line_dash="dash",
-                      annotation_text=f"seuil : {fr(seuil, 2)} % de km en mauvais état",
-                      annotation_position="top right",
-                      annotation_font=dict(color="#e34948", size=11))
-        tracer(fig, "cmp_nuage")
-        au_dela = (d["O3-02"] > seuil).sum()
-        pop_dela = int(d.loc[d["O3-02"] > seuil, "Population"].sum())
-        note(f"Au seuil de {fr(seuil, 2)} %, {au_dela} préfecture(s) au-delà, {fr(pop_dela)} habitants. "
-             "Mô (aucune route classée, part non définie) n'est pas placée.")
-    else:
-        est_zone = maille.startswith("Zones")
-        d = reg[reg.Maille == ("Zone" if est_zone else "Région")].copy()
-        if f_zones and est_zone:
-            d = d[d["Territoire"].isin(f_zones)]
-        fig = go.Figure()
-        for _, r in d.iterrows():
-            coul = COULEUR_ZONE.get(r["Territoire"], ENCRE)
-            fig.add_trace(go.Scatter(
-                x=[r["O3-02"]], y=[r["O4-05"]], mode="markers+text", name=r["Territoire"],
-                marker=dict(size=(r["Population"] / 60000 + 10), color=coul, line=dict(width=0.8, color="#ffffff")),
-                text=[r["Territoire"]], textposition="top center", textfont=dict(size=10),
-                hovertemplate=f"<b>{r['Territoire']}</b><br>Mauvais état : {fr(r['O3-02'], 1)} %"
-                              f"<br>Auto-écoles /100 000 : {fr(r['O4-05'], 2)}<extra></extra>"))
-        habiller(fig, 440, xaxis=dict(title="Part en mauvais état (%)", gridcolor="#efece4"),
-                 yaxis=dict(title="Auto-écoles agréées / 100 000 hab.", gridcolor="#efece4"), showlegend=False,
-                 margin=dict(l=10, r=10, t=46, b=10))
-        # Les seuils de cette maille sont les médianes du classement : tracées, puisque le curseur y est masqué.
-        libelle_maille = "6 zones" if est_zone else "5 régions"
-        med_res, med_for = d["O3-02"].median(), d["O4-05"].median()
-        fig.add_vline(x=med_res, line_color="#e34948", line_width=2, line_dash="dash",
-                      annotation_text=f"seuil réseau : médiane des {libelle_maille} ({fr(med_res, 1)} %)",
-                      annotation_position="top right", annotation_font=dict(color="#e34948", size=11))
-        fig.add_hline(y=med_for, line_color="#1baf7a", line_width=2, line_dash="dash",
-                      annotation_text=f"seuil formation : médiane ({fr(med_for, 2)})",
-                      annotation_position="top left", annotation_font=dict(color="#11613f", size=11))
-        tracer(fig, "cmp_nuage_z")
-        note(f"Le curseur est masqué dans cette maille : les seuils y sont les médianes des {libelle_maille}, "
-             "tracées en pointillé. À droite de la ligne rouge, le réseau est dégradé ; sous la ligne verte, "
-             "l'offre de formation est faible.")
-with droite:
-    constat("La <strong style='color:#4a3aa7'>Centrale</strong> est seule à franchir les seuils du réseau "
-            "<em>et</em> de la formation : <strong>40,3 %</strong> de routes en mauvais état et "
-            "<strong>0,50</strong> auto-école agréée pour 100 000 habitants.")
-    st.caption("Niveau C : état relevé en 2020, activité des auto-écoles non publiée.")
+        d = d[d["Préfecture"].map(prio).isin(f_prio)]
+    seuil = st.slider("Seuil — part de routes en mauvais état (%)", 0.0, 100.0, 22.13, 0.5, key="cmp_seuil")
+    fig = go.Figure()
+    prio = pref10.set_index("Préfecture")["Priorité"]
+    for p, coul in PRIO_COUL.items():
+        s = d[d["Préfecture"].map(prio) == p]
+        fig.add_trace(go.Scatter(
+            x=s["O3-02"], y=s["O4-05"], mode="markers", name=p,
+            marker=dict(size=(s["Population"] / 9000).clip(6, 42), color=coul, line=dict(width=0.6, color="#ffffff"),
+                        opacity=0.85),
+            text=s["Préfecture"], customdata=s["Population"],
+            hovertemplate="<b>%{text}</b><br>Mauvais état : %{x:.1f} %<br>Auto-écoles /100 000 : %{y:.2f}"
+                          "<br>Population : %{customdata:,.0f}<extra></extra>"))
+    habiller(fig, 440, xaxis=dict(title="Part en mauvais état (%)", gridcolor="#efece4"),
+             yaxis=dict(title="Auto-écoles agréées / 100 000 hab.", gridcolor="#efece4"),
+             legend=dict(orientation="h", y=1.12, x=0), margin=dict(l=10, r=10, t=46, b=10))
+    fig.add_vline(x=seuil, line_color="#e34948", line_width=2.2, line_dash="dash",
+                  annotation_text=f"seuil : {fr(seuil, 2)} % de km en mauvais état",
+                  annotation_position="top right",
+                  annotation_font=dict(color="#e34948", size=11))
+    tracer(fig, "cmp_nuage")
+    au_dela = (d["O3-02"] > seuil).sum()
+    pop_dela = int(d.loc[d["O3-02"] > seuil, "Population"].sum())
+    note(f"Au seuil de {fr(seuil, 2)} %, {au_dela} préfecture(s) au-delà, {fr(pop_dela)} habitants. "
+         "Mô (aucune route classée, part non définie) n'est pas placée.")
+else:
+    est_zone = maille.startswith("Zones")
+    d = reg[reg.Maille == ("Zone" if est_zone else "Région")].copy()
+    if f_zones and est_zone:
+        d = d[d["Territoire"].isin(f_zones)]
+    fig = go.Figure()
+    for _, r in d.iterrows():
+        coul = COULEUR_ZONE.get(r["Territoire"], ENCRE)
+        fig.add_trace(go.Scatter(
+            x=[r["O3-02"]], y=[r["O4-05"]], mode="markers+text", name=r["Territoire"],
+            marker=dict(size=(r["Population"] / 60000 + 10), color=coul, line=dict(width=0.8, color="#ffffff")),
+            text=[r["Territoire"]], textposition="top center", textfont=dict(size=10),
+            hovertemplate=f"<b>{r['Territoire']}</b><br>Mauvais état : {fr(r['O3-02'], 1)} %"
+                          f"<br>Auto-écoles /100 000 : {fr(r['O4-05'], 2)}<extra></extra>"))
+    habiller(fig, 440, xaxis=dict(title="Part en mauvais état (%)", gridcolor="#efece4"),
+             yaxis=dict(title="Auto-écoles agréées / 100 000 hab.", gridcolor="#efece4"), showlegend=False,
+             margin=dict(l=10, r=10, t=46, b=10))
+    # Les seuils de cette maille sont les médianes du classement : tracées, puisque le curseur y est masqué.
+    libelle_maille = "6 zones" if est_zone else "5 régions"
+    med_res, med_for = d["O3-02"].median(), d["O4-05"].median()
+    fig.add_vline(x=med_res, line_color="#e34948", line_width=2, line_dash="dash",
+                  annotation_text=f"seuil réseau : médiane des {libelle_maille} ({fr(med_res, 1)} %)",
+                  annotation_position="top right", annotation_font=dict(color="#e34948", size=11))
+    fig.add_hline(y=med_for, line_color="#1baf7a", line_width=2, line_dash="dash",
+                  annotation_text=f"seuil formation : médiane ({fr(med_for, 2)})",
+                  annotation_position="top left", annotation_font=dict(color="#11613f", size=11))
+    tracer(fig, "cmp_nuage_z")
+    st.markdown('<div class="note-carte blanche a-savoir"><span class="info-i">i</span><div><strong>À savoir :</strong> '
+                f'Le curseur est masqué dans cette maille : les seuils y sont les médianes des {libelle_maille}, '
+                'tracées en pointillé. À droite de la ligne rouge, le réseau est dégradé ; sous la ligne verte, '
+                "l'offre de formation est faible.</div></div>", unsafe_allow_html=True)
 
 # ------------------------------------------------------------------ Section 4 — Les territoires
 st.markdown("")
@@ -294,50 +296,49 @@ if not maille.startswith("Zones"):
 
 # ------------------------------------------------------------------ Section 6 — Où sont les auto-écoles
 st.markdown("")
-g, d = st.columns([1, 1.4], vertical_alignment="top")
-with g:
-    titre_bloc("Où sont les auto-écoles", "Concentration urbaine")
-    conc = hyp.loc["H8", "Valeur"]
-    st.markdown(f'<div class="synthese-chiffre" style="font-size:2.6rem">×{fr(conc, 2)}</div>'
-                '<div class="synthese-legende">les 4 préfectures urbaines (Agoè-Nyivé, Golfe, Kloto, Kozah) '
-                'ont 84,8 % des auto-écoles agréées pour 32,3 % de la population</div>', unsafe_allow_html=True)
-    st.caption("Niveau B — calculé sur les auto-écoles agréées et la population de 2022.")
-with d:
-    titre_bloc("Distance à l'auto-école agréée la plus proche", "Une barre par préfecture, triée par distance.")
-    dd = pref10[["Préfecture", "Formation — distance à la plus proche (km)", "Formation — auto-écoles comptées", "Zone"]].copy()
-    dd = dd.rename(columns={"Formation — distance à la plus proche (km)": "dist", "Formation — auto-écoles comptées": "ae"})
-    if f_zones:
-        dd = dd[dd["Zone"].isin(f_zones)]
-    dd = dd.sort_values("dist", ascending=True)
-    coul = ["#1c5cab" if a == 0 else "#cde2fb" for a in dd["ae"]]
-    # Le chiffre est écrit au bout de la barre, et prend la couleur de son palier de dix kilomètres.
-    dd["palier"] = [_palier_km(v) for v in dd["dist"]]
-    coul_txt = [PALIERS_KM[i][3] for i in dd["palier"]]
-    fig = go.Figure(go.Bar(x=dd["dist"], y=dd["Préfecture"], orientation="h", marker_color=coul,
-                           text=[fr(v, 1) + " km" for v in dd["dist"]], textposition="outside",
-                           textfont=dict(color=coul_txt, size=10), cliponaxis=False,
-                           hovertemplate="%{y} : %{x:.1f} km<extra></extra>"))
-    habiller(fig, max(380, 17 * len(dd)),
-             xaxis=dict(title="Distance (km)", gridcolor="#efece4", range=[0, dd["dist"].max() * 1.18]),
-             yaxis=dict(gridcolor="rgba(0,0,0,0)", autorange="reversed", tickfont=dict(size=10)),
-             showlegend=False, margin=dict(l=10, r=20, t=34, b=10))
-    fig.add_vline(x=10, line_color="#e34948", line_width=1.6, line_dash="dash",
-                  annotation_text="seuil d'éloignement : 10 km", annotation_position="top right",
-                  annotation_font=dict(color="#e34948", size=11))
-    tracer(fig, "cmp_dist")
-    presents = dd["palier"].value_counts()
-    chips = "".join(
-        f'<span style="display:inline-flex;align-items:center;gap:5px;margin-right:12px;font-size:.74rem">'
-        f'<span style="width:11px;height:11px;border-radius:3px;background:{PALIERS_KM[i][3]}"></span>'
-        f'{PALIERS_KM[i][2]} <b>({int(presents[i])})</b></span>'
-        for i in sorted(presents.index))
-    st.markdown(f'<div class="filtres-actifs"><b>Distance, par palier de dix kilomètres :</b><br>{chips}</div>',
-                unsafe_allow_html=True)
-    note("Le nombre laisse les 23 préfectures sans auto-école agréée toutes à zéro ; la distance les distingue : "
-         "de 11,0 km (Agou) à 84,0 km (Oti-Sud). Ligne rouge : seuil de 10 km. Barre bleu foncé : aucune auto-école "
-         "agréée. Le chiffre, au bout de la barre, prend la couleur de son palier de dix kilomètres.")
-    export_csv(dd.rename(columns={"dist": "distance_km", "ae": "auto_ecoles_comptees"}),
-               "distance_auto_ecoles.csv", "cmp_exp_dist")
+titre_bloc("Où sont les auto-écoles", "Concentration urbaine")
+conc = hyp.loc["H8", "Valeur"]
+st.markdown(f'<div class="synthese-chiffre" style="font-size:2.6rem">×{fr(conc, 2)}</div>'
+            '<div class="synthese-legende">les 4 préfectures urbaines (Agoè-Nyivé, Golfe, Kloto, Kozah) '
+            'ont 84,8 % des auto-écoles agréées pour 32,3 % de la population</div>', unsafe_allow_html=True)
+st.caption("Niveau B — calculé sur les auto-écoles agréées et la population de 2022.")
+st.markdown("")
+titre_bloc("Distance à l'auto-école agréée la plus proche", "Une barre par préfecture, triée par distance.")
+dd = pref10[["Préfecture", "Formation — distance à la plus proche (km)", "Formation — auto-écoles comptées", "Zone"]].copy()
+dd = dd.rename(columns={"Formation — distance à la plus proche (km)": "dist", "Formation — auto-écoles comptées": "ae"})
+if f_zones:
+    dd = dd[dd["Zone"].isin(f_zones)]
+dd = dd.sort_values("dist", ascending=True)
+coul = ["#1c5cab" if a == 0 else "#cde2fb" for a in dd["ae"]]
+# Le chiffre est écrit au bout de la barre, et prend la couleur de son palier de dix kilomètres.
+dd["palier"] = [_palier_km(v) for v in dd["dist"]]
+coul_txt = [PALIERS_KM[i][3] for i in dd["palier"]]
+fig = go.Figure(go.Bar(x=dd["dist"], y=dd["Préfecture"], orientation="h", marker_color=coul,
+                       text=[fr(v, 1) + " km" for v in dd["dist"]], textposition="outside",
+                       textfont=dict(color=coul_txt, size=10), cliponaxis=False,
+                       hovertemplate="%{y} : %{x:.1f} km<extra></extra>"))
+habiller(fig, max(380, 17 * len(dd)),
+         xaxis=dict(title="Distance (km)", gridcolor="#efece4", range=[0, dd["dist"].max() * 1.18]),
+         yaxis=dict(gridcolor="rgba(0,0,0,0)", autorange="reversed", tickfont=dict(size=10)),
+         showlegend=False, margin=dict(l=10, r=20, t=34, b=10))
+fig.add_vline(x=10, line_color="#e34948", line_width=1.6, line_dash="dash",
+              annotation_text="seuil d'éloignement : 10 km", annotation_position="top right",
+              annotation_font=dict(color="#e34948", size=11))
+tracer(fig, "cmp_dist")
+presents = dd["palier"].value_counts()
+chips = "".join(
+    f'<span style="display:inline-flex;align-items:center;gap:5px;margin-right:12px;font-size:.74rem">'
+    f'<span style="width:11px;height:11px;border-radius:3px;background:{PALIERS_KM[i][3]}"></span>'
+    f'{PALIERS_KM[i][2]} <b>({int(presents[i])})</b></span>'
+    for i in sorted(presents.index))
+st.markdown(f'<div class="filtres-actifs"><b>Distance, par palier de dix kilomètres :</b><br>{chips}</div>',
+            unsafe_allow_html=True)
+note("Le nombre laisse les 23 préfectures sans auto-école agréée toutes à zéro ; la distance les distingue : "
+     "de 11,0 km (Agou) à 84,0 km (Oti-Sud). Ligne rouge : seuil de 10 km. Barre bleu foncé : aucune auto-école "
+     "agréée. Le chiffre, au bout de la barre, prend la couleur de son palier de dix kilomètres.")
+export_csv(dd.rename(columns={"dist": "distance_km", "ae": "auto_ecoles_comptees"}),
+           "distance_auto_ecoles.csv", "cmp_exp_dist")
+
 
 # ------------------------------------------------------------------ Section 7 — Les 39 préfectures
 st.markdown("")

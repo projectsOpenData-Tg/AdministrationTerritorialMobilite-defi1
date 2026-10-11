@@ -3331,8 +3331,8 @@
   "texte": "Lone nɖɩ ɖɩ-taa palakaɣ tʋmɩyɛ yɔ, ɖɩ-taa paayɔɔdʋʋ-ɖɩ nɛ pɔñɔɔzɩ-ɖɩ.",
   "relu": false
  },
- "Le curseur est masqué dans cette maille : les seuils y sont les médianes des 6 zones, tracées en pointillé. À droite de la ligne rouge, le réseau est dégradé ; sous la ligne verte, l": {
-  "texte": "Lɩŋgamʋʋ ŋgʋ kɩ-taa lɛ, pɩwɛ ɛzɩ ñɩɣlɩm mbʋ pɩwɛ hɔɔlɩŋ loɖo taa yɔ.",
+ "Le curseur est masqué dans cette maille : les seuils y sont les médianes des 6 zones, tracées en pointillé. À droite de la ligne rouge, le réseau est dégradé ; sous la ligne verte, l'offre de formation est faible.": {
+  "texte": "Lɩŋgamʋʋ kʋnɛ kɩ-taa lɛ, pɩwɛ ɛzɩ ñɩɣlɩm mbʋ pɩwɛ hɔɔlɩŋ loɖo taa yɔ.",
   "relu": false
  },
  "Le déficit de formation est rural : ouverture d’auto-écoles hors des villes": {
@@ -3621,10 +3621,6 @@
  },
  "Les mêmes classes que la carte. Recoupe le tableau de la page Comparaison territoriale, qui garde les seuils du classement.": {
   "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ lɛ, ŋpɩzɩɣ nɛ ŋkpazɩ ñɩɣyʋʋ ŋgʋ kɩwɛ lone naɖɩyɛ taa yɔ.",
-  "relu": false
- },
- "Les objectifs 3 et 4 demandent ces mesures par région et par préfecture.": {
-  "texte": "Lɩmaɣzɩyɛ 3 nɛ 4 ñɩnɩɣ se ɖɩkpaɣ lɩmaɣza ana ɖɩ-yɔɔ nɛ ɖɩlabɩnɩ tʋmɩyɛ egeetiye taa nɛ egeetiye taa.",
   "relu": false
  },
  "Les permis et les immatriculations : publiés pour tout le pays seulement (page Évolutions, onglet Mobilité).": {
@@ -6713,10 +6709,6 @@
   "texte": "pɔcɔna",
   "relu": false
  },
- "offre de formation est faible.": {
-  "texte": "Piyele nɛ tɔm susuu tʋmɩyɛ wɛɛ kɛlɛʋ.",
-  "relu": false
- },
  "oiseau, depuis le chef-lieu ou un point central. Équipements recensés en 2021-2022, non vérifiés, hors indicateurs.": {
   "texte": "kpɩnɛ nɖɩ ɖɩlɩnɩ tɛtʋ sɔsɔtʋ ndʋ tɩ-taa yaa lone naɖɩyɛ taa yɔ. Pɩnzɩ 2021-2022 alɩwaatʊ taa lɛ, wondu ndʋ tɩwɛ kɩjaʋ yɔɔ nɛ patapɩzɩ pasɩɣzɩ tɩ-yɔɔ kɔyɔ:",
   "relu": false
@@ -7175,6 +7167,10 @@
  },
  "À retenir": {
   "texte": "Pɩcɛyaa se ɖɩtɔzɩ",
+  "relu": false
+ },
+ "À savoir :": {
+  "texte": "Pʋ-tɔbʋʋ se:",
   "relu": false
  },
  "À vérifier": {

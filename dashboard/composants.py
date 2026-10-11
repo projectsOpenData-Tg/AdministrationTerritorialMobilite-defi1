@@ -113,16 +113,18 @@ def icone_kpi(nom: str) -> str:
 
 def carte_kpi(libelle: str, valeur: str, phrase: str, contexte: str = "", reserve: str = "", etiquette: str | None = None,
               ton: str = "neutre", unite: str = "", icone: str | None = None, periode: str = "",
-              tendance: tuple[str, str, str] | None = None) -> str:
+              tendance: tuple[str, str, str] | None = None, pastille: tuple[str, str] | None = None) -> str:
     """Chiffre clé (maquette §8.4) : la valeur se lit avec sa phrase ; la réserve, en bas, dit ce que le chiffre ne
     mesure pas (aucune si vide). `icone` (clé de ICONES) ajoute la pastille du thème à gauche du libellé ; `periode`
     s'écrit entre parenthèses sous le libellé ; `tendance` = (variation, référence, sens) s'affiche en badge sous la
-    valeur, sens ∈ {"pire", "mieux", "neutre"}."""
+    valeur, sens ∈ {"pire", "mieux", "neutre"} ; `pastille` = (émoji, fond) remplace l'icône au trait."""
     tag = f'<span class="etiquette {ton}">{html.escape(etiquette)}</span>' if etiquette else ""
     u = f'<span class="kpi-unite">{html.escape(unite)}</span>' if unite else ""
     ctx = f'<div class="kpi-contexte">{_insecable(contexte)}</div>' if contexte else ""
     res = f'<div class="kpi-reserve">{_insecable(html.escape(reserve))}</div>' if reserve else ""
     ico = icone_kpi(icone) if icone else ""
+    if pastille:
+        ico = f'<span class="kpi-icone" style="background:{pastille[1]};font-size:1.1rem">{pastille[0]}</span>'
     per = f'<div class="kpi-periode">({html.escape(periode)})</div>' if periode else ""
     tend = ""
     if tendance:

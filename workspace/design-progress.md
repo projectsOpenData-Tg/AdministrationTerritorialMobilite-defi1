@@ -162,3 +162,17 @@ Couleurs fixes par donnée, dans `theme.py`, pour qu'un indicateur garde sa coul
 - Mise à jour après un changement de texte : `python scripts/traduire_dashboard.py` (ne traduit que le nouveau),
   puis `python scripts/logo_barre_laterale.py`.
 
+## 12. Page Comparaison territoriale
+
+- Texte d'introduction dans une **carte blanche**, sur **deux lignes** (la Centrale… ; 23 préfectures…), mots et
+  chiffres forts en couleur (Centrale dans sa couleur de zone, chiffres de risque en rouge drapeau).
+- Les **3 chiffres clés** passent avant « Choisir la maille », avec une **pastille d'émoji** par thème, comme les
+  cartes des quatre thèmes de la Vue nationale (🛣️ réseau, 🏫 auto-écoles, 📍 distance) : `carte_kpi(pastille=…)`.
+- « Choisir la maille » : sous-titre « Les objectifs 3 et 4 demandent… » retiré.
+- **Réseau et formation** : Constat sous le titre, graphique sur toute la largeur, note des seuils dans une carte
+  blanche « ⓘ **À savoir :** … » (`.note-carte.a-savoir`).
+- **Les territoires** : badge « desserte » en jaune drapeau `#FCD116` (texte foncé).
+- **Distance à l'auto-école agréée la plus proche** : graphique sur toute la largeur ; le bloc « Où sont les
+  auto-écoles » passe au-dessus.
+- Nouveaux textes traduits (en, ee, kbp) ; un passage anglais inventé par le modèle corrigé à la main.
+

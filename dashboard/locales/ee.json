@@ -3331,8 +3331,8 @@
   "texte": "Nutoa me tɔtrɔwo meganye ame siwo kpɔa wo dzi hekpɔa wo dzi o.",
   "relu": false
  },
- "Le curseur est masqué dans cette maille : les seuils y sont les médianes des 6 zones, tracées en pointillé. À droite de la ligne rouge, le réseau est dégradé ; sous la ligne verte, l": {
-  "texte": "Wotsɔa nuŋɔŋlɔa le teƒe sia me, eye woƒe ʋɔtruawo nye nuto adeawo ƒe titinawo.",
+ "Le curseur est masqué dans cette maille : les seuils y sont les médianes des 6 zones, tracées en pointillé. À droite de la ligne rouge, le réseau est dégradé ; sous la ligne verte, l'offre de formation est faible.": {
+  "texte": "Le teƒe sia la, nu siwo le nuŋɔŋlɔa me la nye nu siwo le teƒe adeawo ƒe titinawo, siwo woɖe ɖe nuŋɔŋlɔa me.",
   "relu": false
  },
  "Le déficit de formation est rural : ouverture d’auto-écoles hors des villes": {
@@ -3621,10 +3621,6 @@
  },
  "Les mêmes classes que la carte. Recoupe le tableau de la page Comparaison territoriale, qui garde les seuils du classement.": {
   "texte": "Ƒu tasiaɖam siwo le anyigbatata la me ɖe asi, eye nàtsɔ anyigbatatawo sɔ kple wo nɔewo.",
-  "relu": false
- },
- "Les objectifs 3 et 4 demandent ces mesures par région et par préfecture.": {
-  "texte": "Taɖodzinu 3 kple 4 bia be woawɔ esia le nutowo kple nutowo me.",
   "relu": false
  },
  "Les permis et les immatriculations : publiés pour tout le pays seulement (page Évolutions, onglet Mobilité).": {
@@ -6711,10 +6707,6 @@
   "texte": "kpɔ",
   "relu": false
  },
- "offre de formation est faible.": {
-  "texte": "Hehexɔxɔ ƒe agbɔsɔsɔme mede ŋgɔ o.",
-  "relu": false
- },
  "oiseau, depuis le chef-lieu ou un point central. Équipements recensés en 2021-2022, non vérifiés, hors indicateurs.": {
   "texte": "xevi, tso teƒe si woɖo anyi alo teƒe si woɖo anyi le ƒe 2021 va se ɖe ƒe 2022 me.",
   "relu": false
@@ -7173,6 +7165,10 @@
  },
  "À retenir": {
   "texte": "Nu Siwo Wòle Be Nàɖo Ŋku Dzi",
+  "relu": false
+ },
+ "À savoir :": {
+  "texte": "Wo dometɔ aɖewoe nye:",
   "relu": false
  },
  "À vérifier": {

@@ -2305,8 +2305,8 @@
   "relu": false
  },
  "Choisir la maille": {
-  "texte": "Choosing the mesh",
-  "relu": false
+  "texte": "Choose the level of detail",
+  "relu": true
  },
  "Cible de la Décennie": {
   "texte": "Target of the Decade",
@@ -3335,8 +3335,8 @@
   "texte": "The RN1 corridor does not become a common maintenance and control target",
   "relu": false
  },
- "Le curseur est masqué dans cette maille : les seuils y sont les médianes des 6 zones, tracées en pointillé. À droite de la ligne rouge, le réseau est dégradé ; sous la ligne verte, l": {
-  "texte": "The cursor is hidden in this mesh: the thresholds are medians of 6 zones, marked with dots.",
+ "Le curseur est masqué dans cette maille : les seuils y sont les médianes des 6 zones, tracées en pointillé. À droite de la ligne rouge, le réseau est dégradé ; sous la ligne verte, l'offre de formation est faible.": {
+  "texte": "The cursor is hidden in this mesh: the thresholds are the medians of 6 zones, drawn in dotted lines.",
   "relu": false
  },
  "Le déficit de formation est rural : ouverture d’auto-écoles hors des villes": {
@@ -3629,10 +3629,6 @@
   "texte": "",
   "relu": false,
   "suspect": true
- },
- "Les objectifs 3 et 4 demandent ces mesures par région et par préfecture.": {
-  "texte": "Objectives 3 and 4 require these measures by region and prefecture.",
-  "relu": false
  },
  "Les permis et les immatriculations : publiés pour tout le pays seulement (page Évolutions, onglet Mobilité).": {
   "texte": "Permits and registrations: published for the whole country only (evolution page, tab Mobility).",
@@ -5128,8 +5124,8 @@
   "relu": false
  },
  "Réseau et formation": {
-  "texte": "Networking and training",
-  "relu": false
+  "texte": "Road network and training",
+  "relu": true
  },
  "Réseau non évalué (%)": {
   "texte": "Unassessed network (%)",
@@ -6192,8 +6188,8 @@
   "relu": false
  },
  "de routes en mauvais état) et un déficit de formation.": {
-  "texte": "In the case of road failure, the Commission has not yet established a road safety standard.",
-  "relu": false
+  "texte": "of roads in poor condition) and a training deficit.",
+  "relu": true
  },
  "de travail, gelées l'une après l'autre": {
   "texte": "of work, frozen one after the other",
@@ -6727,10 +6723,6 @@
   "texte": "observed",
   "relu": false
  },
- "offre de formation est faible.": {
-  "texte": "the training offer is low.",
-  "relu": false
- },
  "oiseau, depuis le chef-lieu ou un point central. Équipements recensés en 2021-2022, non vérifiés, hors indicateurs.": {
   "texte": "birds, from headquarters or central point. Equipment recorded in 2021-2022, unverified, excluding indicators.",
   "relu": false
@@ -6752,8 +6744,8 @@
   "relu": false
  },
  "ont un réseau dégradé.": {
-  "texte": "They have a broken network.",
-  "relu": false
+  "texte": "have a degraded road network.",
+  "relu": true
  },
  "outils pour zoomer.": {
   "texte": "tools to zoom in.",
@@ -7189,6 +7181,10 @@
  },
  "À retenir": {
   "texte": "Key points",
+  "relu": true
+ },
+ "À savoir :": {
+  "texte": "Good to know:",
   "relu": true
  },
  "À vérifier": {

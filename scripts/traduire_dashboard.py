@@ -133,7 +133,12 @@ MANUEL = {"en": {"Tableau de bord": "Dashboard", "Principal": "Main", "Analyses"
                   "Immatriculations": "Vehicle registrations", "Réseau routier évalué": "Road network assessed",
                   "Comparaison territoriale": "Territorial comparison", "Évolutions et constats": "Trends and findings",
                   "Carte du réseau et des auto-écoles": "Road network and driving schools map",
-                  "Synthèse chiffrée": "Key figures", "Mobilité & sécurité routière": "Mobility & road safety"}}
+                  "Synthèse chiffrée": "Key figures", "Mobilité & sécurité routière": "Mobility & road safety",
+                  "de routes en mauvais état) et un déficit de formation.":
+                      "of roads in poor condition) and a training deficit.",
+                  "ont un réseau dégradé.": "have a degraded road network.",
+                  "Choisir la maille": "Choose the level of detail", "Réseau et formation": "Road network and training",
+                  "À savoir :": "Good to know:"}}
 
 
 def suspecte(src: str, trad: str) -> bool:

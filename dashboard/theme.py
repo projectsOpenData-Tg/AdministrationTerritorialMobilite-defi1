@@ -273,6 +273,10 @@ div.st-key-topbar_droite [data-testid="stMarkdownContainer"] { display: flex; ju
   font-size: 0.9rem; line-height: 1.7; color: #172b3a; }
 .note-carte.blanche { background: #ffffff; border: 1px solid #e2e8f0; border-left: 4px solid #1769aa; }
 .note-carte.blanche.risque { border-left-color: #ce1126; }
+/* « À savoir » : pictogramme « i » cerclé avant le texte */
+.note-carte.a-savoir { display: flex; gap: 12px; align-items: flex-start; }
+.info-i { flex: 0 0 22px; height: 22px; border-radius: 50%; background: #1769aa; color: #ffffff; font: 700 13px/22px Georgia, serif;
+  text-align: center; font-style: italic; margin-top: 2px; }
 /* Total des permis : carte bleu clair (même bleu que le survol de « Voir le détail ») */
 .total-carte { background: #e8f0fb; border-radius: 14px; padding: 26px 14px; text-align: center; }
 .total-chiffre { font-family: 'Fraunces', Georgia, serif; font-size: 2.8rem; font-weight: 600; color: #0b263d; line-height: 1; }
