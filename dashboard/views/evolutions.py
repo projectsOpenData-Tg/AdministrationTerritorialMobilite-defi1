@@ -225,7 +225,7 @@ entete("Évolutions et constats", "Qu'est-ce qui change, et que confirment les d
        "accidents déclarés augmentent, mais les <strong>6 taux</strong> baissent ; <strong>49 tronçons</strong> sur 84 "
        "concentrent le mauvais état du réseau.", carte=True)
 
-ong = onglets("evolutions", ["Synthèse", "Mobilité", "Sécurité routière", "Réseau"])
+ong = onglets("evolutions", ["Synthèse", "Mobilité", "Sécurité routière", "État du réseau routier"])
 
 # ============================================================ Onglet 0 — Synthèse
 with ong[0]:
@@ -276,20 +276,6 @@ with ong[0]:
         st.plotly_chart(fig, key="ev_carte_constats",
                         config={"displayModeBar": True, "scrollZoom": True, "displaylogo": False,
                                 "modeBarButtonsToRemove": ["select2d", "lasso2d"]})
-    with d_carte:
-        titre_bloc("Ce qui n'a pas de territoire", "Publié pour tout le pays seulement.")
-        _encart("Mobilité", "×4,56", "immatriculations de 2002 à 2022", "confirmée", SERIE_IMMAT, "ev_spark_immat")
-        _encart("Sécurité routière", "−29,4 %", "tués pour 100 000 habitants, 2010–2012 face à 2022–2024",
-                "nuancée", SERIE_TUES, "ev_spark_tues")
-        _encart("Accidents par territoire", "", "Non publiés : 7 questions restent sans réponse.", "non testable",
-                None, "ev_spark_acc")
-        st.caption("Les immatriculations, les permis et les accidents ne sont publiés que pour tout le pays : ils ne "
-                   "se cartographient pas. Aucun curseur des années sur la carte : les données par territoire n'ont "
-                   "qu'une date (réseau 2020, auto-écoles 2021-2022, population 2022).")
-
-    # Sous la carte : la légende « km en mauvais état » et, à droite, les deux constats cartographiés (confirmés)
-    bas_g, bas_d = st.columns([1.5, 1], vertical_alignment="top")
-    with bas_g:
         eff = CARTE["classe"].value_counts()
         chips = "".join(
             f'<span style="display:inline-flex;align-items:center;gap:5px;margin-right:12px;font-size:.74rem">'
@@ -306,7 +292,16 @@ with ong[0]:
             f'border:1px solid #7a5a00"></span>132 auto-écoles agréées</span></div>', unsafe_allow_html=True)
         if st.button("Voir la carte détaillée →", key="ev_lien_carte"):
             st.switch_page("views/carte.py")
-    with bas_d:
+    with d_carte:
+        titre_bloc("Ce qui n'a pas de territoire", "Publié pour tout le pays seulement.")
+        _encart("Mobilité", "×4,56", "immatriculations de 2002 à 2022", "confirmée", SERIE_IMMAT, "ev_spark_immat")
+        _encart("Sécurité routière", "−29,4 %", "tués pour 100 000 habitants, 2010–2012 face à 2022–2024",
+                "nuancée", SERIE_TUES, "ev_spark_tues")
+        _encart("Accidents par territoire", "", "Non publiés : 7 questions restent sans réponse.", "non testable",
+                None, "ev_spark_acc")
+        note_carte("Les immatriculations, les permis et les accidents ne sont publiés que pour tout le pays : ils ne "
+                   "se cartographient pas. Aucun curseur des années sur la carte : les données par territoire n'ont "
+                   "qu'une date (réseau 2020, auto-écoles 2021-2022, population 2022).", couleur="bleu")
         note_carte("32,6 points d'écart entre la Centrale (40,3 %) et le Grand Lomé (7,7 %).",
                    titre="Le réseau est inégalement entretenu : confirmée")
         note_carte("84,8 % des auto-écoles agréées dans les 4 préfectures urbaines.",

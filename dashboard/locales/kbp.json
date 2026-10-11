@@ -7261,6 +7261,10 @@
   "texte": "Pɩnaɣ 2020 taa tɛtʊ ndʊ tɩ-yɔɔ tɔm susuu wɛʊ yɔ (Level C).",
   "relu": false
  },
+ "État du réseau routier": {
+  "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ pañakɩ pana nɛ pañɩɣ nesi yɔ",
+  "relu": false
+ },
  "État relevé en 2020, sur les routes nationales seulement, méthode de notation non publiée. L": {
   "texte": "Ɛjaɖɛ nɖɩ ɖɩ-taa palakaɣ tʊmɩyɛ pɩnaɣ 2020 taa yɔ, ɖɩ-taa lɛ, paayɔɔdʋʋ tʊmɩyɛ nɖɩ ɖɩ-yɔɔ.",
   "relu": false

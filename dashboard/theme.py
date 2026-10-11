@@ -220,7 +220,7 @@ div[class*="st-key-carte_reco_"]:hover { transform: translateY(-4px); box-shadow
 [data-testid="stColumn"]:has(.carte-egale) .carte-egale { height: 100%; box-sizing: border-box; margin-top: 0; margin-bottom: 0; }
 .lieu { color: #4a3aa7; font-weight: 600; }
 /* Encarts « Ce qui n'a pas de territoire » : carte blanche à liseré gauche coloré par le verdict */
-[class*="st-key-enc_"] { background: #ffffff; border: 1px solid #e2e8f0; border-left: 4px solid #e2e8f0; border-radius: 12px;
+[class*="st-key-enc_"] { background: #ffffff; border: 1px solid #e2e8f0; border-left: 4px solid #e2e8f0; border-radius: 12px; overflow: hidden;
   padding: 12px 16px; margin-bottom: 10px; }
 .encart-tete { font-size: 0.9rem; color: #172b3a; }
 .encart-verdict { font-weight: 700; text-transform: lowercase; }

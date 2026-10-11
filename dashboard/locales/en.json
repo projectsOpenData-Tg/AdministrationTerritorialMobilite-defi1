@@ -7287,6 +7287,10 @@
   "texte": "Network status as of 2020 (level C).",
   "relu": false
  },
+ "État du réseau routier": {
+  "texte": "Road network condition",
+  "relu": true
+ },
  "État relevé en 2020, sur les routes nationales seulement, méthode de notation non publiée. L": {
   "texte": "State recorded in 2020 on national roads only, unpublished rating method",
   "relu": false

@@ -225,3 +225,13 @@ Couleurs fixes par donnée, dans `theme.py`, pour qu'un indicateur garde sa coul
 - Carte « Confirmées » : texte « L'énoncé du défi est largement vérifié. » remplacé par
   « Les données confirment les principaux constats. »
 
+## 17. Évolutions — onglet Réseau et carte des constats (sur design/palette-a, après la fusion de design/traduction)
+
+- Onglet « Réseau » renommé **« État du réseau routier »**.
+- **Carte des constats** réunie en une seule rangée : la carte, sa légende et le bouton à gauche ; à droite, les
+  3 encarts nationaux puis les constats cartographiés — plus d'espace vide au-dessus des cartes à pictogramme « i ».
+- Le texte « Les immatriculations, les permis et les accidents… » passe dans une **carte à fond blanc** (liseré
+  bleu, pictogramme « i »), au lieu d'une simple légende grise.
+- Cartes d'encart : `overflow: hidden` pour un bord net (correction du « haché » en bas de la carte « Accidents par
+  territoire »).
+
