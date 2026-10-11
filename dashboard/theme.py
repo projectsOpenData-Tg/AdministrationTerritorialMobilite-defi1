@@ -208,6 +208,18 @@ div[class*="st-key-carte_reco_"]:hover { transform: translateY(-4px); box-shadow
 .synthese ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 8px; font-size: 0.92rem; line-height: 1.5; }
 .limite { background: #fdf3d7; border: 1px solid #ecd28f; border-radius: 14px; padding: 14px 18px; margin-top: 14px; }
 .limite-titre { color: #6b4700; }
+.limite-liste { margin: 8px 0 0; padding-left: 18px; display: flex; flex-direction: column; gap: 8px; font-size: 0.92rem;
+  line-height: 1.5; color: #3a2a00; }
+/* Rangées de cartes de même hauteur (points d'attention ; synthèse et limite côte à côte) */
+[data-testid="stHorizontalBlock"]:has(.carte-egale) { align-items: stretch; }
+[data-testid="stColumn"]:has(.carte-egale) > [data-testid="stVerticalBlock"] { height: 100%; }
+[data-testid="stColumn"]:has(.carte-egale) [data-testid="stElementContainer"]:has(.carte-egale) { flex: 1 1 auto; }
+[data-testid="stColumn"]:has(.carte-egale) [data-testid="stElementContainer"]:has(.carte-egale) .stMarkdown,
+[data-testid="stColumn"]:has(.carte-egale) [data-testid="stElementContainer"]:has(.carte-egale) .stMarkdown > div,
+[data-testid="stColumn"]:has(.carte-egale) [data-testid="stElementContainer"]:has(.carte-egale) [data-testid="stMarkdownContainer"],
+[data-testid="stColumn"]:has(.carte-egale) .carte-egale { height: 100%; box-sizing: border-box; margin-top: 0; margin-bottom: 0; }
+.lieu { color: #4a3aa7; font-weight: 600; }
+.habitants { color: #ce1126; font-weight: 600; white-space: nowrap; }
 .limite-texte { font-size: 0.9rem; line-height: 1.5; color: #3a2a00; margin-top: 4px; }
 .limite.discret { background: transparent; border: 0; border-top: 1px solid #e2e8f0; border-radius: 0; padding: 12px 0 0; margin-top: 18px; }
 .limite.discret .limite-titre { color: #64748b; }

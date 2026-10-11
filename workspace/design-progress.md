@@ -189,3 +189,13 @@ Couleurs fixes par donnée, dans `theme.py`, pour qu'un indicateur garde sa coul
 - **Les 39 préfectures** : note en carte à **liseré rouge**, noms de préfectures en gras (Mô, Golfe, Agoè-Nyivé).
 - Traductions mises à jour (en, ee, kbp).
 
+## 14. Comparaison : points d'attention, synthèse et limite
+
+- **Points d'attention** : noms de lieux (préfectures, zones, régions) en **violet** `#4A3AA7` comme dans les
+  constats, effectifs d'habitants en **rouge** `#CE1126` (`_colorer()` dans `comparaison.py`, classes `.lieu`
+  et `.habitants`) ; les 5 cartes ont la **même hauteur**.
+- **Synthèse chiffrée et Limite** côte à côte, **même hauteur** ; la Limite est présentée en **liste à points**,
+  comme la synthèse (`limite(puces=…)`).
+- Mécanisme réutilisable : classe `.carte-egale` (options `egale=True` de `synthese()` et `limite()`) pour égaliser
+  les hauteurs des cartes d'une même rangée.
+

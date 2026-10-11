@@ -159,17 +159,24 @@ def constat(texte_html: str):
                 f'<div class="constat-texte">{texte_html}</div></div>', unsafe_allow_html=True)
 
 
-def synthese(chiffre: str, legende: str, puces_html: list[str]):
+def synthese(chiffre: str, legende: str, puces_html: list[str], egale: bool = False):
+    """Synthèse chiffrée ; `egale` lui donne la hauteur de la carte voisine."""
     puces = "".join(f"<li>{p}</li>" for p in puces_html)
-    st.markdown(f'<div class="synthese"><div><div class="synthese-titre">Synthèse chiffrée</div>'
+    classe = "synthese carte-egale" if egale else "synthese"
+    st.markdown(f'<div class="{classe}"><div><div class="synthese-titre">Synthèse chiffrée</div>'
                 f'<div class="synthese-chiffre">{chiffre}</div><div class="synthese-legende">{legende}</div></div>'
                 f'<ul>{puces}</ul></div>', unsafe_allow_html=True)
 
 
-def limite(texte: str, titre: str = "Limite de cette page", discret: bool = False):
-    classe = "limite discret" if discret else "limite"
-    st.markdown(f'<div class="{classe}"><div class="limite-titre">{html.escape(titre)}</div>'
-                f'<div class="limite-texte">{html.escape(texte)}</div></div>', unsafe_allow_html=True)
+def limite(texte: str, titre: str = "Limite de cette page", discret: bool = False, puces: list[str] | None = None,
+           egale: bool = False):
+    """Encadré des limites ; `puces` les présente en liste à points, comme la synthèse chiffrée ; `egale` lui donne la
+    hauteur de la carte voisine."""
+    classe = ("limite discret" if discret else "limite") + (" carte-egale" if egale else "")
+    corps = (f'<ul class="limite-liste">{"".join(f"<li>{html.escape(p)}</li>" for p in puces)}</ul>' if puces
+             else f'<div class="limite-texte">{html.escape(texte)}</div>')
+    st.markdown(f'<div class="{classe}"><div class="limite-titre">{html.escape(titre)}</div>{corps}</div>',
+                unsafe_allow_html=True)
 
 
 def titre_bloc(titre: str, sous_titre: str | None = None, marge: bool = False):

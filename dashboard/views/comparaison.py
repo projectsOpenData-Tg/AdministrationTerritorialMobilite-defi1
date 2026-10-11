@@ -7,6 +7,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 import html  # noqa: E402
+import re  # noqa: E402
 
 import pandas as pd  # noqa: E402
 import plotly.graph_objects as go  # noqa: E402
@@ -427,11 +428,22 @@ points = [
     ("Un seul tronçon relevé, ou aucune route classée", "SIG-44"),
     ("Plus de ménages avec une moto que la médiane, avec moins d'auto-écoles", "SIG-35"),
 ]
+# Noms de lieux en violet (comme dans les constats), effectifs d'habitants en rouge
+LIEUX = sorted(set(pref10["Préfecture"]) | set(pref10["Zone"]) | set(pref10["Région"]), key=len, reverse=True)
+_RE_LIEUX = re.compile(r"(?<![\w-])(" + "|".join(re.escape(x) for x in LIEUX) + r")(?![\w-])")
+_RE_HAB = re.compile(r"(\d[\d\u00a0\u202f ]*\d habitants|\d+ habitants)")
+
+
+def _colorer(txt: str) -> str:
+    txt = _RE_HAB.sub(r'<span class="habitants">\1</span>', html.escape(txt))
+    return _RE_LIEUX.sub(r'<span class="lieu">\1</span>', txt)
+
+
 cols = st.columns(len(points))
 for col, (titre, code) in zip(cols, points):
     with col:
-        st.markdown(f'<div class="constat" style="height:100%"><div class="constat-titre">{titre}</div>'
-                    f'<div class="constat-texte">{_resume(code)}</div></div>', unsafe_allow_html=True)
+        st.markdown(f'<div class="constat carte-egale"><div class="constat-titre">{titre}</div>'
+                    f'<div class="constat-texte">{_colorer(_resume(code))}</div></div>', unsafe_allow_html=True)
 st.caption("Niveau C. Dernier point : d'après une seule enquête auprès des ménages (2021-2022) ; l'ordre des zones "
            "change d'une enquête à l'autre.")
 
@@ -443,9 +455,11 @@ with g:
              ["13 au réseau dégradé (2 868 523 habitants).",
               "23 sans auto-école agréée (2 932 492 habitants).",
               "26 à plus de 10 km d'une auto-école agréée (3 482 856 habitants).",
-              "5 cumulent réseau dégradé et aucune auto-école agréée (641 955 habitants)."])
+              "5 cumulent réseau dégradé et aucune auto-école agréée (641 955 habitants)."], egale=True)
 with d:
-    limite("État du réseau relevé en 2020 (niveau C) ; activité des auto-écoles non publiée ; accès rural estimé avec "
-           "une population répartie uniformément dans chaque préfecture. La vue par région fond la Maritime hors Grand "
-           "Lomé dans le Grand Lomé : la vue par zone est la lecture par défaut.")
+    limite("", puces=["État du réseau relevé en 2020 (niveau C).",
+                      "Activité des auto-écoles non publiée.",
+                      "Accès rural estimé avec une population répartie uniformément dans chaque préfecture.",
+                      "La vue par région fond la Maritime hors Grand Lomé dans le Grand Lomé : la vue par zone est la "
+                      "lecture par défaut."], egale=True)
 pied()

@@ -79,6 +79,10 @@
   "texte": "(tɛzaɣ kɩjɛyʋʋ ÷ kɩjɛyʋʋ kɩjɛyʋʋ) ^(1/n) − 1",
   "relu": false
  },
+ ") ; sans route classée :": {
+  "texte": "); tɩ-taa fɛyɩ se:",
+  "relu": false
+ },
  ", 641 955 habitants.": {
   "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa ɛyaa wɛ 641 955.",
   "relu": false
@@ -987,6 +991,10 @@
   "texte": "45,2 km mbʋ yɔ",
   "relu": false
  },
+ "450 807 habitants": {
+  "texte": "Ɛyaa 450 807",
+  "relu": false
+ },
  "46,1 km évalués": {
   "texte": "46,1 km mbʋ yɔ",
   "relu": false
@@ -1419,6 +1427,10 @@
   "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa ɛyaa wɛ 94 860",
   "relu": false
  },
+ "956 482 habitants": {
+  "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa ɛyaa wɛ 956 482",
+  "relu": false
+ },
  "96,6 km évalués": {
   "texte": "96,6 km mbʋ yɔ",
   "relu": false
@@ -1699,6 +1711,10 @@
   "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa tɛtʊ sɔsɔtʊ (%)",
   "relu": false
  },
+ "Accès rural estimé avec une population répartie uniformément dans chaque préfecture.": {
+  "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa ɛyaa sakɩyɛ wɛna ajɛya wena a-taa pacaɣ wezuu yɔ.",
+  "relu": false
+ },
  "Accès rural estimé, niveau C.": {
   "texte": "Ɛjaɖɛ nɖɩ ɖɩ-taa tɛtʊ ndʊ tɩwɛɛ yɔ.",
   "relu": false
@@ -1721,6 +1737,10 @@
  },
  "Actions recommandées :": {
   "texte": "Tʋma wena awɛ ɖeu yɔ:",
+  "relu": false
+ },
+ "Activité des auto-écoles non publiée.": {
+  "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ palakaɣ nʋmɔʋ lɩzʋʋ sukuli yɔ, ɖɩfɛyɩ takayɩsɩ taa.",
   "relu": false
  },
  "Activité non publiée : aucune n'est vérifiée en activité.": {
@@ -1771,20 +1791,12 @@
   "texte": "Kʋñɔŋ",
   "relu": false
  },
- "Akébou, Dankpen, Mô, Tandjoaré (450 807 habitants)": {
-  "texte": "Akébou, Dankpen, Mô, Tandjoaré (kɛ ɛyaa 450 807)",
-  "relu": false
- },
  "Amoussime": {
   "texte": "Amɔseemi",
   "relu": false
  },
  "Analyses": {
   "texte": "Ñʋŋ weyi ɩ-taa pañɩnɩɣ yɔ",
-  "relu": false
- },
- "Anié, Assoli, Cinkassé, Kpélé, Zio (956 482 habitants)": {
-  "texte": "Anié, Assoli, Cinkassé, Kpélé, Zio (956 482 ɛyaa)",
   "relu": false
  },
  "Annuaire statistique national 2024": {
@@ -2943,10 +2955,6 @@
   "texte": "Ɛyaa mba pɛwɛ ɛzɩ kilomɛtanaa 10 nɛ pɩɖɛɛ yɔ",
   "relu": false
  },
- "Haho (305 096 habitants)": {
-  "texte": "Haho (Üê kpasɩ _ Ñɔɔzɩ)",
-  "relu": false
- },
  "Haho : 305 096 ÷ 0 = non défini, aucune auto-école agréée": {
   "texte": "Haho: 305 096 ÷ 0 = patɩlɩzɩ-ɩ, patɩha nʋmɔʋ se ɛkpɛlɩkɩ nʋmɔʋ lɩzʋʋ sukuli",
   "relu": false
@@ -3293,6 +3301,10 @@
  },
  "La situation en bref": {
   "texte": "Lɩmaɣza wena a-yɔɔ ɖɩtɩŋnaa yɔ",
+  "relu": false
+ },
+ "La vue par région fond la Maritime hors Grand Lomé dans le Grand Lomé : la vue par zone est la lecture par défaut.": {
+  "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa lɛ, ɖɩ-taa lɛ, ɖɩnaɣ kɩ-tɛtʋ nɛ ɖɩnaɣ kɩ-tɛtʋ.",
   "relu": false
  },
  "La zone qui cumule les deux retards : accès à la route et formation": {
@@ -5296,10 +5308,6 @@
   "texte": "Tandjoare",
   "relu": false
  },
- "Tandjoaré (138 867 habitants) ; sans route classée : Mô (52 448 habitants)": {
-  "texte": "Tandjoaré (138 867 ɛyaa) nɛ Mo (52 448 ɛyaa)",
-  "relu": false
- },
  "Taux de tués sur la route estimé (indicateur RS_198)": {
   "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ pakpa ɛyaa sakɩyɛ yɔ.",
   "relu": false
@@ -7005,6 +7013,10 @@
   "texte": "Nɛ ɛyaa 84 yɔɔ lɛ, pa-taa nabɛyɛ maɣzɩɣ se pɛfɛyɩnɩ ɖoŋ ɖoŋ.",
   "relu": false
  },
+ "synthese carte-egale": {
+  "texte": "kpɛlɛkʊʊ kpɛlɛkʊʊ",
+  "relu": false
+ },
  "teinte pleine : 2022": {
   "texte": "Pɩnaɣ 2022",
   "relu": false
@@ -7241,8 +7253,8 @@
   "texte": "Tɛtʊ ndʊ tɩ-taa yɔ",
   "relu": false
  },
- "État du réseau relevé en 2020 (niveau C) ; activité des auto-écoles non publiée ; accès rural estimé avec une population répartie uniformément dans chaque préfecture. La vue par région fond la Maritime hors Grand Lomé dans le Grand Lomé : la vue par zone est la lecture par défaut.": {
-  "texte": "Pɩnaɣ 2020 taa tɛtʊ ñʊʊdʊ tɔm (pɩnzɩ C) nɛ tʊmɩyɛ nɖɩ ɖɩ-yɔɔ pɔñɔɔzʋʋ sukuli kɩtɛzʊʊ wɛɛ yɔ; pʊcɔ palɩzɩ takayasɩ nzɩ sɩ-taa lɛ, paɖaɣnɩɣ ñɩɣʋna se pɛtɛzɩ kɛʋ ajɛya wena awɛna ɛyaa sakɩyɛ hɔɔlɩŋ sɔsɔŋ weyi ɩwɛ Prefekturɩ kpeekpe yɔɔ.",
+ "État du réseau relevé en 2020 (niveau C).": {
+  "texte": "Pɩnaɣ 2020 taa tɛtʊ ndʊ tɩ-yɔɔ tɔm susuu wɛʊ yɔ (Level C).",
   "relu": false
  },
  "État relevé en 2020, sur les routes nationales seulement, méthode de notation non publiée. L": {

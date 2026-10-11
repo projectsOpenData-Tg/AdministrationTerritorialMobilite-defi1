@@ -79,6 +79,10 @@
   "texte": "(final value ÷ initial value)^(1/n) − 1",
   "relu": false
  },
+ ") ; sans route classée :": {
+  "texte": "); without a classified route:",
+  "relu": false
+ },
  ", 641 955 habitants.": {
   "texte": ", 641 955 inhabitants.",
   "relu": false
@@ -987,6 +991,10 @@
   "texte": "45,2 km assessed",
   "relu": false
  },
+ "450 807 habitants": {
+  "texte": "450 807 inhabitants",
+  "relu": false
+ },
  "46,1 km évalués": {
   "texte": "46,1 km assessed",
   "relu": false
@@ -1420,6 +1428,10 @@
   "texte": "94 860 inhabitants",
   "relu": false
  },
+ "956 482 habitants": {
+  "texte": "956 482 inhabitants",
+  "relu": false
+ },
  "96,6 km évalués": {
   "texte": "96.6 km assessed",
   "relu": false
@@ -1700,6 +1712,10 @@
   "texte": "Rural access (%)",
   "relu": false
  },
+ "Accès rural estimé avec une population répartie uniformément dans chaque préfecture.": {
+  "texte": "Estimated rural access with a population evenly distributed in each prefecture.",
+  "relu": false
+ },
  "Accès rural estimé, niveau C.": {
   "texte": "Estimated rural access, level C.",
   "relu": false
@@ -1722,6 +1738,10 @@
  },
  "Actions recommandées :": {
   "texte": "Recommended actions:",
+  "relu": false
+ },
+ "Activité des auto-écoles non publiée.": {
+  "texte": "Unpublished activity of driving schools.",
   "relu": false
  },
  "Activité non publiée : aucune n'est vérifiée en activité.": {
@@ -1772,10 +1792,6 @@
   "texte": "Ahepe",
   "relu": false
  },
- "Akébou, Dankpen, Mô, Tandjoaré (450 807 habitants)": {
-  "texte": "Akébou, Dankpen, Mô, Tandjoaré (450 807 inhabitants)",
-  "relu": false
- },
  "Amoussime": {
   "texte": "Amoxic acid",
   "relu": false
@@ -1783,10 +1799,6 @@
  "Analyses": {
   "texte": "Analysis",
   "relu": true
- },
- "Anié, Assoli, Cinkassé, Kpélé, Zio (956 482 habitants)": {
-  "texte": "Anié, Assoli, Cinkassé, Kpélé, Zio (956 482 inhabitants)",
-  "relu": false
  },
  "Annuaire statistique national 2024": {
   "texte": "National statistical year 2024",
@@ -2945,10 +2957,6 @@
   "texte": "Residents more than 10 km away",
   "relu": false
  },
- "Haho (305 096 habitants)": {
-  "texte": "Haho (population 305 096)",
-  "relu": false
- },
  "Haho : 305 096 ÷ 0 = non défini, aucune auto-école agréée": {
   "texte": "Haho: 305 096 ÷ 0 = undefined, no licensed driving school",
   "relu": false
@@ -3296,6 +3304,10 @@
  },
  "La situation en bref": {
   "texte": "The situation briefly",
+  "relu": false
+ },
+ "La vue par région fond la Maritime hors Grand Lomé dans le Grand Lomé : la vue par zone est la lecture par défaut.": {
+  "texte": "The region-by-region view merges the Maritime out of Greater Lomé into Greater Lome: the zone view is read by default.",
   "relu": false
  },
  "La zone qui cumule les deux retards : accès à la route et formation": {
@@ -5307,10 +5319,6 @@
   "texte": "Other goods",
   "relu": false
  },
- "Tandjoaré (138 867 habitants) ; sans route classée : Mô (52 448 habitants)": {
-  "texte": "Tandjoaré (138 867 inhabitants); without classified road: Mô (52 448 inhabitants)",
-  "relu": false
- },
  "Taux de tués sur la route estimé (indicateur RS_198)": {
   "texte": "Estimated road fatality rate (RS_198)",
   "relu": false
@@ -7019,6 +7027,10 @@
   "texte": "Of 84 concentrate on the poor state of the grid.",
   "relu": false
  },
+ "synthese carte-egale": {
+  "texte": "synthesis of card-equal",
+  "relu": false
+ },
  "teinte pleine : 2022": {
   "texte": "Full shade: 2022",
   "relu": false
@@ -7255,8 +7267,8 @@
   "texte": "State of the network by zone",
   "relu": false
  },
- "État du réseau relevé en 2020 (niveau C) ; activité des auto-écoles non publiée ; accès rural estimé avec une population répartie uniformément dans chaque préfecture. La vue par région fond la Maritime hors Grand Lomé dans le Grand Lomé : la vue par zone est la lecture par défaut.": {
-  "texte": "Network status as of 2020 (level C); unpublished driving school activity; estimated rural access with a population evenly distributed in each prefecture.",
+ "État du réseau relevé en 2020 (niveau C).": {
+  "texte": "Network status as of 2020 (level C).",
   "relu": false
  },
  "État relevé en 2020, sur les routes nationales seulement, méthode de notation non publiée. L": {
