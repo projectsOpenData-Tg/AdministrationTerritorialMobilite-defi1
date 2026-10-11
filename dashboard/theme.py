@@ -58,6 +58,18 @@ body:has([data-testid="stHeader"] [data-testid="stToolbar"]) div.st-key-topbar_d
 [data-testid="stSidebarHeader"] { height: auto !important; min-height: 6.6rem; align-items: center; padding-top: 1rem !important; padding-bottom: 0.4rem !important; }
 [data-testid="stSidebarHeader"] img { height: auto !important; width: 100% !important; max-width: 100% !important; max-height: 7rem; object-fit: contain; object-position: left center; }
 [data-testid="stSidebarHeader"] > div:first-child { flex: 1 1 auto !important; min-width: 0; max-width: none !important; width: auto !important; margin-right: 0.6rem; }
+/* Sélecteur de langue : sous le logo, au-dessus du menu (il est rendu dans le contenu de la barre, puis remonté) */
+[data-testid="stSidebarContent"] { position: relative; }
+div.st-key-selecteur_langue { position: absolute; top: 7.9rem; left: 1.5rem; right: 1.5rem; z-index: 2; gap: 0.3rem; }
+[data-testid="stSidebarNav"] { margin-top: 4.4rem; }
+.langue-lib { margin-bottom: 8px; font-size: 0.68rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #cbd5e1; }
+div.st-key-selecteur_langue [data-testid="stButtonGroup"] { background: rgba(255,255,255,0.06); border: 1px solid #24415c;
+  border-radius: 999px; padding: 3px; width: fit-content; }
+[data-testid="stSidebar"] div.st-key-selecteur_langue button[data-variant] { background: transparent !important; border: 0 !important; border-radius: 999px !important;
+  min-height: 0 !important; padding: 4px 11px !important; color: #cbd5e1 !important; }
+div.st-key-selecteur_langue button p { font-size: 0.78rem !important; font-weight: 600; color: inherit !important; }
+[data-testid="stSidebar"] div.st-key-selecteur_langue button[data-variant][aria-pressed="true"], [data-testid="stSidebar"] div.st-key-selecteur_langue button[data-variant][aria-checked="true"],
+[data-testid="stSidebar"] div.st-key-selecteur_langue button[data-variant][data-selected="true"] { background: #1769aa !important; color: #ffffff !important; }
 /* Slogan et illustration de route, poussés en bas de la barre latérale quand la place le permet */
 [data-testid="stSidebarContent"] { display: flex; flex-direction: column; }
 [data-testid="stSidebarUserContent"] { flex: 1 0 auto; display: flex; flex-direction: column; }
