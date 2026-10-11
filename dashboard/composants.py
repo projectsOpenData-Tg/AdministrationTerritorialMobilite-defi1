@@ -23,8 +23,7 @@ LOGO_AI_LAB = STATIQUE / "logo_togo_ai_lab.png"
 MINISTERE = "Ministère de l'Efficacité du Service Public et de la Transformation Numérique"
 MARQUE = "Mobilité et sécurité routière au Togo"
 SOUS_TITRE = "Comprendre les risques, identifier les priorités d’action"
-PIED_SOURCES = ("Données : portail national de données ouvertes du Togo et sources institutionnelles complémentaires. "
-                "Mise à jour : 2026.")
+PIED_SOURCES = "Données : portail national de données ouvertes du Togo et sources institutionnelles complémentaires."
 PIED_TITRE = "Togo AI Lab — Data Challenge | Administration territoriale et mobilité — Défi 1"
 PIED_SOUS_TITRE = ("Diagnostic territorial et aide à la décision pour la mobilité, la sécurité routière et l'entretien "
                    "du réseau au Togo")
@@ -70,9 +69,10 @@ def ariane(page: str):
 
 
 def entete(surtitre: str, question: str, reponse_html: str, carte: bool = False):
-    """En-tête de page ; `carte` présente la réponse dans une carte à fond blanc."""
+    """En-tête de page ; `carte` présente la réponse dans une carte à fond blanc. Le surtitre n'est plus affiché : il
+    doublait le fil d'Ariane (« Tableau de bord › page ») ; le paramètre reste pour ne pas changer les appels."""
     classe = "reponse en-carte" if carte else "reponse"
-    st.markdown(f'<div class="surtitre">{html.escape(surtitre)}</div><div class="question">{html.escape(question)}</div>'
+    st.markdown(f'<div class="question">{html.escape(question)}</div>'
                 f'<div class="{classe}">{reponse_html}</div>', unsafe_allow_html=True)
 
 

@@ -280,6 +280,10 @@ div.st-key-vn_synthese { background: #e6f4ec; border: 1px solid #b9dfc8; border-
 div.st-key-vn_synthese .synthese { background: transparent; border: 0; padding: 0; margin: 0;
   grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr); gap: 20px; }   /* chiffre à gauche, liste à droite */
 div.st-key-vn_synthese .synthese ul { font-size: 0.88rem; gap: 6px; }
+/* Contenu centré verticalement dans la carte ; liste alignée à gauche */
+div.st-key-vn_synthese [data-testid="stElementContainer"]:has(.synthese) { flex: 1 1 auto; display: flex; align-items: center; }
+div.st-key-vn_synthese [data-testid="stElementContainer"]:has(.synthese) > div { width: 100%; }
+div.st-key-vn_synthese .synthese ul { text-align: left; }
 div.st-key-vn_synthese [data-testid="stElementContainer"]:has(button) { align-self: flex-end; width: auto !important; }
 div.st-key-vn_synthese button { min-height: 0; padding: 4px 12px; }
 div.st-key-vn_synthese button p { font-size: 0.82rem; }

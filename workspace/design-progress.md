@@ -134,3 +134,10 @@ Couleurs fixes par donnée, dans `theme.py`, pour qu'un indicateur garde sa coul
   de « Voir le détail », en bas à droite de la carte, en petit format.
 - **Limite** : titre « Limite » (au lieu de « Limite de cette page ») ; « (niveau C) » retiré du texte.
 
+## 10. En-têtes (toutes les pages), synthèse, pied
+
+- **Surtitre en majuscules retiré de l'en-tête de toutes les pages** (« VUE NATIONALE », « PRIORITÉS »…) : il doublait
+  le fil d'Ariane « Tableau de bord › page ». `entete()` garde son paramètre `surtitre` mais ne l'affiche plus.
+- Synthèse chiffrée : contenu centré verticalement dans la carte verte, liste à puces alignée à gauche.
+- Pied de page, sous la carte « Limite » : « Mise à jour : 2026. » retiré de la phrase sur les données.
+
