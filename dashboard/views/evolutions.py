@@ -15,7 +15,7 @@ import streamlit as st  # noqa: E402
 from composants import (ariane, carte_kpi, constat, entete, export_csv, fenetre_geo, habiller, limite, note,  # noqa: E402
                         note_carte, onglets, pied, rangee_kpi, synthese, titre_bloc, tracer)
 from donnees import contours, couche, fr, lire, lire_processed  # noqa: E402
-from theme import BLEUS, ENCRE, THEME  # noqa: E402
+from theme import BLEUS, COULEUR_ZONE, ENCRE, THEME  # noqa: E402
 
 ind = lire("07_indicateurs", "indicateurs_07")
 NAT = ind[ind.Maille == "National"]
@@ -185,6 +185,44 @@ def _table_verdict(df: pd.DataFrame, hauteur: int | None = None):
         corps += f"<tr>{cellules}</tr>"
     style = f' style="max-height:{hauteur}px"' if hauteur else ""
     st.markdown(f'<div class="tbl-verdict"{style}><table><thead><tr>{entetes}</tr></thead>'
+                f'<tbody>{corps}</tbody></table></div>', unsafe_allow_html=True)
+
+
+def _badge_type(t: str) -> str:
+    """Type de chaussée en badge : revêtue en vert, non revêtue en jaune-or (comme le chiffre clé « mauvais état »)."""
+    bg, fg = (("#e0f1e7", "#0b4d2e") if str(t).strip() == "revêtue" else ("#fbf3d9", "#7a5a00"))
+    return f'<span class="verdict-badge" style="background:{bg};color:{fg}">{html.escape(str(t))}</span>'
+
+
+def _zones_colorees(z) -> str:
+    """Chaque zone traversée dans sa couleur (même palette que le tableau des 39 préfectures)."""
+    if z != z:
+        return ""
+    parts = [p.strip() for p in re.split(r"\s*;\s*", str(z)) if p.strip()]
+    return " ".join(f'<span style="color:{COULEUR_ZONE.get(p, ENCRE)};font-weight:600">{html.escape(p)}</span>'
+                    for p in parts)
+
+
+def _table_troncons(df: pd.DataFrame, hauteur: int = 440):
+    """Tableau HTML des tronçons : badge de type, zones colorées, colonnes de km alignées à droite."""
+    num = {"Bon", "Moyen", "Mauvais", "Travaux", "Km relevés"}
+    entetes = "".join(f'<th{" style=\"text-align:right\"" if c in num else ""}>{html.escape(str(c))}</th>'
+                      for c in df.columns)
+    corps = ""
+    for _, r in df.iterrows():
+        cellules = ""
+        for c in df.columns:
+            v = r[c]
+            if c == "Type":
+                cellules += f"<td>{_badge_type(v)}</td>"
+            elif c == "Zones traversées":
+                cellules += f"<td>{_zones_colorees(v)}</td>"
+            elif c in num:
+                cellules += f'<td style="text-align:right">{fr(v, 2) if v == v else "—"}</td>'
+            else:
+                cellules += f"<td>{html.escape(str(v))}</td>"
+        corps += f"<tr>{cellules}</tr>"
+    st.markdown(f'<div class="tbl-verdict" style="max-height:{hauteur}px"><table><thead><tr>{entetes}</tr></thead>'
                 f'<tbody>{corps}</tbody></table></div>', unsafe_allow_html=True)
 
 
@@ -475,48 +513,47 @@ with ong[1]:
 with ong[2]:
     rangee_kpi("Sécurité routière — ce qui change", [
         carte_kpi("Tués pour 100 000 habitants", "−29,4 %", "10,45 en 2010–2012, 7,38 en 2022–2024",
-                  "Le risque par habitant baisse.", etiquette="C", ton="ok", bordure=THEME["Sécurité routière"]),
+                  "Le risque par habitant baisse.", etiquette="C", ton="ok", icone="tues",
+                  bordure=THEME["Sécurité routière"]),
         carte_kpi("Accidents constatés par an", "+9,4 %", "6 381,7 puis 6 980,7",
-                  "Le volume monte : plus de véhicules.", etiquette="A", bordure=THEME["Sécurité routière"]),
+                  "Le volume monte : plus de véhicules.", etiquette="A", icone="vehicule",
+                  bordure=THEME["Sécurité routière"]),
         carte_kpi("Tués estimés par l'OMS", "×2,63", "le taux déclaré de 2021 : 22,7 contre 8,62 /100 000",
                   "L'estimation de l'OMS ne corrige pas les tués déclarés.", etiquette="C", ton="alerte",
-                  bordure=THEME["Sécurité routière"]),
+                  icone="alerte", bordure=THEME["Sécurité routière"]),
     ], centre=True)
-    g, d = st.columns([1.7, 1], vertical_alignment="top")
-    with g:
-        titre_bloc("Les 6 taux : 2010–2012 face à 2022–2024", "Les 3 taux du cadre, puis les 3 compléments à l'énoncé.")
-        cadre = taux[taux.ID.isin(["O2-03", "O2-02", "O2-04"])].copy()        # accidents/100k, tués/100k, tués/10k véh
-        compl = taux[taux.ID.isin(["O2-E2", "O2-E1", "O2-E3"])].copy()
-        aff = pd.concat([cadre, compl])
-        aff["lib"] = aff["Mesure"] + " — " + aff["Lecture"]
-        # Une couleur par type de mesure : les tués en rouge, les blessés en ambre, les accidents en bleu.
-        # La période se lit à l'opacité : la plus ancienne est pâle, la récente est pleine.
-        fig = go.Figure()
-        for periode, alpha in [("Moyenne 2010–2012", 0.42), ("Moyenne 2022–2024", 1.0)]:
-            fig.add_trace(go.Bar(
-                y=aff["lib"], x=aff[periode], name=periode.replace("Moyenne ", ""), orientation="h",
-                marker=dict(color=[MESURE_COUL.get(m, "#1c5cab") for m in aff["Mesure"]], opacity=alpha),
-                text=[fr(v, 2) for v in aff[periode]], textposition="outside", textfont=dict(size=9),
-                hovertemplate="%{y}<br>" + periode.replace("Moyenne ", "") + " : %{x:,.2f}<extra></extra>"))
-        # Pas de légende Plotly : la couleur porte deux informations (mesure et période), expliquées juste en dessous.
-        habiller(fig, 440, barmode="group", showlegend=False,
-                 xaxis=dict(gridcolor="#efece4", range=[0, aff[["Moyenne 2010–2012", "Moyenne 2022–2024"]].max().max() * 1.14]),
-                 yaxis=dict(gridcolor="rgba(0,0,0,0)"), margin=dict(l=10, r=20, t=14, b=10))
-        tracer(fig, "ev_6taux")
-        st.markdown('<div class="filtres-actifs"><b>Couleur par mesure :</b> '
-                    + "".join(f'<span style="display:inline-flex;align-items:center;gap:5px;margin-right:12px;'
-                              f'font-size:.74rem"><span style="width:12px;height:12px;border-radius:3px;'
-                              f'background:{c}"></span>{m}</span>' for m, c in MESURE_COUL.items())
-                    + ' &nbsp;·&nbsp; teinte pâle : 2010–2012 · teinte pleine : 2022–2024</div>',
-                    unsafe_allow_html=True)
-        note("Les 3 premiers sont les taux du cadre d'analyse. Les 3 derniers (accidents et blessés pour 10 000 "
-             "véhicules, blessés pour 100 000 habitants) sont des compléments : hors cadre, aucun verdict. Volumes : "
-             "niveau A ; les 6 taux : C.")
-        export_csv(aff[["Mesure", "Lecture", "Moyenne 2010–2012", "Moyenne 2022–2024", "Variation (%)"]],
-                   "six_taux.csv", "ev_exp_taux")
-    with d:
-        constat("<strong>Plus de véhicules, pas une route plus dangereuse</strong> : les accidents déclarés augmentent "
-                "(+9,4 %), mais les six taux de risque baissent.")
+    titre_bloc("Les 6 taux : 2010–2012 face à 2022–2024", "Les 3 taux du cadre, puis les 3 compléments à l'énoncé.")
+    cadre = taux[taux.ID.isin(["O2-03", "O2-02", "O2-04"])].copy()        # accidents/100k, tués/100k, tués/10k véh
+    compl = taux[taux.ID.isin(["O2-E2", "O2-E1", "O2-E3"])].copy()
+    aff = pd.concat([cadre, compl])
+    aff["lib"] = aff["Mesure"] + " — " + aff["Lecture"]
+    # Une couleur par type de mesure : les tués en rouge, les blessés en ambre, les accidents en bleu.
+    # La période se lit à l'opacité : la plus ancienne est pâle, la récente est pleine.
+    fig = go.Figure()
+    for periode, alpha in [("Moyenne 2010–2012", 0.42), ("Moyenne 2022–2024", 1.0)]:
+        fig.add_trace(go.Bar(
+            y=aff["lib"], x=aff[periode], name=periode.replace("Moyenne ", ""), orientation="h",
+            marker=dict(color=[MESURE_COUL.get(m, "#1c5cab") for m in aff["Mesure"]], opacity=alpha),
+            text=[fr(v, 2) for v in aff[periode]], textposition="outside", textfont=dict(size=9),
+            hovertemplate="%{y}<br>" + periode.replace("Moyenne ", "") + " : %{x:,.2f}<extra></extra>"))
+    # Pas de légende Plotly : la couleur porte deux informations (mesure et période), expliquées juste en dessous.
+    habiller(fig, 440, barmode="group", showlegend=False,
+             xaxis=dict(gridcolor="#efece4", range=[0, aff[["Moyenne 2010–2012", "Moyenne 2022–2024"]].max().max() * 1.14]),
+             yaxis=dict(gridcolor="rgba(0,0,0,0)"), margin=dict(l=10, r=20, t=14, b=10))
+    tracer(fig, "ev_6taux")
+    st.markdown('<div class="filtres-actifs"><b>Couleur par mesure :</b> '
+                + "".join(f'<span style="display:inline-flex;align-items:center;gap:5px;margin-right:12px;'
+                          f'font-size:.74rem"><span style="width:12px;height:12px;border-radius:3px;'
+                          f'background:{c}"></span>{m}</span>' for m, c in MESURE_COUL.items())
+                + ' &nbsp;·&nbsp; teinte pâle : 2010–2012 · teinte pleine : 2022–2024</div>',
+                unsafe_allow_html=True)
+    note_carte("Les 3 premiers sont les taux du cadre d'analyse. Les 3 derniers (accidents et blessés pour 10 000 "
+               "véhicules, blessés pour 100 000 habitants) sont des compléments : hors cadre, aucun verdict.",
+               couleur="vert")
+    export_csv(aff[["Mesure", "Lecture", "Moyenne 2010–2012", "Moyenne 2022–2024", "Variation (%)"]],
+               "six_taux.csv", "ev_exp_taux")
+    constat("<strong>Plus de véhicules, pas une route plus dangereuse</strong> : les accidents déclarés augmentent "
+            "(+9,4 %), mais les six taux de risque baissent.")
 
     titre_bloc("Accidents, blessés et tués, année par année, 2010–2024")
     c1, c2, c3 = st.columns(3)
@@ -532,8 +569,8 @@ with ong[2]:
             habiller(fig, 240, showlegend=False)
             fig.update_layout(title=dict(text=lib, font=dict(size=12), x=0.02, y=0.96))
             tracer(fig, f"ev_annuel_{cat}")
-    note("D'une année à l'autre, les séries varient fortement avant 2017 : l'évolution se lit sur des moyennes de "
-         "trois ans (bloc ci-dessus). Niveau A, déclaré par la police et la gendarmerie.")
+    note_carte("D'une année à l'autre, les séries varient fortement avant 2017 : l'évolution se lit sur des moyennes "
+               "de trois ans (bloc ci-dessus). Sources, déclaré par la police et la gendarmerie.", couleur="vert")
 
     g, d = st.columns(2, vertical_alignment="top")
     with g:
@@ -549,8 +586,9 @@ with ong[2]:
                  yaxis=dict(gridcolor="rgba(0,0,0,0)", tickfont=dict(size=11)), showlegend=False,
                  margin=dict(l=10, r=30, t=10, b=10))
         tracer(fig, "ev_usagers")
-        note("60 % des tués sont des usagers de deux et trois-roues motorisés, pour 54,7 % à 59,7 % de motos dans le "
-             "parc estimé : un peu plus que leur part du parc. Niveau C : une seule année, ni sexe ni âge.")
+        note_carte("<strong>60 %</strong> des tués sont des usagers de deux et trois-roues motorisés, pour "
+                   "<strong>54,7 % à 59,7 %</strong> de motos dans le parc estimé : un peu plus que leur part du "
+                   "parc. L'analyse faite : une seule année, ni sexe ni âge.", couleur="vert")
     with d:
         titre_bloc("Tués déclarés et estimation de l'OMS, 2021")
         oms = pd.DataFrame({"Repère": ["Tués déclarés (police, gendarmerie)", "Estimation de l'OMS pour le Togo",
@@ -560,43 +598,42 @@ with ong[2]:
                                text=[fr(v, 2) for v in oms["Taux"]], textposition="outside"))
         habiller(fig, 300, xaxis=dict(gridcolor="#efece4"), yaxis=dict(gridcolor="rgba(0,0,0,0)"), showlegend=False)
         tracer(fig, "ev_oms")
-        note("Pour 100 000 habitants, 2021. L'OMS estime le taux de tués à 2,63 fois le taux déclaré ; cette "
-             "estimation ne corrige pas les chiffres déclarés. Niveau C.")
-    limite("Accidents et victimes déclarés par la police et la gendarmerie, au niveau national seulement : ni "
-           "préfecture, ni mois, ni âge. Aucune définition publiée du tué ; l'OMS en estime 2,63 fois plus. Les taux "
-           "par véhicule reposent sur un parc estimé (C).")
+        note_carte("Pour 100 000 habitants, 2021. L'OMS estime le taux de tués à <strong>2,63 fois</strong> le taux "
+                   "déclaré ; cette estimation ne corrige pas les chiffres déclarés.", couleur="vert")
+    limite(titre="Limites analytiques",
+           texte_html="Les accidents et victimes sont recensés <strong>à l'échelle nationale</strong>, sans détail par "
+                      "préfecture, mois ou âge. Le nombre de décès déclaré diffère des estimations de l'OMS "
+                      "(<strong>× 2,63</strong>).")
 
 # ============================================================ Onglet 3 — Réseau
 with ong[3]:
     rangee_kpi("Réseau — ce qui change", [
         carte_kpi("Réseau évalué", "3 163", "km de routes nationales, relevé de 2020",
-                  "84 tronçons relevés.", etiquette="C", unite=" km", bordure=THEME["Réseau"]),
+                  "84 tronçons relevés.", etiquette="C", unite=" km", icone="route_vert", bordure="#16834a"),
         carte_kpi("En mauvais état", "21,2 %", "669,34 km",
-                  "Part des km évalués.", etiquette="C", ton="alerte", bordure=THEME["Réseau"]),
+                  "Part des km évalués.", etiquette="C", ton="alerte", icone="route_rouge", bordure="#ce1126"),
         carte_kpi("Tronçons en mauvais état", "49 sur 84", "34 revêtus, 15 non revêtus",
                   "Le mauvais état se concentre sur ces tronçons.", etiquette="C", ton="alerte",
-                  bordure=THEME["Réseau"]),
+                  icone="troncons", bordure=THEME["Réseau"]),
     ], centre=True)
-    g, d = st.columns([1.8, 1], vertical_alignment="top")
-    with g:
-        titre_bloc("Les 84 tronçons relevés et leur état", "Vue par défaut : les 49 tronçons en mauvais état.")
-        tous = st.toggle("Afficher les 84 tronçons", key="ev_tous_tron")
-        t = tron.copy()
-        t["Tronçon"] = t["Tronçon"].map(nom_troncon)
-        if not tous:
-            t = t[t["km_mauvais"] > 0]
-        t = t.sort_values(["km_mauvais", "km_total"], ascending=False)
-        aff = t[["Tronçon", "Type", "km_bon", "km_moyen", "km_mauvais", "km_travaux", "km_total", "Zones traversées"]]
-        aff = aff.rename(columns={"km_bon": "Bon", "km_moyen": "Moyen", "km_mauvais": "Mauvais", "km_travaux": "Travaux",
-                                  "km_total": "Km relevés"})
-        st.dataframe(aff, hide_index=True, use_container_width=True, height=440)
-        note("En km, relevé de 2020. Les 49 tronçons de la vue par défaut sont les tronçons critiques du 07 "
-             "(669,34 km). FRE : frontière. Pour 7 tronçons, l'état est réparti le long de l'axe (niveau C).")
-        export_csv(aff, "troncons_etat.csv", "ev_exp_tron")
-    with d:
-        constat("Le mauvais état se concentre sur <strong>49 des 84 tronçons</strong> : ceux qui traversent les "
-                "Plateaux en portent le plus (292,15 km, 23 tronçons), puis ceux de la Centrale (236,25 km, "
-                "6 tronçons).")
+    titre_bloc("Les 84 tronçons relevés et leur état", "Vue par défaut : les 49 tronçons en mauvais état.")
+    tous = st.toggle("Afficher les 84 tronçons", key="ev_tous_tron")
+    t = tron.copy()
+    t["Tronçon"] = t["Tronçon"].map(nom_troncon)
+    if not tous:
+        t = t[t["km_mauvais"] > 0]
+    t = t.sort_values(["km_mauvais", "km_total"], ascending=False)
+    aff = t[["Tronçon", "Type", "km_bon", "km_moyen", "km_mauvais", "km_travaux", "km_total", "Zones traversées"]]
+    aff = aff.rename(columns={"km_bon": "Bon", "km_moyen": "Moyen", "km_mauvais": "Mauvais", "km_travaux": "Travaux",
+                              "km_total": "Km relevés"})
+    _table_troncons(aff, 440)
+    note_carte("En km, relevé de 2020. Les <strong>49 tronçons</strong> de la vue par défaut sont les tronçons "
+               "critiques du 07 (<strong>669,34 km</strong>). FRE : frontière. Pour <strong>7 tronçons</strong>, "
+               "l'état est réparti le long de l'axe.", couleur="vert")
+    export_csv(aff, "troncons_etat.csv", "ev_exp_tron")
+    constat("Le mauvais état se concentre sur <strong>49 des 84 tronçons</strong> : ceux qui traversent les "
+            "Plateaux en portent le plus (292,15 km, 23 tronçons), puis ceux de la Centrale (236,25 km, "
+            "6 tronçons).")
 
     g, d = st.columns(2, vertical_alignment="top")
     with g:
@@ -610,8 +647,9 @@ with ong[3]:
         habiller(fig, 320, xaxis=dict(gridcolor="#efece4"), yaxis=dict(gridcolor="rgba(0,0,0,0)", autorange="reversed"),
                  showlegend=False)
         tracer(fig, "ev_tron_zone")
-        note("Un tronçon qui traverse plusieurs zones compte dans chacune, pour tous ses km : les lignes ne "
-             "s'additionnent pas. Pays : 49 tronçons, 669,34 km.")
+        note_carte("Un tronçon qui traverse plusieurs zones compte dans chacune, pour tous ses km : les lignes ne "
+                   "s'additionnent pas. Pays : <strong>49 tronçons</strong>, <strong>669,34 km</strong>.",
+                   couleur="vert")
     with d:
         titre_bloc("Un constat frappant sur l'état du réseau en 2020 : l'annuaire national",
                    "Deux publications de la même année ne concordent pas.")
@@ -621,9 +659,10 @@ with ong[3]:
                                text=[fr(v, 2) + " %" for v in a["Part (%)"]], textposition="outside"))
         habiller(fig, 320, yaxis=dict(gridcolor="#efece4", ticksuffix=" %"), showlegend=False)
         tracer(fig, "ev_annuaire")
-        note("Pour 2020, l'annuaire national donne 29,75 % de routes nationales en mauvais état, le relevé des "
-             "tronçons 21,2 % : les deux publications ne concordent pas. Le tableau de bord s'appuie sur le relevé, le "
-             "seul à donner l'état par tronçon et par préfecture. Niveau C.")
+        note_carte("Pour 2020, l'annuaire national donne <strong>29,75 %</strong> de routes nationales en mauvais "
+                   "état, le relevé des tronçons <strong>21,2 %</strong> : les deux publications ne concordent pas. Le "
+                   "tableau de bord s'appuie sur le relevé, le seul à donner l'état par tronçon et par préfecture.",
+                   couleur="vert")
     limite("État relevé en 2020, sur les routes nationales seulement, méthode de notation non publiée. L'annuaire "
            "national de la même année donne d'autres parts (29,75 % en mauvais état, contre 21,2 %). Les tronçons "
            "sont rattachés au tracé par leur nom ; pour 7 d'entre eux, l'état est réparti le long de l'axe.")

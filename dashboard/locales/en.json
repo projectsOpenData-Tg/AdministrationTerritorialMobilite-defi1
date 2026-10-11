@@ -87,6 +87,10 @@
   "texte": "); without a classified route:",
   "relu": false
  },
+ "). FRE : frontière. Pour": {
+  "texte": "(FRE: border.",
+  "relu": false
+ },
  ", 641 955 habitants.": {
   "texte": ", 641 955 inhabitants.",
   "relu": false
@@ -103,8 +107,16 @@
   "texte": "The number of accidents per prefecture, month and age.",
   "relu": false
  },
+ ", l'état est réparti le long de l'axe.": {
+  "texte": ", the state is distributed along the axis.",
+  "relu": false
+ },
  ", porté par les motos. Les accidents augmentent en volume": {
   "texte": "The number of accidents is increasing.",
+  "relu": false
+ },
+ ", sans détail par préfecture, mois ou âge. Le nombre de décès déclaré diffère des estimations de l'OMS (": {
+  "texte": "The number of deaths reported differs from WHO estimates (",
   "relu": false
  },
  ", seule zone en retard sur la route et la formation, et par": {
@@ -509,6 +521,10 @@
  },
  "2 tronçons relevés": {
   "texte": "2 samples taken",
+  "relu": false
+ },
+ "2,63 fois": {
+  "texte": "2,63 times",
   "relu": false
  },
  "2,7 % des routes en mauvais état (110,8 km évalués, un tronçon critique).": {
@@ -1032,8 +1048,8 @@
   "relu": false
  },
  "49 tronçons": {
-  "texte": "49 pieces",
-  "relu": false
+  "texte": "49 sections",
+  "relu": true
  },
  "49 tronçons en mauvais état (épaisseur selon les km)": {
   "texte": "49 pieces in poor condition (thickness by km)",
@@ -1191,10 +1207,6 @@
   "texte": "60 percent of those killed in 2021 were motorized two- and three-wheelers",
   "relu": false
  },
- "60 % des tués sont des usagers de deux et trois-roues motorisés, pour 54,7 % à 59,7 % de motos dans le parc estimé : un peu plus que leur part du parc. Niveau C : une seule année, ni sexe ni âge.": {
-  "texte": "60% of those killed were motorized two- and three-wheelers, for 54.7% to 59.7% of motorcycles in the estimated park: slightly more than their share of the park.",
-  "relu": false
- },
  "60 % ou plus": {
   "texte": "60% or more",
   "relu": false
@@ -1254,6 +1266,10 @@
  "7 recherches complémentaires, dont 2 sans réponse": {
   "texte": "7 additional searches, including 2 unanswered",
   "relu": false
+ },
+ "7 tronçons": {
+  "texte": "7 sections",
+  "relu": true
  },
  "7 tronçons relevés": {
   "texte": "7 samples taken",
@@ -1624,6 +1640,10 @@
   "texte": "The number of accidents reported increases, but the six risk rates decrease over the period.",
   "relu": false
  },
+ ": les deux publications ne concordent pas. Le tableau de bord s'appuie sur le relevé, le seul à donner l'état par tronçon et par préfecture.": {
+  "texte": "The table of contents is based on the report, which alone gives statistics by section and prefecture.",
+  "relu": false
+ },
  ": les préfectures au-dessus du seuil de 22,13 % de km en mauvais état. Le nom de la zone et de la région prend sa couleur de carte.": {
   "texte": "The prefectures above the 22.13% km threshold are in poor condition.",
   "relu": false
@@ -1698,10 +1718,6 @@
  },
  "Accidents et tués par préfecture": {
   "texte": "Accidents and deaths per prefecture",
-  "relu": false
- },
- "Accidents et victimes déclarés par la police et la gendarmerie, au niveau national seulement : ni préfecture, ni mois, ni âge. Aucune définition publiée du tué ; l": {
-  "texte": "Accidents and casualties reported by the police and gendarmerie, at national level only: no prefecture, no month, no age.",
   "relu": false
  },
  "Accidents par préfecture ; immatriculations au lieu d’usage": {
@@ -2524,6 +2540,10 @@
   "texte": "Cyclists",
   "relu": false
  },
+ "D'une année à l'autre, les séries varient fortement avant 2017 : l'évolution se lit sur des moyennes de trois ans (bloc ci-dessus). Sources, déclaré par la police et la gendarmerie.": {
+  "texte": "From year to year, the series varies greatly before 2017: the evolution is based on three-year averages (block above).",
+  "relu": false
+ },
  "DAVIE-AMAKPAPE": {
   "texte": "I 'm not sure what to do .",
   "relu": false
@@ -2817,8 +2837,8 @@
   "texte": "In 2021, we were counting",
   "relu": false
  },
- "En km, relevé de 2020. Les 49 tronçons de la vue par défaut sont les tronçons critiques du 07 (669,34 km). FRE : frontière. Pour 7 tronçons, l": {
-  "texte": "In km, as measured in 2020. The 49 sections of the default view are critical sections for 07 (669.34 km).",
+ "En km, relevé de 2020. Les": {
+  "texte": "In km, recorded in 2020.",
   "relu": false
  },
  "En mauvais état": {
@@ -3495,8 +3515,8 @@
   "texte": "The 272 registered driving schools",
   "relu": false
  },
- "Les 3 premiers sont les taux du cadre d": {
-  "texte": "The first three are the rates of the",
+ "Les 3 premiers sont les taux du cadre d'analyse. Les 3 derniers (accidents et blessés pour 10 000 véhicules, blessés pour 100 000 habitants) sont des compléments : hors cadre, aucun verdict.": {
+  "texte": "The last three (accidents and injuries per 10,000 vehicles, injured per 100,000 inhabitants) are complementary: out of context, no verdict.",
   "relu": false
  },
  "Les 3 taux du cadre, puis les 3 compléments à l": {
@@ -3565,6 +3585,10 @@
  },
  "Les accidents augmentent en saison des pluies et aux périodes de fêtes": {
   "texte": "Accidents increase in rainy season and during the holiday season",
+  "relu": false
+ },
+ "Les accidents et victimes sont recensés": {
+  "texte": "Accidents and casualties are recorded",
   "relu": false
  },
  "Les accidents ne sont publiés qu": {
@@ -3794,6 +3818,10 @@
  "Limites administratives du Togo (COD-AB)": {
   "texte": "Administrative limits of Togo (COD-AB)",
   "relu": false
+ },
+ "Limites analytiques": {
+  "texte": "Analytical limits",
+  "relu": true
  },
  "Limites majeures": {
   "texte": "Major limitations",
@@ -4157,14 +4185,6 @@
  },
  "OMS (profil du Togo)": {
   "texte": "WHO (Togo profile)",
-  "relu": false
- },
- "OMS en estime 2,63 fois plus. Les taux par véhicule reposent sur un parc estimé (C).": {
-  "texte": "WHO estimates that this is 2.63 times higher.",
-  "relu": false
- },
- "OMS estime le taux de tués à 2,63 fois le taux déclaré ; cette estimation ne corrige pas les chiffres déclarés. Niveau C.": {
-  "texte": "WHO estimates the death rate at 2.63 times the reported rate; this estimate does not correct the reported figures.",
   "relu": false
  },
  "OMS, 2021": {
@@ -4603,12 +4623,12 @@
   "texte": "For every 100,000 inhabitants",
   "relu": false
  },
- "Pour 100 000 habitants, 2021. L": {
-  "texte": "For each 100,000 inhabitants, 2021. L",
+ "Pour 100 000 habitants, 2021. L'OMS estime le taux de tués à": {
+  "texte": "The WHO estimates the death rate at",
   "relu": false
  },
- "Pour 2020, l": {
-  "texte": "For the year 2020,",
+ "Pour 2020, l'annuaire national donne": {
+  "texte": "For 2020, the National Yearbook gives",
   "relu": false
  },
  "Pour aller plus loin : ce que les données ne permettent pas encore de dire": {
@@ -5587,8 +5607,8 @@
   "texte": "Only a single section of road or no classified road",
   "relu": false
  },
- "Un tronçon qui traverse plusieurs zones compte dans chacune, pour tous ses km : les lignes ne s": {
-  "texte": "A section that passes through several areas counts in each for all its km: the lines are not",
+ "Un tronçon qui traverse plusieurs zones compte dans chacune, pour tous ses km : les lignes ne s'additionnent pas. Pays :": {
+  "texte": "A section that passes through several areas is counted in each for all its km: the lines are not added together.",
   "relu": false
  },
  "Une auto-école agréée, soit 0,20 pour 100 000 habitants.": {
@@ -5935,16 +5955,8 @@
   "texte": "activity of driving schools n",
   "relu": false
  },
- "additionnent pas. Pays : 49 tronçons, 669,34 km.": {
-  "texte": "Countries: 49 sections, 669.34 km",
-  "relu": false
- },
  "agrandissement montre la région Maritime et le Grand Lomé, où se concentrent les auto-écoles. Molette ou barre d": {
   "texte": "In addition, the main areas of study are the Maritime Region and the Greater Lomé Region, where driving schools are concentrated.",
-  "relu": false
- },
- "analyse. Les 3 derniers (accidents et blessés pour 10 000 véhicules, blessés pour 100 000 habitants) sont des compléments : hors cadre, aucun verdict. Volumes : niveau A ; les 6 taux : C.": {
-  "texte": "The last three (accidents and injuries per 10 000 vehicles, injuries per 100 000 inhabitants) are supplementary: out of context, no verdict Volumes: level A; the 6 rates: C.",
   "relu": false
  },
  "annuaire national": {
@@ -5955,16 +5967,8 @@
   "texte": "national yearbook of the same year gives d",
   "relu": false
  },
- "annuaire national donne 29,75 % de routes nationales en mauvais état, le relevé des tronçons 21,2 % : les deux publications ne concordent pas. Le tableau de bord s": {
-  "texte": "National Yearbook gives 29.75% of national roads in poor condition, the breakdowns 21.2%: The two publications do not agree.",
-  "relu": false
- },
  "année, pas parc en circulation. Ruptures de série en 1995 et 2004. Permis de 2013 non renseignés. Le parc est estimé (C), et les taux par habitant hors 2010 et 2022 reposent sur une population projetée.": {
   "texte": "year, no parc in circulation. Serial breaches in 1995 and 2004. 2013 permits unreported. The park is estimated (C), and the per capita rates beyond 2010 and 2022 are based on a projected population.",
-  "relu": false
- },
- "appuie sur le relevé, le seul à donner l": {
-  "texte": "press the recorder, the only one to give the",
   "relu": false
  },
  "atteint la cible aujourd": {
@@ -6071,16 +6075,8 @@
   "texte": "Driving schools (t) / population (t) × 100 000 (R-06)",
   "relu": false
  },
- "autre, les séries varient fortement avant 2017 : l": {
-  "texte": "Otherwise, the series varies greatly before 2017:",
-  "relu": false
- },
  "autres parts (29,75 % en mauvais état, contre 21,2 %). Les tronçons sont rattachés au tracé par leur nom ; pour 7 d": {
   "texte": "Other parts (29.75% in poor condition compared to 21.2%).",
-  "relu": false
- },
- "axe (niveau C).": {
-  "texte": "axis (level C).",
   "relu": false
  },
  "axe.": {
@@ -6207,8 +6203,16 @@
   "texte": "of the population.",
   "relu": false
  },
+ "de la vue par défaut sont les tronçons critiques du 07 (": {
+  "texte": "the default view are the critical sections of 07 (",
+  "relu": false
+ },
  "de motos (2024)": {
   "texte": "motorcycles (2024)",
+  "relu": false
+ },
+ "de motos dans le parc estimé : un peu plus que leur part du parc. L'analyse faite : une seule année, ni sexe ni âge.": {
+  "texte": "The analysis made: one year, neither sex nor age.",
   "relu": false
  },
  "de plus en 2029 pour suivre la cible. Généraliser le casque n'y suffirait pas : au mieux 147 à 174 tués évités.": {
@@ -6222,6 +6226,10 @@
  "de routes en mauvais état) et un déficit de formation.": {
   "texte": "of roads in poor condition) and a training deficit.",
   "relu": true
+ },
+ "de routes nationales en mauvais état, le relevé des tronçons": {
+  "texte": "In the case of poorly maintained national roads, the survey of sections",
+  "relu": false
  },
  "de travail, gelées l'une après l'autre": {
   "texte": "of work, frozen one after the other",
@@ -6245,6 +6253,10 @@
  },
  "des ruraux à moins de 2 km d'une route revêtue": {
   "texte": "rural areas less than 2 km from a paved road",
+  "relu": false
+ },
+ "des tués sont des usagers de deux et trois-roues motorisés, pour": {
+  "texte": "Some of those killed were two- and three-wheeled motorcyclists.",
   "relu": false
  },
  "des tués à moto ou trois-roues (2021)": {
@@ -6621,6 +6633,10 @@
  },
  "le cumul complet exige le risque, non mesuré par territoire": {
   "texte": "the total cumulation requires risk, not measured by territory",
+  "relu": false
+ },
+ "le taux déclaré ; cette estimation ne corrige pas les chiffres déclarés.": {
+  "texte": "the reported rate; this estimate does not correct the reported figures.",
   "relu": false
  },
  "le taux déclaré de 2021 : 22,7 contre 8,62 /100 000": {
@@ -7131,10 +7147,6 @@
   "texte": "The cost of the shares n",
   "relu": false
  },
- "une année à l": {
-  "texte": "a year at the",
-  "relu": false
- },
  "une auto-école": {
   "texte": "a driving school",
   "relu": false
@@ -7327,6 +7339,10 @@
   "texte": "×1,83 in 2024, since 2004 (year of serial break).",
   "relu": false
  },
+ "à l'échelle nationale": {
+  "texte": "at national level",
+  "relu": false
+ },
  "à plus de 2 km d": {
   "texte": "more than 2 km d",
   "relu": false
@@ -7359,16 +7375,8 @@
   "texte": "the state is distributed along the",
   "relu": false
  },
- "état par tronçon et par préfecture. Niveau C.": {
-  "texte": "State by section and prefecture.",
-  "relu": false
- },
  "évalués (relevé de 2020)": {
   "texte": "assessed (reported in 2020)",
-  "relu": false
- },
- "évolution se lit sur des moyennes de trois ans (bloc ci-dessus). Niveau A, déclaré par la police et la gendarmerie.": {
-  "texte": "Level A, reported by the police and gendarmerie.",
   "relu": false
  },
  "Σ accidents corporels ; Σ blessés (graves, légers) ; Σ tués, par période et territoire": {

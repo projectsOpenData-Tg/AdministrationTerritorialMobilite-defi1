@@ -255,3 +255,28 @@ Couleurs fixes par donnée, dans `theme.py`, pour qu'un indicateur garde sa coul
   - Parc : « En 2024 : **751 398 véhicules**… dont **449 226 motos**… » (chiffres en **violet** via la classe `.lieu` ;
     « Niveau C » retiré).
 - **i18n** : 12 nouveaux segments traduits (en/ee/kbp) ; anciennes chaînes remplacées nettoyées des locales.
+
+## 19. Évolutions — onglets Sécurité routière et État du réseau routier (sur design/palette-a)
+
+**Sécurité routière**
+- **Icônes de thème** sur les 3 chiffres clés : *tués* (triangle rouge), *véhicule* (accidents), *alerte* (cercle « ! »
+  rouge, estimation OMS). Liseré bas conservé sur le thème orange.
+- Section « Les 6 taux » : graphe **en pleine largeur**, carte **Constat** sous la section, note de fin passée en
+  **carte « i » verte** (comme sur l'onglet Mobilité).
+- Notes de fin de graphe en **cartes « i » vertes** : séries annuelles (« Niveau A » → « Sources »), tués par usager
+  (chiffres **60 %** et **54,7 % à 59,7 %** en gras ; « Niveau C » → « L'analyse faite »), estimation OMS
+  (**2,63 fois** en gras ; « Niveau C » retiré).
+- Encadré **Limite** retitré « Limites analytiques » ; texte avec **à l'échelle nationale** et **× 2,63** en gras
+  (nouveau paramètre `limite(texte_html=…)`).
+
+**État du réseau routier**
+- **Icônes de thème** sur les 3 chiffres clés, avec liseré assorti : *route verte* (réseau évalué, liseré vert),
+  *route rouge* (mauvais état, liseré rouge), *triangle jaune-or* (tronçons en mauvais état). Nouvelles icônes
+  `route_vert`, `route_rouge`, `troncons`, `alerte` dans `ICONES`.
+- Tableau des 84 tronçons **en pleine largeur** (HTML `_table_troncons`) : colonne **Type** en **badge** (revêtue vert,
+  non revêtue jaune-or), colonne **Zones traversées** avec **chaque zone dans sa couleur** (palette des 39 préfectures,
+  `COULEUR_ZONE`), colonnes de km alignées à droite. Carte **Constat** ramenée sous la section.
+- Les notes de fin de graphe restantes passent en **cartes « i » vertes**, chiffres et km en gras ; mentions
+  « Niveau C » retirées.
+- **i18n** : 20 nouveaux segments traduits (en/ee/kbp) ; « 7 tronçons » / « 49 tronçons » fixés en anglais
+  (« sections »).

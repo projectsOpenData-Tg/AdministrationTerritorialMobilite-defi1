@@ -150,7 +150,9 @@ MANUEL = {"en": {"Tableau de bord": "Dashboard", "Principal": "Main", "Analyses"
                   "Les 17 vérifications et hypothèses": "The 17 checks and assumptions",
                   "Ce que chaque verdict change pour l'action": "What each verdict changes for action",
                   "Verdict": "Verdict", "Énoncé": "Statement", "Niveau": "Level",
-                  "État du réseau routier": "Road network condition"}}
+                  "État du réseau routier": "Road network condition",
+                  "7 tronçons": "7 sections", "49 tronçons": "49 sections",
+                  "Limites analytiques": "Analytical limits"}}
 
 
 def suspecte(src: str, trad: str) -> bool:

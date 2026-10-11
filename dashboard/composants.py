@@ -104,6 +104,16 @@ ICONES = {
               "#64748b"),
     "ecole": ('<path d="M21.42 10.92a1 1 0 0 0-.02-1.84L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.83'
               'l8.57 3.91a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/>', "#2474c6"),
+    # Variantes de l'icône « route » colorées pour les chiffres clés du réseau (bon état vert, mauvais état rouge)
+    "route_vert": ('<path d="M4 21 9 3"/><path d="M20 21 15 3"/><path d="M12 4v2"/><path d="M12 10v3"/><path d="M12 17v3"/>',
+                   "#16834a"),
+    "route_rouge": ('<path d="M4 21 9 3"/><path d="M20 21 15 3"/><path d="M12 4v2"/><path d="M12 10v3"/><path d="M12 17v3"/>',
+                    "#ce1126"),
+    # Tronçon en mauvais état : triangle d'alerte en jaune-or (couleur du thème Réseau)
+    "troncons": ('<path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/>'
+                 '<path d="M12 9v4"/><path d="M12 17h.01"/>', "#e6b422"),
+    # Alerte générique (estimation OMS plus forte) : cercle avec point d'exclamation, en rouge
+    "alerte": ('<circle cx="12" cy="12" r="9"/><path d="M12 8v4"/><path d="M12 16h.01"/>', "#ce1126"),
 }
 
 
@@ -174,13 +184,17 @@ def synthese(chiffre: str, legende: str, puces_html: list[str], egale: bool = Fa
                 f'<ul>{puces}</ul></div>', unsafe_allow_html=True)
 
 
-def limite(texte: str, titre: str = "Limite de cette page", discret: bool = False, puces: list[str] | None = None,
-           egale: bool = False):
+def limite(texte: str = "", titre: str = "Limite de cette page", discret: bool = False, puces: list[str] | None = None,
+           egale: bool = False, texte_html: str | None = None):
     """Encadré des limites ; `puces` les présente en liste à points, comme la synthèse chiffrée ; `egale` lui donne la
-    hauteur de la carte voisine."""
+    hauteur de la carte voisine ; `texte_html` permet d'insérer du gras ou des chiffres colorés (non échappé)."""
     classe = ("limite discret" if discret else "limite") + (" carte-egale" if egale else "")
-    corps = (f'<ul class="limite-liste">{"".join(f"<li>{html.escape(p)}</li>" for p in puces)}</ul>' if puces
-             else f'<div class="limite-texte">{html.escape(texte)}</div>')
+    if texte_html is not None:
+        corps = f'<div class="limite-texte">{texte_html}</div>'
+    elif puces:
+        corps = f'<ul class="limite-liste">{"".join(f"<li>{html.escape(p)}</li>" for p in puces)}</ul>'
+    else:
+        corps = f'<div class="limite-texte">{html.escape(texte)}</div>'
     st.markdown(f'<div class="{classe}"><div class="limite-titre">{html.escape(titre)}</div>{corps}</div>',
                 unsafe_allow_html=True)
 

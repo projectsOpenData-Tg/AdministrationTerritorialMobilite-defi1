@@ -87,6 +87,10 @@
   "texte": "); mɔ si me wometo o:",
   "relu": false
  },
+ "). FRE : frontière. Pour": {
+  "texte": "FRE: liƒo.",
+  "relu": false
+ },
  ", 641 955 habitants.": {
   "texte": ", ame 641,955.",
   "relu": false
@@ -103,8 +107,16 @@
   "texte": ", eye afɔku aɖeke meli le nutowo, ɣletiwo kple ƒewo me o.",
   "relu": false
  },
+ ", l'état est réparti le long de l'axe.": {
+  "texte": ", si le anyigbadziƒonuwo katã dzi.",
+  "relu": false
+ },
  ", porté par les motos. Les accidents augmentent en volume": {
   "texte": "Ʋufɔkuwo le dzidzim ɖe edzi",
+  "relu": false
+ },
+ ", sans détail par préfecture, mois ou âge. Le nombre de décès déclaré diffère des estimations de l'OMS (": {
+  "texte": "Ame siwo ku la ƒe xexlẽme to vovo tso WHO ƒe akɔntabubuwo gbɔ (",
   "relu": false
  },
  ", seule zone en retard sur la route et la formation, et par": {
@@ -509,6 +521,10 @@
  },
  "2 tronçons relevés": {
   "texte": "2 Wotsrɔ̃e",
+  "relu": false
+ },
+ "2,63 fois": {
+  "texte": "Zi 2,63",
   "relu": false
  },
  "2,7 % des routes en mauvais état (110,8 km évalués, un tronçon critique).": {
@@ -1191,10 +1207,6 @@
   "texte": "Ame siwo wowu le ƒe 2021 me la dometɔ 60 le alafa me nye ame siwo zãa ʋukuku eve kple etɔ̃",
   "relu": false
  },
- "60 % des tués sont des usagers de deux et trois-roues motorisés, pour 54,7 % à 59,7 % de motos dans le parc estimé : un peu plus que leur part du parc. Niveau C : une seule année, ni sexe ni âge.": {
-  "texte": "Amesiwo ku la dometɔ 60 le alafa me nye ame siwo zãa sɔti eve kple etɔ̃, eye amesiawo ƒe xexlẽme tso 54.7% va se ɖe 59.7 le alafa memama aɖe si ŋu wobu akɔnta tsoe - esiwo wu woƒe gome le afi ma vie.",
-  "relu": false
- },
  "60 % ou plus": {
   "texte": "60 le alafa me kple edzivɔ",
   "relu": false
@@ -1253,6 +1265,10 @@
  },
  "7 recherches complémentaires, dont 2 sans réponse": {
   "texte": "Numekɔkɔ adre, siwo me womekpɔ ŋuɖoɖo na o",
+  "relu": false
+ },
+ "7 tronçons": {
+  "texte": "7 kpl",
   "relu": false
  },
  "7 tronçons relevés": {
@@ -1623,6 +1639,10 @@
   "texte": "Le kpɔɖeŋu me, afɔku siwo ŋu woƒo nu tsoe la le dzidzim ɖe edzi, gake afɔku adeawo le dzidzim ɖe edzi le ɣeyiɣi sia me.",
   "relu": false
  },
+ ": les deux publications ne concordent pas. Le tableau de bord s'appuie sur le relevé, le seul à donner l'état par tronçon et par préfecture.": {
+  "texte": "Agbalẽ eveawo katã mewɔ ɖeka o, eye nuŋlɔɖiawo ƒe akpa ɖeka koe wozãna tsɔ ɖɔa nyatakakawo ɖo.",
+  "relu": false
+ },
  ": les préfectures au-dessus du seuil de 22,13 % de km en mauvais état. Le nom de la zone et de la région prend sa couleur de carte.": {
   "texte": "(trg) =\"5\"> Le kpɔɖeŋu me , nuto siwo le nɔnɔme gbegblẽ me wu kilometa 22.13 le alafa me la ƒe ŋkɔwo kple nutowo ƒe dzedzeme le abe nɔnɔmetata ene .",
   "relu": false
@@ -1697,10 +1717,6 @@
  },
  "Accidents et tués par préfecture": {
   "texte": "Ʋufɔkuwo kple amewuwuwo le nutowo me",
-  "relu": false
- },
- "Accidents et victimes déclarés par la police et la gendarmerie, au niveau national seulement : ni préfecture, ni mois, ni âge. Aucune définition publiée du tué ; l": {
-  "texte": "Ʋufɔkuwo kple ame siwo ŋu kpovitɔwo kple kpovitɔwo gblɔ le dukɔa me ko: nutowo, ɣletiwo, ƒewo o.",
   "relu": false
  },
  "Accidents par préfecture ; immatriculations au lieu d’usage": {
@@ -2515,6 +2531,10 @@
   "texte": "Sɔdola",
   "relu": false
  },
+ "D'une année à l'autre, les séries varient fortement avant 2017 : l'évolution se lit sur des moyennes de trois ans (bloc ci-dessus). Sources, déclaré par la police et la gendarmerie.": {
+  "texte": "Ƒe sia ƒe la, nu siwo dzɔ va yi le ƒe 2017 me la toa vovo ale gbegbe: ƒe etɔ̃ ƒe vidzidzimee nɔnɔmea nɔna (si dze le axa sia dzi).",
+  "relu": false
+ },
  "DAVIE-AMAKPAPE": {
   "texte": "DAVIE-AMAKPAPE",
   "relu": false
@@ -2807,8 +2827,8 @@
   "texte": "Le ƒe 2021 me la,",
   "relu": false
  },
- "En km, relevé de 2020. Les 49 tronçons de la vue par défaut sont les tronçons critiques du 07 (669,34 km). FRE : frontière. Pour 7 tronçons, l": {
-  "texte": "Le km dzi, le ƒe 2020 me la, nukpɔkpɔ ƒe akpa 49 siwo nye ŋkubiãnyawo le 07 (669.34 km) la me.",
+ "En km, relevé de 2020. Les": {
+  "texte": "Ƒe 2020 ƒe akɔnta si ku ɖe km ŋu",
   "relu": false
  },
  "En mauvais état": {
@@ -3483,8 +3503,8 @@
   "texte": "Ʋukulawo ƒe Suku 272 siwo ŋu woƒo nu tsoe la",
   "relu": false
  },
- "Les 3 premiers sont les taux du cadre d": {
-  "texte": "Nu etɔ̃ gbãtɔwoe nye gadzraɖoƒea ƒe xexlẽme.",
+ "Les 3 premiers sont les taux du cadre d'analyse. Les 3 derniers (accidents et blessés pour 10 000 véhicules, blessés pour 100 000 habitants) sont des compléments : hors cadre, aucun verdict.": {
+  "texte": "Nu etɔ̃ gbãtɔwo nye numekukuwo ƒe dzidzenuwo, eye etɔ̃ mamlɛawo (aʋawɔwɔ kple ame vevi siwo dzɔ ɖe ʋu 10,000 dzi, ame vevi siwo dzɔ ɖe ame 100,000 dzi) nye kpeɖeŋutɔwo: womekpɔ kpeɖodzi aɖeke o.",
   "relu": false
  },
  "Les 3 taux du cadre, puis les 3 compléments à l": {
@@ -3553,6 +3573,10 @@
  },
  "Les accidents augmentent en saison des pluies et aux périodes de fêtes": {
   "texte": "Ʋufɔkuwo Ge ɖe edzi le tsiɖitsiɖiɣiwo kple azãɣiwo",
+  "relu": false
+ },
+ "Les accidents et victimes sont recensés": {
+  "texte": "Woŋlɔ afɔkuwo kple ame siwo dzi afɔku dzɔ ɖo la ɖi",
   "relu": false
  },
  "Les accidents ne sont publiés qu": {
@@ -3777,6 +3801,10 @@
  },
  "Limites administratives du Togo (COD-AB)": {
   "texte": "Togo ƒe gomenɔamesi (COD-AB)",
+  "relu": false
+ },
+ "Limites analytiques": {
+  "texte": "Ŋutinyaŋutinya",
   "relu": false
  },
  "Limites majeures": {
@@ -4141,14 +4169,6 @@
  },
  "OMS (profil du Togo)": {
   "texte": "WHO (Togo ƒe ŋutigbalẽ)",
-  "relu": false
- },
- "OMS en estime 2,63 fois plus. Les taux par véhicule reposent sur un parc estimé (C).": {
-  "texte": "Wobu akɔnta be esia sɔ gbɔ zi 2.63.",
-  "relu": false
- },
- "OMS estime le taux de tués à 2,63 fois le taux déclaré ; cette estimation ne corrige pas les chiffres déclarés. Niveau C.": {
-  "texte": "WHO bu akɔnta be ame siwo ku la sɔ gbɔ kple ame siwo ŋu woƒo nu tsoe la zi 2.63; esia mewɔ ɖeka kple ame siwo ŋu woƒo nu tsoe o.",
   "relu": false
  },
  "OMS, 2021": {
@@ -4587,12 +4607,12 @@
   "texte": "Le ame 100,000 ta",
   "relu": false
  },
- "Pour 100 000 habitants, 2021. L": {
-  "texte": "Le ame 100,000 ƒe agbɔsɔsɔ me la, le ƒe 2021 me.",
+ "Pour 100 000 habitants, 2021. L'OMS estime le taux de tués à": {
+  "texte": "Le ame 100,000 ɖe sia ɖe ƒe agbɔsɔsɔ me le ƒe 2021 me la, Xexeme Lãmesẽ Habɔbɔ bu akɔnta be ame siwo ku le ƒe 2021 me",
   "relu": false
  },
- "Pour 2020, l": {
-  "texte": "Le ƒe 2020 me la",
+ "Pour 2020, l'annuaire national donne": {
+  "texte": "Le ƒe 2020 me la, Dukɔ Ƒoƒuawo Ƒe Agbalẽnyagbalẽa gblɔ be:",
   "relu": false
  },
  "Pour aller plus loin : ce que les données ne permettent pas encore de dire": {
@@ -5563,8 +5583,8 @@
   "texte": "Mɔ ɖeka koe wokpɔ, alo mɔ aɖeke meli si ŋu wotrɔ asi le o",
   "relu": false
  },
- "Un tronçon qui traverse plusieurs zones compte dans chacune, pour tous ses km : les lignes ne s": {
-  "texte": "Ne èkpɔe be teƒe aɖe to teƒe vovovowo la, èkpɔe be teƒea ƒe akpa sia akpa le eƒe km katã me:",
+ "Un tronçon qui traverse plusieurs zones compte dans chacune, pour tous ses km : les lignes ne s'additionnent pas. Pays :": {
+  "texte": "Anyiehe siwo le nuto vovovowo me la dometɔ ɖe sia ɖe ƒe xexlẽme le eƒe km katã me:",
   "relu": false
  },
  "Une auto-école agréée, soit 0,20 pour 100 000 habitants.": {
@@ -5907,16 +5927,8 @@
   "texte": "ʋukulawo ƒe sukuwo ƒe dɔwɔna",
   "relu": false
  },
- "additionnent pas. Pays : 49 tronçons, 669,34 km.": {
-  "texte": "Dukɔ: akpa 49, 669.34 km.",
-  "relu": false
- },
  "agrandissement montre la région Maritime et le Grand Lomé, où se concentrent les auto-écoles. Molette ou barre d": {
   "texte": "Ʋukulawo ƒe sukuwo le nuto siwo nye Maritime kple Grand Lomé me.",
-  "relu": false
- },
- "analyse. Les 3 derniers (accidents et blessés pour 10 000 véhicules, blessés pour 100 000 habitants) sont des compléments : hors cadre, aucun verdict. Volumes : niveau A ; les 6 taux : C.": {
-  "texte": "Nyatakaka etɔ̃ mamlɛawo (aʋawɔwɔ kple ame vevi siwo le ʋu 10,000 me, amesiwo ŋu dɔ dzɔ ɖo ɖe amewo 100,000 dzi) nye kpeɖeŋutɔwo: nu si womekpɔ kpɔ o.",
   "relu": false
  },
  "annuaire national": {
@@ -5927,16 +5939,8 @@
   "texte": "Ƒe sia ƒe dukɔa ƒe gbalẽgbalẽa na d",
   "relu": false
  },
- "annuaire national donne 29,75 % de routes nationales en mauvais état, le relevé des tronçons 21,2 % : les deux publications ne concordent pas. Le tableau de bord s": {
-  "texte": "Xexeameƒome ƒe gbalẽgbalẽa ɖe 29,75 le alafa me be mɔwo mele nɔnɔme gbegblẽ me o, eye teƒeawo ƒe xexlẽme nye 21,2 le alafa me: agbalẽ eveawo katã mewɔ ɖeka o",
-  "relu": false
- },
  "année, pas parc en circulation. Ruptures de série en 1995 et 2004. Permis de 2013 non renseignés. Le parc est estimé (C), et les taux par habitant hors 2010 et 2022 reposent sur une population projetée.": {
   "texte": "Ƒe 2013 ƒe mɔɖeɖe siwo womegblɔ o. Wobu akɔnta be ƒe 2010 kple 2022 me tɔwo ƒe agbɔsɔsɔ ƒe agbɔsɔsɔ le ame ɖekaɖekawo ƒe agbɔsɔsɔ dzi.",
-  "relu": false
- },
- "appuie sur le relevé, le seul à donner l": {
-  "texte": "ɖe agbalẽa dzi, ame ɖeka koe ate ŋu ana",
   "relu": false
  },
  "atteint la cible aujourd": {
@@ -6043,16 +6047,8 @@
   "texte": "ʋukulawo ƒe sukuwo (t) / ameƒomevi (t) × 100,000 (R-06)",
   "relu": false
  },
- "autre, les séries varient fortement avant 2017 : l": {
-  "texte": "Le kpɔɖeŋu me, le ƒe siwo do ŋgɔ na ƒe 2017 me la, xexlẽme vovovowoe li:",
-  "relu": false
- },
  "autres parts (29,75 % en mauvais état, contre 21,2 %). Les tronçons sont rattachés au tracé par leur nom ; pour 7 d": {
   "texte": "Wotsɔa woƒe ŋkɔwo ɖoa ɖe axawo ŋu;",
-  "relu": false
- },
- "axe (niveau C).": {
-  "texte": "Axis (ƒe C).",
   "relu": false
  },
  "axe.": {
@@ -6179,8 +6175,16 @@
   "texte": "Le dukɔ bliboa me.",
   "relu": false
  },
+ "de la vue par défaut sont les tronçons critiques du 07 (": {
+  "texte": "Mawunyakpukpui vevi siwo le 07 (",
+  "relu": false
+ },
  "de motos (2024)": {
   "texte": "Motorciklowo (2024)",
+  "relu": false
+ },
+ "de motos dans le parc estimé : un peu plus que leur part du parc. L'analyse faite : une seule année, ni sexe ni âge.": {
+  "texte": "Numekuku si wowɔ: ƒe ɖeka, ŋutsu alo nyɔnu o.",
   "relu": false
  },
  "de plus en 2029 pour suivre la cible. Généraliser le casque n'y suffirait pas : au mieux 147 à 174 tués évités.": {
@@ -6193,6 +6197,10 @@
  },
  "de routes en mauvais état) et un déficit de formation.": {
   "texte": "Mɔwo le nɔnɔme gbegblẽ me) kple hehexɔxɔ ƒe ʋume.",
+  "relu": false
+ },
+ "de routes nationales en mauvais état, le relevé des tronçons": {
+  "texte": "mɔ siwo mele nɔnɔme nyui me o la ŋu dɔ wɔwɔ,",
   "relu": false
  },
  "de travail, gelées l'une après l'autre": {
@@ -6217,6 +6225,10 @@
  },
  "des ruraux à moins de 2 km d'une route revêtue": {
   "texte": "kɔƒenutowo le mɔ si ŋu wotsi tre ɖo la ƒe didime si mede 2 km o",
+  "relu": false
+ },
+ "des tués sont des usagers de deux et trois-roues motorisés, pour": {
+  "texte": "Wo dometɔ aɖewoe nye ame siwo zãa ʋukuku eve kple etɔ̃ tsɔna wɔa dɔ.",
   "relu": false
  },
  "des tués à moto ou trois-roues (2021)": {
@@ -6593,6 +6605,10 @@
  },
  "le cumul complet exige le risque, non mesuré par territoire": {
   "texte": "Ne nu sia nu sɔ gbɔ ɖe edzi la, ahiã be ame aɖe naxɔ ga si le esi.",
+  "relu": false
+ },
+ "le taux déclaré ; cette estimation ne corrige pas les chiffres déclarés.": {
+  "texte": "Le nyateƒe me la, ga si wogblɔ la mele eme o.",
   "relu": false
  },
  "le taux déclaré de 2021 : 22,7 contre 8,62 /100 000": {
@@ -7103,10 +7119,6 @@
   "texte": "Ga si wotsɔ le adzɔwo me la ƒe home",
   "relu": false
  },
- "une année à l": {
-  "texte": "ƒe ɖeka le",
-  "relu": false
- },
  "une auto-école": {
   "texte": "ʋukulawo ƒe suku",
   "relu": false
@@ -7299,6 +7311,10 @@
   "texte": "×1,83 le ƒe 2024 me, tso ƒe 2004 me (ƒe si me woɖe asi le la)",
   "relu": false
  },
+ "à l'échelle nationale": {
+  "texte": "le dukɔ bliboa me",
+  "relu": false
+ },
  "à plus de 2 km d": {
   "texte": "le kilometa 2 kple edzivɔ me",
   "relu": false
@@ -7331,16 +7347,8 @@
   "texte": "le dukɔ la me",
   "relu": false
  },
- "état par tronçon et par préfecture. Niveau C.": {
-  "texte": "Dukɔ kple nutowo me.",
-  "relu": false
- },
  "évalués (relevé de 2020)": {
   "texte": "Ƒe 2020 ƒe akɔntabubu",
-  "relu": false
- },
- "évolution se lit sur des moyennes de trois ans (bloc ci-dessus). Niveau A, déclaré par la police et la gendarmerie.": {
-  "texte": "Ƒe etɔ̃ ƒe vidzidzimewo (siwo le etame) -A-liƒo, si polisi kple kpovitɔwo gblɔ.",
   "relu": false
  },
  "Σ accidents corporels ; Σ blessés (graves, légers) ; Σ tués, par période et territoire": {
