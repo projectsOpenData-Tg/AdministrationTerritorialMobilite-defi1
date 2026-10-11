@@ -206,8 +206,8 @@ def _zones_colorees(z) -> str:
 def _table_troncons(df: pd.DataFrame, hauteur: int = 440):
     """Tableau HTML des tronçons : badge de type, zones colorées, colonnes de km alignées à droite."""
     num = {"Bon", "Moyen", "Mauvais", "Travaux", "Km relevés"}
-    entetes = "".join(f'<th{" style=\"text-align:right\"" if c in num else ""}>{html.escape(str(c))}</th>'
-                      for c in df.columns)
+    droite = ' style="text-align:right"'
+    entetes = "".join(f'<th{droite if c in num else ""}>{html.escape(str(c))}</th>' for c in df.columns)
     corps = ""
     for _, r in df.iterrows():
         cellules = ""
