@@ -1604,6 +1604,14 @@
   "texte": ": not defined: no classified roads",
   "relu": false
  },
+ ": part en mauvais état non définie (aucune route classée).": {
+  "texte": ": road in poor condition not defined (no classified road).",
+  "relu": false
+ },
+ ": sans population rurale. Une valeur nulle mesurée s'écrit 0 (23 préfectures à 0 auto-école agréée).": {
+  "texte": "A measured zero value is written as 0 (23 prefectures with 0 accredited driving schools).",
+  "relu": false
+ },
  "= calculé (formule maîtrisée)": {
   "texte": "= calculated (maintained formula)",
   "relu": false
@@ -3471,6 +3479,10 @@
   "texte": "The 39 prefectures",
   "relu": false
  },
+ "Les 4 préfectures urbaines (Agoè-Nyivé, Golfe, Kloto, Kozah) ont": {
+  "texte": "The four urban prefectures (Agoè-Nyivé, Golfe, Kloto, Kozah) have",
+  "relu": false
+ },
  "Les 5 préfectures qui cumulent": {
   "texte": "The five prefectures that accumulate",
   "relu": false
@@ -3963,10 +3975,6 @@
   "texte": "Mo: is in poor condition and not defined (no classified road).",
   "relu": false
  },
- "Mô : part en mauvais état non définie (aucune route classée). Golfe et Agoè-Nyivé : sans population rurale. Une valeur nulle mesurée s'écrit 0 (23 préfectures à 0 auto-école agréée).": {
-  "texte": "Mo: poorly defined (no classified roads); Golfe and Agoè-Nyivé: no rural population.",
-  "relu": false
- },
  "Mô n’a aucune route classée, et son auto-école agréée la plus proche est à 52,2 km. C’est la seule préfecture dans ce cas. La médiane nationale de desserte représenterait environ 28,3 km de routes : un ordre de grandeur, pas un tracé. 52 448 habitants concernés.": {
   "texte": "Mo has no classified roads, and its nearest licensed driving school is 52.2 km away. It is the only prefecture in this case. The national median of service would be about 28.3 km of roads: an order of magnitude, not a trace.",
   "relu": false
@@ -4031,16 +4039,8 @@
   "texte": "Level A. National data: permits do not have territory or age.",
   "relu": false
  },
- "Niveau B": {
-  "texte": "Level B",
-  "relu": false
- },
  "Niveau C": {
   "texte": "Level C",
-  "relu": false
- },
- "Niveau C : état relevé en 2020, activité des auto-écoles non publiée.": {
-  "texte": "Level C: State recorded in 2020, unpublished activity of driving schools.",
   "relu": false
  },
  "Niveau C. Dernier point : d'après une seule enquête auprès des ménages (2021-2022) ; l'ordre des zones change d'une enquête à l'autre.": {
@@ -6083,10 +6083,6 @@
   "texte": "calculated",
   "relu": false
  },
- "calculé sur les auto-écoles agréées et la population de 2022.": {
-  "texte": "calculated on licensed driving schools and population in 2022.",
-  "relu": false
- },
  "cas limite": {
   "texte": "limit case",
   "relu": false
@@ -6175,6 +6171,10 @@
   "texte": "Motorcycle licences follow in the long run: 40 motorcycles registered for a motorcycle licence in 2007",
   "relu": false
  },
+ "de la population.": {
+  "texte": "of the population.",
+  "relu": false
+ },
  "de motos (2024)": {
   "texte": "motorcycles (2024)",
   "relu": false
@@ -6193,6 +6193,10 @@
  },
  "de travail, gelées l'une après l'autre": {
   "texte": "of work, frozen one after the other",
+  "relu": false
+ },
+ "des auto-écoles agréées pour": {
+  "texte": "Driving schools approved for",
   "relu": false
  },
  "des immatriculations de 2024": {
@@ -6559,10 +6563,6 @@
   "texte": "km, inhabitants",
   "relu": false
  },
- "kpi-grille une-ligne": {
-  "texte": "one-line kpi-grill",
-  "relu": false
- },
  "la formation": {
   "texte": "training",
   "relu": false
@@ -6597,10 +6597,6 @@
  },
  "le taux déclaré de 2021 : 22,7 contre 8,62 /100 000": {
   "texte": "the reported rate for 2021: 22,7 versus 8,62 /100 000",
-  "relu": false
- },
- "les 4 préfectures urbaines (Agoè-Nyivé, Golfe, Kloto, Kozah) ont 84,8 % des auto-écoles agréées pour 32,3 % de la population": {
-  "texte": "The four urban prefectures (Agoè-Nyivé, Golfe, Kloto, Kozah) have 84.8% of licensed driving schools for 32.3% of the population.",
   "relu": false
  },
  "les deux": {

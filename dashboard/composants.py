@@ -139,11 +139,19 @@ def carte_kpi(libelle: str, valeur: str, phrase: str, contexte: str = "", reserv
             f'<div class="kpi-phrase">{_insecable(html.escape(phrase))}</div></div>{ctx}{res}</div>')
 
 
-def rangee_kpi(groupe: str, cartes: list[str], une_ligne: bool = False):
-    """Rangée de chiffres clés ; `une_ligne` les tient tous sur une seule ligne sur grand écran."""
-    classe = "kpi-grille une-ligne" if une_ligne else "kpi-grille"
+def rangee_kpi(groupe: str, cartes: list[str], une_ligne: bool = False, centre: bool = False):
+    """Rangée de chiffres clés ; `une_ligne` les tient tous sur une seule ligne sur grand écran ; `centre` centre le
+    chiffre et sa phrase dans la carte."""
+    classe = "kpi-grille" + (" une-ligne" if une_ligne else "") + (" centre" if centre else "")
     st.markdown(f'<div class="groupe">{html.escape(groupe)}</div><div class="{classe}">{"".join(cartes)}</div>',
                 unsafe_allow_html=True)
+
+
+def note_carte(texte_html: str, couleur: str = "vert", titre: str = ""):
+    """Note en carte blanche, pictogramme « i » et liseré gauche coloré (vert, bleu ou rouge)."""
+    tete = f"<strong>{html.escape(titre)}</strong> " if titre else ""
+    st.markdown(f'<div class="note-carte blanche a-savoir lisere-{couleur}"><span class="info-i">i</span>'
+                f'<div>{tete}{texte_html}</div></div>', unsafe_allow_html=True)
 
 
 def constat(texte_html: str):

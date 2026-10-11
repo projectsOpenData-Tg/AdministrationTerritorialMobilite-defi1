@@ -1603,6 +1603,14 @@
   "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ pɔyɔɔdɩɣ yɔ",
   "relu": false
  },
+ ": part en mauvais état non définie (aucune route classée).": {
+  "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ lɛ se: nʋmɔʋ ŋgʋ kɩfɛyɩ camɩyɛ yɔ kɩfɛyɩ camɩyɛ (ɛfɛyɩnɩ nʋmɔʋ ŋgʋ kɩ-taa kɩwɛɛ yɔ).",
+  "relu": false
+ },
+ ": sans population rurale. Une valeur nulle mesurée s'écrit 0 (23 préfectures à 0 auto-école agréée).": {
+  "texte": "Lone nɖɩ ɖɩ-taa ɛyaa fɛyɩ yɔ, ɖɩ-taa lɛ, paayɔɔdʋʋnɩ ɛyaa mba paawɛ peeɖe yɔ.",
+  "relu": false
+ },
  "= calculé (formule maîtrisée)": {
   "texte": "= kɩlɩɣna (pɩ-yɔɔ kpɛlɩkʋʋ)",
   "relu": false
@@ -3467,6 +3475,10 @@
   "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa tɛtʊ 39",
   "relu": false
  },
+ "Les 4 préfectures urbaines (Agoè-Nyivé, Golfe, Kloto, Kozah) ont": {
+  "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa tɛtʊ sɔsɔtʊ naanza (Agoè-Nyivé, Golfe, Kloto, Kozah)",
+  "relu": false
+ },
  "Les 5 préfectures qui cumulent": {
   "texte": "Kpaagbaa kagbanzɩ nzɩ sɩ-taa ɛyaa sakɩyɛ wɛna yɔ",
   "relu": false
@@ -3956,10 +3968,6 @@
   "texte": "Mo: Kɩwɛ kaɖɛ nɛ kɩfɛyɩ camɩyɛ (ɛyʋ fɛyɩ nɛ kɩ-nʋmɔʋ ŋgʋ kɩ-taa kɩwɛɛ yɔ kɩ-taa).",
   "relu": false
  },
- "Mô : part en mauvais état non définie (aucune route classée). Golfe et Agoè-Nyivé : sans population rurale. Une valeur nulle mesurée s'écrit 0 (23 préfectures à 0 auto-école agréée).": {
-  "texte": "Mo: tɛtʊ ndʊ tɩ-taa ɛyaa fɛyɩ yɔ (hayɩ kiɖe naɖɩyɛ) Golfe nɛ Agoé-Nyivé taa lɛ, pɛfɛyɩna tɛtʋ cikpetu natʋyʋ.",
-  "relu": false
- },
  "Mô n’a aucune route classée, et son auto-école agréée la plus proche est à 52,2 km. C’est la seule préfecture dans ce cas. La médiane nationale de desserte représenterait environ 28,3 km de routes : un ordre de grandeur, pas un tracé. 52 448 habitants concernés.": {
   "texte": "Mo tɛtʊ ndʊ tɩ-taa paayɔɔdʋʋ nʋmɔʋ yɔ, tɩwɛna kilomɛtanaa 52.2 nɛ kɛwɛ kɩjaɣyɛ nɖɩ ɖɩñɔtɩnaa. Pɩɩkɛ Prefekturɩ kʋɖʋmɖɩyɛ koŋ mbʊ pʊyɔɔ yɔ.",
   "relu": false
@@ -4024,16 +4032,8 @@
   "texte": "Lone A. Lone nɖɩ ɖɩ-taa paɖʋʋ paɣtʋ yɔ: pa-taa nɔɔyʋ ɛɛwɛna ageeta yaa ageeta.",
   "relu": false
  },
- "Niveau B": {
-  "texte": "Lɩmaɣzɩyɛ B",
-  "relu": false
- },
  "Niveau C": {
   "texte": "Lɩmaɣzɩyɛ C",
-  "relu": false
- },
- "Niveau C : état relevé en 2020, activité des auto-écoles non publiée.": {
-  "texte": "Lɩmaɣzɩyɛ C: pɩnaɣ 2020 taa lɛ, tɔm ndʋ tɩ-taa paayɔɔdʋʋ sukuli kɩtɛzʊʊ yɔɔ yɔ tɩ-tɔm.",
   "relu": false
  },
  "Niveau C. Dernier point : d'après une seule enquête auprès des ménages (2021-2022) ; l'ordre des zones change d'une enquête à l'autre.": {
@@ -6069,10 +6069,6 @@
   "texte": "ɛlɩzɩɣ",
   "relu": false
  },
- "calculé sur les auto-écoles agréées et la population de 2022.": {
-  "texte": "Pɩnaɣ 2022 taa lɛ, ɛyaa mba pɛwɛnɩ waɖɛ se pɔcɔŋnɩ lɔɔɖɩyɛ taa yɔ, pa-taa nabɛyɛ yɔɔdɩ tɔm ndʋ.",
-  "relu": false
- },
  "cas limite": {
   "texte": "kpɩtaʋ tɔm",
   "relu": false
@@ -6161,6 +6157,10 @@
   "texte": "Pɩnaɣ 2007 taa lɛ, patalɩ 40 nɛ patalɩ pa-tɩ se pehiɣ pa-tɩ pa-lone taa.",
   "relu": false
  },
+ "de la population.": {
+  "texte": "Ɛyaa mba pɛwɛ peeɖe yɔ, pa-taa sakɩyɛ.",
+  "relu": false
+ },
  "de motos (2024)": {
   "texte": "lɔɔɖa (pɩnaɣ 2024)",
   "relu": false
@@ -6179,6 +6179,10 @@
  },
  "de travail, gelées l'une après l'autre": {
   "texte": "tʋmɩyɛ ɖɩlaɖɛ nɛ pɩ-taa tɛyɛ",
+  "relu": false
+ },
+ "des auto-écoles agréées pour": {
+  "texte": "kpɛlɛkʋʋ sukuli wena a-yɔɔ paha tʊmɩyɛ yɔ",
   "relu": false
  },
  "des immatriculations de 2024": {
@@ -6545,10 +6549,6 @@
   "texte": "km, ɛyaa",
   "relu": false
  },
- "kpi-grille une-ligne": {
-  "texte": "kpi-grille kʋyʋmɩŋ",
-  "relu": false
- },
  "la formation": {
   "texte": "kpɛlɩkʋʋ",
   "relu": false
@@ -6583,10 +6583,6 @@
  },
  "le taux déclaré de 2021 : 22,7 contre 8,62 /100 000": {
   "texte": "Pɩnaɣ 2021 ñɩŋga: 22,7 nɛ 8,62 /100 000",
-  "relu": false
- },
- "les 4 préfectures urbaines (Agoè-Nyivé, Golfe, Kloto, Kozah) ont 84,8 % des auto-écoles agréées pour 32,3 % de la population": {
-  "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩwɛna ajɛya wena a-taa ɛyaa kɩlɩ ɖɔʋ yɔ: Agoué-Nyivé, Golfe, Kloto nɛ Kozah.",
   "relu": false
  },
  "les deux": {

@@ -1603,6 +1603,14 @@
   "texte": ": womeka ɖe eme o: mɔ aɖeke meli si woɖo anyi o",
   "relu": false
  },
+ ": part en mauvais état non définie (aucune route classée).": {
+  "texte": "Ʋu si mele nɔnɔme gbegblẽ me o (mɔ aɖeke mele eme o).",
+  "relu": false
+ },
+ ": sans population rurale. Une valeur nulle mesurée s'écrit 0 (23 préfectures à 0 auto-école agréée).": {
+  "texte": "Wode dzesi nu si nye naneke o (woŋlɔe ɖe afi si ʋukulawo ƒe suku aɖeke mele o le) be 0 (woŋlɔe ɖe afi si ʋukulawo ƒe suku aɖeke mele o le)",
+  "relu": false
+ },
  "= calculé (formule maîtrisée)": {
   "texte": "= Xexlẽ (nu si me nunya le)",
   "relu": false
@@ -3467,6 +3475,10 @@
   "texte": "39 nutowo",
   "relu": false
  },
+ "Les 4 préfectures urbaines (Agoè-Nyivé, Golfe, Kloto, Kozah) ont": {
+  "texte": "Du ene siwo nye Agoué-Nyivé, Golfe, Kloto, Kozah la",
+  "relu": false
+ },
  "Les 5 préfectures qui cumulent": {
   "texte": "Eyae nye nuto atɔ̃ siwo ƒo ƒu",
   "relu": false
@@ -3955,10 +3967,6 @@
   "texte": "Mɔ: Mɔ si le nɔnɔme gbegblẽ me si womeka ɖe eme o (mɔ aɖeke meli si ŋu woƒo nu tsoe o).",
   "relu": false
  },
- "Mô : part en mauvais état non définie (aucune route classée). Golfe et Agoè-Nyivé : sans population rurale. Une valeur nulle mesurée s'écrit 0 (23 préfectures à 0 auto-école agréée).": {
-  "texte": "Mɔ: le nɔnɔme gbegblẽ me si womeka ɖe eme o (mɔ aɖeke meli si dzi wotɔ ɖo o); Gulf kple Agoè-Nyivé: le agble me o.",
-  "relu": false
- },
  "Mô n’a aucune route classée, et son auto-école agréée la plus proche est à 52,2 km. C’est la seule préfecture dans ce cas. La médiane nationale de desserte représenterait environ 28,3 km de routes : un ordre de grandeur, pas un tracé. 52 448 habitants concernés.": {
   "texte": "Mɔ aɖeke mele mɔ siwo woɖo ɖi o, eye woƒe ʋukulawo ƒe suku si tsɔ ɖe wo gbɔ wu la le kilometa 52.2. Eyae nye nuto ɖeka kolia si le afi sia.",
   "relu": false
@@ -4023,16 +4031,8 @@
   "texte": "Dukɔwo ƒe nyatakakawo: Ŋutilã alo ƒe aɖeke mele mɔɖeɖewo ŋu o.",
   "relu": false
  },
- "Niveau B": {
-  "texte": "Aƒe B",
-  "relu": false
- },
  "Niveau C": {
   "texte": "Afɔ C",
-  "relu": false
- },
- "Niveau C : état relevé en 2020, activité des auto-écoles non publiée.": {
-  "texte": "Afɔ C: Ƒe 2020 ƒe nyatakaka si wometa ɖe go o.",
   "relu": false
  },
  "Niveau C. Dernier point : d'après une seule enquête auprès des ménages (2021-2022) ; l'ordre des zones change d'une enquête à l'autre.": {
@@ -6067,10 +6067,6 @@
   "texte": "akɔnta",
   "relu": false
  },
- "calculé sur les auto-écoles agréées et la population de 2022.": {
-  "texte": "Xexeameƒomevi siwo le ʋu ʋum le ƒe 2022 me la ƒe xexlẽme",
-  "relu": false
- },
  "cas limite": {
   "texte": "seɖoƒe",
   "relu": false
@@ -6159,6 +6155,10 @@
   "texte": "Ʋuʋuwo ƒe mɔɖegbalẽwo le dzidzim ɖe edzi: Ʋuʋuwo ƒe mɔɖegbalẽ 40 le ƒe 2007 me",
   "relu": false
  },
+ "de la population.": {
+  "texte": "Le dukɔ bliboa me.",
+  "relu": false
+ },
  "de motos (2024)": {
   "texte": "Motorciklowo (2024)",
   "relu": false
@@ -6177,6 +6177,10 @@
  },
  "de travail, gelées l'une après l'autre": {
   "texte": "Dɔwɔɖuiwo, siwo wodzra ɖo ɖe wo nɔewo ŋu",
+  "relu": false
+ },
+ "des auto-écoles agréées pour": {
+  "texte": "ʋukulawo ƒe suku siwo ŋu wodze se ɖo",
   "relu": false
  },
  "des immatriculations de 2024": {
@@ -6543,10 +6547,6 @@
   "texte": "km, ame siwo le eme",
   "relu": false
  },
- "kpi-grille une-ligne": {
-  "texte": "kpi-grill ɖeka-lin",
-  "relu": false
- },
  "la formation": {
   "texte": "hehexɔxɔ",
   "relu": false
@@ -6581,10 +6581,6 @@
  },
  "le taux déclaré de 2021 : 22,7 contre 8,62 /100 000": {
   "texte": "Ƒe 2021 ƒe nyatakaka: 22,7 tso 8,62 /100 000 gbɔ",
-  "relu": false
- },
- "les 4 préfectures urbaines (Agoè-Nyivé, Golfe, Kloto, Kozah) ont 84,8 % des auto-écoles agréées pour 32,3 % de la population": {
-  "texte": "Le dugã ene siwo le dugã me la (Agoè-Nyivé, Golfe, Kloto, Kozah) ʋukulawo ƒe xexlẽme le 84.8 le alafa me, eye wole 32.3 le alafa me.",
   "relu": false
  },
  "les deux": {

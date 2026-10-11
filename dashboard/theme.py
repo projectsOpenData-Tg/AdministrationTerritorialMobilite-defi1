@@ -274,6 +274,18 @@ div.st-key-topbar_droite [data-testid="stMarkdownContainer"] { display: flex; ju
 .note-carte.blanche { background: #ffffff; border: 1px solid #e2e8f0; border-left: 4px solid #1769aa; }
 .note-carte.blanche.risque { border-left-color: #ce1126; }
 /* « À savoir » : pictogramme « i » cerclé avant le texte */
+.note-carte.lisere-vert { border-left-color: #16834a; } .note-carte.lisere-vert .info-i { background: #16834a; }
+.note-carte.lisere-rouge { border-left-color: #ce1126; } .note-carte.lisere-rouge .info-i { background: #ce1126; }
+/* Chiffres clés centrés (rangee_kpi(centre=True)) */
+.kpi-grille.centre .kpi-centre { flex: 1 0 auto; display: flex; flex-direction: column; align-items: center; text-align: center;
+  gap: 6px; padding: 8px 0 4px; }
+/* Carte horizontale à liseré bleu : chiffre à gauche, texte à droite */
+.carte-chiffre { display: grid; grid-template-columns: minmax(180px, 0.6fr) 2fr; gap: 28px; align-items: center; background: #ffffff;
+  border: 1px solid #e2e8f0; border-left: 4px solid #1769aa; border-radius: 12px; padding: 18px 24px; margin: 0.4rem 0 0.8rem; }
+.carte-chiffre-lib { font-size: 0.78rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #1769aa; }
+.carte-chiffre .synthese-chiffre { margin: 2px 0 0; }
+.carte-chiffre-texte { font-size: 0.98rem; line-height: 1.55; color: #172b3a; }
+@media (max-width: 760px) { .carte-chiffre { grid-template-columns: 1fr; gap: 10px; } }
 .note-carte.a-savoir { display: flex; gap: 12px; align-items: flex-start; }
 .info-i { flex: 0 0 22px; height: 22px; border-radius: 50%; background: #1769aa; color: #ffffff; font: 700 13px/22px Georgia, serif;
   text-align: center; font-style: italic; margin-top: 2px; }

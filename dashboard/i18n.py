@@ -277,26 +277,31 @@ def _graphique(args, kwargs):
     return args, kwargs
 
 
+TEXTES = ("markdown", "caption", "info", "warning", "success", "error", "write", "text", "subheader", "title", "header")
+LIBELLES = ("button", "download_button", "expander", "toggle", "slider", "text_input", "checkbox", "page_link", "popover")
+CHOIX = ("radio", "selectbox", "pills", "multiselect", "select_slider", "segmented_control")
+ENVELOPPES = TEXTES + LIBELLES + CHOIX + ("tabs", "dataframe", "plotly_chart")
+
+
 def installer():
     """Branche bi() sur l'affichage de Streamlit (une fois par processus)."""
     if getattr(DeltaGenerator, "_i18n_installe", False):
         return
-    for nom in ("markdown", "caption", "info", "warning", "success", "error", "write", "text", "subheader", "title",
-                "header"):
+    for nom in TEXTES:
         _envelopper(nom, _premier_libelle)
-    for nom in ("button", "download_button", "expander", "toggle", "slider", "text_input", "checkbox", "page_link",
-                "popover"):
+    for nom in LIBELLES:
         _envelopper(nom, lambda a, k: _premier_libelle(a, k, "label"))
-    for nom in ("radio", "selectbox", "pills", "multiselect", "select_slider", "segmented_control"):
+    for nom in CHOIX:
         _envelopper(nom, _choix)
     _envelopper("tabs", _onglets)
     _envelopper("dataframe", _tableau)
     _envelopper("plotly_chart", _graphique)
     # st.markdown, st.caption… sont des méthodes liées au conteneur principal, figées à l'import : on les relie
     import streamlit
-    for nom in dir(streamlit):
-        f = getattr(streamlit, nom)
-        if getattr(f, "__self__", None) is streamlit._main and hasattr(DeltaGenerator, nom):
+    # (liste explicite : parcourir dir(streamlit) lirait des attributs dépréciés comme st._bottom → avertissement)
+    for nom in ENVELOPPES:
+        f = getattr(streamlit, nom, None)
+        if getattr(f, "__self__", None) is streamlit._main:
             setattr(streamlit, nom, getattr(streamlit._main, nom))
     DeltaGenerator._i18n_installe = True
 

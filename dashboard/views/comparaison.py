@@ -12,7 +12,7 @@ import pandas as pd  # noqa: E402
 import plotly.graph_objects as go  # noqa: E402
 import streamlit as st  # noqa: E402
 
-from composants import (ariane, carte_kpi, constat, entete, export_csv, habiller, limite, note, pied,  # noqa: E402
+from composants import (ariane, carte_kpi, constat, entete, export_csv, habiller, limite, note, note_carte, pied,  # noqa: E402
                         rangee_kpi, synthese, titre_bloc, tracer)
 from donnees import fr, lire  # noqa: E402
 from theme import COULEUR_REGION, COULEUR_ZONE, ENCRE, ETAT, ROUGE_DRAPEAU  # noqa: E402
@@ -104,7 +104,7 @@ rangee_kpi("Trois territoires à surveiller (chiffres nationaux)", [
     carte_kpi("Préfectures loin d'une auto-école", "26 sur 39", "chef-lieu à plus de 10 km de la plus proche agréée",
               "3 482 856 habitants. Distance depuis le chef-lieu (un point central pour 9 préfectures).",
               etiquette="C", ton="alerte", pastille=("📍", "#dbeafe")),
-])
+], centre=True)
 
 # ------------------------------------------------------------------ Section 2 — Maille
 titre_bloc("Choisir la maille")
@@ -118,7 +118,6 @@ titre_bloc("Réseau et formation", "Part de routes en mauvais état (horizontal)
 constat("La <strong style='color:#4a3aa7'>Centrale</strong> est seule à franchir les seuils du réseau "
         "<em>et</em> de la formation : <strong>40,3 %</strong> de routes en mauvais état et "
         "<strong>0,50</strong> auto-école agréée pour 100 000 habitants.")
-st.caption("Niveau C : état relevé en 2020, activité des auto-écoles non publiée.")
 
 if maille.startswith("Préfectures"):
     d = cla.copy()
@@ -151,8 +150,8 @@ if maille.startswith("Préfectures"):
     tracer(fig, "cmp_nuage")
     au_dela = (d["O3-02"] > seuil).sum()
     pop_dela = int(d.loc[d["O3-02"] > seuil, "Population"].sum())
-    note(f"Au seuil de {fr(seuil, 2)} %, {au_dela} préfecture(s) au-delà, {fr(pop_dela)} habitants. "
-         "Mô (aucune route classée, part non définie) n'est pas placée.")
+    note_carte(f"Au seuil de {fr(seuil, 2)} %, {au_dela} préfecture(s) au-delà, {fr(pop_dela)} habitants. "
+               "Mô (aucune route classée, part non définie) n'est pas placée.")
 else:
     est_zone = maille.startswith("Zones")
     d = reg[reg.Maille == ("Zone" if est_zone else "Région")].copy()
@@ -289,19 +288,19 @@ for zone, total, part in zip(zz["Zone"], totaux, zz["Part en mauvais état (%)"]
     fig.add_annotation(x=total, y=zone, text=f"<b>{fr(part, 1)} %</b>", showarrow=False, xanchor="left", xshift=9,
                        font=dict(color="#e34948" if alerte else ENCRE, size=12))
 tracer(fig, "cmp_etat")
-note("Les km sont inscrits dans chaque segment ; la part en mauvais état se lit au bout de la barre, en rouge pour "
-     "les zones au-dessus de la médiane. Centrale : 40,3 %, la part la plus forte. Détail par tronçon en page Carte.")
-if not maille.startswith("Zones"):
-    st.caption("Ce bloc reste en 6 zones : l'état par type de route n'est calculé que par zone, jamais additionné.")
+note_carte("Les km sont inscrits dans chaque segment ; la part en mauvais état se lit au bout de la barre, en rouge "
+           "pour les zones au-dessus de la médiane. Centrale : 40,3 %, la part la plus forte. Détail par tronçon en "
+           "page Carte.")
 
 # ------------------------------------------------------------------ Section 6 — Où sont les auto-écoles
 st.markdown("")
-titre_bloc("Où sont les auto-écoles", "Concentration urbaine")
+titre_bloc("Où sont les auto-écoles")
 conc = hyp.loc["H8", "Valeur"]
-st.markdown(f'<div class="synthese-chiffre" style="font-size:2.6rem">×{fr(conc, 2)}</div>'
-            '<div class="synthese-legende">les 4 préfectures urbaines (Agoè-Nyivé, Golfe, Kloto, Kozah) '
-            'ont 84,8 % des auto-écoles agréées pour 32,3 % de la population</div>', unsafe_allow_html=True)
-st.caption("Niveau B — calculé sur les auto-écoles agréées et la population de 2022.")
+st.markdown('<div class="carte-chiffre"><div><div class="carte-chiffre-lib">Concentration urbaine</div>'
+            f'<div class="synthese-chiffre" style="font-size:2.6rem">×{fr(conc, 2)}</div></div>'
+            '<div class="carte-chiffre-texte">Les 4 préfectures urbaines (Agoè-Nyivé, Golfe, Kloto, Kozah) ont '
+            '<strong>84,8 %</strong> des auto-écoles agréées pour <strong>32,3 %</strong> de la population.</div></div>',
+            unsafe_allow_html=True)
 st.markdown("")
 titre_bloc("Distance à l'auto-école agréée la plus proche", "Une barre par préfecture, triée par distance.")
 dd = pref10[["Préfecture", "Formation — distance à la plus proche (km)", "Formation — auto-écoles comptées", "Zone"]].copy()
@@ -333,9 +332,9 @@ chips = "".join(
     for i in sorted(presents.index))
 st.markdown(f'<div class="filtres-actifs"><b>Distance, par palier de dix kilomètres :</b><br>{chips}</div>',
             unsafe_allow_html=True)
-note("Le nombre laisse les 23 préfectures sans auto-école agréée toutes à zéro ; la distance les distingue : "
-     "de 11,0 km (Agou) à 84,0 km (Oti-Sud). Ligne rouge : seuil de 10 km. Barre bleu foncé : aucune auto-école "
-     "agréée. Le chiffre, au bout de la barre, prend la couleur de son palier de dix kilomètres.")
+note_carte("Le nombre laisse les 23 préfectures sans auto-école agréée toutes à zéro ; la distance les distingue : "
+           "de 11,0 km (Agou) à 84,0 km (Oti-Sud). Ligne rouge : seuil de 10 km. Barre bleu foncé : aucune "
+           "auto-école agréée. Le chiffre, au bout de la barre, prend la couleur de son palier de dix kilomètres.")
 export_csv(dd.rename(columns={"dist": "distance_km", "ae": "auto_ecoles_comptees"}),
            "distance_auto_ecoles.csv", "cmp_exp_dist")
 
@@ -412,8 +411,9 @@ st.markdown(
     f' &nbsp;·&nbsp; <b style="color:#e34948">En rouge</b> : les préfectures au-dessus du seuil de '
     f'{fr(SEUIL_PREF, 2)} % de km en mauvais état. Le nom de la zone et de la région prend sa couleur de carte.</div>',
     unsafe_allow_html=True)
-st.caption("Mô : part en mauvais état non définie (aucune route classée). Golfe et Agoè-Nyivé : sans population rurale. "
-           "Une valeur nulle mesurée s'écrit 0 (23 préfectures à 0 auto-école agréée).")
+note_carte("<strong>Mô</strong> : part en mauvais état non définie (aucune route classée). <strong>Golfe</strong> et "
+           "<strong>Agoè-Nyivé</strong> : sans population rurale. Une valeur nulle mesurée s'écrit 0 (23 préfectures "
+           "à 0 auto-école agréée).", couleur="rouge")
 export_csv(tab, "prefectures_comparaison.csv", "cmp_exp_pref")
 
 # ------------------------------------------------------------------ Section 8 — Points d'attention

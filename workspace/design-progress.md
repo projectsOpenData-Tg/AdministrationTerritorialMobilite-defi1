@@ -176,3 +176,16 @@ Couleurs fixes par donnée, dans `theme.py`, pour qu'un indicateur garde sa coul
   auto-écoles » passe au-dessus.
 - Nouveaux textes traduits (en, ee, kbp) ; un passage anglais inventé par le modèle corrigé à la main.
 
+## 13. Comparaison territoriale (suite) et avertissement Streamlit
+
+- **Avertissement « st._bottom »** corrigé : `i18n.installer()` ne parcourt plus tous les attributs de Streamlit
+  (ce qui lisait l'attribut déprécié `st._bottom`), mais une liste explicite de fonctions.
+- 3 chiffres clés : chiffre et phrase **centrés** (`rangee_kpi(centre=True)`).
+- Retirés : « Niveau C : état relevé en 2020… », « Ce bloc reste en 6 zones… », « Niveau B — calculé… ».
+- Notes en **cartes blanches à liseré vert et pictogramme « i »** (`composants.note_carte()`) : seuil des
+  préfectures (maille Préfectures), état du réseau par type de route, distance à l'auto-école.
+- **Où sont les auto-écoles** : carte horizontale à liseré bleu, « Concentration urbaine » et ×2,62 à gauche, le
+  texte à droite (`.carte-chiffre`).
+- **Les 39 préfectures** : note en carte à **liseré rouge**, noms de préfectures en gras (Mô, Golfe, Agoè-Nyivé).
+- Traductions mises à jour (en, ee, kbp).
+
