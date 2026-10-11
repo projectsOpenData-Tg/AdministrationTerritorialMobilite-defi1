@@ -627,6 +627,10 @@ with ong[3]:
     aff = aff.rename(columns={"km_bon": "Bon", "km_moyen": "Moyen", "km_mauvais": "Mauvais", "km_travaux": "Travaux",
                               "km_total": "Km relevés"})
     _table_troncons(aff, 440)
+    st.markdown(f'<div class="filtres-actifs"><b>{len(aff)}</b> tronçons affichés'
+                + (' — les 84 relevés.' if tous
+                   else ' — les 49 en mauvais état. Cochez « Afficher les 84 tronçons » pour voir aussi les autres.')
+                + '</div>', unsafe_allow_html=True)
     note_carte("En km, relevé de 2020. Les <strong>49 tronçons</strong> de la vue par défaut sont les tronçons "
                "critiques du 07 (<strong>669,34 km</strong>). FRE : frontière. Pour <strong>7 tronçons</strong>, "
                "l'état est réparti le long de l'axe.", couleur="vert")
