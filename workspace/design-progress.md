@@ -141,3 +141,87 @@ Couleurs fixes par donnée, dans `theme.py`, pour qu'un indicateur garde sa coul
 - Synthèse chiffrée : contenu centré verticalement dans la carte verte, liste à puces alignée à gauche.
 - Pied de page, sous la carte « Limite » : « Mise à jour : 2026. » retiré de la phrase sur les données.
 
+## 11. Traduction (branche `design/traduction`, partie de `design/palette-a`)
+
+- **Langues** : français (source), anglais, éwé, kabiyè. **Sélecteur** dans la barre latérale, sous le logo
+  (FR · EN · Eʋegbe · Kabɩyɛ) ; la langue suit l'adresse (`?lang=en|ee|kbp`) et reste la même d'une page à l'autre.
+- **Méthode « traduire avant le déploiement »** : `scripts/traduire_dashboard.py` recense les textes (chaînes du code
+  et textes réellement affichés par les 8 pages), les traduit une fois avec **NLLB-200** (distillé 600M, via
+  CTranslate2 ; licence CC-BY-NC, admise car le tableau de bord est une démo non commerciale) et écrit
+  `dashboard/locales/<langue>.json`, qu'on commit. À l'affichage, `bi()` lit ces fichiers : aucun modèle, aucun
+  appel réseau (compatible Heroku et Streamlit Cloud).
+- **`dashboard/i18n.py`** : `installer()` fait passer par `bi()` tout ce que Streamlit affiche (markdown, widgets,
+  onglets, tableaux, graphiques Plotly). Le HTML, le markdown, les gabarits `%{…}`, le CSS, les pictogrammes et les
+  noms de lieux des données ne sont jamais traduits ; un segment absent reste en français.
+- **Qualité** : anglais correct (quelques termes d'interface fixés à la main, marqués `"relu": true`) ; éwé et
+  kabiyè approximatifs (contresens sur le vocabulaire technique, quelques mots répétés). Les traductions jugées
+  inventées sont laissées en français et marquées `"suspect": true`. **Relecture par des locuteurs nécessaire**
+  avant une présentation officielle : corriger le JSON et passer `"relu": true` pour que le script ne l'écrase pas.
+- **Logo** de la barre latérale décliné par langue (`static/logo_barre_laterale_<langue>.svg`) ; texte français
+  gardé quand la traduction est trop longue (cas du kabiyè).
+- Mise à jour après un changement de texte : `python scripts/traduire_dashboard.py` (ne traduit que le nouveau),
+  puis `python scripts/logo_barre_laterale.py`.
+
+## 12. Page Comparaison territoriale
+
+- Texte d'introduction dans une **carte blanche**, sur **deux lignes** (la Centrale… ; 23 préfectures…), mots et
+  chiffres forts en couleur (Centrale dans sa couleur de zone, chiffres de risque en rouge drapeau).
+- Les **3 chiffres clés** passent avant « Choisir la maille », avec une **pastille d'émoji** par thème, comme les
+  cartes des quatre thèmes de la Vue nationale (🛣️ réseau, 🏫 auto-écoles, 📍 distance) : `carte_kpi(pastille=…)`.
+- « Choisir la maille » : sous-titre « Les objectifs 3 et 4 demandent… » retiré.
+- **Réseau et formation** : Constat sous le titre, graphique sur toute la largeur, note des seuils dans une carte
+  blanche « ⓘ **À savoir :** … » (`.note-carte.a-savoir`).
+- **Les territoires** : badge « desserte » en jaune drapeau `#FCD116` (texte foncé).
+- **Distance à l'auto-école agréée la plus proche** : graphique sur toute la largeur ; le bloc « Où sont les
+  auto-écoles » passe au-dessus.
+- Nouveaux textes traduits (en, ee, kbp) ; un passage anglais inventé par le modèle corrigé à la main.
+
+## 13. Comparaison territoriale (suite) et avertissement Streamlit
+
+- **Avertissement « st._bottom »** corrigé : `i18n.installer()` ne parcourt plus tous les attributs de Streamlit
+  (ce qui lisait l'attribut déprécié `st._bottom`), mais une liste explicite de fonctions.
+- 3 chiffres clés : chiffre et phrase **centrés** (`rangee_kpi(centre=True)`).
+- Retirés : « Niveau C : état relevé en 2020… », « Ce bloc reste en 6 zones… », « Niveau B — calculé… ».
+- Notes en **cartes blanches à liseré vert et pictogramme « i »** (`composants.note_carte()`) : seuil des
+  préfectures (maille Préfectures), état du réseau par type de route, distance à l'auto-école.
+- **Où sont les auto-écoles** : carte horizontale à liseré bleu, « Concentration urbaine » et ×2,62 à gauche, le
+  texte à droite (`.carte-chiffre`).
+- **Les 39 préfectures** : note en carte à **liseré rouge**, noms de préfectures en gras (Mô, Golfe, Agoè-Nyivé).
+- Traductions mises à jour (en, ee, kbp).
+
+## 14. Comparaison : points d'attention, synthèse et limite
+
+- **Points d'attention** : noms de lieux (préfectures, zones, régions) en **violet** `#4A3AA7` comme dans les
+  constats, effectifs d'habitants en **rouge** `#CE1126` (`_colorer()` dans `comparaison.py`, classes `.lieu`
+  et `.habitants`) ; les 5 cartes ont la **même hauteur**.
+- **Synthèse chiffrée et Limite** côte à côte, **même hauteur** ; la Limite est présentée en **liste à points**,
+  comme la synthèse (`limite(puces=…)`).
+- Mécanisme réutilisable : classe `.carte-egale` (options `egale=True` de `synthese()` et `limite()`) pour égaliser
+  les hauteurs des cartes d'une même rangée.
+
+## 15. Évolutions — onglet Synthèse
+
+- Texte d'introduction dans une **carte blanche** (`entete(carte=True)`).
+- 3 chiffres clés : **icônes** (✅ confirmées, ⚠️ infirmées/nuancées, ❓ non testables) et contenu **centré**
+  (`rangee_kpi(centre=True)`, `carte_kpi(pastille=…)`).
+- **Couleurs de verdict uniformes** sur la page (palette A) : confirmée vert `#16834A`, infirmée rouge `#CE1126`,
+  nuancée jaune-or `#E6B422`, non testable gris bleuté `#8293A7` — appliquées aux encarts, aux badges des tableaux,
+  à la légende et aux marqueurs de la carte.
+- **La carte des constats** : les 3 encarts nationaux (Mobilité·confirmée, Sécurité routière·nuancée, Accidents par
+  territoire·non testable) deviennent des **cartes blanches à liseré gauche** coloré par leur verdict. Les deux
+  constats cartographiés (réseau, auto-écoles) passent **sous la carte, à droite de la légende**, en cartes à
+  liseré vert et pictogramme « i ». Les points d'auto-écoles de la carte prennent la couleur « nuancée ».
+- **Tableaux « 17 vérifications » et « Ce que chaque verdict change »** : la colonne Verdict s'affiche en **badge
+  coloré** (pilule), au lieu de colorer le fond de la cellule (tableaux rendus en HTML, `_table_verdict`).
+- **i18n** : les blocs `<style>…</style>` sont désormais protégés comme un tout (au lieu d'exclure toute la chaîne),
+  pour que le texte qui les entoure se traduise. Termes de verdict et d'interface fixés à la main en anglais.
+
+## 16. Évolutions — tous les onglets (chiffres clés)
+
+- **Liseré coloré en bas de chaque carte** de chiffre clé, sur les 4 onglets : Synthèse par verdict (vert/jaune/gris),
+  Mobilité bleu, Sécurité routière orange, Réseau jaune-or (`carte_kpi(bordure=…)`).
+- **Chiffre, phrase et constat (réserve) centrés** dans chaque carte (`rangee_kpi(centre=True)` ; la réserve est
+  centrée et sans filet séparateur en mode centré).
+- Carte « Confirmées » : texte « L'énoncé du défi est largement vérifié. » remplacé par
+  « Les données confirment les principaux constats. »
+

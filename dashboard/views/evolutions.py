@@ -1,6 +1,7 @@
 """Page 3 — Évolutions et constats. Quatre onglets : Synthèse (les 17 vérifications), Mobilité, Sécurité routière,
 Réseau (design-page3.md). Aucun recalcul : indicateurs_07, taux_09, hypotheses_09, consequences_11, D4_etat_troncons,
 D4_etat_national_pct. Les onglets ouvrent sur le rang passé par la page 1 (st.session_state['evolutions_rang'])."""
+import html
 import re
 import sys
 from pathlib import Path
@@ -12,7 +13,7 @@ import plotly.graph_objects as go  # noqa: E402
 import streamlit as st  # noqa: E402
 
 from composants import (ariane, carte_kpi, constat, entete, export_csv, fenetre_geo, habiller, limite, note,  # noqa: E402
-                        onglets, pied, rangee_kpi, synthese, titre_bloc, tracer)
+                        note_carte, onglets, pied, rangee_kpi, synthese, titre_bloc, tracer)
 from donnees import contours, couche, fr, lire, lire_processed  # noqa: E402
 from theme import BLEUS, ENCRE, THEME  # noqa: E402
 
@@ -30,10 +31,10 @@ THEME_CODE = {"S1": "Mobilité", "S2": "Mobilité", "H1": "Mobilité",
               "H7": "Sécurité routière", "H10": "Sécurité routière", "H11": "Sécurité routière", "H12": "Sécurité routière",
               "S5": "Réseau", "H3": "Réseau", "H5": "Réseau", "H4": "Formation", "H8": "Formation",
               "H9": "Réseau et formation"}
-VERDICT_COUL = {"confirmée": "#1baf7a", "infirmée": "#e34948", "nuancée": "#eda100", "non testable": "#b9b6ad"}
+VERDICT_COUL = {"confirmée": "#16834a", "infirmée": "#ce1126", "nuancée": "#e6b422", "non testable": "#8293a7"}
 # Badge clair : fond pastel, texte dans la teinte sombre de la même famille, pour rester lisible dans un tableau.
-VERDICT_BADGE = {"confirmée": ("#e2f4ec", "#11613f"), "infirmée": ("#fde8e8", "#a02622"),
-                 "nuancée": ("#fef3c7", "#8a5a00"), "non testable": ("#efece4", "#55534e")}
+VERDICT_BADGE = {"confirmée": ("#e0f1e7", "#0b4d2e"), "infirmée": ("#fbe3e5", "#a00d1e"),
+                 "nuancée": ("#fbf3d9", "#7a5a00"), "non testable": ("#eef2f6", "#475569")}
 
 
 # Une couleur par type de mesure de sécurité routière : le rouge est réservé aux tués.
@@ -140,21 +141,51 @@ def _traces_mauvais():
     return sortie
 
 
-def _encart(titre: str, chiffre: str, legende: str, verdict: str, couleur: str, serie, cle: str):
-    """Un thème national : son verdict, son chiffre, et une courbe de rappel avec ses valeurs extrêmes."""
-    st.markdown(f'<div style="font-size:.72rem;font-weight:700;color:{couleur};text-transform:uppercase;'
-                f'letter-spacing:.03em;margin-top:6px">{titre} · {verdict}</div>'
-                f'<div style="font-size:1.5rem;font-weight:700;color:#0d366b;line-height:1.1">{chiffre}</div>'
-                f'<div style="font-size:.76rem;color:#55534e">{legende}</div>', unsafe_allow_html=True)
-    f = go.Figure(go.Scatter(x=serie["x"], y=serie["y"], mode="lines", line=dict(color=couleur, width=2),
-                             fill="tozeroy", fillcolor="rgba(42,120,214,0.10)"))
-    for x, y, pos in [(serie["x"].iloc[0], serie["y"].iloc[0], "middle right"),
-                      (serie["x"].iloc[-1], serie["y"].iloc[-1], "middle left")]:
-        f.add_annotation(x=x, y=y, text=f"<b>{fr(y, 0 if y > 100 else 2)}</b>", showarrow=False,
-                         font=dict(color=couleur, size=9), xanchor="left" if "right" in pos else "right")
-    f.update_layout(height=92, margin=dict(l=2, r=2, t=2, b=2), paper_bgcolor="#ffffff", plot_bgcolor="#ffffff",
-                    showlegend=False, xaxis=dict(visible=False), yaxis=dict(visible=False))
-    st.plotly_chart(f, key=cle, config={"displayModeBar": False, "staticPlot": True})
+def _rgba(hexc: str, a: float) -> str:
+    h = hexc.lstrip("#")
+    return f"rgba({int(h[0:2], 16)}, {int(h[2:4], 16)}, {int(h[4:6], 16)}, {a})"
+
+
+def _encart(titre: str, chiffre: str, legende: str, verdict: str, serie, cle: str):
+    """Un thème national, dans une carte blanche à liseré gauche coloré par son verdict (uniforme sur la page).
+    Le chiffre et la courbe de rappel sont facultatifs (ex. « Accidents par territoire » n'en a pas)."""
+    coul = VERDICT_COUL[verdict]
+    with st.container(key=f"enc_{cle}"):
+        num = f'<div class="encart-chiffre">{chiffre}</div>' if chiffre else ""
+        st.markdown(f'<style>div.st-key-enc_{cle}{{border-left-color:{coul}}}</style>'
+                    f'<div class="encart-tete"><b>{titre}</b> '
+                    f'<span class="encart-verdict" style="color:{coul}">· {verdict}</span></div>'
+                    f'{num}<div class="encart-legende">{legende}</div>', unsafe_allow_html=True)
+        if serie is not None:
+            f = go.Figure(go.Scatter(x=serie["x"], y=serie["y"], mode="lines", line=dict(color=coul, width=2),
+                                     fill="tozeroy", fillcolor=_rgba(coul, 0.10)))
+            for x, y, pos in [(serie["x"].iloc[0], serie["y"].iloc[0], "right"),
+                              (serie["x"].iloc[-1], serie["y"].iloc[-1], "left")]:
+                f.add_annotation(x=x, y=y, text=f"<b>{fr(y, 0 if y > 100 else 2)}</b>", showarrow=False,
+                                 font=dict(color=coul, size=9), xanchor="left" if pos == "right" else "right")
+            f.update_layout(height=92, margin=dict(l=2, r=2, t=2, b=2), paper_bgcolor="#ffffff",
+                            plot_bgcolor="#ffffff", showlegend=False, xaxis=dict(visible=False),
+                            yaxis=dict(visible=False))
+            st.plotly_chart(f, key=cle, config={"displayModeBar": False, "staticPlot": True})
+
+
+def _table_verdict(df: pd.DataFrame, hauteur: int | None = None):
+    """Tableau HTML : la colonne Verdict s'affiche en badge coloré (au lieu de colorer le fond de la cellule)."""
+    entetes = "".join(f"<th>{html.escape(str(c))}</th>" for c in df.columns)
+    corps = ""
+    for _, r in df.iterrows():
+        cellules = ""
+        for c in df.columns:
+            v = r[c]
+            if c == "Verdict":
+                bg, fg = VERDICT_BADGE.get(v, ("#eef2f6", "#475569"))
+                cellules += f'<td><span class="verdict-badge" style="background:{bg};color:{fg}">{html.escape(str(v))}</span></td>'
+            else:
+                cellules += f"<td>{html.escape(str(v))}</td>"
+        corps += f"<tr>{cellules}</tr>"
+    style = f' style="max-height:{hauteur}px"' if hauteur else ""
+    st.markdown(f'<div class="tbl-verdict"{style}><table><thead><tr>{entetes}</tr></thead>'
+                f'<tbody>{corps}</tbody></table></div>', unsafe_allow_html=True)
 
 
 def valn(idc, annee=None, cat=None, mesure=None):
@@ -192,7 +223,7 @@ ariane("Évolutions et constats")
 entete("Évolutions et constats", "Qu'est-ce qui change, et que confirment les données ?",
        "Les immatriculations ont été multipliées par <strong>4,56</strong> en 20 ans, portées par les motos ; les "
        "accidents déclarés augmentent, mais les <strong>6 taux</strong> baissent ; <strong>49 tronçons</strong> sur 84 "
-       "concentrent le mauvais état du réseau.")
+       "concentrent le mauvais état du réseau.", carte=True)
 
 ong = onglets("evolutions", ["Synthèse", "Mobilité", "Sécurité routière", "Réseau"])
 
@@ -204,12 +235,15 @@ with ong[0]:
     n_nt = (hyp.Verdict == "non testable").sum()
     rangee_kpi("Les 17 vérifications et hypothèses du cadrage", [
         carte_kpi("Confirmées", str(n_conf), "sur 17 vérifications et hypothèses",
-                  "L'énoncé du défi est largement vérifié.", etiquette="A", ton="ok"),
+                  "Les données confirment les principaux constats.", etiquette="A", ton="ok",
+                  pastille=("✅", VERDICT_BADGE["confirmée"][0]), bordure=VERDICT_COUL["confirmée"]),
         carte_kpi("Infirmées ou nuancées", f"{n_inf + n_nua}", f"{n_inf} infirmées, {n_nua} nuancée",
-                  "« Les accidents augmentent » est nuancé : volume en hausse, taux en baisse.", etiquette="A"),
+                  "« Les accidents augmentent » est nuancé : volume en hausse, taux en baisse.", etiquette="A",
+                  pastille=("⚠️", VERDICT_BADGE["nuancée"][0]), bordure=VERDICT_COUL["nuancée"]),
         carte_kpi("Non testables", str(n_nt), "faute de données par territoire, par mois ou par âge",
-                  "7 questions restent ouvertes : voir la page Méthodologie.", etiquette="C", ton="alerte"),
-    ])
+                  "7 questions restent ouvertes : voir la page Méthodologie.", etiquette="C", ton="alerte",
+                  pastille=("❓", VERDICT_BADGE["non testable"][0]), bordure=VERDICT_COUL["non testable"]),
+    ], centre=True)
     constat("L'énoncé est vérifié, sauf « les accidents augmentent », qui est <strong>nuancé</strong> : les accidents "
             "déclarés montent, mais les six taux de risque baissent sur la période.")
 
@@ -229,10 +263,10 @@ with ong[0]:
                           "<br>Km en mauvais état de la zone : %{customdata[1]} %<extra></extra>")
         for largeur, (lon, lat) in _traces_mauvais().items():
             fig.add_scattergeo(lon=lon, lat=lat, mode="lines", name="Tronçons en mauvais état",
-                               line=dict(width=largeur, color="#e34948"), hoverinfo="skip", showlegend=False)
+                               line=dict(width=largeur, color="#ce1126"), hoverinfo="skip", showlegend=False)
         fig.add_scattergeo(lon=AE_AGREEES.geometry.x, lat=AE_AGREEES.geometry.y, mode="markers",
-                           name="Auto-écoles agréées", marker=dict(size=5, color="#ffffff",
-                                                                   line=dict(width=0.8, color="#141413")),
+                           name="Auto-écoles agréées",
+                           marker=dict(size=6, color=VERDICT_COUL["nuancée"], line=dict(width=0.8, color="#7a5a00")),
                            text=AE_AGREEES["Préfecture"], hovertemplate="Auto-école agréée — %{text}<extra></extra>",
                            showlegend=False)
         fenetre_geo(fig, GEO_PREF)
@@ -242,6 +276,20 @@ with ong[0]:
         st.plotly_chart(fig, key="ev_carte_constats",
                         config={"displayModeBar": True, "scrollZoom": True, "displaylogo": False,
                                 "modeBarButtonsToRemove": ["select2d", "lasso2d"]})
+    with d_carte:
+        titre_bloc("Ce qui n'a pas de territoire", "Publié pour tout le pays seulement.")
+        _encart("Mobilité", "×4,56", "immatriculations de 2002 à 2022", "confirmée", SERIE_IMMAT, "ev_spark_immat")
+        _encart("Sécurité routière", "−29,4 %", "tués pour 100 000 habitants, 2010–2012 face à 2022–2024",
+                "nuancée", SERIE_TUES, "ev_spark_tues")
+        _encart("Accidents par territoire", "", "Non publiés : 7 questions restent sans réponse.", "non testable",
+                None, "ev_spark_acc")
+        st.caption("Les immatriculations, les permis et les accidents ne sont publiés que pour tout le pays : ils ne "
+                   "se cartographient pas. Aucun curseur des années sur la carte : les données par territoire n'ont "
+                   "qu'une date (réseau 2020, auto-écoles 2021-2022, population 2022).")
+
+    # Sous la carte : la légende « km en mauvais état » et, à droite, les deux constats cartographiés (confirmés)
+    bas_g, bas_d = st.columns([1.5, 1], vertical_alignment="top")
+    with bas_g:
         eff = CARTE["classe"].value_counts()
         chips = "".join(
             f'<span style="display:inline-flex;align-items:center;gap:5px;margin-right:12px;font-size:.74rem">'
@@ -251,30 +299,18 @@ with ong[0]:
         st.markdown(
             f'<div class="filtres-actifs"><b>Km en mauvais état de la zone</b> (préfectures) :<br>{chips}<br>'
             f'<span style="display:inline-flex;align-items:center;gap:5px;margin-right:14px;font-size:.74rem">'
-            f'<span style="width:16px;height:0;border-top:3px solid #e34948"></span>49 tronçons en mauvais état '
+            f'<span style="width:16px;height:0;border-top:3px solid #ce1126"></span>49 tronçons en mauvais état '
             f'(épaisseur selon les km)</span>'
             f'<span style="display:inline-flex;align-items:center;gap:5px;font-size:.74rem">'
-            f'<span style="width:11px;height:11px;border-radius:50%;background:#fff;border:1.5px solid #141413">'
-            f'</span>132 auto-écoles agréées</span></div>', unsafe_allow_html=True)
+            f'<span style="width:11px;height:11px;border-radius:50%;background:{VERDICT_COUL["nuancée"]};'
+            f'border:1px solid #7a5a00"></span>132 auto-écoles agréées</span></div>', unsafe_allow_html=True)
         if st.button("Voir la carte détaillée →", key="ev_lien_carte"):
             st.switch_page("views/carte.py")
-    with d_carte:
-        st.markdown('<div class="filtres-actifs"><b>Le réseau est inégalement entretenu : confirmée</b><br>'
-                    '32,6 points d\'écart entre la Centrale (40,3 %) et le Grand Lomé (7,7 %).</div>',
-                    unsafe_allow_html=True)
-        st.markdown('<div class="filtres-actifs"><b>Les auto-écoles sont concentrées dans les grandes villes : '
-                    'confirmée</b><br>84,8 % des auto-écoles agréées dans les 4 préfectures urbaines.</div>',
-                    unsafe_allow_html=True)
-        titre_bloc("Ce qui n'a pas de territoire", "Publié pour tout le pays seulement.")
-        _encart("Mobilité", "×4,56", "immatriculations de 2002 à 2022", "confirmée", THEME["Mobilité"],
-                SERIE_IMMAT, "ev_spark_immat")
-        _encart("Sécurité routière", "−29,4 %", "tués pour 100 000 habitants, 2010–2012 face à 2022–2024",
-                "nuancée", THEME["Sécurité routière"], SERIE_TUES, "ev_spark_tues")
-        st.markdown('<div class="filtres-actifs"><b>Accidents par territoire</b> — <i>non testable</i><br>'
-                    'Non publiés : 7 questions restent sans réponse.</div>', unsafe_allow_html=True)
-        st.caption("Les immatriculations, les permis et les accidents ne sont publiés que pour tout le pays : ils ne "
-                   "se cartographient pas. Aucun curseur des années sur la carte : les données par territoire n'ont "
-                   "qu'une date (réseau 2020, auto-écoles 2021-2022, population 2022).")
+    with bas_d:
+        note_carte("32,6 points d'écart entre la Centrale (40,3 %) et le Grand Lomé (7,7 %).",
+                   titre="Le réseau est inégalement entretenu : confirmée")
+        note_carte("84,8 % des auto-écoles agréées dans les 4 préfectures urbaines.",
+                   titre="Les auto-écoles sont concentrées dans les grandes villes : confirmée")
 
     f_verdict = st.multiselect("Filtrer par verdict", list(VERDICT_COUL), key="ev_verdict")
     titre_bloc("Les 17 vérifications et hypothèses", "Énoncé, verdict, et ce que montrent les données.")
@@ -288,8 +324,7 @@ with ong[0]:
         lignes.append({"Thème": r["Thème"], "Énoncé": r["Énoncé"], "Verdict": r["Verdict"],
                        "Ce que montrent les données": nettoyer(montre), "Niveau": r["Niveau"]})
     tbl = pd.DataFrame(lignes)
-    st.dataframe(tbl.style.map(_badge_verdict, subset=["Verdict"]), hide_index=True, use_container_width=True,
-                 height=560)
+    _table_verdict(tbl, 560)
     st.markdown('<div class="filtres-actifs"><b>Verdict :</b> '
                 + "".join(f'<span style="display:inline-block;background:{c};color:{t};border-radius:999px;'
                           f'padding:1px 9px;font-size:.72rem;font-weight:600;margin-right:6px">{v}</span>'
@@ -307,7 +342,7 @@ with ong[0]:
     chg.append({"Énoncé": "Les 7 questions non testables", "Verdict": "non testable",
                 "Ce qui change pour l'action": "Aucune recommandation ne s'y appuie. La donnée qui les rendrait "
                 "testables est en page Méthodologie."})
-    st.dataframe(pd.DataFrame(chg), hide_index=True, use_container_width=True)
+    _table_verdict(pd.DataFrame(chg))
     limite("7 questions restent non testables faute d'accidents par préfecture, par mois et par âge des conducteurs. "
            "Les tués sont ceux que déclarent la police et la gendarmerie.")
 
@@ -317,12 +352,12 @@ with ong[1]:
     motos24 = valn("O1-01", 2024, "Moto")
     rangee_kpi("Mobilité — ce qui change", [
         carte_kpi("Immatriculations sur 20 ans", "×4,56", "de 2002 à 2022",
-                  "×1,83 en 2024, depuis 2004 (année de rupture de série).", etiquette="B"),
+                  "×1,83 en 2024, depuis 2004 (année de rupture de série).", etiquette="B", bordure=THEME["Mobilité"]),
         carte_kpi("Croissance annuelle moyenne", "7,8 %", "par an, 1990–2024",
-                  "Motos : 11,7 % par an ; voitures : 4,2 %.", etiquette="B"),
+                  "Motos : 11,7 % par an ; voitures : 4,2 %.", etiquette="B", bordure=THEME["Mobilité"]),
         carte_kpi("Part des motos", "74,4 %", "des immatriculations de 2024",
-                  "22,2 % en 1990.", etiquette="B", ton="ok"),
-    ])
+                  "22,2 % en 1990.", etiquette="B", ton="ok", bordure=THEME["Mobilité"]),
+    ], centre=True)
     g, d = st.columns([1.7, 1], vertical_alignment="top")
     with g:
         titre_bloc("Immatriculations par groupe, 1990–2024")
@@ -445,12 +480,13 @@ with ong[1]:
 with ong[2]:
     rangee_kpi("Sécurité routière — ce qui change", [
         carte_kpi("Tués pour 100 000 habitants", "−29,4 %", "10,45 en 2010–2012, 7,38 en 2022–2024",
-                  "Le risque par habitant baisse.", etiquette="C", ton="ok"),
+                  "Le risque par habitant baisse.", etiquette="C", ton="ok", bordure=THEME["Sécurité routière"]),
         carte_kpi("Accidents constatés par an", "+9,4 %", "6 381,7 puis 6 980,7",
-                  "Le volume monte : plus de véhicules.", etiquette="A"),
+                  "Le volume monte : plus de véhicules.", etiquette="A", bordure=THEME["Sécurité routière"]),
         carte_kpi("Tués estimés par l'OMS", "×2,63", "le taux déclaré de 2021 : 22,7 contre 8,62 /100 000",
-                  "L'estimation de l'OMS ne corrige pas les tués déclarés.", etiquette="C", ton="alerte"),
-    ])
+                  "L'estimation de l'OMS ne corrige pas les tués déclarés.", etiquette="C", ton="alerte",
+                  bordure=THEME["Sécurité routière"]),
+    ], centre=True)
     g, d = st.columns([1.7, 1], vertical_alignment="top")
     with g:
         titre_bloc("Les 6 taux : 2010–2012 face à 2022–2024", "Les 3 taux du cadre, puis les 3 compléments à l'énoncé.")
@@ -539,12 +575,13 @@ with ong[2]:
 with ong[3]:
     rangee_kpi("Réseau — ce qui change", [
         carte_kpi("Réseau évalué", "3 163", "km de routes nationales, relevé de 2020",
-                  "84 tronçons relevés.", etiquette="C", unite=" km"),
+                  "84 tronçons relevés.", etiquette="C", unite=" km", bordure=THEME["Réseau"]),
         carte_kpi("En mauvais état", "21,2 %", "669,34 km",
-                  "Part des km évalués.", etiquette="C", ton="alerte"),
+                  "Part des km évalués.", etiquette="C", ton="alerte", bordure=THEME["Réseau"]),
         carte_kpi("Tronçons en mauvais état", "49 sur 84", "34 revêtus, 15 non revêtus",
-                  "Le mauvais état se concentre sur ces tronçons.", etiquette="C", ton="alerte"),
-    ])
+                  "Le mauvais état se concentre sur ces tronçons.", etiquette="C", ton="alerte",
+                  bordure=THEME["Réseau"]),
+    ], centre=True)
     g, d = st.columns([1.8, 1], vertical_alignment="top")
     with g:
         titre_bloc("Les 84 tronçons relevés et leur état", "Vue par défaut : les 49 tronçons en mauvais état.")

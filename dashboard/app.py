@@ -16,6 +16,7 @@ ICI = Path(__file__).resolve().parent
 if str(ICI) not in sys.path:
     sys.path.insert(0, str(ICI))
 
+import i18n  # noqa: E402
 from composants import pied_barre_laterale, topbar  # noqa: E402
 from donnees import ZONES  # noqa: E402
 from theme import appliquer_theme  # noqa: E402
@@ -23,9 +24,14 @@ from theme import appliquer_theme  # noqa: E402
 st.set_page_config(page_title="Mobilité et sécurité routière au Togo", page_icon=":material/directions_car:",
                    layout="wide", initial_sidebar_state="expanded")
 appliquer_theme()
+# Traduction : tout ce que Streamlit affiche passe par i18n.bi() ; sélecteur de langue sous le logo de la barre latérale
+i18n.installer()
+i18n.selecteur()
+bi = i18n.bi
 # Logo de la barre latérale (Togo en miniature et nom du tableau de bord), en face du bouton qui la replie ;
 # silhouette seule quand la barre est repliée. Fichiers produits par scripts/logo_barre_laterale.py.
-st.logo(str(ICI / "static" / "logo_barre_laterale.svg"), size="large",
+_logo = ICI / "static" / f"logo_barre_laterale_{i18n.langue()}.svg"
+st.logo(str(_logo if _logo.exists() else ICI / "static" / "logo_barre_laterale.svg"), size="large",
         icon_image=str(ICI / "static" / "logo_togo_icone.svg"))
 topbar()
 
@@ -41,19 +47,19 @@ def reinitialiser():
 
 
 PAGES = {
-    "Principal": [st.Page("views/vue_nationale.py", title="Vue nationale", icon=":material/home:", default=True)],
-    "Analyses": [
-        st.Page("views/comparaison.py", title="Comparaison territoriale", icon=":material/bar_chart:", url_path="comparaison"),
-        st.Page("views/evolutions.py", title="Évolutions et constats", icon=":material/timeline:", url_path="evolutions"),
-        st.Page("views/carte.py", title="Carte du réseau et des auto-écoles", icon=":material/map:", url_path="carte"),
+    bi("Principal"): [st.Page("views/vue_nationale.py", title=bi("Vue nationale"), icon=":material/home:", default=True)],
+    bi("Analyses"): [
+        st.Page("views/comparaison.py", title=bi("Comparaison territoriale"), icon=":material/bar_chart:", url_path="comparaison"),
+        st.Page("views/evolutions.py", title=bi("Évolutions et constats"), icon=":material/timeline:", url_path="evolutions"),
+        st.Page("views/carte.py", title=bi("Carte du réseau et des auto-écoles"), icon=":material/map:", url_path="carte"),
     ],
-    "Pilotage": [
-        st.Page("views/priorites.py", title="Priorités", icon=":material/flag:", url_path="priorites"),
-        PAGE_RECOS := st.Page("views/recommandations.py", title="Recommandations", icon=":material/task_alt:", url_path="recommandations"),
-        PAGE_HORIZON := st.Page("views/horizon.py", title="Horizon 2031", icon=":material/trending_up:", url_path="horizon"),
+    bi("Pilotage"): [
+        st.Page("views/priorites.py", title=bi("Priorités"), icon=":material/flag:", url_path="priorites"),
+        PAGE_RECOS := st.Page("views/recommandations.py", title=bi("Recommandations"), icon=":material/task_alt:", url_path="recommandations"),
+        PAGE_HORIZON := st.Page("views/horizon.py", title=bi("Horizon 2031"), icon=":material/trending_up:", url_path="horizon"),
     ],
-    "Méthodologie": [
-        st.Page("views/methodologie.py", title="Méthodologie", icon=":material/menu_book:", url_path="methodologie"),
+    bi("Méthodologie"): [
+        st.Page("views/methodologie.py", title=bi("Méthodologie"), icon=":material/menu_book:", url_path="methodologie"),
     ],
 }
 

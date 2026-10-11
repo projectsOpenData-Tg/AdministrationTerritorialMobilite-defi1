@@ -113,16 +113,19 @@ def icone_kpi(nom: str) -> str:
 
 def carte_kpi(libelle: str, valeur: str, phrase: str, contexte: str = "", reserve: str = "", etiquette: str | None = None,
               ton: str = "neutre", unite: str = "", icone: str | None = None, periode: str = "",
-              tendance: tuple[str, str, str] | None = None) -> str:
+              tendance: tuple[str, str, str] | None = None, pastille: tuple[str, str] | None = None,
+              bordure: str | None = None) -> str:
     """Chiffre clé (maquette §8.4) : la valeur se lit avec sa phrase ; la réserve, en bas, dit ce que le chiffre ne
     mesure pas (aucune si vide). `icone` (clé de ICONES) ajoute la pastille du thème à gauche du libellé ; `periode`
     s'écrit entre parenthèses sous le libellé ; `tendance` = (variation, référence, sens) s'affiche en badge sous la
-    valeur, sens ∈ {"pire", "mieux", "neutre"}."""
+    valeur, sens ∈ {"pire", "mieux", "neutre"} ; `pastille` = (émoji, fond) remplace l'icône au trait."""
     tag = f'<span class="etiquette {ton}">{html.escape(etiquette)}</span>' if etiquette else ""
     u = f'<span class="kpi-unite">{html.escape(unite)}</span>' if unite else ""
     ctx = f'<div class="kpi-contexte">{_insecable(contexte)}</div>' if contexte else ""
     res = f'<div class="kpi-reserve">{_insecable(html.escape(reserve))}</div>' if reserve else ""
     ico = icone_kpi(icone) if icone else ""
+    if pastille:
+        ico = f'<span class="kpi-icone" style="background:{pastille[1]};font-size:1.1rem">{pastille[0]}</span>'
     per = f'<div class="kpi-periode">({html.escape(periode)})</div>' if periode else ""
     tend = ""
     if tendance:
@@ -130,18 +133,27 @@ def carte_kpi(libelle: str, valeur: str, phrase: str, contexte: str = "", reserv
         fleche = "↗" if variation.startswith("+") else "↘" if variation.startswith(("−", "-")) else "→"
         tend = (f'<span class="kpi-tendance {sens}">{fleche} {_insecable(html.escape(variation))} '
                 f'<small>{html.escape(reference)}</small></span>')
-    bas = f' style="border-bottom-color:{ICONES[icone][1]}"' if icone else ""   # liseré du bas, couleur du thème
+    coul_bas = bordure or (ICONES[icone][1] if icone else None)   # liseré du bas : couleur demandée ou celle de l'icône
+    bas = f' style="border-bottom-color:{coul_bas}"' if coul_bas else ""
     return (f'<div class="kpi"{bas}><div class="kpi-tete">{ico}<div class="kpi-libelle" lang="fr">{html.escape(libelle)}{per}</div>'
             f'{tag}</div><div class="kpi-centre">'
             f'<div class="kpi-valeur">{_insecable(html.escape(valeur))}{u}</div>{tend}'
             f'<div class="kpi-phrase">{_insecable(html.escape(phrase))}</div></div>{ctx}{res}</div>')
 
 
-def rangee_kpi(groupe: str, cartes: list[str], une_ligne: bool = False):
-    """Rangée de chiffres clés ; `une_ligne` les tient tous sur une seule ligne sur grand écran."""
-    classe = "kpi-grille une-ligne" if une_ligne else "kpi-grille"
+def rangee_kpi(groupe: str, cartes: list[str], une_ligne: bool = False, centre: bool = False):
+    """Rangée de chiffres clés ; `une_ligne` les tient tous sur une seule ligne sur grand écran ; `centre` centre le
+    chiffre et sa phrase dans la carte."""
+    classe = "kpi-grille" + (" une-ligne" if une_ligne else "") + (" centre" if centre else "")
     st.markdown(f'<div class="groupe">{html.escape(groupe)}</div><div class="{classe}">{"".join(cartes)}</div>',
                 unsafe_allow_html=True)
+
+
+def note_carte(texte_html: str, couleur: str = "vert", titre: str = ""):
+    """Note en carte blanche, pictogramme « i » et liseré gauche coloré (vert, bleu ou rouge)."""
+    tete = f"<strong>{html.escape(titre)}</strong> " if titre else ""
+    st.markdown(f'<div class="note-carte blanche a-savoir lisere-{couleur}"><span class="info-i">i</span>'
+                f'<div>{tete}{texte_html}</div></div>', unsafe_allow_html=True)
 
 
 def constat(texte_html: str):
@@ -149,17 +161,24 @@ def constat(texte_html: str):
                 f'<div class="constat-texte">{texte_html}</div></div>', unsafe_allow_html=True)
 
 
-def synthese(chiffre: str, legende: str, puces_html: list[str]):
+def synthese(chiffre: str, legende: str, puces_html: list[str], egale: bool = False):
+    """Synthèse chiffrée ; `egale` lui donne la hauteur de la carte voisine."""
     puces = "".join(f"<li>{p}</li>" for p in puces_html)
-    st.markdown(f'<div class="synthese"><div><div class="synthese-titre">Synthèse chiffrée</div>'
+    classe = "synthese carte-egale" if egale else "synthese"
+    st.markdown(f'<div class="{classe}"><div><div class="synthese-titre">Synthèse chiffrée</div>'
                 f'<div class="synthese-chiffre">{chiffre}</div><div class="synthese-legende">{legende}</div></div>'
                 f'<ul>{puces}</ul></div>', unsafe_allow_html=True)
 
 
-def limite(texte: str, titre: str = "Limite de cette page", discret: bool = False):
-    classe = "limite discret" if discret else "limite"
-    st.markdown(f'<div class="{classe}"><div class="limite-titre">{html.escape(titre)}</div>'
-                f'<div class="limite-texte">{html.escape(texte)}</div></div>', unsafe_allow_html=True)
+def limite(texte: str, titre: str = "Limite de cette page", discret: bool = False, puces: list[str] | None = None,
+           egale: bool = False):
+    """Encadré des limites ; `puces` les présente en liste à points, comme la synthèse chiffrée ; `egale` lui donne la
+    hauteur de la carte voisine."""
+    classe = ("limite discret" if discret else "limite") + (" carte-egale" if egale else "")
+    corps = (f'<ul class="limite-liste">{"".join(f"<li>{html.escape(p)}</li>" for p in puces)}</ul>' if puces
+             else f'<div class="limite-texte">{html.escape(texte)}</div>')
+    st.markdown(f'<div class="{classe}"><div class="limite-titre">{html.escape(titre)}</div>{corps}</div>',
+                unsafe_allow_html=True)
 
 
 def titre_bloc(titre: str, sous_titre: str | None = None, marge: bool = False):

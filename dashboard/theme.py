@@ -58,6 +58,18 @@ body:has([data-testid="stHeader"] [data-testid="stToolbar"]) div.st-key-topbar_d
 [data-testid="stSidebarHeader"] { height: auto !important; min-height: 6.6rem; align-items: center; padding-top: 1rem !important; padding-bottom: 0.4rem !important; }
 [data-testid="stSidebarHeader"] img { height: auto !important; width: 100% !important; max-width: 100% !important; max-height: 7rem; object-fit: contain; object-position: left center; }
 [data-testid="stSidebarHeader"] > div:first-child { flex: 1 1 auto !important; min-width: 0; max-width: none !important; width: auto !important; margin-right: 0.6rem; }
+/* Sélecteur de langue : sous le logo, au-dessus du menu (il est rendu dans le contenu de la barre, puis remonté) */
+[data-testid="stSidebarContent"] { position: relative; }
+div.st-key-selecteur_langue { position: absolute; top: 7.9rem; left: 1.5rem; right: 1.5rem; z-index: 2; gap: 0.3rem; }
+[data-testid="stSidebarNav"] { margin-top: 4.4rem; }
+.langue-lib { margin-bottom: 8px; font-size: 0.68rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #cbd5e1; }
+div.st-key-selecteur_langue [data-testid="stButtonGroup"] { background: rgba(255,255,255,0.06); border: 1px solid #24415c;
+  border-radius: 999px; padding: 3px; width: fit-content; }
+[data-testid="stSidebar"] div.st-key-selecteur_langue button[data-variant] { background: transparent !important; border: 0 !important; border-radius: 999px !important;
+  min-height: 0 !important; padding: 4px 11px !important; color: #cbd5e1 !important; }
+div.st-key-selecteur_langue button p { font-size: 0.78rem !important; font-weight: 600; color: inherit !important; }
+[data-testid="stSidebar"] div.st-key-selecteur_langue button[data-variant][aria-pressed="true"], [data-testid="stSidebar"] div.st-key-selecteur_langue button[data-variant][aria-checked="true"],
+[data-testid="stSidebar"] div.st-key-selecteur_langue button[data-variant][data-selected="true"] { background: #1769aa !important; color: #ffffff !important; }
 /* Slogan et illustration de route, poussés en bas de la barre latérale quand la place le permet */
 [data-testid="stSidebarContent"] { display: flex; flex-direction: column; }
 [data-testid="stSidebarUserContent"] { flex: 1 0 auto; display: flex; flex-direction: column; }
@@ -196,6 +208,33 @@ div[class*="st-key-carte_reco_"]:hover { transform: translateY(-4px); box-shadow
 .synthese ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 8px; font-size: 0.92rem; line-height: 1.5; }
 .limite { background: #fdf3d7; border: 1px solid #ecd28f; border-radius: 14px; padding: 14px 18px; margin-top: 14px; }
 .limite-titre { color: #6b4700; }
+.limite-liste { margin: 8px 0 0; padding-left: 18px; display: flex; flex-direction: column; gap: 8px; font-size: 0.92rem;
+  line-height: 1.5; color: #3a2a00; }
+/* Rangées de cartes de même hauteur (points d'attention ; synthèse et limite côte à côte) */
+[data-testid="stHorizontalBlock"]:has(.carte-egale) { align-items: stretch; }
+[data-testid="stColumn"]:has(.carte-egale) > [data-testid="stVerticalBlock"] { height: 100%; }
+[data-testid="stColumn"]:has(.carte-egale) [data-testid="stElementContainer"]:has(.carte-egale) { flex: 1 1 auto; }
+[data-testid="stColumn"]:has(.carte-egale) [data-testid="stElementContainer"]:has(.carte-egale) .stMarkdown,
+[data-testid="stColumn"]:has(.carte-egale) [data-testid="stElementContainer"]:has(.carte-egale) .stMarkdown > div,
+[data-testid="stColumn"]:has(.carte-egale) [data-testid="stElementContainer"]:has(.carte-egale) [data-testid="stMarkdownContainer"],
+[data-testid="stColumn"]:has(.carte-egale) .carte-egale { height: 100%; box-sizing: border-box; margin-top: 0; margin-bottom: 0; }
+.lieu { color: #4a3aa7; font-weight: 600; }
+/* Encarts « Ce qui n'a pas de territoire » : carte blanche à liseré gauche coloré par le verdict */
+[class*="st-key-enc_"] { background: #ffffff; border: 1px solid #e2e8f0; border-left: 4px solid #e2e8f0; border-radius: 12px;
+  padding: 12px 16px; margin-bottom: 10px; }
+.encart-tete { font-size: 0.9rem; color: #172b3a; }
+.encart-verdict { font-weight: 700; text-transform: lowercase; }
+.encart-chiffre { font-family: 'Fraunces', Georgia, serif; font-size: 1.6rem; font-weight: 600; color: #0b263d; line-height: 1.1; margin-top: 2px; }
+.encart-legende { font-size: 0.78rem; color: #64748b; line-height: 1.4; }
+/* Tableau à badges de verdict (remplace le fond de cellule coloré) */
+.tbl-verdict { overflow: auto; border: 1px solid #e2e8f0; border-radius: 12px; background: #ffffff; margin-bottom: 0.4rem; }
+.tbl-verdict table { width: 100%; border-collapse: collapse; font-size: 0.86rem; }
+.tbl-verdict thead th { position: sticky; top: 0; background: #f1f4f8; color: #0b263d; font-weight: 700; text-align: left;
+  padding: 9px 12px; border-bottom: 1px solid #e2e8f0; white-space: nowrap; z-index: 1; }
+.tbl-verdict td { padding: 9px 12px; border-bottom: 1px solid #eef2f6; color: #172b3a; vertical-align: top; line-height: 1.45; }
+.tbl-verdict tbody tr:hover { background: #f7f9fc; }
+.verdict-badge { display: inline-block; border-radius: 999px; padding: 2px 10px; font-size: 0.78rem; font-weight: 600; white-space: nowrap; }
+.habitants { color: #ce1126; font-weight: 600; white-space: nowrap; }
 .limite-texte { font-size: 0.9rem; line-height: 1.5; color: #3a2a00; margin-top: 4px; }
 .limite.discret { background: transparent; border: 0; border-top: 1px solid #e2e8f0; border-radius: 0; padding: 12px 0 0; margin-top: 18px; }
 .limite.discret .limite-titre { color: #64748b; }
@@ -261,6 +300,25 @@ div.st-key-topbar_droite [data-testid="stMarkdownContainer"] { display: flex; ju
   font-size: 0.9rem; line-height: 1.7; color: #172b3a; }
 .note-carte.blanche { background: #ffffff; border: 1px solid #e2e8f0; border-left: 4px solid #1769aa; }
 .note-carte.blanche.risque { border-left-color: #ce1126; }
+/* « À savoir » : pictogramme « i » cerclé avant le texte */
+.note-carte.lisere-vert { border-left-color: #16834a; } .note-carte.lisere-vert .info-i { background: #16834a; }
+.note-carte.lisere-rouge { border-left-color: #ce1126; } .note-carte.lisere-rouge .info-i { background: #ce1126; }
+/* Chiffres clés centrés (rangee_kpi(centre=True)) */
+.kpi-grille.centre .kpi { border-bottom-width: 3px; }
+.kpi-grille.centre .kpi-reserve { text-align: center; border-top: 0; margin-top: 8px; color: #64748b; }
+.kpi-grille.centre .kpi-contexte { text-align: center; }
+.kpi-grille.centre .kpi-centre { flex: 1 0 auto; display: flex; flex-direction: column; align-items: center; text-align: center;
+  gap: 6px; padding: 8px 0 4px; }
+/* Carte horizontale à liseré bleu : chiffre à gauche, texte à droite */
+.carte-chiffre { display: grid; grid-template-columns: minmax(180px, 0.6fr) 2fr; gap: 28px; align-items: center; background: #ffffff;
+  border: 1px solid #e2e8f0; border-left: 4px solid #1769aa; border-radius: 12px; padding: 18px 24px; margin: 0.4rem 0 0.8rem; }
+.carte-chiffre-lib { font-size: 0.78rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #1769aa; }
+.carte-chiffre .synthese-chiffre { margin: 2px 0 0; }
+.carte-chiffre-texte { font-size: 0.98rem; line-height: 1.55; color: #172b3a; }
+@media (max-width: 760px) { .carte-chiffre { grid-template-columns: 1fr; gap: 10px; } }
+.note-carte.a-savoir { display: flex; gap: 12px; align-items: flex-start; }
+.info-i { flex: 0 0 22px; height: 22px; border-radius: 50%; background: #1769aa; color: #ffffff; font: 700 13px/22px Georgia, serif;
+  text-align: center; font-style: italic; margin-top: 2px; }
 /* Total des permis : carte bleu clair (même bleu que le survol de « Voir le détail ») */
 .total-carte { background: #e8f0fb; border-radius: 14px; padding: 26px 14px; text-align: center; }
 .total-chiffre { font-family: 'Fraunces', Georgia, serif; font-size: 2.8rem; font-weight: 600; color: #0b263d; line-height: 1; }
