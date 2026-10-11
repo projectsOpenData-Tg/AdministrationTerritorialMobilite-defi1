@@ -95,8 +95,8 @@
   "texte": "The number of accidents per prefecture, month and age.",
   "relu": false
  },
- ", porté par les motos. Les accidents augmentent en volume —": {
-  "texte": "Accidents are increasing in volume  ⁇",
+ ", porté par les motos. Les accidents augmentent en volume": {
+  "texte": "The number of accidents is increasing.",
   "relu": false
  },
  ", seule zone en retard sur la route et la formation, et par": {
@@ -177,6 +177,10 @@
  },
  "1,1 % des routes en mauvais état (24,8 km évalués, un tronçon critique).": {
   "texte": "1.1% of roads in poor condition (24.8 km assessed, a critical stretch).",
+  "relu": false
+ },
+ "1,10 à moins de 1": {
+  "texte": "1,10 to less than 1",
   "relu": false
  },
  "1,275 × population de 18 ans et plus ÷ 1 000": {
@@ -297,6 +301,10 @@
  },
  "13 au réseau dégradé (2 868 523 habitants).": {
   "texte": "13 in the degraded grid (2 868 523 inhabitants).",
+  "relu": false
+ },
+ "13 préfectures": {
+  "texte": "13 prefectures",
   "relu": false
  },
  "13 préfectures au levier réseau (304,6 km) ; 23 au levier formation (41 auto-écoles).": {
@@ -511,6 +519,10 @@
   "texte": "200 585 inhabitants",
   "relu": false
  },
+ "2012 face à 2022": {
+  "texte": "2012 to 2022",
+  "relu": false
+ },
  "2013 non renseignée": {
   "texte": "2013 not reported",
   "relu": false
@@ -539,8 +551,40 @@
   "texte": "2022 Decree implementing the Road Code",
   "relu": false
  },
+ "2022 existent au géoportail, mais ne sont pas ouvertes. Elles permettraient de vérifier l’état des 13 préfectures ciblées.": {
+  "texte": "The geoportal 2022 exists, but is not open.It would allow to check the status of the 13 targeted prefectures.",
+  "relu": false
+ },
  "2023 tournée d'immatriculation des motos.": {
   "texte": "2023 motorcycle registration round.",
+  "relu": false
+ },
+ "2024 (Mobilité).": {
+  "texte": "This appropriation is intended to cover expenditure relating to:",
+  "relu": false
+ },
+ "2024 : (88 198 ÷ 6 829)^(1/34) − 1 = 7,8 % par an": {
+  "texte": "2024: (88 198 ÷ 6 829) ^(1/34) − 1 = 7.8% per year",
+  "relu": false
+ },
+ "2024 : 40,2 motos immatriculées par permis moto, contre 0,37 à 2,33 ailleurs": {
+  "texte": "2024: 40.2 motorcycles registered by motorcycle licence, compared with 0.37 to 2.33 elsewhere",
+  "relu": false
+ },
+ "2024 : tous en baisse.": {
+  "texte": "2024: all down.",
+  "relu": false
+ },
+ "2024 ; ruptures de série de 1995 et 2004 en pointillé.": {
+  "texte": "2024; series breakdowns in 1995 and 2004 in points.",
+  "relu": false
+ },
+ "2024), mais les 6 taux baissent.": {
+  "texte": "2024), but the 6 rates are falling.",
+  "relu": false
+ },
+ "2024, 40 motos immatriculées pour un permis moto délivré ; moins de 2,5 véhicules pour un permis dans les autres catégories. Niveau B. Le permis F n": {
+  "texte": "2024, 40 motorcycles registered for a motorcycle licence issued; less than 2,5 vehicles for a licence in the other categories.",
   "relu": false
  },
  "2025-2031, sans action nouvelle": {
@@ -607,6 +651,10 @@
   "texte": "23 out of 39 prefectures do not have a licensed driving school (2 932 492 inhabitants).",
   "relu": false
  },
+ "23 préfectures, dont Mô": {
+  "texte": "23 prefectures, including Mo",
+  "relu": false
+ },
  "23 sans auto-école agréée (2 932 492 habitants).": {
   "texte": "23 without an accredited driving school (2 932 492 inhabitants).",
   "relu": false
@@ -633,6 +681,10 @@
  },
  "241 247 habitants": {
   "texte": "241 247 inhabitants",
+  "relu": false
+ },
+ "25 ans) sont surreprésentés parmi les conducteurs impliqués": {
+  "texte": "25 years) are overrepresented among the drivers involved",
   "relu": false
  },
  "253 467 habitants": {
@@ -835,8 +887,8 @@
   "texte": "388 775 inhabitants",
   "relu": false
  },
- "39 fiches affichées. Répartition d'ensemble : 5 en priorité haute, 26 en moyenne, 8 sans action. 🛣️ réseau": {
-  "texte": "Total distribution: 5 with high priority, 26 on average, 8 without action.  ⁇ ️ network",
+ "39 fiches affichées. Répartition d'ensemble : 5 en priorité haute, 26 en moyenne, 8 sans action.": {
+  "texte": "Total distribution: 5 with high priority, 26 on average, 8 without action.",
   "relu": false
  },
  "39 préfectures": {
@@ -871,8 +923,8 @@
   "texte": "4 samples taken",
   "relu": false
  },
- "4 vues — cliquez sur un onglet": {
-  "texte": "4 views  ⁇  click on a tab",
+ "4 vues": {
+  "texte": "4 views",
   "relu": false
  },
  "4 zones": {
@@ -1187,8 +1239,8 @@
   "texte": "7 samples taken",
   "relu": false
  },
- "7 vues — cliquez sur un onglet": {
-  "texte": "7 views  ⁇  click on a tab",
+ "7 vues": {
+  "texte": "7 views",
   "relu": false
  },
  "7 vérifications confirmées sur 17, 2 infirmées, 1 nuancée, 7 non testables (onglet Synthèse).": {
@@ -1228,8 +1280,8 @@
   "texte": "74 accredited driving schools, or 5.67 per 100,000 inhabitants: the highest offer in the country.",
   "relu": false
  },
- "74,4 % des immatriculations de 2024 sont des motos ; 40 motos pour un permis moto sur 2007–2024 (Mobilité).": {
-  "texte": "74.4% of 2024 registrations are motorcycles; 40 motorcycles for a motorcycle licence in 2007 ⁇ 2024 (Mobility).",
+ "74,4 % des immatriculations de 2024 sont des motos ; 40 motos pour un permis moto sur 2007": {
+  "texte": "74.4% of 2024 registrations are motorcycles; 40 motorcycles for a motorcycle licence in 2007",
   "relu": false
  },
  "75,6 km évalués": {
@@ -1532,8 +1584,8 @@
   "texte": "The population is growing faster than supply, and the kilometres to be repaired are not moving.",
   "relu": false
  },
- ": les accidents déclarés augmentent (+9,4 % entre 2010–2012 et 2022–2024), mais les 6 taux baissent.": {
-  "texte": "• reported accidents are increasing (+9.4% between 2010 ⁇ 2012 and 2022 ⁇ 2024), but the 6 rates are decreasing.",
+ ": les accidents déclarés augmentent (+9,4 % entre 2010": {
+  "texte": "Reported accidents are increasing (+9.4% between 2010 and 2010)",
   "relu": false
  },
  ": les accidents déclarés augmentent (+9,4 %), mais les six taux de risque baissent.": {
@@ -1562,14 +1614,6 @@
  },
  "= mesuré (comptage direct)": {
   "texte": "= measured (direct counting)",
-  "relu": false
- },
- "A — Moto": {
-  "texte": "Motorcycle",
-  "relu": false
- },
- "AI LAB": {
-  "texte": "In the LAB",
   "relu": false
  },
  "AZANHOUN FIAGBE-PRESIDENT COPE": {
@@ -1604,14 +1648,6 @@
   "texte": "Accidents for 10 000 vehicles",
   "relu": false
  },
- "Accidents constatés — pour 10 000 véhicules": {
-  "texte": "Accidents reported  ⁇  for 10 000 vehicles",
-  "relu": false
- },
- "Accidents constatés — pour 100 000 habitants": {
-  "texte": "Accidents reported  ⁇  per 100 000 inhabitants",
-  "relu": false
- },
  "Accidents corporels pour 100 000 habitants": {
   "texte": "Accidents per 100,000 inhabitants",
   "relu": false
@@ -1640,8 +1676,8 @@
   "texte": "Accidents by territory",
   "relu": false
  },
- "Accidents, blessés et tués, année par année, 2010–2024": {
-  "texte": "Accidents, injuries and deaths, year by year, 2010 ⁇ 2024",
+ "Accidents, blessés et tués, année par année, 2010": {
+  "texte": "Accidents, injuries and deaths, year after year, 2010",
   "relu": false
  },
  "Accidents, victimes": {
@@ -1684,8 +1720,8 @@
   "texte": "Unpublished activity: none verified as active.",
   "relu": false
  },
- "Administration territoriale et mobilité — Défi 1": {
-  "texte": "Territorial administration and mobility  ⁇  Challenge 1",
+ "Administration territoriale et mobilité": {
+  "texte": "Territorial administration and mobility",
   "relu": false
  },
  "Adzakpa": {
@@ -1712,6 +1748,10 @@
   "texte": "Agou Atigbe",
   "relu": false
  },
+ "Agou cumule 40,0 % de km en mauvais état sur 124,1 km évalués (5 tronçons critiques) et aucune auto-école agréée pour 85 793 habitants (1 recensée, non agréée), à 11,0 km de la plus proche. En tête du classement dans les 6 tests de robustesse.": {
+  "texte": "Agou has 40.0% of the km in poor condition out of 124.1 km assessed (5 critical sections) and no licensed driving schools for 85,793 inhabitants (1 census, not licensed), 11.0 km from the nearest.",
+  "relu": false
+ },
  "Agréée": {
   "texte": "Approved",
   "relu": false
@@ -1733,8 +1773,8 @@
   "relu": false
  },
  "Analyses": {
-  "texte": "Analysis of the data",
-  "relu": false
+  "texte": "Analysis",
+  "relu": true
  },
  "Anié, Assoli, Cinkassé, Kpélé, Zio (956 482 habitants)": {
   "texte": "Anié, Assoli, Cinkassé, Kpélé, Zio (956 482 inhabitants)",
@@ -1884,16 +1924,12 @@
   "texte": "Car School / Garage Patience",
   "relu": false
  },
- "Auto-école agréée —": {
-  "texte": "Accredited driving school  ⁇",
+ "Auto-école agréée": {
+  "texte": "Accredited driving school",
   "relu": false
  },
- "Auto-école non agréée —": {
-  "texte": "Unapproved driving school  ⁇",
-  "relu": false
- },
- "Auto-école —": {
-  "texte": "Driving school  ⁇",
+ "Auto-école non agréée": {
+  "texte": "Unapproved driving school",
   "relu": false
  },
  "Auto-écoles": {
@@ -2016,20 +2052,20 @@
   "texte": "B in 2010 and 2022, C other years",
   "relu": false
  },
- "B — Voiture légère": {
-  "texte": "B  ⁇  Light car",
-  "relu": false
- },
- "B — calculé": {
-  "texte": "B  ⁇  calculated",
-  "relu": false
- },
  "BRETELLE RN9-YIBOE": {
   "texte": "I'm not sure I'm gonna make it.",
   "relu": false
  },
  "Badja": {
   "texte": "Badja",
+  "relu": false
+ },
+ "Bas-Mono n’a aucune auto-école agréée pour 94 860 habitants (1 recensée, non agréée), à 31,2 km de la plus proche, et sa desserte est faible : 3,68 km de routes pour 10 000 habitants. Réseau : 21,1 % sur 35,8 km. En tête du classement dans les 6 tests de robustesse.": {
+  "texte": "Bas-Mono has no licensed driving school for 94,860 inhabitants (1 census, not licensed), 31.2 km from the nearest, and its service is low: 3.68 km of roads per 10,000 inhabitants.",
+  "relu": false
+ },
+ "Bassar cumule 28,0 % de km en mauvais état sur 167,5 km évalués (1 tronçon critique) et aucune auto-école agréée pour 152 065 habitants (2 recensées, non agréées), à 47,5 km de la plus proche. En tête du classement dans les 6 tests de robustesse.": {
+  "texte": "Bassar has 28.0 per cent of the km in bad condition out of 167.5 km assessed (1 critical section) and no licensed driving schools for 152 065 inhabitants (2 registered, not licensed), 47.5 km from the nearest.",
   "relu": false
  },
  "Bilan : 7 confirmées, 2 infirmées, 1 nuancée, 7 non testables.": {
@@ -2068,14 +2104,6 @@
   "texte": "Wounded on the Road",
   "relu": false
  },
- "Blessés — pour 10 000 véhicules": {
-  "texte": "Injured  ⁇  for 10,000 vehicles",
-  "relu": false
- },
- "Blessés — pour 100 000 habitants": {
-  "texte": "Injured  ⁇  per 100,000 people",
-  "relu": false
- },
  "Blitta : 69,0 ÷ 101,1 × 100 = 68,2 % en mauvais état": {
   "texte": "Blitta: 69.0 ÷ 101.1 × 100 = 68.2% in poor condition",
   "relu": false
@@ -2086,6 +2114,10 @@
  },
  "Blitta Village": {
   "texte": "Blitta Village",
+  "relu": false
+ },
+ "Blitta cumule 68,2 % de km en mauvais état sur 101,1 km évalués (4 tronçons critiques) et aucune auto-école agréée pour 163 272 habitants (2 recensées, non agréées), à 25,9 km de la plus proche. En tête du classement dans les 6 tests de robustesse.": {
+  "texte": "Blitta has 68.2% of the 101.1 km assessed (4 critical sections) in bad condition and no licensed driving schools for 163,272 inhabitants (2 registered, unlicensed), 25.9 km from the nearest.",
   "relu": false
  },
  "Blitta, Agou, Tchamba, Bassar, Oti, Bas-Mono, Yoto et Amou n’ont aucune auto-école agréée, mais 13 y sont recensées. Vérifier leur activité et leur agrément : le manque est peut-être administratif. S’il est réel, 16 auto-écoles sont à ouvrir. 1 110 446 habitants concernés.": {
@@ -2100,6 +2132,10 @@
   "texte": "I'm all right.",
   "relu": false
  },
+ "Bon :": {
+  "texte": "All right .",
+  "relu": false
+ },
  "Bon état": {
   "texte": "Good condition",
   "relu": false
@@ -2110,14 +2146,6 @@
  },
  "Bus et car": {
   "texte": "Bus and coach",
-  "relu": false
- },
- "C — Poids lourd": {
-  "texte": "C  ⁇  Heavy weight",
-  "relu": false
- },
- "C — estimé": {
-  "texte": "Estimated",
   "relu": false
  },
  "CC BY 3.0 IGO": {
@@ -2140,8 +2168,8 @@
   "texte": "CC BY-NC-SA 3.0 IGO, non-commercial use",
   "relu": false
  },
- "CC BY-SA 4.0, Edem Fiadjoe — attribution obligatoire": {
-  "texte": "CC BY-SA 4.0, Edem Fiadjoe  ⁇  compulsory allocation",
+ "CC BY-SA 4.0, Edem Fiadjoe": {
+  "texte": "CC BY-SA 4.0, Edem Fiadjoe",
   "relu": false
  },
  "Calcul": {
@@ -2153,8 +2181,8 @@
   "relu": false
  },
  "Carte du réseau et des auto-écoles": {
-  "texte": "Network map and driving schools",
-  "relu": false
+  "texte": "Road network and driving schools map",
+  "relu": true
  },
  "Catalogue des couches et des indicateurs du géoportail national": {
   "texte": "Catalogue of layers and indicators of the national geoportal",
@@ -2220,8 +2248,8 @@
   "texte": "Central: road and training; Plateaux: road; Savanes and Maritime outside Greater Lomé: training.",
   "relu": false
  },
- "Centrale —": {
-  "texte": "Central office",
+ "Centrale est la seule zone au-dessus de la médiane pour le réseau et en dessous pour la formation : 40,3 % de km en mauvais état sur 437,2 km évalués, et 4 auto-écoles agréées pour 795 529 habitants (0,50 pour 100 000). 4 de ses 5 préfectures reçoivent le levier réseau (113,6 km à remettre en état), 3 le levier formation (6 auto-écoles).": {
+  "texte": "Centrale is the only area above median for network and below average for training: 40.3% km in poor condition out of 437.2 km assessed, 4 licensed driving schools per 795 529 people (0.50 per 100 000).",
   "relu": false
  },
  "Certains territoires cumulent forte pression de mobilité, risque élevé, réseau dégradé et faible offre de formation": {
@@ -2288,10 +2316,6 @@
   "texte": "Target of the Decade (C)",
   "relu": false
  },
- "Cible de la Décennie —": {
-  "texte": "Target of the Decade  ⁇",
-  "relu": false
- },
  "Cibler les usagers de deux-roues motorisés": {
   "texte": "Targeting two-wheeled motorcycles",
   "relu": false
@@ -2349,8 +2373,8 @@
   "relu": false
  },
  "Comparaison territoriale": {
-  "texte": "Comparison of areas",
-  "relu": false
+  "texte": "Territorial comparison",
+  "relu": true
  },
  "Comprendre les risques, identifier les priorités d’action": {
   "texte": "Understand the risks, identify the priorities for action",
@@ -2389,8 +2413,8 @@
   "relu": false
  },
  "Constat": {
-  "texte": "Constat",
-  "relu": false
+  "texte": "Finding",
+  "relu": true
  },
  "Conséquence": {
   "texte": "Consequence",
@@ -2448,16 +2472,12 @@
   "texte": "Creating an accident base per prefecture",
   "relu": false
  },
- "Cumul 2007–2024 : 40,2 motos immatriculées par permis moto, contre 0,37 à 2,33 ailleurs": {
-  "texte": "Cumul 2007 ⁇ 2024: 40.2 motorcycles registered by motorcycle licence, compared with 0.37 to 2.33 elsewhere",
+ "Cumul 2007": {
+  "texte": "Total of 2007",
   "relu": false
  },
  "Cyclistes": {
   "texte": "Cyclists",
-  "relu": false
- },
- "D — Transport en commun": {
-  "texte": "D  ⁇  Public transport",
   "relu": false
  },
  "DAVIE-AMAKPAPE": {
@@ -2488,8 +2508,16 @@
   "texte": "In the Plateaux, only 13.6% of rural people live less than 2 km from a paved road (17.2% in the country): 1 094 908 villages are further away. 28.0% of roads have fallen into disrepair.",
   "relu": false
  },
+ "Danyi cumule 100 % de km en mauvais état sur 49,8 km évalués, traversés par 3 tronçons critiques, et aucune auto-école, ni agréée ni recensée, pour 40 240 habitants, à 12,9 km de la plus proche. En tête du classement dans les 6 tests de robustesse.": {
+  "texte": "Danyi has 100 per cent of the km in bad condition out of 49.8 km assessed, crossed by 3 critical sections, and no driving school, neither approved nor registered, for 40,240 inhabitants, at 12.9 km from the nearest.",
+  "relu": false
+ },
  "Danyi, Blitta, Agou, Tchamba et Bassar ont de 28 % à 100 % de leurs routes en mauvais état, et aucune auto-école agréée. 14 tronçons critiques les traversent. Les ramener à la médiane nationale (14,35 %) suppose de remettre en état 175,6 km, après vérification sur place. 641 955 habitants concernés.": {
   "texte": "Danyi, Blitta, Agou, Chamba and Bassar have between 28% and 100% of their roads in poor condition, and no licensed driving schools. 14 critical sections pass through them.",
+  "relu": false
+ },
+ "Data Challenge": {
+  "texte": "The data challenge",
   "relu": false
  },
  "Date de téléchargement": {
@@ -2696,6 +2724,10 @@
   "texte": "From problem to solution, in nine steps.",
   "relu": false
  },
+ "Défi 1": {
+  "texte": "Challenge 1",
+  "relu": false
+ },
  "Déficits": {
   "texte": "Deficits",
   "relu": false
@@ -2710,10 +2742,6 @@
  },
  "Détail": {
   "texte": "Details",
-  "relu": false
- },
- "E — Semi-remorque": {
-  "texte": "E  ⁇  Semi-trailer",
   "relu": false
  },
  "EHCVM (Banque mondiale)": {
@@ -2781,6 +2809,10 @@
   "texte": "Includes:",
   "relu": false
  },
+ "Est-Mono n’a aucune auto-école, ni agréée ni recensée, pour 164 460 habitants, à 27,4 km de la plus proche. Réseau : 17,2 % sur 110,7 km. En tête du classement dans 4 des 6 tests de robustesse.": {
+  "texte": "Est-Mono has no licensed or registered driving school for 164,460 inhabitants, 27.4 km from the nearest.",
+  "relu": false
+ },
  "Estimation de l'OMS pour le Togo": {
   "texte": "WHO estimate for Togo",
   "relu": false
@@ -2795,10 +2827,6 @@
  },
  "Exporter les 15 recommandations (CSV)": {
   "texte": "Exporting the 15 recommendations (CSV)",
-  "relu": false
- },
- "F — Voiture spéciale": {
-  "texte": "F  ⁇  Special car",
   "relu": false
  },
  "FORMATION": {
@@ -2831,7 +2859,7 @@
  },
  "Filtres": {
   "texte": "Filters",
-  "relu": false
+  "relu": true
  },
  "Formation": {
   "texte": "Training",
@@ -2869,8 +2897,8 @@
   "texte": "Goundoga",
   "relu": false
  },
- "Grand Lomé —": {
-  "texte": "The European Union",
+ "Grand Lomé a le réseau le moins dégradé (7,7 %) et la meilleure offre (103 auto-écoles agréées, 4,71 pour 100 000 habitants) ; seule sa desserte est sous la médiane (0,74 km pour 10 000 habitants), pour 2 188 376 habitants.": {
+  "texte": "Greater Lomé has the least degraded network (7.7%) and the best offer (103 licensed driving schools, 4.71 per 100 000 inhabitants); only its service is below the median (0.74 km per 10 000 inhabitants), for 2 188 376 inhabitants.",
   "relu": false
  },
  "Gravité (B)": {
@@ -2962,15 +2990,11 @@
   "relu": false
  },
  "Immatriculations": {
-  "texte": "Registration",
-  "relu": false
+  "texte": "Vehicle registrations",
+  "relu": true
  },
- "Immatriculations 1990–2024 : (88 198 ÷ 6 829)^(1/34) − 1 = 7,8 % par an": {
-  "texte": "Registrations 1990 ⁇ 2024: (88 198 ÷ 6 829)^(1/34) − 1 = 7.8% per year",
-  "relu": false
- },
- "Immatriculations 1990–2024 ; ruptures de série de 1995 et 2004 en pointillé.": {
-  "texte": "Registrations 1990 ⁇ 2024; serial breakdowns of 1995 and 2004 in bold.",
+ "Immatriculations 1990": {
+  "texte": "Registrations in 1990",
   "relu": false
  },
  "Immatriculations de l": {
@@ -2985,16 +3009,16 @@
   "texte": "Registrations for the year, not the park in circulation.",
   "relu": false
  },
- "Immatriculations et permis, 1990–2024": {
-  "texte": "Registrations and permits, 1990 ⁇ 2024",
+ "Immatriculations et permis, 1990": {
+  "texte": "Registrations and permits, 1990",
   "relu": false
  },
  "Immatriculations par catégorie": {
   "texte": "Registrations by category",
   "relu": false
  },
- "Immatriculations par groupe, 1990–2024": {
-  "texte": "Registrations by group, 1990 ⁇ 2024",
+ "Immatriculations par groupe, 1990": {
+  "texte": "Registrations by group, 1990",
   "relu": false
  },
  "Immatriculations pour 1 000 habitants": {
@@ -3005,8 +3029,8 @@
   "texte": "Registration for 1 000 inhabitants (A)",
   "relu": false
  },
- "Immatriculations pour un permis, cumul 2007–2024": {
-  "texte": "Registrations for a licence, cumulative 2007 ⁇ 2024",
+ "Immatriculations pour un permis, cumul 2007": {
+  "texte": "Registrations for a licence, cumulative 2007",
   "relu": false
  },
  "Immatriculations sur 20 ans": {
@@ -3061,8 +3085,8 @@
   "texte": "Kara (7 prefectures)",
   "relu": false
  },
- "Kara —": {
-  "texte": "Kara",
+ "Kara a le réseau au-dessus de la médiane : 15,2 % sur 694,5 km évalués. Pour 985 512 habitants, 2 de ses 7 préfectures reçoivent le levier réseau (37,3 km), 5 le levier formation (8 auto-écoles).": {
+  "texte": "Kara has the network above median: 15.2% over 694.5 km assessed. For 985 512 inhabitants, 2 of its 7 prefectures receive grid levy (37.3 km), 5 training lever (8 driving schools).",
   "relu": false
  },
  "Katchamba": {
@@ -3277,7 +3301,7 @@
  },
  "Langue": {
   "texte": "Language",
-  "relu": false
+  "relu": true
  },
  "Le Grand Lomé concentre les accidents en volume, mais le risque par habitant est plus élevé ailleurs, en milieu rural": {
   "texte": "The Greater Lomé region concentrates accidents in volume, but the per capita risk is higher elsewhere, in rural areas",
@@ -3355,8 +3379,8 @@
   "texte": "The registered park has",
   "relu": false
  },
- "Le plafond suppose qu'aucun usager de deux-roues tué ne portait de casque : limite haute, pas une estimation. Rappel : 8,62 tués déclarés pour 100 000 habitants en 2021, contre 22,7 estimés par l'OMS — une baisse des déclarations ressemblerait à un progrès.": {
-  "texte": "The ceiling assumes that no two-wheelers killed were wearing helmets: high limit, not an estimate. Reminder: 8.62 reported deaths per 100,000 inhabitants in 2021, compared with 22.7 estimated by the WHO  ⁇  a decrease in reports would seem like progress.",
+ "Le plafond suppose qu'aucun usager de deux-roues tué ne portait de casque : limite haute, pas une estimation. Rappel : 8,62 tués déclarés pour 100 000 habitants en 2021, contre 22,7 estimés par l'OMS": {
+  "texte": "The ceiling assumes that no two-wheelers killed were wearing helmets: high limit, not an estimate.Reminder: 8.62 reported deaths per 100,000 inhabitants in 2021, compared with 22.7 estimated by the WHO",
   "relu": false
  },
  "Le risque par habitant baisse.": {
@@ -3463,12 +3487,12 @@
   "texte": "The five regions are shown in colour.",
   "relu": false
  },
- "Les 6 taux : 2010–2012 face à 2022–2024": {
-  "texte": "The 6 rates: 2010 ⁇ 2012 compared to 2022 ⁇ 2024",
+ "Les 6 taux : 2010": {
+  "texte": "The six rates: 2010",
   "relu": false
  },
- "Les 6 taux, 2010–2012 face à 2022–2024 : tous en baisse.": {
-  "texte": "The 6 rates, 2010 ⁇ 2012 versus 2022 ⁇ 2024: all down.",
+ "Les 6 taux, 2010": {
+  "texte": "The six rates, 2010",
   "relu": false
  },
  "Les 7 hypothèses non testables, et la donnée qui manque.": {
@@ -3571,8 +3595,8 @@
   "texte": "Registrations, permits and accidents are published only for the whole country: they are not mapped. No years cursor on the map: data by territory only have a date (network 2020, driving schools 2021-2022, population 2022).",
   "relu": false
  },
- "Les jeunes conducteurs (18–25 ans) sont surreprésentés parmi les conducteurs impliqués": {
-  "texte": "Young drivers (18 ⁇ 25 years) are overrepresented among drivers involved",
+ "Les jeunes conducteurs (18": {
+  "texte": "Young drivers (18",
   "relu": false
  },
  "Les km de route par habitant baissent quand la densité monte : l": {
@@ -3683,16 +3707,8 @@
   "texte": "Leverage of training",
   "relu": false
  },
- "Levier formation — 23 préfectures, dont Mô": {
-  "texte": "Lever formation  ⁇  23 prefectures, including Mo",
-  "relu": false
- },
  "Levier réseau": {
   "texte": "Net leverage",
-  "relu": false
- },
- "Levier réseau — 13 préfectures": {
-  "texte": "Network leverage  ⁇  13 prefectures",
   "relu": false
  },
  "Leviers": {
@@ -3720,8 +3736,8 @@
   "relu": false
  },
  "Limite": {
-  "texte": "Limitations",
-  "relu": false
+  "texte": "Limitation",
+  "relu": true
  },
  "Limite de cette page": {
   "texte": "Limit of this page",
@@ -3763,10 +3779,9 @@
   "texte": "The statistics are from a report from 2020, the method of which is not published.",
   "relu": false
  },
- "L’état du réseau vient d’un relevé de 2020, sans tracé ni méthode de notation publiée. Les couches de la collecte 2021–2022 existent au géoportail, mais ne sont pas ouvertes. Elles permettraient de vérifier l’état des 13 préfectures ciblées.": {
-  "texte": "",
-  "relu": false,
-  "suspect": true
+ "L’état du réseau vient d’un relevé de 2020, sans tracé ni méthode de notation publiée. Les couches de la collecte 2021": {
+  "texte": "The state of the network comes from a 2020 report, with no outline or rating method published.",
+  "relu": false
  },
  "Maille": {
   "texte": "- What ?",
@@ -3780,8 +3795,8 @@
   "texte": "Maritime (8 prefectures)",
   "relu": false
  },
- "Maritime hors Grand Lomé —": {
-  "texte": "Maritime activities outside Grand Lomé",
+ "Maritime hors Grand Lomé a la formation et la desserte sous la médiane : 5 auto-écoles agréées pour 1 346 615 habitants (0,37 pour 100 000), 3,51 km de routes pour 10 000 habitants. 3 de ses 6 préfectures reçoivent le levier formation (6 auto-écoles).": {
+  "texte": "Maritime outside Greater Lomé has training and service under the medium: 5 licensed driving schools for 1 346 615 inhabitants (0.37 per 100 000), 3.51 km of roads for 10 000 inhabitants. 3 of its 6 prefectures receive the training lever (6 driving schools).",
   "relu": false
  },
  "Masqués": {
@@ -3790,6 +3805,10 @@
  },
  "Mauvais": {
   "texte": "Bad for you",
+  "relu": false
+ },
+ "Mauvais :": {
+  "texte": "Bad:",
   "relu": false
  },
  "Mauvais état": {
@@ -3881,15 +3900,11 @@
   "relu": false
  },
  "Mobilité & sécurité routière": {
-  "texte": "Mobility and road safety",
-  "relu": false
+  "texte": "Mobility & road safety",
+  "relu": true
  },
  "Mobilité et sécurité routière au Togo": {
   "texte": "Mobility and road safety in Togo",
-  "relu": false
- },
- "Mobilité — ce qui change": {
-  "texte": "Mobility  ⁇  what is changing",
   "relu": false
  },
  "Moins bien desservie pour": {
@@ -3914,6 +3929,10 @@
  },
  "Moyen": {
   "texte": "Average",
+  "relu": false
+ },
+ "Moyen :": {
+  "texte": "Average:",
   "relu": false
  },
  "Moyenne": {
@@ -4016,16 +4035,16 @@
   "texte": "Level A. National data: permits do not have territory or age.",
   "relu": false
  },
- "Niveau B — calculé sur les auto-écoles agréées et la population de 2022.": {
-  "texte": "Level B  ⁇  calculated on licensed driving schools and population in 2022.",
+ "Niveau B": {
+  "texte": "Level B",
+  "relu": false
+ },
+ "Niveau C": {
+  "texte": "Level C",
   "relu": false
  },
  "Niveau C : état relevé en 2020, activité des auto-écoles non publiée.": {
   "texte": "Level C: State recorded in 2020, unpublished activity of driving schools.",
-  "relu": false
- },
- "Niveau C — Relevé de 2020, routes nationales seulement ; part des km évalués de la préfecture. A = mesuré, B = calculé, C = estimé.": {
-  "texte": "Level C  ⁇  Released in 2020, national roads only; share of the prefecture's assessed km. A = measured, B = calculated, C = estimated.",
   "relu": false
  },
  "Niveau C. Dernier point : d'après une seule enquête auprès des ménages (2021-2022) ; l'ordre des zones change d'une enquête à l'autre.": {
@@ -4080,6 +4099,10 @@
   "texte": "Not evaluated",
   "relu": false
  },
+ "Non évalué :": {
+  "texte": "Not evaluated:",
+  "relu": false
+ },
  "Note de méthode : comment la population avance": {
   "texte": "Method note: how the population progresses",
   "relu": false
@@ -4132,8 +4155,16 @@
   "texte": "Road safety authority (ONSR), police, police",
   "relu": false
  },
+ "Oti n’a aucune auto-école agréée pour 124 848 habitants (3 recensées, non agréées), à 62,0 km de la plus proche ; son réseau (21,1 % en mauvais état sur 140,6 km) reste sous le seuil. En tête du classement dans les 6 tests de robustesse.": {
+  "texte": "Oti has no licensed driving school for 124,848 inhabitants (3 registered and unlicensed) within 62.0 km of the nearest; its network (21.1% in poor condition out of 140.6 km) remains below the threshold.",
+  "relu": false
+ },
  "Oti-Sud : 84,0 km, la plus grande des 39 préfectures": {
   "texte": "Oti-Sud: 84.0 km, the largest of the 39 prefectures",
+  "relu": false
+ },
+ "Oti-Sud n’a aucune auto-école, ni agréée ni recensée, pour 150 376 habitants, à 84,0 km de la plus proche, la plus grande distance du pays. Réseau : 14,4 % sur 131,7 km. En tête du classement dans 4 des 6 tests de robustesse.": {
+  "texte": "Oti-Sud has no licensed or registered driving school for 150,376 inhabitants, 84.0 km from the nearest, the longest distance in the country.Network: 14.4% of 131.7 km.",
   "relu": false
  },
  "Ouma-Amlame": {
@@ -4200,8 +4231,8 @@
   "texte": "Estimated park",
   "relu": false
  },
- "Parc estimé des véhicules, 2009–2024": {
-  "texte": "Estimated fleet of vehicles, 2009 ⁇ 2024",
+ "Parc estimé des véhicules, 2009": {
+  "texte": "Estimated fleet of vehicles, 2009",
   "relu": false
  },
  "Parc estimé, tous véhicules": {
@@ -4368,8 +4399,8 @@
   "texte": "Permits not issued before 2007",
   "relu": false
  },
- "Permis par catégorie, 2007–2024": {
-  "texte": "Permitted by category, 2007 ⁇ 2024",
+ "Permis par catégorie, 2007": {
+  "texte": "Permitted by category, 2007",
   "relu": false
  },
  "Permis pour 1 000 habitants en âge de conduire": {
@@ -4381,8 +4412,8 @@
   "relu": false
  },
  "Pilotage": {
-  "texte": "Driving",
-  "relu": false
+  "texte": "Steering",
+  "relu": true
  },
  "Piste rurale": {
   "texte": "Rural track",
@@ -4400,24 +4431,16 @@
   "texte": "The ceiling of the headset (rate unchanged)",
   "relu": false
  },
- "Plafond du casque (taux inchangé) —": {
-  "texte": "The ceiling of the headset (rate unchanged)  ⁇",
-  "relu": false
- },
  "Plafond du casque (tendance)": {
   "texte": "Ceiling of the headset (trend)",
-  "relu": false
- },
- "Plafond du casque (tendance) —": {
-  "texte": "Ceiling of the headset (trend)  ⁇",
   "relu": false
  },
  "Plateaux (12 préfectures)": {
   "texte": "Plateaus (12 prefectures)",
   "relu": false
  },
- "Plateaux —": {
-  "texte": "Plates  ⁇",
+ "Plateaux a le réseau au-dessus de la médiane : 28,0 % de km en mauvais état sur 965,6 km évalués, traversés par 23 tronçons critiques. Pour 1 635 946 habitants, 6 de ses 12 préfectures reçoivent le levier réseau (150,5 km), 7 le levier formation (12 auto-écoles).": {
+  "texte": "Plateaux has a network above the median: 28.0% of km in poor condition out of 965.6 evaluated kilometres, crossed by 23 critical sections. For 1 635 946, six of its 12 prefectures receive grid levy (150.5 km), 7 training lever (12 driving schools).",
   "relu": false
  },
  "Plus de 7 500 accidents et 683 morts en 2022": {
@@ -4516,8 +4539,8 @@
   "texte": "Bringing prefectures informed of accidents from 0 to 39",
   "relu": false
  },
- "Porter l’indice des deux-roues parmi les tués de 1,01–1,10 à moins de 1": {
-  "texte": "Carrying the two-wheeled index among the killed from 1.01 ⁇ 1.10 to less than 1",
+ "Porter l’indice des deux-roues parmi les tués de 1,01": {
+  "texte": "Carry the two-wheeler index among those killed by 1.01",
   "relu": false
  },
  "Porter l’offre de 0 à 1,065 auto-école pour 100 000 habitants : 25 auto-écoles": {
@@ -4569,8 +4592,8 @@
   "relu": false
  },
  "Principal": {
-  "texte": "The main",
-  "relu": false
+  "texte": "Main",
+  "relu": true
  },
  "Priorité": {
   "texte": "Priority",
@@ -4900,8 +4923,8 @@
   "texte": "Registration/permit report, by category",
   "relu": false
  },
- "Rapport immatriculations / permis, par catégorie en cumul 2007–2024 : A 40,20, C 2,33, B 1,29, E 0,81, D 0,37": {
-  "texte": "Registrations/permits ratio, by cumulative category 2007 ⁇ 2024: A 40.20, C 2.33, B 1.29, E 0.81, D 0.37",
+ "Rapport immatriculations / permis, par catégorie en cumul 2007": {
+  "texte": "Registrations/permits report, by category in cumulative 2007",
   "relu": false
  },
  "Rapport mondial sur la sécurité routière 2023 : profil du Togo": {
@@ -4938,6 +4961,10 @@
  },
  "Recommandations en C : vérifier avant d": {
   "texte": "Recommendations in C: verify before d",
+  "relu": false
+ },
+ "Relevé de 2020, routes nationales seulement ; part des km évalués de la préfecture. A = mesuré, B = calculé, C = estimé.": {
+  "texte": "Released from 2020, national roads only; share of the prefecture's assessed km. A = measured, B = calculated, C = estimated.",
   "relu": false
  },
  "Remettre en état 113,6 km et ouvrir 6 auto-écoles en premier": {
@@ -5113,8 +5140,8 @@
   "relu": false
  },
  "Réseau routier évalué": {
-  "texte": "Assessed road network",
-  "relu": false
+  "texte": "Road network assessed",
+  "relu": true
  },
  "Réseau évalué": {
   "texte": "Network evaluated",
@@ -5122,10 +5149,6 @@
  },
  "Réseau évalué :": {
   "texte": "Network evaluated:",
-  "relu": false
- },
- "Réseau — ce qui change": {
-  "texte": "Network  ⁇  what changes",
   "relu": false
  },
  "Réserve": {
@@ -5164,8 +5187,8 @@
   "texte": "Savanes: 528.0 ÷ 1 143 520 × 10 000 = 4.62 km for every 10 000 inhabitants",
   "relu": false
  },
- "Savanes —": {
-  "texte": "Savannah",
+ "Savanes a la formation et la desserte sous la médiane : 4 auto-écoles agréées pour 1 143 520 habitants (0,35 pour 100 000), 4,62 km de routes pour 10 000 habitants. 5 de ses 7 préfectures reçoivent le levier formation (9 auto-écoles), aucune le levier réseau.": {
+  "texte": "Savanes has training and service under the medium: 4 licensed driving schools for 1 143 520 inhabitants (0.35 per 100 000), 4.62 km of roads for 10 000 inhabitants. 5 of its 7 prefectures receive training levy (9 driving schools), no network levy.",
   "relu": false
  },
  "Score (part réseau + part formation)": {
@@ -5178,6 +5201,10 @@
  },
  "Score décomposé : la part du réseau et la part de la formation, et la robustesse.": {
   "texte": "Score broken down: network share and training share, and robustness.",
+  "relu": false
+ },
+ "Semi-remorque": {
+  "texte": "Semi-trailer",
   "relu": false
  },
  "Seuils franchis": {
@@ -5228,8 +5255,8 @@
   "texte": "No priority action, one of the 10 most degraded sections crosses it.",
   "relu": false
  },
- "Sur 2007–2024, 40 motos immatriculées pour un permis moto délivré ; moins de 2,5 véhicules pour un permis dans les autres catégories. Niveau B. Le permis F n": {
-  "texte": "In 2007 ⁇ 2024, 40 motorcycles registered for a motorcycle licence issued; less than 2,5 vehicles for a licence in the other categories.",
+ "Sur 2007": {
+  "texte": "2007 and 2007",
   "relu": false
  },
  "Sur la carte :": {
@@ -5245,8 +5272,8 @@
   "relu": false
  },
  "Synthèse chiffrée": {
-  "texte": "Numbered synthesis",
-  "relu": false
+  "texte": "Key figures",
+  "relu": true
  },
  "SÉCURITÉ ROUTIÈRE": {
   "texte": "RUTER security",
@@ -5260,20 +5287,16 @@
   "texte": "Road safety: what the target wants",
   "relu": false
  },
- "Sécurité routière — ce qui change": {
-  "texte": "Road safety  ⁇  what is changing",
-  "relu": false
- },
  "TSEVIE-TABLIGBO-ANFOIN-ANEHO": {
   "texte": "This appropriation is intended to cover expenditure relating to:",
   "relu": false
  },
+ "Tableau de bord": {
+  "texte": "Dashboard",
+  "relu": true
+ },
  "Tableau de bord territorial d'aide à la décision": {
   "texte": "Territorial dashboard for decision support",
-  "relu": false
- },
- "Tableau de bord ›": {
-  "texte": "Table of contents ›",
   "relu": false
  },
  "Tableau triable. Cliquez sur l": {
@@ -5300,8 +5323,12 @@
   "texte": "Rate unchanged",
   "relu": false
  },
- "Taux inchangé —": {
-  "texte": "Rate unchanged",
+ "Tchamba cumule 34,0 % de km en mauvais état sur 120,3 km évalués (1 tronçon critique) et aucune auto-école agréée pour 200 585 habitants (2 recensées, non agréées), à 31,1 km de la plus proche. En tête du classement dans les 6 tests de robustesse.": {
+  "texte": "CHAMBA has 34.0% of the km in poor condition out of 120.3 km assessed (1 critical section) and no licensed driving schools for 200 585 inhabitants (2 registered, not licensed), 31.1 km from the nearest.",
+  "relu": false
+ },
+ "Tchaoudjo cumule 36,9 % de km en mauvais état sur 125,7 km évalués (3 tronçons critiques) pour 240 360 habitants ; sa formation n’est pas en déficit (2 auto-écoles agréées, 0,83 pour 100 000 habitants). En tête du classement dans 3 des 6 tests de robustesse : la moins sûre des 10.": {
+  "texte": "Tchaoudjo has 36.9% of the 125.7 km assessed (3 critical sections) for 240 360 inhabitants; its training is not in deficit (2 accredited driving schools, 0.83 per 100,000 inhabitants).",
   "relu": false
  },
  "Tchaoudjo, Ogou, Anié, Kloto, Wawa, Sotouboua, Agoè-Nyivé et Kozah ont de 22,3 % à 65,0 % de leurs routes en mauvais état, sans manque d’auto-écoles. 129,0 km à remettre en état. 2 226 568 habitants, dont 882 695 à Agoè-Nyivé pour 3,2 km.": {
@@ -5309,10 +5336,6 @@
   "relu": false
  },
  "Tendance": {
-  "texte": "The trend",
-  "relu": false
- },
- "Tendance —": {
   "texte": "The trend",
   "relu": false
  },
@@ -5346,10 +5369,6 @@
  },
  "Tindjassi": {
   "texte": "Other articles",
-  "relu": false
- },
- "Togo AI Lab — Data Challenge": {
-  "texte": "Togo AI Lab  ⁇  Data Challenge",
   "relu": false
  },
  "Tohoun": {
@@ -5392,8 +5411,16 @@
   "texte": "Full treatment: observed until",
   "relu": false
  },
+ "Transport en commun": {
+  "texte": "Public transport",
+  "relu": false
+ },
  "Travaux": {
   "texte": "Employment",
+  "relu": false
+ },
+ "Travaux :": {
+  "texte": "Employment:",
   "relu": false
  },
  "Trier le tableau": {
@@ -5498,14 +5525,6 @@
  },
  "Tués à éviter pour suivre la cible : 204 (tendance observée).": {
   "texte": "Killed to be avoided to follow the target: 204 (trend observed).",
-  "relu": false
- },
- "Tués — pour 10 000 véhicules": {
-  "texte": "Killed for 10,000 vehicles",
-  "relu": false
- },
- "Tués — pour 100 000 habitants": {
-  "texte": "Killed  ⁇  per 100,000 people",
   "relu": false
  },
  "Type": {
@@ -5628,6 +5647,10 @@
   "texte": "See the details",
   "relu": false
  },
+ "Voir le détail →": {
+  "texte": "See details →",
+  "relu": true
+ },
  "Voir les recommandations": {
   "texte": "See the recommendations",
   "relu": false
@@ -5638,6 +5661,14 @@
  },
  "Voiture": {
   "texte": "Car",
+  "relu": false
+ },
+ "Voiture légère": {
+  "texte": "Lightweight car",
+  "relu": false
+ },
+ "Voiture spéciale": {
+  "texte": "Special car",
   "relu": false
  },
  "Volume": {
@@ -5916,6 +5947,10 @@
   "texte": "be careful",
   "relu": false
  },
+ "attribution obligatoire": {
+  "texte": "compulsory allocation",
+  "relu": false
+ },
  "au niveau national. Les volumes et les taux portent sur les accidents déclarés par la police et la gendarmerie, pas sur l": {
   "texte": "Volumes and rates relate to accidents reported by the police and gendarmerie, not to",
   "relu": false
@@ -6048,8 +6083,20 @@
   "texte": "Injured (s) / population (s)",
   "relu": false
  },
+ "calculé": {
+  "texte": "calculated",
+  "relu": false
+ },
+ "calculé sur les auto-écoles agréées et la population de 2022.": {
+  "texte": "calculated on licensed driving schools and population in 2022.",
+  "relu": false
+ },
  "cas limite": {
   "texte": "limit case",
+  "relu": false
+ },
+ "ce qui change": {
+  "texte": "what changes",
   "relu": false
  },
  "ces trois cartes ne créent ni km ni auto-école en plus ; elles disent par quelle zone commencer.": {
@@ -6078,6 +6125,10 @@
  },
  "cible : 14,35 % de km en mauvais état (médiane nationale)": {
   "texte": "Target: 14.35% of km in poor condition (national average)",
+  "relu": false
+ },
+ "cliquez sur un onglet": {
+  "texte": "click on a tab",
   "relu": false
  },
  "comment elle a été produite": {
@@ -6124,8 +6175,8 @@
   "texte": "training:",
   "relu": false
  },
- "de la hausse. Les permis moto suivent de loin : 40 motos immatriculées pour un permis moto sur 2007–2024.": {
-  "texte": "Motorcycle licences are far behind: 40 motorcycles registered for a motorcycle licence in 2007-2024.",
+ "de la hausse. Les permis moto suivent de loin : 40 motos immatriculées pour un permis moto sur 2007": {
+  "texte": "Motorcycle licences follow in the long run: 40 motorcycles registered for a motorcycle licence in 2007",
   "relu": false
  },
  "de motos (2024)": {
@@ -6216,10 +6267,6 @@
   "texte": "In the past 20 years, motorcycle accidents have been reported increasingly, but the number of accidents is increasing rapidly.",
   "relu": false
  },
- "en 2022 — mais les six taux de risque baissent. Le réseau reste inégalement entretenu, et": {
-  "texte": "The network is still unevenly maintained, and",
-  "relu": false
- },
  "en 2024. Sur fond gris : les deux références sans action nouvelle (taux inchangé, tendance) et la cible de la Décennie, moitié de la valeur de 2021 en 2030. Les accidents constatés n": {
   "texte": "In 2024, on a gray background: the two non-new action benchmarks (unchanged rate, trend) and the Decade target, half of the 2021 value in 2030.",
   "relu": false
@@ -6264,12 +6311,12 @@
   "texte": "network maintenance in Togo",
   "relu": false
  },
- "est la seule zone en retard sur la route": {
-  "texte": "is the only area late on the road",
+ "est la seule zone": {
+  "texte": "is the only area",
   "relu": false
  },
- "est la seule zone — et la seule région — qui cumule un réseau dégradé (": {
-  "texte": "is the only zone  ⁇  and the only region  ⁇  which accumulates a degraded network (",
+ "est la seule zone en retard sur la route": {
+  "texte": "is the only area late on the road",
   "relu": false
  },
  "est pas classé par territoire, faute d": {
@@ -6302,6 +6349,18 @@
  },
  "est-ce qui change, et que confirment les données ?": {
   "texte": "Is it changing, and what does the data confirm?",
+  "relu": false
+ },
+ "estimé": {
+  "texte": "estimated",
+  "relu": false
+ },
+ "et": {
+  "texte": "and",
+  "relu": true
+ },
+ "et la seule région": {
+  "texte": "and the only region",
   "relu": false
  },
  "exemple reprend une valeur affichée ailleurs dans le tableau de bord.": {
@@ -6344,8 +6403,8 @@
   "texte": "The population density of accredited driving schools follows that of the major cities, whereas",
   "relu": false
  },
- "horizon 2029 — niveau C": {
-  "texte": "Horizon 2029  ⁇  Level C",
+ "horizon 2029": {
+  "texte": "horizon 2029",
   "relu": false
  },
  "horizon 2029, préfecture par préfecture.": {
@@ -6516,8 +6575,8 @@
   "texte": "The Plateaux are late on the road; Savannah and Maritime outside Greater Lomé, in training.",
   "relu": false
  },
- "la pastille prend la couleur de sa classe sur la carte —": {
-  "texte": "the pill takes its class color on the map  ⁇",
+ "la pastille prend la couleur de sa classe sur la carte": {
+  "texte": "the pill takes its class color on the map",
   "relu": false
  },
  "la route": {
@@ -6546,6 +6605,10 @@
  },
  "les 4 préfectures urbaines (Agoè-Nyivé, Golfe, Kloto, Kozah) ont 84,8 % des auto-écoles agréées pour 32,3 % de la population": {
   "texte": "The four urban prefectures (Agoè-Nyivé, Golfe, Kloto, Kozah) have 84.8% of licensed driving schools for 32.3% of the population.",
+  "relu": false
+ },
+ "les deux": {
+  "texte": "both",
   "relu": false
  },
  "les habitants ne s'additionnent pas d'une carte à l'autre": {
@@ -6578,6 +6641,10 @@
  },
  "limites des 5 régions": {
   "texte": "5 regions",
+  "relu": false
+ },
+ "mais les six taux de risque baissent. Le réseau reste inégalement entretenu, et": {
+  "texte": "The network remains unevenly maintained, and",
   "relu": false
  },
  "mettent 56,7 % de la population de ces préfectures à moins de 10 km d'une auto-école, contre 32,2 % si elles ouvrent toutes au chef-lieu : 719 730 habitants de plus.": {
@@ -6618,6 +6685,10 @@
  },
  "ni la part du Grand Lomé dans les accidents ni son taux ne sont connus (écart 1)": {
   "texte": "Neither the share of the Grand Lomé in accidents nor its rate are known (disambiguation 1)",
+  "relu": false
+ },
+ "niveau C": {
+  "texte": "Level C",
   "relu": false
  },
  "non définie": {
@@ -6696,8 +6767,16 @@
   "texte": "Parts and accessories of motor vehicles",
   "relu": false
  },
- "par an, 1990–2024": {
-  "texte": "Per year, 1990 ⁇ 2024",
+ "par an, 1990": {
+  "texte": "per year, 1990",
+  "relu": false
+ },
+ "part formation :": {
+  "texte": "Part of training:",
+  "relu": false
+ },
+ "part réseau :": {
+  "texte": "network part:",
   "relu": false
  },
  "pas de mois": {
@@ -6780,8 +6859,16 @@
   "texte": "population(t, reference year); for distance: population over SE-08 km (O4-08)",
   "relu": false
  },
+ "pour 10 000 véhicules": {
+  "texte": "for 10 000 vehicles",
+  "relu": false
+ },
  "pour 100 000 (": {
   "texte": "for 100 000 (",
+  "relu": false
+ },
+ "pour 100 000 habitants": {
+  "texte": "for every 100,000 inhabitants",
   "relu": false
  },
  "premières délivrances(cat, an) / population(âge ≥ âge minimal PA-05, an) × 1 000": {
@@ -6806,6 +6893,10 @@
  },
  "préfectures sans auto-école agréée": {
   "texte": "prefectures without a licensed driving school",
+  "relu": false
+ },
+ "qui cumule un réseau dégradé (": {
+  "texte": "which has a degraded network (",
   "relu": false
  },
  "qui cumulent les deux déficits (641 955 habitants) ; aucun test de robustesse ne change plus de 2 des 10 premières.": {
@@ -6928,6 +7019,10 @@
   "texte": "\"I'm not going to be able to do this\".",
   "relu": false
  },
+ "suivi courant.": {
+  "texte": "Following current.",
+  "relu": false
+ },
  "sur 17 vérifications et hypothèses": {
   "texte": "of 17 verification and assumptions",
   "relu": false
@@ -6936,12 +7031,12 @@
   "texte": "Of 84 concentrate on the poor state of the grid.",
   "relu": false
  },
- "teinte pleine : 2022–2024": {
-  "texte": "Full shade: 2022 ⁇ 2024",
+ "teinte pleine : 2022": {
+  "texte": "Full shade: 2022",
   "relu": false
  },
- "teinte pâle : 2010–2012": {
-  "texte": "Pale shade: 2010 ⁇ 2012",
+ "teinte pâle : 2010": {
+  "texte": "Pale shade: 2010",
   "relu": false
  },
  "titre, cible ou texte": {
@@ -6984,8 +7079,8 @@
   "texte": "killed reported by police and gendarmerie",
   "relu": false
  },
- "tués pour 100 000 habitants, 2010–2012 face à 2022–2024": {
-  "texte": "killed per 100,000 inhabitants, 2010 ⁇ 2012 compared to 2022 ⁇ 2024",
+ "tués pour 100 000 habitants, 2010": {
+  "texte": "killed per 100,000 people, 2010",
   "relu": false
  },
  "tués ÷ accidents constatés × 100": {
@@ -7010,6 +7105,10 @@
  },
  "une auto-école": {
   "texte": "a driving school",
+  "relu": false
+ },
+ "une baisse des déclarations ressemblerait à un progrès.": {
+  "texte": "A decrease in declarations would appear to be progress.",
   "relu": false
  },
  "une colonne pour trier.": {
@@ -7089,8 +7188,8 @@
   "relu": false
  },
  "À retenir": {
-  "texte": "Remembering",
-  "relu": false
+  "texte": "Key points",
+  "relu": true
  },
  "À vérifier": {
   "texte": "To be checked",
@@ -7108,16 +7207,8 @@
   "texte": "Target spread (rate unchanged)",
   "relu": false
  },
- "Écart à la cible (taux inchangé) —": {
-  "texte": "Target spread (rate unchanged)  ⁇",
-  "relu": false
- },
  "Écart à la cible (tendance)": {
   "texte": "Target deviation (trend)",
-  "relu": false
- },
- "Écart à la cible (tendance) —": {
-  "texte": "Target gap (trend)  ⁇",
   "relu": false
  },
  "Écart à la médiane, au lieu du rang": {
@@ -7189,8 +7280,8 @@
   "relu": false
  },
  "Évolutions et constats": {
-  "texte": "Developments and findings",
-  "relu": false
+  "texte": "Trends and findings",
+  "relu": true
  },
  "×1,83 en 2024, depuis 2004 (année de rupture de série).": {
   "texte": "×1,83 in 2024, since 2004 (year of serial break).",
@@ -7272,276 +7363,12 @@
   "texte": "Σ victims, sex, age); parts",
   "relu": false
  },
- "— Agou cumule 40,0 % de km en mauvais état sur 124,1 km évalués (5 tronçons critiques) et aucune auto-école agréée pour 85 793 habitants (1 recensée, non agréée), à 11,0 km de la plus proche. En tête du classement dans les 6 tests de robustesse.": {
-  "texte": "⁇  Agou has 40.0% of the 124.1 km assessed (5 critical sections) and no licensed driving schools for 85,793 inhabitants (1 census, not licensed), at 11.0 km from the nearest.",
-  "relu": false
- },
- "— Bas-Mono n’a aucune auto-école agréée pour 94 860 habitants (1 recensée, non agréée), à 31,2 km de la plus proche, et sa desserte est faible : 3,68 km de routes pour 10 000 habitants. Réseau : 21,1 % sur 35,8 km. En tête du classement dans les 6 tests de robustesse.": {
-  "texte": "⁇  Bas-Mono has no licensed driving school for 94,860 inhabitants (1 census, not licensed), 31.2 km from the nearest, and its service is low: 3.68 km of roads per 10,000 inhabitants. Network: 21.1% of 35.8 km.",
-  "relu": false
- },
- "— Bassar cumule 28,0 % de km en mauvais état sur 167,5 km évalués (1 tronçon critique) et aucune auto-école agréée pour 152 065 habitants (2 recensées, non agréées), à 47,5 km de la plus proche. En tête du classement dans les 6 tests de robustesse.": {
-  "texte": "⁇  Bassar has 28.0 per cent of km in poor condition out of 167.5 km assessed (1 critical section) and no licensed driving schools for 152 065 inhabitants (2 registered, not licensed), 47.5 km from the nearest.",
-  "relu": false
- },
- "— Blitta cumule 68,2 % de km en mauvais état sur 101,1 km évalués (4 tronçons critiques) et aucune auto-école agréée pour 163 272 habitants (2 recensées, non agréées), à 25,9 km de la plus proche. En tête du classement dans les 6 tests de robustesse.": {
-  "texte": "⁇  Blitta has 68.2% of the 101.1 km assessed (4 critical sections) in bad condition and no approved driving schools for 163,272 inhabitants (2 census, uncertified), 25.9 km from the nearest.",
-  "relu": false
- },
- "— Bon :": {
-  "texte": "⁇  Well:",
-  "relu": false
- },
- "— Centrale est la seule zone au-dessus de la médiane pour le réseau et en dessous pour la formation : 40,3 % de km en mauvais état sur 437,2 km évalués, et 4 auto-écoles agréées pour 795 529 habitants (0,50 pour 100 000). 4 de ses 5 préfectures reçoivent le levier réseau (113,6 km à remettre en état), 3 le levier formation (6 auto-écoles).": {
-  "texte": "⁇  Central is the only area above median for network and below average for training: 40.3% km in poor condition out of 437.2 km evaluated, 4 licensed driving schools per 795 529 people (0.50 per 100 000).",
-  "relu": false
- },
- "— Danyi cumule 100 % de km en mauvais état sur 49,8 km évalués, traversés par 3 tronçons critiques, et aucune auto-école, ni agréée ni recensée, pour 40 240 habitants, à 12,9 km de la plus proche. En tête du classement dans les 6 tests de robustesse.": {
-  "texte": "⁇  Danyi has 100 per cent of the km in bad condition out of 49.8 km assessed, traversed by 3 critical sections, and no driving schools, neither authorised nor registered, for 40,240 inhabitants, at 12.9 km from the nearest.",
-  "relu": false
- },
- "— Est-Mono n’a aucune auto-école, ni agréée ni recensée, pour 164 460 habitants, à 27,4 km de la plus proche. Réseau : 17,2 % sur 110,7 km. En tête du classement dans 4 des 6 tests de robustesse.": {
-  "texte": "⁇  Est-Mono has no licensed or registered driving school for 164,460 inhabitants, 27.4 km from the nearest.",
-  "relu": false
- },
- "— Grand Lomé a le réseau le moins dégradé (7,7 %) et la meilleure offre (103 auto-écoles agréées, 4,71 pour 100 000 habitants) ; seule sa desserte est sous la médiane (0,74 km pour 10 000 habitants), pour 2 188 376 habitants.": {
-  "texte": "⁇  Greater Lomé has the least degraded network (7.7%) and the best offer (103 licensed driving schools, 4.71 per 100,000 inhabitants); only its service is below the median (0.74 km per 10,000 inhabitants), for 2 188 376 inhabitants.",
-  "relu": false
- },
- "— Kara a le réseau au-dessus de la médiane : 15,2 % sur 694,5 km évalués. Pour 985 512 habitants, 2 de ses 7 préfectures reçoivent le levier réseau (37,3 km), 5 le levier formation (8 auto-écoles).": {
-  "texte": "⁇  Kara has the network above median: 15.2% over 694.5 km assessed. For 985 512 inhabitants, 2 of its 7 prefectures receive grid levy (37.3 km), 5 training levy (8 driving schools).",
-  "relu": false
- },
- "— Maritime hors Grand Lomé a la formation et la desserte sous la médiane : 5 auto-écoles agréées pour 1 346 615 habitants (0,37 pour 100 000), 3,51 km de routes pour 10 000 habitants. 3 de ses 6 préfectures reçoivent le levier formation (6 auto-écoles).": {
-  "texte": "⁇  Maritime outside Greater Lomé has training and service under the median: 5 licensed driving schools per 1 346 615 inhabitants (0.37 per 100 000), 3.51 km of roads per 10 000 inhabitants. 3 of its 6 prefectures receive the training levy (6 driving schools).",
-  "relu": false
- },
- "— Mauvais :": {
-  "texte": "⁇  Bad:",
-  "relu": false
- },
- "— Moyen :": {
-  "texte": "⁇  Average:",
-  "relu": false
- },
- "— Non évalué :": {
-  "texte": "⁇  Not evaluated:",
-  "relu": false
- },
- "— Oti n’a aucune auto-école agréée pour 124 848 habitants (3 recensées, non agréées), à 62,0 km de la plus proche ; son réseau (21,1 % en mauvais état sur 140,6 km) reste sous le seuil. En tête du classement dans les 6 tests de robustesse.": {
-  "texte": "⁇  Oti has no licensed driving school for 124,848 inhabitants (3 registered and unlicensed), 62.0 km from the nearest; its network (21.1% in poor condition out of 140.6 km) remains below the threshold.",
-  "relu": false
- },
- "— Oti-Sud n’a aucune auto-école, ni agréée ni recensée, pour 150 376 habitants, à 84,0 km de la plus proche, la plus grande distance du pays. Réseau : 14,4 % sur 131,7 km. En tête du classement dans 4 des 6 tests de robustesse.": {
-  "texte": "⁇  Oti-Sud has no licensed or registered driving school for 150,376 inhabitants, 84.0 km from the nearest, the longest distance in the country.",
-  "relu": false
- },
- "— Plateaux a le réseau au-dessus de la médiane : 28,0 % de km en mauvais état sur 965,6 km évalués, traversés par 23 tronçons critiques. Pour 1 635 946 habitants, 6 de ses 12 préfectures reçoivent le levier réseau (150,5 km), 7 le levier formation (12 auto-écoles).": {
-  "texte": "⁇  Plateaux has a network above the median: 28.0% km in poor condition out of 965.6 kilometres assessed, crossed by 23 critical sections. For 1 635 946, six of its 12 prefectures receive grid leverage (150.5 km), 7 training leverage (12 driving schools).",
-  "relu": false
- },
- "— Savanes a la formation et la desserte sous la médiane : 4 auto-écoles agréées pour 1 143 520 habitants (0,35 pour 100 000), 4,62 km de routes pour 10 000 habitants. 5 de ses 7 préfectures reçoivent le levier formation (9 auto-écoles), aucune le levier réseau.": {
-  "texte": "⁇  Savanes has training and service under the medium: 4 licensed driving schools for 1 143 520 inhabitants (0.35 per 100 000), 4.62 km of roads for 10 000 inhabitants. 5 of its 7 prefectures receive training levy (9 driving schools), no network levy.",
-  "relu": false
- },
- "— Tchamba cumule 34,0 % de km en mauvais état sur 120,3 km évalués (1 tronçon critique) et aucune auto-école agréée pour 200 585 habitants (2 recensées, non agréées), à 31,1 km de la plus proche. En tête du classement dans les 6 tests de robustesse.": {
-  "texte": "⁇  Chamba has 34.0% of km in poor condition out of 120.3 km assessed (1 critical section) and no licensed driving schools for 200 585 inhabitants (2 registered, not licensed), 31.1 km from the nearest.",
-  "relu": false
- },
- "— Tchaoudjo cumule 36,9 % de km en mauvais état sur 125,7 km évalués (3 tronçons critiques) pour 240 360 habitants ; sa formation n’est pas en déficit (2 auto-écoles agréées, 0,83 pour 100 000 habitants). En tête du classement dans 3 des 6 tests de robustesse : la moins sûre des 10.": {
-  "texte": "⁇  Tchaoudjo has 36.9% of the 125.7 km assessed (3 critical sections) for 240 360 inhabitants; its training is not in deficit (2 accredited driving schools, 0.83 per 100,000 inhabitants).",
-  "relu": false
- },
- "— Travaux :": {
-  "texte": "⁇  Jobs:",
-  "relu": false
- },
- "— part formation :": {
-  "texte": "⁇  part of training:",
-  "relu": false
- },
- "— part réseau :": {
-  "texte": "⁇  network share:",
-  "relu": false
- },
  "“Des routes plus sûres pour une mobilité durable au Togo”": {
   "texte": "Safer roads for sustainable mobility in Togo",
   "relu": false
  },
  "⌈1,065 × population ÷ 100 000⌉ − auto-écoles agréées (≥ 0, par préfecture)": {
   "texte": "⁇ 1,065 × population ÷ 100 000 ⁇  − licensed driving schools (≥ 0, per prefecture)",
-  "relu": false
- },
- "✓ suivi courant.": {
-  "texte": "✓ regular follow-up.",
-  "relu": false
- },
- "🇹🇬 Mobilité et sécurité routière au Togo": {
-  "texte": "Mobility and road safety in Togo",
-  "relu": false
- },
- "📍 Centrale — Blitta": {
-  "texte": "⁇  Central power station  ⁇  Blitta",
-  "relu": false
- },
- "📍 Centrale — Mô": {
-  "texte": "⁇  Central  ⁇  Mo",
-  "relu": false
- },
- "📍 Centrale — Sotouboua": {
-  "texte": "⁇  Central  ⁇  Sotouboua",
-  "relu": false
- },
- "📍 Centrale — Tchamba": {
-  "texte": "⁇  Central office  ⁇  Chamba",
-  "relu": false
- },
- "📍 Centrale — Tchaoudjo": {
-  "texte": "⁇  Central station  ⁇  Chaoudjo",
-  "relu": false
- },
- "📍 Grand Lomé — Agoè-Nyivé": {
-  "texte": "⁇  Grand Lomé  ⁇  Agoè-Nyivé",
-  "relu": false
- },
- "📍 Grand Lomé — Golfe": {
-  "texte": "⁇  Grand Lomé  ⁇  Gulf",
-  "relu": false
- },
- "📍 Kara — Assoli": {
-  "texte": "Kara Assoli",
-  "relu": false
- },
- "📍 Kara — Bassar": {
-  "texte": "Kara Bassar",
-  "relu": false
- },
- "📍 Kara — Binah": {
-  "texte": "Kara Binah",
-  "relu": false
- },
- "📍 Kara — Dankpen": {
-  "texte": "♪ Kara ♪ ♪ Dankpen ♪",
-  "relu": false
- },
- "📍 Kara — Doufelgou": {
-  "texte": "Kara Doufelgou",
-  "relu": false
- },
- "📍 Kara — Kozah": {
-  "texte": "♪ Kara ♪ Kozah",
-  "relu": false
- },
- "📍 Kara — Kéran": {
-  "texte": "♪ Kara ♪ ♪ Keran ♪",
-  "relu": false
- },
- "📍 Maritime hors Grand Lomé — Avé": {
-  "texte": "⁇  Maritime off the Grand Lomé  ⁇  Avé",
-  "relu": false
- },
- "📍 Maritime hors Grand Lomé — Bas-Mono": {
-  "texte": "⁇  Maritime off the Grand Lomé  ⁇  Bas-Mono",
-  "relu": false
- },
- "📍 Maritime hors Grand Lomé — Lacs": {
-  "texte": "⁇  Maritime off the Grand Lomé  ⁇  Lakes",
-  "relu": false
- },
- "📍 Maritime hors Grand Lomé — Vo": {
-  "texte": "⁇  Maritime off the Grand Lomé  ⁇  Vo",
-  "relu": false
- },
- "📍 Maritime hors Grand Lomé — Yoto": {
-  "texte": "⁇  Maritime off the Grand Lomé  ⁇  Yoto",
-  "relu": false
- },
- "📍 Maritime hors Grand Lomé — Zio": {
-  "texte": "⁇  Maritime outside Grand Lomé  ⁇  Zio",
-  "relu": false
- },
- "📍 Plateaux — Agou": {
-  "texte": "⁇  Plateaus  ⁇  Agou",
-  "relu": false
- },
- "📍 Plateaux — Akébou": {
-  "texte": "⁇  Plateaus  ⁇  Akébou",
-  "relu": false
- },
- "📍 Plateaux — Amou": {
-  "texte": "⁇  Plateaus  ⁇  Amou",
-  "relu": false
- },
- "📍 Plateaux — Anié": {
-  "texte": "⁇  Plateaus  ⁇  Anies",
-  "relu": false
- },
- "📍 Plateaux — Danyi": {
-  "texte": "⁇  Plateaus  ⁇  Danyi",
-  "relu": false
- },
- "📍 Plateaux — Est-Mono": {
-  "texte": "⁇  Plateaus  ⁇  East Mono",
-  "relu": false
- },
- "📍 Plateaux — Haho": {
-  "texte": "⁇  Plateaus  ⁇  Haho",
-  "relu": false
- },
- "📍 Plateaux — Kloto": {
-  "texte": "⁇  Plateaus  ⁇  Kloto",
-  "relu": false
- },
- "📍 Plateaux — Kpélé": {
-  "texte": "⁇  Plateaus  ⁇  Kpele",
-  "relu": false
- },
- "📍 Plateaux — Moyen-Mono": {
-  "texte": "⁇  Plateaus  ⁇  Middle Mono",
-  "relu": false
- },
- "📍 Plateaux — Ogou": {
-  "texte": "⁇  Plateaus  ⁇  Ogou",
-  "relu": false
- },
- "📍 Plateaux — Wawa": {
-  "texte": "⁇  Plateaus  ⁇  Wawa",
-  "relu": false
- },
- "📍 Savanes — Cinkassé": {
-  "texte": "⁇  Savannah  ⁇  Cinnamon",
-  "relu": false
- },
- "📍 Savanes — Kpendjal": {
-  "texte": "⁇  Savannah  ⁇  Kpendjal",
-  "relu": false
- },
- "📍 Savanes — Kpendjal-Ouest": {
-  "texte": "⁇  Savannah  ⁇  Kpendjal-West",
-  "relu": false
- },
- "📍 Savanes — Oti": {
-  "texte": "⁇  Savannah  ⁇  Oti",
-  "relu": false
- },
- "📍 Savanes — Oti-Sud": {
-  "texte": "⁇  Savannah  ⁇  Oti-Sud",
-  "relu": false
- },
- "📍 Savanes — Tandjoaré": {
-  "texte": "⁇  Savannah  ⁇  Tandjoaré",
-  "relu": false
- },
- "📍 Savanes — Tône": {
-  "texte": "⁇  Savannah  ⁇  Tone",
-  "relu": false
- },
- "📚 formation": {
-  "texte": "⁇  Training",
-  "relu": false
- },
- "🛣️📚 les deux": {
-  "texte": "⁇ ️ ⁇  Both",
   "relu": false
  }
 }

@@ -141,3 +141,24 @@ Couleurs fixes par donnée, dans `theme.py`, pour qu'un indicateur garde sa coul
 - Synthèse chiffrée : contenu centré verticalement dans la carte verte, liste à puces alignée à gauche.
 - Pied de page, sous la carte « Limite » : « Mise à jour : 2026. » retiré de la phrase sur les données.
 
+## 11. Traduction (branche `design/traduction`, partie de `design/palette-a`)
+
+- **Langues** : français (source), anglais, éwé, kabiyè. **Sélecteur** dans la barre latérale, sous le logo
+  (FR · EN · Eʋegbe · Kabɩyɛ) ; la langue suit l'adresse (`?lang=en|ee|kbp`) et reste la même d'une page à l'autre.
+- **Méthode « traduire avant le déploiement »** : `scripts/traduire_dashboard.py` recense les textes (chaînes du code
+  et textes réellement affichés par les 8 pages), les traduit une fois avec **NLLB-200** (distillé 600M, via
+  CTranslate2 ; licence CC-BY-NC, admise car le tableau de bord est une démo non commerciale) et écrit
+  `dashboard/locales/<langue>.json`, qu'on commit. À l'affichage, `bi()` lit ces fichiers : aucun modèle, aucun
+  appel réseau (compatible Heroku et Streamlit Cloud).
+- **`dashboard/i18n.py`** : `installer()` fait passer par `bi()` tout ce que Streamlit affiche (markdown, widgets,
+  onglets, tableaux, graphiques Plotly). Le HTML, le markdown, les gabarits `%{…}`, le CSS, les pictogrammes et les
+  noms de lieux des données ne sont jamais traduits ; un segment absent reste en français.
+- **Qualité** : anglais correct (quelques termes d'interface fixés à la main, marqués `"relu": true`) ; éwé et
+  kabiyè approximatifs (contresens sur le vocabulaire technique, quelques mots répétés). Les traductions jugées
+  inventées sont laissées en français et marquées `"suspect": true`. **Relecture par des locuteurs nécessaire**
+  avant une présentation officielle : corriger le JSON et passer `"relu": true` pour que le script ne l'écrase pas.
+- **Logo** de la barre latérale décliné par langue (`static/logo_barre_laterale_<langue>.svg`) ; texte français
+  gardé quand la traduction est trop longue (cas du kabiyè).
+- Mise à jour après un changement de texte : `python scripts/traduire_dashboard.py` (ne traduit que le nouveau),
+  puis `python scripts/logo_barre_laterale.py`.
+

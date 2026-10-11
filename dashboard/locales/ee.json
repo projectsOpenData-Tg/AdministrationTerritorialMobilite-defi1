@@ -95,8 +95,8 @@
   "texte": ", eye afɔku aɖeke meli le nutowo, ɣletiwo kple ƒewo me o.",
   "relu": false
  },
- ", porté par les motos. Les accidents augmentent en volume —": {
-  "texte": "Ʋufɔkuwo le dzidzim ɖe edzi  ⁇",
+ ", porté par les motos. Les accidents augmentent en volume": {
+  "texte": "Ʋufɔkuwo le dzidzim ɖe edzi",
   "relu": false
  },
  ", seule zone en retard sur la route et la formation, et par": {
@@ -177,6 +177,10 @@
  },
  "1,1 % des routes en mauvais état (24,8 km évalués, un tronçon critique).": {
   "texte": "Mɔ siwo me nɔnɔme sesẽwo le la dometɔ 1.1 le alafa me (24.8 km, si nye ɣeyiɣi vevi aɖe).",
+  "relu": false
+ },
+ "1,10 à moins de 1": {
+  "texte": "1,10 ɖe 1",
   "relu": false
  },
  "1,275 × population de 18 ans et plus ÷ 1 000": {
@@ -297,6 +301,10 @@
  },
  "13 au réseau dégradé (2 868 523 habitants).": {
   "texte": "13 le nuŋɔŋlɔdzesi si dzi nuŋɔŋlɔdzesiwo le la dzi (2 868 523).",
+  "relu": false
+ },
+ "13 préfectures": {
+  "texte": "13 nutowo",
   "relu": false
  },
  "13 préfectures au levier réseau (304,6 km) ; 23 au levier formation (41 auto-écoles).": {
@@ -511,6 +519,10 @@
   "texte": "Ame siwo le afi ma ƒe xexlẽme nye 200 585",
   "relu": false
  },
+ "2012 face à 2022": {
+  "texte": "Ƒe 2012 va se ɖe ƒe 2022",
+  "relu": false
+ },
  "2013 non renseignée": {
   "texte": "Ƒe 2013 si womegblɔ o",
   "relu": false
@@ -539,8 +551,40 @@
   "texte": "Mɔzɔzɔ ƒe Se la ƒe Gɔmeɖeɖe Ƒe Seɖe 2022",
   "relu": false
  },
+ "2022 existent au géoportail, mais ne sont pas ouvertes. Elles permettraient de vérifier l’état des 13 préfectures ciblées.": {
+  "texte": "Le ƒe 2022 me la, woɖe mɔ na mí be míava kpɔ nu si le edzi yim le nuto 13 siwo ŋu míeɖo ŋkui la dzi.",
+  "relu": false
+ },
  "2023 tournée d'immatriculation des motos.": {
   "texte": "Ƒe 2023 ƒe dzodzo si me míede mɔ̃memiwo ƒe mɔ̃ɖaŋunuwo me.",
+  "relu": false
+ },
+ "2024 (Mobilité).": {
+  "texte": "Ƒe 2024 (Dɔwɔwɔ).",
+  "relu": false
+ },
+ "2024 : (88 198 ÷ 6 829)^(1/34) − 1 = 7,8 % par an": {
+  "texte": "Ƒe 2024: (88 198 ÷ 6 829) ^(1/34) − 1 = 7.8 % ƒe sia ƒe",
+  "relu": false
+ },
+ "2024 : 40,2 motos immatriculées par permis moto, contre 0,37 à 2,33 ailleurs": {
+  "texte": "Ƒe 2024: Moto siwo ŋu mɔɖegbalẽ le la le 40,2 tso 0,37 va ɖo 2,33 le teƒe bubuwo",
+  "relu": false
+ },
+ "2024 : tous en baisse.": {
+  "texte": "Ƒe 2024: Wo katã woɖiɖi.",
+  "relu": false
+ },
+ "2024 ; ruptures de série de 1995 et 2004 en pointillé.": {
+  "texte": "2024; ƒe 1995 kple ƒe 2004 me tɔtrɔwo le kpekpem ɖe eŋu.",
+  "relu": false
+ },
+ "2024), mais les 6 taux baissent.": {
+  "texte": "Le ƒe 2024 me la, nu sia nu va yi ɖe edzi.",
+  "relu": false
+ },
+ "2024, 40 motos immatriculées pour un permis moto délivré ; moins de 2,5 véhicules pour un permis dans les autres catégories. Niveau B. Le permis F n": {
+  "texte": "2024, moto 40 siwo ŋu mɔkeke ƒe mɔɖeɖe si woɖe ɖe go le; ʋɔ 2,5 kple edzivɔ le mɔɖeɖe siwo le hatsotso bubuwo me la me.",
   "relu": false
  },
  "2025-2031, sans action nouvelle": {
@@ -607,6 +651,10 @@
   "texte": "Le nuto 39 me la, 23 me tɔwo mexɔa ʋukulawo ƒe suku aɖeke o (2 932 492).",
   "relu": false
  },
+ "23 préfectures, dont Mô": {
+  "texte": "Mɔ 23 siwo le nutowo me",
+  "relu": false
+ },
  "23 sans auto-école agréée (2 932 492 habitants).": {
   "texte": "Ʋukulawo ƒe suku aɖeke meli o (2 932 492)",
   "relu": false
@@ -633,6 +681,10 @@
  },
  "241 247 habitants": {
   "texte": "Ame siwo katã le afi ma nye 241 247",
+  "relu": false
+ },
+ "25 ans) sont surreprésentés parmi les conducteurs impliqués": {
+  "texte": "(Ƒe 25 kple edzivɔ) le ʋukulawo dome",
   "relu": false
  },
  "253 467 habitants": {
@@ -835,8 +887,8 @@
   "texte": "Ame 388 775 le dukɔa me",
   "relu": false
  },
- "39 fiches affichées. Répartition d'ensemble : 5 en priorité haute, 26 en moyenne, 8 sans action. 🛣️ réseau": {
-  "texte": "Dɔwɔgbalẽvi 39 siwo woɖe ɖe go. Dɔwɔgbalẽvi gbogboawo: 5 si nye nu vevitɔ kekeake, 26 si nye vidzĩ, 8 si me womewɔ naneke o.  ⁇ ️",
+ "39 fiches affichées. Répartition d'ensemble : 5 en priorité haute, 26 en moyenne, 8 sans action.": {
+  "texte": "Dɔwɔgbalẽvi 39 siwo woɖe ɖe go. Nu gbogbo aɖewoe nye: 5 si le ŋgɔyiyi me, 26 kple edzivɔ eye 8 meli o.",
   "relu": false
  },
  "39 préfectures": {
@@ -871,8 +923,8 @@
   "texte": "4 Wotsɔ ɖe asi le eŋu",
   "relu": false
  },
- "4 vues — cliquez sur un onglet": {
-  "texte": "4 kpɔ  ⁇  do fli aɖe dzi",
+ "4 vues": {
+  "texte": "4 susuwo",
   "relu": false
  },
  "4 zones": {
@@ -1187,8 +1239,8 @@
   "texte": "Wotsɔ akpa adre siwo ŋu woke ɖo",
   "relu": false
  },
- "7 vues — cliquez sur un onglet": {
-  "texte": "7 kpɔ  ⁇  Zã aɖaka si le afi sia",
+ "7 vues": {
+  "texte": "Ŋutinya adre",
   "relu": false
  },
  "7 vérifications confirmées sur 17, 2 infirmées, 1 nuancée, 7 non testables (onglet Synthèse).": {
@@ -1227,8 +1279,8 @@
   "texte": "Ʋukulawo ƒe suku 74 siwo ŋu woda asi ɖo, si nye 5.67 le ame 100,000 ɖe sia ɖe ƒe xexlẽme me: eyae nye nunana gãtɔ kekeake si le dukɔa me.",
   "relu": false
  },
- "74,4 % des immatriculations de 2024 sont des motos ; 40 motos pour un permis moto sur 2007–2024 (Mobilité).": {
-  "texte": "Mɔfiamenuwo ƒe xexlẽme si ade 74.4% le 2024 me; 40e nye mɔ̃memi siwo dzi woato akpɔ ŋusẽ ɖe woƒe ʋukukuŋusẽgbalẽvi dzi le ƒe 2007 ⁇ 2024 (Dɔwɔwɔ) me.",
+ "74,4 % des immatriculations de 2024 sont des motos ; 40 motos pour un permis moto sur 2007": {
+  "texte": "Mɔfiamenuwo ƒe xexlẽme le ƒe 2024 me le alafa memama 74,4; mɔfiamenu 40 le ƒe 2007 me",
   "relu": false
  },
  "75,6 km évalués": {
@@ -1531,8 +1583,8 @@
   "texte": "Le nyateƒe me la, nu siwo wòle be woawɔ atsɔ atrɔ asi le nɔnɔmea ŋu la le dzidzim ɖe edzi.",
   "relu": false
  },
- ": les accidents déclarés augmentent (+9,4 % entre 2010–2012 et 2022–2024), mais les 6 taux baissent.": {
-  "texte": ": afɔku siwo ŋu woƒo nu tsoe la le dzidzim ɖe edzi (+9.4% tso ƒe 2010 ⁇ 2012 va ɖo 2022 ⁇ 2024) gake woƒe xexlẽme ade kpɔtɔ.",
+ ": les accidents déclarés augmentent (+9,4 % entre 2010": {
+  "texte": "Le ƒe 2010 me la, afɔku siwo ŋu woke ɖo la dzi ɖe edzi (+9.4%)",
   "relu": false
  },
  ": les accidents déclarés augmentent (+9,4 %), mais les six taux de risque baissent.": {
@@ -1561,14 +1613,6 @@
  },
  "= mesuré (comptage direct)": {
   "texte": "= dzidze (dzidze nu tẽ)",
-  "relu": false
- },
- "A — Moto": {
-  "texte": "Moto",
-  "relu": false
- },
- "AI LAB": {
-  "texte": "LAB",
   "relu": false
  },
  "AZANHOUN FIAGBE-PRESIDENT COPE": {
@@ -1603,14 +1647,6 @@
   "texte": "Ʋukula 10,000 ƒe afɔkuwo",
   "relu": false
  },
- "Accidents constatés — pour 10 000 véhicules": {
-  "texte": "Ʋu siwo me ʋufɔkuwo dzɔ le  ⁇",
-  "relu": false
- },
- "Accidents constatés — pour 100 000 habitants": {
-  "texte": "Ʋufɔku siwo dzɔna ɖe ame 100,000 dzi",
-  "relu": false
- },
  "Accidents corporels pour 100 000 habitants": {
   "texte": "Lãmesẽkuxiwo le ame 100,000 me",
   "relu": false
@@ -1639,8 +1675,8 @@
   "texte": "Ʋufɔkuwo Le Anyigba Sia Anyigba Dzi",
   "relu": false
  },
- "Accidents, blessés et tués, année par année, 2010–2024": {
-  "texte": "Ʋufɔkuwo, ame veviwo kple ame siwo ku, ƒe sia ƒe, 2010 ⁇ 2024",
+ "Accidents, blessés et tués, année par année, 2010": {
+  "texte": "Ʋufɔkuwo, Ame Siwo Ŋu Wokpe Ðo Kple Ame Siwo Wua Ƒe Sia Ƒe Ƒe, 2010",
   "relu": false
  },
  "Accidents, victimes": {
@@ -1683,8 +1719,8 @@
   "texte": "Dɔwɔna si wometa ɖe go o: Ame aɖeke mekpɔe be ewɔ dɔ o.",
   "relu": false
  },
- "Administration territoriale et mobilité — Défi 1": {
-  "texte": "Anyigbadzraɖoanyi kple ʋuʋudedi Challenge 1",
+ "Administration territoriale et mobilité": {
+  "texte": "Anyigbadzraɖoanyi kple ʋuwɔwɔ",
   "relu": false
  },
  "Adzakpa": {
@@ -1709,6 +1745,10 @@
  },
  "Agou Atigbe": {
   "texte": "Agou Atigbe",
+  "relu": false
+ },
+ "Agou cumule 40,0 % de km en mauvais état sur 124,1 km évalués (5 tronçons critiques) et aucune auto-école agréée pour 85 793 habitants (1 recensée, non agréée), à 11,0 km de la plus proche. En tête du classement dans les 6 tests de robustesse.": {
+  "texte": "Agou ƒe ʋukulawo ƒe agbɔsɔsɔme nye 40.0% le amesiwo ƒe nɔnɔme mede edzi o ƒe 124.1 me (5 kpekpeme akpa) eye ʋukulawo ƒe suku aɖeke meli si xɔ mɔ na ame 85,793 o (1 si xɔ mɔ na ʋukulawo, si womekpɔ mɔ na o) le teƒe si didi wu la ƒe kilometa 11.0 me.",
   "relu": false
  },
  "Agréée": {
@@ -1883,16 +1923,12 @@
   "texte": "Subɔsubɔdɔ Kple Subɔsubɔdɔ",
   "relu": false
  },
- "Auto-école agréée —": {
-  "texte": "Ʋukulawo ƒe Suku Si Le Mɔ Ðem  ⁇",
+ "Auto-école agréée": {
+  "texte": "Ʋukulawo ƒe Sukua",
   "relu": false
  },
- "Auto-école non agréée —": {
-  "texte": "Ʋukukuxɔ si womede asi na o  ⁇",
-  "relu": false
- },
- "Auto-école —": {
-  "texte": "Ʋukulawo ƒe Suku  ⁇",
+ "Auto-école non agréée": {
+  "texte": "Ʋukulawo ƒe Suku Si Womede Asixɔxɔ Me O",
   "relu": false
  },
  "Auto-écoles": {
@@ -2015,20 +2051,20 @@
   "texte": "B le ƒe 2010 kple 2022 me, C le ƒe bubuwo me",
   "relu": false
  },
- "B — Voiture légère": {
-  "texte": "B  ⁇  Ʋu ʋeʋĩ",
-  "relu": false
- },
- "B — calculé": {
-  "texte": "B  ⁇",
-  "relu": false
- },
  "BRETELLE RN9-YIBOE": {
   "texte": "RN9-YIBOE Aʋatsotsoe",
   "relu": false
  },
  "Badja": {
   "texte": "Badja",
+  "relu": false
+ },
+ "Bas-Mono n’a aucune auto-école agréée pour 94 860 habitants (1 recensée, non agréée), à 31,2 km de la plus proche, et sa desserte est faible : 3,68 km de routes pour 10 000 habitants. Réseau : 21,1 % sur 35,8 km. En tête du classement dans les 6 tests de robustesse.": {
+  "texte": "Ʋukukuƒe aɖeke meli na Bas-Mono si le ame 94,860 (siwo ƒe xexlẽme mede ame 1, si womekpɔ o) o, eye ʋukukuƒea le afi si didi wu la gbɔ kilometa 31.2, eye ʋukukuƒea mebɔ o: mɔwo le kilometa 3.68 na ame 10,000. Ƒuƒoƒo: 21.1% le kilometa 35.8 me.",
+  "relu": false
+ },
+ "Bassar cumule 28,0 % de km en mauvais état sur 167,5 km évalués (1 tronçon critique) et aucune auto-école agréée pour 152 065 habitants (2 recensées, non agréées), à 47,5 km de la plus proche. En tête du classement dans les 6 tests de robustesse.": {
+  "texte": "Bassar xɔ kilometa 28.0% le nɔnɔme gbegblẽ me tso km 167.5 siwo ŋu woke ɖo (1 kpekpeme) kple ʋukulawo ƒe suku aɖeke si de asi na ame 152,065 (2 woxe mɔ ɖe eŋu, womede asi nɛ o) dome.",
   "relu": false
  },
  "Bilan : 7 confirmées, 2 infirmées, 1 nuancée, 7 non testables.": {
@@ -2067,14 +2103,6 @@
   "texte": "Ʋu Me Kpekpekpekpea",
   "relu": false
  },
- "Blessés — pour 10 000 véhicules": {
-  "texte": "Wowɔ nuvevi  ⁇  le ʋu 10,000 me",
-  "relu": false
- },
- "Blessés — pour 100 000 habitants": {
-  "texte": "Ame siwo ŋu dɔ dzɔ ɖo le ame 100,000 ɖe sia ɖe me",
-  "relu": false
- },
  "Blitta : 69,0 ÷ 101,1 × 100 = 68,2 % en mauvais état": {
   "texte": "Blitta: 69.0 ÷ 101.1 × 100 = 68.2% le nɔnɔme gbegblẽ me",
   "relu": false
@@ -2085,6 +2113,10 @@
  },
  "Blitta Village": {
   "texte": "Blitta Village",
+  "relu": false
+ },
+ "Blitta cumule 68,2 % de km en mauvais état sur 101,1 km évalués (4 tronçons critiques) et aucune auto-école agréée pour 163 272 habitants (2 recensées, non agréées), à 25,9 km de la plus proche. En tête du classement dans les 6 tests de robustesse.": {
+  "texte": "Blitta ƒo xlã kilometa 68.2% le nɔnɔme gbegblẽ me tso km 101.1 siwo ŋu wobu akɔnta ɖo (4 kpekpeme akpa) la dome, eye womexɔ ʋukula ƒe suku aɖe si de asi na ame 163,272 o (2 woxe mɔ ɖe eŋu, womede asi nɛ o), 25.9 kilometrewoe nye esia.",
   "relu": false
  },
  "Blitta, Agou, Tchamba, Bassar, Oti, Bas-Mono, Yoto et Amou n’ont aucune auto-école agréée, mais 13 y sont recensées. Vérifier leur activité et leur agrément : le manque est peut-être administratif. S’il est réel, 16 auto-écoles sont à ouvrir. 1 110 446 habitants concernés.": {
@@ -2099,6 +2131,10 @@
   "texte": "Eyae nye nyateƒe.",
   "relu": false
  },
+ "Bon :": {
+  "texte": "Eya ta:",
+  "relu": false
+ },
  "Bon état": {
   "texte": "Nɔnɔme Nyui",
   "relu": false
@@ -2109,14 +2145,6 @@
  },
  "Bus et car": {
   "texte": "Ʋu Kple Ʋu",
-  "relu": false
- },
- "C — Poids lourd": {
-  "texte": "C  ⁇  Agba kpekpe",
-  "relu": false
- },
- "C — estimé": {
-  "texte": "Wobu akɔnta be",
   "relu": false
  },
  "CC BY 3.0 IGO": {
@@ -2139,7 +2167,7 @@
   "texte": "CC BY-NC-SA 3.0 IGO, si ŋu viɖe mele o",
   "relu": false
  },
- "CC BY-SA 4.0, Edem Fiadjoe — attribution obligatoire": {
+ "CC BY-SA 4.0, Edem Fiadjoe": {
   "texte": "CC BY-SA 4.0, Edem Fiadjoe",
   "relu": false
  },
@@ -2219,8 +2247,8 @@
   "texte": "Ʋudzeƒe: mɔ kple mɔ̃; Ahenyoƒe: mɔ̃; Savanes kple Maritime le Lomé Gã la godo: mɔ̃.",
   "relu": false
  },
- "Centrale —": {
-  "texte": "Dziƒoxɔa",
+ "Centrale est la seule zone au-dessus de la médiane pour le réseau et en dessous pour la formation : 40,3 % de km en mauvais état sur 437,2 km évalués, et 4 auto-écoles agréées pour 795 529 habitants (0,50 pour 100 000). 4 de ses 5 préfectures reçoivent le levier réseau (113,6 km à remettre en état), 3 le levier formation (6 auto-écoles).": {
+  "texte": "Centrale nye nuto ɖeka pɛ si le nuɖoanyi la ƒe titina dzi kple esiwo mexɔa hehe o: enye kilometa 40.3% siwo mele nɔnɔme gbegblẽ me tso km 437.2 siwo ŋu wotrɔ asi ɖo dome, eye wole ʋukulawo zãm na sukuvi 4 ɖe ame 795 529 (0.50 ɖe 100,000) ta.",
   "relu": false
  },
  "Certains territoires cumulent forte pression de mobilité, risque élevé, réseau dégradé et faible offre de formation": {
@@ -2285,10 +2313,6 @@
  },
  "Cible de la Décennie (C)": {
   "texte": "Ƒe Ðeka Ƒe Taɖodzinu (C)",
-  "relu": false
- },
- "Cible de la Décennie —": {
-  "texte": "Ƒe Ðeka Ƒe Taɖodzinu",
   "relu": false
  },
  "Cibler les usagers de deux-roues motorisés": {
@@ -2447,16 +2471,12 @@
   "texte": "Wɔ afɔkua ƒe gɔmeɖokpe ɖe nutowo me",
   "relu": false
  },
- "Cumul 2007–2024 : 40,2 motos immatriculées par permis moto, contre 0,37 à 2,33 ailleurs": {
-  "texte": "Ƒe 2007 ⁇ 2024 ƒe akɔntabubu: Moto siwo ŋu wode mɔ ɖo ɖe mɔɖegbalẽa dzi le 40,2 tso 0.37 va ɖo 2.33 le teƒe bubuwo",
+ "Cumul 2007": {
+  "texte": "Ƒe 2007 ƒe akɔntabubu",
   "relu": false
  },
  "Cyclistes": {
   "texte": "Sɔdola",
-  "relu": false
- },
- "D — Transport en commun": {
-  "texte": "D  ⁇  Kpekpeɖeŋu",
   "relu": false
  },
  "DAVIE-AMAKPAPE": {
@@ -2487,8 +2507,16 @@
   "texte": "Le Plateaux la, vidzidziwo dometɔ 13.6 le alafa me koe nɔa anyigba si dzi ʋuʋuwo le la ƒe didime le kilometa 2 me (17.2 le alafa me le dukɔa me) me: vidzidziwo dometɔ 1,094,908 le adzɔge ʋĩi. Mɔwo ƒe didime le 28,0 le alafa me.",
   "relu": false
  },
+ "Danyi cumule 100 % de km en mauvais état sur 49,8 km évalués, traversés par 3 tronçons critiques, et aucune auto-école, ni agréée ni recensée, pour 40 240 habitants, à 12,9 km de la plus proche. En tête du classement dans les 6 tests de robustesse.": {
+  "texte": "Danyi ƒo kilometa 100 le alafa me le nɔnɔme gbegblẽ me le kilometa 49.8 siwo ŋu wotrɔ asi le la dome, eye wòto akpa vevi etɔ̃ me, eye ʋukulawo ƒe suku aɖeke meli si xɔ mɔɖeɖe o, eye womeŋlɔe ɖi o, le ame 40,240 siwo le teƒe si didi wu la dome, le kilometa 12.9 tso teƒe si te ɖe eŋu la gbɔ.",
+  "relu": false
+ },
  "Danyi, Blitta, Agou, Tchamba et Bassar ont de 28 % à 100 % de leurs routes en mauvais état, et aucune auto-école agréée. 14 tronçons critiques les traversent. Les ramener à la médiane nationale (14,35 %) suppose de remettre en état 175,6 km, après vérification sur place. 641 955 habitants concernés.": {
   "texte": "Danyi, Blitta, Agou, Tchamba kple Bassar ƒe mɔwo ƒe nɔnɔme le gbegblẽm le woƒe mɔwo ƒe alafa memama 28 va se ɖe alafa me, eye ʋukulawo ƒe suku aɖeke mele wo me o. Ʋukulawo ƒe akpa vevi 14 to wo dzi.",
+  "relu": false
+ },
+ "Data Challenge": {
+  "texte": "Data Challenge",
   "relu": false
  },
  "Date de téléchargement": {
@@ -2695,6 +2723,10 @@
   "texte": "Tso kuxi aɖe me va se ɖe egbɔkpɔnu la me le afɔ asieke nu.",
   "relu": false
  },
+ "Défi 1": {
+  "texte": "Kuxi Gbãtɔ",
+  "relu": false
+ },
  "Déficits": {
   "texte": "Gbegblẽnuwo",
   "relu": false
@@ -2709,10 +2741,6 @@
  },
  "Détail": {
   "texte": "Ŋutinya Veviwo",
-  "relu": false
- },
- "E — Semi-remorque": {
-  "texte": "E  ⁇  Ʋuʋua",
   "relu": false
  },
  "EHCVM (Banque mondiale)": {
@@ -2779,6 +2807,10 @@
   "texte": "Wo dometɔ aɖewoe nye:",
   "relu": false
  },
+ "Est-Mono n’a aucune auto-école, ni agréée ni recensée, pour 164 460 habitants, à 27,4 km de la plus proche. Réseau : 17,2 % sur 110,7 km. En tête du classement dans 4 des 6 tests de robustesse.": {
+  "texte": "East-Mono mekpɔa ʋukulawo ƒe suku aɖeke o, eye womexɔ mɔɖukplɔla ɖe asi alo kpɔ wo le eme o; ame 164,460 nɔ du sia si didi tso egbɔ kilometa 27.4.",
+  "relu": false
+ },
  "Estimation de l'OMS pour le Togo": {
   "texte": "WHO ƒe akɔnta tso Togo ŋu",
   "relu": false
@@ -2793,10 +2825,6 @@
  },
  "Exporter les 15 recommandations (CSV)": {
   "texte": "Ðe asi le aɖaŋuɖoɖo 15awo ŋu (CSV)",
-  "relu": false
- },
- "F — Voiture spéciale": {
-  "texte": "F  ⁇  Ʋu tɔxɛ",
   "relu": false
  },
  "FORMATION": {
@@ -2867,8 +2895,8 @@
   "texte": "Goundoga",
   "relu": false
  },
- "Grand Lomé —": {
-  "texte": "Lomé Gã la",
+ "Grand Lomé a le réseau le moins dégradé (7,7 %) et la meilleure offre (103 auto-écoles agréées, 4,71 pour 100 000 habitants) ; seule sa desserte est sous la médiane (0,74 km pour 10 000 habitants), pour 2 188 376 habitants.": {
+  "texte": "Grand Lomé ƒe nuɖoanyi si me nu vɔ̃ɖi wu le (7.7%) kple nu si sɔ gbɔ wu le (103 ƒe ʋukulawo ƒe sukuwo, 4.71 le ame 100,000 ɖe sia ɖe me); eya ɖeɖe koe nye amesiwo le nu vɔ̃ɖi wu le (ame 10,000 ɖe sia ɖe ƒe kilometa 0.74 ɖe sia ɖe) me, eye ame 2,188,376 le eme.",
   "relu": false
  },
  "Gravité (B)": {
@@ -2963,12 +2991,8 @@
   "texte": "Ŋugbedodede",
   "relu": false
  },
- "Immatriculations 1990–2024 : (88 198 ÷ 6 829)^(1/34) − 1 = 7,8 % par an": {
-  "texte": "Ƒe 1990 ⁇ 2024 me tɔwo: (88 198 ÷ 6 829) ^(1/34) − 1 = 7.8 % ƒe sia ƒe",
-  "relu": false
- },
- "Immatriculations 1990–2024 ; ruptures de série de 1995 et 2004 en pointillé.": {
-  "texte": "Ƒe 1990 ⁇ 2024 ƒe ŋkɔwo; ƒe 1995 kple ƒe 2004 ƒe hatsotsowo me tɔtrɔwo.",
+ "Immatriculations 1990": {
+  "texte": "Ƒe 1990 ƒe ŋkɔwo",
   "relu": false
  },
  "Immatriculations de l": {
@@ -2983,16 +3007,16 @@
   "texte": "Ƒe sia ƒe agbalẽwo, gake menye afi si ʋuwo le o.",
   "relu": false
  },
- "Immatriculations et permis, 1990–2024": {
-  "texte": "Agbalẽ siwo dzi woxɔ ŋkɔ kple mɔɖeɖe, 1990 ⁇ 2024",
+ "Immatriculations et permis, 1990": {
+  "texte": "Ƒe 1990 ƒe ŋkɔwo kple mɔɖeɖewo",
   "relu": false
  },
  "Immatriculations par catégorie": {
   "texte": "Subɔsubɔhawo ƒe ŋkɔwo",
   "relu": false
  },
- "Immatriculations par groupe, 1990–2024": {
-  "texte": "Ame siwo le ʋuʋum le ƒuƒoƒo aɖe me, 1990 ⁇ 2024",
+ "Immatriculations par groupe, 1990": {
+  "texte": "Ƒomewo ƒe Ŋugbedodede, 1990",
   "relu": false
  },
  "Immatriculations pour 1 000 habitants": {
@@ -3003,8 +3027,8 @@
   "texte": "Ame 1,000 ƒe xexlẽme (A)",
   "relu": false
  },
- "Immatriculations pour un permis, cumul 2007–2024": {
-  "texte": "Lɔlɔ̃ɖegbalẽwo ƒe xexlẽme 2007 ⁇ 2024",
+ "Immatriculations pour un permis, cumul 2007": {
+  "texte": "Mɔɖegbalẽwo ƒe ŋkɔwo, ƒe 2007 ƒe xexlẽme",
   "relu": false
  },
  "Immatriculations sur 20 ans": {
@@ -3059,8 +3083,8 @@
   "texte": "Kara (dukɔ siwo le nuto adre me)",
   "relu": false
  },
- "Kara —": {
-  "texte": "Kara",
+ "Kara a le réseau au-dessus de la médiane : 15,2 % sur 694,5 km évalués. Pour 985 512 habitants, 2 de ses 7 préfectures reçoivent le levier réseau (37,3 km), 5 le levier formation (8 auto-écoles).": {
+  "texte": "Le ame 985 512 siwo le Kara me la, 2 le eƒe nutome gã 7awo me xɔa nutome gãa ƒe mɔnukpɔkpɔa (37.3 km), 5 xɔa hehe ƒe mɔnukpɔkpɔa (8 ʋukulawo).",
   "relu": false
  },
  "Katchamba": {
@@ -3351,8 +3375,8 @@
   "texte": "Tɔxexeƒe si ŋu womeŋlɔ ŋkɔ ɖo o la",
   "relu": false
  },
- "Le plafond suppose qu'aucun usager de deux-roues tué ne portait de casque : limite haute, pas une estimation. Rappel : 8,62 tués déclarés pour 100 000 habitants en 2021, contre 22,7 estimés par l'OMS — une baisse des déclarations ressemblerait à un progrès.": {
-  "texte": "Le ƒe 2021 me la, ame siwo ku le afɔɖekplɔ eveawo ŋu dometɔ ɖe sia ɖe metsɔa taŋti o: xexlẽme si sɔ gbɔ wu esiawo katã; menye akɔnta aɖeke.",
+ "Le plafond suppose qu'aucun usager de deux-roues tué ne portait de casque : limite haute, pas une estimation. Rappel : 8,62 tués déclarés pour 100 000 habitants en 2021, contre 22,7 estimés par l'OMS": {
+  "texte": "Numekuku si wowɔ le afi ma ɖee fia be ame aɖeke menɔ taɖodzinuwo zãm o, eye womekpɔ akɔnta aɖeke o.",
   "relu": false
  },
  "Le risque par habitant baisse.": {
@@ -3459,12 +3483,12 @@
   "texte": "Wode dzesi nuto atɔ̃awo katã le amadede me.",
   "relu": false
  },
- "Les 6 taux : 2010–2012 face à 2022–2024": {
-  "texte": "Afɔ 6awo: 2010 ⁇ 2012 kple 2022 ⁇ 2024",
+ "Les 6 taux : 2010": {
+  "texte": "Ta 6awo: 2010",
   "relu": false
  },
- "Les 6 taux, 2010–2012 face à 2022–2024 : tous en baisse.": {
-  "texte": "Le ƒe 2010 va se ɖe ƒe 2012 me la, nu siwo katã le ɖiɖim tso ƒe 2022 va ɖo 2024.",
+ "Les 6 taux, 2010": {
+  "texte": "Ƒe 2010 ƒe ga adeawo",
   "relu": false
  },
  "Les 7 hypothèses non testables, et la donnée qui manque.": {
@@ -3567,8 +3591,8 @@
   "texte": "Dukɔ bliboa ƒe nutsuɖegbalẽwo, mɔɖegbalẽwo kple afɔkuwo koe woɖe ɖe go: womeŋlɔa wo ɖe anyigbatatawo me o. Ƒeƒleɖegbalẽ aɖeke mele anyigbatatawo dzi o: anyigbatatawo ƒe nyatakakawo nye ŋkeke ɖeka ko (tiatia 2020, ʋukulawo ƒe sukuwo 2021-2022, dukɔmevi 2022).",
   "relu": false
  },
- "Les jeunes conducteurs (18–25 ans) sont surreprésentés parmi les conducteurs impliqués": {
-  "texte": "Sɔhɛwo (18 ⁇ 25 ƒe) nye ame geɖe wu le ʋukulawo dome",
+ "Les jeunes conducteurs (18": {
+  "texte": "Sɔhɛwo (18",
   "relu": false
  },
  "Les km de route par habitant baissent quand la densité monte : l": {
@@ -3675,16 +3699,8 @@
   "texte": "Nu Siwo Akpe Ðe Hehenana Ŋu",
   "relu": false
  },
- "Levier formation — 23 préfectures, dont Mô": {
-  "texte": "Levier formation  ⁇  23 nutowo, siwo dome Mo le",
-  "relu": false
- },
  "Levier réseau": {
   "texte": "Dɔwɔƒua ƒe akpa aɖe",
-  "relu": false
- },
- "Levier réseau — 13 préfectures": {
-  "texte": "Dɔwɔƒua ƒe ŋusẽkpɔɖeamedzi",
   "relu": false
  },
  "Leviers": {
@@ -3755,8 +3771,8 @@
   "texte": "Ƒe 2020 ƒe akɔntabubu aɖe si me womeɖe mɔ na amewo be woabu akɔnta la dzi o.",
   "relu": false
  },
- "L’état du réseau vient d’un relevé de 2020, sans tracé ni méthode de notation publiée. Les couches de la collecte 2021–2022 existent au géoportail, mais ne sont pas ouvertes. Elles permettraient de vérifier l’état des 13 préfectures ciblées.": {
-  "texte": "Dɔwɔƒea ƒe nyatakaka aɖe si ku ɖe eŋu tso ƒe 2020 me la gblɔ be, womegblɔe na ame aɖeke o, eye womegblɔe na ame aɖeke hã o. Dɔwɔƒea ƒe ɖoɖowɔɖi siwo nye 2021-2022 ƒe ɖoɖowɔɖi la li gake womeʋu o.",
+ "L’état du réseau vient d’un relevé de 2020, sans tracé ni méthode de notation publiée. Les couches de la collecte 2021": {
+  "texte": "Ƒe 2020 ƒe nyatakaka aɖe na mí ku ɖe nu siwo míetsɔ wɔ dɔe ŋu, gake womeɖe mɔ na mí be míawɔ nu siwo míetsɔ wɔ dɔe o.",
   "relu": false
  },
  "Maille": {
@@ -3771,8 +3787,8 @@
   "texte": "Tɔdziʋuwo (8 prefectures)",
   "relu": false
  },
- "Maritime hors Grand Lomé —": {
-  "texte": "Tɔdziʋu le Grand Lomé godo  ⁇",
+ "Maritime hors Grand Lomé a la formation et la desserte sous la médiane : 5 auto-écoles agréées pour 1 346 615 habitants (0,37 pour 100 000), 3,51 km de routes pour 10 000 habitants. 3 de ses 6 préfectures reçoivent le levier formation (6 auto-écoles).": {
+  "texte": "Ƒudzidɔwɔƒe si le Grand Lomé gbɔ la le hehe kple dɔ wɔm le nu siwo le edzi yim la dome: ʋukulawo ƒe suku atɔ̃ le ame 1,346,615 ƒe xexlẽme me (0.37 le ame 100,000 ƒe xexlẽme me), mɔwo ƒe kilometa 3.51 le ame 10,000 ƒe xexlẽme me.",
   "relu": false
  },
  "Masqués": {
@@ -3781,6 +3797,10 @@
  },
  "Mauvais": {
   "texte": "Vɔ̃ɖinyenye",
+  "relu": false
+ },
+ "Mauvais :": {
+  "texte": "Nu gbegblẽ:",
   "relu": false
  },
  "Mauvais état": {
@@ -3879,10 +3899,6 @@
   "texte": "Mɔzɔzɔ Kple Mɔzɔzɔ Le Togo",
   "relu": false
  },
- "Mobilité — ce qui change": {
-  "texte": "Ʋuʋuwo  ⁇  Nusiwo Le Tɔtrɔm",
-  "relu": false
- },
  "Moins bien desservie pour": {
   "texte": "Womewɔ dɔ nyui aɖeke na ame o",
   "relu": false
@@ -3905,6 +3921,10 @@
  },
  "Moyen": {
   "texte": "Ale si nuwo le",
+  "relu": false
+ },
+ "Moyen :": {
+  "texte": "Alesi wowɔa nu:",
   "relu": false
  },
  "Moyenne": {
@@ -4007,16 +4027,16 @@
   "texte": "Dukɔwo ƒe nyatakakawo: Ŋutilã alo ƒe aɖeke mele mɔɖeɖewo ŋu o.",
   "relu": false
  },
- "Niveau B — calculé sur les auto-écoles agréées et la population de 2022.": {
-  "texte": "Dzidzenu B  ⁇  si wotu ɖe ʋukulawo ƒe sukuwo kple ame siwo le eme le ƒe 2022 me la dzi.",
+ "Niveau B": {
+  "texte": "Aƒe B",
+  "relu": false
+ },
+ "Niveau C": {
+  "texte": "Afɔ C",
   "relu": false
  },
  "Niveau C : état relevé en 2020, activité des auto-écoles non publiée.": {
   "texte": "Afɔ C: Ƒe 2020 ƒe nyatakaka si wometa ɖe go o.",
-  "relu": false
- },
- "Niveau C — Relevé de 2020, routes nationales seulement ; part des km évalués de la préfecture. A = mesuré, B = calculé, C = estimé.": {
-  "texte": "C-Ƒe  ⁇  Ƒe 2020 me tɔdziʋuwo ɖeɖe dzaa; agblea ƒe km ƒe akpa si wokpɔ kpɔ. A = si wotso, B = si wotso, C = si wotso.",
   "relu": false
  },
  "Niveau C. Dernier point : d'après une seule enquête auprès des ménages (2021-2022) ; l'ordre des zones change d'une enquête à l'autre.": {
@@ -4071,6 +4091,10 @@
   "texte": "Womebu eŋu kpɔ o",
   "relu": false
  },
+ "Non évalué :": {
+  "texte": "Womebu eŋu kpɔ o:",
+  "relu": false
+ },
  "Note de méthode : comment la population avance": {
   "texte": "Mɔfiame: Ale si amewo le dzidzim ɖe edzii",
   "relu": false
@@ -4123,8 +4147,16 @@
   "texte": "Mɔzɔzɔzɔzɔzɔzɔƒe (ONSR), kpovitɔwo, kpovitɔwo",
   "relu": false
  },
+ "Oti n’a aucune auto-école agréée pour 124 848 habitants (3 recensées, non agréées), à 62,0 km de la plus proche ; son réseau (21,1 % en mauvais état sur 140,6 km) reste sous le seuil. En tête du classement dans les 6 tests de robustesse.": {
+  "texte": "Mɔzɔ̃mɔ̃wo ƒe suku aɖeke meli si xɔ asi le ame 124,848 (3 siwo ŋu woƒo nu tsoe, siwo womekpɔ mɔ ɖo o) ŋu o, eye woƒe ʋukulawo ƒe kadodoa (ame 21.1% le nɔnɔme gbegblẽ me le kilometa 140.6 me) kpɔtɔ le ete.",
+  "relu": false
+ },
  "Oti-Sud : 84,0 km, la plus grande des 39 préfectures": {
   "texte": "Oti-South: Km 84.0, si nye nuto 39 siwo me tɔwo nye gãtɔ",
+  "relu": false
+ },
+ "Oti-Sud n’a aucune auto-école, ni agréée ni recensée, pour 150 376 habitants, à 84,0 km de la plus proche, la plus grande distance du pays. Réseau : 14,4 % sur 131,7 km. En tête du classement dans 4 des 6 tests de robustesse.": {
+  "texte": "Ʋukulawo ƒe didime le dukɔ bliboa me le kilometa 84.0 tso ʋukulawo ƒe didime didiƒe kekeake gbɔ.",
   "relu": false
  },
  "Ouma-Amlame": {
@@ -4191,8 +4223,8 @@
   "texte": "Anyigba si ŋu wodea asixɔxɔe",
   "relu": false
  },
- "Parc estimé des véhicules, 2009–2024": {
-  "texte": "Ʋuwo ƒe agbɔsɔsɔ ƒe akɔntabubu, 2009 ⁇ 2024",
+ "Parc estimé des véhicules, 2009": {
+  "texte": "Ʋuwo ƒe agbɔsɔsɔ ƒe akɔnta, 2009",
   "relu": false
  },
  "Parc estimé, tous véhicules": {
@@ -4359,8 +4391,8 @@
   "texte": "Mɔɖeɖe siwo womena do ŋgɔ na ƒe 2007 o",
   "relu": false
  },
- "Permis par catégorie, 2007–2024": {
-  "texte": "Category ɖe sia ɖe ƒe mɔɖeɖe, 2007 ⁇ 2024",
+ "Permis par catégorie, 2007": {
+  "texte": "Ƒe 2007 ƒe mɔɖeɖewo le hatsotsowo nu",
   "relu": false
  },
  "Permis pour 1 000 habitants en âge de conduire": {
@@ -4391,24 +4423,16 @@
   "texte": "Asitelefon dziƒoxɔ (dzidziɖedzi manono)",
   "relu": false
  },
- "Plafond du casque (taux inchangé) —": {
-  "texte": "Asitelefon dziƒoxɔ (dzidziɖedzi)  ⁇",
-  "relu": false
- },
  "Plafond du casque (tendance)": {
   "texte": "Asitelefon ƒe dziƒoxɔ (ameƒomeŋusẽ)",
-  "relu": false
- },
- "Plafond du casque (tendance) —": {
-  "texte": "Asitelefon ƒe dziƒoxɔ (ame ƒe nɔnɔme)  ⁇",
   "relu": false
  },
  "Plateaux (12 préfectures)": {
   "texte": "Anyigba si dzi wodea dzi ƒo na amewo le la",
   "relu": false
  },
- "Plateaux —": {
-  "texte": "Nuɖunuwo  ⁇",
+ "Plateaux a le réseau au-dessus de la médiane : 28,0 % de km en mauvais état sur 965,6 km évalués, traversés par 23 tronçons critiques. Pour 1 635 946 habitants, 6 de ses 12 préfectures reçoivent le levier réseau (150,5 km), 7 le levier formation (12 auto-écoles).": {
+  "texte": "Le ame 1,635,946 siwo le nuto ma me la, 6 le nuto 12 siwo le nuto ma me la me la xɔa mɔ̃a ƒe mɔ̃a ƒe mɔ̃a ƒe mɔ̃a ƒe mɔ̃a ƒe mɔ̃a ƒe mɔ̃a ƒe mɔ̃a ƒe mɔ̃a ƒe mɔ̃a ƒe mɔ̃a ƒe mɔ̃a ƒe mɔ̃a ƒe mɔ̃a ƒe mɔ̃a ƒe mɔ̃a ƒe mɔ̃a ƒe mɔ̃a ƒe mɔ̃a ƒe mɔ̃a ƒe mɔ̃a ƒe mɔ̃a ƒe mɔ̃a ƒe mɔ̃a ƒe mɔ̃a ƒe mɔ̃a ƒe mɔ̃a ƒe mɔ̃a ƒe mɔ̃a ƒe mɔ̃a ƒe mɔ̃a ƒe mɔ̃a ƒe mɔ̃a ƒe mɔ̃a ƒe mɔ̃a ƒe mɔ̃a ƒe mɔ̃a ƒe mɔ̃a ƒe mɔ̃a ƒe mɔ̃a ƒe mɔ̃a dzi.",
   "relu": false
  },
  "Plus de 7 500 accidents et 683 morts en 2022": {
@@ -4507,8 +4531,8 @@
   "texte": "Kpe ɖe nutome gãwo ŋu be woase afɔkuwo gɔme tso 0 va se ɖe 39",
   "relu": false
  },
- "Porter l’indice des deux-roues parmi les tués de 1,01–1,10 à moins de 1": {
-  "texte": "Ne ame siwo ku la ƒe ʋukula ƒe xexlẽme le 1,01 ⁇ 1,10 me la,",
+ "Porter l’indice des deux-roues parmi les tués de 1,01": {
+  "texte": "Wowu ame 1,01 siwo le ʋua me la dometɔ ɖeka",
   "relu": false
  },
  "Porter l’offre de 0 à 1,065 auto-école pour 100 000 habitants : 25 auto-écoles": {
@@ -4887,8 +4911,8 @@
   "texte": "Ŋutsuɖegbalẽwo kple mɔɖegbalẽwo ƒe nyatakaka, le hatsotso aɖe nu",
   "relu": false
  },
- "Rapport immatriculations / permis, par catégorie en cumul 2007–2024 : A 40,20, C 2,33, B 1,29, E 0,81, D 0,37": {
-  "texte": "Numekugbalẽwo kple mɔɖeɖewo ƒe akɔntabubu, le ƒe 2007 ⁇ 2024 me: A 40,20, C 2,33, B 1,29, E 0,81, D 0,37",
+ "Rapport immatriculations / permis, par catégorie en cumul 2007": {
+  "texte": "Ƒe 2007 ƒe ŋkɔwo kple mɔɖegbalẽwo ƒe akɔntabubu, le hatsotso ɖeka me",
   "relu": false
  },
  "Rapport mondial sur la sécurité routière 2023 : profil du Togo": {
@@ -4925,6 +4949,10 @@
  },
  "Recommandations en C : vérifier avant d": {
   "texte": "C: kpɔ egbɔ do ŋgɔ na d",
+  "relu": false
+ },
+ "Relevé de 2020, routes nationales seulement ; part des km évalués de la préfecture. A = mesuré, B = calculé, C = estimé.": {
+  "texte": "Le ƒe 2020 me la, dukɔa ƒe mɔwo ɖeɖe ko; kpɔ ale si gbegbe nuto si me wole la ƒe km sɔ gbɔe la ɖa.",
   "relu": false
  },
  "Remettre en état 113,6 km et ouvrir 6 auto-écoles en premier": {
@@ -5111,10 +5139,6 @@
   "texte": "Net evaluated:",
   "relu": false
  },
- "Réseau — ce qui change": {
-  "texte": "Nu si Le Tɔtrɔm",
-  "relu": false
- },
  "Réserve": {
   "texte": "Asitɔtrɔ",
   "relu": false
@@ -5151,8 +5175,8 @@
   "texte": "Savanes: 528.0 ÷ 1 143 520 × 10,000 = km 4,62 ɖe ame 10,000 dzi",
   "relu": false
  },
- "Savanes —": {
-  "texte": "Nubabla",
+ "Savanes a la formation et la desserte sous la médiane : 4 auto-écoles agréées pour 1 143 520 habitants (0,35 pour 100 000), 4,62 km de routes pour 10 000 habitants. 5 de ses 7 préfectures reçoivent le levier formation (9 auto-écoles), aucune le levier réseau.": {
+  "texte": "Le Savanes la, ame siwo le hehe xɔm eye wole dɔ wɔm na wo dometɔ aɖewoe nye: ʋukulawo ƒe suku ene si woɖo ɖe dukɔmevi 1,143,520 (ame 100,35) ta; mɔtata kilometa 4,62 le dukɔa me tɔwo 10,000 dzi.",
   "relu": false
  },
  "Score (part réseau + part formation)": {
@@ -5165,6 +5189,10 @@
  },
  "Score décomposé : la part du réseau et la part de la formation, et la robustesse.": {
   "texte": "Dɔwɔƒe si me nuxexlẽa le: kadodoa ƒe akpa si le eme kple hehexɔxɔ ƒe akpa si le eme, kple ŋusẽ si le eme.",
+  "relu": false
+ },
+ "Semi-remorque": {
+  "texte": "Ʋu si me ʋua le",
   "relu": false
  },
  "Seuils franchis": {
@@ -5215,8 +5243,8 @@
   "texte": "Nu siwo katã le edzi yim fifia la dometɔ ɖeka le edzi yim.",
   "relu": false
  },
- "Sur 2007–2024, 40 motos immatriculées pour un permis moto délivré ; moins de 2,5 véhicules pour un permis dans les autres catégories. Niveau B. Le permis F n": {
-  "texte": "Le ƒe 2007 ⁇ 2024 me la, ʋu 40 ye woŋlɔ ɖe ʋuʋuʋuʋu aɖe si woɖe ɖe go me; ʋu 2,5 ye woŋlɔ ɖe ʋuʋu bubu siwo le hatsotso bubuwo me me.",
+ "Sur 2007": {
+  "texte": "Le ƒe 2007 me",
   "relu": false
  },
  "Sur la carte :": {
@@ -5247,20 +5275,16 @@
   "texte": "Mɔzɔzɔzɔ: Nu Siwo Taɖodzinu Aɖewo Di",
   "relu": false
  },
- "Sécurité routière — ce qui change": {
-  "texte": "Mɔzɔzɔzɔzɔ  ⁇  nusi le tɔtrɔm",
-  "relu": false
- },
  "TSEVIE-TABLIGBO-ANFOIN-ANEHO": {
   "texte": "TSEVIE-TABLIGBO-ANFOIN-ANEHO",
   "relu": false
  },
- "Tableau de bord territorial d'aide à la décision": {
-  "texte": "Anyigba si dzi woawɔ nyametsotsoa le",
+ "Tableau de bord": {
+  "texte": "Dɔwɔgbalẽvi",
   "relu": false
  },
- "Tableau de bord ›": {
-  "texte": "Dɔwɔgbalẽvi",
+ "Tableau de bord territorial d'aide à la décision": {
+  "texte": "Anyigba si dzi woawɔ nyametsotsoa le",
   "relu": false
  },
  "Tableau triable. Cliquez sur l": {
@@ -5287,8 +5311,12 @@
   "texte": "Ga si me tɔtrɔ aɖeke meli o",
   "relu": false
  },
- "Taux inchangé —": {
-  "texte": "Ga si me tɔtrɔ aɖeke meli o  ⁇",
+ "Tchamba cumule 34,0 % de km en mauvais état sur 120,3 km évalués (1 tronçon critique) et aucune auto-école agréée pour 200 585 habitants (2 recensées, non agréées), à 31,1 km de la plus proche. En tête du classement dans les 6 tests de robustesse.": {
+  "texte": "Tchamba ƒo xlã kilometa 34.0% si le nɔnɔme gbegblẽ me tso kilometa 120.3 siwo ŋu wobu akɔnta le me (1 kpekpeme) eye ʋukulawo ƒe suku aɖeke meli si xɔ mɔ na ame 200 585 (2 si xɔ mɔ na, si womekpɔ mɔ na o) le kilometa 31.1 tso teƒe si te ɖe eŋu la gbɔ o.",
+  "relu": false
+ },
+ "Tchaoudjo cumule 36,9 % de km en mauvais état sur 125,7 km évalués (3 tronçons critiques) pour 240 360 habitants ; sa formation n’est pas en déficit (2 auto-écoles agréées, 0,83 pour 100 000 habitants). En tête du classement dans 3 des 6 tests de robustesse : la moins sûre des 10.": {
+  "texte": "Tchaoudjo ƒe didime le nɔnɔme gbegblẽ me le kilometa 125.7 siwo ŋu woke ɖo me (3 kpekpeme akpa) ɖe ame 240 360 ta me la me le 36,9%.",
   "relu": false
  },
  "Tchaoudjo, Ogou, Anié, Kloto, Wawa, Sotouboua, Agoè-Nyivé et Kozah ont de 22,3 % à 65,0 % de leurs routes en mauvais état, sans manque d’auto-écoles. 129,0 km à remettre en état. 2 226 568 habitants, dont 882 695 à Agoè-Nyivé pour 3,2 km.": {
@@ -5297,10 +5325,6 @@
  },
  "Tendance": {
   "texte": "Nɔnɔme Siwo Le Edzi",
-  "relu": false
- },
- "Tendance —": {
-  "texte": "Nɔnɔmeawo  ⁇",
   "relu": false
  },
  "Tenega": {
@@ -5333,10 +5357,6 @@
  },
  "Tindjassi": {
   "texte": "Tindjassi",
-  "relu": false
- },
- "Togo AI Lab — Data Challenge": {
-  "texte": "Togo AI Lab  ⁇  Data Challenge",
   "relu": false
  },
  "Tohoun": {
@@ -5379,8 +5399,16 @@
   "texte": "Dɔdeasi Blibo: Wowɔe va se ɖe esime",
   "relu": false
  },
+ "Transport en commun": {
+  "texte": "Kpekpeɖeŋunakɔmɔnuwo",
+  "relu": false
+ },
  "Travaux": {
   "texte": "Dɔwo",
+  "relu": false
+ },
+ "Travaux :": {
+  "texte": "Dɔwɔnawo:",
   "relu": false
  },
  "Trier le tableau": {
@@ -5485,14 +5513,6 @@
  },
  "Tués à éviter pour suivre la cible : 204 (tendance observée).": {
   "texte": "Ame siwo wòle be woatsri be yewoadze yewo ŋu: 204 (dzidzime si wokpɔ).",
-  "relu": false
- },
- "Tués — pour 10 000 véhicules": {
-  "texte": "Wowu ʋukula 10,000",
-  "relu": false
- },
- "Tués — pour 100 000 habitants": {
-  "texte": "Ame siwo wowu le ame 100,000 ɖe sia ɖe me",
   "relu": false
  },
  "Type": {
@@ -5625,6 +5645,14 @@
  },
  "Voiture": {
   "texte": "Ʋu",
+  "relu": false
+ },
+ "Voiture légère": {
+  "texte": "Ʋu Kekeake",
+  "relu": false
+ },
+ "Voiture spéciale": {
+  "texte": "Ʋu Tɔxɛ aɖe",
   "relu": false
  },
  "Volume": {
@@ -5903,6 +5931,10 @@
   "texte": "kpɔ nyuie",
   "relu": false
  },
+ "attribution obligatoire": {
+  "texte": "nudidi",
+  "relu": false
+ },
  "au niveau national. Les volumes et les taux portent sur les accidents déclarés par la police et la gendarmerie, pas sur l": {
   "texte": "Ʋufɔku siwo ŋu kpovitɔwo kple kpovitɔwo ƒo nu tsoe la ƒe agbɔsɔsɔ kple xexlẽmewoe nye esiawo.",
   "relu": false
@@ -6035,8 +6067,20 @@
   "texte": "ame siwo ŋu dɔ dzɔ ɖo (R-06)",
   "relu": false
  },
+ "calculé": {
+  "texte": "akɔnta",
+  "relu": false
+ },
+ "calculé sur les auto-écoles agréées et la population de 2022.": {
+  "texte": "Xexeameƒomevi siwo le ʋu ʋum le ƒe 2022 me la ƒe xexlẽme",
+  "relu": false
+ },
  "cas limite": {
   "texte": "seɖoƒe",
+  "relu": false
+ },
+ "ce qui change": {
+  "texte": "nu si trɔna",
   "relu": false
  },
  "ces trois cartes ne créent ni km ni auto-école en plus ; elles disent par quelle zone commencer.": {
@@ -6065,6 +6109,10 @@
  },
  "cible : 14,35 % de km en mauvais état (médiane nationale)": {
   "texte": "Taɖodzinu: 14.35 % le nɔnɔme gbegblẽ me (dukɔwo ƒe vidzinu)",
+  "relu": false
+ },
+ "cliquez sur un onglet": {
+  "texte": "te fli aɖe dzi",
   "relu": false
  },
  "comment elle a été produite": {
@@ -6111,8 +6159,8 @@
   "texte": "hehe:",
   "relu": false
  },
- "de la hausse. Les permis moto suivent de loin : 40 motos immatriculées pour un permis moto sur 2007–2024.": {
-  "texte": "Le ƒe siwo va yi me la, ʋuʋuʋu siwo dzi ʋuʋu ɖo la ƒe xexlẽme va nɔ dzidzim ɖe edzi.",
+ "de la hausse. Les permis moto suivent de loin : 40 motos immatriculées pour un permis moto sur 2007": {
+  "texte": "Ʋuʋuwo ƒe mɔɖegbalẽwo le dzidzim ɖe edzi: Ʋuʋuwo ƒe mɔɖegbalẽ 40 le ƒe 2007 me",
   "relu": false
  },
  "de motos (2024)": {
@@ -6203,10 +6251,6 @@
   "texte": "Le ƒe 20 siwo va yi me la, ʋukukuwo dzi ʋufɔkuwo le dzidzim ɖe edzi, gake ʋufɔkuwo le dzidzim ɖe edzi.",
   "relu": false
  },
- "en 2022 — mais les six taux de risque baissent. Le réseau reste inégalement entretenu, et": {
-  "texte": "Gake le ƒe 2022 me la, afɔku ƒe dzidzenu adeawo dzi kpɔtɔ le ɖiɖim.",
-  "relu": false
- },
  "en 2024. Sur fond gris : les deux références sans action nouvelle (taux inchangé, tendance) et la cible de la Décennie, moitié de la valeur de 2021 en 2030. Les accidents constatés n": {
   "texte": "Le ƒe 2024 me la, nu siwo le abe nu yeye siwo me afɔku aɖeke mele o (dzidziɖedzi ƒe didime, nɔnɔmea) kple ƒe ewolia ƒe taɖodzinua le ƒe 2021 me ƒe afã me le ƒe 2030 me.",
   "relu": false
@@ -6251,12 +6295,12 @@
   "texte": "Togo-dɔwɔƒea ƒe ɖoɖo",
   "relu": false
  },
- "est la seule zone en retard sur la route": {
-  "texte": "enye mɔa dzi gbɔɖemeƒe ɖeka ko",
+ "est la seule zone": {
+  "texte": "enye teƒe ɖeka kolia",
   "relu": false
  },
- "est la seule zone — et la seule région — qui cumule un réseau dégradé (": {
-  "texte": "enye nuto ɖeka kolia si me nu vɔ̃ɖi wɔwɔ le (",
+ "est la seule zone en retard sur la route": {
+  "texte": "enye mɔa dzi gbɔɖemeƒe ɖeka ko",
   "relu": false
  },
  "est pas classé par territoire, faute d": {
@@ -6289,6 +6333,18 @@
  },
  "est-ce qui change, et que confirment les données ?": {
   "texte": "Ðe nu sia trɔna, eye nu kae nyatakakawo ɖo kpe edzi?",
+  "relu": false
+ },
+ "estimé": {
+  "texte": "xɔxɔ",
+  "relu": false
+ },
+ "et": {
+  "texte": "kple",
+  "relu": false
+ },
+ "et la seule région": {
+  "texte": "kple nuto ɖeka hɔ̃a",
   "relu": false
  },
  "exemple reprend une valeur affichée ailleurs dans le tableau de bord.": {
@@ -6331,8 +6387,8 @@
   "texte": "Xexeameƒomeviwo ƒe agbɔsɔsɔme si nye ʋukulawo ƒe sukuwo ƒe agbɔsɔsɔ le du gãwo me, gake le ƒe siwo gbɔna me la, ame siwo le ʋukulawo ƒe sukuwo ƒe agbɔsɔsɔme le du gãwo me le ƒe alafa ɖeka kloe me.",
   "relu": false
  },
- "horizon 2029 — niveau C": {
-  "texte": "2029 ƒe dzedzeme  ⁇  C-liƒo",
+ "horizon 2029": {
+  "texte": "Ƒe 2029 ƒe didime",
   "relu": false
  },
  "horizon 2029, préfecture par préfecture.": {
@@ -6503,8 +6559,8 @@
   "texte": "Le mɔa dzi la, Plateaux tsi megbe, eye Savanes kple Maritime le Lomé-ƒukpoa godo le hehe nam.",
   "relu": false
  },
- "la pastille prend la couleur de sa classe sur la carte —": {
-  "texte": "aŋutrɔ la xɔ eƒe sukua ƒe amadede le anyigbatata dzi  ⁇",
+ "la pastille prend la couleur de sa classe sur la carte": {
+  "texte": "aŋutrɔ la xɔ eƒe sukua ƒe amadede le anyigbatata dzi",
   "relu": false
  },
  "la route": {
@@ -6533,6 +6589,10 @@
  },
  "les 4 préfectures urbaines (Agoè-Nyivé, Golfe, Kloto, Kozah) ont 84,8 % des auto-écoles agréées pour 32,3 % de la population": {
   "texte": "Le dugã ene siwo le dugã me la (Agoè-Nyivé, Golfe, Kloto, Kozah) ʋukulawo ƒe xexlẽme le 84.8 le alafa me, eye wole 32.3 le alafa me.",
+  "relu": false
+ },
+ "les deux": {
+  "texte": "wo ame evea",
   "relu": false
  },
  "les habitants ne s'additionnent pas d'une carte à l'autre": {
@@ -6565,6 +6625,10 @@
  },
  "limites des 5 régions": {
   "texte": "nuto atɔ̃awo ƒe seɖoƒe",
+  "relu": false
+ },
+ "mais les six taux de risque baissent. Le réseau reste inégalement entretenu, et": {
+  "texte": "Ke hã, nu sia nu si dzɔna ɖe edzi le nu sia nu me la ƒe dzidziɖedzi le edzi yim.",
   "relu": false
  },
  "mettent 56,7 % de la population de ces préfectures à moins de 10 km d'une auto-école, contre 32,2 % si elles ouvrent toutes au chef-lieu : 719 730 habitants de plus.": {
@@ -6605,6 +6669,10 @@
  },
  "ni la part du Grand Lomé dans les accidents ni son taux ne sont connus (écart 1)": {
   "texte": "Womenya Grand Lomé ƒe akpa si le afɔkuwo me alo eƒe xexlẽme hã o (Kpɔ memama 1)",
+  "relu": false
+ },
+ "niveau C": {
+  "texte": "C-ƒe",
   "relu": false
  },
  "non définie": {
@@ -6683,8 +6751,16 @@
   "texte": "Aʋawɔnu siwo dzi woazɔna le, esiwo dzi woazɔna le",
   "relu": false
  },
- "par an, 1990–2024": {
-  "texte": "Ƒe sia ƒe, 1990 ⁇ 2024",
+ "par an, 1990": {
+  "texte": "ƒe sia ƒe, 1990",
+  "relu": false
+ },
+ "part formation :": {
+  "texte": "hehe ƒe akpa:",
+  "relu": false
+ },
+ "part réseau :": {
+  "texte": "nu sia nu si dzɔna le nu sia nu me:",
   "relu": false
  },
  "pas de mois": {
@@ -6767,8 +6843,16 @@
   "texte": "ameƒomevi (t, reference year)); le adzɔge: ameƒomevi siwo wu SE-08 km (O4-08)",
   "relu": false
  },
+ "pour 10 000 véhicules": {
+  "texte": "le ʋu 10,000 ta",
+  "relu": false
+ },
  "pour 100 000 (": {
   "texte": "le ame 100,000 ta (",
+  "relu": false
+ },
+ "pour 100 000 habitants": {
+  "texte": "le ame 100,000 ɖe sia ɖe dzi",
   "relu": false
  },
  "premières délivrances(cat, an) / population(âge ≥ âge minimal PA-05, an) × 1 000": {
@@ -6793,6 +6877,10 @@
  },
  "préfectures sans auto-école agréée": {
   "texte": "nuto siwo me ʋukulawo ƒe suku aɖeke mele o",
+  "relu": false
+ },
+ "qui cumule un réseau dégradé (": {
+  "texte": "si nye nu gbegblẽ wɔwɔ (",
   "relu": false
  },
  "qui cumulent les deux déficits (641 955 habitants) ; aucun test de robustesse ne change plus de 2 des 10 premières.": {
@@ -6915,6 +7003,10 @@
   "texte": "style=\"margin-top:1rem;\"",
   "relu": false
  },
+ "suivi courant.": {
+  "texte": "Eŋutilãwo.",
+  "relu": false
+ },
  "sur 17 vérifications et hypothèses": {
   "texte": "le numekukuwo kple numedzodzrowo ŋu 17",
   "relu": false
@@ -6923,12 +7015,12 @@
   "texte": "Le 84 me la, nu siwo le edzi yim le afi ma la nye nu gbegblẽ wɔwɔ.",
   "relu": false
  },
- "teinte pleine : 2022–2024": {
-  "texte": "Full-tinting: 2022 ⁇ 2024",
+ "teinte pleine : 2022": {
+  "texte": "dzedzeme: 2022",
   "relu": false
  },
- "teinte pâle : 2010–2012": {
-  "texte": "ƒe dzedzeme: 2010 ⁇ 2012",
+ "teinte pâle : 2010": {
+  "texte": "ƒe dzedzeme: 2010",
   "relu": false
  },
  "titre, cible ou texte": {
@@ -6971,8 +7063,8 @@
   "texte": "kpovitɔwo kple kpovitɔwo gblɔ ame siwo wowu la ɖi",
   "relu": false
  },
- "tués pour 100 000 habitants, 2010–2012 face à 2022–2024": {
-  "texte": "ame siwo wowu le ame 100,000 ɖe sia ɖe me le ƒe 2010 me va se ɖe ƒe 2022 me",
+ "tués pour 100 000 habitants, 2010": {
+  "texte": "wowu ame 100,000 le ƒe 2010 me",
   "relu": false
  },
  "tués ÷ accidents constatés × 100": {
@@ -6997,6 +7089,10 @@
  },
  "une auto-école": {
   "texte": "ʋukulawo ƒe suku",
+  "relu": false
+ },
+ "une baisse des déclarations ressemblerait à un progrès.": {
+  "texte": "Ne ame aɖe gblɔ be yewɔ esia la, efia be yewɔ ŋgɔyiyi aɖe.",
   "relu": false
  },
  "une colonne pour trier.": {
@@ -7095,16 +7191,8 @@
   "texte": "Taɖodzinu si le ta la dzi (dzidziɖedzi)",
   "relu": false
  },
- "Écart à la cible (taux inchangé) —": {
-  "texte": "Taɖodzinu si le eme (dzidziɖedzi)  ⁇",
-  "relu": false
- },
  "Écart à la cible (tendance)": {
   "texte": "Nu si gbɔ wòto le nu si wòdi be yeawɔ la gbɔ (dzidzime)",
-  "relu": false
- },
- "Écart à la cible (tendance) —": {
-  "texte": "Mɔ si dzi míato akpɔ míaƒe taɖodzinuwo gbɔ",
   "relu": false
  },
  "Écart à la médiane, au lieu du rang": {
@@ -7259,276 +7347,12 @@
   "texte": "Σ ame siwo ŋu wowɔ nu vɔ̃ ɖo, ŋutsu, nyɔnu kple nyɔnu, ƒexɔxɔ); akpa",
   "relu": false
  },
- "— Agou cumule 40,0 % de km en mauvais état sur 124,1 km évalués (5 tronçons critiques) et aucune auto-école agréée pour 85 793 habitants (1 recensée, non agréée), à 11,0 km de la plus proche. En tête du classement dans les 6 tests de robustesse.": {
-  "texte": "⁇  Agou ƒo xlã kilometa 40.0% si le nɔnɔme gbegblẽ me tso kilometa 124.1 siwo ŋu wotrɔ asi le me (ame atɔ̃ ƒe akpa vevi atɔ̃) eye ʋukulawo ƒe suku aɖeke meli si xɔ mɔɖeɖe na ame 85,793 o (ame ɖeka si xɔ mɔɖeɖe si womekpɔ mɔ na o) si le kilometa 11.0 tso teƒe si tsɔ ɖe wo gbɔ la gbɔ.",
-  "relu": false
- },
- "— Bas-Mono n’a aucune auto-école agréée pour 94 860 habitants (1 recensée, non agréée), à 31,2 km de la plus proche, et sa desserte est faible : 3,68 km de routes pour 10 000 habitants. Réseau : 21,1 % sur 35,8 km. En tête du classement dans les 6 tests de robustesse.": {
-  "texte": "Bas-Mono mexɔa ʋukulawo ƒe suku aɖeke si le ame 94,860 (ame siwo me womexɔa mɔ ɖo o) si le kilometa 31.2 tso aƒea gbɔ o, eye ʋukulawo ƒe didime le sue: kilometa 3.68 tso mɔwo dzi na ame 10,000.",
-  "relu": false
- },
- "— Bassar cumule 28,0 % de km en mauvais état sur 167,5 km évalués (1 tronçon critique) et aucune auto-école agréée pour 152 065 habitants (2 recensées, non agréées), à 47,5 km de la plus proche. En tête du classement dans les 6 tests de robustesse.": {
-  "texte": "⁇  Bassar ƒe ʋukulawo ƒe agbɔsɔsɔme si nye 28.0% le amesiwo le nɔnɔme gbegblẽ me la dome le kilometa 167.5 siwo ŋu wobu akɔnta tsoe (1 kpekpeme) me, eye ʋukulawo ƒe suku aɖeke meli si xɔ mɔ na wo le ame 152,065 (2 siwo ŋu wobu akɔnta le, siwo mexɔ mɔ na wo o) si le kilometa 47.5 tso teƒe si te ɖe wo ŋu la gbɔ o.",
-  "relu": false
- },
- "— Blitta cumule 68,2 % de km en mauvais état sur 101,1 km évalués (4 tronçons critiques) et aucune auto-école agréée pour 163 272 habitants (2 recensées, non agréées), à 25,9 km de la plus proche. En tête du classement dans les 6 tests de robustesse.": {
-  "texte": "⁇  Blitta ƒo xlã kilometa 68.2% si le nɔnɔme gbegblẽ me tso km 101.1 siwo ŋu wodea dzesi ɖo (4 kpekpeme akpa) la dome, eye womexɔa ʋukulawo ƒe suku aɖeke ɖe ame 163,272 (2 woɖenɛ kpɔ alo womekpɔe de dzesii o), 25.9 kilometrewoe nye esia.",
-  "relu": false
- },
- "— Bon :": {
-  "texte": "⁇  Kpɔ nyuie:",
-  "relu": false
- },
- "— Centrale est la seule zone au-dessus de la médiane pour le réseau et en dessous pour la formation : 40,3 % de km en mauvais état sur 437,2 km évalués, et 4 auto-écoles agréées pour 795 529 habitants (0,50 pour 100 000). 4 de ses 5 préfectures reçoivent le levier réseau (113,6 km à remettre en état), 3 le levier formation (6 auto-écoles).": {
-  "texte": "⁇  Centrale ye nye nuto ɖeka pɛ si le nuwɔamegbedeasia dzi kple esiwo le nuwɔamegbedeasia te: km 40.3 le alafa me le nɔnɔme gbegblẽ me le 437.2 km siwo ŋu wotrɔ asi le me, eye wole mɔ̃ ʋukulawo ƒe suku 4 si xɔ mɔ̃ ʋukulawo ƒe xexlẽme ɖe ame 795 529 (0.50 ɖe ame 100,000) dzi.",
-  "relu": false
- },
- "— Danyi cumule 100 % de km en mauvais état sur 49,8 km évalués, traversés par 3 tronçons critiques, et aucune auto-école, ni agréée ni recensée, pour 40 240 habitants, à 12,9 km de la plus proche. En tête du classement dans les 6 tests de robustesse.": {
-  "texte": "⁇  Danyi ƒo kilometa 100 le alafa me le nɔnɔme gbegblẽ me le kilometa 49.8 siwo ŋu wotrɔ asi le me, siwo me wòto le akpa vevi etɔ̃ me, eye ʋukulawo ƒe suku aɖeke meli, si xɔ mɔɖeɖe o, eye womeŋlɔe ɖi o, le ame 40,240 siwo le teƒe si didi wu la dome, le kilometa 12.9 tso teƒe si te ɖe eŋu la gbɔ o.",
-  "relu": false
- },
- "— Est-Mono n’a aucune auto-école, ni agréée ni recensée, pour 164 460 habitants, à 27,4 km de la plus proche. Réseau : 17,2 % sur 110,7 km. En tête du classement dans 4 des 6 tests de robustesse.": {
-  "texte": "⁇  Est-Mono mexɔa ʋukulawo ƒe suku aɖeke o, eye womexɔa mɔɖolawo ƒe suku aɖeke hã o, eye womekpɔa mɔɖolawo ƒe suku aɖeke hã o, le ame 164,460 siwo le du sia me la dome.",
-  "relu": false
- },
- "— Grand Lomé a le réseau le moins dégradé (7,7 %) et la meilleure offre (103 auto-écoles agréées, 4,71 pour 100 000 habitants) ; seule sa desserte est sous la médiane (0,74 km pour 10 000 habitants), pour 2 188 376 habitants.": {
-  "texte": "⁇  Le Grand Lomé gome la, nu siwo le edzi yim nyuie wu (7.7%) kple nudidi nyuitɔ kekeakee li (103 nye ʋukulawo ƒe sukuxɔ xɔnyɔ̃awo; 4.71 ɖe ame 100,000 dzii) eye wo dometɔ ɖeka koe wɔa dɔ si mede vidzĩ me o (0.74 km na ame 10,000).",
-  "relu": false
- },
- "— Kara a le réseau au-dessus de la médiane : 15,2 % sur 694,5 km évalués. Pour 985 512 habitants, 2 de ses 7 préfectures reçoivent le levier réseau (37,3 km), 5 le levier formation (8 auto-écoles).": {
-  "texte": "⁇  Dɔwɔƒe si le Kara la ƒe kadodoa sɔ gbɔ wu vidzĩ: 15.2% tso kilometa 694.5 siwo ŋu woke ɖo me. Le ame 985 512 ɖesiaɖe dome, eƒe nutome gã 7awo dometɔ 2 xɔa dɔwɔƒewo (37.3 km) eye wofia nu woƒe dɔwɔlawo (5 (8 ʋukulawo).",
-  "relu": false
- },
- "— Maritime hors Grand Lomé a la formation et la desserte sous la médiane : 5 auto-écoles agréées pour 1 346 615 habitants (0,37 pour 100 000), 3,51 km de routes pour 10 000 habitants. 3 de ses 6 préfectures reçoivent le levier formation (6 auto-écoles).": {
-  "texte": "⁇  Ƒudzidɔwɔƒe si le Lomé ƒe nutowo me la le hehe kple dɔ wɔm le nu siwo le edzi yim la dome: ʋukulawo ƒe suku atɔ̃ siwo xɔ mɔ ɖe ame 1,346,615 (0.37 le ame 100,000 me) kple mɔwo ƒe kilometa 3,51 le ame 10,000 me.",
-  "relu": false
- },
- "— Mauvais :": {
-  "texte": "⁇  Nu gbegblẽ:",
-  "relu": false
- },
- "— Moyen :": {
-  "texte": "⁇  Ale si míezãnɛe:",
-  "relu": false
- },
- "— Non évalué :": {
-  "texte": "⁇  Womebu eŋu kpɔ o:",
-  "relu": false
- },
- "— Oti n’a aucune auto-école agréée pour 124 848 habitants (3 recensées, non agréées), à 62,0 km de la plus proche ; son réseau (21,1 % en mauvais état sur 140,6 km) reste sous le seuil. En tête du classement dans les 6 tests de robustesse.": {
-  "texte": "⁇  Oti mexɔ ʋukulawo ƒe suku aɖeke le eƒe ame 124,848 (3 siwo ŋu wotrɔ asi le, siwo ŋu womexɔ mɔ ɖo o) gbɔ le kilometa 62.0 me o, eye eƒe mɔ̃ɖaŋunuwo (ame 21.1% le nɔnɔme gbegblẽ me le kilometa 140.6 me) kpɔtɔ le adzɔge.",
-  "relu": false
- },
- "— Oti-Sud n’a aucune auto-école, ni agréée ni recensée, pour 150 376 habitants, à 84,0 km de la plus proche, la plus grande distance du pays. Réseau : 14,4 % sur 131,7 km. En tête du classement dans 4 des 6 tests de robustesse.": {
-  "texte": "⁇  Oti-Sud mexɔa ʋukulawo ƒe suku aɖeke o, eye womeɖenɛ ɖe mɔ̃ dzi kpɔna hã o; le ame 150,376 siwo nɔ afi ma dome la dometɔ ɖeka gomee.",
-  "relu": false
- },
- "— Plateaux a le réseau au-dessus de la médiane : 28,0 % de km en mauvais état sur 965,6 km évalués, traversés par 23 tronçons critiques. Pour 1 635 946 habitants, 6 de ses 12 préfectures reçoivent le levier réseau (150,5 km), 7 le levier formation (12 auto-écoles).": {
-  "texte": "⁇  Ƒuƒoƒenutowo ƒe kadodoa le nu si le edzi yim wu la dzi: kilometa 28.0 le alafa me le nɔnɔme gbegblẽ me tso kilometa 965.6 siwo ŋu wobu akɔnta le me, eye wozɔ to akpa vevi 23 me.",
-  "relu": false
- },
- "— Savanes a la formation et la desserte sous la médiane : 4 auto-écoles agréées pour 1 143 520 habitants (0,35 pour 100 000), 4,62 km de routes pour 10 000 habitants. 5 de ses 7 préfectures reçoivent le levier formation (9 auto-écoles), aucune le levier réseau.": {
-  "texte": "⁇  Le Savanes la, ame siwo le hehe xɔm eye wowɔa dɔ na wo dometɔ aɖewoe nye: ʋu ʋukulawo ƒe suku ene si woɖo ɖe dukɔmevi 1,143,520 me (0.35 ɖe 100,000 dzi), mɔtata kilometa 4.62 ɖe 10,000 dzi.",
-  "relu": false
- },
- "— Tchamba cumule 34,0 % de km en mauvais état sur 120,3 km évalués (1 tronçon critique) et aucune auto-école agréée pour 200 585 habitants (2 recensées, non agréées), à 31,1 km de la plus proche. En tête du classement dans les 6 tests de robustesse.": {
-  "texte": "⁇  Chamba xɔ 34.0 le alafa me le nɔnɔme gbegblẽ me le kilometa 120.3 siwo ŋu woke ɖo me (1 kpekpeme) me, eye womexɔ ʋukuku ƒe suku aɖeke ɖe ame 200 585 (2 siwo ŋu woke ɖo, siwo womekpɔ mɔ ɖo o) me o, eye wòxɔ ʋukuku ƒe suku aɖeke o, le kilometa 31.1 le teƒe si tsɔ ɖe edzi wu.",
-  "relu": false
- },
- "— Tchaoudjo cumule 36,9 % de km en mauvais état sur 125,7 km évalués (3 tronçons critiques) pour 240 360 habitants ; sa formation n’est pas en déficit (2 auto-écoles agréées, 0,83 pour 100 000 habitants). En tête du classement dans 3 des 6 tests de robustesse : la moins sûre des 10.": {
-  "texte": "⁇  Tchaoudjo ƒoa ƒu kilometa 36.9 le ame 125.7 siwo ŋu wobu akɔnta ɖo la dome (3 kpekpeme akpa) na 240 360; eƒe sukudede mebɔ o (2 ʋukulawo ƒe suku, 0.83 ɖe 100,000 ta).",
-  "relu": false
- },
- "— Travaux :": {
-  "texte": "⁇  Dɔwɔnawo:",
-  "relu": false
- },
- "— part formation :": {
-  "texte": "⁇  hehe ƒe akpa:",
-  "relu": false
- },
- "— part réseau :": {
-  "texte": "⁇  nu sia nu si dzɔna le Internet dzi:",
-  "relu": false
- },
  "“Des routes plus sûres pour une mobilité durable au Togo”": {
   "texte": "⁇ Togo ƒe mɔ siwo dzi woanɔ te ɖo anɔ dedie wu",
   "relu": false
  },
  "⌈1,065 × population ÷ 100 000⌉ − auto-écoles agréées (≥ 0, par préfecture)": {
   "texte": "⁇ 1,065 × ameƒomevi ÷ 100 000 ⁇  − ʋukulawo ƒe suku siwo xɔ ɖe asi (≥ 0, le nutowo me)",
-  "relu": false
- },
- "✓ suivi courant.": {
-  "texte": "✓ Lé ŋku ɖe eŋu edziedzi.",
-  "relu": false
- },
- "🇹🇬 Mobilité et sécurité routière au Togo": {
-  "texte": "⁇  Mɔzɔzɔ Kple Mɔzɔzɔzɔ Le Togo",
-  "relu": false
- },
- "📍 Centrale — Blitta": {
-  "texte": "⁇  Blitta dɔwɔƒe",
-  "relu": false
- },
- "📍 Centrale — Mô": {
-  "texte": "⁇  Central  ⁇  Mo",
-  "relu": false
- },
- "📍 Centrale — Sotouboua": {
-  "texte": "⁇  Ʋɔnudrɔ̃ƒe  ⁇  Sotouboua",
-  "relu": false
- },
- "📍 Centrale — Tchamba": {
-  "texte": "⁇  Dzedzemeƒe  ⁇  Tchamba",
-  "relu": false
- },
- "📍 Centrale — Tchaoudjo": {
-  "texte": "⁇  Kpeɖodziƒe  ⁇  Tchaoudjo",
-  "relu": false
- },
- "📍 Grand Lomé — Agoè-Nyivé": {
-  "texte": "⁇  Grand Lomé  ⁇  Agoè-Nyivé",
-  "relu": false
- },
- "📍 Grand Lomé — Golfe": {
-  "texte": "⁇  Grand Lomé  ⁇  Gulf",
-  "relu": false
- },
- "📍 Kara — Assoli": {
-  "texte": "Kara Assoli",
-  "relu": false
- },
- "📍 Kara — Bassar": {
-  "texte": "⁇  Kara  ⁇  Bassar",
-  "relu": false
- },
- "📍 Kara — Binah": {
-  "texte": "Kara Binah",
-  "relu": false
- },
- "📍 Kara — Dankpen": {
-  "texte": "⁇  Kara  ⁇  Dankpen",
-  "relu": false
- },
- "📍 Kara — Doufelgou": {
-  "texte": "⁇  Kara  ⁇  Doufelgou",
-  "relu": false
- },
- "📍 Kara — Kozah": {
-  "texte": "⁇  Kara  ⁇  Kozah",
-  "relu": false
- },
- "📍 Kara — Kéran": {
-  "texte": "⁇  Kara  ⁇  Kéran",
-  "relu": false
- },
- "📍 Maritime hors Grand Lomé — Avé": {
-  "texte": "⁇  Ƒudzidɔ le Grand Lomé gbɔ  ⁇  Avé",
-  "relu": false
- },
- "📍 Maritime hors Grand Lomé — Bas-Mono": {
-  "texte": "⁇  Ƒudzidɔ le Grand Lomé godo  ⁇  Bas-Mono",
-  "relu": false
- },
- "📍 Maritime hors Grand Lomé — Lacs": {
-  "texte": "⁇  Ƒudzidɔ le Lomé Gã la godo  ⁇  Atsiaƒu",
-  "relu": false
- },
- "📍 Maritime hors Grand Lomé — Vo": {
-  "texte": "⁇  Ƒudzidɔ le Grand Lomé godo  ⁇  Vo",
-  "relu": false
- },
- "📍 Maritime hors Grand Lomé — Yoto": {
-  "texte": "⁇  Ƒudzimɔ le Grand Lomé godo  ⁇  Yoto",
-  "relu": false
- },
- "📍 Maritime hors Grand Lomé — Zio": {
-  "texte": "⁇  Ƒuƒukɔa le Grand Lomé godo  ⁇  Zio",
-  "relu": false
- },
- "📍 Plateaux — Agou": {
-  "texte": "⁇  Akpata  ⁇  Agou",
-  "relu": false
- },
- "📍 Plateaux — Akébou": {
-  "texte": "⁇  Akpewo  ⁇  Akébou",
-  "relu": false
- },
- "📍 Plateaux — Amou": {
-  "texte": "⁇  Akpawo  ⁇  Amou",
-  "relu": false
- },
- "📍 Plateaux — Anié": {
-  "texte": "⁇  Tsitsiwo  ⁇  Tsitsi",
-  "relu": false
- },
- "📍 Plateaux — Danyi": {
-  "texte": "⁇  Danyi",
-  "relu": false
- },
- "📍 Plateaux — Est-Mono": {
-  "texte": "⁇  Aɖakawo  ⁇  Est-Mono",
-  "relu": false
- },
- "📍 Plateaux — Haho": {
-  "texte": "⁇  Plateaux  ⁇  Haho",
-  "relu": false
- },
- "📍 Plateaux — Kloto": {
-  "texte": "⁇  Akpatawo  ⁇  Kloto",
-  "relu": false
- },
- "📍 Plateaux — Kpélé": {
-  "texte": "⁇  Akpatawo  ⁇  Kpela",
-  "relu": false
- },
- "📍 Plateaux — Moyen-Mono": {
-  "texte": "⁇  Plateaux  ⁇  Middle Mono",
-  "relu": false
- },
- "📍 Plateaux — Ogou": {
-  "texte": "⁇  Akpatawo  ⁇  Ogou",
-  "relu": false
- },
- "📍 Plateaux — Wawa": {
-  "texte": "⁇  Tsitsiwo  ⁇  Wawa",
-  "relu": false
- },
- "📍 Savanes — Cinkassé": {
-  "texte": "⁇  Savanese  ⁇  Kpakpa",
-  "relu": false
- },
- "📍 Savanes — Kpendjal": {
-  "texte": "⁇  Savanese  ⁇  Kpendjal",
-  "relu": false
- },
- "📍 Savanes — Kpendjal-Ouest": {
-  "texte": "⁇  Savanes  ⁇  Kpendjal-West",
-  "relu": false
- },
- "📍 Savanes — Oti": {
-  "texte": "⁇  Savanese  ⁇  Oti",
-  "relu": false
- },
- "📍 Savanes — Oti-Sud": {
-  "texte": "⁇  Savanese  ⁇  Oti-Sud",
-  "relu": false
- },
- "📍 Savanes — Tandjoaré": {
-  "texte": "⁇  Savanese  ⁇  Tandjoaré",
-  "relu": false
- },
- "📍 Savanes — Tône": {
-  "texte": "⁇  Savanese  ⁇  Tone",
-  "relu": false
- },
- "📚 formation": {
-  "texte": "⁇  hehe",
-  "relu": false
- },
- "🛣️📚 les deux": {
-  "texte": "⁇ ️ ⁇  wo ame evea",
   "relu": false
  }
 }

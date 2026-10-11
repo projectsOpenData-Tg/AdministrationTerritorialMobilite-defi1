@@ -36,7 +36,7 @@ _T = {"Langue": {"fr": "Langue", "en": "Language"}}
 # Noms propres et sigles laissés tels quels dans toutes les langues (complétés par les noms des préfectures)
 _VALEURS = {"Togo", "Togo AI Lab", "TOGO", "Grand Lomé", "Lomé", "Maritime", "Plateaux", "Centrale", "Kara",
             "Savanes", "Maritime hors Grand Lomé", "A", "B", "C", "D", "E", "F", "FR", "EN", "Eʋegbe", "Kabɩyɛ",
-            "CSV", "RGPH-5", "HDX", "OSM", "WorldPop", "EHCVM", "NLLB-200"}
+            "CSV", "AI LAB", "RGPH-5", "HDX", "OSM", "WorldPop", "EHCVM", "NLLB-200"}
 
 _COLLECTE = os.environ.get("I18N_COLLECTE")
 _vus: set[str] = set()
@@ -61,9 +61,9 @@ def _dictionnaire(code: str) -> dict:
 # --- Découpage en segments ------------------------------------------------------------------------------------
 # Séparateurs gardés tels quels : balises HTML, entités, gabarits Plotly, gras markdown, sauts de ligne, puces,
 # flèches et pictogrammes, numéros cerclés.
-_SEP = re.compile(r"(<[^>]+>|&[a-z#0-9]+;|%\{[^}]*\}|\{[^}]*\}|\*\*|\n|^\s*[-•]\s+|[→←↗↘·①②③④⑤|]|:material/[a-z_]+:)",
-                  re.M)
-_LETTRES = re.compile(r"[A-Za-zÀ-ÿ]{3,}")      # au moins un vrai mot (« km », « %  » seuls ne suffisent pas)
+_SEP = re.compile(r"(<[^>]+>|&[a-z#0-9]+;|%\{[^}]*\}|\{[^}]*\}|\*\*|\n|^\s*[-•]\s+|[→←↗↘·①②③④⑤|—–›]"
+                  r"|[\U0001F1E6-\U0001F1FF]+|[\U0001F300-\U0001FAFF\u2600-\u27BF]\ufe0f?|:material/[a-z_]+:)", re.M)
+_LETTRES = re.compile(r"[A-Za-zÀ-ÿ]{3,}|^(et|ou)$")   # au moins un vrai mot (« km », « % » seuls ne suffisent pas)
 
 
 @functools.lru_cache(maxsize=1)
@@ -127,10 +127,22 @@ def bi(texte, code: str | None = None):
         t = trad.get(cle)
         if t:
             gauche, droite = m[: len(m) - len(m.lstrip())], m[len(m.rstrip()):]
+            if cle[0] in ",;:." and not t.startswith(cle[0]):     # ponctuation de tête perdue par le modèle
+                t = cle[0] + " " + t
+            if not gauche and _dernier_visible(out)[-1:].isalnum() and t[:1].isalnum():
+                gauche = " "                                     # deux mots ne doivent pas se coller
             out.append(gauche + t + droite)
         else:
             out.append(m)
     return "".join(out)
+
+
+def _dernier_visible(morceaux: list[str]) -> str:
+    """Dernier texte visible déjà produit (les balises et gabarits ne comptent pas)."""
+    for m in reversed(morceaux):
+        if m and not (m.startswith("<") or m.startswith("%{") or m == "**"):
+            return m
+    return ""
 
 
 def t(cle: str) -> str:

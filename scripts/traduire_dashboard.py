@@ -127,6 +127,15 @@ class Traducteur:
         return self.tok.batch_decode(out, skip_special_tokens=True)
 
 
+MANUEL = {"en": {"Tableau de bord": "Dashboard", "Principal": "Main", "Analyses": "Analysis", "Pilotage": "Steering",
+                  "Constat": "Finding", "Limite": "Limitation", "À retenir": "Key points", "Filtres": "Filters",
+                  "Langue": "Language", "Voir le détail →": "See details →", "et": "and",
+                  "Immatriculations": "Vehicle registrations", "Réseau routier évalué": "Road network assessed",
+                  "Comparaison territoriale": "Territorial comparison", "Évolutions et constats": "Trends and findings",
+                  "Carte du réseau et des auto-écoles": "Road network and driving schools map",
+                  "Synthèse chiffrée": "Key figures", "Mobilité & sécurité routière": "Mobility & road safety"}}
+
+
 def suspecte(src: str, trad: str) -> bool:
     """Traduction probablement inventée : beaucoup plus longue que la source, ou mot répété en boucle."""
     mots = re.findall(r"\w+", trad.lower())
@@ -164,6 +173,9 @@ def main():
                 actuel[src] = {"texte": cible.strip(), "relu": False}
             f.write_text(json.dumps(dict(sorted(actuel.items())), ensure_ascii=False, indent=1), encoding="utf-8")
             print(f"{lg} : {min(i + 32, len(manquants))}/{len(manquants)} ({time.time() - t0:.0f} s)", flush=True)
+        # Termes d'interface fixés à la main (anglais seulement : pas de locuteur pour vérifier les autres langues)
+        for src, cible in MANUEL.get(lg, {}).items():
+            actuel[src] = {"texte": cible, "relu": True}
         # Traductions suspectes : une seconde passe prudente ; si elles restent suspectes, texte vide (repli en
         # français à l'affichage) et marque "suspect" pour la relecture
         douteux = [k for k, v in actuel.items() if not v.get("relu") and k in segs and suspecte(k, v["texte"])]
