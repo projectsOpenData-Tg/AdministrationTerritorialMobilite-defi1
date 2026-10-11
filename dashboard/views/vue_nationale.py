@@ -366,7 +366,7 @@ with g_tot:
                 '<div class="total-legende">permis délivrés en 2024, toutes catégories</div>'
                 '<div class="total-note">Niveau A. Données nationales : les permis n\'ont ni territoire, ni âge.</div>'
                 '</div>', unsafe_allow_html=True)
-st.markdown('<div class="note-carte lisere-droit">Les permis moto ont bondi : 4 837 en 2022 et 10 165 en 2024, contre '
+st.markdown('<div class="note-carte">Les permis moto ont bondi : 4 837 en 2022 et 10 165 en 2024, contre '
             '211 en 2021.</div>', unsafe_allow_html=True)
 
 
