@@ -1,0 +1,770 @@
+{
+ "% des tués déclarés": {
+  "texte": "% of reported deaths",
+  "relu": false
+ },
+ "%, multiplicateur": {
+  "texte": "%, multiplier",
+  "relu": false
+ },
+ "(% des km évalués)": {
+  "texte": "(% of estimated km)",
+  "relu": false
+ },
+ "(101,1 km évalués)": {
+  "texte": "(Valued 101.1 km)",
+  "relu": false
+ },
+ "(101,1 km)": {
+  "texte": "(A total of 101.1 km)",
+  "relu": false
+ },
+ "(101,2 km)": {
+  "texte": "(A total of 101,2 km)",
+  "relu": false
+ },
+ "(110,7 km évalués)": {
+  "texte": "(evaluated 110,7 km)",
+  "relu": false
+ },
+ "(110,7 km)": {
+  "texte": "(A total of 110,7 km)",
+  "relu": false
+ },
+ "(110,8 km)": {
+  "texte": "(A total of 110,8 km)",
+  "relu": false
+ },
+ "(113,5 km)": {
+  "texte": "(A total of 113.5 km)",
+  "relu": false
+ },
+ "(120,3 km évalués)": {
+  "texte": "(Valued at 120.3 km)",
+  "relu": false
+ },
+ "(120,3 km)": {
+  "texte": "The Commission shall adopt delegated acts in accordance with the opinion of the Committee.",
+  "relu": false
+ },
+ "(124,1 km évalués)": {
+  "texte": "(124,1 km assessed)",
+  "relu": false
+ },
+ "(124,1 km)": {
+  "texte": "(124.1 km)",
+  "relu": false
+ },
+ "(124,9 km)": {
+  "texte": "(124.9 km)",
+  "relu": false
+ },
+ "(125,7 km évalués)": {
+  "texte": "(125,7 km assessed)",
+  "relu": false
+ },
+ "(125,7 km)": {
+  "texte": "(125.7 km)",
+  "relu": false
+ },
+ "(129,9 km)": {
+  "texte": "(129.9 km)",
+  "relu": false
+ },
+ "(131,7 km évalués)": {
+  "texte": "(Valued 131,7 km)",
+  "relu": false
+ },
+ "(131,7 km)": {
+  "texte": "(131.7 km)",
+  "relu": false
+ },
+ "(140,6 km évalués)": {
+  "texte": "(140,6 km assessed)",
+  "relu": false
+ },
+ "(140,6 km)": {
+  "texte": "The following is a list of the countries of the European Union:",
+  "relu": false
+ },
+ "(161,4 km)": {
+  "texte": "(161.4 km)",
+  "relu": false
+ },
+ "(167,5 km évalués)": {
+  "texte": "(evaluated 167,5 km)",
+  "relu": false
+ },
+ "(167,5 km)": {
+  "texte": "(167.5 km)",
+  "relu": false
+ },
+ "(24,8 km)": {
+  "texte": "(8.4 miles)",
+  "relu": false
+ },
+ "(27,8 km)": {
+  "texte": "(7.8 km)",
+  "relu": false
+ },
+ "(35,8 km évalués)": {
+  "texte": "(evaluated 35,8 km)",
+  "relu": false
+ },
+ "(35,8 km)": {
+  "texte": "(including roads)",
+  "relu": false
+ },
+ "(36,0 km)": {
+  "texte": "(6.0 km)",
+  "relu": false
+ },
+ "(40,3 km)": {
+  "texte": "(8.3 km)",
+  "relu": false
+ },
+ "(41,5 km)": {
+  "texte": "(8.5 km)",
+  "relu": false
+ },
+ "(45,2 km)": {
+  "texte": "(4,5 km)",
+  "relu": false
+ },
+ "(46,1 km)": {
+  "texte": "The following is a list of the Member States of the European Union:",
+  "relu": false
+ },
+ "(49,8 km évalués)": {
+  "texte": "(evaluated at 49,8 km)",
+  "relu": false
+ },
+ "(49,8 km)": {
+  "texte": "(9.8 km)",
+  "relu": false
+ },
+ "(57,9 km)": {
+  "texte": "The following is the list of countries and territories:",
+  "relu": false
+ },
+ "(58,5 km)": {
+  "texte": "(8.5 km)",
+  "relu": false
+ },
+ "(58,8 km)": {
+  "texte": "(8.8 km)",
+  "relu": false
+ },
+ "(63,1 km)": {
+  "texte": "(63.1 km)",
+  "relu": false
+ },
+ "(7,0 km)": {
+  "texte": "(7.0 km)",
+  "relu": false
+ },
+ "(70,0 km)": {
+  "texte": "(70 km)",
+  "relu": false
+ },
+ "(72,5 km)": {
+  "texte": "(7.2 km)",
+  "relu": false
+ },
+ "(75,6 km)": {
+  "texte": "(75 km)",
+  "relu": false
+ },
+ "(82,5 km)": {
+  "texte": "(8.2 km)",
+  "relu": false
+ },
+ "(84,0 km)": {
+  "texte": "(8.4 km)",
+  "relu": false
+ },
+ "(87,9 km)": {
+  "texte": "(8.7 km)",
+  "relu": false
+ },
+ "(90,1 km)": {
+  "texte": "(90 km)",
+  "relu": false
+ },
+ "(90,5 km)": {
+  "texte": "(90 km)",
+  "relu": false
+ },
+ "(96,6 km)": {
+  "texte": "(90 km)",
+  "relu": false
+ },
+ "(la formation)": {
+  "texte": "(training)",
+  "relu": false
+ },
+ "(la route et la formation).": {
+  "texte": "(road and training).",
+  "relu": false
+ },
+ "(la route)": {
+  "texte": "(the road)",
+  "relu": false
+ },
+ "(par rapport au classement à 50 %)": {
+  "texte": "(compared to the classification at 50%)",
+  "relu": false
+ },
+ "(préfectures) :": {
+  "texte": "(prefectures)",
+  "relu": false
+ },
+ "(réseau 50 %, formation 50 %) :": {
+  "texte": "(50% network, 50% training)",
+  "relu": false
+ },
+ "(valeur finale ÷ valeur initiale)^(1/n) − 1": {
+  "texte": "(final value ÷ initial value)^(1/n) − 1",
+  "relu": false
+ },
+ ", 641 955 habitants.": {
+  "texte": ", 641 955 inhabitants.",
+  "relu": false
+ },
+ ", avec leur population": {
+  "texte": ", with their population",
+  "relu": false
+ },
+ ", contre seulement": {
+  "texte": ", against only",
+  "relu": false
+ },
+ ", faute d'accidents par préfecture, par mois et par âge.": {
+  "texte": "The number of accidents per prefecture, month and age.",
+  "relu": false
+ },
+ ", porté par les motos. Les accidents augmentent en volume —": {
+  "texte": "Accidents are increasing in volume  ⁇",
+  "relu": false
+ },
+ ", seule zone en retard sur la route et la formation, et par": {
+  "texte": ", only area late on the road and training, and by",
+  "relu": false
+ },
+ ", triée par longueur ; nombre et Σ longueur": {
+  "texte": ", sorted by length; number and length",
+  "relu": false
+ },
+ ", un peu plus que leur part du parc (1,01 à 1,10 fois).": {
+  "texte": ", slightly more than their share of the park (1.01 to 1.10 times).",
+  "relu": false
+ },
+ ". Chaque étape a été gelée avant la suivante, et aucun chiffre affiché n'a été recopié à la main.": {
+  "texte": "Each stage was frozen before the next, and no figures were copied by hand.",
+  "relu": false
+ },
+ ".ai-lab-logo-carte": {
+  "texte": ".ai-lab-logo-card",
+  "relu": false
+ },
+ ".ai-lab-logo-carte img": {
+  "texte": ".ai-lab-logo-card img",
+  "relu": false
+ },
+ ".ai-lab-logo-repli": {
+  "texte": ". lab-logo-replied",
+  "relu": false
+ },
+ ".ariane": {
+  "texte": ". Ariane",
+  "relu": false
+ },
+ ".ariane b": {
+  "texte": ". Ariane b",
+  "relu": false
+ },
+ ".armoiries": {
+  "texte": ".Armouries",
+  "relu": false
+ },
+ ".armoiries-repli": {
+  "texte": ". . . . . . . .",
+  "relu": false
+ },
+ ".bloc-sous-titre": {
+  "texte": ". subtitled block",
+  "relu": false
+ },
+ ".bloc-titre": {
+  "texte": ".title block",
+  "relu": false
+ },
+ ".constat": {
+  "texte": ".constat",
+  "relu": false
+ },
+ ".constat-texte": {
+  "texte": ".context",
+  "relu": false
+ },
+ ".constat-titre": {
+  "texte": ".title",
+  "relu": false
+ },
+ ".constat-titre, .limite-titre, .synthese-titre": {
+  "texte": ".constat-title, .limit-title, .synthese-title",
+  "relu": false
+ },
+ ".etape": {
+  "texte": ".step",
+  "relu": false
+ },
+ ".etape-desc": {
+  "texte": ". step-desc",
+  "relu": false
+ },
+ ".etape-num": {
+  "texte": ".step number",
+  "relu": false
+ },
+ ".etape-sortie": {
+  "texte": ". exit step",
+  "relu": false
+ },
+ ".etape-titre": {
+  "texte": ".title step",
+  "relu": false
+ },
+ ".etape:last-child": {
+  "texte": ".stage: last-child",
+  "relu": false
+ },
+ ".etapes": {
+  "texte": ". stages",
+  "relu": false
+ },
+ ".etiquette": {
+  "texte": ".label",
+  "relu": false
+ },
+ ".etiquette.alerte": {
+  "texte": ".label. warning",
+  "relu": false
+ },
+ ".etiquette.critique": {
+  "texte": ".label.criticism",
+  "relu": false
+ },
+ ".etiquette.national": {
+  "texte": ".label.national",
+  "relu": false
+ },
+ ".etiquette.neutre": {
+  "texte": ".label .neutral",
+  "relu": false
+ },
+ ".etiquette.ok": {
+  "texte": ". etiquette .",
+  "relu": false
+ },
+ ".etiquette.reco-horizon": {
+  "texte": ".label.back horizon",
+  "relu": false
+ },
+ ".etiquette.reco-nature": {
+  "texte": ".label.reco-nature",
+  "relu": false
+ },
+ ".etiquette.reco-priorite": {
+  "texte": ".label.reco-priority",
+  "relu": false
+ },
+ ".filtres-actifs": {
+  "texte": ".active filters",
+  "relu": false
+ },
+ ".groupe": {
+  "texte": ".group",
+  "relu": false
+ },
+ ".kpi": {
+  "texte": ".kpi",
+  "relu": false
+ },
+ ".kpi-contexte": {
+  "texte": ".kpi-context",
+  "relu": false
+ },
+ ".kpi-grille": {
+  "texte": ".kpi-grill",
+  "relu": false
+ },
+ ".kpi-grille.une-ligne": {
+  "texte": ".kpi-grill.one-line",
+  "relu": false
+ },
+ ".kpi-grille.une-ligne .kpi": {
+  "texte": ".kpi-grill.one-line .kpi",
+  "relu": false
+ },
+ ".kpi-grille.une-ligne .kpi-centre": {
+  "texte": ".kpi-grid .one-line .kpi-center",
+  "relu": false
+ },
+ ".kpi-grille.une-ligne .kpi-contexte": {
+  "texte": ".kpi-grid.one-line .kpi-context",
+  "relu": false
+ },
+ ".kpi-grille.une-ligne .kpi-libelle": {
+  "texte": "♪ I'm going to be a little bit more like that ♪",
+  "relu": false
+ },
+ ".kpi-grille.une-ligne .kpi-phrase": {
+  "texte": ".kpi-grill.one-line .kpi-phrase",
+  "relu": false
+ },
+ ".kpi-grille.une-ligne .kpi-tete": {
+  "texte": ".kpi-grill.one-line .kpi-tete",
+  "relu": false
+ },
+ ".kpi-grille.une-ligne .kpi-tete .kpi-libelle": {
+  "texte": "♪ I'm not gonna let you down ♪",
+  "relu": false
+ },
+ ".kpi-grille.une-ligne .kpi-valeur": {
+  "texte": ".kpi-grid.one-line .kpi-value",
+  "relu": false
+ },
+ ".kpi-icone": {
+  "texte": ".kpi-icon",
+  "relu": false
+ },
+ ".kpi-icone svg": {
+  "texte": ".kpi-icon svg",
+  "relu": false
+ },
+ ".kpi-libelle": {
+  "texte": "- I 'm not . - I 'm not .",
+  "relu": false
+ },
+ ".kpi-periode": {
+  "texte": ".kpi period",
+  "relu": false
+ },
+ ".kpi-phrase": {
+  "texte": ".kpi-phrase",
+  "relu": false
+ },
+ ".kpi-reserve": {
+  "texte": ".kpi-reserve",
+  "relu": false
+ },
+ ".kpi-tendance": {
+  "texte": ".kpi-tendance",
+  "relu": false
+ },
+ ".kpi-tendance small": {
+  "texte": ".kpi-tendance small",
+  "relu": false
+ },
+ ".kpi-tendance.mieux": {
+  "texte": ".kpi-tendance . better",
+  "relu": false
+ },
+ ".kpi-tendance.neutre": {
+  "texte": ".kpi-tendance.neutral",
+  "relu": false
+ },
+ ".kpi-tendance.pire": {
+  "texte": ".kpi-tendance. worse",
+  "relu": false
+ },
+ ".kpi-tete": {
+  "texte": "- What ?",
+  "relu": false
+ },
+ ".kpi-tete .kpi-libelle": {
+  "texte": "♪ I 'm going to be a good boy ♪",
+  "relu": false
+ },
+ ".kpi-unite": {
+  "texte": ".kpi-unit",
+  "relu": false
+ },
+ ".kpi-valeur": {
+  "texte": ".kpi-value",
+  "relu": false
+ },
+ ".kpi::after": {
+  "texte": ".kpi::after",
+  "relu": false
+ },
+ ".kpi:hover": {
+  "texte": ".kpi: hover",
+  "relu": false
+ },
+ ".kpi:hover::after": {
+  "texte": ".kpi:hover::after",
+  "relu": false
+ },
+ ".langue-lib": {
+  "texte": ". language-free",
+  "relu": false
+ },
+ ".limite": {
+  "texte": ".Limit",
+  "relu": false
+ },
+ ".limite-texte": {
+  "texte": ".Limited text",
+  "relu": false
+ },
+ ".limite-titre": {
+  "texte": ".title limit",
+  "relu": false
+ },
+ ".limite.discret": {
+  "texte": ".Limited. discreet .",
+  "relu": false
+ },
+ ".limite.discret .limite-texte": {
+  "texte": ".limit. discreet .limit-text",
+  "relu": false
+ },
+ ".limite.discret .limite-titre": {
+  "texte": ".limit. discreet .limit-title",
+  "relu": false
+ },
+ ".note-carte": {
+  "texte": ".note-card",
+  "relu": false
+ },
+ ".note-carte.blanche": {
+  "texte": ".note-card . white",
+  "relu": false
+ },
+ ".note-carte.blanche.risque": {
+  "texte": ".note-card . white . risk",
+  "relu": false
+ },
+ ".note-graphique": {
+  "texte": ".graphic note",
+  "relu": false
+ },
+ ".note-graphique.forte": {
+  "texte": ".graphic note.forte",
+  "relu": false
+ },
+ ".onglets-aide": {
+  "texte": ".Help tabs .",
+  "relu": false
+ },
+ ".onglets-repere": {
+  "texte": ". . . . . .",
+  "relu": false
+ },
+ ".pied": {
+  "texte": ".foot",
+  "relu": false
+ },
+ ".pied-identite": {
+  "texte": ".foot-identity",
+  "relu": false
+ },
+ ".pied-identite-sous-titre": {
+  "texte": ".foot-identity-under-title",
+  "relu": false
+ },
+ ".pied-identite-titre": {
+  "texte": ".foot-identity-title",
+  "relu": false
+ },
+ ".question": {
+  "texte": ".question",
+  "relu": false
+ },
+ ".reco-cible": {
+  "texte": ".reco-target",
+  "relu": false
+ },
+ ".reco-contexte": {
+  "texte": ".reco-context",
+  "relu": false
+ },
+ ".reco-horizon2031": {
+  "texte": ".reco-horizon2031",
+  "relu": false
+ },
+ ".reco-pastille": {
+  "texte": ".reco-paddle",
+  "relu": false
+ },
+ ".reco-theme": {
+  "texte": ".reco-theme",
+  "relu": false
+ },
+ ".reco-theme-lib": {
+  "texte": ".reco-theme-lib",
+  "relu": false
+ },
+ ".reco-titre": {
+  "texte": ".reco-title",
+  "relu": false
+ },
+ ".reponse": {
+  "texte": "Answer .",
+  "relu": false
+ },
+ ".reponse.en-carte": {
+  "texte": ".response. by card",
+  "relu": false
+ },
+ ".retenir": {
+  "texte": ". to maintain",
+  "relu": false
+ },
+ ".retenir li": {
+  "texte": ". keep li",
+  "relu": false
+ },
+ ".retenir ol": {
+  "texte": ".to maintain",
+  "relu": false
+ },
+ ".retenir-num": {
+  "texte": ". hold-num",
+  "relu": false
+ },
+ ".retenir-titre": {
+  "texte": ".to hold the title",
+  "relu": false
+ },
+ ".slogan-barre": {
+  "texte": ".slogan bar",
+  "relu": false
+ },
+ ".slogan-filet": {
+  "texte": ".slogan-filet",
+  "relu": false
+ },
+ ".slogan-illustration": {
+  "texte": ".slogan-illustration",
+  "relu": false
+ },
+ ".slogan-texte": {
+  "texte": ".slogan-text",
+  "relu": false
+ },
+ ".stTabs .react-aria-SelectionIndicator": {
+  "texte": ".stTabs .react-area-SelectionIndicator",
+  "relu": false
+ },
+ ".stTabs [data-testid=\"stTab\"]": {
+  "texte": ".stTabs [data-testid=\"stTab\"]",
+  "relu": false
+ },
+ ".stTabs [data-testid=\"stTab\"] p": {
+  "texte": ".stTabs [data-testid=\"stTab\"] p",
+  "relu": false
+ },
+ ".stTabs [data-testid=\"stTab\"]:hover": {
+  "texte": ".stTabs [data-testid=\"stTab\"]:hover",
+  "relu": false
+ },
+ ".stTabs [data-testid=\"stTab\"]:hover p": {
+  "texte": ".stTabs [data-testid=\"stTab\"]:hover p",
+  "relu": false
+ },
+ ".stTabs [data-testid=\"stTab\"][aria-selected=\"true\"]": {
+  "texte": ".stTabs [data-testid=\"stTab\"][aria-selected=\"true\"]",
+  "relu": false
+ },
+ ".stTabs [data-testid=\"stTab\"][aria-selected=\"true\"] p": {
+  "texte": ".stTabs [data-testid=\"stTab\"][aria-selected=\"true\"] p",
+  "relu": false
+ },
+ ".stTabs [role=\"tablist\"]": {
+  "texte": ".stTabs [role=\"tablist\"]",
+  "relu": false
+ },
+ ".surtitre": {
+  "texte": "- I 'm not sure .",
+  "relu": false
+ },
+ ".synthese": {
+  "texte": ". synthesis",
+  "relu": false
+ },
+ ".synthese ul": {
+  "texte": ". synthesis ul",
+  "relu": false
+ },
+ ".synthese-chiffre": {
+  "texte": ".synthesis-number",
+  "relu": false
+ },
+ ".synthese-legende": {
+  "texte": ". synthesis-legend",
+  "relu": false
+ },
+ ".synthese-titre": {
+  "texte": ". synthesis-title",
+  "relu": false
+ },
+ ".topbar-centre": {
+  "texte": ".topbar-center",
+  "relu": false
+ },
+ ".topbar-centre::after": {
+  "texte": ".topbar-center::after",
+  "relu": false
+ },
+ ".topbar-ligne": {
+  "texte": ".topbar-line",
+  "relu": false
+ },
+ ".topbar-ministere": {
+  "texte": ".topbar-ministere",
+  "relu": false
+ },
+ ".topbar-sous-titre": {
+  "texte": ".topbar-under-title",
+  "relu": false
+ },
+ ".topbar-titre": {
+  "texte": ".topbar title",
+  "relu": false
+ },
+ ".total-carte": {
+  "texte": ".total-card",
+  "relu": false
+ },
+ ".total-chiffre": {
+  "texte": ".total figure",
+  "relu": false
+ },
+ ".total-legende": {
+  "texte": ".total-legend",
+  "relu": false
+ },
+ ".total-note": {
+  "texte": ".total note",
+  "relu": false
+ },
+ "/* Barre du haut (maquette §4) : armoiries + ministère": {
+  "texte": "/* Upper bar (model §4): armories + ministry",
+  "relu": false
+ },
+ "/* Barre latérale */": {
+  "texte": "/* side bar */",
+  "relu": false
+ },
+ "/* Bloc central (chiffre, tendance, phrase), centré dans la carte ; liseré fin en bas, couleur du thème */": {
+  "texte": "/* Central block (figure, trend, phrase), centered in the map; read at the bottom, theme colour */",
+  "relu": false
+ },
+ "/* Blocs, constat, synthèse, limite */": {
+  "texte": "/* Blocks, report, summary, limit */",
+  "relu": false
+ }
+}
