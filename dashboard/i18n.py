@@ -63,7 +63,7 @@ def _dictionnaire(code: str) -> dict:
 # flèches et pictogrammes, numéros cerclés.
 _SEP = re.compile(r"(<[^>]+>|&[a-z#0-9]+;|%\{[^}]*\}|\{[^}]*\}|\*\*|\n|^\s*[-•]\s+|[→←↗↘·①②③④⑤|]|:material/[a-z_]+:)",
                   re.M)
-_LETTRES = re.compile(r"[A-Za-zÀ-ÿ]{2,}")
+_LETTRES = re.compile(r"[A-Za-zÀ-ÿ]{3,}")      # au moins un vrai mot (« km », « %  » seuls ne suffisent pas)
 
 
 @functools.lru_cache(maxsize=1)
@@ -103,14 +103,14 @@ def _noter(seg: str):
 
 def segments(texte: str) -> list[str]:
     """Segments traduisibles d'un texte (clés des fichiers de langue)."""
-    if not isinstance(texte, str):
+    if not isinstance(texte, str) or "<style" in texte:
         return []
     return [m.strip() for m in _SEP.split(texte) if m and not _SEP.fullmatch(m) and _a_traduire(m)]
 
 
 def bi(texte, code: str | None = None):
     """Traduit un texte affiché (str) dans la langue courante, segment par segment ; renvoie tel quel tout le reste."""
-    if not isinstance(texte, str) or not texte:
+    if not isinstance(texte, str) or not texte or "<style" in texte:      # CSS : jamais traduit
         return texte
     code = code or langue()
     if code == "fr" and not _COLLECTE:

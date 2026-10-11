@@ -111,19 +111,27 @@ class Traducteur:
                   ("Auto-écoles", "Écoles de conduite"), ("Auto-école", "École de conduite"),
                   ("AUTO-ÉCOLE", "ÉCOLE DE CONDUITE")]
 
-    def traduire(self, textes: list[str], cible: str) -> list[str]:
+    def traduire(self, textes: list[str], cible: str, prudent: bool = False) -> list[str]:
         code = i18n.CODES_NLLB[cible]
         for avant, apres in self.REFORMULER:
             textes = [t.replace(avant, apres) for t in textes]
         if self.moteur == "ctranslate2":
             src = [["fra_Latn"] + self.sp.encode(t, out_type=str) + ["</s>"] for t in textes]
-            res = self.ct2.translate_batch(src, target_prefix=[[code]] * len(src), beam_size=2,
-                                           max_decoding_length=256, max_batch_size=16)
+            options = dict(beam_size=4, repetition_penalty=1.3, no_repeat_ngram_size=3) if prudent else dict(beam_size=2)
+            res = self.ct2.translate_batch(src, target_prefix=[[code]] * len(src), max_decoding_length=256,
+                                           max_batch_size=16, **options)
             return [self.sp.decode([x for x in r.hypotheses[0] if x != code]) for r in res]
         x = self.tok(textes, return_tensors="pt", padding=True, truncation=True, max_length=256)
         out = self.mod.generate(**x, forced_bos_token_id=self.tok.convert_tokens_to_ids(code), num_beams=2,
                                 max_new_tokens=256)
         return self.tok.batch_decode(out, skip_special_tokens=True)
+
+
+def suspecte(src: str, trad: str) -> bool:
+    """Traduction probablement inventée : beaucoup plus longue que la source, ou mot répété en boucle."""
+    mots = re.findall(r"\w+", trad.lower())
+    boucle = any(mots.count(m) >= 4 and len(m) > 2 for m in set(mots))
+    return not trad.strip() or len(trad) > 2.5 * len(src) + 25 or boucle
 
 
 def main():
@@ -156,6 +164,16 @@ def main():
                 actuel[src] = {"texte": cible.strip(), "relu": False}
             f.write_text(json.dumps(dict(sorted(actuel.items())), ensure_ascii=False, indent=1), encoding="utf-8")
             print(f"{lg} : {min(i + 32, len(manquants))}/{len(manquants)} ({time.time() - t0:.0f} s)", flush=True)
+        # Traductions suspectes : une seconde passe prudente ; si elles restent suspectes, texte vide (repli en
+        # français à l'affichage) et marque "suspect" pour la relecture
+        douteux = [k for k, v in actuel.items() if not v.get("relu") and k in segs and suspecte(k, v["texte"])]
+        for i in range(0, len(douteux), 16):
+            lot = douteux[i:i + 16]
+            for src, cible in zip(lot, trad.traduire(lot, lg, prudent=True)):
+                ok = not suspecte(src, cible)
+                actuel[src] = {"texte": cible.strip() if ok else "", "relu": False, **({} if ok else {"suspect": True})}
+        print(f"{lg} : {len(douteux)} suspectes retraduites, "
+              f"{sum(1 for k in douteux if actuel[k].get('suspect'))} laissées en français", flush=True)
         # On ne garde que les segments encore utilisés, plus ceux relus à la main
         actuel = {k: v for k, v in actuel.items() if k in segs or (isinstance(v, dict) and v.get("relu"))}
         f.write_text(json.dumps(dict(sorted(actuel.items())), ensure_ascii=False, indent=1), encoding="utf-8")

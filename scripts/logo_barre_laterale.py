@@ -76,7 +76,7 @@ def textes_langue(code: str):
     trad = json.loads(f.read_text(encoding="utf-8")) if f.exists() else {}
     titre = (trad.get("Mobilité & sécurité routière") or {}).get("texte")
     sous = (trad.get("Tableau de bord territorial d'aide à la décision") or {}).get("texte")
-    if not titre or not sous:
+    if not titre or not sous or len(titre) > 40 or len(sous) > 70:     # absente ou trop longue pour le logo
         return None
     return _couper(titre.upper(), 18), _couper(sous, 28)
 

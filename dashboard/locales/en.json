@@ -7166,5 +7166,1941 @@
  "[data-testid=\"stSidebar\"] div.st-key-selecteur_langue button[data-variant][aria-pressed=\"true\"], [data-testid=\"stSidebar\"] div.st-key-selecteur_langue button[data-variant][aria-checked=\"true\"],": {
   "texte": "[data-testid=\"stSidebar\"] div.st-key-selector_language button[data-variant][aria-pressed=\"true\"], [data-testid=\"stSidebar\"] div.st-key-selector_language button[data-variant][aria-checked=\"true\"],",
   "relu": false
+ },
+ "[data-testid=\"stSidebar\"] div.st-key-selecteur_langue button[data-variant][data-selected=\"true\"]": {
+  "texte": "[data-testid=\"stSidebar\"] div.st-key-selector_langue button[data-variant][data-selected=\"true\"]",
+  "relu": false
+ },
+ "[data-testid=\"stSidebarCollapseButton\"] button, [data-testid=\"stExpandSidebarButton\"]": {
+  "texte": "This is the first time that the data has been collected.",
+  "relu": false
+ },
+ "[data-testid=\"stSidebarCollapseButton\"] button:hover, [data-testid=\"stExpandSidebarButton\"]:hover": {
+  "texte": "This is the first time that the data has been collected.",
+  "relu": false
+ },
+ "[data-testid=\"stSidebarCollapseButton\"], [data-testid=\"stExpandSidebarButton\"]": {
+  "texte": "[data-testid=\"stSidebarCollapseButton\"], [data-testid=\"stExpandSidebarButton\"]",
+  "relu": false
+ },
+ "[data-testid=\"stSidebarContent\"]": {
+  "texte": "[data-testid=\"stSidebarContent\"]",
+  "relu": false
+ },
+ "[data-testid=\"stSidebarHeader\"]": {
+  "texte": "[data-testid=\"stSidebarHeader\"]",
+  "relu": false
+ },
+ "[data-testid=\"stSidebarHeader\"] > div:first-child": {
+  "texte": "[stSidebarHeader] > div:first-child",
+  "relu": false
+ },
+ "[data-testid=\"stSidebarHeader\"] img": {
+  "texte": "[data-testid=\"stSidebarHeader\"] img",
+  "relu": false
+ },
+ "[data-testid=\"stSidebarNav\"]": {
+  "texte": "[data-testid=\"stSidebarNav\"]",
+  "relu": false
+ },
+ "[data-testid=\"stSidebarNavLink\"]": {
+  "texte": "[data-testid=\"stSidebarNavLink\"]",
+  "relu": false
+ },
+ "[data-testid=\"stSidebarNavLink\"]:hover": {
+  "texte": "[data-testid=\"stSidebarNavLink\"]:hover",
+  "relu": false
+ },
+ "[data-testid=\"stSidebarNavLink\"][aria-current=\"page\"]": {
+  "texte": "This is the first time that the data has been collected.",
+  "relu": false
+ },
+ "[data-testid=\"stSidebarNavLink\"][aria-current=\"page\"] span": {
+  "texte": "This is a list of the official languages of the United States of America.",
+  "relu": false
+ },
+ "[data-testid=\"stSidebarUserContent\"]": {
+  "texte": "[data-testid=\"stSidebarUserContent\"]",
+  "relu": false
+ },
+ "[data-testid=\"stSidebarUserContent\"] > div, [data-testid=\"stSidebarUserContent\"] > div > [data-testid=\"stVerticalBlock\"]": {
+  "texte": "This is the first time that the data has been collected.",
+  "relu": false
+ },
+ "[data-testid=\"stSidebarUserContent\"] [data-testid=\"stElementContainer\"]:has(.slogan-barre)": {
+  "texte": "[data-testid=\"stSidebarUserContent\"] [data-testid=\"stElementContainer\"]:has(.slogan bar)",
+  "relu": false
+ },
+ "[data-testid=\"stVerticalBlockBorderWrapper\"]:has(div.st-key-topbar)": {
+  "texte": "[data-testid=\"stVerticalBlockBorderWrapper\"]:has(div.st-key-topbar)",
+  "relu": false
+ },
+ "a aucun véhicule correspondant.": {
+  "texte": "I don't have any corresponding vehicles.",
+  "relu": false
+ },
+ "a pas de carte.": {
+  "texte": "He doesn't have a card.",
+  "relu": false
+ },
+ "a pas de territoire": {
+  "texte": "has no territory",
+  "relu": false
+ },
+ "accidents constatés (2022)": {
+  "texte": "accidents reported (2022)",
+  "relu": false
+ },
+ "accidents corporels(t, an) / population(t, an) × 100 000 (R-09)": {
+  "texte": "In the case of accidents of the body (t, year) / population (t, year) × 100 000 (R-09)",
+  "relu": false
+ },
+ "accidents par préfecture, par mois et par âge des conducteurs. Les tués sont ceux que déclarent la police et la gendarmerie.": {
+  "texte": "Accidents by prefecture, month and age of drivers, the dead are those reported by the police and gendarmerie.",
+  "relu": false
+ },
+ "accidents par préfecture. L": {
+  "texte": "Accidents by prefecture.",
+  "relu": false
+ },
+ "accidents par territoire ; le coût n": {
+  "texte": "accidents per territory; the cost n",
+  "relu": false
+ },
+ "accidents(an) / parc(an) × 10 000 ; parc estimé en fourchette (R-11)": {
+  "texte": "Accidents (year) / park (year) × 10 000; estimated park in range (R-11)",
+  "relu": false
+ },
+ "accès rural": {
+  "texte": "access to rural areas",
+  "relu": false
+ },
+ "accès rural change de lecture : les Savanes passent sous la médiane et la Centrale au-dessus. La Centrale garde la première place : elle reste la zone au réseau le plus dégradé, et sa formation ne change pas. Les deux mesures sont en page Méthodologie.": {
+  "texte": "Rural access changes reading: the savannahs pass below the median and the central above. the central retains the first place: it remains the area with the most degraded network, and its formation does not change. both measurements are in page methodology.",
+  "relu": false
+ },
+ "accès rural dit mieux qui est loin de la route.": {
+  "texte": "Rural access says better who's far from the road.",
+  "relu": false
+ },
+ "accès rural est estimé : avec la population rurale supposée répartie uniformément dans chaque préfecture, ou placée par la grille de population WorldPop 2020 (carreaux de 100 m). Les deux mesures sont affichées ; la seconde est la plus fine, mais la grille est elle-même un modèle.": {
+  "texte": "Rural access is estimated: with the supposed rural population evenly distributed in each prefecture, or placed by the WorldPop 2020 population grid (100 m tiles). Both measures are displayed; the second is the finest, but the grid itself is a model.",
+  "relu": false
+ },
+ "accès rural et placer les auto-écoles (page Horizon 2031). Son empreinte est dans sources_A1.csv. Le registre reste celui de l": {
+  "texte": "Rural access and the placement of driving schools (Horizon 2031 page).",
+  "relu": false
+ },
+ "accès rural, côte à côte.": {
+  "texte": "rural access, side by side.",
+  "relu": false
+ },
+ "accès rural, qui désigne les zones en retard sur la route, est estimé avec une population répartie uniformément dans chaque préfecture.": {
+  "texte": "Rural access, which refers to the areas lagging behind on the road, is estimated with a population evenly distributed in each prefecture.",
+  "relu": false
+ },
+ "action": {
+  "texte": "action",
+  "relu": false
+ },
+ "activité des auto-écoles n": {
+  "texte": "activity of driving schools n",
+  "relu": false
+ },
+ "additionnent pas. Pays : 49 tronçons, 669,34 km.": {
+  "texte": "Countries: 49 sections, 669.34 km",
+  "relu": false
+ },
+ "agrandissement montre la région Maritime et le Grand Lomé, où se concentrent les auto-écoles. Molette ou barre d": {
+  "texte": "In addition, the main areas of study are the Maritime Region and the Greater Lomé Region, where driving schools are concentrated.",
+  "relu": false
+ },
+ "analyse. Les 3 derniers (accidents et blessés pour 10 000 véhicules, blessés pour 100 000 habitants) sont des compléments : hors cadre, aucun verdict. Volumes : niveau A ; les 6 taux : C.": {
+  "texte": "The last three (accidents and injuries per 10 000 vehicles, injuries per 100 000 inhabitants) are supplementary: out of context, no verdict Volumes: level A; the 6 rates: C.",
+  "relu": false
+ },
+ "annuaire national": {
+  "texte": "national yearbook",
+  "relu": false
+ },
+ "annuaire national de la même année donne d": {
+  "texte": "national yearbook of the same year gives d",
+  "relu": false
+ },
+ "annuaire national donne 29,75 % de routes nationales en mauvais état, le relevé des tronçons 21,2 % : les deux publications ne concordent pas. Le tableau de bord s": {
+  "texte": "The national yearbook gives 29.75% of the national roads in poor condition, the section report 21.2%: the two publications do not agree.",
+  "relu": false
+ },
+ "année, pas parc en circulation. Ruptures de série en 1995 et 2004. Permis de 2013 non renseignés. Le parc est estimé (C), et les taux par habitant hors 2010 et 2022 reposent sur une population projetée.": {
+  "texte": "year, no parc in circulation. Serial breaches in 1995 and 2004. 2013 permits unreported. The park is estimated (C), and the per capita rates beyond 2010 and 2022 are based on a projected population.",
+  "relu": false
+ },
+ "appuie sur le relevé, le seul à donner l": {
+  "texte": "press the recorder, the only one to give the",
+  "relu": false
+ },
+ "atteint la cible aujourd": {
+  "texte": "reaches the goal today",
+  "relu": false
+ },
+ "attention": {
+  "texte": "be careful",
+  "relu": false
+ },
+ "au niveau national. Les volumes et les taux portent sur les accidents déclarés par la police et la gendarmerie, pas sur l": {
+  "texte": "Volumes and rates relate to accidents reported by the police and gendarmerie, not to",
+  "relu": false
+ },
+ "au-dessus": {
+  "texte": "above",
+  "relu": false
+ },
+ "au-dessus (médiane)": {
+  "texte": "above (median)",
+  "relu": false
+ },
+ "au-dessus de la médiane pour le mauvais état": {
+  "texte": "above the median for the bad condition",
+  "relu": false
+ },
+ "aucun retard": {
+  "texte": "No delay",
+  "relu": false
+ },
+ "aucune": {
+  "texte": "No one",
+  "relu": false
+ },
+ "aucune agréée": {
+  "texte": "not authorized",
+  "relu": false
+ },
+ "aucune auto-école agréée": {
+  "texte": "No licensed driving school",
+  "relu": false
+ },
+ "aucune recensée": {
+  "texte": "not counted",
+  "relu": false
+ },
+ "aucune route classée": {
+  "texte": "No roads are classified",
+  "relu": false
+ },
+ "aujourd'hui mesuré": {
+  "texte": "today measured",
+  "relu": false
+ },
+ "auto-école agréée": {
+  "texte": "licensed driving school",
+  "relu": false
+ },
+ "auto-école agréée la plus proche": {
+  "texte": "nearest approved driving school",
+  "relu": false
+ },
+ "auto-école agréée pour 100 000 habitants.": {
+  "texte": "Licensed driving school for 100,000 people.",
+  "relu": false
+ },
+ "auto-école, au lieu du nombre d": {
+  "texte": "school of driving, instead of the number of",
+  "relu": false
+ },
+ "auto-écoles": {
+  "texte": "driving schools",
+  "relu": false
+ },
+ "auto-écoles 2021-2022": {
+  "texte": "driving schools 2021-2022",
+  "relu": false
+ },
+ "auto-écoles agréées sont dans le Grand Lomé, et": {
+  "texte": "approved driving schools are in the Greater Lomé region, and",
+  "relu": false
+ },
+ "auto-écoles agréées ÷ population × 100 000": {
+  "texte": "Accredited driving schools ÷ population × 100 000",
+  "relu": false
+ },
+ "auto-écoles agréées, sur 272 recensées": {
+  "texte": "Accredited driving schools, out of 272 registered",
+  "relu": false
+ },
+ "auto-écoles à ouvrir": {
+  "texte": "driving schools to open",
+  "relu": false
+ },
+ "auto-écoles à ouvrir à l'horizon 2029": {
+  "texte": "Driving schools to be opened in 2029",
+  "relu": false
+ },
+ "auto-écoles(t) / population(t) × 100 000 (R-06)": {
+  "texte": "Driving schools (t) / population (t) × 100 000 (R-06)",
+  "relu": false
+ },
+ "autre, les séries varient fortement avant 2017 : l": {
+  "texte": "Otherwise, the series varies greatly before 2017:",
+  "relu": false
+ },
+ "autres parts (29,75 % en mauvais état, contre 21,2 %). Les tronçons sont rattachés au tracé par leur nom ; pour 7 d": {
+  "texte": "Other parts (29.75% in poor condition compared to 21.2%).",
+  "relu": false
+ },
+ "axe (niveau C).": {
+  "texte": "axis (level C).",
+  "relu": false
+ },
+ "axe.": {
+  "texte": "Axis.",
+  "relu": false
+ },
+ "baissent ;": {
+  "texte": "decrease;",
+  "relu": false
+ },
+ "barre latérale) : on ne réserve sa hauteur que dans ce cas (maquette §4, règle à appliquer). */": {
+  "texte": "The height is reserved only in this case (model § 4, rule to be applied).",
+  "relu": false
+ },
+ "bdata": {
+  "texte": "bdata",
+  "relu": false
+ },
+ "blessés / accidents corporels × 100": {
+  "texte": "injuries / bodily accidents × 100",
+  "relu": false
+ },
+ "blessés déclarés": {
+  "texte": "reported injuries",
+  "relu": false
+ },
+ "blessés(an) / parc(an) × 10 000 ; parc estimé en fourchette (R-11)": {
+  "texte": "Injured (year) / park (year) × 10,000; estimated park in range (R-11)",
+  "relu": false
+ },
+ "blessés(an) / population(an) × 100 000 (R-06)": {
+  "texte": "Injured (s) / population (s)",
+  "relu": false
+ },
+ "body:has([data-testid=\"stHeader\"] [data-testid=\"stToolbar\"]) div.st-key-topbar_droite": {
+  "texte": "This is a list of the official languages of the Republic of Moldova.",
+  "relu": false
+ },
+ "carte logo Togo AI Lab */": {
+  "texte": "Logo card Togo AI Lab */",
+  "relu": false
+ },
+ "cas limite": {
+  "texte": "limit case",
+  "relu": false
+ },
+ "ces trois cartes ne créent ni km ni auto-école en plus ; elles disent par quelle zone commencer.": {
+  "texte": "These three maps don't create any extra miles or driving school; they tell you where to start.",
+  "relu": false
+ },
+ "cette page de méthode": {
+  "texte": "this method page",
+  "relu": false
+ },
+ "chef-lieu": {
+  "texte": "capital",
+  "relu": false
+ },
+ "chef-lieu à plus de 10 km de la plus proche agréée": {
+  "texte": "headquarters more than 10 km from the nearest approved",
+  "relu": false
+ },
+ "cible 1,065": {
+  "texte": "target of 1 065",
+  "relu": false
+ },
+ "cible : 1,065 auto-école pour 100 000 habitants (médiane des 16 préfectures équipées)": {
+  "texte": "Target: 1,065 driving schools per 100 000 inhabitants (average of 16 equipped prefectures)",
+  "relu": false
+ },
+ "cible : 14,35 % de km en mauvais état (médiane nationale)": {
+  "texte": "Target: 14.35% of km in poor condition (national average)",
+  "relu": false
+ },
+ "comment elle a été produite": {
+  "texte": "how it was made",
+  "relu": false
+ },
+ "confirmée": {
+  "texte": "confirmed",
+  "relu": false
+ },
+ "d'une carte à l'autre.": {
+  "texte": "From one map to another.",
+  "relu": false
+ },
+ "dans 1 an": {
+  "texte": "in 1 year",
+  "relu": false
+ },
+ "dans 3 ans": {
+  "texte": "in 3 years",
+  "relu": false
+ },
+ "dans 5 ans": {
+  "texte": "In 5 years",
+  "relu": false
+ },
+ "dans les préfectures au réseau dégradé": {
+  "texte": "in prefectures with degraded network",
+  "relu": false
+ },
+ "dans les préfectures qui en manquent, et": {
+  "texte": "in the prefectures which do not have them; and",
+  "relu": false
+ },
+ "dans les préfectures sans auto-école agréée": {
+  "texte": "in prefectures without a licensed driving school",
+  "relu": false
+ },
+ "de 2002 à 2022": {
+  "texte": "from 2002 to 2022",
+  "relu": false
+ },
+ "de 2002 à 2022, et les motos font": {
+  "texte": "from 2002 to 2022, and motorcycles are",
+  "relu": false
+ },
+ "de la formation :": {
+  "texte": "training:",
+  "relu": false
+ },
+ "de la hausse. Les permis moto suivent de loin : 40 motos immatriculées pour un permis moto sur 2007–2024.": {
+  "texte": "Motorcycle licences are far behind: 40 motorcycles registered for a motorcycle licence in 2007-2024.",
+  "relu": false
+ },
+ "de motos (2024)": {
+  "texte": "motorcycles (2024)",
+  "relu": false
+ },
+ "de plus en 2029 pour suivre la cible. Généraliser le casque n'y suffirait pas : au mieux 147 à 174 tués évités.": {
+  "texte": "It would not be enough to generalize the helmet: at best 147 to 174 killed avoided.",
+  "relu": false
+ },
+ "de routes en mauvais état et": {
+  "texte": "roads in poor condition and",
+  "relu": false
+ },
+ "de routes en mauvais état) et un déficit de formation.": {
+  "texte": "In the case of road failure, the Commission has not yet established a road safety standard.",
+  "relu": false
+ },
+ "de travail, gelées l'une après l'autre": {
+  "texte": "of work, frozen one after the other",
+  "relu": false
+ },
+ "des immatriculations de 2024": {
+  "texte": "registration for 2024",
+  "relu": false
+ },
+ "des km évalués dans la Centrale) ;": {
+  "texte": "the km evaluated in the Centre);",
+  "relu": false
+ },
+ "des km évalués en mauvais état dans le pays (669,34 km sur 3 163 km)": {
+  "texte": "the km evaluated in bad condition in the country (669,34 km out of 3 163 km)",
+  "relu": false
+ },
+ "des ruraux à moins de 2 km d'une route revêtue": {
+  "texte": "rural areas less than 2 km from a paved road",
+  "relu": false
+ },
+ "des tués à moto ou trois-roues (2021)": {
+  "texte": "Motorcycle or three-wheelers killed (2021)",
+  "relu": false
+ },
+ "desserte": {
+  "texte": "serving",
+  "relu": false
+ },
+ "desserte faible": {
+  "texte": "service is weak",
+  "relu": false
+ },
+ "displayModeBar": {
+  "texte": "displayModeBar",
+  "relu": false
+ },
+ "div.st-key-selecteur_langue": {
+  "texte": "div.st-key-selector_language",
+  "relu": false
+ },
+ "div.st-key-selecteur_langue [data-testid=\"stButtonGroup\"]": {
+  "texte": "This is a list of the official languages of the European Union.",
+  "relu": false
+ },
+ "div.st-key-selecteur_langue button p": {
+  "texte": "div.st-key-selector_language button p",
+  "relu": false
+ },
+ "div.st-key-topbar": {
+  "texte": "the following is added:",
+  "relu": false
+ },
+ "div.st-key-topbar [data-testid=\"stHorizontalBlock\"]": {
+  "texte": "The following information shall be provided for the purposes of this Regulation:",
+  "relu": false
+ },
+ "div.st-key-topbar_droite": {
+  "texte": "div.st-key-topbar_right",
+  "relu": false
+ },
+ "div.st-key-topbar_droite [data-testid=\"stMarkdownContainer\"]": {
+  "texte": "The following information is provided by the Commission to the European Parliament and to the Council:",
+  "relu": false
+ },
+ "div.st-key-vn_synthese": {
+  "texte": "The following information is provided for in Annex I to Regulation (EU) No 1308/2013:",
+  "relu": false
+ },
+ "div.st-key-vn_synthese .synthese": {
+  "texte": "The following information is provided for in the Annex to Regulation (EU) No 1308/2013:",
+  "relu": false
+ },
+ "div.st-key-vn_synthese .synthese ul": {
+  "texte": "The Commission shall adopt implementing acts in accordance with Article 21 of Regulation (EC) No 1069/2009.",
+  "relu": false
+ },
+ "div.st-key-vn_synthese .synthese-chiffre": {
+  "texte": "Div.st-key-vn_synthese .synthese-number",
+  "relu": false
+ },
+ "div.st-key-vn_synthese .synthese-titre": {
+  "texte": "Div.st-key-vn_synthese .synthese-title",
+  "relu": false
+ },
+ "div.st-key-vn_synthese [data-testid=\"stElementContainer\"]:has(.synthese)": {
+  "texte": "This is the list of the official languages of the Republic of Moldova.",
+  "relu": false
+ },
+ "div.st-key-vn_synthese [data-testid=\"stElementContainer\"]:has(.synthese) > div": {
+  "texte": "This is a list of the official languages of the European Union.",
+  "relu": false
+ },
+ "div.st-key-vn_synthese [data-testid=\"stElementContainer\"]:has(button)": {
+  "texte": "This is a list of the official languages of the United States of America.",
+  "relu": false
+ },
+ "div.st-key-vn_synthese button": {
+  "texte": "The following information is provided for in Part II of Annex I to Regulation (EC) No 1907/2006:",
+  "relu": false
+ },
+ "div.st-key-vn_synthese button p": {
+  "texte": "div.st-key-vn_synthese button p",
+  "relu": false
+ },
+ "div[class*=\"st-key-carte_reco_\"]": {
+  "texte": "This item is intended to record the information referred to in point (a) of paragraph 1.",
+  "relu": false
+ },
+ "div[class*=\"st-key-carte_reco_\"]:hover": {
+  "texte": "This is a list of airports in the United Kingdom.",
+  "relu": false
+ },
+ "dont 132 agréées (85 agréées, 47 antennes)": {
+  "texte": "Of which 132 are approved (85 approved, 47 antennas)",
+  "relu": false
+ },
+ "dont 74,4 % de motos (65 593)": {
+  "texte": "Of which 74,4% for motorcycles (65 593)",
+  "relu": false
+ },
+ "dont 84 tronçons": {
+  "texte": "of which 84 pieces",
+  "relu": false
+ },
+ "dont motos": {
+  "texte": "including motorcycles",
+  "relu": false
+ },
+ "dtype": {
+  "texte": "type",
+  "relu": false
+ },
+ "elle franchit.": {
+  "texte": "She's coming through.",
+  "relu": false
+ },
+ "elles ne disent pas": {
+  "texte": "they don't say",
+  "relu": false
+ },
+ "en 20 ans (2002": {
+  "texte": "In 20 years (2002)",
+  "relu": false
+ },
+ "en 20 ans, portées par les motos ; les accidents déclarés augmentent, mais les": {
+  "texte": "In the past 20 years, motorcycle accidents have been reported increasingly, but the number of accidents is increasing rapidly.",
+  "relu": false
+ },
+ "en 2022 — mais les six taux de risque baissent. Le réseau reste inégalement entretenu, et": {
+  "texte": "The network is still unevenly maintained, and",
+  "relu": false
+ },
+ "en 2024.": {
+  "texte": "In 2024.",
+  "relu": false
+ },
+ "en 2024. Sur fond gris : les deux références sans action nouvelle (taux inchangé, tendance) et la cible de la Décennie, moitié de la valeur de 2021 en 2030. Les accidents constatés n": {
+  "texte": "In 2024, on a gray background: the two non-new action benchmarks (unchanged rate, trend) and the Decade target, half of the 2021 value in 2030.",
+  "relu": false
+ },
+ "en difficulté ; 5 préfectures cumulent les deux déficits": {
+  "texte": "5 prefectures combine the two deficits",
+  "relu": false
+ },
+ "en font partie.": {
+  "texte": "They're part of it.",
+  "relu": false
+ },
+ "en mauvais état (669 km)": {
+  "texte": "in poor condition (669 km)",
+  "relu": false
+ },
+ "en ont aucun. La nature du zéro : 15 préfectures sans aucune auto-école recensée (25 auto-écoles), 8 avec des auto-écoles recensées non agréées (16 auto-écoles).": {
+  "texte": "The nature of zero: 15 prefectures without any registered driving schools (25 driving schools), 8 with registered driving schools not approved (16 driving schools).",
+  "relu": false
+ },
+ "en tête : Danyi (100,0 %).": {
+  "texte": "In the lead: Danyi (100.0 %).",
+  "relu": false
+ },
+ "en tête : Haho, la plus peuplée (305 096 habitants).": {
+  "texte": "in the top: Haho, the most populous (305 096).",
+  "relu": false
+ },
+ "en-tête d": {
+  "texte": "header d",
+  "relu": false
+ },
+ "ensemble des accidents. Les taux par véhicule dépendent d": {
+  "texte": "The rates per vehicle are dependent on the number of accidents.",
+  "relu": false
+ },
+ "entre eux, l": {
+  "texte": "between them,",
+  "relu": false
+ },
+ "entretien du réseau au Togo": {
+  "texte": "network maintenance in Togo",
+  "relu": false
+ },
+ "est la seule zone en retard sur la route": {
+  "texte": "is the only area late on the road",
+  "relu": false
+ },
+ "est la seule zone — et la seule région — qui cumule un réseau dégradé (": {
+  "texte": "is the only zone  ⁇  and the only region  ⁇  which accumulates a degraded network (",
+  "relu": false
+ },
+ "est pas classé par territoire, faute d": {
+  "texte": "is not classified by territory, in the absence of",
+  "relu": false
+ },
+ "est pas dans les données.": {
+  "texte": "It's not in the data.",
+  "relu": false
+ },
+ "est pas dans les données. Le détail par horizon, zone et préfecture est en page Horizon 2031.": {
+  "texte": "Details by horizon, area and prefecture are on the Horizon 2031 page.",
+  "relu": false
+ },
+ "est pas publié : il est estimé à partir des immatriculations et d": {
+  "texte": "is not published: it is estimated from registrations and",
+  "relu": false
+ },
+ "est pas publiée. Le coût des actions est absent. Chaque manque est écrit, jamais comblé par une hypothèse.": {
+  "texte": "The cost of the shares is absent. Every shortfall is written down, never filled by a hypothesis.",
+  "relu": false
+ },
+ "est pas réécrit après coup.": {
+  "texte": "is not rewritten afterwards.",
+  "relu": false
+ },
+ "est seule à franchir les seuils du réseau": {
+  "texte": "is alone crossing the thresholds of the net",
+  "relu": false
+ },
+ "est-ce qui change, et que confirment les données ?": {
+  "texte": "Is it changing, and what does the data confirm?",
+  "relu": false
+ },
+ "et": {
+  "texte": "and",
+  "relu": false
+ },
+ "exemple reprend une valeur affichée ailleurs dans le tableau de bord.": {
+  "texte": "Example takes a value displayed elsewhere in the dashboard.",
+  "relu": false
+ },
+ "exploration : ces 5 préfectures étaient dans le pire quart des deux dimensions.": {
+  "texte": "Exploration: these five prefectures were in the worst quarter of both dimensions.",
+  "relu": false
+ },
+ "exploration. Ils ne sont pas des seuils de décision et ne changent pas le classement.": {
+  "texte": "They're not thresholds for decision making and they don't change rankings.",
+  "relu": false
+ },
+ "faute de données par territoire, par mois ou par âge": {
+  "texte": "Lack of data by territory, month or age",
+  "relu": false
+ },
+ "formation": {
+  "texte": "training",
+  "relu": false
+ },
+ "habitants": {
+  "texte": "residents",
+  "relu": false
+ },
+ "habitants (": {
+  "texte": "inhabitants",
+  "relu": false
+ },
+ "habitants gagnés": {
+  "texte": "earned inhabitants",
+  "relu": false
+ },
+ "habitants, recensement de 2022": {
+  "texte": "population, census of 2022",
+  "relu": false
+ },
+ "habitants, très inégalement répartis : le Grand Lomé en concentre près du quart. La densité des auto-écoles agréées suit les grandes villes, tandis que": {
+  "texte": "The number of accredited driving schools follows that of the major cities, while the number of accredited driving schools follows that of the major cities.",
+  "relu": false
+ },
+ "horizon 2029 — niveau C": {
+  "texte": "Horizon 2029  ⁇  Level C",
+  "relu": false
+ },
+ "horizon 2029, préfecture par préfecture.": {
+  "texte": "The Commission shall adopt delegated acts in accordance with Article 21 of Regulation (EU) No 182/2011 of the European Parliament and of the Council.",
+  "relu": false
+ },
+ "horizon : aucune donnée ne mesure l": {
+  "texte": "horizon: no data is available to measure",
+  "relu": false
+ },
+ "horizon choisi est marqué.": {
+  "texte": "the selected horizon is marked.",
+  "relu": false
+ },
+ "html, body, [class*=\"css\"], .stMarkdown, .stText, button, input, label": {
+  "texte": "This is a list of the official languages of the European Union.",
+  "relu": false
+ },
+ "hui en dehors du Grand Lomé, et l": {
+  "texte": "It is not only a matter of",
+  "relu": false
+ },
+ "ici 2029, horizon de cette action : 17 auto-écoles à ouvrir, la population ayant grandi.": {
+  "texte": "Here in 2029, the horizon of this action: 17 driving schools to be opened, the population having grown.",
+  "relu": false
+ },
+ "ici 2029, horizon de cette action : 18 auto-écoles à ouvrir, la population ayant grandi.": {
+  "texte": "Here in 2029, the horizon of this action: 18 driving schools to be opened, the population having grown.",
+  "relu": false
+ },
+ "ici 2029, horizon de cette action : 30 auto-écoles à ouvrir, la population ayant grandi.": {
+  "texte": "Here in 2029, the horizon of this action: 30 driving schools to be opened, the population having grown.",
+  "relu": false
+ },
+ "ici 2029, horizon de cette action : 6 540 permis A à délivrer dans l’année, la population ayant grandi.": {
+  "texte": "In 2029, the horizon of this action: 6 540 permits to be issued in the year, the population having grown.",
+  "relu": false
+ },
+ "ici 2029, horizon de cette action : 6 auto-écoles à ouvrir.": {
+  "texte": "Here in 2029, horizon of this action: 6 driving schools to be opened.",
+  "relu": false
+ },
+ "ici 2031 ?": {
+  "texte": "This is 2031 ?",
+  "relu": false
+ },
+ "ici 2031, horizon de cette action : 33,6 km de routes classées, la population ayant grandi.": {
+  "texte": "In 2031, the horizon of this action: 33.6 km of roads classified, with the population growing.",
+  "relu": false
+ },
+ "il faut ajouter": {
+  "texte": "We have to add",
+  "relu": false
+ },
+ "immatriculations (2024)": {
+  "texte": "Registrations (2024)",
+  "relu": false
+ },
+ "immatriculations d'une catégorie ÷ permis de la catégorie": {
+  "texte": "registration of a category ÷ category permits",
+  "relu": false
+ },
+ "immatriculations de 2002 à 2022": {
+  "texte": "Registrations from 2002 to 2022",
+  "relu": false
+ },
+ "immatriculations de l'année ÷ population × 1 000": {
+  "texte": "Registrations for the year ÷ population × 1 000",
+  "relu": false
+ },
+ "immatriculations(cat, an) / population(an) × 1 000 (R-06)": {
+  "texte": "Registrations (cat, year) / population (year) × 1000 (R-06)",
+  "relu": false
+ },
+ "immatriculations(cat, an) / premières délivrances(catégorie de permis correspondante, an) ; aussi en cumul sur la période": {
+  "texte": "Registrations ((cat, year) / first issues ((corresponding licence category, year)); also cumulative over the period",
+  "relu": false
+ },
+ "immatriculations(cat, an) / Σ immatriculations(an) × 100": {
+  "texte": "The number of registered persons in the Member State of residence is:",
+  "relu": false
+ },
+ "infirmée": {
+  "texte": "ill",
+  "relu": false
+ },
+ "interrompt, elle ne passe pas par zéro. Niveau A.": {
+  "texte": "It doesn't go through zero.",
+  "relu": false
+ },
+ "inventaire : il n": {
+  "texte": "Inventory: the",
+  "relu": false
+ },
+ "inventaire, a été téléchargée ensuite pour mesurer l": {
+  "texte": "Inventory, then downloaded to measure the",
+  "relu": false
+ },
+ "investir ; pas d": {
+  "texte": "invest; not d",
+  "relu": false
+ },
+ "k km": {
+  "texte": "k km",
+  "relu": false
+ },
+ "km": {
+  "texte": "miles",
+  "relu": false
+ },
+ "km de routes classées": {
+  "texte": "km of roads classified",
+  "relu": false
+ },
+ "km de routes classées / population × 10 000 (R-06)": {
+  "texte": "km of roads classified / population × 10 000 (R-06)",
+  "relu": false
+ },
+ "km de routes classées / surface (km²) × 1 000": {
+  "texte": "km of roads classified / area (km2) × 1 000",
+  "relu": false
+ },
+ "km de routes classées ÷ population × 10 000": {
+  "texte": "km of roads classified ÷ population × 10 000",
+  "relu": false
+ },
+ "km de routes classées ÷ surface × 1 000 (surface en km²)": {
+  "texte": "km of roads classified ÷ surface × 1000 (surface in km2)",
+  "relu": false
+ },
+ "km de routes nationales, relevé de 2020": {
+  "texte": "km of national roads recorded in 2020",
+  "relu": false
+ },
+ "km en mauvais état / km évalués × 100 ; km évalués = total − non évalués (R-14)": {
+  "texte": "In bad condition km / evaluated km × 100; evaluated km = total − not evaluated (R-14)",
+  "relu": false
+ },
+ "km en mauvais état ÷ km évalués × 100 (évalués = bon+moyen+mauvais+travaux)": {
+  "texte": "km in poor condition ÷ km rated × 100 (rated = good+average+bad+work)",
+  "relu": false
+ },
+ "km en mauvais état − 14,35 % des km évalués (≥ 0 ; inchangé selon l'horizon)": {
+  "texte": "km in poor condition − 14.35% of the km evaluated (≥ 0; unchanged depending on the horizon)",
+  "relu": false
+ },
+ "km en travaux / km évalués × 100": {
+  "texte": "Valued work km / km × 100",
+  "relu": false
+ },
+ "km pour 1 000 km²": {
+  "texte": "km for 1000 km2",
+  "relu": false
+ },
+ "km pour 10 000 habitants": {
+  "texte": "km for 10 000 inhabitants",
+  "relu": false
+ },
+ "km sans état / km total × 100": {
+  "texte": "km without status / total km × 100",
+  "relu": false
+ },
+ "km à remettre en état": {
+  "texte": "km to be repaired",
+  "relu": false
+ },
+ "km,": {
+  "texte": "- I'm not sure.",
+  "relu": false
+ },
+ "km, habitants": {
+  "texte": "km, inhabitants",
+  "relu": false
+ },
+ "kpi-grille une-ligne": {
+  "texte": "one-line kpi-grill",
+  "relu": false
+ },
+ "la formation": {
+  "texte": "training",
+  "relu": false
+ },
+ "la formation. Les Plateaux sont en retard sur la route ; les Savanes et la Maritime hors Grand Lomé, sur la formation.": {
+  "texte": "The Plateaux are late on the road; the Savannes and the Maritime Offices outside Greater Lomé are on the train.",
+  "relu": false
+ },
+ "la pastille prend la couleur de sa classe sur la carte —": {
+  "texte": "the pill takes its class color on the map  ⁇",
+  "relu": false
+ },
+ "la route": {
+  "texte": "the road",
+  "relu": false
+ },
+ "la route et la formation": {
+  "texte": "road and training",
+  "relu": false
+ },
+ "la région la plus dense : 103 des 132 auto-écoles agréées": {
+  "texte": "densest region: 103 of the 132 accredited driving schools",
+  "relu": false
+ },
+ "le cumul complet (SE-10) exige le risque, non mesuré par territoire (08 §3.1)": {
+  "texte": "the total cumulative (SE-10) requires risk, not measured by territory (08 §3.1)",
+  "relu": false
+ },
+ "le cumul complet exige le risque, non mesuré par territoire": {
+  "texte": "the total cumulation requires risk, not measured by territory",
+  "relu": false
+ },
+ "le taux déclaré de 2021 : 22,7 contre 8,62 /100 000": {
+  "texte": "the reported rate for 2021: 22,7 versus 8,62 /100 000",
+  "relu": false
+ },
+ "les 4 préfectures urbaines (Agoè-Nyivé, Golfe, Kloto, Kozah) ont 84,8 % des auto-écoles agréées pour 32,3 % de la population": {
+  "texte": "The four urban prefectures (Agoè-Nyivé, Golfe, Kloto, Kozah) have 84.8% of licensed driving schools for 32.3% of the population.",
+  "relu": false
+ },
+ "les habitants ne s'additionnent pas d'une carte à l'autre": {
+  "texte": "the inhabitants don't add to one map to another",
+  "relu": false
+ },
+ "les immatriculations de 2022 face à celles de 2002": {
+  "texte": "Registrations for 2022 compared to those for 2002",
+  "relu": false
+ },
+ "leviers : aucun": {
+  "texte": "Levers: none",
+  "relu": false
+ },
+ "leviers : formation": {
+  "texte": "Levers: training",
+  "relu": false
+ },
+ "leviers : réseau": {
+  "texte": "Levers: network",
+  "relu": false
+ },
+ "leviers : réseau ; formation": {
+  "texte": "Levers: network; training",
+  "relu": false
+ },
+ "limite discret": {
+  "texte": "discrete limit",
+  "relu": false
+ },
+ "limites des 5 régions": {
+  "texte": "5 regions",
+  "relu": false
+ },
+ "mettent 56,7 % de la population de ces préfectures à moins de 10 km d'une auto-école, contre 32,2 % si elles ouvrent toutes au chef-lieu : 719 730 habitants de plus.": {
+  "texte": "In addition, the number of pupils in these prefectures is estimated at 56.7% of the population within 10 km of a driving school, compared with 32.2% if they all open in the capital: 719 730 more.",
+  "relu": false
+ },
+ "moins de 10 %": {
+  "texte": "less than 10%",
+  "relu": false
+ },
+ "moins de 10 km": {
+  "texte": "less than 10 km",
+  "relu": false
+ },
+ "moins de 100 000": {
+  "texte": "less than 100 000",
+  "relu": false
+ },
+ "motos": {
+  "texte": "motorcycles",
+  "relu": false
+ },
+ "n'ont aucune auto-école agréée ;": {
+  "texte": "have no approved driving school;",
+  "relu": false
+ },
+ "n'ont aucune auto-école agréée.": {
+  "texte": "They have no licensed driving schools.",
+  "relu": false
+ },
+ "national": {
+  "texte": "national",
+  "relu": false
+ },
+ "ni la part du Grand Lomé dans les accidents ni son taux ne sont connus": {
+  "texte": "Nor is the share of the Grand Lomé in accidents nor its rate known.",
+  "relu": false
+ },
+ "ni la part du Grand Lomé dans les accidents ni son taux ne sont connus (écart 1)": {
+  "texte": "Neither the share of the Grand Lomé in accidents nor its rate are known (disambiguation 1)",
+  "relu": false
+ },
+ "nom du projet + drapeau": {
+  "texte": "project name + flag",
+  "relu": false
+ },
+ "non définie": {
+  "texte": "not defined",
+  "relu": false
+ },
+ "non définie (aucune route classée)": {
+  "texte": "not defined (no classified road)",
+  "relu": false
+ },
+ "non définie : aucune route classée": {
+  "texte": "not defined: no classified roads",
+  "relu": false
+ },
+ "non renseignée": {
+  "texte": "not filled in",
+  "relu": false
+ },
+ "non revêtue": {
+  "texte": "unclothed",
+  "relu": false
+ },
+ "non testable": {
+  "texte": "not testable",
+  "relu": false
+ },
+ "nuancé": {
+  "texte": "shade",
+  "relu": false
+ },
+ "nuancée": {
+  "texte": "shade",
+  "relu": false
+ },
+ "observé": {
+  "texte": "observed",
+  "relu": false
+ },
+ "offre de formation est faible.": {
+  "texte": "the training offer is low.",
+  "relu": false
+ },
+ "oiseau, depuis le chef-lieu ou un point central. Équipements recensés en 2021-2022, non vérifiés, hors indicateurs.": {
+  "texte": "birds, from headquarters or central point. Equipment recorded in 2021-2022, unverified, excluding indicators.",
+  "relu": false
+ },
+ "ont au moins une auto-école agréée (41,0 %)": {
+  "texte": "have at least one accredited driving school (41.0%)",
+  "relu": false
+ },
+ "ont aucune auto-école agréée": {
+  "texte": "have no licensed driving school",
+  "relu": false
+ },
+ "ont leur chef-lieu à plus de 10 km de la plus proche.": {
+  "texte": "They have their headquarters more than 10 km from the nearest one.",
+  "relu": false
+ },
+ "ont pas de cible : la résolution porte sur les tués et les blessés.": {
+  "texte": "They have no target: the resolution concerns the dead and wounded.",
+  "relu": false
+ },
+ "ont un réseau dégradé.": {
+  "texte": "They have a broken network.",
+  "relu": false
+ },
+ "outils pour zoomer.": {
+  "texte": "tools to zoom in.",
+  "relu": false
+ },
+ "où elle s'arrête": {
+  "texte": "where she stops",
+  "relu": false
+ },
+ "panneaux, ralentisseurs, passages, feux": {
+  "texte": "Parts and accessories of motor vehicles",
+  "relu": false
+ },
+ "par an, 1990–2024": {
+  "texte": "Per year, 1990 ⁇ 2024",
+  "relu": false
+ },
+ "pas de mois": {
+  "texte": "Not for months",
+  "relu": false
+ },
+ "pas de mois (écart 2)": {
+  "texte": "not more than one month (paragraph 2)",
+  "relu": false
+ },
+ "pas d’accidents par territoire": {
+  "texte": "No accidents by territory",
+  "relu": false
+ },
+ "pas d’accidents par territoire (écart 1)": {
+  "texte": "No accidents by territory (paragraph 1)",
+  "relu": false
+ },
+ "pas d’âge des conducteurs": {
+  "texte": "No age of drivers",
+  "relu": false
+ },
+ "pas d’âge des conducteurs (écart 2)": {
+  "texte": "age of the drivers (paragraph 2)",
+  "relu": false
+ },
+ "permis A à délivrer dans l’année": {
+  "texte": "A permit to be issued in the year",
+  "relu": false
+ },
+ "permis délivrés en 2024, toutes catégories": {
+  "texte": "licences issued in 2024, all categories",
+  "relu": false
+ },
+ "piste rurale (33,8 km)": {
+  "texte": "Rural track (33,8 km)",
+  "relu": false
+ },
+ "plus courte distance chef-lieu": {
+  "texte": "shorter distance from headquarters",
+  "relu": false
+ },
+ "plus de 22,13 % de routes en mauvais état": {
+  "texte": "more than 22,13% of roads in poor condition",
+  "relu": false
+ },
+ "plus que quadruplé en vingt ans": {
+  "texte": "more than quadrupled in twenty years",
+  "relu": false
+ },
+ "point de canton": {
+  "texte": "point of canton",
+  "relu": false
+ },
+ "point de préfecture": {
+  "texte": "prefecture point",
+  "relu": false
+ },
+ "population 2022": {
+  "texte": "population in 2022",
+  "relu": false
+ },
+ "population d'aujourd'hui": {
+  "texte": "current population",
+  "relu": false
+ },
+ "population du Togo en 2029": {
+  "texte": "population of Togo in 2029",
+  "relu": false
+ },
+ "population ÷ auto-écoles agréées (non défini si aucune)": {
+  "texte": "population ÷ accredited driving schools (not defined if none)",
+  "relu": false
+ },
+ "population(t) / auto-écoles(t) ; non défini si aucune auto-école (voir O4-07)": {
+  "texte": "population(t) / driving schools(t); not defined if no driving school (see O4-07)",
+  "relu": false
+ },
+ "population(t, année de référence) ; pour la distance : population à plus de SE-08 km (O4-08)": {
+  "texte": "population(t, reference year); for distance: population over SE-08 km (O4-08)",
+  "relu": false
+ },
+ "pour 100 000 (": {
+  "texte": "for 100 000 (",
+  "relu": false
+ },
+ "premières délivrances(cat, an) / population(âge ≥ âge minimal PA-05, an) × 1 000": {
+  "texte": "first deliveries (cat, year) / population (age ≥ minimum age PA-05, year) × 1000",
+  "relu": false
+ },
+ "priorité et zone se choisissent dans la barre latérale.": {
+  "texte": "priority and zone are selected in the sidebar.",
+  "relu": false
+ },
+ "projeté": {
+  "texte": "projected",
+  "relu": false
+ },
+ "préfecture du levier formation": {
+  "texte": "Leverage prefecture training",
+  "relu": false
+ },
+ "préfectures au réseau dégradé": {
+  "texte": "prefectures with degraded network",
+  "relu": false
+ },
+ "préfectures sans auto-école agréée": {
+  "texte": "prefectures without a licensed driving school",
+  "relu": false
+ },
+ "qui cumulent les deux déficits (641 955 habitants) ; aucun test de robustesse ne change plus de 2 des 10 premières.": {
+  "texte": "In addition to the two deficits (641,955 inhabitants), no robustness test changes more than 2 of the top 10.",
+  "relu": false
+ },
+ "qui manquaient en 2022 seront": {
+  "texte": "Those missing in 2022 will be",
+  "relu": false
+ },
+ "recommandations : 3 hautes, 10 moyennes, 2 faibles": {
+  "texte": "Recommendations: 3 high, 10 medium, 2 low",
+  "relu": false
+ },
+ "reponse en-carte": {
+  "texte": "reply by card",
+  "relu": false
+ },
+ "resteront à plus de 2 km d'une route revêtue.": {
+  "texte": "shall remain more than 2 km from a covered road.",
+  "relu": false
+ },
+ "revêtue": {
+  "texte": "clothed",
+  "relu": false
+ },
+ "route nationale non revêtue (863,1 km)": {
+  "texte": "unpaved national road (863,1 km)",
+  "relu": false
+ },
+ "route nationale revêtue (2 236,4 km)": {
+  "texte": "covered national road (2 236,4 km)",
+  "relu": false
+ },
+ "rupture de série": {
+  "texte": "series breakdown",
+  "relu": false
+ },
+ "rurales n'en ont aucune.": {
+  "texte": "Rural areas have none.",
+  "relu": false
+ },
+ "ruraux à moins de 2 km d'une route revêtue ÷ population rurale × 100": {
+  "texte": "rural areas less than 2 km from a covered road ÷ rural population × 100",
+  "relu": false
+ },
+ "région Centrale": {
+  "texte": "Central region",
+  "relu": false
+ },
+ "région Kara": {
+  "texte": "Kara region",
+  "relu": false
+ },
+ "région Maritime": {
+  "texte": "Maritime region",
+  "relu": false
+ },
+ "région Plateaux": {
+  "texte": "Plateau region",
+  "relu": false
+ },
+ "région Savanes": {
+  "texte": "region Savanes",
+  "relu": false
+ },
+ "réseau": {
+  "texte": "network",
+  "relu": false
+ },
+ "réseau relevé en 2020": {
+  "texte": "network recorded in 2020",
+  "relu": false
+ },
+ "sans auto-école agréée": {
+  "texte": "without an accredited driving school",
+  "relu": false
+ },
+ "sans objet (demande de données)": {
+  "texte": "without object (request for data)",
+  "relu": false
+ },
+ "sans population rurale": {
+  "texte": "without rural population",
+  "relu": false
+ },
+ "sans ruraux": {
+  "texte": "without rural",
+  "relu": false
+ },
+ "scrollZoom": {
+  "texte": "scrollZoom",
+  "relu": false
+ },
+ "seuil d'éloignement : 10 km": {
+  "texte": "distance threshold: 10 km",
+  "relu": false
+ },
+ "seuil formation : médiane (0,53)": {
+  "texte": "Training threshold: median (0.53)",
+  "relu": false
+ },
+ "seuil réseau : médiane des 6 zones (14,0 %)": {
+  "texte": "Network threshold: median of the 6 zones (14.0%)",
+  "relu": false
+ },
+ "sous la médiane": {
+  "texte": "under the median",
+  "relu": false
+ },
+ "sous la médiane pour les auto-écoles par habitant": {
+  "texte": "under the median for driving schools per capita",
+  "relu": false
+ },
+ "sous la médiane pour les km de route par habitant": {
+  "texte": "below the mean for road kilometres per capita",
+  "relu": false
+ },
+ "style=\"margin-top:1rem;\"": {
+  "texte": "\"I'm not going to be able to do this\".",
+  "relu": false
+ },
+ "sur 17 vérifications et hypothèses": {
+  "texte": "of 17 verification and assumptions",
+  "relu": false
+ },
+ "sur 84 concentrent le mauvais état du réseau.": {
+  "texte": "Of 84 concentrate on the poor state of the grid.",
+  "relu": false
+ },
+ "teinte pleine : 2022–2024": {
+  "texte": "Full shade: 2022 ⁇ 2024",
+  "relu": false
+ },
+ "teinte pâle : 2010–2012": {
+  "texte": "Pale shade: 2010 ⁇ 2012",
+  "relu": false
+ },
+ "titre, cible ou texte": {
+  "texte": "Title, target or text",
+  "relu": false
+ },
+ "tronçons": {
+  "texte": "cuts",
+  "relu": false
+ },
+ "tronçons critiques": {
+  "texte": "critical sections",
+  "relu": false
+ },
+ "tués": {
+  "texte": "killed",
+  "relu": false
+ },
+ "tués (2022)": {
+  "texte": "Killed (2022)",
+  "relu": false
+ },
+ "tués / accidents corporels × 100 (R-09)": {
+  "texte": "deaths / accidents × 100 (R-09)",
+  "relu": false
+ },
+ "tués attendus × 60 % × 42 % (part deux-roues × réduction du casque)": {
+  "texte": "Expected deaths × 60 % × 42 % (two-wheeled part × helmet reduction)",
+  "relu": false
+ },
+ "tués de l'année ÷ parc estimé × 10 000": {
+  "texte": "Killed of the year ÷ estimated park × 10 000",
+  "relu": false
+ },
+ "tués de l'année ÷ population × 100 000": {
+  "texte": "killed in the year ÷ population × 100 000",
+  "relu": false
+ },
+ "tués déclarés par la police et la gendarmerie": {
+  "texte": "killed reported by police and gendarmerie",
+  "relu": false
+ },
+ "tués pour 100 000 habitants, 2010–2012 face à 2022–2024": {
+  "texte": "killed per 100,000 inhabitants, 2010 ⁇ 2012 compared to 2022 ⁇ 2024",
+  "relu": false
+ },
+ "tués ÷ accidents constatés × 100": {
+  "texte": "deaths ÷ accidents reported × 100",
+  "relu": false
+ },
+ "tués(an) / parc(an) × 10 000 ; parc selon l’ordre de R-11 ; en fourchette si parc estimé (O1-05)": {
+  "texte": "total number of deaths per year × 10 000; total number of deaths per year × 10 000; total number of deaths per year × 10 000; total number of deaths per year × 10 000; total number of deaths per year × 10 000; total number of deaths per year × 10 000 × 10 000; total number of deaths per year × 10 000 per year × 10 000 per year × 10 000 per year × 10 000 per year × 10 000 per year × 10 000 per year × 10 000 per year × 10 000 per year × 10 000 per year × 10 000 per year; total number of deaths per year (O1-05)",
+  "relu": false
+ },
+ "tués(t, an) / population(t, an) × 100 000 ; sous SE-01 : cumul sur PA-02 années (R-09)": {
+  "texte": "total number of deaths (t, year) / population (t, year) × 100 000; under SE-01: cumulative over PA-02 years (R-09)",
+  "relu": false
+ },
+ "un parc estimé. Le coût des actions n": {
+  "texte": "The cost of the shares n",
+  "relu": false
+ },
+ "une année à l": {
+  "texte": "a year at the",
+  "relu": false
+ },
+ "une auto-école": {
+  "texte": "a driving school",
+  "relu": false
+ },
+ "une colonne pour trier.": {
+  "texte": "a column to sort.",
+  "relu": false
+ },
+ "une de ces formules. L": {
+  "texte": "One of these formulae.",
+  "relu": false
+ },
+ "une durée de vie par groupe (7 ans pour une moto). Niveau C.": {
+  "texte": "A life expectancy per group (7 years for a motorcycle).",
+  "relu": false
+ },
+ "une fourchette sur chaque quantité": {
+  "texte": "one fork on each quantity",
+  "relu": false
+ },
+ "une présentation": {
+  "texte": "a presentation",
+  "relu": false
+ },
+ "une route": {
+  "texte": "a road",
+  "relu": false
+ },
+ "une route nationale revêtue": {
+  "texte": "a covered national road",
+  "relu": false
+ },
+ "une route revêtue pour la route, 0,53 auto-école pour 100 000 habitants pour la formation.": {
+  "texte": "a road covered for the road, 0.53 driving schools per 100,000 inhabitants for training.",
+  "relu": false
+ },
+ "usager, 2021": {
+  "texte": "user, 2021",
+  "relu": false
+ },
+ "usure du réseau.": {
+  "texte": "network wear.",
+  "relu": false
+ },
+ "valeur de 2021 diminuée de moitié en 2030, trajectoire régulière": {
+  "texte": "the value of 2021 halved by 2030, regular trajectory",
+  "relu": false
+ },
+ "voirie urbaine (233,2 km)": {
+  "texte": "urban road (233,2 km)",
+  "relu": false
+ },
+ "vs 2021": {
+  "texte": "vs. 2021",
+  "relu": false
+ },
+ "vs 2023": {
+  "texte": "compared to 2023",
+  "relu": false
+ },
+ "vue 1 sur 4": {
+  "texte": "View 1 out of 4",
+  "relu": false
+ },
+ "vue 1 sur 7": {
+  "texte": "View 1 out of 7",
+  "relu": false
+ },
+ "véhicules": {
+  "texte": "vehicles",
+  "relu": false
+ },
+ "« Les accidents augmentent » est nuancé : volume en hausse, taux en baisse.": {
+  "texte": "⁇  Accidents increase  ⁇  is nuanced: volume increases, rate decreases.",
+  "relu": false
+ },
+ "À droite de chaque barre : le nombre de tests de robustesse, sur 6, où la préfecture reste dans les 10 premières.": {
+  "texte": "To the right of each bar: the number of robustness tests, out of 6, where the prefecture remains in the top 10.",
+  "relu": false
+ },
+ "À ouvrir": {
+  "texte": "To be opened",
+  "relu": false
+ },
+ "À ouvrir (2029)": {
+  "texte": "To be opened (2029)",
+  "relu": false
+ },
+ "À retenir": {
+  "texte": "Remembering",
+  "relu": false
+ },
+ "À vérifier": {
+  "texte": "To be checked",
+  "relu": false
+ },
+ "Âge des conducteurs impliqués": {
+  "texte": "Age of the drivers involved",
+  "relu": false
+ },
+ "Écart à la cible": {
+  "texte": "The target deviation",
+  "relu": false
+ },
+ "Écart à la cible (taux inchangé)": {
+  "texte": "Target spread (rate unchanged)",
+  "relu": false
+ },
+ "Écart à la cible (taux inchangé) —": {
+  "texte": "Target spread (rate unchanged)  ⁇",
+  "relu": false
+ },
+ "Écart à la cible (tendance)": {
+  "texte": "Target deviation (trend)",
+  "relu": false
+ },
+ "Écart à la cible (tendance) —": {
+  "texte": "Target gap (trend)  ⁇",
+  "relu": false
+ },
+ "Écart à la médiane, au lieu du rang": {
+  "texte": "Median gap instead of rank",
+  "relu": false
+ },
+ "Énoncé": {
+  "texte": "Reported",
+  "relu": false
+ },
+ "Énoncé, verdict, et ce que montrent les données.": {
+  "texte": "Pronounced, verdict, and what the data shows.",
+  "relu": false
+ },
+ "Équipements de sécurité routière": {
+  "texte": "Road safety equipment",
+  "relu": false
+ },
+ "Équipements de sécurité routière (hors indicateurs)": {
+  "texte": "Road safety equipment (excluding indicators)",
+  "relu": false
+ },
+ "Étape": {
+  "texte": "Step by step",
+  "relu": false
+ },
+ "État des tronçons relevés": {
+  "texte": "State of the sampled pieces",
+  "relu": false
+ },
+ "État du réseau : bon": {
+  "texte": "State of the network: good",
+  "relu": false
+ },
+ "État du réseau : mauvais": {
+  "texte": "State of the network: bad",
+  "relu": false
+ },
+ "État du réseau : moyen": {
+  "texte": "State of the network: average",
+  "relu": false
+ },
+ "État du réseau : non évalué": {
+  "texte": "State of the network: not evaluated",
+  "relu": false
+ },
+ "État du réseau : travaux": {
+  "texte": "State of the network: work",
+  "relu": false
+ },
+ "État du réseau par zone": {
+  "texte": "State of the network by zone",
+  "relu": false
+ },
+ "État du réseau relevé en 2020 (niveau C) ; activité des auto-écoles non publiée ; accès rural estimé avec une population répartie uniformément dans chaque préfecture. La vue par région fond la Maritime hors Grand Lomé dans le Grand Lomé : la vue par zone est la lecture par défaut.": {
+  "texte": "Network status as of 2020 (level C); unpublished driving school activity; estimated rural access with a population evenly distributed in each prefecture.",
+  "relu": false
+ },
+ "État relevé en 2020, sur les routes nationales seulement, méthode de notation non publiée. L": {
+  "texte": "State recorded in 2020 on national roads only, unpublished rating method",
+  "relu": false
+ },
+ "État relevé en 2020, sur les routes nationales seulement. Accès rural estimé avec une population répartie uniformément dans chaque préfecture. Distance à vol d": {
+  "texte": "Country recorded in 2020 on national roads only. Rural access estimated with a population evenly distributed in each prefecture.",
+  "relu": false
+ },
+ "Évolution de l’état": {
+  "texte": "State development",
+  "relu": false
+ },
+ "Évolutions et constats": {
+  "texte": "Developments and findings",
+  "relu": false
+ },
+ "×1,83 en 2024, depuis 2004 (année de rupture de série).": {
+  "texte": "×1,83 in 2024, since 2004 (year of serial break).",
+  "relu": false
+ },
+ "à plus de 2 km d": {
+  "texte": "more than 2 km d",
+  "relu": false
+ },
+ "à vérifier": {
+  "texte": "to check",
+  "relu": false
+ },
+ "écart se creuse partout : le taux national passe de 1,63 à 1,35 auto-école pour 100 000 habitants.": {
+  "texte": "The gap is widening everywhere: the national rate rises from 1.63 to 1.35 driving schools per 100,000 inhabitants.",
+  "relu": false
+ },
+ "énoncé demande": {
+  "texte": "stated request",
+  "relu": false
+ },
+ "énoncé.": {
+  "texte": "I'm going to tell you.",
+  "relu": false
+ },
+ "état du réseau en 2020 : l": {
+  "texte": "State of the network in 2020:",
+  "relu": false
+ },
+ "état du réseau, cartographier le réseau et les auto-écoles, recommander.": {
+  "texte": "network status, map the network and driving schools, recommend.",
+  "relu": false
+ },
+ "état est réparti le long de l": {
+  "texte": "the state is distributed along the",
+  "relu": false
+ },
+ "état par tronçon et par préfecture. Niveau C.": {
+  "texte": "State by section and prefecture.",
+  "relu": false
+ },
+ "évalués (relevé de 2020)": {
+  "texte": "assessed (reported in 2020)",
+  "relu": false
+ },
+ "évolution se lit sur des moyennes de trois ans (bloc ci-dessus). Niveau A, déclaré par la police et la gendarmerie.": {
+  "texte": "Level A, reported by the police and gendarmerie.",
+  "relu": false
+ },
+ "Σ accidents corporels ; Σ blessés (graves, légers) ; Σ tués, par période et territoire": {
+  "texte": "Σ injuries (severe, light); Σ deaths, by period and territory",
+  "relu": false
+ },
+ "Σ auto-écoles par territoire, après dédoublonnage": {
+  "texte": "Σ driving schools by territory, after duplication",
+  "relu": false
+ },
+ "Σ immatriculations(catégorie, période)": {
+  "texte": "Σ registrations (category, period)",
+  "relu": false
+ },
+ "Σ longueur(tronçons classés) par classe et par territoire (R-15, R-16)": {
+  "texte": "Σ length (classified trons) by class and territory (R-15, R-16)",
+  "relu": false
+ },
+ "Σ longueur(tronçons) par type et par état": {
+  "texte": "Σ length) by type and state",
+  "relu": false
+ },
+ "Σ longueur(tronçons) par état et par territoire (R-15)": {
+  "texte": "Σ length) by state and territory (R-15)",
+  "relu": false
+ },
+ "Σ premières délivrances(catégorie, période)": {
+  "texte": "Σ first deliveries (category, period)",
+  "relu": false
+ },
+ "Σ victimes(usager, sexe, âge) ; parts": {
+  "texte": "Σ victims, sex, age); parts",
+  "relu": false
+ },
+ "— Agou cumule 40,0 % de km en mauvais état sur 124,1 km évalués (5 tronçons critiques) et aucune auto-école agréée pour 85 793 habitants (1 recensée, non agréée), à 11,0 km de la plus proche. En tête du classement dans les 6 tests de robustesse.": {
+  "texte": "⁇  Agou has 40.0% of the 124.1 km assessed (5 critical sections) and no licensed driving schools for 85,793 inhabitants (1 census, not licensed), at 11.0 km from the nearest.",
+  "relu": false
+ },
+ "— Bas-Mono n’a aucune auto-école agréée pour 94 860 habitants (1 recensée, non agréée), à 31,2 km de la plus proche, et sa desserte est faible : 3,68 km de routes pour 10 000 habitants. Réseau : 21,1 % sur 35,8 km. En tête du classement dans les 6 tests de robustesse.": {
+  "texte": "⁇  Bas-Mono has no licensed driving school for 94,860 inhabitants (1 census, not licensed), 31.2 km from the nearest, and its service is low: 3.68 km of roads per 10,000 inhabitants. Network: 21.1% of 35.8 km.",
+  "relu": false
+ },
+ "— Bassar cumule 28,0 % de km en mauvais état sur 167,5 km évalués (1 tronçon critique) et aucune auto-école agréée pour 152 065 habitants (2 recensées, non agréées), à 47,5 km de la plus proche. En tête du classement dans les 6 tests de robustesse.": {
+  "texte": "⁇  Bassar has 28.0 per cent of km in poor condition out of 167.5 km assessed (1 critical section) and no licensed driving schools for 152 065 inhabitants (2 registered, not licensed), 47.5 km from the nearest.",
+  "relu": false
+ },
+ "— Blitta cumule 68,2 % de km en mauvais état sur 101,1 km évalués (4 tronçons critiques) et aucune auto-école agréée pour 163 272 habitants (2 recensées, non agréées), à 25,9 km de la plus proche. En tête du classement dans les 6 tests de robustesse.": {
+  "texte": "⁇  Blitta has 68.2% of the 101.1 km assessed (4 critical sections) in bad condition and no approved driving schools for 163,272 inhabitants (2 census, uncertified), 25.9 km from the nearest.",
+  "relu": false
+ },
+ "— Bon :": {
+  "texte": "⁇  Well:",
+  "relu": false
+ },
+ "— Centrale est la seule zone au-dessus de la médiane pour le réseau et en dessous pour la formation : 40,3 % de km en mauvais état sur 437,2 km évalués, et 4 auto-écoles agréées pour 795 529 habitants (0,50 pour 100 000). 4 de ses 5 préfectures reçoivent le levier réseau (113,6 km à remettre en état), 3 le levier formation (6 auto-écoles).": {
+  "texte": "⁇  Central is the only area above the median for the network and below the median for training: 40.3% of the 437.2 km evaluated are in poor condition, and 4 licensed driving schools for 795 529 inhabitants (0.50 per 100,000).",
+  "relu": false
+ },
+ "— Danyi cumule 100 % de km en mauvais état sur 49,8 km évalués, traversés par 3 tronçons critiques, et aucune auto-école, ni agréée ni recensée, pour 40 240 habitants, à 12,9 km de la plus proche. En tête du classement dans les 6 tests de robustesse.": {
+  "texte": "⁇  Danyi has 100 per cent of the km in bad condition out of 49.8 km assessed, traversed by 3 critical sections, and no driving schools, neither authorised nor registered, for 40,240 inhabitants, at 12.9 km from the nearest.",
+  "relu": false
+ },
+ "— Est-Mono n’a aucune auto-école, ni agréée ni recensée, pour 164 460 habitants, à 27,4 km de la plus proche. Réseau : 17,2 % sur 110,7 km. En tête du classement dans 4 des 6 tests de robustesse.": {
+  "texte": "⁇  Est-Mono has no licensed or registered driving school for 164,460 inhabitants, 27.4 km from the nearest.",
+  "relu": false
+ },
+ "— Grand Lomé a le réseau le moins dégradé (7,7 %) et la meilleure offre (103 auto-écoles agréées, 4,71 pour 100 000 habitants) ; seule sa desserte est sous la médiane (0,74 km pour 10 000 habitants), pour 2 188 376 habitants.": {
+  "texte": "⁇  Greater Lomé has the least degraded network (7.7%) and the best offer (103 licensed driving schools, 4.71 per 100,000 inhabitants); only its service is below the median (0.74 km per 10,000 inhabitants), for 2 188 376 inhabitants.",
+  "relu": false
+ },
+ "— Kara a le réseau au-dessus de la médiane : 15,2 % sur 694,5 km évalués. Pour 985 512 habitants, 2 de ses 7 préfectures reçoivent le levier réseau (37,3 km), 5 le levier formation (8 auto-écoles).": {
+  "texte": "⁇  Kara has the network above the median: 15.2% of the 694.5 km assessed. For 985 512 inhabitants, 2 of its 7 prefectures receive the network lever (37.3 km), 5 the training lever (8 driving schools).",
+  "relu": false
+ },
+ "— Maritime hors Grand Lomé a la formation et la desserte sous la médiane : 5 auto-écoles agréées pour 1 346 615 habitants (0,37 pour 100 000), 3,51 km de routes pour 10 000 habitants. 3 de ses 6 préfectures reçoivent le levier formation (6 auto-écoles).": {
+  "texte": "⁇  Maritime outside Greater Lomé has training and service under the median: 5 licensed driving schools per 1 346 615 inhabitants (0.37 per 100 000), 3.51 km of roads per 10 000 inhabitants. 3 of its 6 prefectures receive the training levy (6 driving schools).",
+  "relu": false
+ },
+ "— Mauvais :": {
+  "texte": "⁇  Bad:",
+  "relu": false
+ },
+ "— Moyen :": {
+  "texte": "⁇  Average:",
+  "relu": false
+ },
+ "— Non évalué :": {
+  "texte": "⁇  Not evaluated:",
+  "relu": false
+ },
+ "— Oti n’a aucune auto-école agréée pour 124 848 habitants (3 recensées, non agréées), à 62,0 km de la plus proche ; son réseau (21,1 % en mauvais état sur 140,6 km) reste sous le seuil. En tête du classement dans les 6 tests de robustesse.": {
+  "texte": "⁇  Oti has no licensed driving school for 124,848 inhabitants (3 registered and unlicensed), 62.0 km from the nearest; its network (21.1% in poor condition out of 140.6 km) remains below the threshold.",
+  "relu": false
+ },
+ "— Oti-Sud n’a aucune auto-école, ni agréée ni recensée, pour 150 376 habitants, à 84,0 km de la plus proche, la plus grande distance du pays. Réseau : 14,4 % sur 131,7 km. En tête du classement dans 4 des 6 tests de robustesse.": {
+  "texte": "⁇  Oti-Sud has no licensed or registered driving school for 150,376 inhabitants, 84.0 km from the nearest, the longest distance in the country.",
+  "relu": false
+ },
+ "— Plateaux a le réseau au-dessus de la médiane : 28,0 % de km en mauvais état sur 965,6 km évalués, traversés par 23 tronçons critiques. Pour 1 635 946 habitants, 6 de ses 12 préfectures reçoivent le levier réseau (150,5 km), 7 le levier formation (12 auto-écoles).": {
+  "texte": "⁇  Plateaux has the network above the median: 28.0% of km in poor condition out of 965.6 km assessed, crossed by 23 critical sections. For 1 635 946 inhabitants, 6 of its 12 prefectures receive the network lever (150.5 km), 7 the training lever (12 driving schools).",
+  "relu": false
+ },
+ "— Savanes a la formation et la desserte sous la médiane : 4 auto-écoles agréées pour 1 143 520 habitants (0,35 pour 100 000), 4,62 km de routes pour 10 000 habitants. 5 de ses 7 préfectures reçoivent le levier formation (9 auto-écoles), aucune le levier réseau.": {
+  "texte": "⁇  Savanes has training and service under the medium: 4 licensed driving schools for 1 143 520 inhabitants (0.35 per 100 000), 4.62 km of roads for 10 000 inhabitants. 5 of its 7 prefectures receive training levy (9 driving schools), no network levy.",
+  "relu": false
+ },
+ "— Tchamba cumule 34,0 % de km en mauvais état sur 120,3 km évalués (1 tronçon critique) et aucune auto-école agréée pour 200 585 habitants (2 recensées, non agréées), à 31,1 km de la plus proche. En tête du classement dans les 6 tests de robustesse.": {
+  "texte": "⁇  Chamba has 34.0% of km in poor condition out of 120.3 km assessed (1 critical section) and no licensed driving schools for 200 585 inhabitants (2 registered, not licensed), 31.1 km from the nearest.",
+  "relu": false
+ },
+ "— Tchaoudjo cumule 36,9 % de km en mauvais état sur 125,7 km évalués (3 tronçons critiques) pour 240 360 habitants ; sa formation n’est pas en déficit (2 auto-écoles agréées, 0,83 pour 100 000 habitants). En tête du classement dans 3 des 6 tests de robustesse : la moins sûre des 10.": {
+  "texte": "⁇  Tchaoudjo has 36.9% of the 125.7 km assessed (3 critical sections) for 240 360 inhabitants; its training is not in deficit (2 accredited driving schools, 0.83 per 100,000 inhabitants).",
+  "relu": false
+ },
+ "— Travaux :": {
+  "texte": "⁇  Jobs:",
+  "relu": false
+ },
+ "— part formation :": {
+  "texte": "⁇  part of training:",
+  "relu": false
+ },
+ "— part réseau :": {
+  "texte": "⁇  network share:",
+  "relu": false
+ },
+ "“Des routes plus sûres pour une mobilité durable au Togo”": {
+  "texte": "Safer roads for sustainable mobility in Togo",
+  "relu": false
+ },
+ "⌈1,065 × population ÷ 100 000⌉ − auto-écoles agréées (≥ 0, par préfecture)": {
+  "texte": "⁇ 1,065 × population ÷ 100 000 ⁇  − licensed driving schools (≥ 0, per prefecture)",
+  "relu": false
+ },
+ "✓ suivi courant.": {
+  "texte": "✓ regular follow-up.",
+  "relu": false
+ },
+ "🇹🇬 Mobilité et sécurité routière au Togo": {
+  "texte": "Mobility and road safety in Togo",
+  "relu": false
+ },
+ "📍 Centrale — Blitta": {
+  "texte": "⁇  Central power station  ⁇  Blitta",
+  "relu": false
+ },
+ "📍 Centrale — Mô": {
+  "texte": "⁇  Central  ⁇  Mo",
+  "relu": false
+ },
+ "📍 Centrale — Sotouboua": {
+  "texte": "⁇  Central  ⁇  Sotouboua",
+  "relu": false
+ },
+ "📍 Centrale — Tchamba": {
+  "texte": "⁇  Central office  ⁇  Chamba",
+  "relu": false
+ },
+ "📍 Centrale — Tchaoudjo": {
+  "texte": "⁇  Central station  ⁇  Chaoudjo",
+  "relu": false
+ },
+ "📍 Grand Lomé — Agoè-Nyivé": {
+  "texte": "⁇  Grand Lomé  ⁇  Agoè-Nyivé",
+  "relu": false
+ },
+ "📍 Grand Lomé — Golfe": {
+  "texte": "⁇  Grand Lomé  ⁇  Gulf",
+  "relu": false
+ },
+ "📍 Kara — Assoli": {
+  "texte": "Kara Assoli",
+  "relu": false
+ },
+ "📍 Kara — Bassar": {
+  "texte": "Kara Bassar",
+  "relu": false
+ },
+ "📍 Kara — Binah": {
+  "texte": "Kara Binah",
+  "relu": false
+ },
+ "📍 Kara — Dankpen": {
+  "texte": "♪ Kara ♪ ♪ Dankpen ♪",
+  "relu": false
+ },
+ "📍 Kara — Doufelgou": {
+  "texte": "Kara Doufelgou",
+  "relu": false
+ },
+ "📍 Kara — Kozah": {
+  "texte": "♪ Kara ♪ Kozah",
+  "relu": false
+ },
+ "📍 Kara — Kéran": {
+  "texte": "♪ Kara ♪ ♪ Keran ♪",
+  "relu": false
+ },
+ "📍 Maritime hors Grand Lomé — Avé": {
+  "texte": "⁇  Maritime off the Grand Lomé  ⁇  Avé",
+  "relu": false
+ },
+ "📍 Maritime hors Grand Lomé — Bas-Mono": {
+  "texte": "⁇  Maritime off the Grand Lomé  ⁇  Bas-Mono",
+  "relu": false
+ },
+ "📍 Maritime hors Grand Lomé — Lacs": {
+  "texte": "⁇  Maritime off the Grand Lomé  ⁇  Lakes",
+  "relu": false
+ },
+ "📍 Maritime hors Grand Lomé — Vo": {
+  "texte": "⁇  Maritime off the Grand Lomé  ⁇  Vo",
+  "relu": false
+ },
+ "📍 Maritime hors Grand Lomé — Yoto": {
+  "texte": "⁇  Maritime off the Grand Lomé  ⁇  Yoto",
+  "relu": false
+ },
+ "📍 Maritime hors Grand Lomé — Zio": {
+  "texte": "⁇  Maritime outside Grand Lomé  ⁇  Zio",
+  "relu": false
+ },
+ "📍 Plateaux — Agou": {
+  "texte": "⁇  Plateaus  ⁇  Agou",
+  "relu": false
+ },
+ "📍 Plateaux — Akébou": {
+  "texte": "⁇  Plateaus  ⁇  Akébou",
+  "relu": false
+ },
+ "📍 Plateaux — Amou": {
+  "texte": "⁇  Plateaus  ⁇  Amou",
+  "relu": false
+ },
+ "📍 Plateaux — Anié": {
+  "texte": "⁇  Plateaus  ⁇  Anies",
+  "relu": false
+ },
+ "📍 Plateaux — Danyi": {
+  "texte": "⁇  Plateaus  ⁇  Danyi",
+  "relu": false
+ },
+ "📍 Plateaux — Est-Mono": {
+  "texte": "⁇  Plateaus  ⁇  East Mono",
+  "relu": false
+ },
+ "📍 Plateaux — Haho": {
+  "texte": "⁇  Plateaus  ⁇  Haho",
+  "relu": false
+ },
+ "📍 Plateaux — Kloto": {
+  "texte": "⁇  Plateaus  ⁇  Kloto",
+  "relu": false
+ },
+ "📍 Plateaux — Kpélé": {
+  "texte": "⁇  Plateaus  ⁇  Kpele",
+  "relu": false
+ },
+ "📍 Plateaux — Moyen-Mono": {
+  "texte": "⁇  Plateaus  ⁇  Middle Mono",
+  "relu": false
+ },
+ "📍 Plateaux — Ogou": {
+  "texte": "⁇  Plateaus  ⁇  Ogou",
+  "relu": false
+ },
+ "📍 Plateaux — Wawa": {
+  "texte": "⁇  Plateaus  ⁇  Wawa",
+  "relu": false
+ },
+ "📍 Savanes — Cinkassé": {
+  "texte": "⁇  Savannah  ⁇  Cinnamon",
+  "relu": false
+ },
+ "📍 Savanes — Kpendjal": {
+  "texte": "⁇  Savannah  ⁇  Kpendjal",
+  "relu": false
+ },
+ "📍 Savanes — Kpendjal-Ouest": {
+  "texte": "⁇  Savannah  ⁇  Kpendjal-West",
+  "relu": false
+ },
+ "📍 Savanes — Oti": {
+  "texte": "⁇  Savannah  ⁇  Oti",
+  "relu": false
+ },
+ "📍 Savanes — Oti-Sud": {
+  "texte": "⁇  Savannah  ⁇  Oti-Sud",
+  "relu": false
+ },
+ "📍 Savanes — Tandjoaré": {
+  "texte": "⁇  Savannah  ⁇  Tandjoaré",
+  "relu": false
+ },
+ "📍 Savanes — Tône": {
+  "texte": "⁇  Savannah  ⁇  Tone",
+  "relu": false
+ },
+ "📚 formation": {
+  "texte": "⁇  Training",
+  "relu": false
+ },
+ "🛣️📚 les deux": {
+  "texte": "⁇ ️ ⁇  Both",
+  "relu": false
  }
 }
