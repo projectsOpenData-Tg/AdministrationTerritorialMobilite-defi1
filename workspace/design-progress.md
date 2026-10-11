@@ -199,3 +199,20 @@ Couleurs fixes par donnée, dans `theme.py`, pour qu'un indicateur garde sa coul
 - Mécanisme réutilisable : classe `.carte-egale` (options `egale=True` de `synthese()` et `limite()`) pour égaliser
   les hauteurs des cartes d'une même rangée.
 
+## 15. Évolutions — onglet Synthèse
+
+- Texte d'introduction dans une **carte blanche** (`entete(carte=True)`).
+- 3 chiffres clés : **icônes** (✅ confirmées, ⚠️ infirmées/nuancées, ❓ non testables) et contenu **centré**
+  (`rangee_kpi(centre=True)`, `carte_kpi(pastille=…)`).
+- **Couleurs de verdict uniformes** sur la page (palette A) : confirmée vert `#16834A`, infirmée rouge `#CE1126`,
+  nuancée jaune-or `#E6B422`, non testable gris bleuté `#8293A7` — appliquées aux encarts, aux badges des tableaux,
+  à la légende et aux marqueurs de la carte.
+- **La carte des constats** : les 3 encarts nationaux (Mobilité·confirmée, Sécurité routière·nuancée, Accidents par
+  territoire·non testable) deviennent des **cartes blanches à liseré gauche** coloré par leur verdict. Les deux
+  constats cartographiés (réseau, auto-écoles) passent **sous la carte, à droite de la légende**, en cartes à
+  liseré vert et pictogramme « i ». Les points d'auto-écoles de la carte prennent la couleur « nuancée ».
+- **Tableaux « 17 vérifications » et « Ce que chaque verdict change »** : la colonne Verdict s'affiche en **badge
+  coloré** (pilule), au lieu de colorer le fond de la cellule (tableaux rendus en HTML, `_table_verdict`).
+- **i18n** : les blocs `<style>…</style>` sont désormais protégés comme un tout (au lieu d'exclure toute la chaîne),
+  pour que le texte qui les entoure se traduise. Termes de verdict et d'interface fixés à la main en anglais.
+

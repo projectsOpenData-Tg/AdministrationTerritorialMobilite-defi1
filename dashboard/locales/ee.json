@@ -1919,8 +1919,8 @@
   "texte": "Ʋukulawo ƒe suku aɖeke meli o, eye ʋukulawo ƒe suku si te ɖe wo ŋu la hã mele teƒe aɖeke o.",
   "relu": false
  },
- "Aucune recommandation ne s'y appuie. La donnée qui les rendrait testables est en page Méthodologie.": {
-  "texte": "Womeɖo aɖaŋu aɖeke ɖe nya sia dzi o, eye nyatakaka siwo ana woate ŋu adzro wo me la dze le \"Methodology\" ƒe axa dzi.",
+ "Aucune recommandation ne s": {
+  "texte": "Womede dzi ƒo na ame aɖeke o.",
   "relu": false
  },
  "Aucune route classée : ni état ni km évalué.": {
@@ -2247,8 +2247,8 @@
   "texte": "Nu Siwo Nyateƒenyawo Ðe Fia",
   "relu": false
  },
- "Ce qui change pour l'action": {
-  "texte": "Nu Si Trɔna Ðe Dzɔdzɔmewɔnawo Ŋu",
+ "Ce qui change pour l": {
+  "texte": "Nu si Trɔ Ði",
   "relu": false
  },
  "Ce qui n": {
@@ -7153,6 +7153,10 @@
  },
  "véhicules": {
   "texte": "ʋu",
+  "relu": false
+ },
+ "y appuie. La donnée qui les rendrait testables est en page Méthodologie.": {
+  "texte": "Numekugbalẽ si ana woate ŋu adzro wo me la dze le Metodaŋutinya ƒe axa dzi.",
   "relu": false
  },
  "« Les accidents augmentent » est nuancé : volume en hausse, taux en baisse.": {

@@ -138,7 +138,18 @@ MANUEL = {"en": {"Tableau de bord": "Dashboard", "Principal": "Main", "Analyses"
                       "of roads in poor condition) and a training deficit.",
                   "ont un réseau dégradé.": "have a degraded road network.",
                   "Choisir la maille": "Choose the level of detail", "Réseau et formation": "Road network and training",
-                  "À savoir :": "Good to know:"}}
+                  "À savoir :": "Good to know:",
+                  "confirmée": "confirmed", "infirmée": "refuted", "nuancée": "qualified",
+                  "non testable": "not testable", "Confirmées": "Confirmed",
+                  "Infirmées ou nuancées": "Refuted or qualified", "Non testables": "Not testable",
+                  "Synthèse": "Summary", "Sécurité routière": "Road safety",
+                  "Accidents par territoire": "Accidents by territory",
+                  "Qu'est-ce qui change, et que confirment les données ?": "What is changing, and what do the data confirm?",
+                  "La carte des constats": "The map of findings",
+                  "Ce qui n'a pas de territoire": "What has no territory",
+                  "Les 17 vérifications et hypothèses": "The 17 checks and assumptions",
+                  "Ce que chaque verdict change pour l'action": "What each verdict changes for action",
+                  "Verdict": "Verdict", "Énoncé": "Statement", "Niveau": "Level"}}
 
 
 def suspecte(src: str, trad: str) -> bool:

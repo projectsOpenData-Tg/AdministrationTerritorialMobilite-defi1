@@ -219,6 +219,21 @@ div[class*="st-key-carte_reco_"]:hover { transform: translateY(-4px); box-shadow
 [data-testid="stColumn"]:has(.carte-egale) [data-testid="stElementContainer"]:has(.carte-egale) [data-testid="stMarkdownContainer"],
 [data-testid="stColumn"]:has(.carte-egale) .carte-egale { height: 100%; box-sizing: border-box; margin-top: 0; margin-bottom: 0; }
 .lieu { color: #4a3aa7; font-weight: 600; }
+/* Encarts « Ce qui n'a pas de territoire » : carte blanche à liseré gauche coloré par le verdict */
+[class*="st-key-enc_"] { background: #ffffff; border: 1px solid #e2e8f0; border-left: 4px solid #e2e8f0; border-radius: 12px;
+  padding: 12px 16px; margin-bottom: 10px; }
+.encart-tete { font-size: 0.9rem; color: #172b3a; }
+.encart-verdict { font-weight: 700; text-transform: lowercase; }
+.encart-chiffre { font-family: 'Fraunces', Georgia, serif; font-size: 1.6rem; font-weight: 600; color: #0b263d; line-height: 1.1; margin-top: 2px; }
+.encart-legende { font-size: 0.78rem; color: #64748b; line-height: 1.4; }
+/* Tableau à badges de verdict (remplace le fond de cellule coloré) */
+.tbl-verdict { overflow: auto; border: 1px solid #e2e8f0; border-radius: 12px; background: #ffffff; margin-bottom: 0.4rem; }
+.tbl-verdict table { width: 100%; border-collapse: collapse; font-size: 0.86rem; }
+.tbl-verdict thead th { position: sticky; top: 0; background: #f1f4f8; color: #0b263d; font-weight: 700; text-align: left;
+  padding: 9px 12px; border-bottom: 1px solid #e2e8f0; white-space: nowrap; z-index: 1; }
+.tbl-verdict td { padding: 9px 12px; border-bottom: 1px solid #eef2f6; color: #172b3a; vertical-align: top; line-height: 1.45; }
+.tbl-verdict tbody tr:hover { background: #f7f9fc; }
+.verdict-badge { display: inline-block; border-radius: 999px; padding: 2px 10px; font-size: 0.78rem; font-weight: 600; white-space: nowrap; }
 .habitants { color: #ce1126; font-weight: 600; white-space: nowrap; }
 .limite-texte { font-size: 0.9rem; line-height: 1.5; color: #3a2a00; margin-top: 4px; }
 .limite.discret { background: transparent; border: 0; border-top: 1px solid #e2e8f0; border-radius: 0; padding: 12px 0 0; margin-top: 18px; }

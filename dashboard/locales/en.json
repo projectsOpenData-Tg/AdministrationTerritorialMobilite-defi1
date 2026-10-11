@@ -1694,7 +1694,7 @@
  },
  "Accidents par territoire": {
   "texte": "Accidents by territory",
-  "relu": false
+  "relu": true
  },
  "Accidents, blessés et tués, année par année, 2010": {
   "texte": "Accidents, injuries and deaths, year after year, 2010",
@@ -1920,8 +1920,8 @@
   "texte": "No licensed or registered driving schools, the nearest one is within 84.0 km.",
   "relu": false
  },
- "Aucune recommandation ne s'y appuie. La donnée qui les rendrait testables est en page Méthodologie.": {
-  "texte": "The data that would make them testable is on the methodology page.",
+ "Aucune recommandation ne s": {
+  "texte": "There are no recommendations.",
   "relu": false
  },
  "Aucune route classée : ni état ni km évalué.": {
@@ -2216,6 +2216,10 @@
   "texte": "What every verdict changes for",
   "relu": false
  },
+ "Ce que chaque verdict change pour l'action": {
+  "texte": "What each verdict changes for action",
+  "relu": true
+ },
  "Ce que cumule chacune des 10 premières": {
   "texte": "What each of the top 10 collects",
   "relu": false
@@ -2248,13 +2252,17 @@
   "texte": "What the data shows",
   "relu": false
  },
- "Ce qui change pour l'action": {
-  "texte": "What Changes for Action",
+ "Ce qui change pour l": {
+  "texte": "What changes for the",
   "relu": false
  },
  "Ce qui n": {
   "texte": "What is not",
   "relu": false
+ },
+ "Ce qui n'a pas de territoire": {
+  "texte": "What has no territory",
+  "relu": true
  },
  "Ce tableau de bord, qui lit des fichiers de résultats sans rien recalculer, et une présentation.": {
   "texte": "This dashboard, which reads results files without recalculating anything, and a presentation.",
@@ -2426,7 +2434,7 @@
  },
  "Confirmées": {
   "texte": "Confirmed",
-  "relu": false
+  "relu": true
  },
  "Conformes": {
   "texte": "Compliance",
@@ -3070,8 +3078,8 @@
   "relu": false
  },
  "Infirmées ou nuancées": {
-  "texte": "Infected or nuanced",
-  "relu": false
+  "texte": "Refuted or qualified",
+  "relu": true
  },
  "Institut National de la Statistique et des Études Économiques et Démographiques": {
   "texte": "National Institute of Statistics and Economic and Demographic Studies",
@@ -3226,8 +3234,8 @@
   "relu": false
  },
  "La carte des constats": {
-  "texte": "The map of the findings",
-  "relu": false
+  "texte": "The map of findings",
+  "relu": true
  },
  "La comparaison complète des zones, avec tous les indicateurs et leurs seuils, est en page Comparaison territoriale ; les deux mesures de l'accès rural sont en page Méthodologie.": {
   "texte": "The complete comparison of areas, with all indicators and their thresholds, is on the Territorial comparison page; both measures of rural access are on the Methodology page.",
@@ -3461,7 +3469,7 @@
  },
  "Les 17 vérifications et hypothèses": {
   "texte": "The 17 checks and assumptions",
-  "relu": false
+  "relu": true
  },
  "Les 17 vérifications et hypothèses du cadrage": {
   "texte": "The 17 checks and assumptions of the framework",
@@ -4037,7 +4045,7 @@
  },
  "Niveau": {
   "texte": "Level",
-  "relu": false
+  "relu": true
  },
  "Niveau (04)": {
   "texte": "Level (04)",
@@ -4101,7 +4109,7 @@
  },
  "Non testables": {
   "texte": "Not testable",
-  "relu": false
+  "relu": true
  },
  "Non évalué": {
   "texte": "Not evaluated",
@@ -4708,6 +4716,10 @@
   "texte": "Published nationwide only.",
   "relu": false
  },
+ "Qu'est-ce qui change, et que confirment les données ?": {
+  "texte": "What is changing, and what do the data confirm?",
+  "relu": true
+ },
  "Quantité": {
   "texte": "Quantity",
   "relu": false
@@ -5276,8 +5288,8 @@
   "relu": false
  },
  "Synthèse": {
-  "texte": "This is a summary.",
-  "relu": false
+  "texte": "Summary",
+  "relu": true
  },
  "Synthèse chiffrée": {
   "texte": "Key figures",
@@ -5289,7 +5301,7 @@
  },
  "Sécurité routière": {
   "texte": "Road safety",
-  "relu": false
+  "relu": true
  },
  "Sécurité routière : ce que la cible demande": {
   "texte": "Road safety: what the target wants",
@@ -5620,8 +5632,8 @@
   "relu": false
  },
  "Verdict": {
-  "texte": "The verdict",
-  "relu": false
+  "texte": "Verdict",
+  "relu": true
  },
  "Verdict :": {
   "texte": "The verdict:",
@@ -6137,7 +6149,7 @@
  },
  "confirmée": {
   "texte": "confirmed",
-  "relu": false
+  "relu": true
  },
  "d'une carte à l'autre.": {
   "texte": "From one map to another.",
@@ -6492,8 +6504,8 @@
   "relu": false
  },
  "infirmée": {
-  "texte": "ill",
-  "relu": false
+  "texte": "refuted",
+  "relu": true
  },
  "interrompt, elle ne passe pas par zéro. Niveau A.": {
   "texte": "It doesn't go through zero.",
@@ -6713,15 +6725,15 @@
  },
  "non testable": {
   "texte": "not testable",
-  "relu": false
+  "relu": true
  },
  "nuancé": {
   "texte": "shade",
   "relu": false
  },
  "nuancée": {
-  "texte": "shade",
-  "relu": false
+  "texte": "qualified",
+  "relu": true
  },
  "observé": {
   "texte": "observed",
@@ -7171,6 +7183,10 @@
   "texte": "vehicles",
   "relu": false
  },
+ "y appuie. La donnée qui les rendrait testables est en page Méthodologie.": {
+  "texte": "The data that would make them testable is on the methodology page.",
+  "relu": false
+ },
  "« Les accidents augmentent » est nuancé : volume en hausse, taux en baisse.": {
   "texte": "⁇  Accidents increase  ⁇  is nuanced: volume increases, rate decreases.",
   "relu": false
@@ -7220,8 +7236,8 @@
   "relu": false
  },
  "Énoncé": {
-  "texte": "Reported",
-  "relu": false
+  "texte": "Statement",
+  "relu": true
  },
  "Énoncé, verdict, et ce que montrent les données.": {
   "texte": "Pronounced, verdict, and what the data shows.",

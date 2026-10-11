@@ -61,7 +61,8 @@ def _dictionnaire(code: str) -> dict:
 # --- Découpage en segments ------------------------------------------------------------------------------------
 # Séparateurs gardés tels quels : balises HTML, entités, gabarits Plotly, gras markdown, sauts de ligne, puces,
 # flèches et pictogrammes, numéros cerclés.
-_SEP = re.compile(r"(<[^>]+>|&[a-z#0-9]+;|%\{[^}]*\}|\{[^}]*\}|\*\*|\n|^\s*[-•]\s+|[→←↗↘·①②③④⑤|—–›]"
+_SEP = re.compile(r"((?s:<(?:style|script)[^>]*>.*?</(?:style|script)>)"       # bloc CSS/JS protégé en entier
+                  r"|<[^>]+>|&[a-z#0-9]+;|%\{[^}]*\}|\{[^}]*\}|\*\*|\n|^\s*[-•]\s+|[→←↗↘·①②③④⑤|—–›]"
                   r"|[\U0001F1E6-\U0001F1FF]+|[\U0001F300-\U0001FAFF\u2600-\u27BF]\ufe0f?|:material/[a-z_]+:)", re.M)
 _LETTRES = re.compile(r"[A-Za-zÀ-ÿ]{3,}|^(et|ou)$")   # au moins un vrai mot (« km », « % » seuls ne suffisent pas)
 
@@ -103,14 +104,14 @@ def _noter(seg: str):
 
 def segments(texte: str) -> list[str]:
     """Segments traduisibles d'un texte (clés des fichiers de langue)."""
-    if not isinstance(texte, str) or "<style" in texte:
+    if not isinstance(texte, str):
         return []
     return [m.strip() for m in _SEP.split(texte) if m and not _SEP.fullmatch(m) and _a_traduire(m)]
 
 
 def bi(texte, code: str | None = None):
     """Traduit un texte affiché (str) dans la langue courante, segment par segment ; renvoie tel quel tout le reste."""
-    if not isinstance(texte, str) or not texte or "<style" in texte:      # CSS : jamais traduit
+    if not isinstance(texte, str) or not texte:
         return texte
     code = code or langue()
     if code == "fr" and not _COLLECTE:

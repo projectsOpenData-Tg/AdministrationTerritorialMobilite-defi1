@@ -1919,8 +1919,8 @@
   "texte": "Paanaɣ nʋmɔʋ lɩzʋʋ sukuli nakʋyʋ, paanaɣ nʋmɔʋ lɩzʋʋ sukuli nakʋyʋ, paanaɣ ɖɔɖɔ nʋmɔʋ lɩzʋʋ sukuli nakʋyʋ.",
   "relu": false
  },
- "Aucune recommandation ne s'y appuie. La donnée qui les rendrait testables est en page Méthodologie.": {
-  "texte": "Tɔm ndʋ tɩɩpɩzɩɣ nɛ tɩsɩnɩ-wɛ nɛ patɩlɩ-wɛ yɔ, tɩwɛ takayaɣ ŋga payaɣ se Metodologie yɔ ka-taa.",
+ "Aucune recommandation ne s": {
+  "texte": "Paapɩzɩɣ nɛ pɔyɔɔdɩ tɔm natʋyʋ",
   "relu": false
  },
  "Aucune route classée : ni état ni km évalué.": {
@@ -2247,8 +2247,8 @@
   "texte": "Tɔm ndʋ tɩlɩnɩ kɩlɛmɩŋ yɔɔ yɔ",
   "relu": false
  },
- "Ce qui change pour l'action": {
-  "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ pɩwɛɛ se ɖɩwɛɛ nɛ ɖɩlakɩ tʋmɩyɛ yɔ",
+ "Ce qui change pour l": {
+  "texte": "Mbʋ pɩlɛɣzɩ ɛjaɖɛ",
   "relu": false
  },
  "Ce qui n": {
@@ -7155,6 +7155,10 @@
  },
  "véhicules": {
   "texte": "kpataa",
+  "relu": false
+ },
+ "y appuie. La donnée qui les rendrait testables est en page Méthodologie.": {
+  "texte": "Tɔm ndʋ tɩpɩzɩɣ nɛ tɩsɩnɩ-wɛ nɛ patɩlɩ-tʋ yɔ, tɩlɩnɩ \"Methodology\" hɔɔlʋʋ taa.",
   "relu": false
  },
  "« Les accidents augmentent » est nuancé : volume en hausse, taux en baisse.": {
