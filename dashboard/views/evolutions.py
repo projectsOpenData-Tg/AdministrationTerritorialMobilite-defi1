@@ -347,53 +347,50 @@ with ong[1]:
     motos24 = valn("O1-01", 2024, "Moto")
     rangee_kpi("Mobilité — ce qui change", [
         carte_kpi("Immatriculations sur 20 ans", "×4,56", "de 2002 à 2022",
-                  "×1,83 en 2024, depuis 2004 (année de rupture de série).", etiquette="B", bordure=THEME["Mobilité"]),
+                  "×1,83 en 2024, depuis 2004 (année de rupture de série).", etiquette="B", icone="permis"),
         carte_kpi("Croissance annuelle moyenne", "7,8 %", "par an, 1990–2024",
-                  "Motos : 11,7 % par an ; voitures : 4,2 %.", etiquette="B", bordure=THEME["Mobilité"]),
+                  "Motos : 11,7 % par an ; voitures : 4,2 %.", etiquette="B", icone="vehicule"),
         carte_kpi("Part des motos", "74,4 %", "des immatriculations de 2024",
-                  "22,2 % en 1990.", etiquette="B", ton="ok", bordure=THEME["Mobilité"]),
+                  "22,2 % en 1990.", etiquette="B", ton="ok", icone="moto"),
     ], centre=True)
-    g, d = st.columns([1.7, 1], vertical_alignment="top")
-    with g:
-        titre_bloc("Immatriculations par groupe, 1990–2024")
-        mode = st.radio("Affichage", ["Volume", "Part (%)", "Pour 1 000 habitants"], horizontal=True,
-                        label_visibility="collapsed", key="ev_immat_mode")
-        COUL = {"Moto": "#2a78d6", "Voiture": "#eb6834", "Poids lourd": "#1baf7a", "Bus et car": "#eda100",
-                "Autres": "#e87ba4"}
-        if mode == "Volume":
-            src, cats = NAT[NAT.ID == "O1-01"], list(COUL)
-        elif mode == "Part (%)":
-            src, cats = NAT[NAT.ID == "O1-02"], list(COUL)
-        else:
-            src, cats = NAT[NAT.ID == "O1-04"], ["Ensemble"]
-        src = src[src["Année"].astype(str).str.fullmatch(r"\d{4}")].copy()
-        src["Année"] = src["Année"].astype(int)
-        fig = go.Figure()
-        if mode == "Part (%)":
-            for cat in cats:
-                s = src[src["Catégorie"] == cat].sort_values("Année")
-                fig.add_trace(go.Scatter(x=s["Année"], y=s["Valeur"], name=cat, mode="lines", stackgroup="un",
-                                         line=dict(color=COUL[cat], width=0.5)))
-        else:
-            for cat in cats:
-                s = src[src["Catégorie"] == cat].sort_values("Année")
-                coul = COUL.get(cat, "#1c5cab")
-                fig.add_trace(go.Scatter(x=s["Année"], y=s["Valeur"], name=cat, mode="lines",
-                                         line=dict(color=coul, width=2)))
-        habiller(fig, 400, legend=dict(orientation="h", y=1.14, x=0), margin=dict(l=10, r=10, t=48, b=10))
-        # Les ruptures de série portent leur année en haut de la ligne, à l'intérieur du tracé (sous la légende).
-        for an in [1995, 2004]:
-            fig.add_vline(x=an, line_color="#8a8780", line_width=1.2, line_dash="dot",
-                          annotation_text=f"<b>{an}</b> · rupture de série", annotation_position="top left",
-                          annotation_yshift=-8, annotation_font=dict(color="#55534e", size=10))
-        tracer(fig, "ev_immat")
-        note("Ruptures de série en 1995 et 2004 (pointillés). Volume : niveau A ; part : B ; pour 1 000 habitants : "
-             "B en 2010 et 2022 (recensements), C les autres années.")
-        export_csv(NAT[NAT.ID == "O1-01"][["Année", "Catégorie", "Valeur"]], "immatriculations_groupe.csv", "ev_exp_im")
-    with d:
-        constat("Les immatriculations ont été multipliées par <strong>4,56</strong> de 2002 à 2022, et les motos font "
-                "<strong>80,6 %</strong> de la hausse. Les permis moto suivent de loin : 40 motos immatriculées pour "
-                "un permis moto sur 2007–2024.")
+    titre_bloc("Immatriculations par groupe de véhicules, 1990–2024")
+    mode = st.radio("Affichage", ["Volume", "Part (%)", "Pour 1 000 habitants"], horizontal=True,
+                    label_visibility="collapsed", key="ev_immat_mode")
+    COUL = {"Moto": "#2a78d6", "Voiture": "#eb6834", "Poids lourd": "#1baf7a", "Bus et car": "#eda100",
+            "Autres": "#e87ba4"}
+    if mode == "Volume":
+        src, cats = NAT[NAT.ID == "O1-01"], list(COUL)
+    elif mode == "Part (%)":
+        src, cats = NAT[NAT.ID == "O1-02"], list(COUL)
+    else:
+        src, cats = NAT[NAT.ID == "O1-04"], ["Ensemble"]
+    src = src[src["Année"].astype(str).str.fullmatch(r"\d{4}")].copy()
+    src["Année"] = src["Année"].astype(int)
+    fig = go.Figure()
+    if mode == "Part (%)":
+        for cat in cats:
+            s = src[src["Catégorie"] == cat].sort_values("Année")
+            fig.add_trace(go.Scatter(x=s["Année"], y=s["Valeur"], name=cat, mode="lines", stackgroup="un",
+                                     line=dict(color=COUL[cat], width=0.5)))
+    else:
+        for cat in cats:
+            s = src[src["Catégorie"] == cat].sort_values("Année")
+            coul = COUL.get(cat, "#1c5cab")
+            fig.add_trace(go.Scatter(x=s["Année"], y=s["Valeur"], name=cat, mode="lines",
+                                     line=dict(color=coul, width=2)))
+    habiller(fig, 400, legend=dict(orientation="h", y=1.14, x=0), margin=dict(l=10, r=10, t=48, b=10))
+    # Les ruptures de série portent leur année en haut de la ligne, à l'intérieur du tracé (sous la légende).
+    for an in [1995, 2004]:
+        fig.add_vline(x=an, line_color="#8a8780", line_width=1.2, line_dash="dot",
+                      annotation_text=f"<b>{an}</b> · rupture de série", annotation_position="top left",
+                      annotation_yshift=-8, annotation_font=dict(color="#55534e", size=10))
+    tracer(fig, "ev_immat")
+    note("Ruptures de série en 1995 et 2004 (pointillés). Volume : niveau A ; part : B ; pour 1 000 habitants : "
+         "B en 2010 et 2022 (recensements), C les autres années.")
+    export_csv(NAT[NAT.ID == "O1-01"][["Année", "Catégorie", "Valeur"]], "immatriculations_groupe.csv", "ev_exp_im")
+    constat("Les immatriculations ont été multipliées par <strong>4,56</strong> de 2002 à 2022, et les motos font "
+            "<strong>80,6 %</strong> de la hausse. Les permis moto suivent de loin : 40 motos immatriculées pour "
+            "un permis moto sur 2007–2024.")
 
     g, d = st.columns(2, vertical_alignment="top")
     with g:
@@ -415,7 +412,8 @@ with ong[1]:
                       annotation_text="<b>2013</b> · non renseignée", annotation_position="top left",
                       annotation_yshift=-8, annotation_font=dict(color="#55534e", size=10))
         tracer(fig, "ev_permis")
-        note("2013 non renseignée : la courbe s'interrompt, elle ne passe pas par zéro. Niveau A.")
+        note_carte("2013 non renseignée : la courbe s'interrompt, elle ne passe pas par zéro. Cela s'explique car "
+                   "l'année 2013 n'est pas renseignée dans les sources.", couleur="vert")
     with d:
         titre_bloc("Immatriculations pour un permis, cumul 2007–2024")
         ratio = NAT[(NAT.ID == "O1-09") & (NAT["Année"].astype(str) == "2007–2024")].copy()
@@ -428,8 +426,9 @@ with ong[1]:
         habiller(fig, 320, xaxis=dict(gridcolor="#efece4", range=[0, ratio["Valeur"].max() * 1.15]),
                  yaxis=dict(gridcolor="rgba(0,0,0,0)"), showlegend=False)
         tracer(fig, "ev_ratio")
-        note("Sur 2007–2024, 40 motos immatriculées pour un permis moto délivré ; moins de 2,5 véhicules pour un "
-             "permis dans les autres catégories. Niveau B. Le permis F n'a aucun véhicule correspondant.")
+        note_carte("Sur 2007–2024, <strong>40 motos</strong> immatriculées pour un permis moto délivré ; "
+                   "<strong>moins de 2,5 véhicules</strong> pour un permis dans les autres catégories. "
+                   "<strong>Le permis F</strong> n'a aucun véhicule correspondant.", couleur="vert")
 
     titre_bloc("Parc estimé des véhicules, 2009–2024",
                "Valeur centrale et fourchette ; sert de dénominateur aux taux par véhicule.")
@@ -465,8 +464,9 @@ with ong[1]:
                                font=dict(color="#1c5cab", size=9))
     habiller(fig, 340, legend=dict(orientation="h", y=1.12, x=0), margin=dict(l=10, r=26, t=36, b=10))
     tracer(fig, "ev_parc")
-    note("En 2024 : 751 398 véhicules (de 579 845 à 965 702), dont 449 226 motos. Le parc n'est pas publié : il est "
-         "estimé à partir des immatriculations et d'une durée de vie par groupe (7 ans pour une moto). Niveau C.")
+    note_carte("En 2024 : <span class=\"lieu\">751 398 véhicules</span> (de 579 845 à 965 702), dont "
+               "<span class=\"lieu\">449 226 motos</span>. Le parc n'est pas publié : il est estimé à partir des "
+               "immatriculations et d'une durée de vie par groupe (7 ans pour une moto).", couleur="vert")
     limite("Immatriculations de l'année, pas parc en circulation. Ruptures de série en 1995 et 2004. Permis de 2013 "
            "non renseignés. Le parc est estimé (C), et les taux par habitant hors 2010 et 2022 reposent sur une "
            "population projetée.")

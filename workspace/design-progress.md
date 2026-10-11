@@ -235,3 +235,23 @@ Couleurs fixes par donnée, dans `theme.py`, pour qu'un indicateur garde sa coul
 - Cartes d'encart : `overflow: hidden` pour un bord net (correction du « haché » en bas de la carte « Accidents par
   territoire »).
 
+
+## 18. Évolutions — onglet Mobilité (sur design/palette-a)
+
+- **Icônes de thème sur les 3 chiffres clés**, chacun avec sa propre couleur de liseré bas (plus de liseré uniforme) :
+  « Immatriculations sur 20 ans » → pictogramme *permis/plaque* (bleu `#2474C6`), « Croissance annuelle » →
+  *véhicule* (vert `#16834A`), « Part des motos » → *moto* (orange `#EB6834`). Deux nouvelles icônes ajoutées au
+  dictionnaire `ICONES` de `composants.py` : `permis` et `moto`.
+- **Graphe « Immatriculations par groupe » en pleine largeur** (suppression de la colonne de droite), et la carte
+  **Constat** passe **sous la section**, comme sur les autres pages.
+- Titre de section : « Immatriculations par groupe, 1990–2024 » → **« Immatriculations par groupe de véhicules,
+  1990–2024 »**.
+- **Les constats sous chaque graphe passent en cartes blanches à pictogramme « i » et liseré vert** (`note_carte`),
+  au lieu de simples légendes grises :
+  - Permis : « 2013 non renseignée… Cela s'explique car l'année 2013 n'est pas renseignée dans les sources. »
+    (mention « Niveau A » retirée).
+  - Ratio : « Sur 2007–2024, **40 motos**… **moins de 2,5 véhicules**… **Le permis F**… » (chiffres et « permis F »
+    en gras ; « Niveau B » retiré).
+  - Parc : « En 2024 : **751 398 véhicules**… dont **449 226 motos**… » (chiffres en **violet** via la classe `.lieu` ;
+    « Niveau C » retiré).
+- **i18n** : 12 nouveaux segments traduits (en/ee/kbp) ; anciennes chaînes remplacées nettoyées des locales.

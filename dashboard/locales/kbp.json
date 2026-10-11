@@ -51,6 +51,10 @@
   "texte": "(49,8 km mbʋ yɔ)",
   "relu": false
  },
+ "(de 579 845 à 965 702), dont": {
+  "texte": "(Kɩpɩsɩnaʋ takayɩhayʋʋ)",
+  "relu": false
+ },
  "(la formation)": {
   "texte": "(Papɩsɩna-kɛ nɛ ɖooo lɔŋ)",
   "relu": false
@@ -117,6 +121,10 @@
  },
  ". Chaque étape a été gelée avant la suivante, et aucun chiffre affiché n'a été recopié à la main.": {
   "texte": "Paɖaɣlaa se paa ñʋŋ weyi lɛ, ɛ-taa tɛtɛ lɛ, ɛ-taa tɛtɛ lɛ, ɛ-taa tɛtɛ lɛ, paɖaɣlaa nɛ paɖaɣlaa.",
+  "relu": false
+ },
+ ". Le parc n'est pas publié : il est estimé à partir des immatriculations et d'une durée de vie par groupe (7 ans pour une moto).": {
+  "texte": ". Paapɩzɩɣ patɩlɩ ɖenɖe pɔcɔŋna yɔ: pamaɣzaɣ-kʋ takayɩsɩ nzɩ sɩhaɣaɣ ɛyaa waɖɛ se pɛwɛɛ nɛ pacaɣ wezuu ɛzɩ paa kpɩtaʋ ŋgʋ kɩ-taa kɔyɔ (pɩnzɩ hiŋ lʋbɛ kɛ moto nakʋyʋ yɔɔ).",
   "relu": false
  },
  "0 auto-écoles à ouvrir": {
@@ -531,8 +539,8 @@
   "texte": "Pɩnaɣ 2013",
   "relu": false
  },
- "2013 non renseignée : la courbe s": {
-  "texte": "Pɩnaɣ 2013 taa lɛ, tɔm ndʋ tɩtɩtɔŋna yɔ: s-liɖe",
+ "2013 non renseignée : la courbe s'interrompt, elle ne passe pas par zéro. Cela s'explique car l'année 2013 n'est pas renseignée dans les sources.": {
+  "texte": "Pɩtɩkɛ pɩnaɣ 2013 yɔɔ lɛ, tɔm ndʋ tɩlɩnɩ Bibl taa yɔ, tɩ-taa natʋyʋ fɛyɩ.",
   "relu": false
  },
  "2019 permis moto obligatoire": {
@@ -585,10 +593,6 @@
  },
  "2024), mais les 6 taux baissent.": {
   "texte": "Pɩnaɣ 2024 taa lɛ, ɛyaa mba palakaɣ mbʋ yɔ pɛwɛɛ nɛ petisiɣni-wɛ.",
-  "relu": false
- },
- "2024, 40 motos immatriculées pour un permis moto délivré ; moins de 2,5 véhicules pour un permis dans les autres catégories. Niveau B. Le permis F n": {
-  "texte": "Pɩnaɣ 2024 taa lɛ, patalɩ kpɩtaŋ 40 nɛ palɩzɩ pa-tɩ se pɛwɛnɩ nʋmɔʋ lɩzʋʋ waɖɛ.",
   "relu": false
  },
  "2025-2031, sans action nouvelle": {
@@ -963,6 +967,10 @@
   "texte": "Ɛyaa 40 240",
   "relu": false
  },
+ "40 motos": {
+  "texte": "40 kpɩkpɩkpɩ",
+  "relu": false
+ },
  "40,0 % des routes en mauvais état (124,1 km évalués, 5 tronçons critiques).": {
   "texte": "Lɩmaɣza ana a-yɔɔ lɛ, ɛyaa mba pɛwɛnɩ lɩmaɣza kɩdɛkɛda yɔ, pa-taa 40.0% wɛ kaɖɛ nʋmɔʋ taa.",
   "relu": false
@@ -985,6 +993,10 @@
  },
  "43 indicateurs": {
   "texte": "43 Wɩlɩyaa",
+  "relu": false
+ },
+ "449 226 motos": {
+  "texte": "449 226 motocicles",
   "relu": false
  },
  "45,2 km évalués": {
@@ -1293,6 +1305,10 @@
  },
  "75,6 km évalués": {
   "texte": "75,6 km mbʋ yɔ",
+  "relu": false
+ },
+ "751 398 véhicules": {
+  "texte": "751 398 lɔɔɖɩyɛ",
   "relu": false
  },
  "795 529 habitants concernés": {
@@ -2791,10 +2807,6 @@
   "texte": "Pɩnaɣ 2021 taa lɛ, ɖɩnaɣ",
   "relu": false
  },
- "En 2024 : 751 398 véhicules (de 579 845 à 965 702), dont 449 226 motos. Le parc n": {
-  "texte": "Pɩnaɣ 2024 taa lɛ, ɛyaa 751 398 (kpaɣ 579 845 nɛ patalɩ 965 702) nɛ patalɩ 449 226.",
-  "relu": false
- },
  "En km, relevé de 2020. Les 49 tronçons de la vue par défaut sont les tronçons critiques du 07 (669,34 km). FRE : frontière. Pour 7 tronçons, l": {
   "texte": "Pɩnaɣ 2020 taa lɛ, kɩ-lɩmaɣza ana a-taa lɛ, kɩwɛna ɛzɩ kilomɛtanaa taa yɔ.",
   "relu": false
@@ -3031,8 +3043,8 @@
   "texte": "Ñʋŋ weyi ɩ-taa paɖʋʋ-wɛ hɩɖɛ yɔ",
   "relu": false
  },
- "Immatriculations par groupe, 1990": {
-  "texte": "Pɩnaɣ 1990 taa ɛyaa mba pasɩba nɛ patalɩ ajɛya wena a-taa palakaɣ tʋmɩyɛ yɔ",
+ "Immatriculations par groupe de véhicules, 1990": {
+  "texte": "Pɩnaɣ 1990 taa lɛ, ɛyaa mba pakpaɣ nʋmɔʋ nɛ patɩŋnɩ nʋmɔŋ ndɩ ndɩ yɔɔ yɔ, pa-taa nabɛyɛ kaawɛnɩ lɩmaɣza kɩbana.",
   "relu": false
  },
  "Immatriculations pour 1 000 habitants": {
@@ -3389,6 +3401,10 @@
  },
  "Le parc immatriculé a": {
   "texte": "Paakpɛndɩna-wɛ nɛ pɔñɔɔzɩ pa-tɩ.",
+  "relu": false
+ },
+ "Le permis F": {
+  "texte": "Lɩmaɣzɩyɛ F",
   "relu": false
  },
  "Le plafond suppose qu'aucun usager de deux-roues tué ne portait de casque : limite haute, pas une estimation. Rappel : 8,62 tués déclarés pour 100 000 habitants en 2021, contre 22,7 estimés par l'OMS": {
@@ -5825,10 +5841,6 @@
   "texte": "Kɩ-hɔɔlɩŋ weyi ɩ-taa paɖɔɔ yɔ",
   "relu": false
  },
- "a aucun véhicule correspondant.": {
-  "texte": "Pɩtɩkɛ nʋmɔʋ ŋgʋ kɩ-yɔɔ ɖɩtɩŋɩɣna yɔ.",
-  "relu": false
- },
  "a pas de carte.": {
   "texte": "Ɛfɛyɩnɩ takayaɣ nakɛyɛ.",
   "relu": false
@@ -6325,10 +6337,6 @@
   "texte": "Pɩtɩkɛ takayɩhatʋ ndʋ tɩ-taa paayɔɔdʋʋ tɔm ndʋ yɔ tɩ-taa.",
   "relu": false
  },
- "est pas publié : il est estimé à partir des immatriculations et d": {
-  "texte": "Pɩtɩkɛ takayɩsɩ nzɩ sɩ-taa palɩzɩ-wɛ yɔ sɩ-taa:",
-  "relu": false
- },
  "est pas publiée. Le coût des actions est absent. Chaque manque est écrit, jamais comblé par une hypothèse.": {
   "texte": "Pɩtɩkɛ tɔm ndʋ tɩlɩnɩ tɔm ndʋ tɩ-taa yɔ tɩ-yɔɔ.",
   "relu": false
@@ -6477,12 +6485,12 @@
   "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ pɩwɛɛ se pɔñɔɔzʋʋ tɔm susuu tʋmɩyɛ yɔ:",
   "relu": false
  },
- "infirmée": {
-  "texte": "kʋdɔndʋ",
+ "immatriculées pour un permis moto délivré ;": {
+  "texte": "pasɩma-wɛ se palɩzɩ pa-tɩ nɛ pe-tomnaɣ lɔɔɖɩyɛ nʋmɔʋ lɩzʋʋ lone naɖɩyɛ taa;",
   "relu": false
  },
- "interrompt, elle ne passe pas par zéro. Niveau A.": {
-  "texte": "Pɩtɩkɛ kɩwɛ kɩ-taa kɔyɔ, kɩwɛ kɩ-taa nɛ kɩwɛɛ kɩ-taa.",
+ "infirmée": {
+  "texte": "kʋdɔndʋ",
   "relu": false
  },
  "inventaire : il n": {
@@ -6649,8 +6657,16 @@
   "texte": "nɛ pɩtalɩ 100 000",
   "relu": false
  },
+ "moins de 2,5 véhicules": {
+  "texte": "nɛ pɩtaakɔɔ nɛ pɩtalɩ 2,5",
+  "relu": false
+ },
  "motos": {
   "texte": "kpɩkpɩkpɩ",
+  "relu": false
+ },
+ "n'a aucun véhicule correspondant.": {
+  "texte": "Pɩtɩkɛ nʋmɔʋ ŋgʋ kɩ-yɔɔ ɛyʋ tɩŋɩɣna yɔ.",
   "relu": false
  },
  "n'ont aucune auto-école agréée ;": {
@@ -6851,6 +6867,10 @@
  },
  "pour 100 000 habitants": {
   "texte": "paa ɛyaa 100 000",
+  "relu": false
+ },
+ "pour un permis dans les autres catégories.": {
+  "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ pɩwɛɛ se ɛyʋ ɛwɛɛ nɛ ɛñɩnɩɣ nʋmɔʋ lɩzʋʋ waɖɛ yɔ.",
   "relu": false
  },
  "premières délivrances(cat, an) / population(âge ≥ âge minimal PA-05, an) × 1 000": {
@@ -7103,10 +7123,6 @@
  },
  "une de ces formules. L": {
   "texte": "Lɩmaɣza ana a-taa natʋyʋ.",
-  "relu": false
- },
- "une durée de vie par groupe (7 ans pour une moto). Niveau C.": {
-  "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ pɩwɛɛ se ɖɩwɛɛ nɛ ɖɩlakɩ tʋmɩyɛ yɔ, ɖɩ-yɔɔ lɛ, ɖɩlakɩ tʋmɩyɛ.",
   "relu": false
  },
  "une fourchette sur chaque quantité": {

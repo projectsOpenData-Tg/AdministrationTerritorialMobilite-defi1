@@ -51,6 +51,10 @@
   "texte": "(49,8 km ƒe didime)",
   "relu": false
  },
+ "(de 579 845 à 965 702), dont": {
+  "texte": "(wotso 579,845 va se ɖe 965,702)",
+  "relu": false
+ },
  "(la formation)": {
   "texte": "(Hehenana)",
   "relu": false
@@ -117,6 +121,10 @@
  },
  ". Chaque étape a été gelée avant la suivante, et aucun chiffre affiché n'a été recopié à la main.": {
   "texte": "Wotsrɔ̃a nu sia nu le afɔ sia afɔ nu, eye womeŋlɔa xexlẽdzesi siwo le afi ma la ɖe asi o.",
+  "relu": false
+ },
+ ". Le parc n'est pas publié : il est estimé à partir des immatriculations et d'une durée de vie par groupe (7 ans pour une moto).": {
+  "texte": "Wometa afi si ʋua le o: Wotsina be yewoakpɔe le mɔ̃a ƒe dzesiawo kple ɣeyiɣi si wòzãna ɖe ʋua ŋu le ƒuƒoƒo aɖe me (ƒe 7 le ʋua me).",
   "relu": false
  },
  "0 auto-écoles à ouvrir": {
@@ -531,8 +539,8 @@
   "texte": "Ƒe 2013 si womegblɔ o",
   "relu": false
  },
- "2013 non renseignée : la courbe s": {
-  "texte": "2013 si womegblɔ o: s-liƒo",
+ "2013 non renseignée : la courbe s'interrompt, elle ne passe pas par zéro. Cela s'explique car l'année 2013 n'est pas renseignée dans les sources.": {
+  "texte": "Ƒe 2013 si womegblɔe ɖi o: ƒea ƒe nuŋɔŋlɔa dzudzɔna, eye megena ɖe naneke me o.",
   "relu": false
  },
  "2019 permis moto obligatoire": {
@@ -585,10 +593,6 @@
  },
  "2024), mais les 6 taux baissent.": {
   "texte": "Le ƒe 2024 me la, nu sia nu va yi ɖe edzi.",
-  "relu": false
- },
- "2024, 40 motos immatriculées pour un permis moto délivré ; moins de 2,5 véhicules pour un permis dans les autres catégories. Niveau B. Le permis F n": {
-  "texte": "2024, moto 40 siwo ŋu mɔkeke ƒe mɔɖeɖe si woɖe ɖe go le; ʋɔ 2,5 kple edzivɔ le mɔɖeɖe siwo le hatsotso bubuwo me la me.",
   "relu": false
  },
  "2025-2031, sans action nouvelle": {
@@ -963,6 +967,10 @@
   "texte": "40 240 le dukɔa me",
   "relu": false
  },
+ "40 motos": {
+  "texte": "Moto 40",
+  "relu": false
+ },
  "40,0 % des routes en mauvais état (124,1 km évalués, 5 tronçons critiques).": {
   "texte": "Mɔ siwo me nɔnɔme sesẽwo le la dometɔ 40.0 le alafa me (124.1 km le akɔntabubu me, 5 nye nu vevi aɖewo).",
   "relu": false
@@ -985,6 +993,10 @@
  },
  "43 indicateurs": {
   "texte": "43",
+  "relu": false
+ },
+ "449 226 motos": {
+  "texte": "449 226",
   "relu": false
  },
  "45,2 km évalués": {
@@ -1293,6 +1305,10 @@
  },
  "75,6 km évalués": {
   "texte": "75,6 km siwo ŋu woke ɖo",
+  "relu": false
+ },
+ "751 398 véhicules": {
+  "texte": "751 398 ʋu",
   "relu": false
  },
  "795 529 habitants concernés": {
@@ -2791,10 +2807,6 @@
   "texte": "Le ƒe 2021 me la,",
   "relu": false
  },
- "En 2024 : 751 398 véhicules (de 579 845 à 965 702), dont 449 226 motos. Le parc n": {
-  "texte": "Le ƒe 2024 me la: ʋu 751,398 (tso 579,845 va ɖo 965,702), siwo dometɔ 449,226 nye motowo.",
-  "relu": false
- },
  "En km, relevé de 2020. Les 49 tronçons de la vue par défaut sont les tronçons critiques du 07 (669,34 km). FRE : frontière. Pour 7 tronçons, l": {
   "texte": "Le km dzi, le ƒe 2020 me la, nukpɔkpɔ ƒe akpa 49 siwo nye ŋkubiãnyawo le 07 (669.34 km) la me.",
   "relu": false
@@ -3031,8 +3043,8 @@
   "texte": "Subɔsubɔhawo ƒe ŋkɔwo",
   "relu": false
  },
- "Immatriculations par groupe, 1990": {
-  "texte": "Ƒomewo ƒe Ŋugbedodede, 1990",
+ "Immatriculations par groupe de véhicules, 1990": {
+  "texte": "Ʋuwo ƒe hatsotso ƒe ŋkɔwo, 1990",
   "relu": false
  },
  "Immatriculations pour 1 000 habitants": {
@@ -3389,6 +3401,10 @@
  },
  "Le parc immatriculé a": {
   "texte": "Tɔxexeƒe si ŋu womeŋlɔ ŋkɔ ɖo o la",
+  "relu": false
+ },
+ "Le permis F": {
+  "texte": "Mɔɖeɖe F",
   "relu": false
  },
  "Le plafond suppose qu'aucun usager de deux-roues tué ne portait de casque : limite haute, pas une estimation. Rappel : 8,62 tués déclarés pour 100 000 habitants en 2021, contre 22,7 estimés par l'OMS": {
@@ -5823,10 +5839,6 @@
   "texte": "Anyigbadzigbawo",
   "relu": false
  },
- "a aucun véhicule correspondant.": {
-  "texte": "Ʋu aɖeke meli si sɔ kplii o.",
-  "relu": false
- },
  "a pas de carte.": {
   "texte": "Gagbalẽvi aɖeke mele esi o.",
   "relu": false
@@ -6323,10 +6335,6 @@
   "texte": "Nu siwo ku ɖe nutowo, nutowo kple nutowo ŋu la le Horizon 2031 ƒe axa dzi.",
   "relu": false
  },
- "est pas publié : il est estimé à partir des immatriculations et d": {
-  "texte": "Womeɖe gbeƒãe o:",
-  "relu": false
- },
  "est pas publiée. Le coût des actions est absent. Chaque manque est écrit, jamais comblé par une hypothèse.": {
   "texte": "Womeɖe asi le ga si woɖuna la ŋu o. Woŋlɔa ga si woɖuna la ɖi, eye wometea ŋu tsɔa ga si woɖuna la ɖoa teƒe aɖeke o.",
   "relu": false
@@ -6475,12 +6483,12 @@
   "texte": "Ameɖegbalẽwo (kpe, ƒe) / Σ ameɖegbalẽwo (kpe) × 100",
   "relu": false
  },
- "infirmée": {
-  "texte": "gbɔdzɔgbɔdzɔ",
+ "immatriculées pour un permis moto délivré ;": {
+  "texte": "wole mɔkeke ƒe mɔɖegbalẽ aɖe si woɖe ɖe go la dzi;",
   "relu": false
  },
- "interrompt, elle ne passe pas par zéro. Niveau A.": {
-  "texte": "Ne woɖe asi le eŋu la, megena ɖe naneke me o.",
+ "infirmée": {
+  "texte": "gbɔdzɔgbɔdzɔ",
   "relu": false
  },
  "inventaire : il n": {
@@ -6647,8 +6655,16 @@
   "texte": "si mede 100,000 o",
   "relu": false
  },
+ "moins de 2,5 véhicules": {
+  "texte": "Ʋu siwo mede 2,5 o",
+  "relu": false
+ },
  "motos": {
   "texte": "motowo",
+  "relu": false
+ },
+ "n'a aucun véhicule correspondant.": {
+  "texte": "ʋu aɖeke mele eme o.",
   "relu": false
  },
  "n'ont aucune auto-école agréée ;": {
@@ -6849,6 +6865,10 @@
  },
  "pour 100 000 habitants": {
   "texte": "le ame 100,000 ɖe sia ɖe dzi",
+  "relu": false
+ },
+ "pour un permis dans les autres catégories.": {
+  "texte": "le mɔɖeɖe siwo le hatsotso bubuwo me ŋu.",
   "relu": false
  },
  "premières délivrances(cat, an) / population(âge ≥ âge minimal PA-05, an) × 1 000": {
@@ -7101,10 +7121,6 @@
  },
  "une de ces formules. L": {
   "texte": "Le kpɔɖeŋu me, nu siwo míesusu be wo dometɔ aɖewoe nye esiawo dometɔ ɖeka.",
-  "relu": false
- },
- "une durée de vie par groupe (7 ans pour une moto). Niveau C.": {
-  "texte": "Ne èkpɔe be èle mɔ̃ dzi la, èle mɔ̃ dzi le ɣeyiɣi kpui aɖe ko me.",
   "relu": false
  },
  "une fourchette sur chaque quantité": {
