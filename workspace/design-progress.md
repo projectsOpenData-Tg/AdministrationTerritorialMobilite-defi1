@@ -120,3 +120,16 @@ Couleurs fixes par donnée, dans `theme.py`, pour qu'un indicateur garde sa coul
   lignes — « Une date situe une variation… » puis « Repères : ① … ② … ③ … » (`.note-carte`).
 - **À retenir** : carte blanche, cinq messages numérotés dans des pastilles rondes (`.retenir`).
 
+## 9. Permis, notes, synthèse et limite (Vue nationale)
+
+- **Permis de conduire délivrés** : le total (38 531, « permis délivrés en 2024, toutes catégories », niveau A)
+  revient à gauche du graphique, dans une carte bleu clair `#E8F0FB` ; graphique inchangé.
+- « Les permis moto ont bondi… » : bande arrondie bleu clair, **liseré à droite**.
+- Sous le graphique immatriculations et permis, **deux cartes blanches côte à côte** :
+  - liseré rouge à gauche : « En 2021, on comptait 310 immatriculations de motos pour chaque permis moto délivré,
+    contre seulement 6 en 2024. » (nouvelle formulation) ;
+  - liseré bleu à gauche, fond désormais blanc : « Une date situe une variation… » et « Repères : ① ② ③ ».
+- **Synthèse chiffrée** : carte vert clair (`#E6F4EC`, textes vert foncé), bouton « Voir les recommandations »
+  dans la carte avec le style de « Voir le détail » ; même hauteur que la carte « À retenir ».
+- **Limite** : titre « Limite » (au lieu de « Limite de cette page ») ; « (niveau C) » retiré du texte.
+

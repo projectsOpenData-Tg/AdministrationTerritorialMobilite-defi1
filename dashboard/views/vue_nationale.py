@@ -343,9 +343,9 @@ with c4:
 
 # ---------------------------------------------------------------- Section 4 — Permis 2024
 st.markdown("")
-g, d = st.columns([1.5, 1], vertical_alignment="top")
-with g:
-    titre_bloc("Permis de conduire délivrés", "Total et décomposition par catégorie")
+titre_bloc("Permis de conduire délivrés", "Total et décomposition par catégorie")
+g_tot, d_graph = st.columns([1, 3.2], vertical_alignment="center")
+with d_graph:
     permis = NAT[(NAT.ID == "O1-06") & (NAT["Année"].astype(str) == "2024")][["Catégorie", "Valeur"]].copy()
     lib = {"A": "A — Moto", "B": "B — Voiture légère", "C": "C — Poids lourd", "D": "D — Transport en commun",
            "E": "E — Semi-remorque", "F": "F — Voiture spéciale"}
@@ -361,12 +361,13 @@ with g:
     habiller(fig, 300, xaxis=dict(gridcolor="#efece4"), yaxis=dict(gridcolor="rgba(0,0,0,0)"), legend=dict(x=0, y=1))
     fig.update_layout(margin=dict(r=70))
     tracer(fig, "vn_permis")
-    note("Les permis moto ont bondi : 4 837 en 2022 et 10 165 en 2024, contre 211 en 2021.", forte=True)
-with d:
-    st.markdown("")
-    st.markdown(f'<div class="synthese-chiffre" style="font-size:3rem">{fr(sum(permis.Valeur))}</div>'
-                '<div class="synthese-legende">permis délivrés en 2024, toutes catégories</div>', unsafe_allow_html=True)
-    st.caption("Niveau A. Données nationales : les permis n'ont ni territoire, ni âge.")
+with g_tot:
+    st.markdown(f'<div class="total-carte"><div class="total-chiffre">{fr(sum(permis.Valeur))}</div>'
+                '<div class="total-legende">permis délivrés en 2024, toutes catégories</div>'
+                '<div class="total-note">Niveau A. Données nationales : les permis n\'ont ni territoire, ni âge.</div>'
+                '</div>', unsafe_allow_html=True)
+st.markdown('<div class="note-carte lisere-droit">Les permis moto ont bondi : 4 837 en 2022 et 10 165 en 2024, contre '
+            '211 en 2021.</div>', unsafe_allow_html=True)
 
 
 # ---------------------------------------------------------------- Section 5 — Immatriculations et permis (2 étages)
@@ -432,8 +433,11 @@ fig.add_annotation(x=1998, y=0.46, xref="x domain", yref="paper", text="Permis n
 fig.add_annotation(x=2013, y=0.06, yref="y domain", text="2013 non renseignée", showarrow=False,
                    font=dict(color="#8a8780", size=9), row=2, col=1)
 tracer(fig, "vn_immat_permis")
-note("En 2021, 310 motos ont été immatriculées pour un permis moto délivré ; en 2024, 6.", forte=True)
-st.markdown('<div class="note-carte">Une date situe une variation ; elle ne l\'explique pas.<br>'
+n_rouge, n_reperes = st.columns([1, 1.6], vertical_alignment="top")
+n_rouge.markdown('<div class="note-carte blanche risque">En 2021, on comptait <strong>310 immatriculations de motos '
+                 'pour chaque permis moto délivré</strong>, contre seulement <strong>6</strong> en 2024.</div>',
+                 unsafe_allow_html=True)
+n_reperes.markdown('<div class="note-carte blanche">Une date situe une variation ; elle ne l\'explique pas.<br>'
             '<b>Repères :</b> ① 2019 permis moto obligatoire · ② 2022 décret d\'application du code de la route · '
             '③ 2023 tournée d\'immatriculation des motos.</div>', unsafe_allow_html=True)
 
@@ -461,14 +465,14 @@ with g:
     puces = "".join(f'<li><span class="retenir-num">{i}</span><span>{m}</span></li>' for i, m in enumerate(messages, 1))
     st.markdown(f'<div class="retenir"><div class="retenir-titre">À retenir</div><ol>{puces}</ol></div>',
                 unsafe_allow_html=True)
-with d:
+with d, st.container(key="vn_synthese"):       # carte verte : synthèse et bouton, même hauteur que « À retenir »
     synthese("8 095 498", "habitants, recensement de 2022",
              ["5 préfectures cumulent un réseau dégradé et aucune auto-école agréée (641 955 habitants).",
               "15 recommandations, dont 3 en priorité haute.",
               "23 préfectures sur 39 sans auto-école agréée (2 932 492 habitants)."])
-    if st.button("Voir les recommandations →", key="vn_lien_reco"):
+    if st.button("Voir les recommandations →", key="vn_t_reco"):
         st.switch_page("views/recommandations.py")
 limite("Les accidents ne sont publiés qu'au niveau national. Les volumes et les taux portent sur les accidents "
        "déclarés par la police et la gendarmerie, pas sur l'ensemble des accidents. Les taux par véhicule dépendent "
-       "d'un parc estimé (niveau C). Le coût des actions n'est pas dans les données.")
+       "d'un parc estimé. Le coût des actions n'est pas dans les données.", titre="Limite")
 pied()

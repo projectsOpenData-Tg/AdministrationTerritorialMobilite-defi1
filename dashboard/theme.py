@@ -259,6 +259,28 @@ div.st-key-topbar_droite [data-testid="stMarkdownContainer"] { display: flex; ju
 /* Note en carte (repères sous un graphique) : fond bleu clair, filet bleu à gauche */
 .note-carte { background: #eef4fd; border-left: 4px solid #1769aa; border-radius: 8px; padding: 12px 16px; margin: 0.4rem 0 0.8rem;
   font-size: 0.9rem; line-height: 1.7; color: #172b3a; }
+.note-carte.blanche { background: #ffffff; border: 1px solid #e2e8f0; border-left: 4px solid #1769aa; }
+.note-carte.blanche.risque { border-left-color: #ce1126; }
+.note-carte.lisere-droit { border-left: 0; border-right: 4px solid #1769aa; border-radius: 10px; font-weight: 600; }
+/* Total des permis : carte bleu clair (même bleu que le survol de « Voir le détail ») */
+.total-carte { background: #e8f0fb; border-radius: 14px; padding: 26px 14px; text-align: center; }
+.total-chiffre { font-family: 'Fraunces', Georgia, serif; font-size: 2.8rem; font-weight: 600; color: #0b263d; line-height: 1; }
+.total-legende { font-size: 0.92rem; color: #172b3a; margin-top: 8px; }
+.total-note { font-size: 0.78rem; color: #64748b; margin-top: 8px; line-height: 1.4; }
+/* Synthèse chiffrée (Vue nationale) : carte vert clair, bouton dedans, même hauteur que « À retenir » */
+[data-testid="stHorizontalBlock"]:has(.retenir) { align-items: stretch; }
+[data-testid="stColumn"]:has(.retenir) > [data-testid="stVerticalBlock"] { height: 100%; }
+[data-testid="stColumn"]:has(.retenir) [data-testid="stElementContainer"]:has(.retenir) { flex: 1 1 auto; }
+[data-testid="stColumn"]:has(.retenir) .stMarkdown, [data-testid="stColumn"]:has(.retenir) [data-testid="stMarkdownContainer"],
+[data-testid="stColumn"]:has(.retenir) .retenir { height: 100%; box-sizing: border-box; }
+[data-testid="stColumn"]:has(.st-key-vn_synthese) > [data-testid="stVerticalBlock"] { height: 100%; }
+div.st-key-vn_synthese { background: #e6f4ec; border: 1px solid #b9dfc8; border-radius: 14px; padding: 20px 24px; height: 100%;
+  justify-content: space-between; }
+div.st-key-vn_synthese .synthese { background: transparent; border: 0; padding: 0; margin: 0; grid-template-columns: 1fr; gap: 14px; }
+div.st-key-vn_synthese .synthese-titre { color: #11613f; }
+div.st-key-vn_synthese .synthese-chiffre { color: #0b4d2e; }
+div.st-key-vn_synthese .synthese ul { color: #173a2a; }
+div.st-key-vn_synthese [data-testid="stElementContainer"]:has(button) { margin-top: auto; }
 /* À retenir : carte blanche, messages numérotés en pastille */
 .retenir { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 14px; padding: 20px 24px; box-shadow: 0 1px 2px rgba(11,38,61,0.04); }
 .retenir-titre { font-weight: 700; font-size: 1.05rem; color: #0b263d; margin-bottom: 10px; }
