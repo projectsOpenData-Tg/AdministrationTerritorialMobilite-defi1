@@ -1,0 +1,21 @@
+Code,Domaine,Règle,Application,Exception,Référence
+R-01,Territoire,Brique commune : la préfecture. Toute donnée est rattachée à une préfecture avant d’être agrégée,Toutes les feuilles,Tronçons : rattachés par R-15,01 §2.3
+R-02,Territoire,"Lecture régionale par défaut en 6 zones, pour tous les objectifs dès que les données le permettent. La vue en 5 régions est toujours disponible par agrégation, car l’énoncé demande « par région »",O1 à O5,"Une source qui ne sépare pas le Grand Lomé est lue en 5 régions, en repli étiqueté",01 §2.3
+R-03,Territoire,Le Grand Lomé (Golfe + Agoè-Nyivé) est séparé de la Maritime hors Grand Lomé dans les 6 zones,O1 à O5,—,01 §2.3
+R-04,Territoire,Chaque source est étiquetée : sa « Maritime » inclut-elle le Grand Lomé ? La somme des zones doit égaler le total national,D1 à D7,—,01 §8
+R-05,Temps,"Année de référence des croisements : 2022 par défaut ; la plus récente si les données la couvrent et que sa population est disponible ; sinon l’année la plus proche, écart affiché",Croisements O2 à O5,Séries longues : toutes les années,01 §2.3
+R-06,Temps,"Le dénominateur population est de la même année que le numérateur : projection INSEED de cette année si elle existe ; sinon l’année la plus proche, affichée (« population 2022 »)",Tous les taux par habitant,—,01 §2.3
+R-07,Temps,Annuelle pour les séries longues ; mensuelle si la source le permet,"O1, O2",—,01 §2.3
+R-08,Temps,"En mensuel ou par tranche horaire : volumes, parts et indice de saisonnalité seulement (accidents par jour du mois / moyenne journalière de l’année). Aucun taux par habitant ou par véhicule sous l’année, aucun classement territorial sous l’année","O1-01, O1-06, O2-01, O2-05, O2-11",—,01 §3.2
+R-09,Données,"Petits volumes : sous SE-01, le taux est calculé sur PA-02 années cumulées ; s’il reste sous le seuil, le volume est affiché et le taux est marqué « peu fiable » et n’est jamais utilisé seul pour classer","O2-02, O2-03, O2-05",—,01 §3.2
+R-10,Données,Valeur manquante ≠ zéro. Jamais imputée. Affichée « non renseigné »,Toutes les feuilles,—,01 §8
+R-11,Données,"Dénominateur du taux par véhicule, dans l’ordre : parc roulant s’il est publié ; parc immatriculé (B) ; cumul des immatriculations sur la durée de vie PA-01 (C, affiché en fourchette). National seulement","O2-04, O2-07, O2-08",Parc territorial fiable : taux par zone possible,01 §3.2
+R-12,Données,"Si l’activité des auto-écoles n’est pas connue : on compte les agréées, l’offre de formation est étiquetée C « activité non vérifiée », et cette réserve est reprise dans toute recommandation qui s’appuie dessus","O4-04 à O4-09, profil P2",—,01 §4
+R-13,Données,"Causes d’accidents montrées seulement si déclarées, étiquetées « cause déclarée », avec la part de non-renseignés",O2-14,—,01 §3.2
+R-14,Tronçons,Un tronçon non évalué n’est pas en bon état : il est compté dans la part non évaluée,"O3-01, O3-02, O3-06",—,01 §8
+R-15,Tronçons,"Tronçon à cheval sur deux territoires : découpage par intersection géographique, sinon rattachement au territoire du plus long segment","O3, O4-01 à O4-03",—,01 §3.3
+R-16,Géométrie,"Longueurs, surfaces et distances en projection métrique UTM zone 31N","O3, O4",—,01 §8
+R-17,Preuve,"Niveaux A mesuré, B calculé, C estimé. Une recommandation portée par du C déclenche une vérification, pas un investissement",Toutes les feuilles,—,01 §3.5
+R-18,Affichage,"Aucune recommandation sans territoire, cible chiffrée, population concernée, horizon, acteur, indicateur de suivi, niveau de preuve et réserve","04_Profils, recommandations",—,01 §3.5
+R-19,Affichage,Aucun chiffre retapé : le tableau de bord et le rapport lisent les CSV exportés du classeur,"Tableau de bord, rapport",—,"Procédure, étape 14"
+R-20,Document,"Le 02 figé n’est plus modifié. Un écart est déclaré dans l’étape concernée, décidé avant de voir le résultat",Tout le classeur,—,"Procédure, étapes 01 et 02"

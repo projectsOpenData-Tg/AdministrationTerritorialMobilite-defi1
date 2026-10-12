@@ -1,0 +1,85 @@
+Type,Tronçon,km_bon,km_moyen,km_mauvais,km_travaux,km_total,Année,Source,Niveau
+non revêtue,TGRCRTRN12 SOTOUBOUA-GOUBI-KABOLI,0.0,0.0,0.0,98.07,98.07,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+non revêtue,TGRKRT KOUMEA-SIOU,6.34,1.12,0.0,0.0,7.46,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+non revêtue,TGRKRTRN18 NIAMTOUGOU-KOUMEA-FARINDE-TCHIKAWA-RN20,10.87,11.43,0.0,0.0,22.3,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+non revêtue,TGRKRTRN19A AWANDJELO-ATCHANGBADE,0.05,5.05,4.66,0.0,9.76,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+non revêtue,TGRKRTRN20 PAGOUDA-SIOU-NIAMTOUGOU,18.06,13.63,0.0,0.0,31.69,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+non revêtue,TGRKRTRN38 RN1 BAFILO-DAKO-RN17 BASSAR,54.34,2.86,0.0,0.0,57.2,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+non revêtue,TGRKRTRN39 RN17 BASSAR-BITCHABE-RN19,26.38,6.63,0.0,0.0,33.01,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+non revêtue,TGRKRTRN40 KANTE-NADOBA,0.0,0.0,0.0,28.49,28.49,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+non revêtue,TGRMRN42 KEVE-ZOLO-FRT GHANA,9.44,6.06,0.0,0.0,15.5,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+non revêtue,TGRMRTRN32 ASSAHOUN-BATOUME-FRT GHANA,0.0,0.0,0.0,21.6,21.6,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+non revêtue,TGRMRTRN35 AKOUMAKPE-TCHEKPO,0.19,17.0,3.0,0.0,20.19,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+non revêtue,TGRMRTRN36 AKLAKOU-AVEVE-AFAGNAN,0.0,0.0,0.0,31.22,31.22,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+non revêtue,TGRMRTRN36A AFAGNAN-AGOMEGLOZOU,0.5,8.84,0.0,0.0,9.34,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+non revêtue,TGRMRTRN37 TABLIGBO-GBOTO-TOKPLI-FRT BENIN,0.8,14.97,3.15,0.0,18.92,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+non revêtue,TGRMRTRN7 TSEVIE-KEVE,1.9,25.32,5.8,0.0,33.02,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+non revêtue,TGRPRT BRETELLE RN9-YIBOE,2.4,6.01,0.85,0.0,9.26,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+non revêtue,TGRPRT EPP AGBONOU CEET- EGLISE CATHOLIQUE SAINT JEAN PAUL II,0.25,0.97,0.0,0.0,1.22,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+non revêtue,TGRPRT RN15A-HÔPITAL BADOU,0.0,0.05,1.07,0.0,1.12,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+non revêtue,TGRPRTRN10 NYAMASSILA(RN1)-KPESSI-FRE BENIN,0.65,42.43,12.8,0.0,55.88,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+non revêtue,TGRPRTRN15BIS HIHIATRO(RN5)-KLABE-APEGANME-KOUGNOHOU,0.1,41.12,6.75,0.0,47.97,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+non revêtue,TGRPRTRN29 DEGOU(RN10)-KOLOKOPE-ANIE(RN1),0.0,42.31,4.7,0.0,47.01,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+non revêtue,TGRPRTRN8 ATAKPAME-AKPARE,0.0,0.0,0.0,20.8,20.8,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+non revêtue,TGRPRTRN8 NANVBETO-OUNTIVOU-RN6 (TOHOUN),0.0,0.0,0.0,66.14,66.14,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+non revêtue,TGRPRTRN9 NOTSE(RN1)-YIBOE-AVEDJE-AGOU(RN5),48.46,2.55,0.0,0.0,51.01,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+non revêtue,TGRSRTRN17 KATCHAMBA-SADORI RN1,16.05,8.29,2.5,30.0,56.84,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+non revêtue,TGRSRTRN22 RN1 TCHANWIEKOU-MOGOU-GANDO-FRE BENIN,6.04,16.34,21.22,0.0,43.61,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+non revêtue,TGRSRTRN22A RN1 SAGBIEBOU-GANDO,0.0,0.0,0.0,15.5,15.5,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+non revêtue,TGRSRTRN23 RN1 MANGO-KOKOUMBO-FRE GHANA,5.3,2.6,2.42,0.0,10.32,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+non revêtue,TGRSRTRN24 RN1 GALANGASHI-NAKI EST,4.44,12.72,10.5,0.0,27.65,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+non revêtue,TGRSRTRN25 RN1-KONG-RN1,8.47,3.92,10.93,0.0,23.33,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+non revêtue,TGRSRTRN26 RN1 CINKASSE-FRE GHANA,3.8,0.0,0.0,0.0,3.8,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+non revêtue,TGRSRTRN41 RN1 MANGO-BORGOU,18.02,11.5,16.22,0.0,45.74,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+revêtue,ALINMONDJI (RN1)-ELAVAGNON,11.12,0.0,0.0,0.0,11.12,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+revêtue,AZANHOUN FIAGBE-PRESIDENT COPE,0.0,0.05,9.0,0.0,9.05,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+revêtue,BRETELLE KOUGNOHOU(KOUGNOHOU-ADAPE(RN15)),5.56,0.0,0.0,0.0,5.56,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+revêtue,DAVIE-AMAKPAPE,13.01,30.64,18.31,0.0,61.95,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+revêtue,DAVIE-LOME (PASSAGE SUPERIEUR),5.56,1.93,2.59,0.0,10.09,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+revêtue,LOME-AKOUMAPE-VOGAN-ANFOIN (RN4),59.83,0.79,0.0,0.0,60.62,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+revêtue,RN1 AMAKPAPE-ATAKPAME- BABAME,50.31,51.31,38.12,0.0,139.74,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+revêtue,RN11 KPALIME (RN5)-KPADAPE-FRE GHANA,0.0,0.0,18.92,0.0,18.92,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+revêtue,RN11A KPADAPE-KLO MAYONDI-FRE GHANA,0.0,0.6,6.81,0.0,7.41,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+revêtue,RN2/3 AFLAO-HILACONDJI FRE BENIN,21.41,2.5,0.0,28.64,52.55,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+revêtue,RN2/3 AFLAO-HILACONDJI-FRT BENIN RETOUR (CARREFOUR AVEPOZO - FRT GHANA),9.56,8.27,0.45,0.0,18.27,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+revêtue,RN2/3 AFLAO-HILACONDJI-FRT BENIN RETOUR 2,3.42,1.98,0.2,0.0,5.6,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+revêtue,RN33 AGOU GADJEPE(RN5)-AGOTIME-FRE GHANA,0.0,0.1,31.58,0.0,31.68,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+revêtue,RN36 AMEGNRAN-AFAGNAN,0.0,0.0,8.57,0.0,8.57,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+revêtue,RN36 ANEHO-AKLAKOU,0.0,8.4,7.28,0.0,15.68,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+revêtue,RN5 LOME-AMOUZOU COPE,0.0,0.0,0.0,79.64,79.64,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+revêtue,RN5-HOPITAL AGOU NYOGBO,0.0,0.0,3.74,0.0,3.74,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+revêtue,ROUTE CAMPEMENT,0.0,0.0,1.2,0.0,1.2,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+revêtue,ROUTE CHATEAU VIAL,0.0,0.0,1.65,0.0,1.65,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+revêtue,TGRCRRRN1 BABAME-SOKODE-ALEHERIDE,39.9,55.59,59.1,0.0,154.59,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+revêtue,TGRCRRRN14 SOKODE-TCHAMBA-KABOLI-FRE BENIN,0.1,27.22,59.1,0.0,86.43,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+revêtue,TGRCRRRRN17 SOKODE-MALFAKASSA,0.0,0.0,0.0,29.85,29.85,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+revêtue,TGRCRRRRN27 LANGABOU-YEGUE-FRE GHANA,0.83,9.8,56.05,0.0,66.67,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+revêtue,TGRKRR RN1 ALEHERIDE-KARA-NABLOUGOU,22.05,80.05,0.0,38.44,140.53,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+revêtue,TGRKRRRN1 BRETELLE D ALEDJO,0.0,0.45,11.08,0.0,11.53,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+revêtue,TGRKRRRN1 BRETELLE DE BAFILO,0.0,0.3,6.27,0.0,6.57,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+revêtue,TGRKRRRN1 BRETELLE DE DEFALE,1.39,1.15,3.6,0.0,6.14,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+revêtue,TGRKRRRN16 RN1 KARA-KETAO-KEMERIDA-FRE BENIN,0.0,21.0,4.84,0.0,25.84,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+revêtue,TGRKRRRN17 BRETELLE KATCHAMBA,6.04,0.0,0.0,0.0,6.04,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+revêtue,TGRKRRRN17 MALFAKASSA-BASSAR-KABOU-GUERIN KOUKA-KATCHAMBA,46.75,34.45,0.0,27.75,108.95,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+revêtue,TGRKRRRN18B BRETELLE SOUMDINA-RN16,9.54,0.0,0.0,0.0,9.54,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+revêtue,TGRKRRRN18B PYA-TCHARE-LASSA-RN16,13.37,0.0,0.0,0.0,13.37,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+revêtue,TGRKRRRN18B TCHITCHAO-PYA-KOUMEA,5.23,9.15,0.0,0.0,14.38,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+revêtue,TGRKRRRN19 KARA-KABOU-FRE GHANA,0.21,7.54,76.25,0.0,84.01,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+revêtue,TGRKRRRN20 KETAO-PAGOUDA,2.79,11.58,0.23,0.0,14.6,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+revêtue,TGRKRRRN21 TCHITCHAO-SARAKAWA-KANTE,0.0,0.0,0.0,62.54,62.54,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+revêtue,TGRPRRRN13 KPALIME(RN5)-MONT KLOTO-KAMETONOU-FRE GHANA,0.0,0.4,20.51,0.0,20.91,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+revêtue,TGRPRRRN15 TEMEDJA(RN5)-BADOU-FRE GHANA,88.5,0.0,0.0,0.0,88.5,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+revêtue,TGRPRRRN15A BADOU-REVIERE WAWA (FRE GHABA),0.0,0.25,13.68,0.0,13.93,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+revêtue,TGRPRRRN15B BADOU-TOMEGBE-FRE GHANA,0.0,0.0,21.37,0.0,21.37,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+revêtue,TGRPRRRN30 ADETA(RN5)-NDIGBE-APEYEME-FRE GHANA,0.0,0.0,33.5,0.0,33.5,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+revêtue,TGRPRRRN30A DZOGBEGAN-DANYI ELAVAGNON,0.0,0.0,7.69,0.0,7.69,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+revêtue,TGRPRRRN31/30 NDIGBE-YIKPA-FRE GHANA,0.0,0.0,14.54,0.0,14.54,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+revêtue,TGRPRRRN5 ATAKPAME-KPALIME-AMOUSSOUKOPE,93.86,8.65,0.0,44.08,146.58,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+revêtue,TGRPRRRN6 NOTSE-TOHOUN,55.59,0.71,0.0,0.0,56.3,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+revêtue,TGRPRRRN8 AKPARE-NANGBETO,0.0,0.05,18.35,0.0,18.4,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+revêtue,TGRPRRRN9A ROUTE DU MONT AGOU,0.0,7.25,4.42,0.0,11.67,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+revêtue,TGRSRRRN1 NABLOUGOU-DAPAONG-CINKASSE FRE BURKINA,44.5,19.81,1.75,94.76,160.83,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+revêtue,TGRSRRRN24 RN1 DAPAONG BORGOU-MANDOURI-FRE BENIN,48.69,0.0,0.0,44.05,92.75,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+revêtue,TGRSRRRN28 BRETELLE DE CORBONGOU,1.08,2.6,0.0,0.0,3.68,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+revêtue,TGRSRRRN28 DAPAONG-PONIO-FRE BURKINA,10.62,25.45,1.25,0.0,37.32,2020,portail : etat_reseau_routier.csv (relevé de 2020),C
+revêtue,TSEVIE-TABLIGBO-ANFOIN-ANEHO,83.35,1.8,0.77,0.0,85.93,2020,portail : etat_reseau_routier.csv (relevé de 2020),C

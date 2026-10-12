@@ -1,0 +1,60 @@
+Fichier,Besoin,Table,Format,Encodage,Séparateur,Disposition,Lignes,Colonnes,Années,Unités (colonne),Cellules vides (%),Doublons,Remarques
+transports_statistiques_cles.csv,"D1, D2, D3, D10",—,CSV,utf-8,",",longue,209,4,1990–2022,,0.0,0,séries avec années absentes : 1
+parc_immatricule_par_type_1.csv,D1,—,CSV,utf-8,",",longue,264,5,1990–2022,,0.0,0,lignes de total (types-de-vehicule) : 33
+parc_immatricule_par_type_2.csv,D1,—,CSV,utf-8,",",longue,70,5,2013–2019,,0.0,0,lignes de total (automobile) : 14
+permis_par_categorie.csv,D2,—,CSV,utf-8,",",longue,106,5,2007–2022,,0.0,0,lignes de total (categories-de-permis) : 16 ; séries avec années absentes : 6
+accidents_police_gendarmerie.csv,D3,—,CSV,utf-8,",",longue,27,5,2014–2022,,0.0,0,
+accidents_bilan_police_gendarmerie.csv,D3,—,CSV,utf-8,",",longue,18,5,2014–2019,,0.0,0,
+annuaire_statistique_national_2024.pdf,D3,—,PDF,,,document,776,,,,,,"776 pages, dont 765 avec une couche texte ; tableaux à extraire (extraction_pdf_04.py)"
+oms_profil_securite_routiere_2023.pdf,"D1, D3, D9, D11",—,PDF,,,document,1,,,,,,"1 pages, dont 1 avec une couche texte ; tableaux à extraire (extraction_pdf_04.py)"
+etat_reseau_routier.csv,D4,—,CSV,utf-8,",",longue,371,6,2020–2020,88 (tronçon),0.0,0,lignes de total (tronçon) : 10 ; lignes de total (etat) : 88
+geoportail_catalogue.json,"D4, D5, D6",permissions,JSON,utf-8,,large,9,6,,,0.0,0,colonnes constantes : 1
+geoportail_catalogue.json,"D4, D5, D6",couches,JSON,utf-8,,large,177,8,,,0.0,0,colonnes constantes : 2
+geoportail_catalogue.json,"D4, D5, D6",couches_non_open_data,JSON,utf-8,,large,277,8,,,0.0,0,
+geoportail_catalogue.json,"D4, D5, D6",indicateurs,JSON,utf-8,,large,239,11,,,36.3,0,"colonnes vides : description, croissant"
+geoportail_catalogue.json,"D4, D5, D6",indicateurs_non_open_data,JSON,utf-8,,large,130,11,,,36.4,1,"colonnes vides : description, nom_anglais, description_anglais, croissant"
+geoportail_catalogue.json,"D4, D5, D6",subdivisions,JSON,utf-8,,large,5,1,,,0.0,0,
+routes_classees.csv,D5,—,CSV,utf-8,",","large, avec géométrie",799,11,,38 (prefecture_nom_bdd),0.0,0,colonnes constantes : 2
+routes_classees_metadonnees.csv,D5,—,CSV,utf-8,",",large,24,5,,,14.2,0,
+densite_reseau_routier.csv,D5,—,CSV,utf-8,",",longue,3,5,2020–2020,,0.0,0,
+auto_ecoles.csv,D6,—,CSV,utf-8,",","large, avec géométrie",272,12,,24 (prefecture_nom_bdd),0.0,0,colonnes constantes : 2
+auto_ecoles_metadonnees.csv,D6,—,CSV,utf-8,",",large,83,5,,,1.2,0,
+auto_ecoles_vehicules_metadonnees.csv,D6,—,CSV,utf-8,",",large,24,5,,,4.2,0,
+rgph_2022_population.csv,D7,—,CSV,utf-8,",",longue,759,6,2022–2022,745 (découpage-administratif),0.0,14,
+rgph5_livret02_age_milieu_prefecture.pdf,D7,—,PDF,,,document,87,,,,,,"87 pages, dont 78 avec une couche texte ; tableaux à extraire (extraction_pdf_04.py)"
+projections_demographiques_2011_2031.csv,D7,—,CSV,utf-8,",",longue,1134,6,2011–2031,18 (tranche-d-âges),0.0,0,lignes de total (sexe) : 378
+population_region_sexe_2010.csv,D7,—,CSV,utf-8,",",longue,21,6,2010–2010,7 (région),0.0,0,lignes de total (sexe) : 7
+wpp2024_population_age_simple_togo.csv,D7,—,CSV,utf-8,|,large,15453,32,1990–2024,,0.0,0,colonnes constantes : 15
+limites_administratives_hdx.geojson.zip,D8,tgo_admin0.geojson,GeoJSON (zip),utf-8,,"large, avec géométrie",1,19,,1 (adm0_pcode),36.8,0,"colonnes vides : adm0_name1, adm0_name2, adm0_name3, valid_to, lang1, lang2, lang3 ; colonnes constantes : 12"
+limites_administratives_hdx.geojson.zip,D8,tgo_admin0_em.geojson,GeoJSON (zip),utf-8,,"large, avec géométrie",1,18,,1 (adm0_pcode),38.9,0,"colonnes vides : adm0_name1, adm0_name2, adm0_name3, valid_to, lang1, lang2, lang3 ; colonnes constantes : 11"
+limites_administratives_hdx.geojson.zip,D8,tgo_admin1.geojson,GeoJSON (zip),utf-8,,"large, avec géométrie",5,22,,5 (adm1_pcode),45.5,0,"colonnes vides : adm1_name1, adm1_name2, adm1_name3, adm0_name1, adm0_name2, adm0_name3, valid_to, lang1, lang2, lang3 ; colonnes constantes : 6"
+limites_administratives_hdx.geojson.zip,D8,tgo_admin1_em.geojson,GeoJSON (zip),utf-8,,"large, avec géométrie",5,21,,5 (adm1_pcode),47.6,0,"colonnes vides : adm1_name1, adm1_name2, adm1_name3, adm0_name1, adm0_name2, adm0_name3, valid_to, lang1, lang2, lang3 ; colonnes constantes : 6"
+limites_administratives_hdx.geojson.zip,D8,tgo_admin2.geojson,GeoJSON (zip),utf-8,,"large, avec géométrie",40,27,,40 (adm2_pcode),48.1,0,"colonnes vides : adm2_name1, adm2_name2, adm2_name3, adm1_name1, adm1_name2, adm1_name3, adm0_name1, adm0_name2, adm0_name3, valid_to, lang1, lang2, lang3 ; colonnes constantes : 5"
+limites_administratives_hdx.geojson.zip,D8,tgo_admin2_em.geojson,GeoJSON (zip),utf-8,,"large, avec géométrie",40,26,,40 (adm2_pcode),50.0,0,"colonnes vides : adm2_name1, adm2_name2, adm2_name3, adm1_name1, adm1_name2, adm1_name3, adm0_name1, adm0_name2, adm0_name3, valid_to, lang1, lang2, lang3 ; colonnes constantes : 5"
+limites_administratives_hdx.geojson.zip,D8,tgo_admin3.geojson,GeoJSON (zip),utf-8,,"large, avec géométrie",373,32,,373 (adm3_pcode),50.0,0,"colonnes vides : adm3_name1, adm3_name2, adm3_name3, adm2_name1, adm2_name2, adm2_name3, adm1_name1, adm1_name2, adm1_name3, adm0_name1, adm0_name2, adm0_name3, valid_to, lang1, lang2, lang3 ; colonnes constantes : 6"
+limites_administratives_hdx.geojson.zip,D8,tgo_admin3_em.geojson,GeoJSON (zip),utf-8,,"large, avec géométrie",373,31,,373 (adm3_pcode),51.6,0,"colonnes vides : adm3_name1, adm3_name2, adm3_name3, adm2_name1, adm2_name2, adm2_name3, adm1_name1, adm1_name2, adm1_name3, adm0_name1, adm0_name2, adm0_name3, valid_to, lang1, lang2, lang3 ; colonnes constantes : 6"
+limites_administratives_hdx.geojson.zip,D8,tgo_admincapitals.geojson,GeoJSON (zip),utf-8,,"large, avec géométrie",31,36,,30 (adm2_pcode),58.3,0,"colonnes vides : name_1, name_2, name_3, loc_pcode, adm3_name1, adm3_name2, adm3_name3, adm2_name1, adm2_name2, adm2_name3, adm1_name1, adm1_name2, adm1_name3, adm0_name1, adm0_name2, adm0_name3, valid_to, name_lng, name_lng1, name_lng2, name_lng3 ; colonnes constantes : 7"
+limites_administratives_hdx.geojson.zip,D8,tgo_adminlines.geojson,GeoJSON (zip),utf-8,,"large, avec géométrie",1118,8,,,50.0,0,"colonnes vides : name, valid_to, right_pcod, left_pcod ; colonnes constantes : 3"
+limites_administratives_hdx.geojson.zip,D8,tgo_adminlines_em.geojson,GeoJSON (zip),utf-8,,"large, avec géométrie",1118,8,,,50.0,0,"colonnes vides : name, valid_to, right_pcod, left_pcod ; colonnes constantes : 3"
+limites_administratives_hdx.geojson.zip,D8,tgo_adminpoints.geojson,GeoJSON (zip),utf-8,,"large, avec géométrie",419,40,,373 (adm3_pcode),60.6,0,"colonnes vides : name1, name2, name3, adm4_name, adm4_name1, adm4_name2, adm4_name3, adm4_pcode, adm3_name1, adm3_name2, adm3_name3, adm2_name1, adm2_name2, adm2_name3, adm1_name1, adm1_name2, adm1_name3, adm0_name1, adm0_name2, adm0_name3, valid_to, lang1, lang2, lang3 ; colonnes constantes : 6"
+limites_administratives_hdx.xlsx,"D8, D13",tgo_admin0,XLSX,,,large,1,18,,1 (adm0_pcode),38.9,0,"colonnes vides : adm0_name1, adm0_name2, adm0_name3, valid_to, lang1, lang2, lang3 ; colonnes constantes : 11"
+limites_administratives_hdx.xlsx,"D8, D13",tgo_admin0_em,XLSX,,,large,1,17,,1 (adm0_pcode),41.2,0,"colonnes vides : adm0_name1, adm0_name2, adm0_name3, valid_to, lang1, lang2, lang3 ; colonnes constantes : 10"
+limites_administratives_hdx.xlsx,"D8, D13",tgo_admin1,XLSX,,,large,5,21,,5 (adm1_pcode),47.6,0,"colonnes vides : adm1_name1, adm1_name2, adm1_name3, adm0_name1, adm0_name2, adm0_name3, valid_to, lang1, lang2, lang3 ; colonnes constantes : 5"
+limites_administratives_hdx.xlsx,"D8, D13",tgo_admin1_em,XLSX,,,large,5,20,,5 (adm1_pcode),50.0,0,"colonnes vides : adm1_name1, adm1_name2, adm1_name3, adm0_name1, adm0_name2, adm0_name3, valid_to, lang1, lang2, lang3 ; colonnes constantes : 5"
+limites_administratives_hdx.xlsx,"D8, D13",tgo_admin2,XLSX,,,large,40,26,,40 (adm2_pcode),50.0,0,"colonnes vides : adm2_name1, adm2_name2, adm2_name3, adm1_name1, adm1_name2, adm1_name3, adm0_name1, adm0_name2, adm0_name3, valid_to, lang1, lang2, lang3 ; colonnes constantes : 5"
+limites_administratives_hdx.xlsx,"D8, D13",tgo_admin2_em,XLSX,,,large,40,25,,40 (adm2_pcode),52.0,0,"colonnes vides : adm2_name1, adm2_name2, adm2_name3, adm1_name1, adm1_name2, adm1_name3, adm0_name1, adm0_name2, adm0_name3, valid_to, lang1, lang2, lang3 ; colonnes constantes : 5"
+limites_administratives_hdx.xlsx,"D8, D13",tgo_admin3,XLSX,,,large,373,31,,373 (adm3_pcode),51.6,0,"colonnes vides : adm3_name1, adm3_name2, adm3_name3, adm2_name1, adm2_name2, adm2_name3, adm1_name1, adm1_name2, adm1_name3, adm0_name1, adm0_name2, adm0_name3, valid_to, lang1, lang2, lang3 ; colonnes constantes : 5"
+limites_administratives_hdx.xlsx,"D8, D13",tgo_admin3_em,XLSX,,,large,373,30,,373 (adm3_pcode),53.3,0,"colonnes vides : adm3_name1, adm3_name2, adm3_name3, adm2_name1, adm2_name2, adm2_name3, adm1_name1, adm1_name2, adm1_name3, adm0_name1, adm0_name2, adm0_name3, valid_to, lang1, lang2, lang3 ; colonnes constantes : 5"
+limites_administratives_hdx.xlsx,"D8, D13",tgo_admincapitals,XLSX,,,large,31,35,,30 (adm2_pcode),60.0,0,"colonnes vides : name_1, name_2, name_3, loc_pcode, adm3_name1, adm3_name2, adm3_name3, adm2_name1, adm2_name2, adm2_name3, adm1_name1, adm1_name2, adm1_name3, adm0_name1, adm0_name2, adm0_name3, valid_to, name_lng, name_lng1, name_lng2, name_lng3 ; colonnes constantes : 6"
+limites_administratives_hdx.xlsx,"D8, D13",tgo_adminlines,XLSX,,,large,1118,7,,,57.1,1113,"colonnes vides : name, valid_to, right_pcod, left_pcod ; colonnes constantes : 2"
+limites_administratives_hdx.xlsx,"D8, D13",tgo_adminlines_em,XLSX,,,large,1118,7,,,57.1,1113,"colonnes vides : name, valid_to, right_pcod, left_pcod ; colonnes constantes : 2"
+limites_administratives_hdx.xlsx,"D8, D13",tgo_adminpoints,XLSX,,,large,419,39,,373 (adm3_pcode),62.2,0,"colonnes vides : name1, name2, name3, adm4_name, adm4_name1, adm4_name2, adm4_name3, adm4_pcode, adm3_name1, adm3_name2, adm3_name3, adm2_name1, adm2_name2, adm2_name3, adm1_name1, adm1_name2, adm1_name3, adm0_name1, adm0_name2, adm0_name3, valid_to, lang1, lang2, lang3 ; colonnes constantes : 5"
+oms_tues_pour_100000.json,D9,value,JSON,utf-8,,large,4,25,2021–2021,4 (SpatialDim),44.0,0,"colonnes vides : Dim1Type, Dim1, Dim2Type, Dim2, Dim3Type, Dim3, DataSourceDimType, DataSourceDim, Low, High, Comments ; colonnes constantes : 10"
+dhs_possession_moto_velo_region.json,D12,Data,JSON,utf-8,,large,42,28,1998–2017,7 (CharacteristicLabel),11.2,0,"colonnes vides : ByVariableLabel, CILow, CIHigh ; colonnes constantes : 8"
+ehcvm_2021_2022_csv.zip,D12,s00_me_tgo2021.csv,CSV (zip),utf-8,",",large,6462,6,,6 (s00q01),0.0,0,
+ehcvm_2021_2022_csv.zip,D12,s09b_me_tgo2021.csv,CSV (zip),utf-8,",",large,19399,6,,,0.0,0,colonnes constantes : 1
+ehcvm_2021_2022_csv.zip,D12,s12_me_tgo2021.csv,CSV (zip),utf-8,",",large,33619,5,,,0.0,0,colonnes constantes : 1
+ehcvm_2021_2022_csv.zip,D12,ehcvm_ponderations_tgo2021.csv,CSV (zip),utf-8,",",large,6462,6,,6 (s00q01),0.0,0,
+referentiel_prefectures.csv,D8,—,CSV,utf-8,",",large,39,11,,39 (Préfecture),10.7,0,
+chronologie_reformes.csv,D11,—,CSV,utf-8,",",large,10,6,2013–2026,,0.0,0,
+ages_minimaux_permis.csv,PA-05,—,CSV,utf-8,",",large,6,6,,,0.0,0,colonnes constantes : 1

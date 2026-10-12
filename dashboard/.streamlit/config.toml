@@ -1,0 +1,24 @@
+[server]
+headless = true
+enableStaticServing = true          # sert les fichiers de static/ sous app/static/<fichier>
+
+[browser]
+gatherUsageStats = false
+
+[client]
+toolbarMode = "minimal"
+
+[theme]
+base = "light"
+primaryColor = "#1769aa"            # bleu soutenu : boutons actifs, onglet actif, liens
+backgroundColor = "#f4f2ec"         # fond café (conservé)
+secondaryBackgroundColor = "#ffffff"
+textColor = "#172b3a"
+borderColor = "#e2e8f0"
+
+[theme.sidebar]
+backgroundColor = "#0b263d"         # bleu nuit
+secondaryBackgroundColor = "#123552"
+textColor = "#f8fafc"
+primaryColor = "#1769aa"
+borderColor = "#24415c"

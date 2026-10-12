@@ -1,0 +1,23 @@
+Colonne,Définition,Unité,Source,Année,Niveau
+Préfecture,Préfecture du référentiel (39),—,data/reference/referentiel_prefectures.csv,2022,sans objet
+Code HDX,Code de la préfecture (Golfe : TG0303 + TG0305),—,"HDX, limites administratives v02",2021,sans objet
+Région,Région administrative (5),—,référentiel,2022,sans objet
+Zone,"Zone de lecture (6, Grand Lomé séparé ; R-02, R-03)",—,référentiel,2022,sans objet
+Surface (km²),"Surface du polygone, en UTM 31N (R-16)",km²,HDX,2021,B
+population_2022,Population résidente,habitants,"RGPH-5, Livret 02",2022,A
+population_2022_hommes,Population résidente masculine,habitants,"RGPH-5, Livret 02",2022,A
+population_2022_femmes,Population résidente féminine,habitants,"RGPH-5, Livret 02",2022,A
+population_2022_urbaine,Population résidente en milieu urbain ; vide : « - » dans le Livret 02 (R-10),habitants,"RGPH-5, Livret 02",2022,A
+population_2022_rurale,Population résidente en milieu rural ; vide : « - » dans le Livret 02 (R-10),habitants,"RGPH-5, Livret 02",2022,A
+km_rn_revetue,Longueur de route nationale revêtue dans la préfecture ; 0 = aucun tronçon de ce type dans le polygone,km,routes classées (D5),collecte 2021-2022,B
+km_rn_non_revetue,Longueur de route nationale non revêtue dans la préfecture ; 0 = aucun tronçon de ce type dans le polygone,km,routes classées (D5),collecte 2021-2022,B
+km_piste_rurale,Longueur de piste rurale dans la préfecture ; 0 = aucun tronçon de ce type dans le polygone,km,routes classées (D5),collecte 2021-2022,B
+km_voirie_urbaine,Longueur de voirie urbaine dans la préfecture ; 0 = aucun tronçon de ce type dans le polygone,km,routes classées (D5),collecte 2021-2022,B
+km_etat_bon,"Km de l'état du réseau en état « bon », répartis au prorata du tracé (R-15)",km,état du réseau (D4) × tracé (D5),2020,C
+km_etat_moyen,"Km de l'état du réseau en état « moyen », répartis au prorata du tracé (R-15)",km,état du réseau (D4) × tracé (D5),2020,C
+km_etat_mauvais,"Km de l'état du réseau en état « mauvais », répartis au prorata du tracé (R-15)",km,état du réseau (D4) × tracé (D5),2020,C
+km_etat_travaux,"Km de l'état du réseau en état « travaux », répartis au prorata du tracé (R-15)",km,état du réseau (D4) × tracé (D5),2020,C
+km_rn_non_evaluee,Km de routes nationales du tracé sans tronçon d'état rattaché (R-14),km,routes classées (D5),collecte 2021-2022,B
+auto_ecoles_recensees,"Auto-écoles recensées, tous statuts, préfecture par le polygone",établissements,auto-écoles (D6),collecte 2021-2022,A
+auto_ecoles_comptees,Auto-écoles agréées et antennes agréées (R-12) ; activité non vérifiée,établissements,auto-écoles (D6),collecte 2021-2022,C
+origine_point_o4_08,"Point de départ de la distance de O4-08 : chef-lieu, sinon point d'étiquette (écart 19)",—,HDX,2021,C

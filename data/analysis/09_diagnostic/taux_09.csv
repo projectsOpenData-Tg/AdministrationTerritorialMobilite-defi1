@@ -1,0 +1,10 @@
+Mesure,Lecture,ID,Moyenne 2010–2012,Moyenne 2022–2024,Variation (%),Sens,Moyenne 2010–2012 (borne basse),Moyenne 2022–2024 (borne basse),Sens (borne basse),Moyenne 2010–2012 (borne haute),Moyenne 2022–2024 (borne haute),Sens (borne haute),Sens sur la fourchette,Niveau,Note
+Accidents constatés,volume,O2-01,6381.7,6980.7,9.4,hausse,,,,,,,hausse,A,
+Accidents constatés,pour 100 000 habitants,O2-03,101.9,84.6,-17.0,baisse,,,,,,,baisse,C,
+Accidents constatés,pour 10 000 véhicules,O2-E2,142.95,100.29,-29.8,baisse,119.41,75.7,baisse,194.01,129.1,baisse,baisse,C,"complément de l’énoncé, hors 02 (écart 22) : descriptif, sans verdict"
+Blessés,volume,O2-01,8402.0,9500.3,13.1,hausse,,,,,,,hausse,A,
+Blessés,pour 100 000 habitants,O2-E1,134.3,115.1,-14.3,baisse,,,,,,,baisse,C,"complément de l’énoncé, hors 02 (écart 22) : descriptif, sans verdict"
+Blessés,pour 10 000 véhicules,O2-E3,189.13,136.29,-27.9,baisse,158.98,102.91,baisse,256.5,175.41,baisse,baisse,C,"complément de l’énoncé, hors 02 (écart 22) : descriptif, sans verdict"
+Tués,volume,O2-01,654.0,608.7,-6.9,baisse,,,,,,,baisse,A,
+Tués,pour 100 000 habitants,O2-02,10.45,7.38,-29.4,baisse,,,,,,,baisse,C,
+Tués,pour 10 000 véhicules,O2-04,14.71,8.76,-40.4,baisse,12.36,6.61,baisse,19.96,11.28,baisse,baisse,C,

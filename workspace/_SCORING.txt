@@ -1,0 +1,17 @@
+
+
+
+Cinq critères d'évaluation du projet
+
+Chaque projet est examiné selon cinq critères. Le total est ramené sur 100 points à partir d'un barème de 20 points.
+
+
+C1 -> Ergonomie, clarté visuelle et facilité de navigation dans le dashboard. Note max: 4
+
+
+C2 -> Pertinence des analyses, compréhension des données et qualité des conclusions. Note max: 8
+
+
+C3 -> Richesse des interactions, filtres disponibles et fluidité d’utilisation du dashboard. Note max: 4
+
+C4 -> Structure, clarté, méthodologie et qualité rédactionnelle du rapport. Note Max 4

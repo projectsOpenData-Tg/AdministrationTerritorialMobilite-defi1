@@ -1,0 +1,31 @@
+Maille,Variable,Indicateur,Unité,Effectif,Non définis,Minimum,Q1,Médiane,Q3,Maximum,Écart interquartile,Borne basse de Tukey,Borne haute de Tukey,Valeurs atypiques,Nombre d’atypiques,Hautes (≥ Q3),Basses (≤ Q1),Ex aequo au minimum,Niveau
+Préfecture,Population 2022,O5-03 ; dénominateur de O4-03 et O4-05,habitants,39,0,40240.0,92682.5,138867.0,212498.0,1305681.0,119815.5,-87040.75,392221.25,Golfe (1 305 681) ; Agoè-Nyivé (882 695) ; Zio (500 032),3,10.0,10.0,1.0,A
+Préfecture,Km de routes classées,O4-01,km,39,0,0.0,49.45,84.0,122.25,193.9,72.8,-59.75,231.45,,0,10.0,10.0,1.0,B
+Préfecture,Km de route nationale revêtue,O4-01,km,39,0,0.0,30.15,55.6,76.85,143.7,46.7,-39.9,146.9,,0,10.0,10.0,1.0,B
+Préfecture,Km de route nationale non revêtue,O4-01,km,39,0,0.0,2.5,14.4,29.0,88.4,26.5,-37.25,68.75,"Est-Mono (88,4) ; Oti (86,6) ; Oti-Sud (72,6)",3,10.0,10.0,8.0,B
+Préfecture,Km de piste rurale,O4-01,km,39,0,0.0,0.0,0.0,0.0,14.9,0.0,0.0,0.0,"Agou (14,9) ; Kpélé (9,2) ; Doufelgou (8,0) ; Kloto (1,7)",4,4.0,0.0,35.0,B
+Préfecture,Km de voirie urbaine,O4-01,km,39,0,0.0,0.0,2.5,10.25,29.6,10.25,-15.375,25.625,"Agoè-Nyivé (29,6)",1,10.0,14.0,14.0,B
+Préfecture,Km pour 10 000 habitants,O4-03,km pour 10 000 habitants,39,0,0.0,2.93,5.39,8.045,15.17,5.115,-4.7425,15.7175,,0,10.0,10.0,1.0,B
+Préfecture,Km pour 1 000 km²,O4-02,km pour 1 000 km²,39,0,0.0,41.6,58.0,106.5,401.9,64.9,-55.75,203.85,"Golfe (401,9) ; Agoè-Nyivé (390,5) ; Lacs (213,3)",3,10.0,11.0,1.0,B
+Préfecture,Part en mauvais état (%),O3-02,%,38,1,0.0,4.75,14.35,25.325,100.0,20.575,-26.1125,56.1875,"Danyi (100,0) ; Blitta (68,2) ; Kloto (65,0)",3,10.0,10.0,2.0,C
+Préfecture,Part en travaux (%),O3-03,%,38,1,0.0,0.425,21.85,39.95,78.5,39.525,-58.8625,99.2375,,0,10.0,10.0,10.0,C
+Préfecture,Part non évaluée (%),O3-06,%,38,1,0.0,0.0,0.0,1.625,20.0,1.625,-2.4375,4.0625,"Agoè-Nyivé (20,0) ; Blitta (19,8) ; Bassar (17,2) ; Golfe (12,2) ; Cinkassé (11,3) ; Ogou (9,7) ; Kloto (5,4)",7,10.0,25.0,25.0,B
+Préfecture,Auto-écoles recensées,O4-04,nombre,39,0,0.0,0.0,1.0,2.5,143.0,2.5,-3.75,6.25,Golfe (143) ; Agoè-Nyivé (69) ; Kozah (11),3,10.0,15.0,15.0,A
+Préfecture,Auto-écoles comptées,O4-04,nombre,39,0,0.0,0.0,0.0,2.0,74.0,2.0,-3.0,5.0,Golfe (74) ; Agoè-Nyivé (29) ; Kozah (6),3,11.0,23.0,23.0,A
+Préfecture,Auto-écoles comptées pour 100 000 habitants,O4-05,pour 100 000 habitants,39,0,0.0,0.0,0.0,0.83,5.67,0.83,-1.245,2.075,"Golfe (5,67) ; Agoè-Nyivé (3,29) ; Kozah (2,11)",3,11.0,23.0,23.0,C
+Préfecture,Distance à l’auto-école comptée la plus proche (km),O4-08,km,39,0,0.2,2.2,24.7,31.25,84.0,29.05,-41.375,74.825,"Oti-Sud (84,0)",1,10.0,10.0,2.0,C
+Série nationale,Variation annuelle : immatriculations (Moto),O1-03,%,34,0,-40.2,-15.5,4.05,28.075,635.7,43.575,-80.8625,93.4375,"1995 (+635,7 %) ; 2004 (+180,1 %)",2,,,,B
+Série nationale,Variation annuelle : immatriculations (Voiture),O1-03,%,34,0,-47.7,-3.05,4.4,16.325,108.5,19.375,-32.1125,45.3875,"1993 (-40,1 %) ; 1995 (+108,5 %) ; 2003 (+47,3 %) ; 2009 (-47,7 %)",4,,,,B
+Série nationale,Variation annuelle : immatriculations (Poids lourd),O1-03,%,34,0,-52.3,-6.7,4.85,24.875,98.8,31.575,-54.0625,72.2375,"1996 (+73,9 %) ; 2003 (+90,3 %) ; 2010 (+98,8 %)",3,,,,B
+Série nationale,Variation annuelle : immatriculations (Bus et car),O1-03,%,34,0,-90.6,-20.8,5.55,23.175,866.7,43.975,-86.7625,89.1375,"1993 (-90,6 %) ; 1994 (+866,7 %) ; 2009 (+100,0 %) ; 2010 (+166,7 %)",4,,,,B
+Série nationale,Variation annuelle : immatriculations (Autres),O1-03,%,34,0,-43.2,-6.85,7.1,20.775,51.9,27.625,-48.2875,62.2125,,0,,,,B
+Série nationale,Variation annuelle : permis délivrés (A),O1-06,%,15,2,-90.3,-36.0,-10.6,186.55,2192.4,222.55,-369.825,520.375,"2022 (+2 192,4 %) ; 2024 (+560,9 %)",2,,,,B
+Série nationale,Variation annuelle : permis délivrés (B),O1-06,%,15,2,-39.0,-13.7,3.0,17.7,226.2,31.4,-60.8,64.8,"2016 (+226,2 %)",1,,,,B
+Série nationale,Variation annuelle : permis délivrés (C),O1-06,%,15,2,-69.7,-16.3,4.8,27.75,433.1,44.05,-82.375,93.825,"2016 (+433,1 %)",1,,,,B
+Série nationale,Variation annuelle : permis délivrés (D),O1-06,%,15,2,-55.4,-13.2,5.4,28.75,224.4,41.95,-76.125,91.675,"2016 (+224,4 %)",1,,,,B
+Série nationale,Variation annuelle : permis délivrés (E),O1-06,%,15,2,-43.8,-20.75,5.6,27.4,612.2,48.15,-92.975,99.625,"2009 (+111,1 %) ; 2015 (+400,0 %) ; 2016 (+612,2 %)",3,,,,B
+Série nationale,Variation annuelle : permis délivrés (F),O1-06,%,9,8,-26.3,-19.2,25.0,81.0,1677.1,100.2,-169.5,231.3,"2016 (+300,0 %) ; 2024 (+1 677,1 %)",2,,,,B
+Série nationale,Variation annuelle : population (Togo),dénominateur des taux par habitant (R-06),%,34,0,-0.6,2.4,2.6,2.9,4.4,0.5,1.65,3.65,"1993 (-0,6 %) ; 1994 (+0,4 %) ; 1995 (+4,4 %) ; 1996 (+3,8 %) ; 2011 (+0,2 %)",5,,,,C
+Série nationale,"Variation annuelle : accidents, tués, blessés (Accidents constatés)",O2-01,%,14,0,-47.1,-6.7,0.7,10.075,154.4,16.775,-31.8625,35.2375,"2011 (+154,4 %) ; 2013 (-33,8 %) ; 2015 (-47,1 %) ; 2016 (+89,2 %)",4,,,,B
+Série nationale,"Variation annuelle : accidents, tués, blessés (Tués)",O2-01,%,14,0,-41.0,-1.675,2.0,11.925,57.2,13.6,-22.075,32.325,"2011 (+57,2 %) ; 2015 (-41,0 %)",2,,,,B
+Série nationale,"Variation annuelle : accidents, tués, blessés (Blessés)",O2-01,%,14,0,-30.4,-7.2,-2.85,20.95,76.9,28.15,-49.425,63.175,"2016 (+76,9 %)",1,,,,B

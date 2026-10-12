@@ -1,0 +1,246 @@
+Année,Type,Groupe,Immatriculations,Mesure,Source,Niveau,Rupture
+1990,Autocars et autobus,Bus et car,59,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1990,Camionnettes,Autres,1106,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1990,Camions,Poids lourd,195,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1990,Deux-roues et assimilées,Moto,1513,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1990,Semi-remorques,Poids lourd,63,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1990,Tracteurs,Poids lourd,79,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1990,Voitures,Voiture,3814,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1991,Autocars et autobus,Bus et car,31,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1991,Camionnettes,Autres,1052,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1991,Camions,Poids lourd,197,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1991,Deux-roues et assimilées,Moto,1601,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1991,Semi-remorques,Poids lourd,91,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1991,Tracteurs,Poids lourd,93,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1991,Voitures,Voiture,4004,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1992,Autocars et autobus,Bus et car,32,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1992,Camionnettes,Autres,891,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1992,Camions,Poids lourd,211,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1992,Deux-roues et assimilées,Moto,1641,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1992,Semi-remorques,Poids lourd,75,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1992,Tracteurs,Poids lourd,100,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1992,Voitures,Voiture,4300,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1993,Autocars et autobus,Bus et car,3,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1993,Camionnettes,Autres,535,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1993,Camions,Poids lourd,153,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1993,Deux-roues et assimilées,Moto,982,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1993,Semi-remorques,Poids lourd,42,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1993,Tracteurs,Poids lourd,57,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1993,Voitures,Voiture,2577,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1994,Autocars et autobus,Bus et car,29,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1994,Camionnettes,Autres,710,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1994,Camions,Poids lourd,166,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1994,Deux-roues et assimilées,Moto,1887,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1994,Semi-remorques,Poids lourd,41,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1994,Tracteurs,Poids lourd,64,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1994,Voitures,Voiture,3227,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1995,Autocars et autobus,Bus et car,15,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,True
+1995,Camionnettes,Autres,853,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,True
+1995,Camions,Poids lourd,204,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,True
+1995,Deux-roues et assimilées,Moto,13883,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,True
+1995,Semi-remorques,Poids lourd,71,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,True
+1995,Tracteurs,Poids lourd,82,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,True
+1995,Voitures,Voiture,6728,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,True
+1996,Autocars et autobus,Bus et car,16,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1996,Camionnettes,Autres,1296,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1996,Camions,Poids lourd,325,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1996,Deux-roues et assimilées,Moto,15383,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1996,Semi-remorques,Poids lourd,143,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1996,Tracteurs,Poids lourd,153,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1996,Voitures,Voiture,6239,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1997,Autocars et autobus,Bus et car,28,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1997,Camionnettes,Autres,1850,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1997,Camions,Poids lourd,375,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1997,Deux-roues et assimilées,Moto,14445,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1997,Semi-remorques,Poids lourd,70,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1997,Tracteurs,Poids lourd,84,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1997,Voitures,Voiture,7503,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1998,Autocars et autobus,Bus et car,35,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1998,Camionnettes,Autres,1787,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1998,Camions,Poids lourd,545,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1998,Deux-roues et assimilées,Moto,10603,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1998,Semi-remorques,Poids lourd,89,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1998,Tracteurs,Poids lourd,140,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1998,Voitures,Voiture,7470,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1999,Autocars et autobus,Bus et car,26,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1999,Camionnettes,Autres,1566,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1999,Camions,Poids lourd,501,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1999,Deux-roues et assimilées,Moto,12917,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1999,Semi-remorques,Poids lourd,104,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1999,Tracteurs,Poids lourd,147,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+1999,Voitures,Voiture,8642,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2000,Autocars et autobus,Bus et car,30,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2000,Camionnettes,Autres,1456,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2000,Camions,Poids lourd,460,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2000,Deux-roues et assimilées,Moto,10639,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2000,Semi-remorques,Poids lourd,102,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2000,Tracteurs,Poids lourd,139,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2000,Voitures,Voiture,7154,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2001,Autocars et autobus,Bus et car,32,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2001,Camionnettes,Autres,1567,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2001,Camions,Poids lourd,497,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2001,Deux-roues et assimilées,Moto,8500,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2001,Semi-remorques,Poids lourd,141,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2001,Tracteurs,Poids lourd,132,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2001,Voitures,Voiture,8469,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2002,Autocars et autobus,Bus et car,29,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2002,Camionnettes,Autres,1671,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2002,Camions,Poids lourd,483,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2002,Deux-roues et assimilées,Moto,8632,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2002,Semi-remorques,Poids lourd,122,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2002,Tracteurs,Poids lourd,116,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2002,Voitures,Voiture,9500,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2003,Autocars et autobus,Bus et car,21,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2003,Camionnettes,Autres,1359,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2003,Camions,Poids lourd,884,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2003,Deux-roues et assimilées,Moto,12130,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2003,Semi-remorques,Poids lourd,248,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2003,Tracteurs,Poids lourd,240,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2003,Voitures,Voiture,13991,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2004,Autocars et autobus,Bus et car,17,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,True
+2004,Camionnettes,Autres,1681,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,True
+2004,Camions,Poids lourd,608,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,True
+2004,Deux-roues et assimilées,Moto,33980,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,True
+2004,Semi-remorques,Poids lourd,229,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,True
+2004,Tracteurs,Poids lourd,249,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,True
+2004,Voitures,Voiture,11430,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,True
+2005,Autocars et autobus,Bus et car,18,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2005,Camionnettes,Autres,955,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2005,Camions,Poids lourd,770,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2005,Deux-roues et assimilées,Moto,27791,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2005,Semi-remorques,Poids lourd,248,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2005,Tracteurs,Poids lourd,324,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2005,Voitures,Voiture,11308,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2006,Autocars et autobus,Bus et car,28,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2006,Camionnettes,Autres,1305,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2006,Camions,Poids lourd,681,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2006,Deux-roues et assimilées,Moto,35760,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2006,Semi-remorques,Poids lourd,221,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2006,Tracteurs,Poids lourd,279,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2006,Voitures,Voiture,10961,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2007,Autocars et autobus,Bus et car,22,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2007,Camionnettes,Autres,1267,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2007,Camions,Poids lourd,652,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2007,Deux-roues et assimilées,Moto,34454,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2007,Semi-remorques,Poids lourd,192,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2007,Tracteurs,Poids lourd,213,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2007,Voitures,Voiture,10692,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2008,Autocars et autobus,Bus et car,18,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2008,Camionnettes,Autres,1075,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2008,Camions,Poids lourd,824,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2008,Deux-roues et assimilées,Moto,44409,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2008,Semi-remorques,Poids lourd,247,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2008,Tracteurs,Poids lourd,253,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2008,Voitures,Voiture,10989,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2009,Autocars et autobus,Bus et car,36,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2009,Camionnettes,Autres,1403,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2009,Camions,Poids lourd,765,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2009,Deux-roues et assimilées,Moto,36277,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2009,Semi-remorques,Poids lourd,304,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2009,Tracteurs,Poids lourd,376,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2009,Voitures,Voiture,5751,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2010,Autocars et autobus,Bus et car,96,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2010,Camionnettes,Autres,1542,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2010,Camions,Poids lourd,1382,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2010,Deux-roues et assimilées,Moto,38638,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2010,Semi-remorques,Poids lourd,741,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2010,Tracteurs,Poids lourd,750,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2010,Voitures,Voiture,6229,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2011,Autocars et autobus,Bus et car,97,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2011,Camionnettes,Autres,2219,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2011,Camions,Poids lourd,1939,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2011,Deux-roues et assimilées,Moto,42283,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2011,Semi-remorques,Poids lourd,978,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2011,Tracteurs,Poids lourd,751,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2011,Voitures,Voiture,7256,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2012,Autocars et autobus,Bus et car,102,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2012,Camionnettes,Autres,1986,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2012,Camions,Poids lourd,2434,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2012,Deux-roues et assimilées,Moto,43757,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2012,Semi-remorques,Poids lourd,894,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2012,Tracteurs,Poids lourd,1058,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2012,Voitures,Voiture,9056,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2013,Autocars et autobus,Bus et car,94,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2013,Camionnettes,Autres,2311,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2013,Camions,Poids lourd,2286,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2013,Deux-roues et assimilées,Moto,41830,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2013,Semi-remorques,Poids lourd,1032,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2013,Tracteurs,Poids lourd,1148,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2013,Voitures,Voiture,9402,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2014,Autocars et autobus,Bus et car,103,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2014,Camionnettes,Autres,2533,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2014,Camions,Poids lourd,2506,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2014,Deux-roues et assimilées,Moto,51134,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2014,Semi-remorques,Poids lourd,1130,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2014,Tracteurs,Poids lourd,1258,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2014,Voitures,Voiture,10304,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2015,Autocars et autobus,Bus et car,87,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2015,Camionnettes,Autres,3229,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2015,Camions,Poids lourd,1120,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2015,Deux-roues et assimilées,Moto,65599,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2015,Semi-remorques,Poids lourd,493,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2015,Tracteurs,Poids lourd,720,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2015,Voitures,Voiture,14500,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2016,Autocars et autobus,Bus et car,62,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2016,Camionnettes,Autres,2923,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2016,Camions,Poids lourd,791,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2016,Deux-roues et assimilées,Moto,45341,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2016,Semi-remorques,Poids lourd,394,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2016,Tracteurs,Poids lourd,530,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2016,Voitures,Voiture,14079,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2017,Autocars et autobus,Bus et car,73,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2017,Camionnettes,Autres,3149,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2017,Camions,Poids lourd,883,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2017,Deux-roues et assimilées,Moto,41187,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2017,Semi-remorques,Poids lourd,569,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2017,Tracteurs,Poids lourd,780,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2017,Voitures,Voiture,14328,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2018,Autocars et autobus,Bus et car,83,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2018,Camionnettes,Autres,3224,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2018,Camions,Poids lourd,897,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2018,Deux-roues et assimilées,Moto,43063,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2018,Semi-remorques,Poids lourd,631,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2018,Tracteurs,Poids lourd,841,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2018,Voitures,Voiture,15607,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2019,Autocars et autobus,Bus et car,133,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2019,Camionnettes,Autres,3682,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2019,Camions,Poids lourd,960,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2019,Deux-roues et assimilées,Moto,54873,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2019,Semi-remorques,Poids lourd,638,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2019,Tracteurs,Poids lourd,856,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2019,Voitures,Voiture,18072,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2020,Autocars et autobus,Bus et car,91,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2020,Camionnettes,Autres,4085,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2020,Camions,Poids lourd,1407,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2020,Deux-roues et assimilées,Moto,44850,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2020,Semi-remorques,Poids lourd,816,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2020,Tracteurs,Poids lourd,1105,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2020,Voitures,Voiture,16386,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2021,Autocars et autobus,Bus et car,101,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2021,Camionnettes,Autres,4941,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2021,Camions,Poids lourd,1380,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2021,Deux-roues et assimilées,Moto,65363,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2021,Semi-remorques,Poids lourd,764,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2021,Tracteurs,Poids lourd,1082,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2021,Voitures,Voiture,20313,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2022,Autocars et autobus,Bus et car,145,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2022,Camionnettes,Autres,4626,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2022,Camions,Poids lourd,1241,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2022,Deux-roues et assimilées,Moto,67639,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2022,Semi-remorques,Poids lourd,793,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2022,Tracteurs,Poids lourd,1195,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2022,Voitures,Voiture,18131,immatriculations de l'année (flux),portail : parc_immatricule_par_type_1.csv,A,False
+2023,Autocars et autobus,Bus et car,189,immatriculations de l'année (flux),"annuaire statistique 2024, tableau 40.1",A,False
+2023,Camionnettes,Autres,4441,immatriculations de l'année (flux),"annuaire statistique 2024, tableau 40.1",A,False
+2023,Camions,Poids lourd,1194,immatriculations de l'année (flux),"annuaire statistique 2024, tableau 40.1",A,False
+2023,Deux-roues et assimilées,Moto,107845,immatriculations de l'année (flux),"annuaire statistique 2024, tableau 40.1",A,False
+2023,Semi-remorques,Poids lourd,503,immatriculations de l'année (flux),"annuaire statistique 2024, tableau 40.1",A,False
+2023,Tracteurs,Poids lourd,923,immatriculations de l'année (flux),"annuaire statistique 2024, tableau 40.1",A,False
+2023,Voitures,Voiture,15764,immatriculations de l'année (flux),"annuaire statistique 2024, tableau 40.1",A,False
+2024,Autocars et autobus,Bus et car,122,immatriculations de l'année (flux),"annuaire statistique 2024, tableau 40.1",A,False
+2024,Camionnettes,Autres,4669,immatriculations de l'année (flux),"annuaire statistique 2024, tableau 40.1",A,False
+2024,Camions,Poids lourd,1118,immatriculations de l'année (flux),"annuaire statistique 2024, tableau 40.1",A,False
+2024,Deux-roues et assimilées,Moto,65593,immatriculations de l'année (flux),"annuaire statistique 2024, tableau 40.1",A,False
+2024,Semi-remorques,Poids lourd,443,immatriculations de l'année (flux),"annuaire statistique 2024, tableau 40.1",A,False
+2024,Tracteurs,Poids lourd,928,immatriculations de l'année (flux),"annuaire statistique 2024, tableau 40.1",A,False
+2024,Voitures,Voiture,15325,immatriculations de l'année (flux),"annuaire statistique 2024, tableau 40.1",A,False

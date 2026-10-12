@@ -1,0 +1,15 @@
+
+
+Struture du repo Actuel
+
+- Folders below are intended to me as process of working as a Data Engineering : 
+    - workspace
+    - methodology
+    - 02_decision_matrix
+    - tmp 
+
+- Folders, files,  below are for submission to the jury
+    - File 01_..11_
+    - notebooks if needed in dashboard
+    - 
+

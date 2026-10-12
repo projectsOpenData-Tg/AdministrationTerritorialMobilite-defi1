@@ -1,0 +1,317 @@
+=====================================================================
+  PROCESS DE TRAVAIL — DATA CHALLENGE / PROJET D'AIDE À LA DÉCISION
+  Version 2 — consolidée après le Défi 1 Économie numérique (12/20)
+=====================================================================
+
+  Construite à partir de trois matériaux :
+    - ce que nous avons réellement fait au Défi 1 (le socle tient)
+    - les deux projets primés : atlasdunumerique.vercel.app (1er)
+      et eco-num.streamlit.app (2e)
+    - le cadre de travail proposé en revue externe
+
+  Ce fichier ne garde que l'ARCHITECTURE. Le détail et les
+  justifications sont ailleurs, dans workspace/ :
+    REFERENTIEL_dashboard-territorial.md      analyses + pièges
+    METHODOLOGIE_standard-data-challenge.md   discipline d'analyse
+    methodologie-projets.md                   cadrage générique
+    _GARDRAILS_DASHBOARD.txt                  ce qui sort de l'UI
+
+
+---------------------------------------------------------------------
+  LA RÈGLE QUI COMMANDE TOUT LE RESTE
+---------------------------------------------------------------------
+
+  NE PAS partir de : « quel graphique ou quel score puis-je faire
+                       avec ces données ? »
+
+  PARTIR de        : « quelle décision doit être prise, et quelle
+                       preuve les données doivent-elles fournir ? »
+
+  Sens de lecture unique :
+
+    décision -> données -> exploration -> preuve -> indicateur
+             -> diagnostic -> priorité -> action chiffrée -> restitution
+
+  Le changement de fond par rapport au Défi 1 :
+  le score n'est plus calculé pendant la préparation. Il arrive APRÈS
+  l'exploration, et seulement si l'exploration le justifie.
+
+
+---------------------------------------------------------------------
+  ARCHITECTURE — 14 ÉTAPES
+---------------------------------------------------------------------
+
+   CADRAGE     01  PROBLEM DEFINITION              [FIGÉ]
+               02  DECISION MATRIX                 [FIGÉ]
+                        |
+   DONNÉES     03  DATA INVENTORY & PROFILING
+               04  DATA UNDERSTANDING
+               05  DATA QUALITY & VALIDATION
+               06  DECISION DATASETS
+                        |
+   ANALYSE     07  EXPLORATORY DATA ANALYSIS
+               08  INDICATORS & METRICS
+               09  SCORING / PRIORISATION
+               10  CROSS-ANALYSIS & DIAGNOSTIC
+                        |
+   DÉCISION    11  RECOMMENDATIONS & CIBLAGE
+               12  DASHBOARD / DATA STORY
+                        |
+   CLÔTURE     13  VALIDATION
+               14  FINAL REPORT / SYNTHESIS
+
+  VERROU : 01 et 02 sont écrits AVANT tout profilage technique, puis
+  figés. Ils ne sont plus jamais modifiés. Ils servent de point de
+  comparaison entre ce qu'on croyait du sujet et ce que les données
+  permettent réellement de faire.
+
+
+---------------------------------------------------------------------
+  LES 14 ÉTAPES — objectif / sortie / point clé
+---------------------------------------------------------------------
+
+01  PROBLEM DEFINITION                                        [FIGÉ]
+    Objectif  Quelle décision publique l'analyse doit-elle éclairer ?
+    Sortie    problème, population, territoire, période, décision,
+              utilisateur final
+    Clé       nommer une DÉCISION, pas un thème.
+              « Analyser la couverture numérique »          -> non
+              « Identifier les territoires où l'écart entre
+                population, infrastructure et couverture
+                justifie une intervention prioritaire »     -> oui
+
+02  DECISION MATRIX                                           [FIGÉ]
+    Objectif  Quel est le contrat analytique ?
+    Sortie    une ligne par question :
+              question | données | analyse | indicateur | décision
+    Clé       toute analyse sans ligne ici ne sera pas produite.
+              C'est ce qui empêche le dashboard-galerie.
+
+03  DATA INVENTORY & PROFILING
+    Objectif  Qu'ai-je réellement, et surtout : que me manque-t-il ?
+    Sortie    une fiche par dataset — source, date, maille, unité,
+              lignes, variables, types, manquants, doublons,
+              couverture géographique, granularité, biais,
+              compatibilité, FIABILITÉ / LIMITES
+    Clé       TROIS COUCHES À CHERCHER ICI, jamais plus tard, parce
+              qu'elles ne se rattrapent pas à l'analyse :
+                - une source de DEMANDE (enquête déclarative) face
+                  aux sources d'OFFRE (inventaires d'infrastructures)
+                - un BENCHMARK EXTERNE (pays voisins comparables)
+                - une couche de LIEUX CANDIDATS (marchés, écoles,
+                  mairies, dispensaires) sans laquelle aucune
+                  optimisation de localisation ne sera possible
+
+04  DATA UNDERSTANDING
+    Objectif  Que la donnée permet-elle de dire — et que ne
+              permet-elle pas de dire ?
+    Sortie    un niveau de preuve par variable :
+                A  MESURÉ    comptage direct, recalculable
+                B  CALCULÉ   dérivé d'une formule qu'on maîtrise
+                C  ESTIMÉ    indicateur pré-calculé, proxy, méthode
+                             non documentée
+    Clé       le niveau de preuve SUIT la variable jusqu'à la
+              recommandation. Une reco portée par du C ne déclenche
+              pas un investissement : elle déclenche une vérification.
+              Et : 0 n'est pas l'absence de donnée. Un NULL ne
+              devient jamais un 0.
+
+05  DATA QUALITY & VALIDATION
+    Objectif  Puis-je croiser ces données sans mentir ?
+    Sortie    registre d'anomalies et d'exclusions, tests de
+              cohérence, journal d'étape
+    Clé       quatre familles à passer :
+                structurelle    doublons, nuls, types, aberrantes
+                géographique    points hors territoire, rattachement
+                                administratif, géométries invalides
+                temporelle      millésimes différents, obsolescence
+                inter-datasets  le croisement est-il légitime ?
+              Contrôles BLOQUANTS :
+                - aucune couverture nationale à 0 % ni à 100 %
+                - nombre d'entités par maille = découpage officiel
+                - les totaux par opérateur ne dépassent pas le
+                  réseau réel (points multi-opérateurs)
+
+06  DECISION DATASETS
+    Objectif  Quelle table porte la décision ?
+    Sortie    une table analytique par unité de décision
+    Clé       1 dataset = 1 maille. Choisir ICI la maille ET la
+              source de population : un raster de population autorise
+              des opérations (tampon, masque, optimisation) qu'un
+              tableau de recensement interdit. Le mieux est d'avoir
+              les deux — le raster pour calculer, le recensement pour
+              publier les totaux — chacun étiqueté.
+
+07  EXPLORATORY DATA ANALYSIS
+    Objectif  Que disent les données, avant toute décision
+              d'indicateur ?
+    Sortie    distributions, comparaisons régionales, cartes,
+              croisements bivariés
+    Clé       chercher les ÉCARTS, pas les moyennes.
+              Cinq contradictions à tester systématiquement :
+                - population forte + offre faible
+                - offre correcte + usage ou couverture faible
+                - territoires VOISINS très différents (jamais fait
+                  au Défi 1 — le plus simple et le plus parlant)
+                - taux élevé + volume faible, et l'inverse
+                - service unique : là où il est seul, que se
+                  passe-t-il s'il tombe ?
+
+08  INDICATORS & METRICS
+    Objectif  Comment mesurer ce que l'exploration a montré ?
+    Sortie    catalogue d'indicateurs — définition, maille, source,
+              sens de lecture, niveau de preuve
+    Clé       indicateurs simples et lisibles D'ABORD (X pour 10 000
+              habitants, % non couvert, part / part). Chaque
+              indicateur porte sa justification, issue du 07.
+              Normaliser en RANG PERCENTILE plutôt qu'en Min-Max :
+              le Min-Max se fait écraser par un seul extrême.
+
+09  SCORING / PRIORISATION
+    Objectif  Comment ordonner — et le classement tient-il ?
+    Sortie    score décomposé, rang, catégorie, sensibilité aux
+              pondérations, robustesse, niveau de confiance
+    Clé       quatre exigences de défendabilité :
+                - dimensions explicites, jamais un score opaque
+                - poids justifiés
+                - sensibilité testée sur plusieurs pondérations
+                - robustesse au changement de normalisation et au
+                  retrait du point extrême
+              Et surtout : INTENSITÉ n'est pas VOLUME. Le score
+              mesure une intensité ; la population exposée est une
+              AUTRE lecture, affichée à côté, avec la règle qui
+              tranche entre les deux.
+
+10  CROSS-ANALYSIS & DIAGNOSTIC
+    Objectif  Pourquoi ce territoire — et pas seulement à quel rang ?
+    Sortie    une phrase de diagnostic par territoire prioritaire
+    Clé       passer de « A obtient un score de 82 » à « A cumule une
+              population importante, une faible couverture et peu de
+              points de service ». Le décideur agit sur une cause,
+              pas sur un rang.
+
+11  RECOMMENDATIONS & CIBLAGE
+    Objectif  Quoi faire, où, combien, dans quel ordre ?
+    Sortie    chaîne FAIT -> ÉCART -> IMPACT -> ACTION -> PRIORITÉ,
+              reliée au diagnostic du 10
+    Clé       C'EST LE MANQUE DU DÉFI 1. Les deux projets primés
+              quantifient, nous non.
+                - quantifier la CIBLE, pas le résultat : « porter le
+                  maillage de X à Y pour atteindre la médiane —
+                  population concernée : Z habitants. Le coût n'est
+                  pas dans les données. »
+                - si la couche de candidats du 03 existe :
+                  optimisation de localisation max-couverture ->
+                  liste ordonnée de sites + gain marginal de chacun
+                - un scénario prospectif chiffré (tendanciel /
+                  accéléré / ambitieux), étiqueté « ordre de
+                  grandeur, pas un devis »
+                - compter en HABITANTS, jamais en rangs
+
+12  DASHBOARD / DATA STORY
+    Objectif  Ce qui est juste se voit-il ?
+    Sortie    le dashboard, construit APRÈS les analyses. Il restitue,
+              il ne découvre pas.
+    Archi     01 Vue nationale
+              02 Comparaison territoriale
+              03 Analyse détaillée
+              04 Carte
+              05 Priorités
+              06 Recommandations
+              07 Méthodologie
+    Clé       - TROIS BANDEAUX sur CHAQUE vue : le constat à côté du
+                graphique, la synthèse chiffrée en bas, et LA LIMITE
+                DE CETTE VUE-LÀ, sur place. Une limite garée sur la
+                page Méthodologie n'a pas été énoncée.
+              - au moins un seuil d'analyse déplaçable par le lecteur
+                (meilleure réponse à « pourquoi 50 % ? »)
+              - export CSV par bloc
+              - hors de l'interface : noms de fichiers, numéros
+                d'étape, familles de données, codes internes. Un code
+                n'apparaît qu'accompagné de son intitulé en clair.
+              - règle des dix secondes par page : un message, trois
+                chiffres, une action.
+
+13  VALIDATION
+    Objectif  Tout ce qui est affiché est-il reliable à un calcul ?
+    Sortie    rapport de validation
+    Clé       dashboard = fichiers analytiques = calculs. Revérifier
+              deux ou trois territoires à la main. Puis la vraie
+              question : « cette recommandation est-elle réellement
+              justifiée par les données ? »
+              DEUX revues séparées : une de rigueur, une de décision.
+
+14  FINAL REPORT / SYNTHESIS
+    Objectif  Ce que le jury lit.
+    Sortie    rapport et 10 diapositives, GÉNÉRÉS PAR SCRIPT depuis
+              les sorties du pipeline
+    Plan      problème -> méthode (une seule diapo) -> données ->
+              résultats -> diagnostic -> priorités -> recommandations
+              chiffrées -> limites -> décisions à engager
+    Clé       aucun chiffre retapé. Deux endroits qui portent la même
+              grandeur finissent toujours par diverger.
+
+
+---------------------------------------------------------------------
+  CE QUI CHANGE PAR RAPPORT AU PROCESS DU DÉFI 1
+---------------------------------------------------------------------
+
+  Défi 1                            Désormais
+  --------------------------------  ----------------------------------
+  01 Problem Definition             conservé, figé
+  02 Decision Matrix                conservé, figé, devient un contrat
+  03_A Observations / Profilage     renforcé : + demande, + benchmark,
+                                    + lieux candidats
+  03_B Decision-Datasets            déplacé APRÈS la qualité (-> 06)
+  04 Data Understanding             + niveau de preuve A / B / C
+  05 Data Preparation               la qualité en sort et devient 05
+  score calculé en préparation      SUPPRIMÉ — le score arrive en 09
+  06 Data Analysis                  renforcé : l'EDA précède tout
+                                    indicateur
+  07 Indicators & Scoring           scindé : 08 indicateurs, 09 score
+  (rien)                            NOUVEAU 10 diagnostic
+  08 Recommendations                + quantification obligatoire
+  09 Dashboard                      + trois bandeaux, seuils mobiles,
+                                    exports
+  (rien)                            NOUVEAU 13 validation
+  10 Final Report                   conservé, généré par script
+
+
+---------------------------------------------------------------------
+  LES TROIS RÈGLES COMMUNES AUX DEUX PROJETS PRIMÉS
+---------------------------------------------------------------------
+
+  1.  Chaque action porte une QUANTITÉ.
+  2.  La DÉCISION est le titre de la page d'accueil, pas sa conclusion.
+  3.  Le manque se compte en HABITANTS, pas en rangs.
+
+  Nous n'en appliquions aucune des trois. Deux gagnants sur deux les
+  appliquent : ce n'est plus une observation, c'est une règle.
+
+
+---------------------------------------------------------------------
+  VERROUS — à passer avant de rendre
+---------------------------------------------------------------------
+
+  [ ] 01 et 02 n'ont pas été modifiés depuis leur rédaction
+  [ ] un chiffre pris au hasard remonte à un fichier et à une étape
+  [ ] aucun score n'a été calculé avant l'étape 09
+  [ ] chaque action porte un territoire nommé, une cible chiffrée,
+      un horizon et sa réserve
+  [ ] chaque vue porte sa propre limite, à côté de l'analyse
+  [ ] au moins un seuil est déplaçable par le lecteur
+  [ ] le rapport est généré par script, aucun chiffre retapé
+  [ ] une revue de rigueur ET une revue de décision ont eu lieu
+
+
+---------------------------------------------------------------------
+  IMPLÉMENTATION TECHNIQUE DU DASHBOARD
+---------------------------------------------------------------------
+
+  Le choix de l'outil n'explique pas la note : le projet classé 2e
+  est sous Streamlit, comme nous, et il est primé. Ce qui se voit,
+  c'est la densité de restitution — nombre de vues, filtres
+  manipulables, bandeaux de lecture, exports.
+
+  Pièges Streamlit vérifiés sur ce projet, avec leur contournement :
+  voir workspace/REFERENTIEL_dashboard-territorial.md, partie 6.
