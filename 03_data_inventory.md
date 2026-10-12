@@ -1,7 +1,6 @@
 # 03 — Data Inventory
 
 **Projet :** Mobilité et sécurité routière au Togo
-**Version :** 1.3 — **Date :** 2026-10-04 — **Statut :** **figé** le 2026-10-04
 **Sources :** `workspace/_PROJECT.txt` (ressources mises à jour), `02_decision_matrix.xlsx` (v1.1, figé), registre `data/raw/_SOURCES.csv`, recherches complémentaires des 3 et 4 octobre 2026 (§8) et leur validation (`workspace/validation.md`)
 
 > L’inventaire **recense** : pour chaque besoin D1–D13 du 02, ce qui existe, où, sous quelle licence, à quelle maille et sur quelles années. Il télécharge ce qui est accessible, sans l’analyser. Profiler les fichiers, contrôler leur qualité et dire ce qui est calculable relève du 04.

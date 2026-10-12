@@ -1,8 +1,6 @@
 # 01 — Problem Definition
 
 **Projet :** Mobilité et sécurité routière au Togo
-**Version :** 1.3 — **Date :** 2026-10-03 — **Statut :** **figé** le 2026-10-03
-**Validé par :** [noms à compléter]
 **Sources :** `workspace/_PROJECT.txt` (énoncé), `methodology/_PROCEDURE_METHODOLOGIE.txt` (procédure)
 
 > Écrit avant tout profilage des données. Une fois validé, ce document n’est plus modifié : il sert de référence pour mesurer l’écart entre ce que l’on croyait du sujet et ce que les données permettent. Les seuils, pondérations et règles de calcul détaillées relèvent du `02_decision_matrix`.

@@ -8,6 +8,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 import plotly.graph_objects as go  # noqa: E402
 import streamlit as st  # noqa: E402
 from plotly.subplots import make_subplots  # noqa: E402
+from shapely.geometry import shape as shp_shape  # noqa: E402
 
 from composants import (ariane, carte_kpi, constat, entete, export_csv, fenetre_geo, habiller, limite,  # noqa: E402
                         note, pied, rangee_kpi, synthese, titre_bloc, tracer)
@@ -114,6 +115,14 @@ def _lignes(gdf, types):
 
 
 @st.cache_data(show_spinner=False)
+def _centroides_vn():
+    """Un point intérieur par préfecture, pour écrire son nom sur l'agrandissement."""
+    g = contours("prefectures")
+    return {ft["properties"]["code"]: shp_shape(ft["geometry"]).representative_point().coords[0]
+            for ft in g["features"]}
+
+
+@st.cache_data(show_spinner=False)
 def _table_carte():
     """Une ligne par préfecture, avec tout ce que l'info-bulle affiche (design-page1 §2)."""
     p = pref10[["Préfecture", "Zone", "Région", "Population", "Formation — auto-écoles comptées",
@@ -132,7 +141,8 @@ geo = contours("prefectures")
 geo_reg = contours_regions()
 
 titre_bloc("Le Togo, préfecture par préfecture",
-           "Les 5 régions sont tracées en couleur. Molette ou barre d'outils pour zoomer.")
+           "Les 5 régions sont tracées en couleur ; l'agrandissement montre la région Maritime et le Grand Lomé. "
+           "Molette ou barre d'outils pour zoomer.")
 constat("Le Togo compte <strong>8 095 498</strong> habitants, très inégalement répartis : le Grand Lomé en "
         "concentre près du quart. La densité des auto-écoles agréées suit les grandes villes, tandis que "
         f"<strong style='color:{ROUGE_DRAPEAU}'>23 préfectures</strong> rurales n'en ont aucune.")
@@ -150,75 +160,125 @@ with gauche:
     montre_rn = couche_choisie == "Routes nationales seules"
     regions_pleines = couche_choisie == "Régions"
 
+    ae_data = couche("auto_ecoles")
+    ae_agree = ae_data[ae_data["Comptée (R-12)"]]
+    ae_non = ae_data[~ae_data["Comptée (R-12)"]]
+    routes_gdf = couche("routes_classees") if (montre_routes or montre_rn) else None
+
     fig = go.Figure()
+    for cible, inset in [("geo", False), ("geo2", True)]:
+        sl = not inset
+        if montre_pop:
+            fig.add_choropleth(
+                geojson=geo, featureidkey="properties.code", locations=list(pcarte["code"]),
+                z=[c + 0.5 for c in pcarte["classe"]], zmin=0, zmax=len(BLEUS),
+                colorscale=_echelle_discrete(BLEUS), showscale=False, geo=cible,
+                marker_line_color="#ffffff", marker_line_width=0.7,
+                customdata=[[z, r, fr(p), int(a), k, pt] for z, r, p, a, k, pt in zip(
+                    pcarte["Zone"], pcarte["Région"], pcarte["Population"], pcarte["ae"], pcarte["km_txt"],
+                    pcarte["part_txt"])],
+                hovertemplate="<b>%{location}</b><br>Zone : %{customdata[0]} · Région : %{customdata[1]}"
+                              "<br>Population : %{customdata[2]} habitants"
+                              "<br>Auto-écoles agréées : %{customdata[3]}"
+                              "<br>Réseau évalué : %{customdata[4]}"
+                              "<br>En mauvais état : %{customdata[5]}<extra></extra>")
+        elif regions_pleines:
+            for nom_reg, coul_r in COULEUR_REGION.items():
+                mask = pcarte["Région"] == nom_reg
+                prefs = list(pcarte.loc[mask, "code"])
+                if not prefs:
+                    continue
+                fig.add_choropleth(
+                    geojson=geo, featureidkey="properties.code", locations=prefs,
+                    z=[0] * len(prefs), colorscale=[[0, coul_r], [1, coul_r]],
+                    showscale=False, geo=cible, marker_line_color="#ffffff", marker_line_width=0.7,
+                    marker_opacity=0.55,
+                    customdata=[[z, nom_reg, fr(p), int(a)] for z, p, a in zip(
+                        pcarte.loc[mask, "Zone"], pcarte.loc[mask, "Population"], pcarte.loc[mask, "ae"])],
+                    hovertemplate="<b>%{location}</b><br>Zone : %{customdata[0]} · Région : %{customdata[1]}"
+                                  "<br>Population : %{customdata[2]} habitants"
+                                  "<br>Auto-écoles agréées : %{customdata[3]}<extra></extra>")
+        else:
+            fond = "#f6f5f0" if (montre_routes or montre_rn) else "#f2f1ec"
+            fig.add_choropleth(
+                geojson=geo, featureidkey="properties.code", locations=list(pcarte["code"]),
+                z=[0] * len(pcarte), colorscale=[[0, fond], [1, fond]], showscale=False, geo=cible,
+                marker_line_color="#d8d6cc", marker_line_width=0.6,
+                customdata=[[z, r, fr(p), int(a)] for z, r, p, a in zip(
+                    pcarte["Zone"], pcarte["Région"], pcarte["Population"], pcarte["ae"])],
+                hovertemplate="<b>%{location}</b><br>Zone : %{customdata[0]} · Région : %{customdata[1]}"
+                              "<br>Population : %{customdata[2]} habitants"
+                              "<br>Auto-écoles agréées : %{customdata[3]}<extra></extra>")
+        for nom_reg, coul_r in COULEUR_REGION.items():
+            fig.add_choropleth(
+                geojson=geo_reg, featureidkey="properties.code", locations=[nom_reg], z=[0],
+                colorscale=[[0, "rgba(0,0,0,0)"], [1, "rgba(0,0,0,0)"]],
+                showscale=False, geo=cible, marker_line_color=coul_r, marker_line_width=2.2,
+                showlegend=False, hovertemplate=f"<b>Région {nom_reg}</b><extra></extra>")
+        if montre_routes:
+            for typ, (lon, lat) in _lignes(routes_gdf, list(COUL_ROUTE)).items():
+                fig.add_scattergeo(lon=lon, lat=lat, mode="lines", name=typ, geo=cible,
+                                   line=dict(width=1.0, color=COUL_ROUTE[typ]), hoverinfo="skip", showlegend=sl)
+        if montre_rn:
+            nationales = ["Route nationale revêtue", "Route nationale non revêtue"]
+            for typ, (lon, lat) in _lignes(routes_gdf, nationales).items():
+                fig.add_scattergeo(lon=lon, lat=lat, mode="lines", name=typ, geo=cible,
+                                   line=dict(width=2.0 if "non" not in typ else 1.6, color=COUL_ROUTE[typ],
+                                             dash="solid" if "non" not in typ else "dash"),
+                                   hoverinfo="skip", showlegend=sl)
+        if montre_ae:
+            fig.add_scattergeo(lon=ae_non.geometry.x, lat=ae_non.geometry.y, mode="markers", geo=cible,
+                               name=f"Non agréée ou non renseignée ({len(ae_non)})",
+                               marker=dict(size=8 if inset else 7, color="#e6b422",
+                                           line=dict(width=0.8, color="#7a5a00")),
+                               text=ae_non["Préfecture"], showlegend=sl,
+                               hovertemplate="Auto-école non agréée — %{text}<extra></extra>")
+            fig.add_scattergeo(lon=ae_agree.geometry.x, lat=ae_agree.geometry.y, mode="markers", geo=cible,
+                               name=f"Agréée ({len(ae_agree)})",
+                               marker=dict(size=12 if inset else 10, color="#16834a",
+                                           line=dict(width=1.3, color="#ffffff")),
+                               text=ae_agree["Préfecture"], showlegend=sl,
+                               hovertemplate="Auto-école agréée — %{text}<extra></extra>")
 
-    # --- Fond : population en 5 classes, ou fond neutre
-    if montre_pop:
-        fig.add_choropleth(
-            geojson=geo, featureidkey="properties.code", locations=list(pcarte["code"]),
-            z=[c + 0.5 for c in pcarte["classe"]], zmin=0, zmax=len(BLEUS),
-            colorscale=_echelle_discrete(BLEUS), showscale=False,
-            marker_line_color="#ffffff", marker_line_width=0.7,
-            customdata=[[z, r, fr(p), int(a), k, pt] for z, r, p, a, k, pt in zip(
-                pcarte["Zone"], pcarte["Région"], pcarte["Population"], pcarte["ae"], pcarte["km_txt"],
-                pcarte["part_txt"])],
-            hovertemplate="<b>%{location}</b><br>Zone : %{customdata[0]} · Région : %{customdata[1]}"
-                          "<br>Population : %{customdata[2]} habitants"
-                          "<br>Auto-écoles agréées : %{customdata[3]}"
-                          "<br>Réseau évalué : %{customdata[4]}"
-                          "<br>En mauvais état : %{customdata[5]}<extra></extra>")
-    elif not regions_pleines:
-        fond = "#f6f5f0" if (montre_routes or montre_rn) else "#f2f1ec"
-        fig.add_choropleth(
-            geojson=geo, featureidkey="properties.code", locations=list(pcarte["code"]),
-            z=[0] * len(pcarte), colorscale=[[0, fond], [1, fond]], showscale=False,
-            marker_line_color="#d8d6cc", marker_line_width=0.6,
-            customdata=[[z, r, fr(p), int(a)] for z, r, p, a in zip(
-                pcarte["Zone"], pcarte["Région"], pcarte["Population"], pcarte["ae"])],
-            hovertemplate="<b>%{location}</b><br>Zone : %{customdata[0]} · Région : %{customdata[1]}"
-                          "<br>Population : %{customdata[2]} habitants"
-                          "<br>Auto-écoles agréées : %{customdata[3]}<extra></extra>")
+    SUD = [c for c, r in zip(pcarte["code"], pcarte["Région"]) if r == "Maritime"]
+    cen = _centroides_vn()
+    fig.add_scattergeo(lon=[cen[p][0] for p in SUD if p in cen], lat=[cen[p][1] for p in SUD if p in cen],
+                       mode="text", geo="geo2", text=[p for p in SUD if p in cen],
+                       textfont=dict(size=9, color="#141413"), hoverinfo="skip", showlegend=False)
 
-    # --- Les 5 régions : remplies (couche « Régions ») ou en contour de couleur sur toutes les autres couches
-    for nom_reg, coul in COULEUR_REGION.items():
-        fig.add_choropleth(
-            geojson=geo_reg, featureidkey="properties.code", locations=[nom_reg], z=[0],
-            colorscale=[[0, coul], [1, coul]] if regions_pleines else [[0, "rgba(0,0,0,0)"], [1, "rgba(0,0,0,0)"]],
-            showscale=False, marker_line_color=coul,
-            marker_line_width=1.0 if regions_pleines else 2.2,
-            name=nom_reg, showlegend=False,  # légende des régions rendue en HTML sous la carte
-            hovertemplate=f"<b>Région {nom_reg}</b><extra></extra>")
+    xs, ys = [], []
+    for ft in geo["features"]:
+        x0, y0, x1, y1 = ft["bbox"]
+        xs += [x0, x1]; ys += [y0, y1]
+    lon_t, lat_t = [min(xs) - 0.05, max(xs) + 0.05], [min(ys) - 0.05, max(ys) + 0.05]
+    sud_set = set(SUD)
+    xs_s, ys_s = [], []
+    for ft in geo["features"]:
+        if ft["properties"]["code"] in sud_set:
+            x0, y0, x1, y1 = ft["bbox"]
+            xs_s += [x0, x1]; ys_s += [y0, y1]
+    lon_s, lat_s = [min(xs_s) - 0.03, max(xs_s) + 0.03], [min(ys_s) - 0.03, max(ys_s) + 0.03]
+    n_agree_sud = sum(1 for p in ae_agree["Préfecture"] if p in sud_set)
 
-    # --- Routes
-    if montre_routes:
-        routes = couche("routes_classees")
-        for typ, (lon, lat) in _lignes(routes, list(COUL_ROUTE)).items():
-            fig.add_scattergeo(lon=lon, lat=lat, mode="lines", name=typ,
-                               line=dict(width=1.0, color=COUL_ROUTE[typ]), hoverinfo="skip")
-    if montre_rn:
-        routes = couche("routes_classees")
-        nationales = ["Route nationale revêtue", "Route nationale non revêtue"]
-        for typ, (lon, lat) in _lignes(routes, nationales).items():
-            fig.add_scattergeo(lon=lon, lat=lat, mode="lines", name=typ,
-                               line=dict(width=2.0 if "non" not in typ else 1.6, color=COUL_ROUTE[typ],
-                                         dash="solid" if "non" not in typ else "dash"), hoverinfo="skip")
-
-    # --- Auto-écoles
-    if montre_ae:
-        ae = couche("auto_ecoles")
-        ae["Statut affiché"] = ae["Comptée (R-12)"].map({True: "Agréée (132)",
-                                                         False: "Non agréée ou non renseignée (140)"})
-        for statut, coul in [("Agréée (132)", "#ffffff"), ("Non agréée ou non renseignée (140)", "#8a8780")]:
-            s = ae[ae["Statut affiché"] == statut]
-            fig.add_scattergeo(lon=s.geometry.x, lat=s.geometry.y, mode="markers", name=statut,
-                               marker=dict(size=6, color=coul, line=dict(width=0.9, color="#141413")),
-                               text=s["Préfecture"], hovertemplate="Auto-école — %{text}<extra></extra>")
-
-    fenetre_geo(fig, geo)
-    fig.update_layout(height=600, margin=dict(l=0, r=0, t=0, b=0), paper_bgcolor="#ffffff",
-                      legend=dict(orientation="h", y=-0.02, x=0, font=dict(size=10)),
-                      font=dict(family="IBM Plex Sans, system-ui, sans-serif", color=ENCRE),
-                      hoverlabel=dict(bgcolor="#ffffff", font_size=12), separators=", ")
+    base_geo = dict(visible=False, bgcolor="#ffffff", projection=dict(type="mercator"))
+    fig.update_layout(
+        geo=dict(**base_geo, domain=dict(x=[0, 0.48], y=[0, 1]),
+                 lonaxis=dict(range=lon_t), lataxis=dict(range=lat_t)),
+        geo2=dict(**base_geo, domain=dict(x=[0.52, 1.0], y=[0.05, 0.82]),
+                  lonaxis=dict(range=lon_s), lataxis=dict(range=lat_s)),
+        height=620, margin=dict(l=0, r=0, t=48, b=0), paper_bgcolor="#ffffff",
+        legend=dict(orientation="h", y=-0.02, x=0, font=dict(size=10)),
+        font=dict(family="IBM Plex Sans, system-ui, sans-serif", color=ENCRE),
+        hoverlabel=dict(bgcolor="#ffffff", font_size=12), separators=", ",
+        annotations=[
+            dict(x=0.0, y=1.05, xref="paper", yref="paper", xanchor="left", showarrow=False,
+                 font=dict(size=11, color=ENCRE),
+                 text="<b>Le Togo, préfecture par préfecture</b>"),
+            dict(x=0.52, y=1.05, xref="paper", yref="paper", xanchor="left", showarrow=False,
+                 font=dict(size=11, color=ENCRE),
+                 text="<b>Maritime et Grand Lomé, agrandi</b><br>"
+                      f"<span style='font-size:10px;color:#55534e'>{n_agree_sud} des {len(ae_agree)} "
+                      "auto-écoles agréées</span>")])
     st.plotly_chart(fig, key="vn_carte", config={"displayModeBar": True, "scrollZoom": True,
                                                  "displaylogo": False,
                                                  "modeBarButtonsToRemove": ["select2d", "lasso2d"]})

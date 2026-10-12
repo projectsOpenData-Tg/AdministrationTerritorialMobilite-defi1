@@ -1,7 +1,6 @@
 # 07 — Indicateurs
 
 **Projet :** Mobilité et sécurité routière au Togo
-**Version :** 1.0 — **Date :** 2026-10-06 — **Statut :** **figé** le 2026-10-06
 **Sources :** `01_problem_definition.md` (figé), `02_decision_matrix.xlsx` (v1.1, figé), `03_data_inventory.md` (v1.3, figé), `04_data_understanding.md` (v1.0, figé), `05_data_preparation.md` (v1.0, figé), `06_exploration.md` (v1.0, figé), tables de `data/processed/`, `data/analysis/06_exploration/signaux_06.csv`
 
 > **Question du 07 :** combien valent les indicateurs du 02, et sur quoi chacun repose-t-il ?

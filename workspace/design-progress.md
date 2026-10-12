@@ -350,3 +350,355 @@ Couleurs fixes par donnée, dans `theme.py`, pour qu'un indicateur garde sa coul
   test ne change plus de 2 des 10 premières ; 7 préfectures restent dans les 6 tests »).
 - Branche `design/pages-pilotage` partant de `dev` (après la fusion de `design/palette-a` sur `dev`), pour les pages
   Priorités, Recommandations, Horizon 2031 et Méthodologie.
+
+## 24. Priorités — section 1, cartes de zones et mise en forme (2026-10-12, branche design/pages-pilotage)
+
+- **Constat déplacé avant la section** « Les zones en difficulté », comme sur les autres pages.
+- **Tableau pleine largeur** (suppression de la disposition en deux colonnes).
+- **Carte verte** (`note_carte(couleur="vert")`) : médiane des zones et cas limite des Savanes (remplace 2 `note()`).
+- **Carte warning** (fond jaune, `.limite`) : accès rural grille WorldPop, reformulé (« **Accès rural (grille
+  WorldPop)** : mesuré avec la grille… »).
+- Section « Ce que dit chaque zone » remplacée par **« Diagnostic par zone »** : 6 cartes blanches en grille 3×2
+  (`.zone-grille`, `.zone-carte`), chaque carte porte le nom de la zone en couleur et sa phrase de diagnostic ;
+  liseré en bas de la couleur de la zone, effet hover (élévation + ombre). CSS ajouté dans `theme.py` + styles
+  inline pour contourner le cache CSS de Streamlit.
+- **Carte blanche avec liseré vert** à gauche pour le texte « Par région : … Région Maritime … » (remplace 2
+  `st.caption()`).
+- **Carte fond blanc** pour le total des 5 préfectures qui cumulent (remplace `note()`).
+- Titre **« Les 10 premières préfectures en priorité »** (au lieu de « Les 10 premières »).
+- **Carte warning** pour le texte sur les déficits et la nature du zéro (remplace `note()`).
+- Import de `note_carte` ajouté dans `priorites.py`.
+
+## 25. Priorités : section « Le classement tient-il ? » et finitions (2026-10-12)
+
+- **Entrent / Sortent** : icônes de tendance ▲ (vert) et ▼ (rouge) devant les clés ; noms des zones
+  colorés en vert (entrent) et rouge (sortent) ; les clés « Entrent » et « Sortent » sont elles-mêmes
+  colorées.
+- **Formule du score** : l'ancien `st.caption` remplacé par une `note_carte` bleue avec pictogramme ;
+  noms des zones de contrôle (**Kloto**, **Ogou**, **Est-Mono**, **Oti-Sud**, **Haho**, **Tchaoudjo**)
+  en gras.
+- **Règle de stabilité** : l'ancien `note()` remplacé par une `note_carte` verte ; clés **Règle**,
+  **Toujours en tête** et **Les moins sûres** en gras.
+- **Mô, hors class.** : titre abrégé (au lieu de « hors classement ») ; liseré passé du gris au jaune
+  constat (`#eda100`).
+- **Limites de cette page** : titre changé en « Limites de cette page » ; « Classement en C » remplacé
+  par « Classement par estimation » ; contenu affiché par ligne (puces `•` + `<br>`) via `limite()`
+  avec `texte_html`.
+
+## 26. Priorités : cartes egale=True, boutons côte à côte (2026-10-12)
+
+- **Synthèse et Limite de même hauteur** (`egale=True`) sur la page Priorités.
+- **Boutons alignés** : « Exporter (CSV) » et « Voir le classement sur la carte → » sur la même ligne
+  horizontale via `st.columns(2)`.
+- **Espacement dans Limites** : `<br><br>` entre les puces pour occuper l'espace restant.
+
+## 27. Recommandations : refonte des cartes et de la mise en page (2026-10-12)
+
+- **Entête en carte** : `entete(…, carte=True)` — le texte sous le titre est maintenant dans une carte
+  blanche avec liseré bleu-foncé à gauche, comme sur les autres pages.
+- **Doublon supprimé** : la barre « 15 recommandations · les habitants ne s'additionnent pas… » a été
+  retirée (doublonnait le texte de l'entête) ; la mention « Priorité et zone se choisissent dans la
+  barre latérale » est intégrée au texte de l'entête.
+- **Icônes de thème** dans chaque carte de recommandation : pastille emoji colorée (🛣️ Réseau,
+  🏫 Formation, 🚦 Sécurité routière, 📍 Zones les moins desservies, 📊 Données) à gauche du titre,
+  avec le nom du thème en dessous. Dict `THEME_EMOJI` ajouté.
+- **Badge Moyenne en jaune-or** : `PRIO_COUL["Moyenne"]` passe de `#3987e5` (bleu) à `#eda100` (or).
+- **Habitants en grand format** : le nombre d'habitants (colonne `Habitants`) s'affiche en Fraunces
+  1.8 rem avec « habitants / concernés » en petit à droite, comme dans l'image de référence.
+- **Badges horizon en violet** : fond `#ece9fb`, texte `#4a3aa7` (au lieu du gris `#efece4`).
+- **Note bleue « Pour aller plus loin »** : le `st.caption` remplacé par `note_carte(…, couleur="bleu")`
+  pour le texte sur les 4 actions des producteurs de données.
+- **Synthèse pleine largeur** : la carte « Synthèse chiffrée » sort du `st.columns(2)` et prend toute
+  la largeur de la page.
+- **Constat et Limite côte à côte** : `constat(…, egale=True)` et `limite(…, egale=True)` dans un
+  `st.columns(2)`, même hauteur. Paramètre `egale` ajouté à `constat()` dans `composants.py`.
+
+## 28. Recommandations : espacement, hover et réordonnancement (2026-10-12)
+
+**Fichiers :** `recommandations.py`, `theme.py`, `_CONSTRAINTS_DEV.txt`.
+
+- **Espacement des fiches** : `st.markdown("")` ajouté après chaque rangée de 3 colonnes dans la
+  fonction `grille()` (cartes de recommandation) et dans la boucle des fiches préfectures (onglet
+  « Actions par zone »). Les cartes n'étaient plus collées verticalement.
+- **Hover sur `.reco-carte`** : CSS ajouté dans `theme.py` — `translateY(-2px)` + ombre au survol,
+  sans balayage de couleur (le `::after` du `.kpi` n'est pas repris). Respect de `prefers-reduced-motion`.
+- **Constat/Limite avant Synthèse** : l'ordre en bas de page passe de Synthèse → Constat+Limite
+  à Constat+Limite → séparation → Synthèse, conformément à la maquette. Une ligne vide
+  (`st.markdown("")`) sépare les deux blocs.
+
+## 29. Horizon 2031 : design unifié (2026-10-12)
+
+**Fichiers :** `horizon.py`, `_CONSTRAINTS_DEV.txt`.
+
+- **Entête en carte** : `entete(…, carte=True)` — le texte de réponse est maintenant dans une
+  carte blanche avec liseré bleu-foncé, comme les autres pages.
+- **KPI avec icônes et chiffres centrés** : `rangee_kpi(…, centre=True)`, chaque `carte_kpi` reçoit
+  un `icone` (`population`, `ecole_jaune`, `route_rouge`, `route`) qui ajoute la pastille du thème
+  et le liseré bas coloré automatiquement.
+- **Couleurs par région dans le tableau** : quand la maille est « Région »,
+  `COULEUR_REGION` est utilisé au lieu de `COULEUR_ZONE` (import ajouté).
+- **Constat déplacé sous la section** : la carte Constat sort de la colonne droite et s'affiche
+  en pleine largeur sous le tableau et le bouton d'export, dans la section « Ce qu'il faut ajouter ».
+- **Expander pleine largeur** : « Les recommandations chiffrées, à cet horizon » sort de la
+  colonne gauche pour occuper toute la largeur de la page.
+- **5 note_carte vertes** : les `st.caption` et `note()` remplacés par `note_carte(…, couleur="vert")`
+  avec pictogramme « i » vert et liseré vert à gauche, pour les textes :
+  « Auto-écoles agréées… », « Population par zone… », « Trait plein : observé… » (avec
+  « Sur fond gris » en gras), « Le plafond suppose… », « Ces sites orientent… ».
+- **Import `note` conservé** pour la note « Aucune zone n'atteint… » (non listée par l'utilisateur).
+
+
+## 30. Vue nationale : carte double, auto-écoles et fond par région (2026-10-12)
+
+**Fichiers :** `vue_nationale.py`, `_CONSTRAINTS_DEV.txt`.
+
+- **Auto-écoles — mêmes couleurs et tailles que la page Carte** : agréées en vert
+  `#16834a` (taille 10/12), non agréées en jaune-or `#e6b422` (taille 7/8), avec
+  les mêmes bordures (blanc pour agréées, or pour non agréées). Remplace les anciens
+  cercles blancs/gris de taille 6.
+- **Zoom Maritime et Grand Lomé (geo2)** : une seconde carte (inset) est ajoutée à
+  droite de la carte principale, cadrée sur les préfectures de la région Maritime.
+  Les noms des préfectures sont écrits sur le zoom (`_centroides_vn`, shapely). Le
+  titre de l'annotation affiche le nombre d'auto-écoles agréées dans la zone
+  (calculé dynamiquement : 108 des 132).
+- **Fond coloré par région (couche « Régions »)** : chaque préfecture est colorée
+  avec la `COULEUR_REGION` de sa région (opacity 0.55), au lieu de remplir le
+  polygone régional entier. Les limites des préfectures restent visibles en blanc.
+  Les contours des régions sont toujours tracés en couleur (2.2 px) sur toutes les
+  couches.
+- **Boucle dessiner (geo, geo2)** : les traces sont ajoutées aux deux cartes via
+  `for cible, inset in [("geo", False), ("geo2", True)]`. Légende affichée
+  uniquement sur la carte principale (`showlegend=sl`).
+- **Import shapely** ajouté (`shp_shape`) pour les centroïdes. `fenetre_geo` n'est
+  plus utilisé pour cette carte (layout manuel avec `lonaxis`/`lataxis`), mais
+  reste importé pour le mini-carte réseau dans les thèmes.
+- **Sous-titre** de `titre_bloc` mis à jour pour mentionner l'agrandissement Maritime.
+- **Grammaire** corrigée dans `_CONSTRAINTS_DEV.txt` (lignes 265-269).
+
+## 31. Rapport PowerPoint — `Togo-Mobilite-Securite-Routiere-Defi1.pptx` (2026-10-12)
+
+**Livrable attendu par l'énoncé** : un rapport PowerPoint de 10 diapositives au plus, noté au
+critère C4 (structure, clarté, méthodologie, qualité rédactionnelle), la qualité des conclusions
+(C2) s'y jugeant aussi.
+
+**Processus repris du défi 2** (`EconomyNumeric-Challenge2`) : un plan écrit d'abord, un script qui
+génère le fichier, des contrôles automatiques, un aperçu relu à l'œil.
+
+**Fichiers :** `tmp/ppt-plan.md` (le plan, hors dépôt : `tmp/` est ignoré par git),
+`scripts/build_presentation.py` (le script), `tmp/ppt_assets/` (6 figures et les armoiries),
+`Togo-Mobilite-Securite-Routiere-Defi1.pptx` (la sortie, à la racine).
+
+- **Aucun chiffre retapé (R-19)** : le script lit les tables de `data/analysis/` par
+  `dashboard/donnees.py` et prend ses couleurs dans `dashboard/theme.py`. Le rapport et le tableau
+  de bord portent donc les mêmes chiffres et la même identité, par construction. Les constats qui
+  nomment des territoires (les 5 préfectures qui cumulent, « ni le Golfe ni Agoè-Nyivé ») sont
+  dérivés des tables.
+- **Règle des codes appliquée au rapport** : aucun code interne, nom de fichier, numéro de
+  document ni nom de source entre parenthèses ; « auto-école agréée » et « accidents constatés »
+  partout. Seule la diapositive 2 parle de méthode, en clair.
+- **Les 10 diapositives** : couverture (synthèse exécutive), méthode, puis un objectif par
+  diapositive (mobilité, sécurité routière, réseau, couverture), les territoires, l'arbitrage
+  « priorité n'est pas population », le plan d'action en 5 blocs, les 4 décisions.
+- **`python-pptx` n'est pas dans `.venv`** : le script ajoute le site utilisateur **en fin** de
+  `sys.path` (les versions de `.venv` gardent la priorité). `.venv` n'est pas modifié.
+- **Graphiques redessinés en matplotlib** : Plotly n'exporte pas d'image sans Chrome. Armoiries
+  rasterisées une fois par `rsvg-convert` (`python-pptx` ne lit pas le SVG) ; attribution
+  CC BY-SA 4.0 au pied de la couverture, comme l'exigent les contraintes.
+- **Contrôles** : 126 contrôles, 0 échec (10 diapositives, 16:9 exact, 28 motifs proscrits absents,
+  55 chiffres relus directement dans les CSV sans passer par le code du tableau de bord, mention de
+  source sur chaque diapositive intérieure, aucune forme hors cadre, test négatif) ; validation
+  OOXML passée ; aucune réduction de taille de texte dans la version finale.
+- **Ce que l'aperçu dessiné a fait corriger** : l'unité d'un chiffre clé qui passait à la ligne et
+  écrasait sa phrase (la taille de la valeur s'ajuste désormais avant écriture) ; le bandeau
+  « trait commun » qui passait sous le bandeau de limite (diapositive 6) ; le tableau des tests de
+  robustesse qui passait sous son bandeau (diapositive 8) ; les étiquettes des 6 taux qui se
+  chevauchaient (barres passées à l'horizontale) ; deux légendes posées sur les données
+  (diapositives 3 et 5) ; les figures qui flottaient dans du blanc (proportions alignées sur leur
+  panneau) ; l'emoji drapeau retiré du fichier PowerPoint (police non garantie à la lecture).
+- **Deux chiffres harmonisés avec le tableau de bord** : la cible du permis moto est celle des
+  recommandations (5 513 par an), et non celle de l'annexe ; le multiplicateur × 4,56 est daté
+  (2002 → 2022), 2004 étant une année de rupture de série.
+
+**Reste à trancher avant l'envoi** : le nom affiché en couverture (« Addi Carters », lu dans
+`.env`) et l'URL du tableau de bord (déploiement Streamlit Cloud prévu, aucune adresse dans le
+dépôt — la constante est laissée vide, la ligne n'est alors pas rendue). Deux constantes en tête
+du script. **Non vérifié** : le rendu dans PowerPoint lui-même (ni PowerPoint ni LibreOffice sur
+ce poste).
+
+## 32. Horizon 2031 : mise en page élargie et design unifié (2026-10-12)
+
+**Page** : `dashboard/views/horizon.py` · **Fichier contraintes** : `_CONSTRAINTS_DEV.txt`
+lignes 261-275 (grammaire corrigée).
+
+- **Section « Ce qu'il faut ajouter »** : suppression de la colonne droite (`st.columns`),
+  carte et tableau désormais en pleine largeur. Le `st.caption` de la colonne droite et
+  le `note()` conditionnel sont fusionnés en un seul `note_carte(..., couleur="vert")`
+  placé sous la carte, avec le texte complet (usure du réseau, classes fixes, projection).
+- **Section « Où ouvrir les auto-écoles »** : suppression des colonnes, carte en pleine
+  largeur. Points des auto-écoles agréées agrandis (taille 10/12) et colorés en vert
+  `#16834a` avec bordure blanche (comme page Carte). Points des 48 sites retenus passés
+  du bleu foncé `#0d366b` au rose clair `#e88a98` avec bordure `#d04060`. Légende mise à
+  jour (pastille verte, losange rose). Constat déplacé sous la carte (au lieu de la colonne
+  droite).
+- **Carte « Limite »** : titre passé à « Limites de cette page », format en puces (•) avec
+  `texte_html` et `egale=True`, aligné sur le format de la page Priorités.
+- **Grammaire** corrigée dans `_CONSTRAINTS_DEV.txt` (lignes 261-275).
+
+## §33 — Page Méthodologie : cards, bordures, note_carte (2026-10-12)
+
+Fichiers : `dashboard/views/methodologie.py`, `_CONSTRAINTS_DEV.txt` (lignes 284-302).
+
+- **En-tête carte** : ajout de `carte=True` à l'appel `entete()` pour afficher la
+  réponse dans une carte à fond blanc, comme sur les autres pages.
+- **Section « Comment nous avons travaillé »** : chaque étape (1-9) est maintenant dans
+  un card avec bordure arrondie (`border:1px solid #e2dfd6;border-radius:10px`) et fond
+  blanc.
+- **Section « Sources »** : tableau enveloppé dans `st.container(border=True)` pour une
+  bordure visible. Le `note()` remplacé par `note_carte()` avec pictogramme « i » vert,
+  texte reformulé pour le décideur (localisation WorldPop, dépendance accès rural).
+- **Section « Limites majeures »** : refonte complète. Chaque limite (1-8) est dans un
+  card bordé avec : badge numéroté rouge/corail (`#f4dfe1`/`#ce1126`), titre en gras,
+  description en gris. Design aligné sur l'image de référence.
+- **Section « Niveaux de preuve »** : tableau dans `st.container(border=True)`.
+  `st.caption()` remplacé par `note_carte()` (texte reformulé : 3 compléments + accès
+  rural estimés).
+- **Section « Questions ouvertes »** : tableau dans `st.container(border=True)`.
+  `st.caption()` remplacé par `note_carte()` (texte reformulé : « une seule donnée
+  manquante bloque 7 hypothèses »).
+- **Section « Les zones les moins desservies »** : tableau dans `st.container(border=True)`.
+  `st.markdown()` remplacé par `note_carte()` (texte reformulé : localisation réelle vs
+  uniforme, Centrale vs Savanes).
+- **Grammaire** corrigée dans `_CONSTRAINTS_DEV.txt` (lignes 284-302) : « come »→« comme »,
+  « autes »→« autres », « cahque »→« chaque », « etre »→« être », « balcn »→« blanc »,
+  « bordrures »→« bordures », « uatres »→« autres », « decideur »→« décideur »,
+  « travial »→« travail ».
+
+## 32. Alerte de visite Telegram, adaptée à Streamlit Cloud (2026-10-12)
+
+**Demande :** reprendre l'intégration Telegram du défi « Économie numérique »
+(`EconomyNumeric-Challenge2/dashboard/notify.py`) pour ce projet, qui sera déployé sur
+Streamlit Community Cloud.
+
+**Fichiers :** `dashboard/notify.py` (nouveau), `dashboard/app.py` (appel),
+`dashboard/.streamlit/secrets.toml.example` (nouveau), `dashboard/README.md`, `.gitignore`.
+
+- **Une notification par visite**, envoyée à un bot Telegram privé : savoir qu'un jury ou un
+  partenaire a ouvert le tableau de bord. Appel `signaler_visite()` dans `app.py`, juste après
+  `appliquer_theme()`, pour qu'un incident réseau ne retarde jamais le premier rendu.
+- **Ce qui change par rapport au défi 2, qui tournait sur Heroku :**
+  - les identifiants sont cherchés dans l'environnement **puis dans `st.secrets`** (Streamlit
+    Cloud : *Settings → Secrets*, au format TOML). L'accès à `st.secrets` lève quand aucun
+    fichier de secrets n'existe : l'exception est attrapée, l'absence vaut « alerte inactive » ;
+  - **l'adresse IP** : le routeur Heroku ajoutait l'adresse observée à la *fin* de
+    `X-Forwarded-For`, la dernière valeur y était donc la seule sûre. Streamlit Cloud ne
+    documente pas ce qu'il écrit : on prend `X-Real-Ip` s'il existe, sinon la **première** valeur
+    de `X-Forwarded-For` (convention courante). Les deux sont falsifiables ; le message dit
+    « IP déclarée » et rien n'en dépend ;
+  - le titre de l'application est lu dans `composants.MARQUE` (et non dans `i18n`, le défi 2
+    étant bilingue).
+- **Garde-fous conservés** : une alerte par session (Streamlit réexécute le script à chaque
+  interaction), envoi dans un thread démon avec délai de 5 s, plafond de 50 envois par jour
+  compté en UTC, aucune exception ne sort de `signaler_visite()`, `urllib` de la bibliothèque
+  standard (aucune dépendance ajoutée à `requirements.txt`).
+- **Inactif par défaut** : sans les deux valeurs, le module ne fait rien — poste local, exécution
+  hors ligne. Le `.env` du dépôt n'est pas lu.
+- **`.gitignore`** : le motif `.streamlit/secrets.toml` contenait une barre oblique, donc était
+  ancré à la racine et ne couvrait pas `dashboard/.streamlit/secrets.toml`. Remplacé par
+  `**/.streamlit/secrets.toml` (vérifié avec `git check-ignore`).
+- **Contrôles** : 15 contrôles, 0 échec, sans aucun appel réseau (`_envoyer` remplacé) — inertie
+  sans configuration, une seule variable ne suffit pas, une alerte par session, un nouveau
+  visiteur signalé, plafond quotidien et sa remise à zéro le lendemain (en UTC), extraction de
+  l'IP dans ses quatre cas, titre de l'application présent, message produit hors contexte HTTP,
+  en-têtes tronqués à 180 caractères, et `signaler_visite()` qui ne lève jamais même quand la
+  construction du message échoue. Application relancée : HTTP 200, aucune erreur au journal,
+  aucun envoi en local.
+
+**À faire avant l'évaluation :** poser `TELEGRAM_BOT_TOKEN` (jeton du `.env`) et
+`TELEGRAM_CHAT_ID` dans les secrets de l'application. L'identifiant de conversation manque encore :
+écrire un message au bot, puis lire `getUpdates`. **Après l'évaluation :** retirer les deux
+secrets — la notification transporte l'IP déclarée et l'agent utilisateur du visiteur.
+
+## 33. Archive de soumission — `Togo-Defi1-MobiliteSecuriteRoutiere.zip` (2026-10-12)
+
+**Demande :** une archive du projet **sans le rapport `.pptx` ni son script** (envoyés séparément),
+**sans `workspace/` ni `methodology/`**, sur le modèle de ce qui a été fait au défi
+« Économie numérique » (`EconomyNumeric-Challenge2/scripts/make_submission.sh`).
+
+**Fichier :** `scripts/make_submission.sh` (nouveau). `bash scripts/make_submission.sh` depuis
+n'importe où. Résultat : **6,7 Mo, 185 entrées.**
+
+- **Liste blanche, pas liste noire** (principe repris du défi 2) : chaque élément à inclure est
+  nommé explicitement ; ce qui n'y figure pas ne peut pas entrer dans l'archive par oubli. Les
+  contrôles de la fin vérifient ensuite l'absence de ce qui ne doit jamais s'y trouver.
+- **Ce que l'archive contient** : les 13 documents (01 à 11 et l'annexe Horizon 2031), le cadre de
+  décision du 02 (ses 9 tables et le classeur), `dashboard/`, `scripts/`, `notebooks/`,
+  `requirements.txt`, et les données que le tableau de bord lit (`data/analysis/**/*.csv`,
+  `data/processed/`, `data/reference/`, `data/raw/_SOURCES.csv`).
+- **Ce qui en est écarté, et pourquoi** : le `.pptx` et `scripts/build_presentation.py` (envoi
+  séparé) ; `workspace/` et `methodology/` (documents de travail) ; `tmp/` ;
+  `_CONSTRAINTS_DEV.txt` et `_GUARD_RAILS_REPO.txt` (consignes internes) ; `.env`, `.git/`,
+  `.venv/`, `dashboard/.streamlit/secrets.toml` (le jeton du bot — le **modèle**, lui, est
+  inclus) ; `data/raw/` (81 Mo, publiés sur leurs portails ; seul le registre des sources est
+  gardé, car la page Méthodologie le lit) ; `data/interim/` (9,1 Mo, ne se rejoue pas sans les
+  bruts) ; **`data/analysis/04_understanding/rapports/` (76 Mo)**, les 52 rapports de profilage
+  HTML, qui pesaient à eux seuls plus de dix fois le reste et que `scripts/profil_04.py`
+  régénère.
+- **Quatre contrôles dans le script** : aucun des 15 motifs écartés n'est présent ; les 16
+  fichiers indispensables au lancement sont là ; les 45 tables de `data/analysis/` sont toutes
+  dans l'archive (aucune perdue par un motif d'exclusion) ; la taille est refusée au-delà de
+  15 Mo et signalée au-delà de 8 Mo — au défi précédent, le support a jugé trop lourde une
+  archive de 12,1 Mo.
+- **Vérifié sur l'archive extraite, pas seulement sur sa liste** : le tableau de bord s'y lance
+  (HTTP 200, aucune erreur au journal) et **41 lectures sur 41 réussissent** — les 31 tables de
+  `data/analysis/`, les tables préparées, les tables de référence, le registre des sources, la
+  table maîtresse, les 3 couches géographiques et les 3 jeux de contours. L'archive se suffit à
+  elle-même.
+- **Piège corrigé** : avec `set -o pipefail`, un `unzip -Z1 … | grep -q` échoue sur un SIGPIPE
+  quand `grep` sort au premier résultat avant la fin d'`unzip`. Le contrôle signalait alors comme
+  manquant un fichier pourtant présent. Le contenu est désormais listé **une seule fois** dans une
+  variable, que les contrôles lisent par « here-string ».
+
+**L'archive n'est pas suivie par git** : la commiter, ou l'ajouter à `.gitignore`, comme pour le
+`.pptx`.
+
+## 34. Documents du jury : en-têtes retirés, § 8 du 11 corrigé (2026-10-12)
+
+**Demande :** corriger le document 11 pour qu'il décrive la structure réelle du code ; copier les
+documents 01 à 11 dans `workspace/` et retirer, dans les exemplaires qui partent au jury, les
+dates de gel et de création et le statut.
+
+**Fichiers :** `scripts/entetes_jury.py` (nouveau), `workspace/documents_complets/` (nouveau,
+13 copies + un README), les 12 documents de la racine, `11_tableau_de_bord.md` (§ 3, § 8 et
+journal), `dashboard/app.py` et `tmp/ppt-plan.md` (mention de langue).
+
+- **Document 11, § 8 réécrit sur le code écrit.** Le plan décrivait un `dashboard.zip` autonome,
+  `app.py` à la racine du zip et une copie des données dedans, faite par « un script du livrable
+  qui vérifie l'empreinte de chaque fichier ». Ce script n'existe pas et la structure est autre :
+  l'archive porte **le projet entier**, `dashboard/` et `data/` côte à côte, et
+  `scripts/make_submission.sh` la construit. `donnees.py` lit `dashboard/data/` si ce dossier
+  existe, sinon `../data` : les deux dispositions marchent, celle du dépôt évite de dupliquer
+  12 Mo. Ajoutés à l'arborescence : `i18n.py` et `locales/`, `notify.py`, le modèle de secrets ;
+  versions des dépendances alignées sur `dashboard/requirements.txt` (plotly 7.1, et non 5.15).
+  Lancement et déploiement corrigés. Les cinq autres mentions de `dashboard.zip` du document
+  suivent, et une ligne est ajoutée au journal des décisions.
+- **§ 3 complété** : le sélecteur de langue (français, anglais, éwé, kabiyè) n'était écrit nulle
+  part dans le 11.
+- **Deux mentions « français seul » corrigées** (`dashboard/app.py`, `tmp/ppt-plan.md`) : elles
+  dataient de l'abandon du bilingue, la traduction a été intégrée depuis. Le **rapport**, lui,
+  reste en français seul.
+- **En-têtes de version retirés** des 12 documents de la racine par `scripts/entetes_jury.py` :
+  la ligne `**Version :** … — **Date :** … — **Statut :** …` et, pour le 01, `**Validé par :**
+  [noms à compléter]`. Le reste est intact, ligne pour ligne (vérifié par `diff` avec la copie).
+  Les lignes `**Projet :**` et `**Sources :**` restent.
+- **Les documents complets sont dans `workspace/documents_complets/`**, avec leur en-tête : c'est
+  là que se lit l'historique des versions. Le script est **idempotent et sans perte** — un
+  document n'est copié vers `workspace/` que s'il porte encore son en-tête, donc une relance
+  n'écrase jamais une copie complète par une version allégée (vérifié : 12 traités, puis 0).
+  `--verifier` dit ce qui serait fait sans rien modifier.
+- **Archive reconstruite** : 186 entrées, 6,7 Mo ; aucun en-tête de version dedans ;
+  `workspace/` toujours exclu.
+
+**Reste ouvert** (signalé, non fait) : les lignes `**Sources :**` des documents du jury citent
+`workspace/_PROJECT.txt` et `methodology/…`, et le § 5 du 11 renvoie 21 fois à
+`workspace/design-pageN.md` — dossiers absents de l'archive. Les mentions « (figé) » y subsistent
+aussi.

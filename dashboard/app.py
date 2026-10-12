@@ -2,8 +2,9 @@
 
 Restitue les résultats du projet (documents 06 à 10 et annexe Horizon 2031) selon le plan du tableau de bord
 (11_tableau_de_bord.md) : 8 pages en 4 groupes de menu, filtres globaux dans la barre latérale, gabarit commun,
-barre du haut et pied de page identiques. Français seul (bilingue abandonné). Le tableau de bord affiche, il ne
-calcule pas (11 §2) : chaque chiffre vient d'une table déjà produite.
+barre du haut et pied de page identiques. Interface traduite (français, anglais, éwé, kabiyè), sélecteur sous le
+logo de la barre latérale. Le tableau de bord affiche, il ne calcule pas (11 §2) : chaque chiffre vient d'une table
+déjà produite.
 
 Lancement, depuis la racine du projet :  streamlit run dashboard/app.py
 """
@@ -19,11 +20,18 @@ if str(ICI) not in sys.path:
 import i18n  # noqa: E402
 from composants import pied_barre_laterale, topbar  # noqa: E402
 from donnees import ZONES  # noqa: E402
+from notify import signaler_visite  # noqa: E402
 from theme import appliquer_theme  # noqa: E402
 
 st.set_page_config(page_title="Mobilité et sécurité routière au Togo", page_icon=":material/directions_car:",
                    layout="wide", initial_sidebar_state="expanded")
 appliquer_theme()
+
+# Alerte de visite Telegram (notify.py) : sans effet tant que TELEGRAM_BOT_TOKEN et TELEGRAM_CHAT_ID ne sont pas posés
+# dans les secrets de l'application. Appelée après le thème pour qu'un incident réseau ne retarde jamais le premier
+# rendu : l'envoi part dans un thread démon.
+signaler_visite()
+
 # Traduction : tout ce que Streamlit affiche passe par i18n.bi() ; sélecteur de langue sous le logo de la barre latérale
 i18n.installer()
 i18n.selecteur()

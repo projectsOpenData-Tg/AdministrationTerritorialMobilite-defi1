@@ -1,7 +1,6 @@
 # 11 — Tableau de bord
 
 **Projet :** Mobilité et sécurité routière au Togo
-**Version :** 0.10 — **Date :** 2026-10-08 — **Statut :** plan et plans détaillés des 8 pages validés ; **non figé**, en attente de la validation d’ensemble avant le codage
 **Sources :** `01` à `10` (figés), `A1_horizon.md` (annexe, validée), `data/analysis/06_exploration/` à `data/analysis/10_recommandations/`, `data/analysis/A1_horizon/`, `methodology/MAQUETTE_dashboard.md`, `methodology/_GARDRAILS_DASHBOARD.txt`
 
 > **Question du 11 :** que doit afficher le tableau de bord, page par page, et avec quelles données ?
@@ -10,7 +9,7 @@
 >
 > Chaque chiffre cité ici vient d’un de ces CSV. Le tableau de bord le relit dans le CSV, il ne le recopie pas (R-19).
 >
-> Le 11 est suivi du livrable `dashboard.zip` (code Streamlit) et du ppt. Les documents 12 (validation) et 13 (rapport final) ne seront pas écrits : ce qu’ils devaient porter est repris en page Méthodologie (§5) et dans le ppt.
+> Le 11 est suivi du livrable (le tableau de bord Streamlit, dans l’archive de soumission) et du ppt. Les documents 12 (validation) et 13 (rapport final) ne seront pas écrits : ce qu’ils devaient porter est repris en page Méthodologie (§5) et dans le ppt.
 >
 > Ce document donne le plan d’ensemble et les règles communes. Le plan détaillé de chaque page est dans `workspace/design-page1.md` à `design-page8.md` (§5).
 >
@@ -112,7 +111,7 @@ Les séries d’immatriculations et de permis viennent de `indicateurs_07.csv`, 
 
 La page Horizon 2031 vient après Recommandations : la page 6 dit quoi faire, la page 8 combien il en faudra. Son plan garde le nom de fichier `design-page8.md` ; la Méthodologie garde `design-page7.md`, écrit avant elle.
 
-**Menu :** les 4 groupes de la maquette (Principal, Analyses, Pilotage, Méthodologie), par `st.navigation()`.
+**Menu :** les 4 groupes de la maquette (Principal, Analyses, Pilotage, Méthodologie), par `st.navigation()`. Sous le logo de la barre latérale, un **sélecteur de langue** : français, anglais, éwé, kabiyè. Les pages restent écrites en français ; la traduction est faite avant le déploiement et lue dans des fichiers, sans appel réseau.
 
 **Navigation :** chaque carte de thème de la page 1 mène à sa page de détail par `st.page_link`. La page 1 est la synthèse ; les autres sont des zooms.
 
@@ -270,44 +269,54 @@ Aucune page ne lit un document `.md` : tout chiffre affiché vient d’un CSV (R
 | Cohérence | Le contenu de chaque page suit son plan détaillé (`workspace/design-pageN.md`), sans ajout ; les règles communes (§4) priment |
 ---
 
-## 8. Livrable `dashboard.zip`
+## 8. Livrable : l’archive de soumission
 
-**Arborescence** (maquette §1) :
+**Deux fichiers partent au jury** : l’archive du projet, et le rapport PowerPoint, qui se dépose dans son propre champ du formulaire.
+
+**Archive :** `Togo-Defi1-MobiliteSecuriteRoutiere.zip`, construite par `scripts/make_submission.sh`. Le script travaille en **liste blanche** : chaque élément à inclure y est nommé, et des contrôles vérifient ensuite l’absence de ce qui est écarté, la présence des fichiers indispensables au lancement, et la taille.
 
 ```text
-dashboard.zip
-├── app.py                 point d’entrée : configuration, thème, menu en 4 groupes, navigation
-├── theme.py               jetons de couleur et bloc CSS
-├── composants.py          chiffres clés, bandeaux, cartes de recommandation, export, cartes géographiques
-├── donnees.py             lecture des CSV (cache), filtres, format des nombres ; aucun recalcul
-├── views/                 une page par fichier ; jamais un dossier nommé pages/
-│   ├── vue_nationale.py
-│   ├── comparaison.py
-│   ├── evolutions.py
-│   ├── carte.py
-│   ├── priorites.py
-│   ├── recommandations.py
-│   ├── horizon.py
-│   └── methodologie.py
-├── static/                logo, icônes
-├── .streamlit/config.toml thème de base
-├── data/                  copie des CSV et GeoJSON lus (§6)
-├── README.md              installation, lancement, structure
-└── requirements.txt       streamlit 1.61, plotly 5.15 ou plus (deux légendes), pandas 2.3.3, geopandas 1.2.0
+Togo-Defi1-MobiliteSecuriteRoutiere.zip
+├── 01_problem_definition.md … 11_tableau_de_bord.md, A1_horizon.md   les 13 documents
+├── 02_decision_matrix/ et 02_decision_matrix.xlsx   le cadre de décision (9 tables et le classeur)
+├── dashboard/
+│   ├── app.py                 point d’entrée : configuration, thème, menu en 4 groupes, navigation
+│   ├── theme.py               jetons de couleur et bloc CSS
+│   ├── composants.py          barre du haut, chiffres clés, bandeaux, cartes, export
+│   ├── donnees.py             lecture des CSV et des GeoJSON (cache), filtres, format des nombres ; aucun recalcul
+│   ├── i18n.py, locales/      traduction de l’interface : français, anglais, éwé, kabiyè
+│   ├── notify.py              alerte de visite (sans effet tant que les secrets ne sont pas posés)
+│   ├── views/                 une page par fichier ; jamais un dossier nommé pages/
+│   │   ├── vue_nationale.py, comparaison.py, evolutions.py, carte.py,
+│   │   └── priorites.py, recommandations.py, horizon.py, methodologie.py
+│   ├── static/                armoiries, logos, illustration du slogan
+│   ├── .streamlit/config.toml thème de base et service des fichiers statiques
+│   ├── README.md              lancement, déploiement, structure
+│   └── requirements.txt       streamlit 1.61, plotly 7.1, pandas 2.3.3, geopandas 1.2, pyogrio, shapely, pyproj
+├── scripts/                   les scripts qui produisent les tables de data/analysis/
+├── notebooks/                 les carnets d’exploration du 04, du 06 et de l’annexe
+├── requirements.txt           environnement d’analyse complet
+└── data/
+    ├── analysis/              les 45 tables de résultats que le tableau de bord lit
+    ├── processed/             tables préparées et couches géographiques
+    ├── reference/             tables de référence
+    └── raw/_SOURCES.csv       le registre des sources, lu par la page Méthodologie
 ```
 
-**Les données sont copiées dans `data/`**, et non liées par un lien symbolique : une archive zip ne conserve pas toujours les liens, et le jury doit pouvoir lancer le tableau de bord sans le dépôt. La copie est faite par un script du livrable, qui vérifie l’empreinte de chaque fichier copié.
+**Les données ne sont pas recopiées dans `dashboard/`** : elles restent dans `data/`, à côté. `donnees.py` lit `dashboard/data/` si ce dossier existe, sinon `../data` — les deux dispositions fonctionnent, et l’archive garde celle du dépôt, ce qui évite de dupliquer 12 Mo. **Écart au plan d’origine**, qui prévoyait un `dashboard.zip` autonome avec sa propre copie des données : l’archive porte le projet entier, le tableau de bord compris, et se suffit à elle-même (vérifié sur l’archive extraite : 41 lectures sur 41).
 
-**Lancement :**
+**Ce que l’archive ne contient pas :** le rapport `.pptx` et son script, envoyés séparément ; `workspace/` et `methodology/`, documents de travail ; `tmp/` ; `data/raw/` hors registre des sources (81 Mo, publiés sur leurs portails) ; `data/interim/` ; les 52 rapports de profilage du 04 (76 Mo, que `scripts/profil_04.py` régénère) ; le fichier de secrets du tableau de bord.
+
+**Lancement, depuis l’archive extraite :**
 
 ```bash
-unzip dashboard.zip
-cd dashboard
 python3.11 -m venv .venv
 source .venv/bin/activate
-pip install -r requirements.txt
-streamlit run app.py
+pip install -r dashboard/requirements.txt
+streamlit run dashboard/app.py
 ```
+
+**Déploiement :** Streamlit Community Cloud — *main file* `dashboard/app.py`, dépendances `dashboard/requirements.txt`, configuration `dashboard/.streamlit/config.toml`. Le détail est dans `dashboard/README.md`.
 
 **Contraintes techniques :** Python 3.11 ; Streamlit 1.61 ; Plotly pour les graphiques et les cartes (choroplèthes sur GeoJSON), comme la maquette.
 
@@ -315,7 +324,7 @@ streamlit run app.py
 
 ## 9. Suite
 
-- **Livrable :** `dashboard.zip`, écrit à partir de ce plan.
+- **Livrable :** le tableau de bord Streamlit, écrit à partir de ce plan, et l’archive de soumission (§8).
 - **Ppt :** rédigé à partir des mêmes sources, dont l’erratum et les formules de la page Méthodologie.
 
 **Les documents 12 (validation) et 13 (rapport final) ne seront pas écrits** ✅ (décision du 2026-10-08, faute de temps). Ce qu’ils devaient porter :
@@ -346,7 +355,7 @@ streamlit run app.py
 | ✅ **Permis** : total et décomposition de A à F | design-page1.md, section 4 | Équipe, 2026-10-07 |
 | ✅ **Immatriculations et permis** : une figure en deux étages sur la même échelle des années, un axe vertical par étage, une couleur par famille de véhicules ; graphique à deux axes écarté (maquette : « jamais deux axes verticaux ») ; maquette visuelle validée | design-page1.md, section 5 | Équipe, 2026-10-07 |
 | ✅ **Date du décret de 2022 corrigée** dans `chronologie_reformes.csv` : 3 août 2022, date du décret n° 2022-085/PR au Journal officiel n° 41 bis du 7 octobre 2022, au lieu du 25 juillet 2022 tiré de la presse. C’est la date déjà retenue au 04 (écart 6). L’année ne change pas : contrôles du 04, signaux du 06 et annotations du 07 identiques après relance ; seul `profil_variables.csv` du 04 change, sur les 3 lignes de la chronologie | design-page1.md, section 5 | Équipe, 2026-10-07 |
-| ✅ **Livrable** : `dashboard.zip` Streamlit | §8 | Équipe, 2026-10-07 |
+| ✅ **Livrable** : tableau de bord Streamlit | §8 | Équipe, 2026-10-07 |
 | ✅ **Chiffres corrigés** : permis 2024, 38 531 au total (10 165 est le seul permis A) ; blessés 2022, 9 918 (9 500 était la moyenne 2022–2024) ; 17 vérifications et hypothèses, dont 7 non testables (et non 15 et 5) | design-page1.md, design-page3.md | Équipe, 2026-10-07 |
 | ✅ **Couverture, chiffre 3** : l’accès rural (17,2 %) remplace les km de route par habitant de la Maritime hors Grand Lomé, que le 10 §4.6 a montrés biaisés par la densité | design-page1.md, section 3 | Équipe, 2026-10-07 |
 | ✅ **Couleurs de thème** prises dans la palette `CATEGORIELLE` de la maquette, au lieu de `#eab308` et `#059669`, hors palette validée | §4.1 | Équipe, 2026-10-07 |
@@ -411,3 +420,4 @@ streamlit run app.py
 | ✅ **Erratum limité à ce qui en est un** : la date du décret de 2022 n’y figure pas (le 04 portait déjà la bonne date, seul le fichier de chronologie était à corriger) ; la médiane de l’accès rural non plus (conséquence de la correction, pas une correction de plus) ; le plafond du casque non plus (résultat de l’annexe) | design-page7.md, A1 §13 | Utilisateur, 2026-10-08 |
 | **Gel reporté** : rien n’est figé ni commité tant que l’ensemble n’est pas validé, avant le codage | Tout le document | Utilisateur, 2026-10-08 |
 | ✅ **Page 6, alignée sur le 10** : couleurs `PRIORITE` et horizon de l’action ; filtre par zone sur la colonne `Zones` de `cartes_10.csv`, cartes nationales toujours affichées, aucun total additionné ; titre complet et phrase d’introduction de la rubrique « Pour aller plus loin », priorité de la base d’accidents gardée ; format des fiches et cas particuliers (Mô, Agoè-Nyivé, Golfe, Zio et Kpélé) ; Constat du 10 (« 5 préfectures cumulent les deux déficits ») | design-page6.md | Équipe, 2026-10-07 |
+| ✅ **§8 corrigé sur le code écrit** : l’archive porte le projet entier (`dashboard/` et `data/` côte à côte), et non un `dashboard.zip` autonome avec sa copie des données ; `scripts/make_submission.sh` la construit en liste blanche. Ajoutés à l’arborescence : `i18n.py` et `locales/` (quatre langues), `notify.py` (alerte de visite), le modèle de secrets. Versions des dépendances alignées sur `dashboard/requirements.txt` | §3, §8 | Utilisateur, 2026-10-12 |

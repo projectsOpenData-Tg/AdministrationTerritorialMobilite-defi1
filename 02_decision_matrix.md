@@ -1,7 +1,6 @@
 # 02 — Decision Matrix (plan du classeur)
 
 **Projet :** Mobilité et sécurité routière au Togo
-**Version :** 1.0 — **Date :** 2026-10-03 — **Statut :** plan validé ; classeur `02_decision_matrix.xlsx` v1.1 **figé le 2026-10-03**. En cas d’écart entre ce plan et le classeur, le classeur fait foi
 **Sources :** `01_problem_definition.md` (v1.3, figé)
 
 > Le 02 traduit le 01 en contrat analytique, **avant tout calcul** : pour chaque indicateur, sa formule, son seuil et la décision qu’il permet ; pour chaque hypothèse, son test ; pour le classement, sa méthode. Toute analyse sans ligne dans le 02 ne sera pas produite.

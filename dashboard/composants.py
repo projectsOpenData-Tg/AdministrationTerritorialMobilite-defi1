@@ -180,8 +180,9 @@ def note_carte(texte_html: str, couleur: str = "vert", titre: str = ""):
                 f'<div>{tete}{texte_html}</div></div>', unsafe_allow_html=True)
 
 
-def constat(texte_html: str):
-    st.markdown(f'<div class="constat"><div class="constat-titre">Constat</div>'
+def constat(texte_html: str, egale: bool = False):
+    classe = "constat carte-egale" if egale else "constat"
+    st.markdown(f'<div class="{classe}"><div class="constat-titre">Constat</div>'
                 f'<div class="constat-texte">{texte_html}</div></div>', unsafe_allow_html=True)
 
 

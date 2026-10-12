@@ -10,7 +10,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 import streamlit as st  # noqa: E402
 
-from composants import (ariane, constat, entete, export_csv, limite, onglets, pied, synthese,  # noqa: E402
+from composants import (ariane, constat, entete, export_csv, limite, note_carte, onglets, pied, synthese,  # noqa: E402
                         titre_bloc)
 from donnees import fr, lire  # noqa: E402
 
@@ -21,9 +21,12 @@ zones10 = lire("10_recommandations", "zones_10")
 f_zones = st.session_state.get("f_zones", [])
 f_prio = st.session_state.get("f_priorites", [])
 
-PRIO_COUL = {"Haute": "#0d366b", "Moyenne": "#3987e5", "Faible": "#cde2fb", "Aucune action": "#b9b6ad"}
+PRIO_COUL = {"Haute": "#0d366b", "Moyenne": "#eda100", "Faible": "#cde2fb", "Aucune action": "#b9b6ad"}
 THEME_PASTILLE = {"Réseau": "#eb6834", "Formation": "#1baf7a", "Sécurité routière": "#eda100",
                   "Zones les moins desservies": "#0d366b", "Données": "#55534e"}
+THEME_EMOJI = {"Réseau": ("🛣️", "#fce7f3"), "Formation": ("🏫", "#e2f4ec"),
+               "Sécurité routière": ("🚦", "#fef3c7"), "Zones les moins desservies": ("📍", "#dbeafe"),
+               "Données": ("📊", "#f1f0f9")}
 
 
 def _etiq(txt, coul, fonce=False):
@@ -74,20 +77,36 @@ def carte(row, cle: str):
     coul_p = PRIO_COUL.get(row["Priorité"], "#b9b6ad")
     fonce = row["Priorité"] in ("Haute",)
     national = str(row["Zones"]).strip() == "National"
-    etiqs = (_etiq(row["Priorité"], coul_p, fonce) + _etiq(row["Nature"], "#efece4") + _etiq(row["Horizon"], "#efece4")
+    emoji, bg = THEME_EMOJI.get(theme, ("📋", "#f4f2ec"))
+    ico = (f'<span style="width:30px;height:30px;border-radius:8px;background:{bg};'
+           f'display:inline-flex;align-items:center;justify-content:center;font-size:.9rem;flex-shrink:0">{emoji}</span>')
+    horizon_badge = (f'<span style="background:#ece9fb;color:#4a3aa7;border-radius:999px;padding:2px 10px;'
+                     f'font-size:.72rem;font-weight:600;margin-right:6px;white-space:nowrap">'
+                     f'{html.escape(str(row["Horizon"]))}</span>')
+    etiqs = (_etiq(row["Priorité"], coul_p, fonce) + _etiq(row["Nature"], "#efece4") + horizon_badge
              + (_etiq("national", "#e3eefb") if national else ""))
     lignes_h = HORIZONS.get(str(row["ID"]), [])
     horizon = "".join(f'<div style="font-size:.78rem;color:#55534e;border-left:2px solid #e2dfd6;padding-left:7px;'
                       f'margin-top:6px">{html.escape(t)}</div>' for t in lignes_h)
+    hab = row.get("Habitants", None)
+    hab_html = ""
+    if hab is not None and hab == hab:
+        hab_html = (f'<div style="display:flex;align-items:center;gap:8px;margin:8px 0">'
+                    f'<span style="font-family:\'Fraunces\',Georgia,serif;font-size:1.8rem;font-weight:700;'
+                    f'color:#0b263d">{fr(int(hab))}</span>'
+                    f'<span style="font-size:.78rem;color:#55534e;line-height:1.2">habitants<br>concernés</span></div>')
     st.markdown(
         f'<div class="reco-carte" style="border:1px solid #e2dfd6;border-radius:12px;padding:14px;background:#fff;'
         f'height:100%;border-top:3px solid {coul_t}">'
-        f'<div style="font-size:.7rem;font-weight:700;letter-spacing:.04em;color:{coul_t}">{html.escape(theme.upper())}</div>'
-        f'<div style="font-weight:600;margin:4px 0;line-height:1.25">{html.escape(row["Titre"])}</div>'
-        f'<div style="color:#3a3935;font-size:.9rem">{html.escape(str(row["Cible"]))}</div>'
-        f'<div style="color:#55534e;font-size:.8rem;margin:6px 0">{html.escape(str(row["Contexte"]))}</div>'
-        f'<div style="margin:8px 0">{etiqs}</div>'
+        f'<div style="display:flex;align-items:flex-start;gap:10px;margin-bottom:6px">'
+        f'{ico}<div>'
+        f'<div style="font-weight:600;line-height:1.25">{html.escape(row["Titre"])}</div>'
+        f'<div style="font-size:.72rem;font-weight:700;letter-spacing:.04em;color:{coul_t}">{html.escape(theme)}</div>'
+        f'</div></div>'
+        f'{hab_html}'
         f'<div style="font-size:.85rem;color:#3a3935">{html.escape(str(row["Texte"]))}</div>'
+        f'<div style="color:#55534e;font-size:.8rem;margin:6px 0">{html.escape(str(row["Cible"]))}</div>'
+        f'<div style="margin:8px 0">{etiqs}</div>'
         f'{horizon}</div>',
         unsafe_allow_html=True)
     with st.expander("Détail"):
@@ -117,6 +136,7 @@ def grille(df, cle):
         for col, row in zip(cols, lignes[i:i + 3]):
             with col:
                 carte(row, cle)
+        st.markdown("")
 
 
 def fiche(row):
@@ -144,17 +164,12 @@ def fiche(row):
 ariane("Recommandations")
 entete("Recommandations", "Quelle action engager ?",
        "<strong>15 recommandations</strong> : 3 en priorité haute, 10 en moyenne, 2 en faible ; 5 préfectures cumulent "
-       "les deux déficits. <strong>Les habitants ne s'additionnent pas</strong> d'une carte à l'autre.")
+       "les deux déficits. <strong>Les habitants ne s'additionnent pas</strong> d'une carte à l'autre. "
+       "Priorité et zone se choisissent dans la barre latérale.", carte=True)
 
-# ------------------------------------------------------------------ Barre de résumé et recherche
-b1, b2 = st.columns([1.6, 1], vertical_alignment="center")
-with b1:
-    st.markdown('<div class="filtres-actifs"><b>15 recommandations</b> · les habitants ne s\'additionnent pas d\'une '
-                'carte à l\'autre · priorité et zone se choisissent dans la barre latérale.</div>',
-                unsafe_allow_html=True)
-with b2:
-    recherche = st.text_input("Rechercher dans les recommandations", key="r_rech",
-                              placeholder="titre, cible ou texte")
+# ------------------------------------------------------------------ Barre de recherche
+recherche = st.text_input("Rechercher dans les recommandations", key="r_rech",
+                          placeholder="titre, cible ou texte")
 
 # Les zones en difficulté, lues dans zones_10 (une ligne, en tête de page).
 zz = zones10[(zones10.Maille == "Zone") & zones10["Moins bien desservie pour"].notna()]
@@ -180,10 +195,10 @@ loin = cartes[cartes.Rubrique == "Pour aller plus loin"]
 with ong[0]:
     grille(reco, "r_toutes")
     titre_bloc("Pour aller plus loin : ce que les données ne permettent pas encore de dire", marge=True)
-    st.caption("Ces 4 actions relèvent des producteurs de données, pas des régions. La base d'accidents par "
+    note_carte("Ces 4 actions relèvent des producteurs de données, pas des régions. La base d'accidents par "
                "préfecture permettrait de trancher 7 questions que le diagnostic laisse ouvertes, dont le lien entre "
                "réseau dégradé et accidents. Les trois autres rendraient vérifiables les chiffres estimés de cette "
-               "page.")
+               "page.", couleur="bleu")
     grille(loin, "r_loin")
 
 with ong[1]:
@@ -240,25 +255,28 @@ with ong[6]:
             for col, row in zip(cols, lignes[i:i + 3]):
                 with col:
                     fiche(row)
+            st.markdown("")
         st.caption(f"{len(p)} fiches affichées. Répartition d'ensemble : 5 en priorité haute, 26 en moyenne, "
                    "8 sans action. 🛣️ réseau · 📚 formation · 🛣️📚 les deux · ✓ suivi courant.")
     export_csv(p[["Préfecture", "Zone", "Région", "Population", "Priorité", "Leviers", "Texte réseau",
                   "Texte formation", "Actions"]], "fiches_prefectures.csv", "r_exp_fiches")
 
-# ------------------------------------------------------------------ Synthèse, limite et exports
+# ------------------------------------------------------------------ Constat, limite, synthèse et exports
 st.markdown("")
 g, d = st.columns(2, vertical_alignment="top")
 with g:
     constat("5 préfectures cumulent les deux déficits : <strong>Danyi, Blitta, Agou, Tchamba et Bassar</strong>, "
-            "641 955 habitants.")
-    synthese("15", "recommandations : 3 hautes, 10 moyennes, 2 faibles",
-             ["10 conditionnelles, 5 immédiates.",
-              "Réseau : 304,6 km à remettre en état dans 13 préfectures.",
-              "Formation : 41 auto-écoles dans 23 préfectures.",
-              "Les habitants ne s'additionnent pas d'une carte à l'autre."])
+            "641 955 habitants.", egale=True)
 with d:
-    limite("Recommandations en C : vérifier avant d'investir ; pas d'accidents par territoire ; le coût n'est pas dans "
-           "les données. Le détail par horizon, zone et préfecture est en page Horizon 2031.")
+    limite("Recommandations par estimation : vérifier avant d'investir ; pas d'accidents par territoire ; le coût "
+           "n'est pas dans les données. Le détail par horizon, zone et préfecture est en page Horizon 2031.",
+           egale=True)
+st.markdown("")
+synthese("15", "recommandations : 3 hautes, 10 moyennes, 2 faibles",
+         ["10 conditionnelles, 5 immédiates.",
+          "Réseau : 304,6 km à remettre en état dans 13 préfectures.",
+          "Formation : 41 auto-écoles dans 23 préfectures.",
+          "Les habitants ne s'additionnent pas d'une carte à l'autre."])
 export_csv(cartes[["Onglet", "Rubrique", "Titre", "Cible", "Contexte", "Priorité", "Nature", "Horizon", "Zones",
                    "Acteur", "Indicateur de suivi", "Niveau de preuve", "Réserve", "Texte"]],
            "recommandations_15.csv", "r_exp_cartes", "Exporter les 15 recommandations (CSV)")
