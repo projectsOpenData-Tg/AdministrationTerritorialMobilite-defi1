@@ -1,7 +1,6 @@
 # 09 — Diagnostic
 
 **Projet :** Mobilité et sécurité routière au Togo
-**Version :** 1.0 — **Date :** 2026-10-06 — **Statut :** **figé** le 2026-10-06
 **Sources :** `01_problem_definition.md` (figé), `02_decision_matrix.xlsx` (v1.1, figé), `03_data_inventory.md` à `08_priorisation.md` (figés), `data/analysis/06_exploration/`, `data/analysis/07_indicateurs/`, `data/analysis/08_priorisation/`
 
 > **Question du 09 :** pourquoi ces territoires sont-ils en tête, et que disent les hypothèses du 02 ?

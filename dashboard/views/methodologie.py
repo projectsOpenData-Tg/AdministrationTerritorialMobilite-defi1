@@ -10,15 +10,18 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 import pandas as pd  # noqa: E402
 import streamlit as st  # noqa: E402
 
-from composants import ariane, constat, entete, limite, note, pied, synthese, titre_bloc  # noqa: E402
+from composants import ariane, constat, entete, limite, note, note_carte, pied, synthese, titre_bloc  # noqa: E402
 from donnees import fr, lire, lire_raw  # noqa: E402
 from theme import BLEUS, THEME  # noqa: E402
 
 ariane("Méthodologie")
+st.markdown('<style>[data-testid="stDataFrame"]{background:#ffffff;border-radius:8px;padding:2px}'
+            '[data-testid="stDataFrame"] th{background:#ffffff}'
+            '</style>', unsafe_allow_html=True)
 entete("Méthodologie", "Sources, méthode et limites",
        "Le tableau de bord montre la décision et son fondement ; cette page dit <strong>comment elle a été "
        "produite</strong> et <strong>où elle s'arrête</strong>. Chaque étape a été gelée avant la suivante, et aucun "
-       "chiffre affiché n'a été recopié à la main.")
+       "chiffre affiché n'a été recopié à la main.", carte=True)
 
 # ------------------------------------------------------------------ Section 1 — Comment nous avons travaillé
 titre_bloc("Comment nous avons travaillé", "Du problème à la solution, en 9 étapes.")
@@ -53,7 +56,8 @@ for i, (titre, phrase, produit) in enumerate(ETAPES):
     coul = BLEUS[min(i * len(BLEUS) // len(ETAPES), len(BLEUS) - 1)]
     txt_coul = "#ffffff" if coul in (BLEUS[3], BLEUS[4]) else "#141413"
     st.markdown(
-        f'<div style="display:flex;gap:14px;align-items:flex-start;margin-bottom:10px">'
+        f'<div style="display:flex;gap:14px;align-items:flex-start;margin-bottom:10px;'
+        f'border:1px solid #e2dfd6;border-radius:10px;padding:12px 14px;background:#ffffff">'
         f'<div style="flex:0 0 36px;height:36px;border-radius:50%;background:{coul};color:{txt_coul};'
         f'display:flex;align-items:center;justify-content:center;font-weight:700">{i + 1}</div>'
         f'<div style="flex:1"><div style="font-weight:600">{html.escape(titre)}</div>'
@@ -72,28 +76,45 @@ titre_bloc("Sources", f"{len(src)} fichiers, issus de {src['Jeu de données'].nu
            f"{n_tel} téléchargés, {n_rec} recensés seulement.")
 vue = src[["Jeu de données", "Producteur", "Licence déclarée", "Statut", "Date de téléchargement"]].copy()
 vue["Statut"] = vue["Statut"].str.split(" :").str[0]
-st.dataframe(vue, hide_index=True, use_container_width=True, height=360)
-note("La grille de population WorldPop, recensée seulement à l'inventaire, a été téléchargée ensuite pour mesurer "
-     "l'accès rural et placer les auto-écoles (page Horizon 2031). Son empreinte est dans sources_A1.csv. Le registre "
-     "reste celui de l'inventaire : il n'est pas réécrit après coup.")
+with st.container(border=True):
+    st.dataframe(vue, hide_index=True, use_container_width=True, height=360)
+note_carte("La population rurale est localisée par la grille WorldPop (carreaux de 100 m), et non répartie "
+           "uniformément par préfecture : l'accès rural et le placement des auto-écoles (page Horizon 2031) en "
+           "dépendent. Source ajoutée après l'inventaire initial ; empreinte dans sources_A1.csv.")
 
 # ------------------------------------------------------------------ Section 3 — Limites majeures
 st.markdown("")
 titre_bloc("Limites majeures")
-for i, t in enumerate([
-    "Les accidents ne sont publiés qu'au niveau national : ni préfecture, ni mois, ni âge, ni véhicule.",
-    "L'activité des auto-écoles n'est pas publiée : une auto-école agréée n'est pas forcément active.",
-    "L'état du réseau vient du relevé des tronçons de 2020, avec une méthode de notation non publiée. L'annuaire "
-    "national de la même année donne d'autres parts par état ; aucune ne concorde.",
-    "Le parc de véhicules en circulation n'est pas publié : il est estimé dans une fourchette.",
-    "Le coût des actions n'est pas dans les données : les quantités sont des ordres de grandeur, pas des devis.",
-    "Les recommandations en C demandent une vérification avant tout investissement.",
-    "La population en âge de conduire ne se raccorde pas d'une source à l'autre : les 18 ans et plus font 51,8 % de "
-    "la population au recensement de 2022 et 55,6 % dans la projection de 2023 (réserve A1-R1).",
-    "Les quantités d'ici 2031 sont des estimations, pas des prévisions : elles supposent la population projetée par "
-    "l'INSEED et les leviers à leur dernière observation.",
-], 1):
-    st.markdown(f"{i}. {t}")
+LIMITES = [
+    ("Les accidents ne sont publiés qu'au niveau national",
+     ": ni préfecture, ni mois, ni âge, ni véhicule."),
+    ("L'activité des auto-écoles n'est pas publiée",
+     ": une auto-école agréée n'est pas forcément active."),
+    ("L'état du réseau vient d'un relevé de 2020",
+     ", avec une méthode de notation non publiée. L'annuaire national de la même année "
+     "donne d'autres parts par état."),
+    ("Le parc de véhicules en circulation n'est pas publié",
+     ": il est estimé dans une fourchette."),
+    ("Le coût des actions n'est pas dans les données",
+     ": les quantités sont des ordres de grandeur, pas des devis."),
+    ("Les recommandations en C",
+     "demandent une vérification avant tout investissement."),
+    ("La population en âge de conduire ne se raccorde pas",
+     "d'une source à l'autre : 51,8 % de 18 ans et plus en 2022, 55,6 % dans la projection de "
+     "2023. Les permis par habitant en âge de conduire de 2023 et 2024 dépendent de ce saut."),
+    ("Les quantités d'ici 2031 sont des estimations",
+     ", pas des prévisions : elles supposent la population projetée par "
+     "l'INSEED et les leviers à leur dernière observation."),
+]
+for i, (titre_l, desc_l) in enumerate(LIMITES, 1):
+    st.markdown(
+        f'<div style="display:flex;gap:12px;align-items:flex-start;padding:12px 16px;'
+        f'border:1px solid #e2dfd6;border-radius:10px;background:#ffffff;margin-bottom:8px">'
+        f'<div style="flex:0 0 28px;height:28px;border-radius:50%;background:#f4dfe1;color:#ce1126;'
+        f'display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.8rem">{i}</div>'
+        f'<div style="flex:1"><strong>{html.escape(titre_l)}</strong>'
+        f'&ensp;<span style="color:#55534e">{html.escape(desc_l)}</span></div></div>',
+        unsafe_allow_html=True)
 
 # ------------------------------------------------------------------ Section 4 — Niveaux de preuve
 st.markdown("")
@@ -102,11 +123,12 @@ with g:
     titre_bloc("Niveaux de preuve")
     st.markdown("**A** = mesuré (comptage direct)  \n**B** = calculé (formule maîtrisée)  \n"
                 "**C** = estimé (approximation ou méthode non documentée)")
-    st.dataframe(pd.DataFrame({"Niveau": ["A", "B", "C", "Total"],
-                               "Indicateurs du cadre": ["5", "10", "17", "32"]}),
-                 hide_index=True, use_container_width=True)
-    st.caption("S'y ajoutent les 3 compléments à l'énoncé (C) et l'accès rural à une route revêtue (C). "
-               "Décompte lu dans catalogue_07.csv.")
+    with st.container(border=True):
+        st.dataframe(pd.DataFrame({"Niveau": ["A", "B", "C", "Total"],
+                                   "Indicateurs du cadre": ["5", "10", "17", "32"]}),
+                     hide_index=True, use_container_width=True)
+    note_carte("Au-delà des 32 indicateurs du cadre, 3 compléments à l'énoncé et l'accès rural à une route "
+               "revêtue ont été estimés (niveau C). Décompte complet dans le catalogue (catalogue_07.csv).")
 with d:
     titre_bloc("Questions ouvertes", "Les 7 hypothèses non testables, et la donnée qui manque.")
     hyp = lire("09_diagnostic", "hypotheses_09")
@@ -117,10 +139,10 @@ with d:
         manque = cons.loc[r["Code"], "Donnée manquante affichée"] if r["Code"] in cons.index else ""
         lignes.append({"Hypothèse": r["Énoncé"], "Pourquoi non testable": r["Raison"],
                        "Donnée qui la rendrait testable": manque})
-    st.dataframe(pd.DataFrame(lignes), hide_index=True, use_container_width=True, height=300)
-    st.caption("Une base d'accidents par préfecture, avec le mois, l'âge et la catégorie de véhicule, rendrait ces "
-               "7 questions testables (recommandation « Créer une base d'accidents par préfecture », page "
-               "Recommandations).")
+    with st.container(border=True):
+        st.dataframe(pd.DataFrame(lignes), hide_index=True, use_container_width=True, height=300)
+    note_carte("Une seule donnée manquante bloque 7 hypothèses : la localisation des accidents par préfecture "
+               "(avec mois, âge et type de véhicule). Sa création est recommandée page Recommandations.")
 
 # ------------------------------------------------------------------ Section 6 — Zones les moins desservies
 st.markdown("")
@@ -131,10 +153,11 @@ acc = pd.DataFrame({
     "Position (uniforme)": ["au-dessus", "sous la médiane", "au-dessus", "au-dessus (médiane)", "sous la médiane", "", ""],
     "Grille WorldPop (%)": ["39,55", "25,12", "23,65", "23,37", "21,26", "23,65", "27,12"],
     "Position (grille)": ["au-dessus", "au-dessus", "au-dessus (médiane)", "sous la médiane", "sous la médiane", "", ""]})
-st.dataframe(acc, hide_index=True, use_container_width=True)
-st.markdown("La grille place la population là où elle vit, au lieu de l'étaler sur toute la préfecture : l'accès monte "
-            "partout. Les Plateaux restent sous la médiane dans les deux mesures. **La zone qui cumule les deux "
-            "retards est la Centrale dans la première mesure et les Savanes dans la seconde.**")
+with st.container(border=True):
+    st.dataframe(acc, hide_index=True, use_container_width=True)
+note_carte("La grille localise la population là où elle vit réellement : l'accès rural mesuré est plus élevé "
+           "partout. Les Plateaux restent sous la médiane dans les deux mesures. La zone cumulant les deux retards "
+           "d'accès est la Centrale (mesure uniforme) ou les Savanes (mesure par grille).")
 constat("La recommandation de zone de la Centrale garde sa priorité haute : la Centrale reste la zone au réseau le "
         "plus dégradé, 40,3 % de km en mauvais état contre 12,8 % dans les Savanes, et la lecture « formation » ne "
         "change pas. Un écart de 0,28 point ne sépare pas deux zones à ce niveau de preuve.")

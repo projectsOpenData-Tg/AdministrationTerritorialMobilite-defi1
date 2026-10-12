@@ -1,0 +1,301 @@
+
+NOTES À CONSIDÉRER POUR LE CODAGE DU DASHBOARD :
+
+
+- Regarder la maquette de l'ancien projet : l'application à consulter est le fichier MAQUETTE_* dans le dossier methodology.
+
+- Se baser sur la maquette pour la construction et le design de nos pages uniquement, pas pour le contenu :
+    - afin d'éviter les soucis de sidebar, de topbar, d'espacement, de design par défaut et de design des cartes ;
+    - mais le plan de construction de chaque page et son contenu doivent respecter les designs définis dans les fichiers workspace/design-page-X.
+    - Bilingue FR/ENG : abandonné pour le moment ; l'interface et le contenu restent en français.
+    - Afficher les armoiries et le drapeau du Togo, repris du projet /home/automater/Desktop/data-engineering-chall/EconomyNumeric-Challenge2 :
+        - Armoiries : fichier dashboard/static/armoiries-togo-ecu.svg (écu recadré ; version complète armoiries-togo.svg disponible).
+          Affichées dans la zone gauche de la topbar (hauteur ~38 px), à côté du nom du ministère ; repli sur l'icône bouclier si le fichier manque.
+          Référence via l'URL app/static/<fichier>, ce qui impose enableStaticServing = true dans .streamlit/config.toml (règle aussi le souci de topbar par défaut).
+          Licence CC BY-SA 4.0 (auteur Edem Fiadjoe) : attribution OBLIGATOIRE dans le pied de page. Copier aussi README_armoiries.md pour garder la source et la licence.
+        - Drapeau : pas d'image, c'est l'emoji drapeau togolais placé devant le nom du projet, au centre de la topbar.
+        - Reprendre la structure de la topbar (armoiries + ministère à gauche, titre + drapeau au centre, carte « logo Togo AI Lab » à droite)
+          MAIS sans le sélecteur de langue FR/EN (bilingue abandonné).
+    - Reprendre aussi la carte « logo Togo AI Lab » à droite de la topbar (bordure or, fond blanc, ombre légère ; repli texte « TOGO AI LAB » si le PNG manque).
+    - Reprendre le CSS de la topbar (.armoiries, .topbar-*, carte du logo) du theme.py du projet de référence, adapté à notre palette.
+
+- Couleurs : celles déjà définies dans le fichier 11_tableau_de_bord (priorités, thèmes, états du réseau) sont à respecter strictement ; pour le reste (fond de page, habillage général), libre à nous.
+
+- Se baser sur le fichier 11_tableau_de_bord :
+    - pour la construction et le contenu des pages du tableau de bord ;
+    - lire workspace/design-pageX pour savoir ce que chaque page doit afficher et comment.
+
+- Après chaque développement de l'application, et après chaque bug ou correction rencontré : mettre à jour le fichier workspace/dev-progress.md
+    avec un horodatage. Cela permet aux développeurs qui partagent le projet de se rendre compte des fonctionnalités et des bugs déjà résolus, et de savoir comment.
+
+- La solution du projet sera déployée sur Streamlit Cloud, donc :
+    - pendant le développement, anticiper les problèmes liés à la topbar par défaut de Streamlit, qui écrase notre topbar fraîchement créée ;
+    - lire le fichier MAQUETTE_dashboard dans le dossier methodology, au cas où il aurait déjà résolu ce problème, et voir comment ;
+    - sinon, faire des recherches sur internet pour voir comment les utilisateurs ont résolu cela.
+
+
+
+---
+
+CORRECTIONS À APPORTER À LA PAGE « VUE NATIONALE » :
+
+- Ministère à afficher dans la topbar : « Ministère de l'Efficacité du Service Public et de la Transformation Numérique ».
+
+- En relisant design-page1, 11_tableau_de_bord et toutes les analyses faites pour la page 1 : tout a-t-il bien été
+  implémenté dans le tableau de bord ?
+
+- Section « Le Togo, préfecture par préfecture » : appliquer ces ajouts :
+    - par défaut, afficher la carte du Togo avec toutes les couches réunies sur la même carte : routes classées
+      + auto-écoles + population ;
+    - découper toute la carte selon les 5 régions, avec une couleur différente pour chaque région ;
+    - permettre de zoomer sur la carte pour la visualiser en détail.
+
+
+---
+CORRECTIONS À APPORTER À LA PAGE 2 « COMPARAISON TERRITORIALE » :
+
+- En relisant design-page2, 11_tableau_de_bord et toutes les analyses faites pour la page 2 :
+    - tout a-t-il bien été implémenté dans le tableau de bord ?
+
+    - Section « Réseau et formation » :
+        - la ligne de seuil n'apparaît pas sur le graphique.
+
+    - Section « Les territoires » :
+        - afficher les seuils franchis en badges colorés (rose = réseau, indigo = formation, jaune = desserte) ;
+        - leviers réseau et formation : mettre « X préfectures » et « X auto-écoles » en badges colorés,
+          chacun dans une couleur différente ;
+        - colorer le chiffre « Part en mauvais état » des territoires qui franchissent le seuil.
+
+    - Section « État du réseau par zone » :
+        - au bout de la barre de chaque territoire, ajouter le pourcentage, dans la couleur correspondante ;
+        - à l'intérieur de chaque segment de barre, inscrire le nombre de km, comme sur l'image jointe.
+
+    - Section « Où sont les auto-écoles » :
+        - afficher les km devant le nom de chaque préfecture.
+
+    - Section « Les 39 préfectures » :
+        - mettre les priorités en badges colorés, une couleur par niveau de priorité ;
+        - colorer le nom des régions, et faire ressortir les pourcentages de « mauvais état ».
+
+- Au passage, sur toutes les pages sauf la page Méthodologie et les annexes : aucun code ni référence de fichier
+  ne doit être visible, comme dans « Niveau B. Source : hypotheses_09 (H8). »
+
+
+
+---
+CORRECTIONS À APPORTER À LA PAGE 3 « ÉVOLUTIONS ET CONSTATS » :
+
+- En relisant design-page3, 11_tableau_de_bord et toutes les analyses faites pour la page 3 :
+    - tout a-t-il bien été implémenté dans le tableau de bord ?
+
+    - Onglet « Synthèse » :
+        - section « Les 17 vérifications et hypothèses » : afficher le verdict en badge coloré clair ;
+        - la carte des constats manque-t-elle ?
+
+    - Onglet « Mobilité » :
+        - « Immatriculations par groupe, 1990–2024 » : les lignes de rupture de 1995 et 2004 doivent porter
+          leur année en haut de la ligne ;
+        - « Permis par catégorie, 2007–2024 » : ajouter une ligne verticale portant l'année, pour dire qu'elle
+          n'est pas renseignée ;
+        - « Immatriculations pour un permis, cumul 2007–2024 » : donner à chaque barre la couleur de sa catégorie
+          de permis, comme sur la courbe des permis ;
+        - « Parc estimé, 2009–2024 » : améliorer le titre, par exemple « Parc estimé des véhicules » ; ajouter les
+          nombres de véhicules (dont les motos) sur la courbe, si possible par palier de date.
+
+    - Onglet « Sécurité routière » :
+        - « Les 6 taux : 2010–2012 face à 2022–2024 » : une couleur différente par type de mesure — tués en rouge,
+          blessés dans une autre couleur ;
+        - « Les tués par type d'usager, 2021 » : une couleur différente par catégorie, et les libellés
+          (cyclistes, piétons, …) en gras ;
+        - « Une autre publication de 2020 : l'annuaire national » : améliorer le titre, par exemple
+          « Un constat frappant sur l'état du réseau en 2020 : l'annuaire national ».
+
+---
+CORRECTIONS À APPORTER À LA PAGE 4 « CARTE DU RÉSEAU ET DES AUTO-ÉCOLES » :
+
+- En relisant design-page4, 11_tableau_de_bord et toutes les analyses faites pour la page 4 :
+    - tout a-t-il bien été implémenté dans le tableau de bord ?
+
+    - Section « Le Togo, préfecture par préfecture » :
+        - agrandir la carte, comme celle de « La carte des constats » ;
+        - ajouter, à droite et dans la même figure, un agrandissement de la région Maritime et du Grand Lomé :
+          cette région est la plus dense et concentre le plus d'auto-écoles.
+          Exemple : voir le notebook « 04 — O3 : état du réseau », figure « Carte : routes nationales avec et sans état » ;
+        - sur la carte du Togo, une couleur différente pour les auto-écoles agréées et pour les non agréées ;
+        - une couleur différente pour les routes nationales revêtues et non revêtues : aujourd'hui, les deux
+          se confondent sur la carte ;
+        - mettre des badges colorés dans les colonnes « Priorité » et « Mauvais état », comme la colonne
+          « Seuils franchis » de la section « Les territoires » de la page « Comparaison territoriale ».
+
+
+---
+CORRECTIONS À APPORTER À LA PAGE 5 « PRIORITÉS » :
+
+- En relisant design-page5, 11_tableau_de_bord et toutes les analyses faites pour la page 5 :
+    - tout a-t-il bien été implémenté dans le tableau de bord ?
+
+---
+CORRECTIONS À APPORTER À LA PAGE 6 « RECOMMANDATIONS » :
+
+- En relisant design-page6, 11_tableau_de_bord et toutes les analyses faites pour la page 6 :
+    - tout a-t-il bien été implémenté dans le tableau de bord ?
+
+---
+CORRECTIONS À APPORTER À LA PAGE « HORIZON 2031 » (7e page du menu, plan design-page8) :
+
+- En relisant design-page8, 11_tableau_de_bord et toutes les analyses faites pour cette page :
+    - tout a-t-il bien été implémenté dans le tableau de bord ?
+
+    - ne manque-t-il pas des cartes à afficher ?
+    - section « Sécurité routière : ce que la cible demande » :
+        montrer la bande grise verticale de la partie projetée, avec un texte en petits caractères si possible.
+
+
+---
+CORRECTIONS À APPORTER À LA PAGE « PRIORITÉS » :
+  - Lire le contenu du fichier workspace/design-progress.md, pour savoir comment les autres ont développé
+    les fonctionnalités sur le projet.
+  - Faire les changements suivants :
+    - Élargir le tableau « Les zones en difficulté » vers la droite de la page.
+    - Mettre la carte du constat avant la section « Les zones en difficulté », comme fait sur les autres pages.
+    - Mettre dans une carte avec pictogramme constat vert le texte suivant :
+      « Une zone est moins bien desservie si elle est sous la médiane des zones : 16,9 % des ruraux à moins
+      de 2 km d'une route revêtue pour la route, 0,53 auto-école pour 100 000 habitants pour la formation.
+      **Les Savanes** sont un cas limite pour la route : 16,9 %, pour 17,2 % dans le pays. »
+    - Mettre le texte suivant dans une carte warning :
+      « **Accès rural (grille WorldPop)** : mesuré avec la grille, les Savanes passent sous la médiane et
+      la Centrale au-dessus. La Centrale garde la première place : elle reste la zone avec un réseau routier
+      le plus dégradé, et la formation des conducteurs dans cette zone ne change pas. »
+
+  - Au niveau du tableau « Ce que dit chaque zone » :
+    - Trouver un nouveau titre pour cette section.
+    - Remplacer le contenu par 6 cartes (3 par ligne), chacune avec la zone et son contenu actuel ;
+      garder les mêmes couleurs de zones ; effet hover avec liseré en bas de la même couleur que la zone.
+
+  - Mettre dans une carte en fond blanc avec liseré vert à gauche :
+    « **Par région** : Centrale, puis Plateaux, Savanes, Kara et Maritime. La Centrale est en tête dans
+    les deux lectures.
+    Région Maritime (5e des 5 régions) : avec le Grand Lomé, elle ne franchit que le seuil de la desserte
+    (1,79 km pour 10 000 habitants). Son offre (3,06 auto-écoles pour 100 000 habitants) cache celle de la
+    Maritime hors Grand Lomé (0,37). Les 4 autres régions sont les zones du même nom. »
+
+  - Mettre le texte suivant en carte fond blanc : « Total : 641 955 habitants ; 175,6 km à remettre en
+    état ; 9 auto-écoles à ouvrir. Déjà repérées à l'exploration : ces 5 préfectures étaient dans le pire
+    quart des deux dimensions. »
+
+  - Remplacer le titre « Les 10 premières » par « Les 10 premières préfectures en priorité ».
+
+  - Mettre dans une carte warning : « 5 préfectures cumulent les deux déficits, 26 en ont un, 8 n'en ont
+    aucun. La nature du zéro : 15 préfectures sans aucune auto-école recensée (25 auto-écoles), 8 avec des
+    auto-écoles recensées non agréées (16 auto-écoles). »
+  - Mettre à jour le fichier design-progress.md après tout changement.
+
+
+  - Section « Le classement tient-il ? » :
+    - Dans la carte affichant les zones : « Entrent : Kloto, Ogou · Sortent : Est-Mono, Oti-Sud
+      (par rapport au classement à 50 %) », ajouter une icône de tendance en couleur devant le texte
+      « Entrent » et pareil devant « Sortent ».
+      - Mettre aussi en couleurs les textes de zones qui s'affichent devant les clés : Entrent & Sortent.
+      - On peut utiliser vert pour les valeurs qui entrent et rouge pour les valeurs qui sortent.
+
+    - Mettre en carte avec pictogramme et liseré bleu à gauche le texte :
+      « Score = poids du réseau × rang percentile du réseau + poids de la formation × rang percentile
+      de la formation ; à score égal, la préfecture la plus peuplée passe devant.
+      Valeurs de contrôle : à 50 %, le classement publié ; à 65 %, **Kloto** et **Ogou** entrent,
+      **Est-Mono** et **Oti-Sud** sortent ; à 35 %, **Haho** entre et **Tchaoudjo** sort. »
+
+    - Mettre en carte avec pictogramme vert le texte :
+      « **Règle** : Le classement est stable si aucun test ne change plus de 2 des 10 premières.
+      **Toujours en tête** : Danyi, Blitta, Agou, Tchamba, Bassar, Oti, Bas-Mono.
+      **Les moins sûres** : Est-Mono et Oti-Sud (4 tests sur 6), Tchaoudjo (3 sur 6). »
+
+  - Dans la carte contenant « Mô, hors classement » : changer par « Mô, hors class. »
+    - Dans cette carte, le liseré doit être en constat jaune.
+
+  - Dans la carte « Limites de cette page » :
+    - « Classement en C » n'est pas parlant pour un décideur : utiliser « Classement par estimation » ou améliorer.
+    - Afficher par ligne le contenu dans cette carte.
+
+---
+  CORRECTIONS À APPORTER À LA PAGE « RECOMMANDATIONS » :
+    - Sur la page « Recommandations » :
+      - Le texte qui apparaît sous le titre directement : le mettre dans une carte comme fait sur les autres pages précédentes.
+      - La carte contenant le texte suivant : « 15 recommandations · les habitants ne s'additionnent pas d'une carte à l'autre · priorité et zone se choisissent dans la barre latérale. »
+        : soit la retirer, soit la reformuler car elle fait doublon avec le texte du titre d'accueil s'affichant en dessous du titre principal.
+      - Corrections à faire sur les cartes s'affichant sur tous les onglets sauf « Actions par zone » :
+        - Ajouter les icônes de thème comme ce qui est déjà fait sur la page 1 dans chaque carte.
+        - Changer le badge « Moyenne » en couleur jaune-or avec le texte à l'intérieur ; s'inspirer de l'image attachée.
+        - Dans chaque carte affichant le nombre de préfectures et le nombre d'habitants, le mettre au centre au grand format comme dans l'image attachée : le texte concerné → ex. « 5 préfectures · 641 955 habitants concernés ».
+        - Les badges des horizons en couleur : 1, 3, 5 ans en violet ou violet clair.
+        - Mettre le texte suivant dans une carte en fond blanc avec liseré bleu vers la gauche : « Ces 4 actions relèvent des producteurs de données, pas des régions. La base d'accidents par préfecture permettrait de trancher 7 questions que le diagnostic laisse ouvertes, dont le lien entre réseau dégradé et accidents. Les trois autres rendraient vérifiables les chiffres estimés de cette page. »
+        - Positionner les cartes constat et limite sur la même grille horizontale et même dimension en largeur vers le bas.
+        - Élargir la carte « Synthèse chiffrée » vers la droite : qu'elle prenne toute la page.
+      
+      - Sur l'onglet « Actions par zone » :
+        - Les cartes sont collées dans cette section de l'onglet « Actions par zone » ; il faut corriger ; regarde le bug dans l'image attachée.
+          Solution possible : une ligne après chaque grille horizontale affichant 3 cartes par grille horizontale.
+
+      - Appliquer l'effet hover sur toutes les cartes de la page Recommandations ; juste un effet hover quand la souris est dessus, sans décor de couleur les traversant.
+      - Les cartes Constat et Limite doivent s'afficher avant la carte Synthèse et laisser une ligne de séparation avant la carte Synthèse, car actuellement elles sont toutes collées.
+
+
+- Sur la page « Horizon » :
+  - Appliquer le même design et carte pour le texte qui s'affiche après le titre principal, comme fait sur les autres pages.
+  - Appliquer les icônes de thèmes dans chaque carte de KPI et positionner les chiffres à l'intérieur au centre de la carte, comme fait sur les autres pages.
+  - Appliquer le même design avec liseré aux cartes KPI et mettre en couleur les chiffres qui changent dans la carte quand l'horizon est sélectionné.
+  - Section « Ce qu'il faut ajouter » :
+    - Appliquer les couleurs différentes pour chaque région, comme fait déjà sur la page « Carte ».
+    - Les boutons « Auto-écoles à ouvrir » et « Km à remettre en état » :
+      lorsque ces boutons sont sélectionnés, la carte change mais on ne voit pas les km sur la carte, et pareil on ne voit pas les auto-écoles sur la carte. Est-ce normal ?
+    - La carte Constat ramenée sous la section « Ce qu'il faut ajouter ».
+    - Section « Les recommandations chiffrées, à cet horizon » : il faut élargir le tableau jusqu'à la droite de la page.
+
+  - Mettre en carte fond blanc avec pictogramme « i » en couleur verte avec liseré vert à gauche, les textes :
+    « Auto-écoles agréées pour 100 000 habitants, par zone, si rien n'ouvre »
+    « Population par zone, 2022 → 2031 (fourchette des deux variantes en bande) »
+    « Trait plein : observé jusqu'en 2024.
+    Sur fond gris (mettre en texte gras) : les deux références sans action nouvelle (taux inchangé, tendance) et la cible de la Décennie, moitié de la valeur de 2021 en 2030. Les accidents constatés n'ont pas de cible : la résolution porte sur les tués et les blessés. »
+    « Le plafond suppose qu'aucun usager de deux-roues tué ne portait de casque : limite haute, pas une estimation. Rappel : 8,62 tués déclarés pour 100 000 habitants en 2021, contre 22,7 estimés par l'OMS — une baisse des déclarations ressemblerait à un progrès. »
+    « Ces sites orientent une vérification sur place. Ce ne sont pas des adresses : ils sont choisis parmi les chefs-lieux et les points de canton, sur une grille de population modélisée (niveau C). »
+
+  - mettre dans un card à pictogramme 'i' vert, les textes suivants en dessous de la carte du Togo :
+    « Aucune donnée ne mesure l'usure du réseau : la quantité à remettre en état ne dépend pas de l'horizon.
+    Classes fixes d'un horizon à l'autre, pour que les couleurs se comparent. Projection Mercator, cadrée sur le Togo ; l'agrandissement reprend la région Maritime et le Grand Lomé. »
+  - élargir le cadre de la carte vers la droite de la page et la carte du Togo peut s'agrandir un peu
+  - faire pareil pour le tableau s'affichant après les boutons « Zones » et « Régions » : élargir jusqu'à vers la droite
+
+  - section « Où ouvrir les auto-écoles » :
+    - élargir la carte jusqu'à vers la droite de la page
+    - agrandir les points en cercle vert affichant « 132 auto-écoles agréées existantes » comme fait sur la page Carte
+    - changer la couleur des points « 48 sites retenus » : en couleur rose clair ou rouge clair
+    - le card constat, le mettre au-dessous de la carte, sous la section « Où ouvrir les auto-écoles »
+
+  - sur le card « Limite » :
+    appliquer le même format que ceux sur la page Priorités : mettre par point sur chaque ligne les textes dans ce card
+    appliquer les mêmes dimensions et format comme fait sur la page Priorités
+
+- sur page « Vue nationale » :
+  - sur la carte du Togo, préf. par préf. :
+    - appliquer le même design et les mêmes couleurs pour les points des auto-écoles agréées et non agréées, et agrandir leur taille comme sur la page « Carte »
+    - ajouter la portion de la région Maritime et du Grand Lomé comme sur la page « Carte », section « Le Togo, préf. par préf. », afin de bien voir les auto-écoles dans la région
+    - appliquer un fond coloré pour chaque région comme sur la page « Carte » : chaque région a sa couleur si on l'a sélectionnée ; utiliser celles déjà définies sur la page « Carte »
+
+
+- Modif sur page 'méthodologie':
+  - appliquer le card sous le titre comme fait sur toutes les autres pages
+  - appliquer le design comme dans l'image attachée :
+  - dans la section 'Comment nous avons travaillé':
+    - mettre chaque ligne dans un card avec contour
+
+  - dans section 'sources':
+    mettre bordure autour du tableau pour être mieux lisible
+
+  - section "Niveaux de preuve" et "Questions ouvertes", "Les zones les moins desservies":
+    ajouter les bordures au tableau et peut-être prendre le fond tableau en blanc et appliquer les bordures et lignes dans le tableau pour un meilleur visuel
+
+  - mettre le texte dans un card à fond blanc avec pictogramme 'i' comme fait sur les autres pages :
+    "La grille de population WorldPop, recensée seulement à l'inventaire, a été téléchargée ensuite pour mesurer l'accès rural et placer les auto-écoles (page Horizon 2031). Son empreinte est dans sources_A1.csv. Le registre reste celui de l'inventaire : il n'est pas réécrit après coup."
+    "S'y ajoutent les 3 compléments à l'énoncé (C) et l'accès rural à une route revêtue (C). Décompte lu dans catalogue_07.csv."
+    "Une base d'accidents par préfecture, avec le mois, l'âge et la catégorie de véhicule, rendrait ces 7 questions testables (recommandation « Créer une base d'accidents par préfecture », page Recommandations)."
+    "La grille place la population là où elle vit, au lieu de l'étaler sur toute la préfecture : l'accès monte partout. Les Plateaux restent sous la médiane dans les deux mesures. La zone qui cumule les deux retards est la Centrale dans la première mesure et les Savanes dans la seconde."
+    (n'hésite pas à reformuler pour que ça soit plus parlant au décideur de notre méthode de travail)

@@ -1,7 +1,6 @@
 # 08 — Priorisation
 
 **Projet :** Mobilité et sécurité routière au Togo
-**Version :** 1.0 — **Date :** 2026-10-06 — **Statut :** **figé** le 2026-10-06
 **Sources :** `01_problem_definition.md` (figé), `02_decision_matrix.xlsx` (v1.1, figé), `03_data_inventory.md` (v1.3, figé), `04_data_understanding.md` (v1.0, figé), `05_data_preparation.md` (v1.0, figé), `06_exploration.md` (v1.0, figé), `07_indicateurs.md` (v1.0, figé), `data/analysis/07_indicateurs/`
 
 > **Question du 08 :** quelles préfectures et quelles régions sont prioritaires, sur quel levier, et le classement tient-il ?

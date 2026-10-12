@@ -1,7 +1,6 @@
 # 04 — Data Understanding
 
 **Projet :** Mobilité et sécurité routière au Togo
-**Version :** 1.0 — **Date :** 2026-10-04 — **Statut :** **figé** le 2026-10-04
 **Sources :** `workspace/_PROJECT.txt` (énoncé), `01_problem_definition.md` (figé), `02_decision_matrix.xlsx` (v1.1, figé), `03_data_inventory.md` (v1.3, figé), registre `data/raw/_SOURCES.csv`
 
 > **Question du 04 :** les données disponibles sont-elles réellement fiables et exploitables pour calculer les indicateurs définis dans le 02 ? Autrement dit : que permettent-elles de dire, et que ne permettent-elles pas de dire ?

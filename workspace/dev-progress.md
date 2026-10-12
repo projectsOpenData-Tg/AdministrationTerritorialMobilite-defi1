@@ -508,3 +508,16 @@ le total sous le tableau.
 - Les 8 pages se chargent sans exception ; page Horizon relue section par section (captures), les deux cartes et les
   quatre graphiques contrôlés, le tableau par recommandation ouvert, et le curseur testé aux deux extrémités
   (2022 : 41 auto-écoles, 304,6 km, 8 095 498 habitants ; 2031).
+
+## 2026-10-12
+
+### Fond blanc des tableaux — page Méthodologie
+- Injection CSS `[data-testid="stDataFrame"]{background:#ffffff;border-radius:8px;padding:2px}` en haut de
+  `methodologie.py` : tous les `st.dataframe` (Sources, Niveaux de preuve, Questions ouvertes, Zones les moins
+  desservies, Formules, Corrections/contrôles, Licences) se distinguent maintenant du fond beige de la page.
+
+### README scindé en deux
+- `dashboard/README.md` réécrit pour le jury : installation, lancement, pages, fichiers essentiels. Aucune info de
+  déploiement ni de Telegram.
+- `workspace/README_technique.md` créé : notes internes de développement, déploiement Streamlit Cloud, alerte
+  Telegram, tests Playwright, conventions du projet.

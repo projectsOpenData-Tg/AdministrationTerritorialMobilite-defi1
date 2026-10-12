@@ -1,7 +1,6 @@
 # 10 — Recommandations
 
 **Projet :** Mobilité et sécurité routière au Togo
-**Version :** 1.0 — **Date :** 2026-10-07 — **Statut :** **figé** le 2026-10-07
 **Sources :** `01` à `09` (figés), `data/analysis/07_indicateurs/`, `data/analysis/08_priorisation/`, `data/analysis/09_diagnostic/`, `methodology/MAQUETTE_dashboard.md`
 
 > **Question du 10 :** que faire, où, pour combien d’habitants, et dans quel ordre ?

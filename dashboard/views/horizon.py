@@ -15,9 +15,9 @@ from pyproj import Transformer  # noqa: E402
 from shapely.geometry import shape  # noqa: E402
 
 from composants import (ariane, badge, carte_kpi, constat, entete, export_csv, habiller, limite,  # noqa: E402
-                        note, pied, rangee_kpi, synthese, table_html, titre_bloc, tracer)
+                        note, note_carte, pied, rangee_kpi, synthese, table_html, titre_bloc, tracer)
 from donnees import contours, couche, fr, lire  # noqa: E402
-from theme import BLEUS, COULEUR_ZONE, ENCRE  # noqa: E402
+from theme import BLEUS, COULEUR_REGION, COULEUR_ZONE, ENCRE  # noqa: E402
 
 INF = float("inf")
 
@@ -122,7 +122,8 @@ def _sites_lonlat():
 ariane("Horizon 2031")
 entete("Horizon 2031", "Combien en faudra-t-il d'ici 2031 ?",
        "Sans ouverture, le manque d'auto-écoles passe de <strong>41 en 2022 à 50 en 2031</strong> dans les préfectures "
-       "qui en manquent, et <strong>4,6 millions de ruraux</strong> resteront à plus de 2 km d'une route revêtue.")
+       "qui en manquent, et <strong>4,6 millions de ruraux</strong> resteront à plus de 2 km d'une route revêtue.",
+       carte=True)
 
 label = st.select_slider("Horizon", list(PALIERS), value="2029 · dans 3 ans", key="hz_palier")
 palier = PALIERS[label]
@@ -157,149 +158,148 @@ def fourchette(row):
 
 rangee_kpi(f"L'horizon {an} — niveau C", [
     carte_kpi("Habitants", fr(hab["Population"]) if hab is not None else "—", f"population du Togo en {an}",
-              "Population projetée par l'INSEED.", etiquette="C"),
+              "Population projetée par l'INSEED.", etiquette="C", icone="population"),
     carte_kpi("Auto-écoles à ouvrir", fr(ae["Valeur"]) if ae is not None else "—",
-              "dans les préfectures sans auto-école agréée", fourchette(ae), etiquette="C", ton="alerte"),
+              "dans les préfectures sans auto-école agréée", fourchette(ae), etiquette="C", ton="alerte",
+              icone="ecole_jaune"),
     carte_kpi("Km à remettre en état", fr(km["Valeur"], 1) if km is not None else "—",
               "dans les préfectures au réseau dégradé", "Ne change pas d'un horizon à l'autre.", etiquette="C",
-              ton="alerte"),
+              ton="alerte", icone="route_rouge"),
     carte_kpi("Ruraux loin d'une route", fr(rur["Valeur"]) if rur is not None else "—",
-              "à plus de 2 km d'une route nationale revêtue", fourchette(rur), etiquette="C", ton="alerte"),
-])
+              "à plus de 2 km d'une route nationale revêtue", fourchette(rur), etiquette="C", ton="alerte",
+              icone="route"),
+], centre=True)
 
 # ------------------------------------------------------------------ Section 2 — Ce qu'il faut ajouter
 st.markdown("")
-g, d = st.columns([1.8, 1], vertical_alignment="top")
-with g:
-    titre_bloc("Ce qu'il faut ajouter", f"À l'horizon {an}, préfecture par préfecture.")
-    levier_vue = st.radio("Levier", ["Auto-écoles à ouvrir", "Km à remettre en état"], horizontal=True,
-                          label_visibility="collapsed", key="hz_levier")
-    auto = levier_vue.startswith("Auto")
-    lev = "Auto-écoles" if auto else "Remise en état"
-    classes = CL_AE if auto else CL_KM
-    dec = 0 if auto else 1
-    unite = "auto-écoles à ouvrir" if auto else "km à remettre en état"
+titre_bloc("Ce qu'il faut ajouter", f"À l'horizon {an}, préfecture par préfecture.")
+levier_vue = st.radio("Levier", ["Auto-écoles à ouvrir", "Km à remettre en état"], horizontal=True,
+                      label_visibility="collapsed", key="hz_levier")
+auto = levier_vue.startswith("Auto")
+lev = "Auto-écoles" if auto else "Remise en état"
+classes = CL_AE if auto else CL_KM
+dec = 0 if auto else 1
+unite = "auto-écoles à ouvrir" if auto else "km à remettre en état"
 
-    pp = hz[(hz.Maille == "Préfecture") & (hz.Levier == lev) & (hz.Palier == palier)
-            & (hz["Périmètre"] != "Levier du 10")]
-    valeurs = dict(zip(pp["Territoire"], pp["Valeur"]))
-    if not auto:
-        valeurs["Mô"] = float("nan")          # aucune route classée : ni état, ni km évalué
-    cl = {p: _classe(v, classes) for p, v in valeurs.items()}
-    dedans = [p for p in valeurs if cl[p] is not None]
-    absents = [p for p in valeurs if cl[p] is None]
+pp = hz[(hz.Maille == "Préfecture") & (hz.Levier == lev) & (hz.Palier == palier)
+        & (hz["Périmètre"] != "Levier du 10")]
+valeurs = dict(zip(pp["Territoire"], pp["Valeur"]))
+if not auto:
+    valeurs["Mô"] = float("nan")          # aucune route classée : ni état, ni km évalué
+cl = {p: _classe(v, classes) for p, v in valeurs.items()}
+dedans = [p for p in valeurs if cl[p] is not None]
+absents = [p for p in valeurs if cl[p] is None]
 
-    textes = {p: (f"<b>{p}</b><br>{ZONE_PREF.get(p, '')}<br>"
-                  + (f"{fr(valeurs[p], dec)} {unite}" if cl[p] is not None else "aucune route classée"))
-              for p in valeurs}
+textes = {p: (f"<b>{p}</b><br>{ZONE_PREF.get(p, '')}<br>"
+              + (f"{fr(valeurs[p], dec)} {unite}" if cl[p] is not None else "aucune route classée"))
+          for p in valeurs}
 
-    fig = go.Figure()
-    for cible in ("geo", "geo2"):
-        comm = dict(geojson=GEO, featureidkey="properties.code", marker_line_color="#ffffff",
-                    marker_line_width=0.8, showscale=False, geo=cible)
-        if absents:
-            fig.add_choropleth(locations=absents, z=[0] * len(absents), colorscale=[[0, ABSENT], [1, ABSENT]],
-                               zmin=0, zmax=1, text=[textes[p] for p in absents],
-                               hovertemplate="%{text}<extra></extra>", **comm)
-        fig.add_choropleth(locations=dedans, z=[cl[p] + 0.5 for p in dedans], zmin=0, zmax=len(BLEUS),
-                           colorscale=_echelle(BLEUS), text=[textes[p] for p in dedans],
+fig = go.Figure()
+for cible in ("geo", "geo2"):
+    comm = dict(geojson=GEO, featureidkey="properties.code", marker_line_color="#ffffff",
+                marker_line_width=0.8, showscale=False, geo=cible)
+    if absents:
+        fig.add_choropleth(locations=absents, z=[0] * len(absents), colorscale=[[0, ABSENT], [1, ABSENT]],
+                           zmin=0, zmax=1, text=[textes[p] for p in absents],
                            hovertemplate="%{text}<extra></extra>", **comm)
-    cen = _centroides()
-    fig.add_scattergeo(geo="geo2", mode="text", text=SUD, hoverinfo="skip",
-                       lon=[cen[p][0] for p in SUD], lat=[cen[p][1] for p in SUD],
-                       textfont=dict(size=10, color="#141413"))
-    _layout_geo(fig, "Région Maritime et Grand Lomé, agrandi")
-    st.plotly_chart(fig, key="hz_carte", config={"displayModeBar": True, "scrollZoom": True, "displaylogo": False,
-                                                 "modeBarButtonsToRemove": ["select2d", "lasso2d"]})
-    eff = [sum(1 for p in dedans if cl[p] == i) for i in range(len(classes))]
-    suffixe = (f'<span style="display:inline-flex;align-items:center;gap:5px;font-size:.74rem">'
-               f'<span style="width:13px;height:13px;border-radius:3px;background:{ABSENT};'
-               f'border:1px solid #d8d6cc"></span>Mô : aucune route classée</span>' if absents else "")
-    st.markdown(_chips(BLEUS, [lib for _, _, lib in classes], eff, suffixe), unsafe_allow_html=True)
-    if not auto:
-        note("Aucune donnée ne mesure l'usure du réseau : la quantité à remettre en état ne dépend pas de l'horizon.")
+    fig.add_choropleth(locations=dedans, z=[cl[p] + 0.5 for p in dedans], zmin=0, zmax=len(BLEUS),
+                       colorscale=_echelle(BLEUS), text=[textes[p] for p in dedans],
+                       hovertemplate="%{text}<extra></extra>", **comm)
+cen = _centroides()
+fig.add_scattergeo(geo="geo2", mode="text", text=SUD, hoverinfo="skip",
+                   lon=[cen[p][0] for p in SUD], lat=[cen[p][1] for p in SUD],
+                   textfont=dict(size=10, color="#141413"))
+_layout_geo(fig, "Région Maritime et Grand Lomé, agrandi")
+st.plotly_chart(fig, key="hz_carte", config={"displayModeBar": True, "scrollZoom": True, "displaylogo": False,
+                                             "modeBarButtonsToRemove": ["select2d", "lasso2d"]})
+eff = [sum(1 for p in dedans if cl[p] == i) for i in range(len(classes))]
+suffixe = (f'<span style="display:inline-flex;align-items:center;gap:5px;font-size:.74rem">'
+           f'<span style="width:13px;height:13px;border-radius:3px;background:{ABSENT};'
+           f'border:1px solid #d8d6cc"></span>Mô : aucune route classée</span>' if absents else "")
+st.markdown(_chips(BLEUS, [lib for _, _, lib in classes], eff, suffixe), unsafe_allow_html=True)
+note_carte("Aucune donnée ne mesure l'usure du réseau : la quantité à remettre en état ne dépend pas de l'horizon. "
+           "Classes fixes d'un horizon à l'autre, pour que les couleurs se comparent. Projection Mercator, cadrée "
+           "sur le Togo ; l'agrandissement reprend la région Maritime et le Grand Lomé.", couleur="vert")
 
-    # --- Tableau par zone ou par région
-    maille = st.radio("Maille", ["Zones (6)", "Régions (5)"], horizontal=True, label_visibility="collapsed",
-                      key="hz_maille")
-    m = "Zone" if maille.startswith("Zones") else "Région"
-    base = hz[(hz.Maille == m) & (hz.Palier == palier)]
-    aez = base[(base.Levier == "Auto-écoles") & (base["Périmètre"] == "Levier du 08")].set_index("Territoire")
-    kmz = base[(base.Levier == "Remise en état") & (base["Périmètre"] == "Levier du 08")].set_index("Territoire")
-    rrz = base[(base.Levier == "Accès rural") & (base["Périmètre"] == "Toutes les préfectures")].set_index("Territoire")
-    lignes = []
-    for t in rrz.index:
-        a = aez.loc[t] if t in aez.index else None
-        k = kmz.loc[t] if t in kmz.index else None
-        lignes.append({
-            m: f'<b style="color:{COULEUR_ZONE.get(t, ENCRE)}">{html.escape(t)}</b>',
-            "Habitants": fr(rrz.loc[t, "Population"]),
-            "Auto-écoles à ouvrir": (badge(fr(a["Valeur"]), "#1baf7a") if a is not None and a["Valeur"] else "—"),
-            "Fourchette": (f'{fr(a["Borne basse"])} à {fr(a["Borne haute"])}'
-                           if a is not None and a["Borne basse"] != a["Borne haute"] else "—"),
-            "Km à remettre en état": (badge(f'{fr(k["Valeur"], 1)} km', "#eb6834")
-                                      if k is not None and k["Valeur"] else "—"),
-            "Ruraux à plus de 2 km": fr(rrz.loc[t, "Valeur"]),
-        })
-    tot_ae, tot_km = pays("Auto-écoles", "Levier du 08"), pays("Remise en état", "Levier du 08")
+# --- Tableau par zone ou par région
+maille = st.radio("Maille", ["Zones (6)", "Régions (5)"], horizontal=True, label_visibility="collapsed",
+                  key="hz_maille")
+m = "Zone" if maille.startswith("Zones") else "Région"
+base = hz[(hz.Maille == m) & (hz.Palier == palier)]
+aez = base[(base.Levier == "Auto-écoles") & (base["Périmètre"] == "Levier du 08")].set_index("Territoire")
+kmz = base[(base.Levier == "Remise en état") & (base["Périmètre"] == "Levier du 08")].set_index("Territoire")
+rrz = base[(base.Levier == "Accès rural") & (base["Périmètre"] == "Toutes les préfectures")].set_index("Territoire")
+coul_m = COULEUR_REGION if m == "Région" else COULEUR_ZONE
+lignes = []
+for t in rrz.index:
+    a = aez.loc[t] if t in aez.index else None
+    k = kmz.loc[t] if t in kmz.index else None
     lignes.append({
-        m: "<b>Togo</b>", "Habitants": fr(hab["Population"]) if hab is not None else "—",
-        "Auto-écoles à ouvrir": badge(fr(tot_ae["Valeur"]), "#0d366b") if tot_ae is not None else "—",
-        "Fourchette": (f'{fr(tot_ae["Borne basse"])} à {fr(tot_ae["Borne haute"])}' if tot_ae is not None else "—"),
-        "Km à remettre en état": badge(f'{fr(tot_km["Valeur"], 1)} km', "#0d366b") if tot_km is not None else "—",
-        "Ruraux à plus de 2 km": fr(rur["Valeur"]) if rur is not None else "—"})
-    st.markdown(table_html(lignes), unsafe_allow_html=True)
-    exp = rrz.reset_index()[["Territoire", "Population", "Valeur"]].rename(
-        columns={"Territoire": m, "Population": "Habitants", "Valeur": "Ruraux à plus de 2 km"})
-    exp["Auto-écoles à ouvrir"] = exp[m].map(aez["Valeur"])
-    exp["Km à remettre en état"] = exp[m].map(kmz["Valeur"])
-    export_csv(exp, f"horizon_{an}_{m.lower()}s.csv", "hz_exp_zone")
-    st.caption("Les quantités des recommandations de zone sont déjà comptées dans les leviers : elles ne "
-               "s'additionnent pas.")
+        m: f'<b style="color:{coul_m.get(t, ENCRE)}">{html.escape(t)}</b>',
+        "Habitants": fr(rrz.loc[t, "Population"]),
+        "Auto-écoles à ouvrir": (badge(fr(a["Valeur"]), "#1baf7a") if a is not None and a["Valeur"] else "—"),
+        "Fourchette": (f'{fr(a["Borne basse"])} à {fr(a["Borne haute"])}'
+                       if a is not None and a["Borne basse"] != a["Borne haute"] else "—"),
+        "Km à remettre en état": (badge(f'{fr(k["Valeur"], 1)} km', "#eb6834")
+                                  if k is not None and k["Valeur"] else "—"),
+        "Ruraux à plus de 2 km": fr(rrz.loc[t, "Valeur"]),
+    })
+tot_ae, tot_km = pays("Auto-écoles", "Levier du 08"), pays("Remise en état", "Levier du 08")
+lignes.append({
+    m: "<b>Togo</b>", "Habitants": fr(hab["Population"]) if hab is not None else "—",
+    "Auto-écoles à ouvrir": badge(fr(tot_ae["Valeur"]), "#0d366b") if tot_ae is not None else "—",
+    "Fourchette": (f'{fr(tot_ae["Borne basse"])} à {fr(tot_ae["Borne haute"])}' if tot_ae is not None else "—"),
+    "Km à remettre en état": badge(f'{fr(tot_km["Valeur"], 1)} km', "#0d366b") if tot_km is not None else "—",
+    "Ruraux à plus de 2 km": fr(rur["Valeur"]) if rur is not None else "—"})
+st.markdown(table_html(lignes), unsafe_allow_html=True)
+exp = rrz.reset_index()[["Territoire", "Population", "Valeur"]].rename(
+    columns={"Territoire": m, "Population": "Habitants", "Valeur": "Ruraux à plus de 2 km"})
+exp["Auto-écoles à ouvrir"] = exp[m].map(aez["Valeur"])
+exp["Km à remettre en état"] = exp[m].map(kmz["Valeur"])
+export_csv(exp, f"horizon_{an}_{m.lower()}s.csv", "hz_exp_zone")
+st.caption("Les quantités des recommandations de zone sont déjà comptées dans les leviers : elles ne "
+           "s'additionnent pas.")
 
-    # --- Tableau par recommandation
-    with st.expander("Les recommandations chiffrées, à cet horizon"):
-        rec = hz[(hz.Maille == "Recommandation") & (hz.Mesure != "aucune quantité")]
-        lignes = []
-        for ident, sub in rec.groupby("Recommandation"):
-            base_id = str(ident).split(" (")[0]
-            if base_id not in cartes10.index:
-                continue
-            passe = sub[sub.Palier == "Passé"]
-            ici = sub[sub.Palier == palier]
-            if passe.empty or ici.empty:
-                continue
-            p0, p1 = passe.iloc[0], ici.iloc[0]
-            d0 = 1 if "km" in str(p1["Mesure"]) else 0
-            lignes.append({
-                "Recommandation": f'<span style="font-size:.8rem">{html.escape(str(cartes10.loc[base_id, "Titre"]))}</span>',
-                "Quantité": html.escape(str(p1["Mesure"])),
-                "En 2022": fr(p0["Valeur"], d0),
-                f"En {an}": f'<b>{fr(p1["Valeur"], d0)}</b>',
-                "Horizon porté": f'{int(p1["Horizon (ans)"])} ans',
-            })
-        st.markdown(table_html(sorted(lignes, key=lambda x: x["Recommandation"])), unsafe_allow_html=True)
-        st.caption("Les quantités des recommandations de zone sont déjà comptées dans les leviers : elles ne "
-                   "s'additionnent pas. Le détail de chaque action est en page Recommandations.")
-        choix = st.selectbox("Ouvrir une recommandation", ["—"] + [str(cartes10.loc[i, "Titre"])
-                                                                   for i in cartes10.index], key="hz_choix_rec")
-        if choix != "—" and st.button("Voir cette recommandation →", key="hz_lien_rec"):
-            onglet = cartes10[cartes10["Titre"] == choix].iloc[0]["Onglet"]
-            st.session_state["recommandations_rang"] = RANG_ONGLET.get(onglet, 0)
-            st.switch_page("views/recommandations.py")
-with d:
-    constat("Les <strong>41 auto-écoles</strong> qui manquaient en 2022 seront <strong>50 en 2031</strong> : la "
-            "population grandit plus vite que l'offre. Les km à remettre en état, eux, ne bougent pas : c'est un retard "
-            "déjà constitué.")
-    st.caption("Classes fixes d'un horizon à l'autre, pour que les couleurs se comparent. Projection Mercator, cadrée "
-               "sur le Togo ; l'agrandissement reprend la région Maritime et le Grand Lomé.")
+constat("Les <strong>41 auto-écoles</strong> qui manquaient en 2022 seront <strong>50 en 2031</strong> : la "
+        "population grandit plus vite que l'offre. Les km à remettre en état, eux, ne bougent pas : c'est un retard "
+        "déjà constitué.")
+
+with st.expander("Les recommandations chiffrées, à cet horizon"):
+    rec = hz[(hz.Maille == "Recommandation") & (hz.Mesure != "aucune quantité")]
+    lignes_rec = []
+    for ident, sub in rec.groupby("Recommandation"):
+        base_id = str(ident).split(" (")[0]
+        if base_id not in cartes10.index:
+            continue
+        passe = sub[sub.Palier == "Passé"]
+        ici = sub[sub.Palier == palier]
+        if passe.empty or ici.empty:
+            continue
+        p0, p1 = passe.iloc[0], ici.iloc[0]
+        d0 = 1 if "km" in str(p1["Mesure"]) else 0
+        lignes_rec.append({
+            "Recommandation": f'<span style="font-size:.8rem">{html.escape(str(cartes10.loc[base_id, "Titre"]))}</span>',
+            "Quantité": html.escape(str(p1["Mesure"])),
+            "En 2022": fr(p0["Valeur"], d0),
+            f"En {an}": f'<b>{fr(p1["Valeur"], d0)}</b>',
+            "Horizon porté": f'{int(p1["Horizon (ans)"])} ans',
+        })
+    st.markdown(table_html(sorted(lignes_rec, key=lambda x: x["Recommandation"])), unsafe_allow_html=True)
+    st.caption("Les quantités des recommandations de zone sont déjà comptées dans les leviers : elles ne "
+               "s'additionnent pas. Le détail de chaque action est en page Recommandations.")
+    choix = st.selectbox("Ouvrir une recommandation", ["—"] + [str(cartes10.loc[i, "Titre"])
+                                                               for i in cartes10.index], key="hz_choix_rec")
+    if choix != "—" and st.button("Voir cette recommandation →", key="hz_lien_rec"):
+        onglet = cartes10[cartes10["Titre"] == choix].iloc[0]["Onglet"]
+        st.session_state["recommandations_rang"] = RANG_ONGLET.get(onglet, 0)
+        st.switch_page("views/recommandations.py")
 
 # ------------------------------------------------------------------ Section 3 — Sans action, le taux baisse
 st.markdown("")
 titre_bloc("Sans action, le taux baisse", "Toutes les années ; l'horizon choisi est marqué.")
 g, d = st.columns(2, vertical_alignment="top")
 with g:
-    st.caption("Auto-écoles agréées pour 100 000 habitants, par zone, si rien n'ouvre")
+    note_carte("Auto-écoles agréées pour 100 000 habitants, par zone, si rien n'ouvre.", couleur="vert")
     fig = go.Figure()
     finals = []
     for z in ["Grand Lomé", "Maritime hors Grand Lomé", "Plateaux", "Centrale", "Kara", "Savanes"]:
@@ -324,7 +324,7 @@ with g:
                              f'{fr(a, 2)} → <b>{fr(b, 2)}</b>' for z, a, b in finals) + "</div>",
                 unsafe_allow_html=True)
 with d:
-    st.caption("Population par zone, 2022 → 2031 (fourchette des deux variantes en bande)")
+    note_carte("Population par zone, 2022 → 2031 (fourchette des deux variantes en bande).", couleur="vert")
     fig = go.Figure()
     for z in ["Grand Lomé", "Maritime hors Grand Lomé", "Plateaux", "Centrale", "Kara", "Savanes"]:
         s = popz[popz.Zone == z].groupby("Palier", as_index=False).agg(
@@ -387,9 +387,10 @@ with g:
              xaxis3=dict(gridcolor="#efece4"), yaxis=dict(gridcolor="#efece4"))
     fig.update_annotations(font_size=11)
     tracer(fig, "hz_series")
-    note("Trait plein : observé jusqu'en 2024. Sur fond gris : les deux références sans action nouvelle (taux "
-         "inchangé, tendance) et la cible de la Décennie, moitié de la valeur de 2021 en 2030. Les accidents "
-         "constatés n'ont pas de cible : la résolution porte sur les tués et les blessés.")
+    note_carte("Trait plein : observé jusqu'en 2024. <strong>Sur fond gris</strong> : les deux références sans "
+               "action nouvelle (taux inchangé, tendance) et la cible de la Décennie, moitié de la valeur de 2021 "
+               "en 2030. Les accidents constatés n'ont pas de cible : la résolution porte sur les tués et les blessés.",
+               couleur="vert")
 with d:
     constat("Même si la baisse observée depuis 2010 se poursuit, il faudrait éviter <strong>204 tués</strong> de plus "
             "en 2029 pour suivre la cible. Généraliser le casque n'y suffirait pas : au mieux 147 à 174 tués évités.")
@@ -413,61 +414,60 @@ with d:
              xaxis=dict(tickmode="array", tickvals=annees, gridcolor="rgba(0,0,0,0)"),
              yaxis=dict(title="tués", gridcolor="#efece4"))
     tracer(fig, "hz_ecart")
-    st.caption("Le plafond suppose qu'aucun usager de deux-roues tué ne portait de casque : limite haute, pas une "
+    note_carte("Le plafond suppose qu'aucun usager de deux-roues tué ne portait de casque : limite haute, pas une "
                "estimation. Rappel : 8,62 tués déclarés pour 100 000 habitants en 2021, contre 22,7 estimés par "
-               "l'OMS — une baisse des déclarations ressemblerait à un progrès.")
+               "l'OMS — une baisse des déclarations ressemblerait à un progrès.", couleur="vert")
 
 # ------------------------------------------------------------------ Section 5 — Où ouvrir les auto-écoles
 st.markdown("")
 titre_bloc("Où ouvrir les auto-écoles",
            "Les 23 préfectures du levier formation ; sites choisis parmi les chefs-lieux et les points de canton.")
-g, d = st.columns([1.6, 1], vertical_alignment="top")
-with g:
-    concernees = sorted(set(empl["Préfecture"]))
-    autres = [p for p in ZONE_PREF if p not in concernees]
-    aec = couche("auto_ecoles")
-    agreees = aec[aec["Comptée (R-12)"]]
-    lon_s, lat_s = _sites_lonlat()
-    fig = go.Figure()
-    for cible in ("geo", "geo2"):
-        comm = dict(geojson=GEO, featureidkey="properties.code", marker_line_color="#ffffff",
-                    marker_line_width=0.8, showscale=False, geo=cible)
-        fig.add_choropleth(locations=autres, z=[0] * len(autres), colorscale=[[0, "#f4f2ec"], [1, "#f4f2ec"]],
-                           zmin=0, zmax=1, hoverinfo="skip", **comm)
-        fig.add_choropleth(locations=concernees, z=[0] * len(concernees),
-                           colorscale=[[0, "#cde2fb"], [1, "#cde2fb"]], zmin=0, zmax=1,
-                           text=[f"<b>{p}</b><br>préfecture du levier formation" for p in concernees],
-                           hovertemplate="%{text}<extra></extra>", **comm)
-        fig.add_scattergeo(geo=cible, lon=agreees.geometry.x, lat=agreees.geometry.y, mode="markers",
-                           marker=dict(size=5, color="#8a8780", line=dict(width=0.5, color="#ffffff")),
-                           text=agreees["Préfecture"], hovertemplate="Auto-école agréée — %{text}<extra></extra>")
-        fig.add_scattergeo(geo=cible, lon=lon_s, lat=lat_s, mode="markers",
-                           marker=dict(size=9, color="#0d366b", symbol="diamond",
-                                       line=dict(width=1, color="#ffffff")),
-                           customdata=[[s, t, p, h] for s, t, p, h in zip(sites["Site"], sites["Type"],
-                                                                          sites["Préfecture"],
-                                                                          sites["Habitants gagnés (2022)"])],
-                           hovertemplate="<b>%{customdata[0]}</b> (%{customdata[1]})<br>%{customdata[2]}"
-                                         "<br>%{customdata[3]:, .0f} habitants gagnés<extra></extra>")
-    _layout_geo(fig, "Région Maritime et Grand Lomé, agrandi")
-    st.plotly_chart(fig, key="hz_sites", config={"displayModeBar": True, "scrollZoom": True, "displaylogo": False,
-                                                 "modeBarButtonsToRemove": ["select2d", "lasso2d"]})
-    st.markdown(
-        f'<div class="filtres-actifs">'
-        f'<span style="display:inline-flex;align-items:center;gap:5px;margin-right:14px;font-size:.74rem">'
-        f'<span style="width:13px;height:13px;border-radius:3px;background:#cde2fb;border:1px solid #d8d6cc"></span>'
-        f'{len(concernees)} préfectures du levier formation</span>'
-        f'<span style="display:inline-flex;align-items:center;gap:5px;margin-right:14px;font-size:.74rem">'
-        f'<span style="width:10px;height:10px;border-radius:50%;background:#8a8780"></span>'
-        f'{len(agreees)} auto-écoles agréées existantes</span>'
-        f'<span style="display:inline-flex;align-items:center;gap:5px;font-size:.74rem">'
-        f'<span style="width:11px;height:11px;background:#0d366b;transform:rotate(45deg)"></span>'
-        f'{len(sites)} sites retenus</span></div>', unsafe_allow_html=True)
-    note("Ces sites orientent une vérification sur place. Ce ne sont pas des adresses : ils sont choisis parmi les "
-         "chefs-lieux et les points de canton, sur une grille de population modélisée (niveau C).")
-with d:
-    constat("Réparties, <strong>48 auto-écoles</strong> mettent 56,7 % de la population de ces préfectures à moins de "
-            "10 km d'une auto-école, contre 32,2 % si elles ouvrent toutes au chef-lieu : 719 730 habitants de plus.")
+concernees = sorted(set(empl["Préfecture"]))
+autres = [p for p in ZONE_PREF if p not in concernees]
+aec = couche("auto_ecoles")
+agreees = aec[aec["Comptée (R-12)"]]
+lon_s, lat_s = _sites_lonlat()
+fig = go.Figure()
+for cible, inset in [("geo", False), ("geo2", True)]:
+    comm = dict(geojson=GEO, featureidkey="properties.code", marker_line_color="#ffffff",
+                marker_line_width=0.8, showscale=False, geo=cible)
+    fig.add_choropleth(locations=autres, z=[0] * len(autres), colorscale=[[0, "#f4f2ec"], [1, "#f4f2ec"]],
+                       zmin=0, zmax=1, hoverinfo="skip", **comm)
+    fig.add_choropleth(locations=concernees, z=[0] * len(concernees),
+                       colorscale=[[0, "#cde2fb"], [1, "#cde2fb"]], zmin=0, zmax=1,
+                       text=[f"<b>{p}</b><br>préfecture du levier formation" for p in concernees],
+                       hovertemplate="%{text}<extra></extra>", **comm)
+    fig.add_scattergeo(geo=cible, lon=agreees.geometry.x, lat=agreees.geometry.y, mode="markers",
+                       marker=dict(size=12 if inset else 10, color="#16834a",
+                                   line=dict(width=1.3, color="#ffffff")),
+                       text=agreees["Préfecture"], hovertemplate="Auto-école agréée — %{text}<extra></extra>")
+    fig.add_scattergeo(geo=cible, lon=lon_s, lat=lat_s, mode="markers",
+                       marker=dict(size=9, color="#e88a98", symbol="diamond",
+                                   line=dict(width=1, color="#d04060")),
+                       customdata=[[s, t, p, h] for s, t, p, h in zip(sites["Site"], sites["Type"],
+                                                                      sites["Préfecture"],
+                                                                      sites["Habitants gagnés (2022)"])],
+                       hovertemplate="<b>%{customdata[0]}</b> (%{customdata[1]})<br>%{customdata[2]}"
+                                     "<br>%{customdata[3]:, .0f} habitants gagnés<extra></extra>")
+_layout_geo(fig, "Région Maritime et Grand Lomé, agrandi")
+st.plotly_chart(fig, key="hz_sites", config={"displayModeBar": True, "scrollZoom": True, "displaylogo": False,
+                                             "modeBarButtonsToRemove": ["select2d", "lasso2d"]})
+st.markdown(
+    f'<div class="filtres-actifs">'
+    f'<span style="display:inline-flex;align-items:center;gap:5px;margin-right:14px;font-size:.74rem">'
+    f'<span style="width:13px;height:13px;border-radius:3px;background:#cde2fb;border:1px solid #d8d6cc"></span>'
+    f'{len(concernees)} préfectures du levier formation</span>'
+    f'<span style="display:inline-flex;align-items:center;gap:5px;margin-right:14px;font-size:.74rem">'
+    f'<span style="width:10px;height:10px;border-radius:50%;background:#16834a"></span>'
+    f'{len(agreees)} auto-écoles agréées existantes</span>'
+    f'<span style="display:inline-flex;align-items:center;gap:5px;font-size:.74rem">'
+    f'<span style="width:11px;height:11px;background:#e88a98;transform:rotate(45deg)"></span>'
+    f'{len(sites)} sites retenus</span></div>', unsafe_allow_html=True)
+note_carte("Ces sites orientent une vérification sur place. Ce ne sont pas des adresses : ils sont choisis "
+           "parmi les chefs-lieux et les points de canton, sur une grille de population modélisée (niveau C).",
+           couleur="vert")
+constat("Réparties, <strong>48 auto-écoles</strong> mettent 56,7 % de la population de ces préfectures à moins de "
+        "10 km d'une auto-école, contre 32,2 % si elles ouvrent toutes au chef-lieu : 719 730 habitants de plus.")
 
 e = empl.copy().sort_values("Population (2022)", ascending=False)
 et = e[["Préfecture", "Zone", "Auto-écoles à ouvrir (2029)", "Couverte à 10 km, avant (%)",
@@ -497,8 +497,10 @@ with g:
               f"Tués à éviter pour suivre la cible : {fr(ecart['Valeur']) if ecart is not None else '—'} "
               f"(tendance observée)."])
 with d:
-    limite("Ces chiffres sont des estimations, pas des prévisions. Ils supposent la population projetée par l'INSEED "
-           "et les leviers à leur dernière observation : auto-écoles de 2021-2022, état du réseau relevé en 2020. Ils "
-           "ne chiffrent aucun coût, et ne prêtent aux actions aucun effet sur les accidents : les données ne "
-           "permettent pas de le mesurer.")
+    limite(titre="Limites de cette page", egale=True, texte_html=(
+        "• Ces chiffres sont des estimations, pas des prévisions.<br><br>"
+        "• Ils supposent la population projetée par l'INSEED et les leviers à leur dernière observation : "
+        "auto-écoles de 2021-2022, état du réseau relevé en 2020.<br><br>"
+        "• Ils ne chiffrent aucun coût, et ne prêtent aux actions aucun effet sur les accidents : "
+        "les données ne permettent pas de le mesurer."))
 pied()

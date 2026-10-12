@@ -791,6 +791,10 @@
   "texte": "304,6 km to be repaired",
   "relu": false
  },
+ "304,6 km à reprendre. Cible : 14,35 % de km en mauvais état (médiane nationale).": {
+  "texte": "304.6 km to be reclaimed. Target: 14.35% of km in poor condition (national average).",
+  "relu": false
+ },
  "305 096 habitants": {
   "texte": "305 096 inhabitants",
   "relu": false
@@ -875,6 +879,10 @@
   "texte": "I'd rather have four.",
   "relu": false
  },
+ "4 sur 6": {
+  "texte": "4 out of 6",
+  "relu": false
+ },
  "4 vues": {
   "texte": "4 views",
   "relu": false
@@ -925,6 +933,10 @@
  },
  "41 auto-écoles à ouvrir": {
   "texte": "41 driving schools to be opened",
+  "relu": false
+ },
+ "41 auto-écoles à ouvrir (dont Mô). Cible : 1,065 auto-école pour 100 000 habitants.": {
+  "texte": "41 driving schools to be opened (including Mo): Target: 1,065 driving schools per 100,000 inhabitants.",
   "relu": false
  },
  "43 indicateurs": {
@@ -1103,6 +1115,10 @@
   "texte": "641 955 inhabitants",
   "relu": false
  },
+ "641 955 habitants. Déjà repérées à l'exploration (pire quart des deux dimensions).": {
+  "texte": "641 955 inhabitants. Already identified for exploration (worst quarter of the two dimensions).",
+  "relu": false
+ },
  "65,0 % des routes en mauvais état (75,6 km évalués, 5 tronçons critiques).": {
   "texte": "65.0% of roads in poor condition (75.6 km assessed, 5 critical sections).",
   "relu": false
@@ -1129,6 +1145,10 @@
  },
  "7 préf.": {
   "texte": "I'd rather have seven.",
+  "relu": false
+ },
+ "7 préfectures": {
+  "texte": "7 prefectures",
   "relu": false
  },
  "7 questions ouvertes": {
@@ -1466,6 +1486,10 @@
  },
  ": 94 860 habitants": {
   "texte": "94 860 people",
+  "relu": false
+ },
+ ": aucun test ne change plus de 2 des 10 premières.": {
+  "texte": "No test changes more than 2 out of the first 10.",
   "relu": false
  },
  ": ceux qui traversent les Plateaux en portent le plus (292,15 km, 23 tronçons), puis ceux de la Centrale (236,25 km, 6 tronçons).": {
@@ -2154,6 +2178,10 @@
  },
  "Centrale (5 préfectures)": {
   "texte": "Central (five prefectures)",
+  "relu": false
+ },
+ "Centrale (route + formation), Plateaux (route), Savanes et Maritime hors Grand Lomé (formation).": {
+  "texte": "Central (route + training), Plateaux (route), Savannah and Maritime outside Greater Lomé (training).",
   "relu": false
  },
  "Centrale : route et formation ; Plateaux : route ; Savanes et Maritime hors Grand Lomé : formation.": {
@@ -3247,6 +3275,10 @@
   "texte": "The decision-making framework",
   "relu": false
  },
+ "Le classement est": {
+  "texte": "The ranking is",
+  "relu": false
+ },
  "Le classement est stable si aucun test ne change plus de 2 des 10 premières. Toujours en tête : Danyi, Blitta, Agou, Tchamba, Bassar, Oti, Bas-Mono. Les moins sûres : Est-Mono et Oti-Sud (4 tests sur 6), Tchaoudjo (3 sur 6).": {
   "texte": "The ranking is stable if no test changes more than 2 out of the top 10.",
   "relu": false
@@ -3364,8 +3396,8 @@
   "relu": false
  },
  "Les 10 premières": {
-  "texte": "The top 10",
-  "relu": false
+  "texte": "The top 10 prefectures",
+  "relu": true
  },
  "Les 17 vérifications et hypothèses": {
   "texte": "The 17 checks and assumptions",
@@ -3640,12 +3672,12 @@
   "relu": false
  },
  "Levier formation": {
-  "texte": "Leverage of training",
-  "relu": false
+  "texte": "Training lever",
+  "relu": true
  },
  "Levier réseau": {
-  "texte": "Net leverage",
-  "relu": false
+  "texte": "Road-network lever",
+  "relu": true
  },
  "Leviers": {
   "texte": "Levers",
@@ -3955,6 +3987,10 @@
   "texte": "Cleaning, joints, then calculating each indicator with the frame formula.",
   "relu": false
  },
+ "Ni le Golfe ni Agoè-Nyivé n'en font partie.": {
+  "texte": "Neither the Gulf nor the Agoué-Névé are part of it.",
+  "relu": false
+ },
  "Niamtougou": {
   "texte": "Not to mention",
   "relu": false
@@ -4133,6 +4169,10 @@
  },
  "Panneau de signalisation": {
   "texte": "Signalling system",
+  "relu": false
+ },
+ "Par où commencer": {
+  "texte": "Where to Start",
   "relu": false
  },
  "Par où commencer :": {
@@ -4579,6 +4619,10 @@
  "Préfectures loin d": {
   "texte": "Prefectures far from the",
   "relu": false
+ },
+ "Préfectures qui cumulent": {
+  "texte": "Prefectures with both deficits",
+  "relu": true
  },
  "Préfectures sans auto-école": {
   "texte": "Prefectures without a driving school",
@@ -5751,6 +5795,10 @@
   "texte": "Zones (6)",
   "relu": false
  },
+ "Zones en difficulté": {
+  "texte": "Areas in difficulty",
+  "relu": false
+ },
  "Zones en difficulté :": {
   "texte": "Areas in difficulty:",
   "relu": false
@@ -6035,6 +6083,10 @@
   "texte": "confirmed",
   "relu": true
  },
+ "cumulent les deux déficits": {
+  "texte": "the two deficits are cumulative",
+  "relu": false
+ },
  "d'une carte à l'autre.": {
   "texte": "From one map to another.",
   "relu": false
@@ -6235,6 +6287,10 @@
   "texte": "network maintenance in Togo",
   "relu": false
  },
+ "essentiel": {
+  "texte": "essential",
+  "relu": false
+ },
  "est la seule zone": {
   "texte": "is the only area",
   "relu": false
@@ -6309,6 +6365,10 @@
  },
  "habitants (": {
   "texte": "inhabitants",
+  "relu": false
+ },
+ "habitants dans les 10 premières préfectures": {
+  "texte": "inhabitants of the first 10 prefectures",
   "relu": false
  },
  "habitants gagnés": {
@@ -6831,6 +6891,14 @@
   "texte": "prefectures without a licensed driving school",
   "relu": false
  },
+ "préfectures à remettre en état": {
+  "texte": "prefectures to be repaired",
+  "relu": false
+ },
+ "préfectures à équiper": {
+  "texte": "prefectures to be equipped",
+  "relu": false
+ },
  "qui cumule un réseau dégradé (": {
   "texte": "which has a degraded network (",
   "relu": false
@@ -6849,6 +6917,10 @@
  },
  "reponse en-carte": {
   "texte": "reply by card",
+  "relu": false
+ },
+ "restent dans les 6 tests de robustesse : Danyi, Blitta, Agou, Tchamba, Bassar, Oti et Bas-Mono.": {
+  "texte": "They remained in the six robustness tests: Danyi, Blitta, Agou, Chamba, Bassar, Oti and Bas-Mono.",
   "relu": false
  },
  "resteront à plus de 2 km d'une route revêtue.": {
@@ -6945,6 +7017,10 @@
  },
  "sous la médiane pour les km de route par habitant": {
   "texte": "below the mean for road kilometres per capita",
+  "relu": false
+ },
+ "stable": {
+  "texte": "stable",
   "relu": false
  },
  "style=\"margin-top:1rem;\"": {
@@ -7109,6 +7185,10 @@
  },
  "zones en fond, tronçons par état": {
   "texte": "areas at the bottom, sections by state",
+  "relu": false
+ },
+ "zones sous la médiane": {
+  "texte": "areas below the median",
   "relu": false
  },
  "« Les accidents augmentent » est nuancé : volume en hausse, taux en baisse.": {

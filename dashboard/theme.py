@@ -158,7 +158,10 @@ div.st-key-selecteur_langue button p { font-size: 0.78rem !important; font-weigh
 .etiquette.neutre { background: #eef2f6; color: #334155; }
 .etiquette.national { background: #eef2f6; color: #64748b; font-weight: 500; }
 
-/* Cartes de recommandation */
+/* Cartes de recommandation (reco-carte = inline HTML, hover sans balayage) */
+.reco-carte { transition: transform 0.25s ease, box-shadow 0.25s ease; }
+.reco-carte:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(11,38,61,0.08); }
+@media (prefers-reduced-motion: reduce) { .reco-carte, .reco-carte:hover { transform: none; transition: none; } }
 div[class*="st-key-carte_reco_"] { background: #ffffff; border: 1px solid #e2e8f0 !important; border-radius: 18px !important; padding: 18px 20px !important;
   box-shadow: 0 1px 6px rgba(13,54,107,0.06); transition: transform 0.25s ease, box-shadow 0.25s ease; }
 div[class*="st-key-carte_reco_"]:hover { transform: translateY(-4px); box-shadow: 0 12px 28px rgba(13,54,107,0.14); }
@@ -324,6 +327,16 @@ ul.sidebar-stats li::marker { color: #94a3b8; }
 .carte-chiffre .synthese-chiffre { margin: 2px 0 0; }
 .carte-chiffre-texte { font-size: 0.98rem; line-height: 1.55; color: #172b3a; }
 @media (max-width: 760px) { .carte-chiffre { grid-template-columns: 1fr; gap: 10px; } }
+/* Cartes des zones (page Priorités, section « Diagnostic par zone ») */
+.zone-grille { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 0.6rem 0 1rem; }
+.zone-carte { background: #ffffff; border: 1px solid #e2e8f0; border-bottom: 3px solid; border-radius: 12px;
+  padding: 14px 16px; transition: transform 0.25s ease, box-shadow 0.25s ease; }
+.zone-carte:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(11,38,61,0.08); }
+.zone-carte-nom { font-size: 0.88rem; font-weight: 700; margin-bottom: 6px; }
+.zone-carte-texte { font-size: 0.84rem; line-height: 1.5; color: #334155; }
+@media (max-width: 900px) { .zone-grille { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .zone-grille { grid-template-columns: 1fr; } }
+@media (prefers-reduced-motion: reduce) { .zone-carte, .zone-carte:hover { transform: none; transition: none; } }
 .note-carte.a-savoir { display: flex; gap: 12px; align-items: flex-start; }
 .info-i { flex: 0 0 22px; height: 22px; border-radius: 50%; background: #1769aa; color: #ffffff; font: 700 13px/22px Georgia, serif;
   text-align: center; font-style: italic; margin-top: 2px; }

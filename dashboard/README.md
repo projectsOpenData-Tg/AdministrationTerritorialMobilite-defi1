@@ -1,61 +1,82 @@
 # Tableau de bord — Mobilité et sécurité routière au Togo (Défi 1)
 
-Restitue les résultats du projet (documents 06 à 10 et annexe Horizon 2031) : 8 pages en 4 groupes de menu.
-Le tableau de bord **affiche, il ne calcule pas** (11 §2) : chaque chiffre vient d'une table déjà produite
-(`data/analysis/`, `data/processed/`). Français seul.
+Dashboard Streamlit qui restitue les résultats du projet : 8 pages réparties en 4 groupes de menu (Principal, Analyses, Pilotage, Méthodologie). Le tableau de bord **affiche, il ne calcule pas** : chaque chiffre vient d'une table CSV déjà produite par les scripts d'analyse.
 
-## Lancer en local
+## Prérequis
 
-Depuis la racine du projet :
+- **Python 3.11** (testé avec 3.11.7)
+- `pip` ou un gestionnaire de paquets compatible
+- Un terminal (Linux, macOS ou Windows PowerShell)
+
+## Installation
 
 ```bash
+# 1. Se placer à la racine du projet
+cd AdministrationTerritorialMobilite-defi1
+
+# 2. Créer un environnement virtuel
+python3.11 -m venv .venv
+
+# 3. Activer l'environnement
+source .venv/bin/activate        # Linux / macOS
+# .venv\Scripts\activate         # Windows
+
+# 4. Installer les dépendances du tableau de bord
 pip install -r dashboard/requirements.txt
+```
+
+## Lancer le tableau de bord
+
+```bash
 streamlit run dashboard/app.py
 ```
 
-L'application lit les données du dépôt (`../data`). Python 3.11.
+Le tableau de bord s'ouvre automatiquement dans le navigateur à l'adresse `http://localhost:8501`.
 
-## Déployer sur Streamlit Community Cloud
+Les données sont lues depuis le dossier `data/` (CSV et GeoJSON versionnés dans le dépôt).
 
-1. Dépôt : ce dépôt Git (les CSV et GeoJSON de `data/` sont versionnés ; seuls les bruts lourds — PDF, raster
-   WorldPop, archive EHCVM — sont exclus et ne sont pas nécessaires au tableau de bord).
-2. **Main file path** : `dashboard/app.py`.
-3. **Dépendances** : `dashboard/requirements.txt` (volontairement léger — ni ydata-profiling, ni rasterio, ni
-   JupyterLab, qui ne servent qu'aux scripts d'analyse). Veiller à ce que Streamlit Cloud installe **ce** fichier
-   (adjacent au main file), pas le `requirements.txt` de la racine, qui est l'environnement de développement complet.
-4. La configuration (`.streamlit/config.toml`), le thème et le service des fichiers statiques
-   (`enableStaticServing = true`, pour `static/`) sont dans `dashboard/.streamlit/` et sont pris en compte quand le
-   main file est `dashboard/app.py`.
+## Pages du tableau de bord
 
-Rien d'autre à préparer : les contours, les tables et l'armoirie sont dans le dépôt.
+| Groupe | Page | Contenu |
+| ------ | ---- | ------- |
+| Principal | Vue nationale | 6 chiffres clés, carte nationale, 4 thèmes, immatriculations et permis |
+| Analyses | Comparaison territoriale | Zones, régions, préfectures : réseau, formation, desserte |
+| Analyses | Évolutions et constats | 4 onglets : Synthèse (17 vérifications), Mobilité, Sécurité routière, Réseau |
+| Analyses | Carte du réseau et des auto-écoles | 39 préfectures, routes et auto-écoles |
+| Pilotage | Priorités | Zones prioritaires, les 5 qui cumulent, 10 premières, robustesse |
+| Pilotage | Recommandations | 15 cartes de recommandation et 39 fiches préfectures |
+| Pilotage | Horizon 2031 | Besoins projetés à +1, +3, +5 ans |
+| Méthodologie | Méthodologie | Sources, méthode (9 étapes), formules, contrôles, limites, licences |
 
-## Arborescence
+## Fichiers essentiels
 
 ```
 dashboard/
-├── app.py              navigation (8 pages, 4 groupes), filtres globaux, barre du haut
-├── theme.py            palette (11 §4.1) et CSS ; correctif anti-barre Streamlit Cloud
-├── composants.py       barre du haut, chiffres clés, constat, synthèse, onglets, choroplèthe, pied
-├── donnees.py          lecture des CSV et GeoJSON (aucun recalcul)
-├── views/              une page par fichier (vue_nationale, comparaison, evolutions, carte,
-│                       priorites, recommandations, horizon, methodologie)
-├── static/             armoiries-togo-ecu.svg (CC BY-SA 4.0, Edem Fiadjoe — attribution en page Méthodologie),
-│                       logo_togo_ai_lab.png (repli texte si absent), logo_barre_laterale.svg et
-│                       logo_togo_icone.svg (logo de la barre latérale, produits par scripts/logo_barre_laterale.py),
-│                       routes_slogan.svg (illustration du slogan en bas de la barre latérale)
-├── .streamlit/config.toml
-└── requirements.txt
+├── app.py              Point d'entrée : navigation, filtres globaux, barre latérale
+├── theme.py            Palette de couleurs et CSS du thème
+├── composants.py       Composants réutilisables (entête, chiffres clés, constat, carte…)
+├── donnees.py          Chargement des CSV et GeoJSON (aucun recalcul)
+├── requirements.txt    Dépendances Python du tableau de bord
+├── views/              Une page par fichier
+│   ├── vue_nationale.py
+│   ├── comparaison.py
+│   ├── evolutions.py
+│   ├── carte.py
+│   ├── priorites.py
+│   ├── recommandations.py
+│   ├── horizon.py
+│   └── methodologie.py
+├── static/             Images et logos (armoiries, logo barre latérale…)
+└── .streamlit/
+    └── config.toml     Configuration Streamlit (thème, serveur)
 ```
 
-## Les 8 pages
+## Données
 
-| Groupe | Page | Objet |
-| ------ | ---- | ----- |
-| Principal | Vue nationale | synthèse : 6 chiffres clés, carte, 4 thèmes, immatriculations et permis |
-| Analyses | Comparaison territoriale | zones / régions / préfectures : réseau, formation, desserte |
-| Analyses | Évolutions et constats | 4 onglets : Synthèse (17 vérifications), Mobilité, Sécurité routière, Réseau |
-| Analyses | Carte du réseau et des auto-écoles | 39 préfectures, une couche à la fois, routes et auto-écoles |
-| Pilotage | Priorités | par où commencer : zones, 5 qui cumulent, 10 premières, robustesse |
-| Pilotage | Recommandations | 7 onglets : 15 cartes du 10 et 39 fiches préfectures |
-| Pilotage | Horizon 2031 | curseur d'horizon : besoins à +1, +3, +5 ans (annexe A1) |
-| Méthodologie | Méthodologie | sources, méthode (9 étapes), formules, contrôles, limites, licences |
+Le tableau de bord lit les tables déjà produites dans :
+
+- `data/analysis/` — résultats des analyses (indicateurs, priorisation, diagnostic)
+- `data/processed/` — données nettoyées et transformées
+- `data/reference/` — contours GeoJSON, référentiels
+
+Aucun fichier brut lourd (PDF, raster WorldPop, archive EHCVM) n'est nécessaire pour faire tourner le tableau de bord.

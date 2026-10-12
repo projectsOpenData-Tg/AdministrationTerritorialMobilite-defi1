@@ -1,7 +1,6 @@
 # A1 — Horizon 2031 (annexe)
 
 **Projet :** Mobilité et sécurité routière au Togo
-**Version :** 0.4 — **Date :** 2026-10-08 — **Statut :** résultats validés ; **non figé**, en attente de la validation d’ensemble avant le codage
 **Sources :** `01_problem_definition.md` à `10_recommendation.md` (figés), `11_tableau_de_bord.md` (v0.9), `data/processed/`, `data/analysis/07_indicateurs/` à `data/analysis/10_recommandations/`
 
 > **Question de l’annexe :** si rien ne change, où en sera chaque territoire dans 1, 3 et 5 ans ; combien faut-il ajouter sur chaque levier pour atteindre la cible ; et quel effort la cible de sécurité demande-t-elle ?

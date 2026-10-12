@@ -13,8 +13,8 @@ import pandas as pd  # noqa: E402
 import plotly.graph_objects as go  # noqa: E402
 import streamlit as st  # noqa: E402
 
-from composants import (ariane, badge, constat, entete, export_csv, habiller, limite, note, pied,  # noqa: E402
-                        synthese, table_html, titre_bloc, tracer)
+from composants import (ariane, badge, carte_kpi, constat, entete, export_csv, habiller, limite, note,  # noqa: E402
+                        note_carte, pied, rangee_kpi, synthese, table_html, titre_bloc, tracer)
 from donnees import fr, lire  # noqa: E402
 from theme import COULEUR_ZONE, ENCRE  # noqa: E402
 
@@ -63,7 +63,24 @@ ariane("Priorités")
 entete("Priorités", "Par où commencer ?",
        "Commencer par la <strong>Centrale</strong>, seule zone en retard sur la route et la formation, et par "
        "<strong>5 préfectures</strong> qui cumulent les deux déficits (641 955 habitants) ; aucun test de robustesse "
-       "ne change plus de 2 des 10 premières.")
+       "ne change plus de 2 des 10 premières.", carte=True)
+
+rangee_kpi("Par où commencer — l'essentiel", [
+    carte_kpi("Zones en difficulté", "4 sur 6", "zones sous la médiane",
+              "Centrale (route + formation), Plateaux (route), Savanes et Maritime hors Grand Lomé (formation).",
+              etiquette="C", ton="alerte", icone="troncons"),
+    carte_kpi("Préfectures qui cumulent", "5", "cumulent les deux déficits",
+              "641 955 habitants. Déjà repérées à l'exploration (pire quart des deux dimensions).",
+              etiquette="C", ton="alerte", icone="alerte"),
+    carte_kpi("Les 10 premières", "1,42 M", "habitants dans les 10 premières préfectures",
+              "Ni le Golfe ni Agoè-Nyivé n'en font partie.", etiquette="C", icone="population"),
+    carte_kpi("Levier réseau", "13", "préfectures à remettre en état",
+              "304,6 km à reprendre. Cible : 14,35 % de km en mauvais état (médiane nationale).",
+              etiquette="C", ton="alerte", icone="route_rouge"),
+    carte_kpi("Levier formation", "23", "préfectures à équiper",
+              "41 auto-écoles à ouvrir (dont Mô). Cible : 1,065 auto-école pour 100 000 habitants.",
+              etiquette="C", icone="etablissement"),
+], centre=True)
 
 if f_zones or f_leviers:
     st.markdown('<div class="filtres-actifs"><b>Filtres actifs :</b> '
@@ -73,66 +90,81 @@ if f_zones or f_leviers:
                 unsafe_allow_html=True)
 
 # ------------------------------------------------------------------ Section 1 — Les zones en difficulté
-g, d = st.columns([1.9, 1], vertical_alignment="top")
-with g:
-    titre_bloc("Les zones en difficulté",
-               "Deux analyses désignent les mêmes 4 zones : le classement des zones et la desserte.")
-    zz = zones10[zones10.Maille == "Zone"].set_index("Zone")
-    rg = reg[reg.Maille == "Zone"].set_index("Territoire")
-    ordre = rg.sort_values("Rang").index.tolist()
-    lignes = []
-    for z in ordre:
-        desservie = zz.loc[z, "Moins bien desservie pour"] if z in zz.index else None
-        desservie = "" if pd.isna(desservie) else str(desservie)
-        nres = int(rg.loc[z, "Préfectures au levier réseau"])
-        kmr = rg.loc[z, "O5-04 km à remettre en état, préfectures au levier réseau"]
-        nfor = int(rg.loc[z, "Préfectures au levier formation"])
-        afor = int(rg.loc[z, "O5-04 auto-écoles manquantes (écart 21), préfectures au levier formation"])
-        ar = zz.loc[z, "Accès rural à une route revêtue (%)"] if z in zz.index else None
-        rec = zz.loc[z, "Recommandation"] if z in zz.index else None
-        titre_rec = "—" if pd.isna(rec) else html.escape(str(cartes.loc[rec, "Titre"]))
-        lignes.append({
-            "Zone": f'<b style="color:{COULEUR_ZONE.get(z, ENCRE)}">{html.escape(z)}</b>',
-            "Rang": str(int(rg.loc[z, "Rang"])),
-            "Moins bien desservie pour": (badge(desservie, DEFICIT_COUL[desservie]) if desservie
-                                          else badge("aucun retard", "#b9b6ad")),
-            "Accès rural": ((fr(ar, 1) + " %") if ar == ar else '<i style="color:#8a8780">sans ruraux</i>')
-                           + (' <span style="color:#8a5a00;font-size:.72rem">cas limite</span>' if z == "Savanes"
-                              else ""),
-            "Auto-écoles /100 000": fr(rg.loc[z, "O4-05"], 2),
-            "Levier réseau": (badge(f"{nres} préf.", "#0d366b") + badge(f"{fr(kmr, 1)} km", LEVIER_COUL["réseau"])
-                              if nres else "—"),
-            "Levier formation": (badge(f"{nfor} préf.", "#0d366b")
-                                 + badge(f"{afor} auto-écoles", LEVIER_COUL["formation"]) if nfor else "—"),
-            "Recommandation": f'<span style="font-size:.78rem">{titre_rec}</span>',
-        })
-    st.markdown(table_html(lignes), unsafe_allow_html=True)
-    note("Une zone est moins bien desservie si elle est sous la médiane des zones : 16,9 % des ruraux à moins de 2 km "
-         "d'une route revêtue pour la route, 0,53 auto-école pour 100 000 habitants pour la formation.")
-    note("Les Savanes sont un cas limite pour la route : 16,9 %, pour 17,2 % dans le pays.")
-    note("Mesuré avec une grille de population, l'accès rural change de lecture : les Savanes passent sous la médiane "
-         "et la Centrale au-dessus. La Centrale garde la première place : elle reste la zone au réseau le plus "
-         "dégradé, et sa formation ne change pas. Les deux mesures sont en page Méthodologie.")
+constat("La <strong style='color:#4a3aa7'>Centrale</strong> est la seule zone en retard sur la route <em>et</em> la "
+        "formation. Les Plateaux sont en retard sur la route ; les Savanes et la Maritime hors Grand Lomé, sur la "
+        "formation.")
+titre_bloc("Les zones en difficulté",
+           "Deux analyses désignent les mêmes 4 zones : le classement des zones et la desserte.")
+zz = zones10[zones10.Maille == "Zone"].set_index("Zone")
+rg = reg[reg.Maille == "Zone"].set_index("Territoire")
+ordre = rg.sort_values("Rang").index.tolist()
+lignes = []
+for z in ordre:
+    desservie = zz.loc[z, "Moins bien desservie pour"] if z in zz.index else None
+    desservie = "" if pd.isna(desservie) else str(desservie)
+    nres = int(rg.loc[z, "Préfectures au levier réseau"])
+    kmr = rg.loc[z, "O5-04 km à remettre en état, préfectures au levier réseau"]
+    nfor = int(rg.loc[z, "Préfectures au levier formation"])
+    afor = int(rg.loc[z, "O5-04 auto-écoles manquantes (écart 21), préfectures au levier formation"])
+    ar = zz.loc[z, "Accès rural à une route revêtue (%)"] if z in zz.index else None
+    rec = zz.loc[z, "Recommandation"] if z in zz.index else None
+    titre_rec = "—" if pd.isna(rec) else html.escape(str(cartes.loc[rec, "Titre"]))
+    lignes.append({
+        "Zone": f'<b style="color:{COULEUR_ZONE.get(z, ENCRE)}">{html.escape(z)}</b>',
+        "Rang": str(int(rg.loc[z, "Rang"])),
+        "Moins bien desservie pour": (badge(desservie, DEFICIT_COUL[desservie]) if desservie
+                                      else badge("aucun retard", "#b9b6ad")),
+        "Accès rural": ((fr(ar, 1) + " %") if ar == ar else '<i style="color:#8a8780">sans ruraux</i>')
+                       + (' <span style="color:#8a5a00;font-size:.72rem">cas limite</span>' if z == "Savanes"
+                          else ""),
+        "Auto-écoles /100 000": fr(rg.loc[z, "O4-05"], 2),
+        "Levier réseau": (badge(f"{nres} préf.", "#0d366b") + badge(f"{fr(kmr, 1)} km", LEVIER_COUL["réseau"])
+                          if nres else "—"),
+        "Levier formation": (badge(f"{nfor} préf.", "#0d366b")
+                             + badge(f"{afor} auto-écoles", LEVIER_COUL["formation"]) if nfor else "—"),
+        "Recommandation": f'<span style="font-size:.78rem">{titre_rec}</span>',
+    })
+st.markdown(table_html(lignes), unsafe_allow_html=True)
 
-    with st.expander("Ce que dit chaque zone"):
-        for z in ordre:
-            txt = phrase("Zone", z)
-            if txt:
-                st.markdown(f'<div style="margin-bottom:7px;font-size:.88rem">'
-                            f'<b style="color:{COULEUR_ZONE.get(z, ENCRE)}">{html.escape(z)}</b> — '
-                            f'{html.escape(txt)}</div>', unsafe_allow_html=True)
-    st.caption("Par région : Centrale, puis Plateaux, Savanes, Kara et Maritime. La Centrale est en tête dans les "
-               "deux lectures.")
-    maritime = phrase("Région", "Maritime")
-    if maritime:
-        st.caption(maritime)
-with d:
-    constat("La <strong style='color:#4a3aa7'>Centrale</strong> est la seule zone en retard sur la route <em>et</em> la "
-            "formation. Les Plateaux sont en retard sur la route ; les Savanes et la Maritime hors Grand Lomé, sur la "
-            "formation.")
-    lien_reco("Pourquoi ces zones → Recommandations", "zones", "pr_lien_reco")
-    st.caption("La comparaison complète des zones, avec tous les indicateurs et leurs seuils, est en page Comparaison "
-               "territoriale ; les deux mesures de l'accès rural sont en page Méthodologie.")
+note_carte("Une zone est moins bien desservie si elle est sous la médiane des zones : 16,9 % des ruraux à moins "
+           "de 2 km d'une route revêtue pour la route, 0,53 auto-école pour 100 000 habitants pour la formation."
+           "<br><strong>Les Savanes</strong> sont un cas limite pour la route : 16,9 %, pour 17,2 % dans le pays.",
+           couleur="vert")
+
+st.markdown('<div class="limite" style="margin-bottom:14px">'
+            '<div class="limite-texte"><strong>Accès rural (grille WorldPop)</strong> : mesuré avec la grille, '
+            'les Savanes passent sous la médiane et la Centrale au-dessus. '
+            'La Centrale garde la première place : elle reste la zone avec un réseau routier le plus dégradé, '
+            'et la formation des conducteurs dans cette zone ne change pas.</div></div>',
+            unsafe_allow_html=True)
+
+titre_bloc("Diagnostic par zone")
+_cartes_zones = ('<div class="zone-grille" style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;'
+                 'margin:0.6rem 0 1rem">')
+for z in ordre:
+    txt = phrase("Zone", z)
+    coul = COULEUR_ZONE.get(z, ENCRE)
+    _cartes_zones += (f'<div class="zone-carte" style="background:#ffffff;border:1px solid #e2e8f0;'
+                      f'border-bottom:3px solid {coul};border-radius:12px;padding:14px 16px">'
+                      f'<div class="zone-carte-nom" style="color:{coul};font-size:.88rem;font-weight:700;'
+                      f'margin-bottom:6px">{html.escape(z)}</div>'
+                      f'<div class="zone-carte-texte" style="font-size:.84rem;line-height:1.5;color:#334155">'
+                      f'{html.escape(txt) if txt else "—"}</div></div>')
+_cartes_zones += '</div>'
+st.markdown(_cartes_zones, unsafe_allow_html=True)
+
+st.markdown('<div style="background:#ffffff;border:1px solid #e2e8f0;border-left:4px solid #16834a;border-radius:14px;'
+            'padding:16px 22px;margin:0.6rem 0 1rem;font-size:0.95rem;line-height:1.5;color:#172b3a">'
+            '<strong>Par région</strong> : Centrale, puis Plateaux, Savanes, Kara et Maritime. '
+            'La Centrale est en tête dans les deux lectures.<br><br>'
+            'Région Maritime (5<sup>e</sup> des 5 régions) : avec le Grand Lomé, elle ne franchit que le seuil '
+            'de la desserte (1,79 km pour 10 000 habitants). Son offre (3,06 auto-écoles pour 100 000 habitants) '
+            'cache celle de la Maritime hors Grand Lomé (0,37). Les 4 autres régions sont les zones du même nom.'
+            '</div>', unsafe_allow_html=True)
+
+lien_reco("Pourquoi ces zones → Recommandations", "zones", "pr_lien_reco")
+st.caption("La comparaison complète des zones, avec tous les indicateurs et leurs seuils, est en page Comparaison "
+           "territoriale ; les deux mesures de l'accès rural sont en page Méthodologie.")
 
 # ------------------------------------------------------------------ Section 2 — Les 5 qui cumulent
 st.markdown("")
@@ -155,13 +187,17 @@ else:
         "Km à remettre en état": fr(r["Réseau — km à remettre en état"], 1),
         "Auto-écoles à ouvrir": str(int(r["Formation — auto-écoles à ouvrir"])),
     } for _, r in cinq.iterrows()]), unsafe_allow_html=True)
-note("Total : 641 955 habitants ; 175,6 km à remettre en état ; 9 auto-écoles à ouvrir. Déjà repérées à "
-     "l'exploration : ces 5 préfectures étaient dans le pire quart des deux dimensions.")
+st.markdown('<div style="background:#ffffff;border:1px solid #e2e8f0;border-radius:14px;padding:14px 18px;'
+            'margin:0.4rem 0 0.8rem;font-size:0.9rem;line-height:1.5;color:#172b3a">'
+            'Total : 641 955 habitants ; 175,6 km à remettre en état ; 9 auto-écoles à ouvrir. '
+            'Déjà repérées à l\'exploration : ces 5 préfectures étaient dans le pire quart des deux dimensions.'
+            '</div>', unsafe_allow_html=True)
 lien_reco("Remettre en état le réseau de ces 5 préfectures → Recommandations", "réseau", "pr_lien_cumul")
 
 # ------------------------------------------------------------------ Section 3 — Les 10 premières
 st.markdown("")
-titre_bloc("Les 10 premières", "Score décomposé : la part du réseau et la part de la formation, et la robustesse.")
+titre_bloc("Les 10 premières préfectures en priorité",
+           "Score décomposé : la part du réseau et la part de la formation, et la robustesse.")
 dix = filtrer(cla.sort_values("O5-02 rang").head(10).copy())
 if dix.empty:
     st.info("Aucune des 10 premières ne correspond aux filtres.")
@@ -264,12 +300,18 @@ with c2:
         st.markdown('<div style="max-height:330px;overflow-y:auto">' + table_html(lignes) + "</div>",
                     unsafe_allow_html=True)
     lien_reco("Ouvrir et vérifier des auto-écoles → Recommandations", "formation", "pr_lien_form")
-note("5 préfectures cumulent les deux déficits, 26 en ont un, 8 n'en ont aucun. La nature du zéro : 15 préfectures "
-     "sans aucune auto-école recensée (25 auto-écoles), 8 avec des auto-écoles recensées non agréées (16 auto-écoles).")
+st.markdown('<div class="limite" style="margin-top:8px;margin-bottom:14px">'
+            '<div class="limite-texte">5 préfectures cumulent les deux déficits, 26 en ont un, 8 n\'en ont aucun. '
+            'La nature du zéro : 15 préfectures sans aucune auto-école recensée (25 auto-écoles), '
+            '8 avec des auto-écoles recensées non agréées (16 auto-écoles).</div></div>',
+            unsafe_allow_html=True)
 
 # ------------------------------------------------------------------ Section 5 — Le classement tient-il ?
 st.markdown("")
 titre_bloc("Le classement tient-il ?", "Poids du réseau déplaçable, puis 5 tests de robustesse.")
+constat("Le classement est <strong>stable</strong> : aucun test ne change plus de 2 des 10 premières. "
+        "<strong>7 préfectures</strong> restent dans les 6 tests de robustesse : Danyi, Blitta, Agou, Tchamba, "
+        "Bassar, Oti et Bas-Mono.")
 g, d = st.columns([1, 1.2], vertical_alignment="top")
 with g:
     poids = st.slider("Poids du réseau (%)", 0, 100, 50, 5, key="pr_poids")
@@ -283,13 +325,23 @@ with g:
     sortent = [p for p in base if p not in nouv]
     st.markdown(f"**Nouvelles 10 premières** (réseau {poids} %, formation {100 - poids} %) :")
     st.markdown(" · ".join(f"{i + 1}. {p}" for i, p in enumerate(nouv)))
-    st.markdown(f'<div class="filtres-actifs"><b>Entrent :</b> {", ".join(entrent) or "—"} &nbsp;·&nbsp; '
-                f'<b>Sortent :</b> {", ".join(sortent) or "—"} <span style="color:#55534e">(par rapport au '
-                f'classement à 50 %)</span></div>', unsafe_allow_html=True)
-    st.caption("Score = poids du réseau × rang percentile du réseau + poids de la formation × rang percentile de la "
-               "formation ; à score égal, la préfecture la plus peuplée passe devant. Valeurs de contrôle : à 50 %, "
-               "le classement publié ; à 65 %, Kloto et Ogou entrent, Est-Mono et Oti-Sud sortent ; à 35 %, Haho "
-               "entre et Tchaoudjo sort.")
+    entrent_html = ", ".join(f'<span style="color:#11613f;font-weight:600">{html.escape(p)}</span>'
+                             for p in entrent) if entrent else "—"
+    sortent_html = ", ".join(f'<span style="color:#a02622;font-weight:600">{html.escape(p)}</span>'
+                             for p in sortent) if sortent else "—"
+    st.markdown(f'<div class="filtres-actifs">'
+                f'<span style="color:#11613f;font-size:1.1em">▲</span> '
+                f'<b style="color:#11613f">Entrent :</b> {entrent_html} &nbsp;·&nbsp; '
+                f'<span style="color:#a02622;font-size:1.1em">▼</span> '
+                f'<b style="color:#a02622">Sortent :</b> {sortent_html} '
+                f'<span style="color:#55534e">(par rapport au classement à 50 %)</span></div>',
+                unsafe_allow_html=True)
+    note_carte("Score = poids du réseau × rang percentile du réseau + poids de la formation × rang percentile "
+               "de la formation ; à score égal, la préfecture la plus peuplée passe devant.<br>"
+               "Valeurs de contrôle : à 50 %, le classement publié ; à 65 %, <strong>Kloto</strong> et "
+               "<strong>Ogou</strong> entrent, <strong>Est-Mono</strong> et <strong>Oti-Sud</strong> sortent ; "
+               "à 35 %, <strong>Haho</strong> entre et <strong>Tchaoudjo</strong> sort.",
+               couleur="bleu")
 with d:
     syn = sens[sens["Préfecture"].isna() & (sens.Test != "T0")].copy()
     LIB = {"T1": "Réseau compté pour 2/3", "T2": "Formation comptée pour 2/3",
@@ -303,9 +355,11 @@ with d:
         "Entrent": f'<span style="color:#11613f">{html.escape(str(r["Entrées"]))}</span>',
         "Sortent": f'<span style="color:#a02622">{html.escape(str(r["Sorties"]))}</span>',
     } for _, r in syn.iterrows()]), unsafe_allow_html=True)
-    note("Le classement est stable si aucun test ne change plus de 2 des 10 premières. Toujours en tête : Danyi, "
-         "Blitta, Agou, Tchamba, Bassar, Oti, Bas-Mono. Les moins sûres : Est-Mono et Oti-Sud (4 tests sur 6), "
-         "Tchaoudjo (3 sur 6).")
+    note_carte("<strong>Règle</strong> : Le classement est stable si aucun test ne change plus de 2 des "
+               "10 premières.<br>"
+               "<strong>Toujours en tête</strong> : Danyi, Blitta, Agou, Tchamba, Bassar, Oti, Bas-Mono.<br>"
+               "<strong>Les moins sûres</strong> : Est-Mono et Oti-Sud (4 tests sur 6), Tchaoudjo (3 sur 6).",
+               couleur="vert")
 
 # ------------------------------------------------------------------ Section 6 — Classement complet
 st.markdown("")
@@ -355,13 +409,16 @@ else:
                 unsafe_allow_html=True)
 
 mo = phrase("Préfecture", "Mô")
-st.markdown(f'<div style="border:1px solid #e2dfd6;border-left:3px solid #b9b6ad;border-radius:10px;padding:10px 12px;'
-            f'background:#fff;margin-top:8px"><b>Mô, hors classement</b><br>'
+st.markdown(f'<div style="border:1px solid #e2dfd6;border-left:3px solid #eda100;border-radius:10px;padding:10px 12px;'
+            f'background:#fff;margin-top:8px"><b>Mô, hors class.</b><br>'
             f'<span style="font-size:.88rem">{html.escape(mo)}</span></div>', unsafe_allow_html=True)
-export_csv(compt, "classement_prefectures.csv", "pr_exp_cla")
-if st.button("Voir le classement sur la carte →", key="pr_lien_carte"):
-    st.session_state["ca_couche"] = "Priorité"           # la carte s'ouvre sur la couche Priorité
-    st.switch_page("views/carte.py")
+b1, b2 = st.columns(2)
+with b1:
+    export_csv(compt, "classement_prefectures.csv", "pr_exp_cla")
+with b2:
+    if st.button("Voir le classement sur la carte →", key="pr_lien_carte"):
+        st.session_state["ca_couche"] = "Priorité"
+        st.switch_page("views/carte.py")
 
 # ------------------------------------------------------------------ Section 7 — Synthèse et limite
 st.markdown("")
@@ -371,9 +428,11 @@ with g:
              ["Centrale : route et formation ; Plateaux : route ; Savanes et Maritime hors Grand Lomé : formation.",
               "5 préfectures qui cumulent, 641 955 habitants ; 10 premières, 1 416 859 habitants.",
               "13 préfectures au levier réseau (304,6 km) ; 23 au levier formation (41 auto-écoles).",
-              "Classement stable : aucun test ne change plus de 2 des 10 premières."])
+              "Classement stable : aucun test ne change plus de 2 des 10 premières."], egale=True)
 with d:
-    limite("Classement en C : vérification avant investissement. Le risque n'est pas classé par territoire, faute "
-           "d'accidents par préfecture. L'accès rural, qui désigne les zones en retard sur la route, est estimé avec "
-           "une population répartie uniformément dans chaque préfecture.")
+    limite(titre="Limites de cette page", egale=True, texte_html=(
+        "• Classement par estimation : vérification avant investissement.<br><br>"
+        "• Le risque n'est pas classé par territoire, faute d'accidents par préfecture.<br><br>"
+        "• L'accès rural, qui désigne les zones en retard sur la route, est estimé avec "
+        "une population répartie uniformément dans chaque préfecture."))
 pied()
