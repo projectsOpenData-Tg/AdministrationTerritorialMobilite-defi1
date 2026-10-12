@@ -1,0 +1,152 @@
+
+NOTES À CONSIDÉRER POUR LE CODAGE DU DASHBOARD :
+
+
+- Regarder la maquette de l'ancien projet : l'application à consulter est le fichier MAQUETTE_* dans le dossier methodology.
+
+- Se baser sur la maquette pour la construction et le design de nos pages uniquement, pas pour le contenu :
+    - afin d'éviter les soucis de sidebar, de topbar, d'espacement, de design par défaut et de design des cartes ;
+    - mais le plan de construction de chaque page et son contenu doivent respecter les designs définis dans les fichiers workspace/design-page-X.
+    - Bilingue FR/ENG : abandonné pour le moment ; l'interface et le contenu restent en français.
+    - Afficher les armoiries et le drapeau du Togo, repris du projet /home/automater/Desktop/data-engineering-chall/EconomyNumeric-Challenge2 :
+        - Armoiries : fichier dashboard/static/armoiries-togo-ecu.svg (écu recadré ; version complète armoiries-togo.svg disponible).
+          Affichées dans la zone gauche de la topbar (hauteur ~38 px), à côté du nom du ministère ; repli sur l'icône bouclier si le fichier manque.
+          Référence via l'URL app/static/<fichier>, ce qui impose enableStaticServing = true dans .streamlit/config.toml (règle aussi le souci de topbar par défaut).
+          Licence CC BY-SA 4.0 (auteur Edem Fiadjoe) : attribution OBLIGATOIRE dans le pied de page. Copier aussi README_armoiries.md pour garder la source et la licence.
+        - Drapeau : pas d'image, c'est l'emoji drapeau togolais placé devant le nom du projet, au centre de la topbar.
+        - Reprendre la structure de la topbar (armoiries + ministère à gauche, titre + drapeau au centre, carte « logo Togo AI Lab » à droite)
+          MAIS sans le sélecteur de langue FR/EN (bilingue abandonné).
+    - Reprendre aussi la carte « logo Togo AI Lab » à droite de la topbar (bordure or, fond blanc, ombre légère ; repli texte « TOGO AI LAB » si le PNG manque).
+    - Reprendre le CSS de la topbar (.armoiries, .topbar-*, carte du logo) du theme.py du projet de référence, adapté à notre palette.
+
+- Couleurs : celles déjà définies dans le fichier 11_tableau_de_bord (priorités, thèmes, états du réseau) sont à respecter strictement ; pour le reste (fond de page, habillage général), libre à nous.
+
+- Se baser sur le fichier 11_tableau_de_bord :
+    - pour la construction et le contenu des pages du tableau de bord ;
+    - lire workspace/design-pageX pour savoir ce que chaque page doit afficher et comment.
+
+- Après chaque développement de l'application, et après chaque bug ou correction rencontré : mettre à jour le fichier workspace/dev-progress.md
+    avec un horodatage. Cela permet aux développeurs qui partagent le projet de se rendre compte des fonctionnalités et des bugs déjà résolus, et de savoir comment.
+
+- La solution du projet sera déployée sur Streamlit Cloud, donc :
+    - pendant le développement, anticiper les problèmes liés à la topbar par défaut de Streamlit, qui écrase notre topbar fraîchement créée ;
+    - lire le fichier MAQUETTE_dashboard dans le dossier methodology, au cas où il aurait déjà résolu ce problème, et voir comment ;
+    - sinon, faire des recherches sur internet pour voir comment les utilisateurs ont résolu cela.
+
+
+
+---
+
+CORRECTIONS À APPORTER À LA PAGE « VUE NATIONALE » :
+
+- Ministère à afficher dans la topbar : « Ministère de l'Efficacité du Service Public et de la Transformation Numérique ».
+
+- En relisant design-page1, 11_tableau_de_bord et toutes les analyses faites pour la page 1 : tout a-t-il bien été
+  implémenté dans le tableau de bord ?
+
+- Section « Le Togo, préfecture par préfecture » : appliquer ces ajouts :
+    - par défaut, afficher la carte du Togo avec toutes les couches réunies sur la même carte : routes classées
+      + auto-écoles + population ;
+    - découper toute la carte selon les 5 régions, avec une couleur différente pour chaque région ;
+    - permettre de zoomer sur la carte pour la visualiser en détail.
+
+
+---
+CORRECTIONS À APPORTER À LA PAGE 2 « COMPARAISON TERRITORIALE » :
+
+- En relisant design-page2, 11_tableau_de_bord et toutes les analyses faites pour la page 2 :
+    - tout a-t-il bien été implémenté dans le tableau de bord ?
+
+    - Section « Réseau et formation » :
+        - la ligne de seuil n'apparaît pas sur le graphique.
+
+    - Section « Les territoires » :
+        - afficher les seuils franchis en badges colorés (rose = réseau, indigo = formation, jaune = desserte) ;
+        - leviers réseau et formation : mettre « X préfectures » et « X auto-écoles » en badges colorés,
+          chacun dans une couleur différente ;
+        - colorer le chiffre « Part en mauvais état » des territoires qui franchissent le seuil.
+
+    - Section « État du réseau par zone » :
+        - au bout de la barre de chaque territoire, ajouter le pourcentage, dans la couleur correspondante ;
+        - à l'intérieur de chaque segment de barre, inscrire le nombre de km, comme sur l'image jointe.
+
+    - Section « Où sont les auto-écoles » :
+        - afficher les km devant le nom de chaque préfecture.
+
+    - Section « Les 39 préfectures » :
+        - mettre les priorités en badges colorés, une couleur par niveau de priorité ;
+        - colorer le nom des régions, et faire ressortir les pourcentages de « mauvais état ».
+
+- Au passage, sur toutes les pages sauf la page Méthodologie et les annexes : aucun code ni référence de fichier
+  ne doit être visible, comme dans « Niveau B. Source : hypotheses_09 (H8). »
+
+
+
+---
+CORRECTIONS À APPORTER À LA PAGE 3 « ÉVOLUTIONS ET CONSTATS » :
+
+- En relisant design-page3, 11_tableau_de_bord et toutes les analyses faites pour la page 3 :
+    - tout a-t-il bien été implémenté dans le tableau de bord ?
+
+    - Onglet « Synthèse » :
+        - section « Les 17 vérifications et hypothèses » : afficher le verdict en badge coloré clair ;
+        - la carte des constats manque-t-elle ?
+
+    - Onglet « Mobilité » :
+        - « Immatriculations par groupe, 1990–2024 » : les lignes de rupture de 1995 et 2004 doivent porter
+          leur année en haut de la ligne ;
+        - « Permis par catégorie, 2007–2024 » : ajouter une ligne verticale portant l'année, pour dire qu'elle
+          n'est pas renseignée ;
+        - « Immatriculations pour un permis, cumul 2007–2024 » : donner à chaque barre la couleur de sa catégorie
+          de permis, comme sur la courbe des permis ;
+        - « Parc estimé, 2009–2024 » : améliorer le titre, par exemple « Parc estimé des véhicules » ; ajouter les
+          nombres de véhicules (dont les motos) sur la courbe, si possible par palier de date.
+
+    - Onglet « Sécurité routière » :
+        - « Les 6 taux : 2010–2012 face à 2022–2024 » : une couleur différente par type de mesure — tués en rouge,
+          blessés dans une autre couleur ;
+        - « Les tués par type d'usager, 2021 » : une couleur différente par catégorie, et les libellés
+          (cyclistes, piétons, …) en gras ;
+        - « Une autre publication de 2020 : l'annuaire national » : améliorer le titre, par exemple
+          « Un constat frappant sur l'état du réseau en 2020 : l'annuaire national ».
+
+---
+CORRECTIONS À APPORTER À LA PAGE 4 « CARTE DU RÉSEAU ET DES AUTO-ÉCOLES » :
+
+- En relisant design-page4, 11_tableau_de_bord et toutes les analyses faites pour la page 4 :
+    - tout a-t-il bien été implémenté dans le tableau de bord ?
+
+    - Section « Le Togo, préfecture par préfecture » :
+        - agrandir la carte, comme celle de « La carte des constats » ;
+        - ajouter, à droite et dans la même figure, un agrandissement de la région Maritime et du Grand Lomé :
+          cette région est la plus dense et concentre le plus d'auto-écoles.
+          Exemple : voir le notebook « 04 — O3 : état du réseau », figure « Carte : routes nationales avec et sans état » ;
+        - sur la carte du Togo, une couleur différente pour les auto-écoles agréées et pour les non agréées ;
+        - une couleur différente pour les routes nationales revêtues et non revêtues : aujourd'hui, les deux
+          se confondent sur la carte ;
+        - mettre des badges colorés dans les colonnes « Priorité » et « Mauvais état », comme la colonne
+          « Seuils franchis » de la section « Les territoires » de la page « Comparaison territoriale ».
+
+
+---
+CORRECTIONS À APPORTER À LA PAGE 5 « PRIORITÉS » :
+
+- En relisant design-page5, 11_tableau_de_bord et toutes les analyses faites pour la page 5 :
+    - tout a-t-il bien été implémenté dans le tableau de bord ?
+
+---
+CORRECTIONS À APPORTER À LA PAGE 6 « RECOMMANDATIONS » :
+
+- En relisant design-page6, 11_tableau_de_bord et toutes les analyses faites pour la page 6 :
+    - tout a-t-il bien été implémenté dans le tableau de bord ?
+
+---
+CORRECTIONS À APPORTER À LA PAGE « HORIZON 2031 » (7e page du menu, plan design-page8) :
+
+- En relisant design-page8, 11_tableau_de_bord et toutes les analyses faites pour cette page :
+    - tout a-t-il bien été implémenté dans le tableau de bord ?
+
+    - ne manque-t-il pas des cartes à afficher ?
+    - section « Sécurité routière : ce que la cible demande » :
+        montrer la bande grise verticale de la partie projetée, avec un texte en petits caractères si possible.
+

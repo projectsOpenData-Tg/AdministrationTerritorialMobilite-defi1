@@ -43,12 +43,12 @@
 
 Rangée de 4 cartes de chiffre clé (maquette §8.4), relues à chaque position du curseur, dans `horizon_A1.csv`, maille Pays.
 
-| # | Chiffre | Lecture | Source |
-| - | ------- | ------- | ------ |
-| 1 | **Habitants** | Population du Togo à l’horizon | `population_A1.csv`, somme des préfectures |
-| 2 | **Auto-écoles à ouvrir** | Dans les préfectures sans auto-école agréée, avec la fourchette | `horizon_A1.csv`, levier « Auto-écoles », périmètre « Levier du 08 » |
-| 3 | **Km à remettre en état** | Dans les préfectures au réseau dégradé ; la valeur ne change pas d’un horizon à l’autre | `horizon_A1.csv`, levier « Remise en état », périmètre « Levier du 08 » |
-| 4 | **Ruraux loin d’une route revêtue** | À plus de 2 km d’une route nationale revêtue | `horizon_A1.csv`, levier « Accès rural » |
+| # | Chiffre                                     | Lecture                                                                                        | Source                                                                           |
+| - | ------------------------------------------- | ---------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| 1 | **Habitants**                         | Population du Togo à l’horizon                                                               | `population_A1.csv`, somme des préfectures                                    |
+| 2 | **Auto-écoles à ouvrir**            | Dans les préfectures sans auto-école agréée, avec la fourchette                            | `horizon_A1.csv`, levier « Auto-écoles », périmètre « Levier du 08 »    |
+| 3 | **Km à remettre en état**           | Dans les préfectures au réseau dégradé ; la valeur ne change pas d’un horizon à l’autre | `horizon_A1.csv`, levier « Remise en état », périmètre « Levier du 08 » |
+| 4 | **Ruraux loin d’une route revêtue** | À plus de 2 km d’une route nationale revêtue                                                | `horizon_A1.csv`, levier « Accès rural »                                    |
 
 Chaque carte porte sa fourchette en dessous, quand les deux variantes de population diffèrent : « 48 à 50 selon la répartition de la population ». Le niveau de preuve C est rappelé sur la rangée.
 
@@ -68,7 +68,7 @@ Mô en gris, « aucune route classée ». Encart du Grand Lomé comme sur les au
 **Tableau par zone**, sous la carte, exportable :
 
 | Zone | Habitants | Auto-écoles à ouvrir | Fourchette | Km à remettre en état | Ruraux à plus de 2 km |
-| ---- | --------- | -------------------- | ---------- | --------------------- | --------------------- |
+| ---- | --------- | ---------------------- | ---------- | ----------------------- | ---------------------- |
 
 Lu dans `horizon_A1.csv`, maille Zone, périmètre « Levier du 08 » pour les deux leviers et « Toutes les préfectures » pour l’accès rural. Une ligne de total pour le pays. Les 5 régions sont disponibles par le même sélecteur de maille que la page 2.
 

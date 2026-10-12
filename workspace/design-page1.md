@@ -1,5 +1,3 @@
-
-
 ## Page 1 — Vue nationale
 
 **Objectif :** donner en une page la synthèse du projet. Chaque thème de l’énoncé a sa carte, qui mène à sa page de détail.
@@ -26,13 +24,13 @@
 
 La maquette met 3 ou 4 cartes par rangée : les 6 chiffres vont sur 2 rangées de 3.
 
-| Chiffre clé                           | Valeur    | Sous-titre                                                                    | Niveau | Source                                               |
-| -------------------------------------- | --------- | ----------------------------------------------------------------------------- | ------ | ---------------------------------------------------- |
-| Population 2022                        | 8 095 498 | habitants, recensement de 2022                                                | A      | `regions_08.csv` (pays)                            |
-| Immatriculations 2024                  | 88 198    | dont 74,4 % de motos (65 593)                                                 | A      | `indicateurs_07.csv` (immatriculations par groupe) |
-| Tués 2022                             | 683       | tués déclarés par la police et la gendarmerie ; 7 507 accidents constatés | A      | `indicateurs_07.csv` (accidents, blessés, tués)  |
-| Blessés 2022                          | 9 918     | blessés déclarés                                                           | A      | `indicateurs_07.csv`                               |
-| Réseau évalué                       | 3 163 km  | 84 tronçons, relevé de 2020 ; 21,2 % en mauvais état                       | C      | `regions_08.csv` (pays)                            |
+| Chiffre clé                           | Valeur    | Sous-titre                                                                    | Niveau | Source                                                 |
+| -------------------------------------- | --------- | ----------------------------------------------------------------------------- | ------ | ------------------------------------------------------ |
+| Population 2022                        | 8 095 498 | habitants, recensement de 2022                                                | A      | `regions_08.csv` (pays)                              |
+| Immatriculations 2024                  | 88 198    | dont 74,4 % de motos (65 593)                                                 | A      | `indicateurs_07.csv` (immatriculations par groupe)   |
+| Tués 2022                             | 683       | tués déclarés par la police et la gendarmerie ; 7 507 accidents constatés | A      | `indicateurs_07.csv` (accidents, blessés, tués)    |
+| Blessés 2022                          | 9 918     | blessés déclarés                                                           | A      | `indicateurs_07.csv`                                 |
+| Réseau évalué                       | 3 163 km  | 84 tronçons, relevé de 2020 ; 21,2 % en mauvais état                       | C      | `regions_08.csv` (pays)                              |
 | Préfectures sans auto-école agréée | 23 sur 39 | 2 932 492 habitants                                                           | B      | `indicateurs_07.csv` (préfectures sans auto-école) |
 
 « Immatriculations » désigne les immatriculations de l’année, pas le parc en circulation : le libellé « parc automobile immatriculé » du portail est inexact (10, REC-D4).
@@ -62,12 +60,12 @@ La maquette met 3 ou 4 cartes par rangée : les 6 chiffres vont sur 2 rangées d
 
 **Lien « Voir le détail → » :** un bouton, pas un simple lien. Pour Mobilité et Sécurité routière, il écrit le rang de l’onglet dans `st.session_state["evolutions_rang"]` (1 Mobilité, 2 Sécurité routière), puis appelle `st.switch_page` vers la page 3, qui s’ouvre sur cet onglet (design-page3.md). Pour Réseau et Couverture, il appelle `st.switch_page` vers les pages 4 et 2.
 
-| Thème                           | Chiffre 1                                      | Chiffre 2                                        | Chiffre 3                                                                | Mini-visualisation                                                         | Lien   |
-| -------------------------------- | ---------------------------------------------- | ------------------------------------------------ | ------------------------------------------------------------------------ | -------------------------------------------------------------------------- | ------ |
-| 🚗**Mobilité**            | 88 198 immatriculations (2024)                 | ×4,56 en 20 ans (2002 → 2022)                  | 74,4 % de motos (2024)                                                   | Courbe des immatriculations 1990–2024, ruptures de 1995 et 2004 marquées | Page 3, onglet Mobilité |
+| Thème                           | Chiffre 1                                      | Chiffre 2                                        | Chiffre 3                                                                | Mini-visualisation                                                         | Lien                                |
+| -------------------------------- | ---------------------------------------------- | ------------------------------------------------ | ------------------------------------------------------------------------ | -------------------------------------------------------------------------- | ----------------------------------- |
+| 🚗**Mobilité**            | 88 198 immatriculations (2024)                 | ×4,56 en 20 ans (2002 → 2022)                  | 74,4 % de motos (2024)                                                   | Courbe des immatriculations 1990–2024, ruptures de 1995 et 2004 marquées | Page 3, onglet Mobilité            |
 | 🚦**Sécurité routière** | 683 tués (2022)                               | 7 507 accidents constatés (2022)                | 60 % des tués sont des usagers de deux et trois-roues motorisés (2021) | Les 6 taux, 2010–2012 face à 2022–2024 : tous en baisse                 | Page 3, onglet Sécurité routière |
-| 🛣️**Réseau**            | 3 163 km évalués (relevé de 2020)           | 21,2 % en mauvais état (669,34 km)              | 49 tronçons critiques                                                   | Mini-carte de la part en mauvais état par préfecture                     | Page 4 |
-| 🏫**Couverture**           | 132 auto-écoles agréées, sur 272 recensées | 23 préfectures sur 39 sans auto-école agréée | 17,2 % des ruraux à moins de 2 km d’une route revêtue                 | Jauge : 16 préfectures sur 39 ont au moins une auto-école agréée       | Page 2 |
+| 🛣️**Réseau**            | 3 163 km évalués (relevé de 2020)           | 21,2 % en mauvais état (669,34 km)              | 49 tronçons critiques                                                   | Mini-carte de la part en mauvais état par préfecture                     | Page 4                              |
+| 🏫**Couverture**           | 132 auto-écoles agréées, sur 272 recensées | 23 préfectures sur 39 sans auto-école agréée | 17,2 % des ruraux à moins de 2 km d’une route revêtue                 | Jauge : 16 préfectures sur 39 ont au moins une auto-école agréée       | Page 2                              |
 
 **Réserves sur les cartes :** Sécurité, « accidents déclarés, données nationales seulement » ; Réseau, « relevé de 2020, niveau C » ; Couverture, « accès rural estimé, niveau C ».
 
@@ -94,17 +92,18 @@ L’objectif 1 demande les permis délivrés par catégorie.
 - **Légendes :** une par étage, au-dessus de l’étage, titrées « Immatriculations de l’année » et « Permis délivrés ».
 - **Couleurs : une par famille de véhicules**, dans la palette `CATEGORIELLE`. La courbe d’un groupe de véhicules et celle du permis qui le conduit ont la même couleur :
 
-| Famille | Immatriculations | Permis | Couleur | Trait |
-| ------- | ---------------- | ------ | ------- | ----- |
-| Moto | motos | A | `#2a78d6` | plein |
-| Voiture | voitures | B | `#eb6834` | plein |
-| Poids lourd | poids lourds | C | `#1baf7a` | plein |
-| Poids lourd (semi-remorques) | comptées avec les poids lourds | E | `#1baf7a` | tireté |
-| Bus et car | bus et cars | D | `#eda100` | plein |
-| Autres véhicules | autres | aucun permis propre | `#e87ba4` | plein |
-| Aucun véhicule | aucun type immatriculé | F | `#8a8780` (gris de repère, maquette §8.13) | pointillé |
+| Famille                      | Immatriculations                | Permis              | Couleur                                        | Trait      |
+| ---------------------------- | ------------------------------- | ------------------- | ---------------------------------------------- | ---------- |
+| Moto                         | motos                           | A                   | `#2a78d6`                                    | plein      |
+| Voiture                      | voitures                        | B                   | `#eb6834`                                    | plein      |
+| Poids lourd                  | poids lourds                    | C                   | `#1baf7a`                                    | plein      |
+| Poids lourd (semi-remorques) | comptées avec les poids lourds | E                   | `#1baf7a`                                    | tireté    |
+| Bus et car                   | bus et cars                     | D                   | `#eda100`                                    | plein      |
+| Autres véhicules            | autres                          | aucun permis propre | `#e87ba4`                                    | plein      |
+| Aucun véhicule              | aucun type immatriculé         | F                   | `#8a8780` (gris de repère, maquette §8.13) | pointillé |
 
 La correspondance entre véhicules et permis est lue dans `correspondance_vehicules_permis.csv` (article 9 du décret n° 2022-085/PR, établie au 05).
+
 - **Annotations de contexte** (`chronologie_reformes.csv`) : 3 lignes tiretées qui traversent les deux étages, numérotées de 1 à 3 en haut de l’étage des immatriculations. Leur légende est sous la figure :
   1. 20 septembre 2019 : permis obligatoire pour les conducteurs de moto ;
   2. 3 août 2022 : décret d’application du code de la route, catégories A1, A2, A3 (date du décret au Journal officiel) ;

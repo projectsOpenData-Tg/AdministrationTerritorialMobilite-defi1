@@ -4,6 +4,10 @@
 
 Toutes les valeurs (couleurs, tailles, marges, rayons, hauteurs) sont celles du code en production au 29/09/2026 : [dashboard/theme.py](../dashboard/theme.py) pour le CSS, [dashboard/composants.py](../dashboard/composants.py) pour les composants, [.streamlit/config.toml](../.streamlit/config.toml) pour le thème de base, `dashboard/views/*.py` pour les pages. En cas de doute, le code fait foi.
 
+Git repo: [github.com/projectsOpenData-Tg/EconomyNumeric-Challenge2](https://github.com/projectsOpenData-Tg/EconomyNumeric-Challenge2)
+
+NOTE: Ne rien à jouter dans fichier , c'est un temple de abse pour s'inspirer sur les prochains projets
+
 ---
 
 ## Sommaire
@@ -26,15 +30,15 @@ Toutes les valeurs (couleurs, tailles, marges, rayons, hauteurs) sont celles du 
 
 ## 1. Pile technique et organisation
 
-| Élément | Choix |
-| --- | --- |
-| Langage | Python 3.11+ |
-| Cadre d'application | Streamlit 1.61 (`layout="wide"`, `initial_sidebar_state="expanded"`) |
-| Graphiques et cartes | Plotly (`plotly.express`, `plotly.graph_objects`), choroplèthes sur GeoJSON |
-| Données | pandas ; geopandas pour les contours ; tables CSV lues dans `data/analysis/`, avec `@st.cache_data` |
-| Navigation | `st.navigation()` + `st.Page()`, menu en 4 groupes |
-| Style | un seul bloc `<style>` injecté par `st.markdown(CSS, unsafe_allow_html=True)` au démarrage |
-| Polices | Google Fonts : **Fraunces** (titres et grands chiffres, graisses 500 et 600) et **IBM Plex Sans** (texte, graisses 400, 500 et 600) |
+| Élément            | Choix                                                                                                                                          |
+| -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| Langage              | Python 3.11+                                                                                                                                   |
+| Cadre d'application  | Streamlit 1.61 (`layout="wide"`, `initial_sidebar_state="expanded"`)                                                                       |
+| Graphiques et cartes | Plotly (`plotly.express`, `plotly.graph_objects`), choroplèthes sur GeoJSON                                                               |
+| Données             | pandas ; geopandas pour les contours ; tables CSV lues dans`data/analysis/`, avec `@st.cache_data`                                         |
+| Navigation           | `st.navigation()` + `st.Page()`, menu en 4 groupes                                                                                         |
+| Style                | un seul bloc`<style>` injecté par `st.markdown(CSS, unsafe_allow_html=True)` au démarrage                                                |
+| Polices              | Google Fonts :**Fraunces** (titres et grands chiffres, graisses 500 et 600) et **IBM Plex Sans** (texte, graisses 400, 500 et 600) |
 
 ### Arborescence
 
@@ -56,6 +60,7 @@ dashboard/
 ### Règle d'architecture
 
 **Le tableau de bord affiche, il ne calcule pas.** Chaque chiffre vient d'une table déjà calculée. Seules deux exceptions sont admises :
+
 - les poids du score de priorité (page Priorités), recalculés avec la même formule que la table ;
 - l'application d'un seuil choisi par le lecteur à une valeur déjà calculée (page Population et offre).
 
@@ -93,58 +98,58 @@ enableStaticServing = true           # les images de static/ sont servies sous a
 
 **Neutres et structure**
 
-| Jeton | Hex | Usage |
-| --- | --- | --- |
-| `ENCRE` | `#141413` | texte principal, valeurs des chiffres clés |
-| `ENCRE2` | `#3a3935` | texte secondaire (réponse sous le titre, contexte) |
-| `DISCRET` | `#55534e` | texte tertiaire (sous-titres, réserves, fil d'Ariane) |
-| `FILET` | `#e2dfd6` | bordures des cartes et des blocs |
-| filet clair | `#efece4` | séparateur interne, grille des graphiques, étiquette neutre |
-| `FOND` | `#f4f2ec` | fond de page |
-| `CARTE` | `#ffffff` | fond des cartes, des blocs et des graphiques |
+| Jeton       | Hex         | Usage                                                                                                  |
+| ----------- | ----------- | ------------------------------------------------------------------------------------------------------ |
+| `ENCRE`   | `#141413` | texte principal, valeurs des chiffres clés                                                            |
+| `ENCRE2`  | `#3a3935` | texte secondaire (réponse sous le titre, contexte)                                                    |
+| `DISCRET` | `#55534e` | texte tertiaire (sous-titres, réserves, fil d'Ariane)                                                 |
+| `FILET`   | `#e2dfd6` | bordures des cartes et des blocs                                                                       |
+| filet clair | `#efece4` | séparateur interne, grille des graphiques, étiquette neutre                                          |
+| `FOND`    | `#f4f2ec` | fond de page                                                                                           |
+| `CARTE`   | `#ffffff` | fond des cartes, des blocs et des graphiques                                                           |
 | bleu foncé | `#0d366b` | couleur de marque : titres de marque, libellés des chiffres clés, chiffre de synthèse, onglet actif |
-| jaune clair | `#fce588` | accents de la barre latérale, halo de survol des cartes |
-| or | `#ffce00` | bordure de la carte du logo Togo AI Lab |
+| jaune clair | `#fce588` | accents de la barre latérale, halo de survol des cartes                                               |
+| or          | `#ffce00` | bordure de la carte du logo Togo AI Lab                                                                |
 
 **Bandeaux**
 
-| Bandeau | Fond | Bordure | Titre | Texte |
-| --- | --- | --- | --- | --- |
-| Constat | `#e8f0fb` | `#c7d8f0` | `#0d366b` | `#141413` |
-| Limite | `#fdf3d7` | `#ecd28f` | `#6b4700` | `#3a2a00` |
-| Synthèse chiffrée | `#ffffff` | `#e2dfd6` | `#55534e` | chiffre `#0d366b` |
+| Bandeau             | Fond        | Bordure     | Titre       | Texte              |
+| ------------------- | ----------- | ----------- | ----------- | ------------------ |
+| Constat             | `#e8f0fb` | `#c7d8f0` | `#0d366b` | `#141413`        |
+| Limite              | `#fdf3d7` | `#ecd28f` | `#6b4700` | `#3a2a00`        |
+| Synthèse chiffrée | `#ffffff` | `#e2dfd6` | `#55534e` | chiffre`#0d366b` |
 
 **Palettes de données** (déjà validées pour l'accessibilité des couleurs ; ne pas les changer)
 
-| Nom | Valeurs | Usage |
-| --- | --- | --- |
-| `BLEUS` (rampe séquentielle) | `#cde2fb` `#86b6ef` `#3987e5` `#1c5cab` `#0d366b` | cartes régionales en 5 classes, valeurs continues |
-| `CATEGORIELLE` | `#2a78d6` `#eb6834` `#1baf7a` `#eda100` `#e87ba4` | séries d'un graphique |
-| `CATEGORIELLE_8` | les 5 ci-dessus + `#008300` `#4a3aa7` `#e34948` | 8 pays de l'UEMOA |
-| `PRIORITE` | haute `#0d366b`, moyenne `#3987e5`, faible `#cde2fb`, non classée `#b9b6ad` | cartes et légendes de priorité |
-| hors sélection | `#ebe8e0` | territoires exclus par les filtres, sur une carte |
-| `OCRE` | `#eda100` | communes où le mobile money est seul (priorité absolue) |
-| `STATUT` | diversifiée `#2a78d6`, faible `#eda100`, mobile money dominant `#4a3aa7`, mobile money seul `#e34948` | statut d'accès financier |
-| `DIMENSION` | accès `#eb6834`, maillage `#1baf7a`, couverture `#4a3aa7` | les 3 dimensions du score |
-| `COULEUR_REGION` | Grand Lomé `#256abf`, Maritime hors GL `#008300`, Plateaux `#ab6300`, Centrale `#4a3aa7`, Kara `#cb4b0c`, Savanes `#bb537d` | nom de région écrit en couleur (tableaux, constats) — la couleur suit la région, jamais son rang |
-| `TEXTE_CATEGORIELLE` | `#2a78d6`→`#256abf`, `#e87ba4`→`#bb537d`, `#eb6834`→`#cb4b0c`, `#eda100`→`#ab6300`, `#e34948`→`#d53b3c` | même teinte, assez foncée pour du texte sur blanc (contraste ≥ 4,5:1) |
+| Nom                             | Valeurs                                                                                                                                 | Usage                                                                                                |
+| ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| `BLEUS` (rampe séquentielle) | `#cde2fb` `#86b6ef` `#3987e5` `#1c5cab` `#0d366b`                                                                             | cartes régionales en 5 classes, valeurs continues                                                   |
+| `CATEGORIELLE`                | `#2a78d6` `#eb6834` `#1baf7a` `#eda100` `#e87ba4`                                                                             | séries d'un graphique                                                                               |
+| `CATEGORIELLE_8`              | les 5 ci-dessus +`#008300` `#4a3aa7` `#e34948`                                                                                    | 8 pays de l'UEMOA                                                                                    |
+| `PRIORITE`                    | haute`#0d366b`, moyenne `#3987e5`, faible `#cde2fb`, non classée `#b9b6ad`                                                     | cartes et légendes de priorité                                                                     |
+| hors sélection                 | `#ebe8e0`                                                                                                                             | territoires exclus par les filtres, sur une carte                                                    |
+| `OCRE`                        | `#eda100`                                                                                                                             | communes où le mobile money est seul (priorité absolue)                                            |
+| `STATUT`                      | diversifiée`#2a78d6`, faible `#eda100`, mobile money dominant `#4a3aa7`, mobile money seul `#e34948`                           | statut d'accès financier                                                                            |
+| `DIMENSION`                   | accès`#eb6834`, maillage `#1baf7a`, couverture `#4a3aa7`                                                                         | les 3 dimensions du score                                                                            |
+| `COULEUR_REGION`              | Grand Lomé`#256abf`, Maritime hors GL `#008300`, Plateaux `#ab6300`, Centrale `#4a3aa7`, Kara `#cb4b0c`, Savanes `#bb537d` | nom de région écrit en couleur (tableaux, constats) — la couleur suit la région, jamais son rang |
+| `TEXTE_CATEGORIELLE`          | `#2a78d6`→`#256abf`, `#e87ba4`→`#bb537d`, `#eb6834`→`#cb4b0c`, `#eda100`→`#ab6300`, `#e34948`→`#d53b3c`        | même teinte, assez foncée pour du texte sur blanc (contraste ≥ 4,5:1)                             |
 
 ### 2.3 Typographie
 
-| Élément | Police | Taille | Graisse | Couleur | Autres |
-| --- | --- | --- | --- | --- | --- |
-| Corps, boutons, champs | IBM Plex Sans | défaut | 400 | `#141413` | — |
-| `h1`, `h2`, `h3` | Fraunces | — | 600 | — | `letter-spacing: 0` |
-| Question de page (titre) | Fraunces | 2.6rem | 600 | `#141413` | `line-height 1.1` |
-| Surtitre | IBM Plex Sans | 0.78rem | 600 | `#0d366b` | majuscules, `letter-spacing .08em` |
-| Réponse sous le titre | IBM Plex Sans | 1.05rem | 400 | `#3a3935` | `line-height 1.5`, `max-width 880px` |
-| Titre de bloc | Fraunces | 1.3rem | 600 | `#141413` | — |
-| Sous-titre de bloc | IBM Plex Sans | 0.86rem | 400 | `#55534e` | `line-height 1.45` |
-| Valeur d'un chiffre clé | Fraunces | 2.2rem | 600 | `#141413` | `line-height 1.1` |
-| Chiffre de synthèse | Fraunces | 2.6rem | 600 | `#0d366b` | `line-height 1.05` |
-| Titres de bandeau (« CONSTAT »…) | IBM Plex Sans | 0.78rem | 600 | selon bandeau | majuscules, `letter-spacing .06em` |
-| Étiquette (badge) | IBM Plex Sans | 0.74rem | 600 | selon ton | pilule |
-| Note sous graphique | IBM Plex Sans | 0.875rem | 400 (700 si forte) | `#0d366b` | — |
+| Élément                           | Police        | Taille   | Graisse            | Couleur       | Autres                                   |
+| ----------------------------------- | ------------- | -------- | ------------------ | ------------- | ---------------------------------------- |
+| Corps, boutons, champs              | IBM Plex Sans | défaut  | 400                | `#141413`   | —                                       |
+| `h1`, `h2`, `h3`              | Fraunces      | —       | 600                | —            | `letter-spacing: 0`                    |
+| Question de page (titre)            | Fraunces      | 2.6rem   | 600                | `#141413`   | `line-height 1.1`                      |
+| Surtitre                            | IBM Plex Sans | 0.78rem  | 600                | `#0d366b`   | majuscules,`letter-spacing .08em`      |
+| Réponse sous le titre              | IBM Plex Sans | 1.05rem  | 400                | `#3a3935`   | `line-height 1.5`, `max-width 880px` |
+| Titre de bloc                       | Fraunces      | 1.3rem   | 600                | `#141413`   | —                                       |
+| Sous-titre de bloc                  | IBM Plex Sans | 0.86rem  | 400                | `#55534e`   | `line-height 1.45`                     |
+| Valeur d'un chiffre clé            | Fraunces      | 2.2rem   | 600                | `#141413`   | `line-height 1.1`                      |
+| Chiffre de synthèse                | Fraunces      | 2.6rem   | 600                | `#0d366b`   | `line-height 1.05`                     |
+| Titres de bandeau (« CONSTAT »…) | IBM Plex Sans | 0.78rem  | 600                | selon bandeau | majuscules,`letter-spacing .06em`      |
+| Étiquette (badge)                  | IBM Plex Sans | 0.74rem  | 600                | selon ton     | pilule                                   |
+| Note sous graphique                 | IBM Plex Sans | 0.875rem | 400 (700 si forte) | `#0d366b`   | —                                       |
 
 Import des polices, en tête du CSS :
 
@@ -156,23 +161,23 @@ h1, h2, h3 { font-family: 'Fraunces', Georgia, serif !important; font-weight: 60
 
 ### 2.4 Rayons, ombres, espacements
 
-| Rayon | Où |
-| --- | --- |
-| 8px | onglets (pastilles), liens du menu, bouton d'ouverture de la barre latérale |
-| 10px | graphiques, bandeau « filtres actifs » |
-| 12px | barre des onglets, pied de page, carte du logo |
-| 14px | carte de chiffre clé, Constat, Synthèse chiffrée, Limite |
-| 18px | barre du haut, carte de recommandation |
-| 999px | étiquettes (badges) |
+| Rayon | Où                                                                          |
+| ----- | ---------------------------------------------------------------------------- |
+| 8px   | onglets (pastilles), liens du menu, bouton d'ouverture de la barre latérale |
+| 10px  | graphiques, bandeau « filtres actifs »                                     |
+| 12px  | barre des onglets, pied de page, carte du logo                               |
+| 14px  | carte de chiffre clé, Constat, Synthèse chiffrée, Limite                  |
+| 18px  | barre du haut, carte de recommandation                                       |
+| 999px | étiquettes (badges)                                                         |
 
-| Ombre | Où |
-| --- | --- |
-| `0 1px 8px rgba(13,54,107,.08)` | barre du haut |
-| `0 1px 4px rgba(13,54,107,.06)` | barre des onglets, pied de page |
-| `0 1px 6px rgba(13,54,107,.06)` | carte de recommandation (repos) |
-| `0 2px 6px rgba(0,0,0,.08)` | carte du logo |
-| `0 0 0 3px rgba(252,229,136,.35), 0 10px 24px rgba(13,54,107,.12)` | carte de chiffre clé au survol |
-| `0 12px 28px rgba(13,54,107,.14)` | carte de recommandation au survol |
+| Ombre                                                                | Où                               |
+| -------------------------------------------------------------------- | --------------------------------- |
+| `0 1px 8px rgba(13,54,107,.08)`                                    | barre du haut                     |
+| `0 1px 4px rgba(13,54,107,.06)`                                    | barre des onglets, pied de page   |
+| `0 1px 6px rgba(13,54,107,.06)`                                    | carte de recommandation (repos)   |
+| `0 2px 6px rgba(0,0,0,.08)`                                        | carte du logo                     |
+| `0 0 0 3px rgba(252,229,136,.35), 0 10px 24px rgba(13,54,107,.12)` | carte de chiffre clé au survol   |
+| `0 12px 28px rgba(13,54,107,.14)`                                  | carte de recommandation au survol |
 
 Contenu principal : `padding-top 0.6rem`, `padding-bottom 2rem`, `padding-left/right 1.5rem`, **largeur fluide** (`max-width: 100%`). Ne pas fixer de largeur maximale : sur un écran large, le contenu centré laisserait un vide des deux côtés.
 
@@ -258,11 +263,11 @@ div.st-key-topbar_droite button { padding: 0.15rem 0.55rem !important; min-heigh
 
 ### Contenu
 
-| Zone | Contenu | Détail |
-| --- | --- | --- |
-| Gauche | armoiries (écu seul, SVG, 38 px de haut) + nom du ministère | FR : « Ministère de l'Efficacité du Service Public et de la Transformation Numérique » ; EN : « Ministry of Public Service Efficiency and Digital Transformation ». Repli si l'image manque : 🛡️ |
-| Centre | « 🇹🇬 Togo Digital & Financial Inclusion » + sous-titre | Le nom ne se traduit pas. Sous-titre FR : « Accès numérique et inclusion financière au Togo » ; EN : « Digital access and financial inclusion in Togo » |
-| Droite | colonnes internes `[1, 1, 2]` : bouton FR, bouton EN, carte du logo | bouton de la langue active en `type="primary"` (plein, bleu foncé), l'autre en `secondary`. Clic : `st.session_state["lang"] = "fr"/"en"` puis `st.rerun()` |
+| Zone   | Contenu                                                              | Détail                                                                                                                                                                                                   |
+| ------ | -------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Gauche | armoiries (écu seul, SVG, 38 px de haut) + nom du ministère        | FR : « Ministère de l'Efficacité du Service Public et de la Transformation Numérique » ; EN : « Ministry of Public Service Efficiency and Digital Transformation ». Repli si l'image manque : 🛡️ |
+| Centre | « 🇹🇬 Togo Digital & Financial Inclusion » + sous-titre           | Le nom ne se traduit pas. Sous-titre FR : « Accès numérique et inclusion financière au Togo » ; EN : « Digital access and financial inclusion in Togo »                                            |
+| Droite | colonnes internes`[1, 1, 2]` : bouton FR, bouton EN, carte du logo | bouton de la langue active en`type="primary"` (plein, bleu foncé), l'autre en `secondary`. Clic : `st.session_state["lang"] = "fr"/"en"` puis `st.rerun()`                                       |
 
 **Fichier à fournir** : `static/logo_togo_ai_lab.png`. Tant qu'il manque, la carte affiche le texte de repli « TOGO / AI LAB » en rouge.
 
@@ -271,6 +276,7 @@ div.st-key-topbar_droite button { padding: 0.15rem 0.55rem !important; min-heigh
 **Constat du 03/10/2026.** Sur Streamlit Community Cloud, le haut de la barre du haut est caché : on ne voit plus que le bas du titre et des boutons FR/EN. Le même code s'affiche entièrement sur Heroku.
 
 **Mécanisme** (lu dans le code de Streamlit 1.61.1) :
+
 - Streamlit place son propre en-tête au-dessus du contenu : `<header class="stAppHeader" data-testid="stHeader">`, en position absolue en haut de la page, haut d'environ 3,75rem (60 px), et placé au-dessus du contenu.
 - **S'il n'a rien à afficher**, il est vide, transparent, et laisse passer les clics (`pointer-events: none`).
 - **Dès qu'il affiche quelque chose**, il prend la couleur du fond de la page (`#f4f2ec`), devient opaque, et contient alors un bloc `[data-testid="stToolbar"]`.
@@ -282,13 +288,14 @@ div.st-key-topbar_droite button { padding: 0.15rem 0.55rem !important; min-heigh
 
 **Conséquence selon le lieu de déploiement**, avec `padding-top: 0.6rem` :
 
-| Hébergement | Barre latérale | En-tête de Streamlit | Barre du haut |
-| --- | --- | --- | --- |
-| Local, Docker, Heroku | ouverte | transparent, vide | entièrement visible |
-| Local, Docker, Heroku | fermée | opaque (bouton de réouverture) | **haut caché** |
+| Hébergement              | Barre latérale    | En-tête de Streamlit                                            | Barre du haut         |
+| ------------------------- | ------------------ | ---------------------------------------------------------------- | --------------------- |
+| Local, Docker, Heroku     | ouverte            | transparent, vide                                                | entièrement visible  |
+| Local, Docker, Heroku     | fermée            | opaque (bouton de réouverture)                                  | **haut caché** |
 | Streamlit Community Cloud | ouverte ou fermée | opaque : la plateforme y ajoute ses boutons « Fork » et GitHub | **haut caché** |
 
 **Ce qui ne marche pas :**
+
 - `toolbarMode = "minimal"` (`.streamlit/config.toml`) masque le menu de Streamlit, mais pas les boutons ajoutés par l'hébergeur. D'après les réponses du forum Streamlit, aucun réglage ne retire « Fork » et GitHub quand l'application vient d'un dépôt public. Seul un dépôt privé les retire, et Streamlit Cloud n'accepte alors qu'une seule application privée gratuite.
 - **Masquer tout l'en-tête** (`[data-testid="stHeader"] { display: none; }`) : à proscrire. Il contient le bouton qui rouvre la barre latérale : une fois la barre fermée, le lecteur ne pourrait plus la rouvrir, ni accéder au menu et aux filtres.
 - **Mettre `padding-top: 4.4rem` partout** : cela laisse une bande vide de 60 px en haut de page en local et sur Heroku.
@@ -320,12 +327,12 @@ body:has([data-testid="stHeader"] [data-testid="stToolbar"]) [data-testid="stMai
 3. **Séparateur** (`st.divider()`), puis le titre « **Filtres** » en gras.
 4. **Quatre filtres**, dans cet ordre :
 
-| Libellé (FR / EN) | Widget | Valeurs | Défaut | Clé d'état |
-| --- | --- | --- | --- | --- |
-| Région / Region | `st.pills`, choix multiple | Grand Lomé, Maritime hors Grand Lomé, Plateaux, Centrale, Kara, Savanes | aucune | `f_regions` |
-| Maille de la carte / Map scale | `st.segmented_control`, choix unique | Commune, Préfecture | Préfecture | `f_maille` |
-| Priorité / Priority | `st.pills`, choix multiple | absolue, haute, moyenne, faible, non classée | aucune | `f_priorites` |
-| Milieu / Area type | `st.pills`, choix multiple | Grand Lomé, Autres villes, Rural | aucun | `f_milieux` |
+| Libellé (FR / EN)             | Widget                                 | Valeurs                                                                   | Défaut     | Clé d'état    |
+| ------------------------------ | -------------------------------------- | ------------------------------------------------------------------------- | ----------- | --------------- |
+| Région / Region               | `st.pills`, choix multiple           | Grand Lomé, Maritime hors Grand Lomé, Plateaux, Centrale, Kara, Savanes | aucune      | `f_regions`   |
+| Maille de la carte / Map scale | `st.segmented_control`, choix unique | Commune, Préfecture                                                      | Préfecture | `f_maille`    |
+| Priorité / Priority           | `st.pills`, choix multiple           | absolue, haute, moyenne, faible, non classée                             | aucune      | `f_priorites` |
+| Milieu / Area type             | `st.pills`, choix multiple           | Grand Lomé, Autres villes, Rural                                         | aucun       | `f_milieux`   |
 
 5. **Bouton** « Réinitialiser les filtres » (« Reset filters »), pleine largeur, icône `:material/restart_alt:`. Son rappel remet les 4 clés à leur défaut.
 6. **Légende** (`st.caption`) : « 39 préfectures · 117 communes · points de service 2021/2022 · population 2022 ».
@@ -364,9 +371,9 @@ Deux éléments, à la fin de chaque page :
 .pied-identite-sous-titre { font-size: .78rem; color: #55534e; margin-top: 4px; line-height: 1.5; }
 ```
 
-| | Français | Anglais |
-| --- | --- | --- |
-| Titre | Togo AI Lab — Data Challenge \| Économie numérique — Défi 2 | Togo AI Lab — Data Challenge \| Digital Economy — Challenge 2 |
+|            | Français                                                                                                  | Anglais                                                                                        |
+| ---------- | ---------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| Titre      | Togo AI Lab — Data Challenge\| Économie numérique — Défi 2                                            | Togo AI Lab — Data Challenge\| Digital Economy — Challenge 2                                 |
 | Sous-titre | Diagnostic territorial et aide à la décision pour l'accès numérique et l'inclusion financière au Togo | Territorial diagnostic and decision support for digital access and financial inclusion in Togo |
 
 ---
@@ -375,18 +382,18 @@ Deux éléments, à la fin de chaque page :
 
 Chaque page suit le même ordre, de haut en bas : le lecteur sait où regarder d'une page à l'autre.
 
-| # | Zone | Composant | Règle de contenu |
-| --- | --- | --- | --- |
-| 1 | Fil d'Ariane | `ariane(page)` | « Tableau de bord › **Nom de la page** » |
-| 2 | En-tête | `entete(surtitre, question, reponse_html)` | surtitre = nom de la page ; titre = **une question** ; réponse = **la conclusion d'abord**, chiffres clés en `<strong>` |
-| 3 | Filtres actifs | bandeau `.filtres-actifs` | seulement si un filtre est posé, ou pour dire que les chiffres sont nationaux et ne bougent pas avec les filtres |
-| 4 | Onglets | `onglets(cle, libelles)` | 3 à 5 vues ; la première est toujours une vue synthèse |
-| 5 | Chiffres clés | `rangee_kpi(groupe, [carte_kpi(...)…])` | 3 ou 4 cartes par rangée ; règle des dix secondes |
-| 6 | Visuel principal + Constat | `st.columns([1.5, 1])` : bloc graphique ou carte à gauche, `constat()` à droite | jamais un graphique sans phrase de lecture |
-| 7 | Visuels secondaires | blocs à bordure, en 1 ou 2 colonnes | un bouton « Exporter (CSV) » sous chaque bloc |
-| 8 | Synthèse chiffrée | `synthese(chiffre, legende, puces)` | **un seul** chiffre-titre et 3 ou 4 puces, chacune renvoyant à l'onglet de détail |
-| 9 | Limite | `limite(texte)` | la réserve propre à ce qui est affiché, en jaune, à la fin de chaque onglet |
-| 10 | Pied | `pied()` | identique partout |
+| #  | Zone                       | Composant                                                                             | Règle de contenu                                                                                                                      |
+| -- | -------------------------- | ------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| 1  | Fil d'Ariane               | `ariane(page)`                                                                      | « Tableau de bord ›**Nom de la page** »                                                                                       |
+| 2  | En-tête                   | `entete(surtitre, question, reponse_html)`                                          | surtitre = nom de la page ; titre =**une question** ; réponse = **la conclusion d'abord**, chiffres clés en `<strong>` |
+| 3  | Filtres actifs             | bandeau`.filtres-actifs`                                                            | seulement si un filtre est posé, ou pour dire que les chiffres sont nationaux et ne bougent pas avec les filtres                      |
+| 4  | Onglets                    | `onglets(cle, libelles)`                                                            | 3 à 5 vues ; la première est toujours une vue synthèse                                                                              |
+| 5  | Chiffres clés             | `rangee_kpi(groupe, [carte_kpi(...)…])`                                            | 3 ou 4 cartes par rangée ; règle des dix secondes                                                                                    |
+| 6  | Visuel principal + Constat | `st.columns([1.5, 1])` : bloc graphique ou carte à gauche, `constat()` à droite | jamais un graphique sans phrase de lecture                                                                                             |
+| 7  | Visuels secondaires        | blocs à bordure, en 1 ou 2 colonnes                                                  | un bouton « Exporter (CSV) » sous chaque bloc                                                                                        |
+| 8  | Synthèse chiffrée        | `synthese(chiffre, legende, puces)`                                                 | **un seul** chiffre-titre et 3 ou 4 puces, chacune renvoyant à l'onglet de détail                                              |
+| 9  | Limite                     | `limite(texte)`                                                                     | la réserve propre à ce qui est affiché, en jaune, à la fin de chaque onglet                                                        |
+| 10 | Pied                       | `pied()`                                                                            | identique partout                                                                                                                      |
 
 ### Exemple : l'onglet « Vue synthèse » d'une page d'analyse
 
@@ -462,6 +469,7 @@ TITRE DE GROUPE DE LA RANGÉE
 ```
 
 Il a trois usages :
+
 - rappeler les filtres posés : « Filtres actifs : Kara · Priorité haute · Rural. » ;
 - prévenir que les chiffres nationaux ne changent pas avec les filtres ;
 - résumer une sélection (page Recommandations : « 12 recommandations · 22 communes en priorité absolue (… habitants) · … »).
@@ -483,15 +491,15 @@ Il a trois usages :
 
 **Méthode d'affichage** (paramètres de `carte_kpi(libelle, valeur, phrase, contexte, reserve, etiquette, ton, unite)`) :
 
-| Emplacement | Contenu | Exemple |
-| --- | --- | --- |
-| `libelle` | ce qui est mesuré, avec l'année ou la période entre parenthèses | « Internet (2024) » |
-| `valeur` | le chiffre seul, formaté selon la langue | « 39,5 % », « 22 », « Duopole » |
-| `unite` (optionnel) | unité accolée, en 1.05rem 600 | « communes » |
-| `phrase` | la suite de la valeur : chiffre + phrase forment une phrase complète | « de la population utilise Internet » |
-| `contexte` | le seuil, la comparaison ou la population concernée | « seuil de 40 % ; Afrique subsaharienne : … » |
-| `reserve` | ce que le chiffre ne mesure pas ; vide = pas de pied | « Un abonnement n'est pas une personne… » |
-| `etiquette` + `ton` | verdict court, coloré selon le ton | « Sous le seuil » / `alerte` |
+| Emplacement             | Contenu                                                               | Exemple                                          |
+| ----------------------- | --------------------------------------------------------------------- | ------------------------------------------------ |
+| `libelle`             | ce qui est mesuré, avec l'année ou la période entre parenthèses   | « Internet (2024) »                            |
+| `valeur`              | le chiffre seul, formaté selon la langue                             | « 39,5 % », « 22 », « Duopole »            |
+| `unite` (optionnel)   | unité accolée, en 1.05rem 600                                       | « communes »                                   |
+| `phrase`              | la suite de la valeur : chiffre + phrase forment une phrase complète | « de la population utilise Internet »          |
+| `contexte`            | le seuil, la comparaison ou la population concernée                  | « seuil de 40 % ; Afrique subsaharienne : … » |
+| `reserve`             | ce que le chiffre ne mesure pas ; vide = pas de pied                  | « Un abonnement n'est pas une personne… »     |
+| `etiquette` + `ton` | verdict court, coloré selon le ton                                   | « Sous le seuil » /`alerte`                  |
 
 **Rangée de cartes.** Chaque rangée a un titre de groupe (`.groupe` : 0.82rem 600 `#55534e`, `margin .6rem 0 .4rem`), puis une grille :
 
@@ -509,6 +517,7 @@ Il a trois usages :
 ```
 
 **Dimensions et comportement :**
+
 - largeur minimale 230 px, puis partage égal de la largeur. Une rangée de 4 tient sur un écran large et passe à la ligne sur un écran étroit ;
 - dans une rangée, toutes les cartes ont **la même hauteur** : la grille étire les cartes, et `margin-top: auto` colle la réserve en bas ;
 - `min-height: 2.5rem` sur l'en-tête aligne les valeurs d'une carte à l'autre, même quand un libellé tient sur deux lignes ;
@@ -530,16 +539,16 @@ Il a trois usages :
 
 `.etiquette { font-size: .74rem; font-weight: 600; padding: 3px 8px; border-radius: 999px; white-space: nowrap; }`
 
-| Ton | Fond | Texte | Sens |
-| --- | --- | --- | --- |
-| `alerte` | `#fdf0d2` | `#6b4700` | sous un seuil, à surveiller |
-| `ok` | `#e3eefb` | `#0d366b` | seuil franchi, préalable, priorité haute |
-| `critique` | `#fbe3e2` | `#8a1c1b` | priorité absolue |
-| `neutre` | `#efece4` | `#3a3935` | horizon, « à confirmer » |
-| `national` | `#efece4` | `#55534e` (graisse 500) | chiffre national |
-| `reco-priorite` | `#fdf0d2` | `#6b4700` | priorité d'une recommandation |
-| `reco-nature` | `#ece9fb` | `#4a3aa7` | immédiate / conditionnelle / veille |
-| `reco-horizon` | `#e2f4ec` | `#11613f` | 1 an / 3 ans / 5 ans |
+| Ton               | Fond        | Texte                     | Sens                                       |
+| ----------------- | ----------- | ------------------------- | ------------------------------------------ |
+| `alerte`        | `#fdf0d2` | `#6b4700`               | sous un seuil, à surveiller               |
+| `ok`            | `#e3eefb` | `#0d366b`               | seuil franchi, préalable, priorité haute |
+| `critique`      | `#fbe3e2` | `#8a1c1b`               | priorité absolue                          |
+| `neutre`        | `#efece4` | `#3a3935`               | horizon, « à confirmer »                |
+| `national`      | `#efece4` | `#55534e` (graisse 500) | chiffre national                           |
+| `reco-priorite` | `#fdf0d2` | `#6b4700`               | priorité d'une recommandation             |
+| `reco-nature`   | `#ece9fb` | `#4a3aa7`               | immédiate / conditionnelle / veille       |
+| `reco-horizon`  | `#e2f4ec` | `#11613f`               | 1 an / 3 ans / 5 ans                       |
 
 ### 8.6 Bloc à bordure
 
@@ -616,6 +625,7 @@ Vue synthèse · vue 1 sur 4                                              ← .o
 ```
 
 **Comportement** (fonction `onglets(cle, libelles)`) :
+
 - **seul l'onglet ouvert s'exécute** : chaque onglet est entouré de `if onglet.open is not False:`, ce qui accélère les pages lourdes ;
 - l'onglet actif est retenu **par son rang**, pas par son libellé, dans `st.session_state[f"{cle}_rang"]`. Il survit au changement de langue (le libellé change, le rang non) et au passage par une autre page ;
 - la clé du widget inclut la langue (`f"{cle}_{langue}"`), et `st.tabs(..., default=libelles[rang], on_change=retenir)` relit le rang ;
@@ -648,15 +658,15 @@ div[class*="st-key-carte_reco_"]:hover { transform: translateY(-4px); box-shadow
 .reco-meta { margin-top: 10px; padding-bottom: 8px; }
 ```
 
-| Thème | Emoji | Fond de pastille | Couleur du libellé |
-| --- | --- | --- | --- |
-| Agences financières | 🏦 | `#e3eefb` | `#1c5cab` |
-| Mobile money | 📱 | `#fde8dd` | `#b4451a` |
-| Couverture réseau | 📡 | `#e2f4ec` | `#11613f` |
-| Fibre | 🌐 | `#ece9fb` | `#4a3aa7` |
-| Prix et frais | 💰 | `#fbe4f0` | `#a3246b` |
-| Compétences et équipement | 🎓 | `#fdf0d2` | `#6b4700` |
-| Investissement (veille) | 📈 | `#dff3f6` | `#0e6475` |
+| Thème                      | Emoji | Fond de pastille | Couleur du libellé |
+| --------------------------- | ----- | ---------------- | ------------------- |
+| Agences financières        | 🏦    | `#e3eefb`      | `#1c5cab`         |
+| Mobile money                | 📱    | `#fde8dd`      | `#b4451a`         |
+| Couverture réseau          | 📡    | `#e2f4ec`      | `#11613f`         |
+| Fibre                       | 🌐    | `#ece9fb`      | `#4a3aa7`         |
+| Prix et frais               | 💰    | `#fbe4f0`      | `#a3246b`         |
+| Compétences et équipement | 🎓    | `#fdf0d2`      | `#6b4700`         |
+| Investissement (veille)     | 📈    | `#dff3f6`      | `#0e6475`         |
 
 **Règle** : on n'additionne jamais les habitants d'une recommandation à l'autre, parce que les territoires se recoupent. Une légende sous la barre de résumé le dit.
 
@@ -681,13 +691,14 @@ st.plotly_chart(fig, key=cle, config={"displayModeBar": False})           # pas 
 
 CSS : `[data-testid="stPlotlyChart"] { background: #fff; border-radius: 10px; }`.
 
-| Hauteur | Usage |
-| --- | --- |
+| Hauteur     | Usage                                                                  |
+| ----------- | ---------------------------------------------------------------------- |
 | 240–300 px | petit graphique d'appoint (rang, distributeurs, barres de trajectoire) |
-| 330–380 px | graphique standard dans une demi-largeur |
-| 400–440 px | graphique principal d'un onglet |
+| 330–380 px | graphique standard dans une demi-largeur                               |
+| 400–440 px | graphique principal d'un onglet                                        |
 
 **Conventions** :
+
 - série principale en bleu foncé `#0d366b`, 3 px ; repère externe en gris `#8a8780`, pointillé ;
 - seuil en ligne tiretée `#8a1c1b`, avec une annotation (« Seuil de 40 % ») ;
 - dernière valeur annotée en gras au bout de la courbe ;
@@ -696,15 +707,15 @@ CSS : `[data-testid="stPlotlyChart"] { background: #fff; border-radius: 10px; }`
 
 ### 8.14 Cartes géographiques (choroplèthes Plotly)
 
-| Réglage | Valeur |
-| --- | --- |
-| Projection | `mercator`, fond `#ffffff`, `visible=False` (pas de fond de carte) |
-| Cadrage | **explicite** : étendue (bbox) des contours ± 0,05°, pour `lonaxis_range` et `lataxis_range`. Ne pas utiliser `fitbounds`, qui laisse le Togo minuscule |
-| Contours | blancs, 0.8 px |
-| Hauteur | 560 px dans une colonne ; 620–640 px en pleine largeur ou sur la Synthèse ; 500–520 px pour la carte des 6 régions |
-| Marges | `l=r=t=b=0` |
-| Interaction | survol seulement : `displayModeBar: False`, `scrollZoom: False` |
-| Légende | verticale, à droite (`x=1.0`) ; horizontale sous la carte pour la carte des régions |
+| Réglage    | Valeur                                                                                                                                                                 |
+| ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Projection  | `mercator`, fond `#ffffff`, `visible=False` (pas de fond de carte)                                                                                               |
+| Cadrage     | **explicite** : étendue (bbox) des contours ± 0,05°, pour `lonaxis_range` et `lataxis_range`. Ne pas utiliser `fitbounds`, qui laisse le Togo minuscule |
+| Contours    | blancs, 0.8 px                                                                                                                                                         |
+| Hauteur     | 560 px dans une colonne ; 620–640 px en pleine largeur ou sur la Synthèse ; 500–520 px pour la carte des 6 régions                                                 |
+| Marges      | `l=r=t=b=0`                                                                                                                                                          |
+| Interaction | survol seulement :`displayModeBar: False`, `scrollZoom: False`                                                                                                     |
+| Légende    | verticale, à droite (`x=1.0`) ; horizontale sous la carte pour la carte des régions                                                                                |
 
 Trois cartes types :
 
@@ -721,12 +732,13 @@ Trois cartes types :
 
 ### 8.15 Tableaux
 
-| Type | Quand | Réglages |
-| --- | --- | --- |
-| `st.dataframe` | données triables | `hide_index=True`, `use_container_width=True` ; hauteur `35 × (lignes + 1) + 3` pour tout montrer, ou 280 à 520 px avec défilement |
-| `st.table` | **des phrases** qui doivent revenir à la ligne | statique, index = première colonne |
+| Type             | Quand                                                 | Réglages                                                                                                                                   |
+| ---------------- | ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| `st.dataframe` | données triables                                     | `hide_index=True`, `use_container_width=True` ; hauteur `35 × (lignes + 1) + 3` pour tout montrer, ou 280 à 520 px avec défilement |
+| `st.table`     | **des phrases** qui doivent revenir à la ligne | statique, index = première colonne                                                                                                         |
 
 **Mise en forme** :
+
 - la colonne des régions est écrite en couleur, une couleur par région, en graisse 600 (`Styler.map`) ;
 - nombres au format de la langue : séparateur de milliers, virgule décimale en français ;
 - une colonne d'années ne prend jamais de séparateur (« 2030 », pas « 2 030 ») ;
@@ -739,15 +751,16 @@ Trois cartes types :
 
 ### 8.17 Contrôles dans le contenu
 
-| Widget | Usage |
-| --- | --- |
-| `st.segmented_control` | choix exclusif court : type d'établissement, maille, thème |
-| `st.selectbox` | choisir un territoire, un pays ou un indicateur |
-| `st.multiselect` (texte indicatif « Tous ») | filtres de la page Recommandations, scénarios affichés |
-| `st.slider` | seuils déplaçables, poids du score (0 à 1, pas de 0.05, défaut 1/3) |
-| `st.toggle` | basculer vers une variante (« Sans la couverture théorique », règle de statut) |
+| Widget                                          | Usage                                                                              |
+| ----------------------------------------------- | ---------------------------------------------------------------------------------- |
+| `st.segmented_control`                        | choix exclusif court : type d'établissement, maille, thème                       |
+| `st.selectbox`                                | choisir un territoire, un pays ou un indicateur                                    |
+| `st.multiselect` (texte indicatif « Tous ») | filtres de la page Recommandations, scénarios affichés                           |
+| `st.slider`                                   | seuils déplaçables, poids du score (0 à 1, pas de 0.05, défaut 1/3)            |
+| `st.toggle`                                   | basculer vers une variante (« Sans la couverture théorique », règle de statut) |
 
 La référence reste toujours visible :
+
 - quand un curseur (seuils, poids) quitte sa valeur de référence, une note s'affiche sous lui : « Vous regardez une variante : la référence est … », suivie du nombre de territoires qui changent de classe ;
 - un interrupteur porte la variante dans son libellé (« Variante : … »), et son aide (`help=`, l'icône ⓘ) décrit la règle de référence.
 
@@ -757,19 +770,19 @@ La référence reste toujours visible :
 
 ### 9.1 Menu
 
-| Groupe | Page (menu) | Icône Material | URL | Question (titre de la page) | Onglets |
-| --- | --- | --- | --- | --- | --- |
-| Principal | Synthèse nationale | `home` | `/` (défaut) | Le numérique et l'inclusion financière au Togo : où en est-on ? | — |
-| Analyses | Usage d'Internet | `wifi` | `internet` | L'usage progresse-t-il, et à quel prix ? | 4 |
-| | Marché des télécoms | `cell_tower` | `marche` | Qui tient le marché, et investit-il encore ? | 5 |
-| | Offre financière | `account_balance` | `offre` | Où sont les établissements financiers ? | 4 |
-| | Population et offre | `groups` | `population` | Combien d'habitants par point, et où le mobile money est-il seul ? | 4 |
-| | Carte | `map` | `carte` | Que voit-on, commune par commune ? | — |
-| Pilotage | Priorités | `flag` | `priorites` | Par quels territoires commencer ? | 4 |
-| | Diagnostic | `troubleshoot` | `diagnostic` | Pourquoi ces territoires ? | 3 |
-| | Recommandations | `task_alt` | `recommandations` | Quelle action engager ? | 4 |
-| | Estimations et projections | `trending_up` | `projections` | Où va le Togo si l'on agit, et si rien ne change ? | — |
-| Méthodologie | Sources et méthode | `menu_book` | `methodologie` | Sources, conventions et limites | — |
+| Groupe        | Page (menu)                | Icône Material     | URL                 | Question (titre de la page)                                         | Onglets |
+| ------------- | -------------------------- | ------------------- | ------------------- | ------------------------------------------------------------------- | ------- |
+| Principal     | Synthèse nationale        | `home`            | `/` (défaut)     | Le numérique et l'inclusion financière au Togo : où en est-on ?  | —      |
+| Analyses      | Usage d'Internet           | `wifi`            | `internet`        | L'usage progresse-t-il, et à quel prix ?                           | 4       |
+|               | Marché des télécoms     | `cell_tower`      | `marche`          | Qui tient le marché, et investit-il encore ?                       | 5       |
+|               | Offre financière          | `account_balance` | `offre`           | Où sont les établissements financiers ?                           | 4       |
+|               | Population et offre        | `groups`          | `population`      | Combien d'habitants par point, et où le mobile money est-il seul ? | 4       |
+|               | Carte                      | `map`             | `carte`           | Que voit-on, commune par commune ?                                  | —      |
+| Pilotage      | Priorités                 | `flag`            | `priorites`       | Par quels territoires commencer ?                                   | 4       |
+|               | Diagnostic                 | `troubleshoot`    | `diagnostic`      | Pourquoi ces territoires ?                                          | 3       |
+|               | Recommandations            | `task_alt`        | `recommandations` | Quelle action engager ?                                             | 4       |
+|               | Estimations et projections | `trending_up`     | `projections`     | Où va le Togo si l'on agit, et si rien ne change ?                 | —      |
+| Méthodologie | Sources et méthode        | `menu_book`       | `methodologie`    | Sources, conventions et limites                                     | —      |
 
 Les noms anglais des groupes sont Main, Analysis, Action et Methodology.
 
@@ -778,6 +791,7 @@ Les noms anglais des groupes sont Main, Analysis, Action et Methodology.
 Notation : `[a, b]` = rapport de largeur des colonnes (`st.columns([a, b], gap="large")`) ; les nombres en px sont des hauteurs de graphique ou de carte.
 
 **1. Synthèse nationale** (sans onglets)
+
 - En-tête, puis le bandeau des filtres actifs, seulement si un filtre est posé.
 - KPI, rangée 1 « Internet et marché des télécommunications (national) » : Internet · Haut débit mobile · Marché des télécoms · Prix de la data.
 - KPI, rangée 2 « Inclusion financière et territoires » : Mobile money · Agences financières · Mobile money et agences · Réseau et mobile money. Cette rangée suit les filtres.
@@ -787,6 +801,7 @@ Notation : `[a, b]` = rapport de largeur des colonnes (`st.columns([a, b], gap="
 - Synthèse chiffrée, limite discrète « Ce que cette page ne montre pas », pied.
 
 **2. Usage d'Internet** — onglets : Vue synthèse · Évolution de l'usage · Accès et freins par région · Le Togo dans l'UEMOA
+
 - Sous l'en-tête : bandeau « Chiffres nationaux : ils ne changent pas avec les filtres… ».
 - **Vue synthèse** :
   - KPI ×4 ;
@@ -797,6 +812,7 @@ Notation : `[a, b]` = rapport de largeur des colonnes (`st.columns([a, b], gap="
 - **UEMOA** : Constat ; `[1.6, 1]` : courbes des 8 pays (440), avec une liste « Pays à mettre en évidence » / rang du Togo (240) et tableau des rangs ; Limite.
 
 **2 bis. Marché des télécoms** — onglets : Vue synthèse · Parts de marché · Chiffre d'affaires et investissement · Technologies et fibre · Prix et couverture
+
 - **Vue synthèse** : KPI ×4 ; Constat ; Synthèse ; Limite.
 - **Parts de marché** : Constat ; `[1.5, 1]` : part de l'opérateur dominant selon trois mesures (400) / tableau de l'indice de concentration ; Limite.
 - **Chiffre d'affaires** : Constat ; `2 colonnes` (380 / 380) ; `[1.5, 1]` (280) ; rangée KPI « revenu par abonnement » ; Limite.
@@ -804,6 +820,7 @@ Notation : `[a, b]` = rapport de largeur des colonnes (`st.columns([a, b], gap="
 - **Prix et couverture** : Constat ; `2 colonnes` : prix de la data (380) / couverture théorique et réception déclarée par région (380) ; Limite.
 
 **3. Offre financière** — onglets : Vue synthèse · Établissements financiers · Réseau mobile money · Usage et coût du mobile money
+
 - **Vue synthèse** : KPI ×4 ; Constat ; Synthèse ; Limite.
 - **Établissements** :
   - Constat ;
@@ -819,6 +836,7 @@ Notation : `[a, b]` = rapport de largeur des colonnes (`st.columns([a, b], gap="
   - Limite.
 
 **4. Population et offre** — onglets : Vue synthèse · Habitants par point de service · Agents par agence et mobile money seul · Statut et couverture
+
 - **Vue synthèse** : KPI ×4 « (national) » ; Constat ; Synthèse ; Limite.
 - **Habitants par point** : Constat ; `2 colonnes` : carte « habitants par agence » (560), avec un **curseur de seuils** (référence 10 000 et 30 000) et une note « variante » / carte « habitants par point mobile money » (560) ; tableau de densité ; Limite.
 - **Agents par agence** : Constat ; `[1.15, 1]` : carte (560) / points loin d'une agence, par région (380) ; tableau ; Limite.
@@ -829,12 +847,14 @@ Notation : `[a, b]` = rapport de largeur des colonnes (`st.columns([a, b], gap="
   - Limite.
 
 **5. Carte** (sans onglets) — un explorateur
+
 - `[2, 1]` : liste déroulante « Indicateur » / segments « Maille » (Commune, Préfecture ; Préfecture seule pour la priorité).
 - Bloc avec la carte (620) et l'export de l'indicateur affiché.
 - **La limite change avec l'indicateur.**
 - Indicateurs : habitants par agence, habitants par point mobile money, couverture théorique, fibre enterrée et fibre aérienne recensées, agents par agence, statut d'accès, catégorie dominante d'opérateur, quotient de localisation, distance à l'agence, classe de priorité.
 
 **6. Priorités** — onglets : Vue synthèse · Classement · Poids et robustesse · Comparateur
+
 - Sous l'en-tête, sur toutes les vues, un bandeau Limite : « Le classement porte sur l'accès aux agences, au mobile money et au réseau… pas sur l'usage d'Internet. »
 - **Vue synthèse** : KPI ×4 ; Constat ; `[0.85, 1.15]` : carte (560), avec l'interrupteur « Sans la couverture théorique » / tableau ; Limite.
 - **Classement** : Constat ; « Ce qui place les priorités hautes en tête » (380) : une ligne par préfecture, un point par mesure (position de 0 à 100), un losange pour le score, seuil de 70 en pointillé ; tableau des 39 préfectures (520) ; Limite.
@@ -846,6 +866,7 @@ Notation : `[a, b]` = rapport de largeur des colonnes (`st.columns([a, b], gap="
 - **Comparateur** : 2 listes « Préfecture A / B » ; tableau face à face (classe, 3 mesures, score, confiance, habitants) ; un « — » quand la donnée est inconnue ; Limite.
 
 **7. Diagnostic** — onglets : Vue d'ensemble · Fiche de préfecture · Communes signalées
+
 - **Vue d'ensemble** :
   - KPI ×4 ; Constat ;
   - « Carte d'identité des 10 préfectures » (560) ;
@@ -855,6 +876,7 @@ Notation : `[a, b]` = rapport de largeur des colonnes (`st.columns([a, b], gap="
 - **Communes signalées** : Constat ; `[0.9, 1.1]` : carte (560) / liste (520) ; Limite.
 
 **8. Recommandations** — onglets : Les 12 actions · Par thème · Par territoire · Ordre d'action et acteurs
+
 - **Les 12 actions** :
   - 3 filtres en ligne (Thème, Nature, Horizon) ;
   - barre de résumé (`.filtres-actifs`) et légende « jamais d'addition d'habitants » ;
@@ -865,6 +887,7 @@ Notation : `[a, b]` = rapport de largeur des colonnes (`st.columns([a, b], gap="
 - **Ordre et acteurs** : bloc « Ordre d'action » ; `[0.8, 1.2]` : carte des priorités (560) / « Qui agit ? » ; « Ce qui n'est pas recommandé » ; Limite.
 
 **9. Estimations et projections** (sans onglets)
+
 - KPI ×3 « Aujourd'hui, au rythme actuel, cible ».
 - Bloc « Où va-t-on si rien ne change ? » : tableau statique de phrases.
 - `[1.2, 1]` :
@@ -874,6 +897,7 @@ Notation : `[a, b]` = rapport de largeur des colonnes (`st.columns([a, b], gap="
 - Les prolongements sont présentés comme des ordres de grandeur, jamais comme des prévisions.
 
 **10. Sources et méthode** (sans onglets) — la seule page où apparaissent codes et sources
+
 - Six blocs, chacun dans un cadre à bordure :
   - Les données du défi (`st.table`) ;
   - Sources institutionnelles externes : leur rôle ;
@@ -887,21 +911,23 @@ Notation : `[a, b]` = rapport de largeur des colonnes (`st.columns([a, b], gap="
 
 ## 10. État, filtres et interactions
 
-| Clé de `st.session_state` | Rôle |
-| --- | --- |
-| `lang` | `"fr"` (défaut) ou `"en"` |
-| `f_regions`, `f_maille`, `f_priorites`, `f_milieux` | filtres globaux, initialisés par `setdefault`, **conservés d'une page à l'autre** |
-| `<page>_onglets_rang` | rang de l'onglet ouvert, par page |
-| `poids_d1/d2/d3`, `cmp_a/b`, `reco_theme/nature/horizon`, `carte_indicateur`… | contrôles propres à une page |
-| `pages` | références `st.Page` pour les liens internes (`st.page_link`) |
+| Clé de`st.session_state`                                                            | Rôle                                                                                       |
+| -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| `lang`                                                                               | `"fr"` (défaut) ou `"en"`                                                              |
+| `f_regions`, `f_maille`, `f_priorites`, `f_milieux`                            | filtres globaux, initialisés par`setdefault`, **conservés d'une page à l'autre** |
+| `<page>_onglets_rang`                                                                | rang de l'onglet ouvert, par page                                                           |
+| `poids_d1/d2/d3`, `cmp_a/b`, `reco_theme/nature/horizon`, `carte_indicateur`… | contrôles propres à une page                                                              |
+| `pages`                                                                              | références`st.Page` pour les liens internes (`st.page_link`)                          |
 
 **Portée des filtres** :
+
 - les chiffres nationaux (Internet, marché, prix, comptes) ne bougent pas avec les filtres, et un bandeau le dit ;
 - les chiffres territoriaux, les cartes et les tableaux suivent les filtres ;
 - sur une carte, les territoires hors sélection passent en gris clair, sans disparaître ;
 - sur la carte des régions, les régions filtrées sont cerclées de noir.
 
 **Prévu par le plan mais absent du code actuel** (à décider avant la réécriture) :
+
 - filtre par préfecture ;
 - maille « région » dans le filtre global ;
 - recherche globale ;
@@ -918,12 +944,12 @@ Notation : `[a, b]` = rapport de largeur des colonnes (`st.columns([a, b], gap="
 - **Noms de lieux** non traduits, sauf « Maritime hors Grand Lomé » → « Maritime excluding Greater Lomé ».
 - **Nombres** :
 
-| | Français | Anglais |
-| --- | --- | --- |
-| Pourcentage | `39,5 %` (espace insécable avant %) | `39.5%` |
-| Milliers | `759 599` (espace insécable) | `759,599` |
-| Années | `2030` | `2030` |
-| Plotly | `separators=", "` | `separators=".,"` |
+|             | Français                              | Anglais             |
+| ----------- | -------------------------------------- | ------------------- |
+| Pourcentage | `39,5 %` (espace insécable avant %) | `39.5%`           |
+| Milliers    | `759 599` (espace insécable)        | `759,599`         |
+| Années     | `2030`                               | `2030`            |
+| Plotly      | `separators=", "`                    | `separators=".,"` |
 
 - **Changement de langue** : `st.rerun()` ; l'onglet ouvert et les filtres sont conservés.
 - **Exports CSV** dans la langue choisie.
@@ -932,19 +958,19 @@ Notation : `[a, b]` = rapport de largeur des colonnes (`st.columns([a, b], gap="
 
 ## 12. Pièges connus de Streamlit (1.61)
 
-| Piège | Conséquence | Parade |
-| --- | --- | --- |
-| Un dossier nommé `pages/` | Streamlit bascule sur son ancienne navigation et ignore `st.navigation` | nommer le dossier `views/` |
-| `showSidebarNavigation = false` | masque aussi le menu | ne pas l'utiliser |
-| Onglets en 1.61 | construits avec React Aria, plus avec BaseWeb | viser `[role="tablist"]`, `[data-testid="stTab"]`, `.react-aria-SelectionIndicator` |
-| `st.container(key="x")` | rendu avec la classe `.st-key-x` | c'est ce qui permet de styler la barre du haut et les cartes de recommandation |
-| Une carte KPI par `st.markdown` | chaque carte dans son propre bloc, la grille casse | une rangée = une seule chaîne HTML |
-| HTML dans `st.dataframe` | non rendu | `Styler` pour la couleur ; `<table>` HTML si besoin |
-| Plotly `fitbounds` | le Togo apparaît minuscule | cadrage lon/lat explicite |
-| `AppTest` | ne rejoue pas le point d'entrée au changement de page ; échoue sur un `selectbox` à `format_func` rejoué | tests par page ; libellés directs dans les listes |
-| Images dans le HTML | chemin `app/static/<fichier>` | `enableStaticServing = true` |
-| En-tête de Streamlit (`stHeader`) | transparent en local et sur Heroku avec la barre latérale ouverte ; opaque, sur environ 60 px, sur Streamlit Cloud (boutons Fork et GitHub) ou avec la barre latérale fermée : le haut de la barre du haut est caché | ne pas masquer l'en-tête ; réserver sa hauteur seulement quand il contient `stToolbar` (section 4, « Contrainte : l'en-tête de Streamlit selon l'hébergement ») |
-| `toolbarMode = "minimal"` | ne retire pas les boutons ajoutés par l'hébergeur | dépôt privé, ou CSS sur `stToolbarActions` (non pris en charge par Streamlit) |
+| Piège                               | Conséquence                                                                                                                                                                                                             | Parade                                                                                                                                                                 |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Un dossier nommé`pages/`          | Streamlit bascule sur son ancienne navigation et ignore`st.navigation`                                                                                                                                                 | nommer le dossier`views/`                                                                                                                                            |
+| `showSidebarNavigation = false`    | masque aussi le menu                                                                                                                                                                                                     | ne pas l'utiliser                                                                                                                                                      |
+| Onglets en 1.61                      | construits avec React Aria, plus avec BaseWeb                                                                                                                                                                            | viser`[role="tablist"]`, `[data-testid="stTab"]`, `.react-aria-SelectionIndicator`                                                                               |
+| `st.container(key="x")`            | rendu avec la classe`.st-key-x`                                                                                                                                                                                        | c'est ce qui permet de styler la barre du haut et les cartes de recommandation                                                                                         |
+| Une carte KPI par`st.markdown`     | chaque carte dans son propre bloc, la grille casse                                                                                                                                                                       | une rangée = une seule chaîne HTML                                                                                                                                   |
+| HTML dans`st.dataframe`            | non rendu                                                                                                                                                                                                                | `Styler` pour la couleur ; `<table>` HTML si besoin                                                                                                                |
+| Plotly`fitbounds`                  | le Togo apparaît minuscule                                                                                                                                                                                              | cadrage lon/lat explicite                                                                                                                                              |
+| `AppTest`                          | ne rejoue pas le point d'entrée au changement de page ; échoue sur un`selectbox` à `format_func` rejoué                                                                                                          | tests par page ; libellés directs dans les listes                                                                                                                     |
+| Images dans le HTML                  | chemin`app/static/<fichier>`                                                                                                                                                                                           | `enableStaticServing = true`                                                                                                                                         |
+| En-tête de Streamlit (`stHeader`) | transparent en local et sur Heroku avec la barre latérale ouverte ; opaque, sur environ 60 px, sur Streamlit Cloud (boutons Fork et GitHub) ou avec la barre latérale fermée : le haut de la barre du haut est caché | ne pas masquer l'en-tête ; réserver sa hauteur seulement quand il contient`stToolbar` (section 4, « Contrainte : l'en-tête de Streamlit selon l'hébergement ») |
+| `toolbarMode = "minimal"`          | ne retire pas les boutons ajoutés par l'hébergeur                                                                                                                                                                      | dépôt privé, ou CSS sur`stToolbarActions` (non pris en charge par Streamlit)                                                                                      |
 
 ---
 
