@@ -321,14 +321,18 @@ rangee_kpi("Ce que montre la carte", [
 
 # ------------------------------------------------------------------ Section 2 — Réglages et carte
 st.markdown("")
-titre_bloc("Le Togo, préfecture par préfecture",
-           "Une couche à la fois, en 5 classes fixes ; l'agrandissement montre la région Maritime et le Grand "
-           "Lomé, où se concentrent les auto-écoles. Molette ou barre d'outils pour zoomer.")
+titre_bloc("Le Togo, préfecture par préfecture")
+note_carte("Une couche à la fois, en 5 classes fixes ; l'agrandissement montre la région Maritime et le Grand "
+           "Lomé, où se concentrent les auto-écoles. Molette ou barre d'outils pour zoomer.<br><br>"
+           "Projection Mercator, cadrée sur le Togo, sans fond de carte. Les 3 cartes partagent les filtres de la "
+           "barre latérale ; le territoire choisi garde ses couleurs, les autres préfectures passent en beige.",
+           couleur="bleu")
 # Les 5 vues « État du réseau » ont leur propre filtre : le filtre « Couche » ne garde que les couches thématiques.
 COUCHES_THEMATIQUES = [k for k in COUCHES if not k.startswith("État du réseau")]
-# Réglages propres à la page, placés dans la barre latérale (ils n'apparaissent que sur la page Carte) pour
-# laisser toute la largeur aux trois cartes. Les filtres de territoire par défaut restent au-dessus.
-with st.sidebar:
+# Réglages propres à la page, placés dans la barre latérale juste au-dessus du bouton « Réinitialiser les filtres »
+# (emplacement réservé par app.py) pour laisser toute la largeur aux trois cartes.
+_reglages = st.session_state.get("sidebar_reglages")
+with (_reglages if _reglages is not None else st.sidebar):
     st.markdown('<div class="reglages-carte-titre">Réglages de la carte</div>', unsafe_allow_html=True)
     nom_couche = st.selectbox("Couche (carte 1)", COUCHES_THEMATIQUES, key="ca_couche")
     trace = st.selectbox("Tracé (carte 1)", ["Routes classées par type", "État des tronçons relevés", "Aucun"],
@@ -617,11 +621,8 @@ export_csv(exp, "couche_affichee.csv", "ca_exp_couche", "Télécharger la couche
 
 # La carte des constats sous la section (comme sur les autres pages).
 constat(f'<strong>{html.escape(nom_couche)}</strong><br>{cfg["constat"]}')
-st.caption("Projection Mercator, cadrée sur le Togo, sans fond de carte. Les 3 cartes partagent les filtres de la "
-           "barre latérale ; le territoire choisi garde ses couleurs, les autres préfectures passent en beige.")
 
 # ---------------------------------------------------------- Section 4 — Fiche de la préfecture choisie
-titre_bloc("La préfecture choisie")
 if choisie is None:
     st.caption("Cliquez sur une préfecture, une auto-école ou un équipement de la première carte : la préfecture "
                "s'affiche ici, avec ses actions et un lien vers sa fiche.")
@@ -707,8 +708,8 @@ st.markdown(
     f' &nbsp;·&nbsp; <b>Mauvais état :</b> la pastille prend la couleur de sa classe sur la carte — '
     + "".join(f'{badge(lib, BLEUS[i])}' for i, (_, _, lib) in enumerate(CL_ETAT))
     + ' &nbsp;·&nbsp; Mô : part en mauvais état non définie (aucune route classée).</div>', unsafe_allow_html=True)
-st.caption(f"{len(tab)} préfectures affichées. Les 5 états du réseau, la densité et l'état moyen sont dans l'export ; "
-           "la carte les montre couche par couche.")
+note_carte(f"<strong>{len(tab)}</strong> préfectures affichées. Les 5 états du réseau, la densité et l'état moyen "
+           "sont dans l'export ; la carte les montre couche par couche.", couleur="vert")
 export_csv(tab, "couches_prefectures.csv", "ca_exp_couches")
 
 # ------------------------------------------------------------------ Section 10 — Les 272 auto-écoles recensées
@@ -803,7 +804,8 @@ with g:
               "Mô sans route classée : 38 préfectures évaluées sur 39.",
               "103 des 132 auto-écoles agréées dans le Grand Lomé."])
 with d:
-    limite("État relevé en 2020, sur les routes nationales seulement. Accès rural estimé avec une population répartie "
-           "uniformément dans chaque préfecture. Distance à vol d'oiseau, depuis le chef-lieu ou un point central. "
-           "Équipements recensés en 2021-2022, non vérifiés, hors indicateurs.")
+    limite(puces=["État relevé en 2020, sur les routes nationales seulement.",
+                  "Accès rural estimé avec une population répartie uniformément dans chaque préfecture.",
+                  "Distance à vol d'oiseau, depuis le chef-lieu ou un point central.",
+                  "Équipements recensés en 2021-2022, non vérifiés, hors indicateurs."])
 pied()

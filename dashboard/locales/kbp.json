@@ -235,6 +235,10 @@
   "texte": "Lɩmaɣza wena a-yɔɔ ɖɩtɩŋɩɣna yɔ:",
   "relu": false
  },
+ "103 des 132 auto-écoles agréées": {
+  "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ pɩwɛɛ se pɔñɔɔzɩ tɔm susuu tʋmɩyɛ yɔ, ɖɩwɛɛnɩ ɖoŋ fezuu taa.",
+  "relu": false
+ },
  "103 des 132 auto-écoles agréées dans le Grand Lomé.": {
   "texte": "Lɩmaɣza wena a-yɔɔ ɖɩtɩŋɩɣna nɛ ɖihiɣ nʋmɔʋ lɩzʋʋ waɖɛ yɔ, awɩlɩɣnɩ se ɖɩwɛɛnɩ lɩmaɣza kɩbana.",
   "relu": false
@@ -285,6 +289,10 @@
  },
  "13 préfectures au levier réseau (304,6 km) ; 23 au levier formation (41 auto-écoles).": {
   "texte": "13 tɛtʊ ndʊ tɩ-walanzɩ wɛna yɔ (304.6 km) nɛ 23 tɛtʊ ndʊ tɩ-walanzɩ wɛna yɔ (41 tɛtʊ ndʊ tɩ-walanzɩ wɛna yɔ).",
+  "relu": false
+ },
+ "13 préfectures au réseau routier dégradé": {
+  "texte": "13 Prefekturɩ nzɩ sɩ-taa nʋmɔʋ wɛ kaɖɛ yɔ",
   "relu": false
  },
  "13 préfectures au-delà du seuil de 22,13 %.": {
@@ -361,6 +369,10 @@
  },
  "152 065 habitants": {
   "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa ɛyaa kɛ 152 065",
+  "relu": false
+ },
+ "16 797 équipements de sécurité routière (panneaux, ralentisseurs, feux…)": {
+  "texte": "16 797 Lɩmɩyɛ yɔɔ kandɩyaa (nɔɔyɩsɩ, calɩmɩyɛ, miŋ...)",
   "relu": false
  },
  "16 préfectures sur 39": {
@@ -607,6 +619,10 @@
   "texte": "23 Kpɛlɩkʊʊ tɛtʊ",
   "relu": false
  },
+ "23 préfectures sans auto-école agréée": {
+  "texte": "23 Prefekturɩ nzɩ sɩfɛyɩnɩ sukuli ŋgʋ kɩhaɣ nʋmɔʋ yɔ",
+  "relu": false
+ },
  "23 préfectures sur 39": {
   "texte": "39 Prefekturɩ 23",
   "relu": false
@@ -669,6 +685,10 @@
  },
  "27,2 % des routes en mauvais état (113,5 km évalués, 2 tronçons critiques).": {
   "texte": "Lɩmaɣza wena a-yɔɔ pɔcɔŋna yɔ, a-taa 27,2% wɛ kaɖɛ taa (113.5 km, hɔɔlʋʋ naalɛ kɩcɛyɩm).",
+  "relu": false
+ },
+ "272 auto-écoles, dont 132 agréées": {
+  "texte": "Sɔɔndʋ kpaɣʋ taa lɛ, koobiya mba palakaɣ-wɛ tʋmɩyɛ yɔ, pa-taa nabɛyɛ wɛna ɛzɩ sukuli 272 yɔ.",
   "relu": false
  },
  "28,0 % des routes en mauvais état (167,5 km évalués, un tronçon critique).": {
@@ -833,10 +853,6 @@
  },
  "39 préfectures": {
   "texte": "39 Prefekturɩ",
-  "relu": false
- },
- "39 préfectures affichées. Les 5 états du réseau, la densité et l'état moyen sont dans l'export ; la carte les montre couche par couche.": {
-  "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa tɛtʊ natʊyʊ wɛ ndɩ nɛ ajɛya ana a-naalɛ.",
   "relu": false
  },
  "3 482 856 habitants. Distance depuis le chef-lieu (un point central pour 9 préfectures).": {
@@ -2059,6 +2075,14 @@
   "texte": "Lɩmaɣzɩyɛ",
   "relu": false
  },
+ "Carte 1": {
+  "texte": "Kɩɖaʋ 1",
+  "relu": false
+ },
+ "Carte 3": {
+  "texte": "Kɩɖaʋ 3",
+  "relu": false
+ },
  "Carte du réseau et des auto-écoles": {
   "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ pɩwɛɛ se ɖɩwɛɛ nɛ ɖɩlakɩ tʋmɩyɛ yɔ",
   "relu": false
@@ -2323,6 +2347,10 @@
   "texte": "Lɩmɩyɛ",
   "relu": false
  },
+ "Couche (carte 1)": {
+  "texte": "Lɩmaɣzɩyɛ (kaarta 1)",
+  "relu": false
+ },
  "Couleur par mesure :": {
   "texte": "Hɔɔlʋʋ ŋgʋ kɩ-taa:",
   "relu": false
@@ -2489,6 +2517,10 @@
  },
  "Distance à l’auto-école la plus proche": {
   "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ pɩwɛɛ se ŋtɩŋna yɔ",
+  "relu": false
+ },
+ "Distance à vol d": {
+  "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ",
   "relu": false
  },
  "Distance à vol d’oiseau (R-16) de chaque maille de population à l’auto-école la plus proche ; moyenne pondérée par la population ; population à plus de SE-08 km": {
@@ -3083,6 +3115,10 @@
   "texte": "Tɔm ndʋ tɩ-tɔm pɔyɔɔdɩ yɔ tɩkɛ toovenim, pɩtasɩnɩ se  ⁇  asɛyʋʋ wɛɛ nɛ pɩpaɣlɩɣ",
   "relu": false
  },
+ "L'état du réseau routier": {
+  "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ lɛ, nʋmɔʋ ŋgʋ kɩ-taa palakaɣ tʋmɩyɛ yɔ, kɩwɛɛ kɩ-taa.",
+  "relu": false
+ },
  "La campagne PRISE a relevé le personnel, l’activité, les horaires et les véhicules de 272 auto-écoles, sans les publier. Ces données diraient lesquelles fonctionnent, et vérifieraient le manque dans les 23 préfectures sans auto-école agréée.": {
   "texte": "Kpaɣnɩ alɩwaatʋ ndʋ tɩ-taa lɛ, ɛyaa sakɩyɛ kɔm nɛ pɔcɔŋnɩ kɩ-yɔɔ nɛ patɩlɩɣ kɩ-tɛtʋ taa tɔm kɩcɛyɩtʋ ndʋ tɩ-yɔɔ.",
   "relu": false
@@ -3149,10 +3185,6 @@
  },
  "La population tient surtout à Agoè-Nyivé, pour peu de km. L’état date d’un relevé de 2020.": {
   "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa ɛyaa sakɩyɛ wɛ Agoë-Nyivé tɛtʋ taa, kɩwɛna kilomɛtanaa pazɩ.",
-  "relu": false
- },
- "La préfecture choisie": {
-  "texte": "Pɛlɩzɩ Prefekturɩ",
   "relu": false
  },
  "La recommandation de zone de la Centrale garde sa priorité haute : la Centrale reste la zone au réseau le plus dégradé (40,3 % de km en mauvais état, contre 12,8 % dans les Savanes), et la lecture « formation » ne change pas. Un écart de 0,28 point ne sépare pas deux zones à ce niveau de preuve": {
@@ -3688,6 +3720,10 @@
   "texte": "Tɛtʊ ndʊ tɩ-taa tɛtʊ natʊyʊ wɛna yɔ",
   "relu": false
  },
+ "Maritime et Grand Lomé, agrandi": {
+  "texte": "Teŋgu nɛ Lomé tɛtʋ sɔsɔtʋ",
+  "relu": false
+ },
  "Maritime hors Grand Lomé a la formation et la desserte sous la médiane : 5 auto-écoles agréées pour 1 346 615 habitants (0,37 pour 100 000), 3,51 km de routes pour 10 000 habitants. 3 de ses 6 préfectures reçoivent le levier formation (6 auto-écoles).": {
   "texte": "Tɛtʊ tʊnɛ tɩ-taa tɛtʊ ndʊ payaɣ se Maritime yɔ, tɩwɛna sukuli kɩtɛzʊʊ ŋgʊ kɩwɛ ndɩ nɛ keteŋa kpeekpe taa.",
   "relu": false
@@ -3918,10 +3954,6 @@
  },
  "Niveau :": {
   "texte": "Lɩmaɣzɩyɛ:",
-  "relu": false
- },
- "Niveau A": {
-  "texte": "Lɩmaɣzɩyɛ A",
   "relu": false
  },
  "Niveau A. Données nationales : les permis n'ont ni territoire, ni âge.": {
@@ -4364,6 +4396,10 @@
   "texte": "Pɩnaɣ 2020 taa ɛyaa kɩlɩ ɖɔʊ 100 m",
   "relu": false
  },
+ "Population 2022 (INSEED) : 8,095 M hab.": {
+  "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa ɛyaa kɩla ɖɔʊ yɔ: ɛyaa miiliyɔɔwaa 8,095",
+  "relu": false
+ },
  "Population 2022, 5 classes :": {
   "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa ɛyaa kɩlɩ ɖɔʊ pɩnaɣ 2022 taa:",
   "relu": false
@@ -4504,8 +4540,8 @@
   "texte": "Kɩ-lɩmɖʋyaa",
   "relu": false
  },
- "Projection Mercator, cadrée sur le Togo, sans fond de carte. Les contours des 5 régions sont toujours tracés ; le territoire choisi dans la barre latérale garde ses couleurs, les autres préfectures passent en beige.": {
-  "texte": "Mɛɛrkatɩ ñɩɣyʋʋ ŋgʋ kɩwɛ Togo ɛjaɖɛ yɔɔ yɔ, kɩ-taa lɛɣtʋ fɛyɩ.",
+ "Projection Mercator, cadrée sur le Togo, sans fond de carte. Les 3 cartes partagent les filtres de la barre latérale ; le territoire choisi garde ses couleurs, les autres préfectures passent en beige.": {
+  "texte": "Mɛɛrkatɩ ñɩɣyʋʋ ŋgʋ kɩwɛ Togo ɛjaɖɛ taa yɔ, kɩ-taa lɛɣtʋ natʋyʋ fɛyɩ.",
   "relu": false
  },
  "Préfecture": {
@@ -4804,10 +4840,6 @@
   "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ",
   "relu": false
  },
- "Recensement de 2022. A = mesuré, B = calculé, C = estimé.": {
-  "texte": "Pɩnaɣ 2022 tɛ ɛyaa kɩlɩzɩtʋ: A = kɩlɩna, B = kɩlɩna, C = kɩlɩna.",
-  "relu": false
- },
  "Recensement des données ouvertes : immatriculations, permis, accidents, réseau, auto-écoles, population, enquêtes. Licences, mailles et années vérifiées une à une.": {
   "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ pɔcɔŋnaa yɔ, pɩwɩlɩɣ se patɩŋnɩ nʋmɔʋ lɩzʋʋ sɔnzɩ yɔɔ nɛ pañɩɣ niye tɔm kɩcɛyɩtʋ natʋyʋ taa.",
   "relu": false
@@ -4958,6 +4990,10 @@
  },
  "Régions (5)": {
   "texte": "Ajɛɛ (5)",
+  "relu": false
+ },
+ "Réglages de la carte": {
+  "texte": "Kaarɩtɩ yɔɔ ñɔɔzɩtʋ",
   "relu": false
  },
  "Réinitialiser les filtres": {
@@ -5268,8 +5304,8 @@
   "texte": "Lɩm tɩŋa",
   "relu": false
  },
- "Tracé": {
-  "texte": "Pɩlɩʋ",
+ "Tracé (carte 1)": {
+  "texte": "Kɩɖaʋ ŋgʋ kɩ-taa pɔyɔɔdɩ tɔm ndʋ yɔ",
   "relu": false
  },
  "Trait plein : observé jusqu": {
@@ -5453,16 +5489,12 @@
   "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ lɛ, kɩɖaʋ ŋgʋ pɔcɔŋnɩ tɔm ndʋ yɔ.",
   "relu": false
  },
- "Une couche à la fois, en 5 classes fixes ; l": {
-  "texte": "Lɩm kʋɖʋmʋʋ paa ɛzɩmtaa, pɩlɩna hɔɔlɩŋ kagbanzɩ taa;",
+ "Une couche à la fois, en 5 classes fixes ; l'agrandissement montre la région Maritime et le Grand Lomé, où se concentrent les auto-écoles. Molette ou barre d'outils pour zoomer.": {
+  "texte": "Lone nɖɩ ɖɩ-taa ɖɩwɛɛna sukuli wena payaɣ se Maritime nɛ Grand Lomé yɔ, ɖɩ-taa.",
   "relu": false
  },
  "Une date situe une variation ; elle ne l'explique pas.": {
   "texte": "Kɩyakʋ nakʋyʋ wɛɛ nɛ kɩwɛɛ nɛ kɩlɛɣzɩɣ.",
-  "relu": false
- },
- "Une seconde carte : chaque zone dans sa couleur, les tronçons relevés colorés selon leur état dominant, les limites des 5 régions. Elle suit les filtres de la barre latérale.": {
-  "texte": "Lɩmaɣzɩyɛ naalɛ ñɩnɖɛ lɛ se: paa hɔɔlɩŋ weyi ɩ-taa yɔ, ɛ-wɛtʋ wɛ ndɩ nɛ hɔɔlʋʋ ŋgʋ kɩ-hɔɔlʋʋ taa.",
   "relu": false
  },
  "Une seule auto-école agréée : si elle ferme, la préfecture n'en a plus": {
@@ -5773,10 +5805,6 @@
   "texte": "kpɩkpɩkpɩkpɩkpɩkpɩkpɩkpɩkpɩkpɩkpɩkpɩkpɩkpɩkpɩkpɩkpɩkpɩkpɩkpɩkpɩkpɩkpɩkpɩ",
   "relu": false
  },
- "agrandissement montre la région Maritime et le Grand Lomé, où se concentrent les auto-écoles. Molette ou barre d": {
-  "texte": "Ɛjaɖɛ nɖɩ ɖɩ-taa tɔm susuyaa sakɩyɛ wɛɛ nɛ pɔcɔŋnɩ nʋmɔʋ lɩzʋʋ sukuli yɔɔ.",
-  "relu": false
- },
  "annuaire national": {
   "texte": "ɛjaɖɛ kpeekpe takayaɣ",
   "relu": false
@@ -5863,10 +5891,6 @@
  },
  "auto-écoles": {
   "texte": "kpɛlɛkʋʋ sukuli",
-  "relu": false
- },
- "auto-écoles 2021-2022": {
-  "texte": "kpɛlɛkʋʋ sukuli 2021-2022",
   "relu": false
  },
  "auto-écoles affichées, dont": {
@@ -6453,10 +6477,6 @@
   "texte": "nʋmɔʋ nɛ sukuli",
   "relu": false
  },
- "la région la plus dense : 103 des 132 auto-écoles agréées": {
-  "texte": "Hɔɔlʋʋ ŋgʋ kɩ-taa ɛyaa ɖɔkɩɣ sɔsɔɔ yɔ: sukuli 132 taa lɛ, 103 kɛnɩnɩ nʋmɔʋ lɩzɩyaa",
-  "relu": false
- },
  "le cumul complet (SE-10) exige le risque, non mesuré par territoire (08 §3.1)": {
   "texte": "Lɩm mbʋ pɩhaɣ ɛyaa waɖɛ se pala mbʋ yɔ, pɩpɩzɩɣ nɛ pɩha-wɛ waɖɛ se pala mbʋ pɩhaɣ-wɛ waɖɛ se pala yɔ.",
   "relu": false
@@ -6573,6 +6593,10 @@
   "texte": "Paanawa se Grand Lomé tɛtʋ taa ɛyaa sakɩyɛ kɩlɩɣ kʋdɔŋ kpaʋ yaa kɩlɩɣ kʋdɔŋ kpaʋ (sɩɩtʋ 1)",
   "relu": false
  },
+ "niveau A : Recensement de 2022. A = mesuré, B = calculé, C = estimé. Carte 3": {
+  "texte": "Lɩmaɣzɩyɛ A: Ɛjaɖɛ tɛ ɛyaa kɩlɩzɩtʋ pɩnaɣ 2022 taa. A = kɩmaɣzɩ, B = kɩlɩ, C = kɩlɩ.",
+  "relu": false
+ },
  "niveau C": {
   "texte": "tɛgbɛ C",
   "relu": false
@@ -6613,8 +6637,8 @@
   "texte": "pɔcɔna",
   "relu": false
  },
- "oiseau, depuis le chef-lieu ou un point central. Équipements recensés en 2021-2022, non vérifiés, hors indicateurs.": {
-  "texte": "kpɩnɛ nɖɩ ɖɩlɩnɩ tɛtʋ sɔsɔtʋ ndʋ tɩ-taa yaa lone naɖɩyɛ taa yɔ. Pɩnzɩ 2021-2022 alɩwaatʊ taa lɛ, wondu ndʋ tɩwɛ kɩjaʋ yɔɔ nɛ patapɩzɩ pasɩɣzɩ tɩ-yɔɔ kɔyɔ:",
+ "oiseau, depuis le chef-lieu ou un point central.": {
+  "texte": "Lone nɖɩ ɖɩlɩnɩ lone sɔsɔɖɛ naɖɩyɛ yaa lone naɖɩyɛ taa yɔ ɖɩ-taa.",
   "relu": false
  },
  "ont au moins une auto-école agréée (41,0 %)": {
@@ -6717,10 +6741,6 @@
   "texte": "tɛtʊ taa tɛtʊ",
   "relu": false
  },
- "population 2022": {
-  "texte": "ɛyaa pɩnaɣ 2022 taa",
-  "relu": false
- },
  "population d'aujourd'hui": {
   "texte": "ɛyaa mba pɛwɛ sɔnɔ yɔ",
   "relu": false
@@ -6771,6 +6791,10 @@
  },
  "préfecture du levier formation": {
   "texte": "kpɛlɛkʊʊ tʊmɩyɛ",
+  "relu": false
+ },
+ "préfectures affichées. Les 5 états du réseau, la densité et l'état moyen sont dans l'export ; la carte les montre couche par couche.": {
+  "texte": "Paɖaɣnɩ-wɛ lɩzʋʋ nɛ patɩŋnɩ kɩlɛmʋʋ yɔɔ nɛ pana se pɛtɛzɩ-wɛ lɩzʋʋ nɛ pɛtɛzɩ-wɛ lɩzʋʋ.",
   "relu": false
  },
  "préfectures au réseau dégradé": {
@@ -6851,10 +6875,6 @@
  },
  "réseau": {
   "texte": "tʊmɩyɛ",
-  "relu": false
- },
- "réseau relevé en 2020": {
-  "texte": "Pɩnaɣ 2020 taa",
   "relu": false
  },
  "sans auto-école agréée": {
@@ -7061,6 +7081,10 @@
   "texte": "Tɔm ndʋ tɩpɩzɩɣ nɛ tɩsɩnɩ-wɛ nɛ patɩlɩ-tʋ yɔ, tɩlɩnɩ \"Methodology\" hɔɔlʋʋ taa.",
   "relu": false
  },
+ "zones en fond, tronçons par état": {
+  "texte": "hɔɔlɩŋ weyi ɩ-wayɩ yɔ, hɔɔlʋʋ kʋɖʋmʋʋ",
+  "relu": false
+ },
  "« Les accidents augmentent » est nuancé : volume en hausse, taux en baisse.": {
   "texte": "⁇  Akɩzasɩ sɩɣlɩɣ  ⁇  sɩɣlɩɣ: kɩlɩɣna, kɩtɔkɩna.",
   "relu": false
@@ -7125,20 +7149,16 @@
   "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ pɩtɩŋna nʋmɔʋ lɩzʋʋ yɔɔ yɔ",
   "relu": false
  },
+ "Équipements recensés en 2021-2022, non vérifiés, hors indicateurs.": {
+  "texte": "Tʊma wena a-taa palɩza yɔ, ajɛya kɩkpɛndɩɣ ŋgbɛyɛ naɖɩyɛ taa.",
+  "relu": false
+ },
  "Étape": {
   "texte": "Lɩmaɣzɩyɛ",
   "relu": false
  },
- "État des tronçons :": {
-  "texte": "Ñɩɣlɩm mbʋ pɩ-taa yɔ:",
-  "relu": false
- },
  "État des tronçons relevés": {
   "texte": "Kʋnʋmɩŋ weyi ɩ-taa palɩzɩ-wɛ yɔ",
-  "relu": false
- },
- "État dominant par tronçon (le plus de km parmi bon, moyen, mauvais et en travaux). Relevé de 2020, routes nationales seulement. Niveau C.": {
-  "texte": "Ɛjaɖɛ nɖɩ ɖɩ-taa ɛyaa kɩlɩ ɖɔʊ yɔ (pɩtalɩ kilomɛtanaa sakɩyɛ mbʋ pɩwɛ ɖeu, cikpeɖe nɛ kɩdɛkɛdɩm yaa tʋma ɖɩlaɖɛ taa) Pɩnaɣ 2020 ñɩŋga.",
   "relu": false
  },
  "État du réseau par zone": {
@@ -7153,20 +7173,16 @@
   "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ pañakɩ pana nɛ pañɩɣ nesi yɔ",
   "relu": false
  },
- "État du réseau routier sur cette carte.": {
-  "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ lɛ, ɖɩ-taa lɛ se:",
-  "relu": false
- },
  "État relevé en 2020, sur les routes nationales seulement, méthode de notation non publiée. L": {
   "texte": "Ɛjaɖɛ nɖɩ ɖɩ-taa palakaɣ tʊmɩyɛ pɩnaɣ 2020 taa yɔ, ɖɩ-taa lɛ, paayɔɔdʋʋ tʊmɩyɛ nɖɩ ɖɩ-yɔɔ.",
   "relu": false
  },
- "État relevé en 2020, sur les routes nationales seulement. Accès rural estimé avec une population répartie uniformément dans chaque préfecture. Distance à vol d": {
-  "texte": "Pɩnaɣ 2020 taa lɛ, tɛtʊ ndʊ tɩ-taa ɛyaa kɩlɩna ɖɔm yɔ.",
+ "État relevé en 2020, sur les routes nationales seulement.": {
+  "texte": "Pɩnaɣ 2020 taa lɛ, ɛjaɖɛ nɖɩ ɖɩ-taa ɛyaa ɖɔkɩ nʋmɔʋ yɔ, ɖɩ-taa ɖeke.",
   "relu": false
  },
- "États du réseau à afficher": {
-  "texte": "Nɔɔɖɛyaa mba pɔsɔɔlaa se palɩzɩ pa-tɩ yɔ",
+ "États du réseau (carte 3)": {
+  "texte": "Tɛtʊ tʊmɩyɛ (hadɩ 3)",
   "relu": false
  },
  "Évolution de l’état": {
@@ -7205,12 +7221,16 @@
   "texte": "Tɔm ndʋ tɩ-yɔɔ pɔyɔɔdɩ.",
   "relu": false
  },
- "état du réseau en 2020 : l": {
-  "texte": "Pɩnaɣ 2020 taa tɛtʊ ñɔɔzɩtʋ: l",
+ "état des tronçons :": {
+  "texte": "kpɩnɛ kpɩnɛ kpɩnɛ:",
   "relu": false
  },
- "état du réseau routier": {
-  "texte": "tɛtʊ ndʊ tɩ-yɔɔ yɔ",
+ "état dominant par tronçon (le plus de km parmi bon, moyen, mauvais, en travaux), relevé 2020, routes nationales (niveau C).": {
+  "texte": "Tɛtʊ ndʊ tɩ-taa tɛtʊ ñʊʊ tʊ (kɩlɛɛfɩyɔm kɩlɩna yɔ: camɩyɛ, hɛkʋ nɛ kɩdɛkɛdɩm), pɩnaɣ 2020 ñɩŋga taa.",
+  "relu": false
+ },
+ "état du réseau en 2020 : l": {
+  "texte": "Pɩnaɣ 2020 taa tɛtʊ ñɔɔzɩtʋ: l",
   "relu": false
  },
  "état du réseau, cartographier le réseau et les auto-écoles, recommander.": {

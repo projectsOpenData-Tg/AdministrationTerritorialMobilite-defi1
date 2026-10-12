@@ -319,3 +319,18 @@ Couleurs fixes par donnée, dans `theme.py`, pour qu'un indicateur garde sa coul
 - Suppression de la seconde `st.plotly_chart` séparée ; légendes des cartes 1 et 3 réunies sous la figure unique.
 - Maquette de validation générée hors-ligne (rendu cartésien, le fond Plotly interactif n'étant pas chargeable
   dans le bac à sable ; la vraie appli garde survol/zoom/clic).
+
+## 22. Barre latérale et page Carte — réorganisation (sur design/palette-a)
+
+- **Réglages de la carte placés au-dessus du bouton « Réinitialiser les filtres »** : app.py réserve un conteneur
+  dans la barre latérale (`st.session_state["sidebar_reglages"]`) entre les pastilles de filtre et le bouton ; la
+  page Carte y dépose ses sélecteurs (ils n'apparaissent donc que sur cette page).
+- **Repères chiffrés sous le bouton** passés en **liste à puces** (classe `.sidebar-stats`) : 39 préfectures · 6 zones ;
+  population 2022 (INSEED) 8,095 M hab. ; 272 auto-écoles dont 132 agréées ; 23 préfectures sans auto-école agréée ;
+  13 préfectures au réseau dégradé ; 16 797 équipements de sécurité routière.
+- **Slogan + illustration de route bien en bas de la barre latérale** (inchangé, mais plus rien ne passe en dessous
+  maintenant que les réglages de la page vont dans le conteneur réservé).
+- Page Carte : le texte sous le titre « Le Togo, préfecture par préfecture » et la note « Projection Mercator… »
+  réunis dans une **carte blanche à liseré bleu et pictogramme « i »** ; **titre « La préfecture choisie » retiré**.
+- Légende « N préfectures affichées… » passée en **carte « i » verte** ; encadré **« Limite de cette page » en liste
+  à puces** (une limite par ligne).

@@ -75,8 +75,18 @@ with st.sidebar:
     st.pills("Zone", ZONES, selection_mode="multi", key="f_zones")
     st.pills("Priorité", PRIORITES, selection_mode="multi", key="f_priorites")
     st.pills("Levier", LEVIERS, selection_mode="multi", key="f_leviers")
+    # Emplacement des réglages propres à la page (ex. la page Carte y place ses sélecteurs) : au-dessus du bouton.
+    st.session_state["sidebar_reglages"] = st.container()
     st.button("Réinitialiser les filtres", on_click=reinitialiser, use_container_width=True, icon=":material/restart_alt:")
-    st.caption("39 préfectures · 6 zones · population 2022 · réseau relevé en 2020 · auto-écoles 2021-2022")
+    st.markdown(
+        '<ul class="sidebar-stats">'
+        '<li>39 préfectures · 6 zones</li>'
+        '<li>Population 2022 (INSEED) : 8,095 M hab.</li>'
+        '<li>272 auto-écoles, dont 132 agréées</li>'
+        '<li>23 préfectures sans auto-école agréée</li>'
+        '<li>13 préfectures au réseau routier dégradé</li>'
+        '<li>16 797 équipements de sécurité routière (panneaux, ralentisseurs, feux…)</li>'
+        '</ul>', unsafe_allow_html=True)
     pied_barre_laterale()
 
 navigation.run()

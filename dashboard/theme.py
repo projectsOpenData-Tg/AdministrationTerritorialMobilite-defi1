@@ -307,6 +307,10 @@ div.st-key-topbar_droite [data-testid="stMarkdownContainer"] { display: flex; ju
 /* Titre du bloc de réglages propre à la page Carte, dans la barre latérale */
 .reglages-carte-titre { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
   color: #1769aa; margin: 0.6rem 0 0.2rem; border-top: 1px solid #e2e8f0; padding-top: 0.7rem; }
+/* Repères chiffrés sous le bouton « Réinitialiser les filtres », en liste à puces discrète */
+ul.sidebar-stats { margin: 0.7rem 0 0; padding-left: 16px; display: flex; flex-direction: column; gap: 5px;
+  font-size: 0.74rem; line-height: 1.35; color: #64748b; }
+ul.sidebar-stats li::marker { color: #94a3b8; }
 /* Chiffres clés centrés (rangee_kpi(centre=True)) */
 .kpi-grille.centre .kpi { border-bottom-width: 3px; }
 .kpi-grille.centre .kpi-reserve { text-align: center; border-top: 0; margin-top: 8px; color: #64748b; }

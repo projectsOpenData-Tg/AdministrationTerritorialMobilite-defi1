@@ -235,6 +235,10 @@
   "texte": "103 of the 132",
   "relu": false
  },
+ "103 des 132 auto-écoles agréées": {
+  "texte": "103 of the 132 accredited driving schools",
+  "relu": false
+ },
  "103 des 132 auto-écoles agréées dans le Grand Lomé.": {
   "texte": "103 of the 132 licensed driving schools in Greater Lomé.",
   "relu": false
@@ -285,6 +289,10 @@
  },
  "13 préfectures au levier réseau (304,6 km) ; 23 au levier formation (41 auto-écoles).": {
   "texte": "13 prefectures on the network lever (304.6 km); 23 on the training lever (41 driving schools).",
+  "relu": false
+ },
+ "13 préfectures au réseau routier dégradé": {
+  "texte": "13 prefectures with degraded road network",
   "relu": false
  },
  "13 préfectures au-delà du seuil de 22,13 %.": {
@@ -361,6 +369,10 @@
  },
  "152 065 habitants": {
   "texte": "152 065 inhabitants",
+  "relu": false
+ },
+ "16 797 équipements de sécurité routière (panneaux, ralentisseurs, feux…)": {
+  "texte": "16 797 road safety equipment (panels, slowers, lights, etc.)",
   "relu": false
  },
  "16 préfectures sur 39": {
@@ -607,6 +619,10 @@
   "texte": "23 prefectures of the training levy",
   "relu": false
  },
+ "23 préfectures sans auto-école agréée": {
+  "texte": "23 prefectures without an accredited driving school",
+  "relu": false
+ },
  "23 préfectures sur 39": {
   "texte": "23 out of 39 prefectures",
   "relu": false
@@ -669,6 +685,10 @@
  },
  "27,2 % des routes en mauvais état (113,5 km évalués, 2 tronçons critiques).": {
   "texte": "27.2% of roads in poor condition (113.5 km assessed, 2 critical sections).",
+  "relu": false
+ },
+ "272 auto-écoles, dont 132 agréées": {
+  "texte": "272 driving schools, of which 132 are accredited",
   "relu": false
  },
  "28,0 % des routes en mauvais état (167,5 km évalués, un tronçon critique).": {
@@ -833,10 +853,6 @@
  },
  "39 préfectures": {
   "texte": "39 prefectures",
-  "relu": false
- },
- "39 préfectures affichées. Les 5 états du réseau, la densité et l'état moyen sont dans l'export ; la carte les montre couche par couche.": {
-  "texte": "The five network states, density and average state are in export; the map shows them layer by layer.",
   "relu": false
  },
  "3 482 856 habitants. Distance depuis le chef-lieu (un point central pour 9 préfectures).": {
@@ -2060,6 +2076,14 @@
   "texte": "Calculation",
   "relu": false
  },
+ "Carte 1": {
+  "texte": "Card 1",
+  "relu": false
+ },
+ "Carte 3": {
+  "texte": "Card 3",
+  "relu": false
+ },
  "Carte du réseau et des auto-écoles": {
   "texte": "Road network and driving schools map",
   "relu": true
@@ -2332,6 +2356,10 @@
   "texte": "The layer",
   "relu": false
  },
+ "Couche (carte 1)": {
+  "texte": "Layer (map 1)",
+  "relu": false
+ },
  "Couleur par mesure :": {
   "texte": "Color by custom:",
   "relu": false
@@ -2498,6 +2526,10 @@
  },
  "Distance à l’auto-école la plus proche": {
   "texte": "Distance to the nearest driving school",
+  "relu": false
+ },
+ "Distance à vol d": {
+  "texte": "Flying distance d",
   "relu": false
  },
  "Distance à vol d’oiseau (R-16) de chaque maille de population à l’auto-école la plus proche ; moyenne pondérée par la population ; population à plus de SE-08 km": {
@@ -3093,6 +3125,10 @@
   "texte": "The statement is verified, except  ⁇  accidents increase  ⁇ , which is",
   "relu": false
  },
+ "L'état du réseau routier": {
+  "texte": "State of the road network",
+  "relu": false
+ },
  "La campagne PRISE a relevé le personnel, l’activité, les horaires et les véhicules de 272 auto-écoles, sans les publier. Ces données diraient lesquelles fonctionnent, et vérifieraient le manque dans les 23 préfectures sans auto-école agréée.": {
   "texte": "The PRISE campaign recorded the staff, activity, schedules and vehicles of 272 driving schools, without publishing them.",
   "relu": false
@@ -3159,10 +3195,6 @@
  },
  "La population tient surtout à Agoè-Nyivé, pour peu de km. L’état date d’un relevé de 2020.": {
   "texte": "The population is mainly in Agoè-Nyivé, just a few kilometres away.",
-  "relu": false
- },
- "La préfecture choisie": {
-  "texte": "The prefecture chosen",
   "relu": false
  },
  "La recommandation de zone de la Centrale garde sa priorité haute : la Centrale reste la zone au réseau le plus dégradé (40,3 % de km en mauvais état, contre 12,8 % dans les Savanes), et la lecture « formation » ne change pas. Un écart de 0,28 point ne sépare pas deux zones à ce niveau de preuve": {
@@ -3703,6 +3735,10 @@
   "texte": "Maritime (8 prefectures)",
   "relu": false
  },
+ "Maritime et Grand Lomé, agrandi": {
+  "texte": "Maritime and Greater Lomé, enlarged",
+  "relu": false
+ },
  "Maritime hors Grand Lomé a la formation et la desserte sous la médiane : 5 auto-écoles agréées pour 1 346 615 habitants (0,37 pour 100 000), 3,51 km de routes pour 10 000 habitants. 3 de ses 6 préfectures reçoivent le levier formation (6 auto-écoles).": {
   "texte": "Maritime outside Greater Lomé has training and service under the medium: 5 licensed driving schools for 1 346 615 inhabitants (0.37 per 100 000), 3.51 km of roads for 10 000 inhabitants. 3 of its 6 prefectures receive the training lever (6 driving schools).",
   "relu": false
@@ -3933,10 +3969,6 @@
  },
  "Niveau :": {
   "texte": "Level:",
-  "relu": false
- },
- "Niveau A": {
-  "texte": "Level A",
   "relu": false
  },
  "Niveau A. Données nationales : les permis n'ont ni territoire, ni âge.": {
@@ -4379,6 +4411,10 @@
   "texte": "Population 2020 by 100 m",
   "relu": false
  },
+ "Population 2022 (INSEED) : 8,095 M hab.": {
+  "texte": "Population 2022 (INSEED): 8,095 million people",
+  "relu": false
+ },
  "Population 2022, 5 classes :": {
   "texte": "Population 2022, 5 classes:",
   "relu": false
@@ -4519,7 +4555,7 @@
   "texte": "Producers of data",
   "relu": false
  },
- "Projection Mercator, cadrée sur le Togo, sans fond de carte. Les contours des 5 régions sont toujours tracés ; le territoire choisi dans la barre latérale garde ses couleurs, les autres préfectures passent en beige.": {
+ "Projection Mercator, cadrée sur le Togo, sans fond de carte. Les 3 cartes partagent les filtres de la barre latérale ; le territoire choisi garde ses couleurs, les autres préfectures passent en beige.": {
   "texte": "",
   "relu": false,
   "suspect": true
@@ -4827,10 +4863,6 @@
   "texte": "Ratio",
   "relu": false
  },
- "Recensement de 2022. A = mesuré, B = calculé, C = estimé.": {
-  "texte": "Census of 2022. A = measured, B = calculated, C = estimated.",
-  "relu": false
- },
  "Recensement des données ouvertes : immatriculations, permis, accidents, réseau, auto-écoles, population, enquêtes. Licences, mailles et années vérifiées une à une.": {
   "texte": "Census of open data: registrations, permits, accidents, network, driving schools, population, surveys, licenses, grids and years verified one by one.",
   "relu": false
@@ -4981,6 +5013,10 @@
  },
  "Régions (5)": {
   "texte": "Regions (5)",
+  "relu": false
+ },
+ "Réglages de la carte": {
+  "texte": "Adjustments to the map",
   "relu": false
  },
  "Réinitialiser les filtres": {
@@ -5291,8 +5327,8 @@
   "texte": "All layers",
   "relu": false
  },
- "Tracé": {
-  "texte": "Traced",
+ "Tracé (carte 1)": {
+  "texte": "Traced (map 1)",
   "relu": false
  },
  "Trait plein : observé jusqu": {
@@ -5475,16 +5511,12 @@
   "texte": "A prefectural accident database, with month, age and vehicle category, would make these 7 questions testable (recommendation  ⁇  Create a prefectural accident database  ⁇ , page Recommendations).",
   "relu": false
  },
- "Une couche à la fois, en 5 classes fixes ; l": {
-  "texte": "One layer at a time, in 5 fixed classes;",
+ "Une couche à la fois, en 5 classes fixes ; l'agrandissement montre la région Maritime et le Grand Lomé, où se concentrent les auto-écoles. Molette ou barre d'outils pour zoomer.": {
+  "texte": "One layer at a time, in 5 fixed classes; the enlargement shows the Maritime region and the Greater Lomé, where driving schools are concentrated.",
   "relu": false
  },
  "Une date situe une variation ; elle ne l'explique pas.": {
   "texte": "A date has a variation; it does not explain it.",
-  "relu": false
- },
- "Une seconde carte : chaque zone dans sa couleur, les tronçons relevés colorés selon leur état dominant, les limites des 5 régions. Elle suit les filtres de la barre latérale.": {
-  "texte": "A second map: each area in its colour, the stripped-down sections colored according to their dominant state, the boundaries of the 5 regions.",
   "relu": false
  },
  "Une seule auto-école agréée : si elle ferme, la préfecture n'en a plus": {
@@ -5799,10 +5831,6 @@
   "texte": "activity of driving schools n",
   "relu": false
  },
- "agrandissement montre la région Maritime et le Grand Lomé, où se concentrent les auto-écoles. Molette ou barre d": {
-  "texte": "In addition, the main areas of study are the Maritime Region and the Greater Lomé Region, where driving schools are concentrated.",
-  "relu": false
- },
  "annuaire national": {
   "texte": "national yearbook",
   "relu": false
@@ -5889,10 +5917,6 @@
  },
  "auto-écoles": {
   "texte": "driving schools",
-  "relu": false
- },
- "auto-écoles 2021-2022": {
-  "texte": "driving schools 2021-2022",
   "relu": false
  },
  "auto-écoles affichées, dont": {
@@ -6479,10 +6503,6 @@
   "texte": "road and training",
   "relu": false
  },
- "la région la plus dense : 103 des 132 auto-écoles agréées": {
-  "texte": "densest region: 103 of the 132 accredited driving schools",
-  "relu": false
- },
  "le cumul complet (SE-10) exige le risque, non mesuré par territoire (08 §3.1)": {
   "texte": "the total cumulative (SE-10) requires risk, not measured by territory (08 §3.1)",
   "relu": false
@@ -6599,6 +6619,10 @@
   "texte": "Neither the share of the Grand Lomé in accidents nor its rate are known (disambiguation 1)",
   "relu": false
  },
+ "niveau A : Recensement de 2022. A = mesuré, B = calculé, C = estimé. Carte 3": {
+  "texte": "Level A: Census of 2022. A = measured, B = calculated, C = estimated. Map 3",
+  "relu": false
+ },
  "niveau C": {
   "texte": "Level C",
   "relu": false
@@ -6639,8 +6663,8 @@
   "texte": "observed",
   "relu": false
  },
- "oiseau, depuis le chef-lieu ou un point central. Équipements recensés en 2021-2022, non vérifiés, hors indicateurs.": {
-  "texte": "birds, from headquarters or central point. Equipment recorded in 2021-2022, unverified, excluding indicators.",
+ "oiseau, depuis le chef-lieu ou un point central.": {
+  "texte": "bird, from headquarters or central point.",
   "relu": false
  },
  "ont au moins une auto-école agréée (41,0 %)": {
@@ -6743,10 +6767,6 @@
   "texte": "prefecture point",
   "relu": false
  },
- "population 2022": {
-  "texte": "population in 2022",
-  "relu": false
- },
  "population d'aujourd'hui": {
   "texte": "current population",
   "relu": false
@@ -6797,6 +6817,10 @@
  },
  "préfecture du levier formation": {
   "texte": "Leverage prefecture training",
+  "relu": false
+ },
+ "préfectures affichées. Les 5 états du réseau, la densité et l'état moyen sont dans l'export ; la carte les montre couche par couche.": {
+  "texte": "The five network states, density and average state are in export; the map shows them layer by layer.",
   "relu": false
  },
  "préfectures au réseau dégradé": {
@@ -6877,10 +6901,6 @@
  },
  "réseau": {
   "texte": "network",
-  "relu": false
- },
- "réseau relevé en 2020": {
-  "texte": "network recorded in 2020",
   "relu": false
  },
  "sans auto-école agréée": {
@@ -7087,6 +7107,10 @@
   "texte": "The data that would make them testable is on the methodology page.",
   "relu": false
  },
+ "zones en fond, tronçons par état": {
+  "texte": "areas at the bottom, sections by state",
+  "relu": false
+ },
  "« Les accidents augmentent » est nuancé : volume en hausse, taux en baisse.": {
   "texte": "⁇  Accidents increase  ⁇  is nuanced: volume increases, rate decreases.",
   "relu": false
@@ -7151,6 +7175,10 @@
   "texte": "Road safety equipment (excluding indicators)",
   "relu": false
  },
+ "Équipements recensés en 2021-2022, non vérifiés, hors indicateurs.": {
+  "texte": "Equipment recorded in 2021-2022, not verified, excluding indicators.",
+  "relu": false
+ },
  "Étape": {
   "texte": "Step by step",
   "relu": false
@@ -7161,10 +7189,6 @@
  },
  "État des tronçons relevés": {
   "texte": "State of the sampled pieces",
-  "relu": false
- },
- "État dominant par tronçon (le plus de km parmi bon, moyen, mauvais et en travaux). Relevé de 2020, routes nationales seulement. Niveau C.": {
-  "texte": "State dominant by section (most km among good, medium, bad and under construction). Released from 2020, national roads only.",
   "relu": false
  },
  "État du réseau par zone": {
@@ -7187,8 +7211,12 @@
   "texte": "State recorded in 2020 on national roads only, unpublished rating method",
   "relu": false
  },
- "État relevé en 2020, sur les routes nationales seulement. Accès rural estimé avec une population répartie uniformément dans chaque préfecture. Distance à vol d": {
-  "texte": "Country recorded in 2020 on national roads only. Rural access estimated with a population evenly distributed in each prefecture.",
+ "État relevé en 2020, sur les routes nationales seulement.": {
+  "texte": "State recorded in 2020 on national roads only.",
+  "relu": false
+ },
+ "États du réseau (carte 3)": {
+  "texte": "Network states (map 3)",
   "relu": false
  },
  "États du réseau à afficher": {
@@ -7231,12 +7259,16 @@
   "texte": "I'm going to tell you.",
   "relu": false
  },
- "état du réseau en 2020 : l": {
-  "texte": "State of the network in 2020:",
+ "état des tronçons :": {
+  "texte": "State of the pieces:",
   "relu": false
  },
- "état du réseau routier": {
-  "texte": "State of the road network",
+ "état dominant par tronçon (le plus de km parmi bon, moyen, mauvais, en travaux), relevé 2020, routes nationales (niveau C).": {
+  "texte": "the most km among good, medium, bad, under construction), survey 2020, national roads (level C).",
+  "relu": false
+ },
+ "état du réseau en 2020 : l": {
+  "texte": "State of the network in 2020:",
   "relu": false
  },
  "état du réseau, cartographier le réseau et les auto-écoles, recommander.": {
