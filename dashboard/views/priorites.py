@@ -63,7 +63,7 @@ ariane("Priorités")
 entete("Priorités", "Par où commencer ?",
        "Commencer par la <strong>Centrale</strong>, seule zone en retard sur la route et la formation, et par "
        "<strong>5 préfectures</strong> qui cumulent les deux déficits (641 955 habitants) ; aucun test de robustesse "
-       "ne change plus de 2 des 10 premières.")
+       "ne change plus de 2 des 10 premières.", carte=True)
 
 if f_zones or f_leviers:
     st.markdown('<div class="filtres-actifs"><b>Filtres actifs :</b> '
