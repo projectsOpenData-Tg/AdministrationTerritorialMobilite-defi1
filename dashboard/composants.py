@@ -23,8 +23,7 @@ LOGO_AI_LAB = STATIQUE / "logo_togo_ai_lab.png"
 MINISTERE = "Ministère de l'Efficacité du Service Public et de la Transformation Numérique"
 MARQUE = "Mobilité et sécurité routière au Togo"
 SOUS_TITRE = "Comprendre les risques, identifier les priorités d’action"
-PIED_SOURCES = ("Données : portail national de données ouvertes du Togo et sources institutionnelles complémentaires. "
-                "Mise à jour : 2026.")
+PIED_SOURCES = "Données : portail national de données ouvertes du Togo et sources institutionnelles complémentaires."
 PIED_TITRE = "Togo AI Lab — Data Challenge | Administration territoriale et mobilité — Défi 1"
 PIED_SOUS_TITRE = ("Diagnostic territorial et aide à la décision pour la mobilité, la sécurité routière et l'entretien "
                    "du réseau au Togo")
@@ -70,9 +69,10 @@ def ariane(page: str):
 
 
 def entete(surtitre: str, question: str, reponse_html: str, carte: bool = False):
-    """En-tête de page ; `carte` présente la réponse dans une carte à fond blanc."""
+    """En-tête de page ; `carte` présente la réponse dans une carte à fond blanc. Le surtitre n'est plus affiché : il
+    doublait le fil d'Ariane (« Tableau de bord › page ») ; le paramètre reste pour ne pas changer les appels."""
     classe = "reponse en-carte" if carte else "reponse"
-    st.markdown(f'<div class="surtitre">{html.escape(surtitre)}</div><div class="question">{html.escape(question)}</div>'
+    st.markdown(f'<div class="question">{html.escape(question)}</div>'
                 f'<div class="{classe}">{reponse_html}</div>', unsafe_allow_html=True)
 
 
@@ -87,19 +87,43 @@ def _insecable(txt: str) -> str:
 # Icônes des chiffres clés (tracés au trait, 24 × 24), avec la couleur de thème de l'objectif (11 §4.1)
 ICONES = {
     "population": ('<circle cx="9" cy="7" r="4"/><path d="M2 21v-2a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v2"/>'
-                   '<path d="M16 3.13a4 4 0 0 1 0 7.75"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/>', "#2a78d6"),
+                   '<path d="M16 3.13a4 4 0 0 1 0 7.75"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/>', "#1769aa"),
     "vehicule": ('<path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3'
                  'c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/>'
-                 '<circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/>', "#2a78d6"),
+                 '<circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/>', "#16834a"),
+    "permis": ('<rect x="2" y="5" width="20" height="14" rx="2"/><circle cx="8" cy="11" r="2"/>'
+               '<path d="M5 16c.4-1.6 1.6-2.3 3-2.3s2.6.7 3 2.3"/><path d="M14 10h4"/><path d="M14 14h4"/>', "#2474c6"),
+    "moto": ('<circle cx="5.5" cy="16" r="3.5"/><circle cx="18.5" cy="16" r="3.5"/>'
+             '<path d="M14 6h2l2.5 6.5"/><path d="M5.5 16h6l2-5h4"/><path d="M8 11h5"/>', "#eb6834"),
     "tues": ('<path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/>'
-             '<path d="M12 9v4"/><path d="M12 17h.01"/>', "#e34948"),
+             '<path d="M12 9v4"/><path d="M12 17h.01"/>', "#ce1126"),
     "blesses": ('<path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2'
                 'A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27"/>',
-                "#eda100"),
+                "#e6b422"),
     "route": ('<path d="M4 21 9 3"/><path d="M20 21 15 3"/><path d="M12 4v2"/><path d="M12 10v3"/><path d="M12 17v3"/>',
-              "#eb6834"),
+              "#64748b"),
     "ecole": ('<path d="M21.42 10.92a1 1 0 0 0-.02-1.84L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.83'
-              'l8.57 3.91a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/>', "#1baf7a"),
+              'l8.57 3.91a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/>', "#2474c6"),
+    # Variantes de l'icône « route » colorées pour les chiffres clés du réseau (bon état vert, mauvais état rouge)
+    "route_vert": ('<path d="M4 21 9 3"/><path d="M20 21 15 3"/><path d="M12 4v2"/><path d="M12 10v3"/><path d="M12 17v3"/>',
+                   "#16834a"),
+    "route_rouge": ('<path d="M4 21 9 3"/><path d="M20 21 15 3"/><path d="M12 4v2"/><path d="M12 10v3"/><path d="M12 17v3"/>',
+                    "#ce1126"),
+    # Tronçon en mauvais état : triangle d'alerte en jaune-or (couleur du thème Réseau)
+    "troncons": ('<path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/>'
+                 '<path d="M12 9v4"/><path d="M12 17h.01"/>', "#e6b422"),
+    # Alerte générique (estimation OMS plus forte) : cercle avec point d'exclamation, en rouge
+    "alerte": ('<circle cx="12" cy="12" r="9"/><path d="M12 8v4"/><path d="M12 16h.01"/>', "#ce1126"),
+    # Établissement scolaire (auto-écoles recensées) : bâtiment, en vert
+    "etablissement": ('<path d="M3 21h18"/><path d="M5 21V8l7-4 7 4v13"/><path d="M9 21v-5h6v5"/>'
+                      '<path d="M9 11h.01"/><path d="M15 11h.01"/>', "#16834a"),
+    # École (préfectures sans auto-école agréée) : toque de diplômé, en jaune-or
+    "ecole_jaune": ('<path d="M21.42 10.92a1 1 0 0 0-.02-1.84L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.83'
+                    'l8.57 3.91a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/>',
+                    "#e6b422"),
+    # Signalisation / feux (équipements de sécurité routière) : feu tricolore, en bleu
+    "signalisation": ('<rect x="9" y="2" width="6" height="16" rx="3"/><path d="M12 6h.01"/><path d="M12 10h.01"/>'
+                      '<path d="M12 14h.01"/><path d="M9 20h6"/>', "#2474c6"),
 }
 
 
@@ -112,27 +136,48 @@ def icone_kpi(nom: str) -> str:
 
 
 def carte_kpi(libelle: str, valeur: str, phrase: str, contexte: str = "", reserve: str = "", etiquette: str | None = None,
-              ton: str = "neutre", unite: str = "", icone: str | None = None, periode: str = "") -> str:
+              ton: str = "neutre", unite: str = "", icone: str | None = None, periode: str = "",
+              tendance: tuple[str, str, str] | None = None, pastille: tuple[str, str] | None = None,
+              bordure: str | None = None) -> str:
     """Chiffre clé (maquette §8.4) : la valeur se lit avec sa phrase ; la réserve, en bas, dit ce que le chiffre ne
     mesure pas (aucune si vide). `icone` (clé de ICONES) ajoute la pastille du thème à gauche du libellé ; `periode`
-    s'écrit entre parenthèses sous le libellé."""
+    s'écrit entre parenthèses sous le libellé ; `tendance` = (variation, référence, sens) s'affiche en badge sous la
+    valeur, sens ∈ {"pire", "mieux", "neutre"} ; `pastille` = (émoji, fond) remplace l'icône au trait."""
     tag = f'<span class="etiquette {ton}">{html.escape(etiquette)}</span>' if etiquette else ""
     u = f'<span class="kpi-unite">{html.escape(unite)}</span>' if unite else ""
     ctx = f'<div class="kpi-contexte">{_insecable(contexte)}</div>' if contexte else ""
     res = f'<div class="kpi-reserve">{_insecable(html.escape(reserve))}</div>' if reserve else ""
     ico = icone_kpi(icone) if icone else ""
+    if pastille:
+        ico = f'<span class="kpi-icone" style="background:{pastille[1]};font-size:1.1rem">{pastille[0]}</span>'
     per = f'<div class="kpi-periode">({html.escape(periode)})</div>' if periode else ""
-    return (f'<div class="kpi"><div class="kpi-tete">{ico}<div class="kpi-libelle" lang="fr">{html.escape(libelle)}{per}</div>'
-            f'{tag}</div>'
-            f'<div class="kpi-valeur">{_insecable(html.escape(valeur))}{u}</div>'
-            f'<div class="kpi-phrase">{_insecable(html.escape(phrase))}</div>{ctx}{res}</div>')
+    tend = ""
+    if tendance:
+        variation, reference, sens = tendance
+        fleche = "↗" if variation.startswith("+") else "↘" if variation.startswith(("−", "-")) else "→"
+        tend = (f'<span class="kpi-tendance {sens}">{fleche} {_insecable(html.escape(variation))} '
+                f'<small>{html.escape(reference)}</small></span>')
+    coul_bas = bordure or (ICONES[icone][1] if icone else None)   # liseré du bas : couleur demandée ou celle de l'icône
+    bas = f' style="border-bottom-color:{coul_bas}"' if coul_bas else ""
+    return (f'<div class="kpi"{bas}><div class="kpi-tete">{ico}<div class="kpi-libelle" lang="fr">{html.escape(libelle)}{per}</div>'
+            f'{tag}</div><div class="kpi-centre">'
+            f'<div class="kpi-valeur">{_insecable(html.escape(valeur))}{u}</div>{tend}'
+            f'<div class="kpi-phrase">{_insecable(html.escape(phrase))}</div></div>{ctx}{res}</div>')
 
 
-def rangee_kpi(groupe: str, cartes: list[str], une_ligne: bool = False):
-    """Rangée de chiffres clés ; `une_ligne` les tient tous sur une seule ligne sur grand écran."""
-    classe = "kpi-grille une-ligne" if une_ligne else "kpi-grille"
+def rangee_kpi(groupe: str, cartes: list[str], une_ligne: bool = False, centre: bool = False):
+    """Rangée de chiffres clés ; `une_ligne` les tient tous sur une seule ligne sur grand écran ; `centre` centre le
+    chiffre et sa phrase dans la carte."""
+    classe = "kpi-grille" + (" une-ligne" if une_ligne else "") + (" centre" if centre else "")
     st.markdown(f'<div class="groupe">{html.escape(groupe)}</div><div class="{classe}">{"".join(cartes)}</div>',
                 unsafe_allow_html=True)
+
+
+def note_carte(texte_html: str, couleur: str = "vert", titre: str = ""):
+    """Note en carte blanche, pictogramme « i » et liseré gauche coloré (vert, bleu ou rouge)."""
+    tete = f"<strong>{html.escape(titre)}</strong> " if titre else ""
+    st.markdown(f'<div class="note-carte blanche a-savoir lisere-{couleur}"><span class="info-i">i</span>'
+                f'<div>{tete}{texte_html}</div></div>', unsafe_allow_html=True)
 
 
 def constat(texte_html: str):
@@ -140,17 +185,28 @@ def constat(texte_html: str):
                 f'<div class="constat-texte">{texte_html}</div></div>', unsafe_allow_html=True)
 
 
-def synthese(chiffre: str, legende: str, puces_html: list[str]):
+def synthese(chiffre: str, legende: str, puces_html: list[str], egale: bool = False):
+    """Synthèse chiffrée ; `egale` lui donne la hauteur de la carte voisine."""
     puces = "".join(f"<li>{p}</li>" for p in puces_html)
-    st.markdown(f'<div class="synthese"><div><div class="synthese-titre">Synthèse chiffrée</div>'
+    classe = "synthese carte-egale" if egale else "synthese"
+    st.markdown(f'<div class="{classe}"><div><div class="synthese-titre">Synthèse chiffrée</div>'
                 f'<div class="synthese-chiffre">{chiffre}</div><div class="synthese-legende">{legende}</div></div>'
                 f'<ul>{puces}</ul></div>', unsafe_allow_html=True)
 
 
-def limite(texte: str, titre: str = "Limite de cette page", discret: bool = False):
-    classe = "limite discret" if discret else "limite"
-    st.markdown(f'<div class="{classe}"><div class="limite-titre">{html.escape(titre)}</div>'
-                f'<div class="limite-texte">{html.escape(texte)}</div></div>', unsafe_allow_html=True)
+def limite(texte: str = "", titre: str = "Limite de cette page", discret: bool = False, puces: list[str] | None = None,
+           egale: bool = False, texte_html: str | None = None):
+    """Encadré des limites ; `puces` les présente en liste à points, comme la synthèse chiffrée ; `egale` lui donne la
+    hauteur de la carte voisine ; `texte_html` permet d'insérer du gras ou des chiffres colorés (non échappé)."""
+    classe = ("limite discret" if discret else "limite") + (" carte-egale" if egale else "")
+    if texte_html is not None:
+        corps = f'<div class="limite-texte">{texte_html}</div>'
+    elif puces:
+        corps = f'<ul class="limite-liste">{"".join(f"<li>{html.escape(p)}</li>" for p in puces)}</ul>'
+    else:
+        corps = f'<div class="limite-texte">{html.escape(texte)}</div>'
+    st.markdown(f'<div class="{classe}"><div class="limite-titre">{html.escape(titre)}</div>{corps}</div>',
+                unsafe_allow_html=True)
 
 
 def titre_bloc(titre: str, sous_titre: str | None = None, marge: bool = False):
