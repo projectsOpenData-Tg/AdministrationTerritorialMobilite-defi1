@@ -13,8 +13,8 @@ import pandas as pd  # noqa: E402
 import plotly.graph_objects as go  # noqa: E402
 import streamlit as st  # noqa: E402
 
-from composants import (ariane, badge, constat, entete, export_csv, habiller, limite, note, pied,  # noqa: E402
-                        synthese, table_html, titre_bloc, tracer)
+from composants import (ariane, badge, carte_kpi, constat, entete, export_csv, habiller, limite, note, pied,  # noqa: E402
+                        rangee_kpi, synthese, table_html, titre_bloc, tracer)
 from donnees import fr, lire  # noqa: E402
 from theme import COULEUR_ZONE, ENCRE  # noqa: E402
 
@@ -64,6 +64,23 @@ entete("Priorités", "Par où commencer ?",
        "Commencer par la <strong>Centrale</strong>, seule zone en retard sur la route et la formation, et par "
        "<strong>5 préfectures</strong> qui cumulent les deux déficits (641 955 habitants) ; aucun test de robustesse "
        "ne change plus de 2 des 10 premières.", carte=True)
+
+rangee_kpi("Par où commencer — l'essentiel", [
+    carte_kpi("Zones en difficulté", "4 sur 6", "zones sous la médiane",
+              "Centrale (route + formation), Plateaux (route), Savanes et Maritime hors Grand Lomé (formation).",
+              etiquette="C", ton="alerte", icone="troncons"),
+    carte_kpi("Préfectures qui cumulent", "5", "cumulent les deux déficits",
+              "641 955 habitants. Déjà repérées à l'exploration (pire quart des deux dimensions).",
+              etiquette="C", ton="alerte", icone="alerte"),
+    carte_kpi("Les 10 premières", "1,42 M", "habitants dans les 10 premières préfectures",
+              "Ni le Golfe ni Agoè-Nyivé n'en font partie.", etiquette="C", icone="population"),
+    carte_kpi("Levier réseau", "13", "préfectures à remettre en état",
+              "304,6 km à reprendre. Cible : 14,35 % de km en mauvais état (médiane nationale).",
+              etiquette="C", ton="alerte", icone="route_rouge"),
+    carte_kpi("Levier formation", "23", "préfectures à équiper",
+              "41 auto-écoles à ouvrir (dont Mô). Cible : 1,065 auto-école pour 100 000 habitants.",
+              etiquette="C", icone="etablissement"),
+], centre=True)
 
 if f_zones or f_leviers:
     st.markdown('<div class="filtres-actifs"><b>Filtres actifs :</b> '
@@ -270,6 +287,9 @@ note("5 préfectures cumulent les deux déficits, 26 en ont un, 8 n'en ont aucun
 # ------------------------------------------------------------------ Section 5 — Le classement tient-il ?
 st.markdown("")
 titre_bloc("Le classement tient-il ?", "Poids du réseau déplaçable, puis 5 tests de robustesse.")
+constat("Le classement est <strong>stable</strong> : aucun test ne change plus de 2 des 10 premières. "
+        "<strong>7 préfectures</strong> restent dans les 6 tests de robustesse : Danyi, Blitta, Agou, Tchamba, "
+        "Bassar, Oti et Bas-Mono.")
 g, d = st.columns([1, 1.2], vertical_alignment="top")
 with g:
     poids = st.slider("Poids du réseau (%)", 0, 100, 50, 5, key="pr_poids")

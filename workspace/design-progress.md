@@ -334,3 +334,19 @@ Couleurs fixes par donnée, dans `theme.py`, pour qu'un indicateur garde sa coul
   réunis dans une **carte blanche à liseré bleu et pictogramme « i »** ; **titre « La préfecture choisie » retiré**.
 - Légende « N préfectures affichées… » passée en **carte « i » verte** ; encadré **« Limite de cette page » en liste
   à puces** (une limite par ligne).
+
+## 23. Priorités — carte d'introduction et chiffres clés (2026-10-12, branche design/pages-pilotage)
+
+- Texte d'introduction dans une **carte blanche** (`entete(carte=True)`), comme sur les autres pages.
+- **5 chiffres clés** ajoutés sous l'intro (`rangee_kpi(centre=True)`), icône de thème + liseré assorti, étiquette
+  de niveau C :
+  - Zones en difficulté — **4 sur 6** (icône alerte jaune-or « troncons »)
+  - Préfectures qui cumulent — **5** (641 955 hab., icône « alerte » rouge)
+  - Les 10 premières — **1,42 M** hab. (icône « population » bleu)
+  - Levier réseau — **13** préfectures (304,6 km, icône « route_rouge »)
+  - Levier formation — **23** préfectures (41 auto-écoles, icône « etablissement » vert)
+- La 6e carte envisagée (« Le classement tient / robustesse ») **n'est pas** faite en chiffre clé : le message passe
+  dans une **carte Constat** ajoutée en tête de la section « Le classement tient-il ? » (« classement stable ; aucun
+  test ne change plus de 2 des 10 premières ; 7 préfectures restent dans les 6 tests »).
+- Branche `design/pages-pilotage` partant de `dev` (après la fusion de `design/palette-a` sur `dev`), pour les pages
+  Priorités, Recommandations, Horizon 2031 et Méthodologie.

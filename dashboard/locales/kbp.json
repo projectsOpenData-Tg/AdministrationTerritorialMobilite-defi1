@@ -791,6 +791,10 @@
   "texte": "304,6 km nɛ pɩpɔzʋʋ se ɖɩɖaɣnɩ-wɛ labʋ",
   "relu": false
  },
+ "304,6 km à reprendre. Cible : 14,35 % de km en mauvais état (médiane nationale).": {
+  "texte": "Lɩmaɣzɩyɛ: 14.35% kpiye nɖɩ ɖɩfɛyɩ ɖeu yɔ (ɛjaɖɛ taa lɛɣtʊ).",
+  "relu": false
+ },
  "305 096 habitants": {
   "texte": "Ɛyaa 305 096",
   "relu": false
@@ -875,6 +879,10 @@
   "texte": "4 Pɩkɩlɩ ɖeu.",
   "relu": false
  },
+ "4 sur 6": {
+  "texte": "4 nɛ 6 taa",
+  "relu": false
+ },
  "4 vues": {
   "texte": "4 lɩmaɣza",
   "relu": false
@@ -925,6 +933,10 @@
  },
  "41 auto-écoles à ouvrir": {
   "texte": "Sɔɔndʋ kpaɣnɩ sukuli 41 mbʋ yɔ",
+  "relu": false
+ },
+ "41 auto-écoles à ouvrir (dont Mô). Cible : 1,065 auto-école pour 100 000 habitants.": {
+  "texte": "Sɔɔndʋ: Sɔɔndʋ kpaɣnɩ sukuli 1065 mbʋ yɔ nɛ ɛyaa 100 000 pɔ-yɔɔ.",
   "relu": false
  },
  "43 indicateurs": {
@@ -1103,6 +1115,10 @@
   "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa ɛyaa ɛzɩ 641 955 yɔ",
   "relu": false
  },
+ "641 955 habitants. Déjà repérées à l'exploration (pire quart des deux dimensions).": {
+  "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa ɛyaa ɛzɩ 641 955 yɔ.",
+  "relu": false
+ },
  "65,0 % des routes en mauvais état (75,6 km évalués, 5 tronçons critiques).": {
   "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ lɛ, nʋmɔʋ ŋgʋ kɩ-taa kɩ-lakasɩ wɛɛ yɔ, kɩ-taa 65.0% wɛ kaɖɛ.",
   "relu": false
@@ -1129,6 +1145,10 @@
  },
  "7 préf.": {
   "texte": "Lɩmaɣza wena ŋwɛna yɔ.",
+  "relu": false
+ },
+ "7 préfectures": {
+  "texte": "7 Prefektiwaa",
   "relu": false
  },
  "7 questions ouvertes": {
@@ -1465,6 +1485,10 @@
  },
  ": 94 860 habitants": {
   "texte": "Ɛyaa: 94 860",
+  "relu": false
+ },
+ ": aucun test ne change plus de 2 des 10 premières.": {
+  "texte": "Lɩmaɣza wena awɛ kajalaɣ 10 taa yɔ, a-taa naalɛ fɛyɩ se ɛlɛɣzɩ.",
   "relu": false
  },
  ": ceux qui traversent les Plateaux en portent le plus (292,15 km, 23 tronçons), puis ceux de la Centrale (236,25 km, 6 tronçons).": {
@@ -2145,6 +2169,10 @@
  },
  "Centrale (5 préfectures)": {
   "texte": "Tɛtʋ ndʋ tɩ-taa palakaɣ tʋmɩyɛ yɔ:",
+  "relu": false
+ },
+ "Centrale (route + formation), Plateaux (route), Savanes et Maritime hors Grand Lomé (formation).": {
+  "texte": "Lone nɖɩ ɖɩ-taa palakaɣ tʊmɩyɛ yɔ, payaɣ se \"Central (route + formation), Plateaux (routes) \", Savanes nɛ Maritime hors Grand Lomé (formation).",
   "relu": false
  },
  "Centrale : route et formation ; Plateaux : route ; Savanes et Maritime hors Grand Lomé : formation.": {
@@ -3235,6 +3263,10 @@
   "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ pɩwɛɛ se ɖɩkpaɣ lɩmaɣza yɔ",
   "relu": false
  },
+ "Le classement est": {
+  "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-taa",
+  "relu": false
+ },
  "Le classement est stable si aucun test ne change plus de 2 des 10 premières. Toujours en tête : Danyi, Blitta, Agou, Tchamba, Bassar, Oti, Bas-Mono. Les moins sûres : Est-Mono et Oti-Sud (4 tests sur 6), Tchaoudjo (3 sur 6).": {
   "texte": "Pɩwɛɣ ɖeu se ɖɩtɩlɩ se ye ɖɩtatasɩ labʋ takayɩsɩ nasɩyɩ yɔ, ɖɩ-taa naalɛ wɛna 10 ñɩnzɩ taa nɛ pɩtasɩɣ lɛɣzɩtʋ.",
   "relu": false
@@ -3940,6 +3972,10 @@
   "texte": "Pɔñɔɔzʋʋ wondu nɛ pɔcɔŋnɩ tɩ-yɔɔ nɛ pakpaɣ kɩlɛmɩŋ weyi ɩwɩlɩɣ mbʋ pɩlakɩ yɔ.",
   "relu": false
  },
+ "Ni le Golfe ni Agoè-Nyivé n'en font partie.": {
+  "texte": "Pɩtɩkɛ Eŋgee nɛ Agoe-Niive pɔ-cɔlɔ pɩlɩnaa.",
+  "relu": false
+ },
  "Niamtougou": {
   "texte": "Nɔɔɖɛyaa Ɛgbɛyɛ",
   "relu": false
@@ -4118,6 +4154,10 @@
  },
  "Panneau de signalisation": {
   "texte": "Kɩɖaʋ ŋgʋ kɩ-taa paayɔɔdʋʋ yɔ:",
+  "relu": false
+ },
+ "Par où commencer": {
+  "texte": "Le ɖɩpɩzɩɣ nɛ ɖɩpaɣzɩ yɔ",
   "relu": false
  },
  "Par où commencer :": {
@@ -4562,6 +4602,10 @@
  },
  "Préfectures loin d": {
   "texte": "Kedeŋa kpeekpe taa tɛtʊ sɔsɔtʊ",
+  "relu": false
+ },
+ "Préfectures qui cumulent": {
+  "texte": "Kpaagbaa mba pɛkpɛndɩna yɔ",
   "relu": false
  },
  "Préfectures sans auto-école": {
@@ -5725,6 +5769,10 @@
   "texte": "Tɛtʊ ndʊ (6)",
   "relu": false
  },
+ "Zones en difficulté": {
+  "texte": "Hɔɔlɩŋ weyi ɩ-taa kʋñɔmɩŋ wɛɛ yɔ",
+  "relu": false
+ },
  "Zones en difficulté :": {
   "texte": "Kpaagbaa wena awɛ kaɖɛ yɔ:",
   "relu": false
@@ -6009,6 +6057,10 @@
   "texte": "nɛ pɩwɩlɩ se",
   "relu": false
  },
+ "cumulent les deux déficits": {
+  "texte": "kpɩtaŋnaa mba pa-naalɛ pɛkpɛndɩ",
+  "relu": false
+ },
  "d'une carte à l'autre.": {
   "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ lɛ, ɖɩ-taa lɛ se:",
   "relu": false
@@ -6209,6 +6261,10 @@
   "texte": "Togo ɛjaɖɛ taa tʊmɩyɛ labʋ",
   "relu": false
  },
+ "essentiel": {
+  "texte": "tɔm kɩcɛyɩtʋ",
+  "relu": false
+ },
  "est la seule zone": {
   "texte": "kɛwɛna lone nɖɩ ɖɩ-taa ɖeke",
   "relu": false
@@ -6283,6 +6339,10 @@
  },
  "habitants (": {
   "texte": "ɛyaa (",
+  "relu": false
+ },
+ "habitants dans les 10 premières préfectures": {
+  "texte": "ɛyaa mba pɛwɛ kajalaɣ 10 taa yɔ",
   "relu": false
  },
  "habitants gagnés": {
@@ -6805,6 +6865,14 @@
   "texte": "ajɛya kɩkpɛndɩɣ ŋgbɛyɛ",
   "relu": false
  },
+ "préfectures à remettre en état": {
+  "texte": "ajɛya wena a-taa paɖʊ ajɛya yɔ",
+  "relu": false
+ },
+ "préfectures à équiper": {
+  "texte": "tɛtʊ ndʊ tɩ-taa",
+  "relu": false
+ },
  "qui cumule un réseau dégradé (": {
   "texte": "Kɩ-taa kɔyɔ:",
   "relu": false
@@ -6823,6 +6891,10 @@
  },
  "reponse en-carte": {
   "texte": "ŋcosi-m tɔm takayaɣ yɔɔ",
+  "relu": false
+ },
+ "restent dans les 6 tests de robustesse : Danyi, Blitta, Agou, Tchamba, Bassar, Oti et Bas-Mono.": {
+  "texte": "Paɖaɣnɩ-wɛ kpaʋ ɖoŋ nɛ pana se pɛwɛ ɖoŋ siŋŋ ɛzɩ Danyi, Blitta, Agou, Tchamba, Bassar, Oti nɛ Bas-Mono yɔ.",
   "relu": false
  },
  "resteront à plus de 2 km d'une route revêtue.": {
@@ -6919,6 +6991,10 @@
  },
  "sous la médiane pour les km de route par habitant": {
   "texte": "tɛtʊ ndʊ tɩ-taa yɔ",
+  "relu": false
+ },
+ "stable": {
+  "texte": "kpɛlɛkʋʋ",
   "relu": false
  },
  "style=\"margin-top:1rem;\"": {
@@ -7083,6 +7159,10 @@
  },
  "zones en fond, tronçons par état": {
   "texte": "hɔɔlɩŋ weyi ɩ-wayɩ yɔ, hɔɔlʋʋ kʋɖʋmʋʋ",
+  "relu": false
+ },
+ "zones sous la médiane": {
+  "texte": "hɔɔlɩŋ weyi ɩ-tɛɛ yɔ",
   "relu": false
  },
  "« Les accidents augmentent » est nuancé : volume en hausse, taux en baisse.": {

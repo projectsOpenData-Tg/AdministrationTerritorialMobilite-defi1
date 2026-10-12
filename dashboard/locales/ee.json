@@ -791,6 +791,10 @@
   "texte": "304,6 km si wòle be woatrɔ",
   "relu": false
  },
+ "304,6 km à reprendre. Cible : 14,35 % de km en mauvais état (médiane nationale).": {
+  "texte": "Taɖodzinu: 14.35 le alafa me le nɔnɔme vɔ̃ɖi me (dukɔa ƒe vidzĩ).",
+  "relu": false
+ },
  "305 096 habitants": {
   "texte": "305 096",
   "relu": false
@@ -875,6 +879,10 @@
   "texte": "4 boŋ.",
   "relu": false
  },
+ "4 sur 6": {
+  "texte": "4 le 6 me",
+  "relu": false
+ },
  "4 vues": {
   "texte": "4 susuwo",
   "relu": false
@@ -925,6 +933,10 @@
  },
  "41 auto-écoles à ouvrir": {
   "texte": "Ʋukulawo ƒe suku 41",
+  "relu": false
+ },
+ "41 auto-écoles à ouvrir (dont Mô). Cible : 1,065 auto-école pour 100 000 habitants.": {
+  "texte": "Ʋukulawo ƒe suku 41 le ʋuʋum (siwo dome Mo hã le).",
   "relu": false
  },
  "43 indicateurs": {
@@ -1103,6 +1115,10 @@
   "texte": "Ame 641 955",
   "relu": false
  },
+ "641 955 habitants. Déjà repérées à l'exploration (pire quart des deux dimensions).": {
+  "texte": "Ame 641,955 ye nɔ afi ma. Wova kpɔ wo le numekukua me xoxo (woƒe xexlẽme ƒe didime enelia ƒe akpa enelia).",
+  "relu": false
+ },
  "65,0 % des routes en mauvais état (75,6 km évalués, 5 tronçons critiques).": {
   "texte": "Mɔwo ƒe agbɔsɔsɔ si le nɔnɔme gbegblẽ me ƒe 65.0% (75.6 km, 5 ƒe akpa vevi)",
   "relu": false
@@ -1129,6 +1145,10 @@
  },
  "7 préf.": {
   "texte": "7 boŋ.",
+  "relu": false
+ },
+ "7 préfectures": {
+  "texte": "Nutoa me nuto adre",
   "relu": false
  },
  "7 questions ouvertes": {
@@ -1465,6 +1485,10 @@
  },
  ": 94 860 habitants": {
   "texte": "Ame siwo le afi ma: 94,860",
+  "relu": false
+ },
+ ": aucun test ne change plus de 2 des 10 premières.": {
+  "texte": "Numekuku aɖeke metrɔna le 10 gbãtɔ eve me o.",
   "relu": false
  },
  ": ceux qui traversent les Plateaux en portent le plus (292,15 km, 23 tronçons), puis ceux de la Centrale (236,25 km, 6 tronçons).": {
@@ -2145,6 +2169,10 @@
  },
  "Centrale (5 préfectures)": {
   "texte": "Ʋɔnudrɔ̃ƒe (dzikpɔƒe 5)",
+  "relu": false
+ },
+ "Centrale (route + formation), Plateaux (route), Savanes et Maritime hors Grand Lomé (formation).": {
+  "texte": "Central (mɔzɔzɔ + mɔzɔzɔzɔ), Plateaux (mɔzɔzɔzɔ), Savanes kple Maritime outside Grand Lomé (mɔzɔzɔzɔ).",
   "relu": false
  },
  "Centrale : route et formation ; Plateaux : route ; Savanes et Maritime hors Grand Lomé : formation.": {
@@ -3235,6 +3263,10 @@
   "texte": "Nyametsotsowɔwɔ ƒe Ðoɖo",
   "relu": false
  },
+ "Le classement est": {
+  "texte": "Woƒe xexlẽme nye",
+  "relu": false
+ },
  "Le classement est stable si aucun test ne change plus de 2 des 10 premières. Toujours en tête : Danyi, Blitta, Agou, Tchamba, Bassar, Oti, Bas-Mono. Les moins sûres : Est-Mono et Oti-Sud (4 tests sur 6), Tchaoudjo (3 sur 6).": {
   "texte": "Numekuku siwo wowɔ le teƒea la nɔa te sesĩe ne womekpɔ tɔtrɔ aɖeke le dodokpɔ gbãtɔ 10awo dometɔ 2 me o. Danyi, Blitta, Agou, Tchamba, Bassar, Oti, Bas-Mono, kple esiwo mebɔ o la le ŋgɔ.",
   "relu": false
@@ -3939,6 +3971,10 @@
   "texte": "Wotsɔ nu siwo katã le eme la ɖɔa ɖi, ƒoa ƒu wo, eye wodzea agbagba be yewoazã nu siwo le eme la ƒe ɖe sia ɖe be yewoakpɔ kpeɖodzi.",
   "relu": false
  },
+ "Ni le Golfe ni Agoè-Nyivé n'en font partie.": {
+  "texte": "Ƒukpoa kple Agui-Nyive hã mele eme o.",
+  "relu": false
+ },
  "Niamtougou": {
   "texte": "Nu si dzɔ ɖe wo dzi",
   "relu": false
@@ -4117,6 +4153,10 @@
  },
  "Panneau de signalisation": {
   "texte": "Aƒomegbadzisi",
+  "relu": false
+ },
+ "Par où commencer": {
+  "texte": "Afi Si Nàde Asi Ðo",
   "relu": false
  },
  "Par où commencer :": {
@@ -4561,6 +4601,10 @@
  },
  "Préfectures loin d": {
   "texte": "Anyigba siwo le adzɔge ʋĩi",
+  "relu": false
+ },
+ "Préfectures qui cumulent": {
+  "texte": "Anyigba siwo dzi woƒo ƒu ɖo",
   "relu": false
  },
  "Préfectures sans auto-école": {
@@ -5723,6 +5767,10 @@
   "texte": "Xexeawo (6)",
   "relu": false
  },
+ "Zones en difficulté": {
+  "texte": "Xexea Siwo Le Kuxi Me",
+  "relu": false
+ },
  "Zones en difficulté :": {
   "texte": "Nɔnɔme sesẽwo:",
   "relu": false
@@ -6007,6 +6055,10 @@
   "texte": "kpe ɖe eŋu",
   "relu": false
  },
+ "cumulent les deux déficits": {
+  "texte": "ga home eveawo katã",
+  "relu": false
+ },
  "d'une carte à l'autre.": {
   "texte": "Le anyigbatata ɖeka dzi va se ɖe evelia dzi.",
   "relu": false
@@ -6207,6 +6259,10 @@
   "texte": "Togo-dɔwɔƒea ƒe ɖoɖo",
   "relu": false
  },
+ "essentiel": {
+  "texte": "nu vevi aɖe",
+  "relu": false
+ },
  "est la seule zone": {
   "texte": "enye teƒe ɖeka kolia",
   "relu": false
@@ -6281,6 +6337,10 @@
  },
  "habitants (": {
   "texte": "ame siwo le afi ma (",
+  "relu": false
+ },
+ "habitants dans les 10 premières préfectures": {
+  "texte": "ame siwo le nuto gbãtɔ 10awo me",
   "relu": false
  },
  "habitants gagnés": {
@@ -6803,6 +6863,14 @@
   "texte": "nuto siwo me ʋukulawo ƒe suku aɖeke mele o",
   "relu": false
  },
+ "préfectures à remettre en état": {
+  "texte": "nuto siwo wòle be woatrɔ ɖo",
+  "relu": false
+ },
+ "préfectures à équiper": {
+  "texte": "nuto siwo ŋu wòle be woatu ɖo",
+  "relu": false
+ },
  "qui cumule un réseau dégradé (": {
   "texte": "si nye nu gbegblẽ wɔwɔ (",
   "relu": false
@@ -6821,6 +6889,10 @@
  },
  "reponse en-carte": {
   "texte": "ɖo eŋu na wò",
+  "relu": false
+ },
+ "restent dans les 6 tests de robustesse : Danyi, Blitta, Agou, Tchamba, Bassar, Oti et Bas-Mono.": {
+  "texte": "Wova nɔ te sesĩe le dodokpɔ adeawo me: Danyi, Blitta, Agou, Chamba, Bassar, Oti kple Bas-Mono.",
   "relu": false
  },
  "resteront à plus de 2 km d'une route revêtue.": {
@@ -6917,6 +6989,10 @@
  },
  "sous la médiane pour les km de route par habitant": {
   "texte": "le nu siwo katã le mɔa dzi ƒe mama si le ame ɖeka ƒe nudidi gbɔ la te",
+  "relu": false
+ },
+ "stable": {
+  "texte": "nɔ te sesĩe",
   "relu": false
  },
  "style=\"margin-top:1rem;\"": {
@@ -7081,6 +7157,10 @@
  },
  "zones en fond, tronçons par état": {
   "texte": "Anyigba siwo le megbe, le akpa aɖe le teƒea",
+  "relu": false
+ },
+ "zones sous la médiane": {
+  "texte": "nuto siwo le median",
   "relu": false
  },
  "« Les accidents augmentent » est nuancé : volume en hausse, taux en baisse.": {
