@@ -40,7 +40,9 @@ dashboard/
 ├── views/              une page par fichier (vue_nationale, comparaison, evolutions, carte,
 │                       priorites, recommandations, horizon, methodologie)
 ├── static/             armoiries-togo-ecu.svg (CC BY-SA 4.0, Edem Fiadjoe — attribution en page Méthodologie),
-│                       logo_togo_ai_lab.png (repli texte si absent)
+│                       logo_togo_ai_lab.png (repli texte si absent), logo_barre_laterale.svg et
+│                       logo_togo_icone.svg (logo de la barre latérale, produits par scripts/logo_barre_laterale.py),
+│                       routes_slogan.svg (illustration du slogan en bas de la barre latérale)
 ├── .streamlit/config.toml
 └── requirements.txt
 ```
