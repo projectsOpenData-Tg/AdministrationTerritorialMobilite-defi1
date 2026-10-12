@@ -324,17 +324,22 @@ st.markdown("")
 titre_bloc("Le Togo, préfecture par préfecture",
            "Une couche à la fois, en 5 classes fixes ; l'agrandissement montre la région Maritime et le Grand "
            "Lomé, où se concentrent les auto-écoles. Molette ou barre d'outils pour zoomer.")
-# Les 5 vues « État du réseau » ont désormais leur propre filtre et leur propre carte (plus bas) : le filtre
-# « Couche » ne garde que les couches thématiques.
+# Les 5 vues « État du réseau » ont leur propre filtre : le filtre « Couche » ne garde que les couches thématiques.
 COUCHES_THEMATIQUES = [k for k in COUCHES if not k.startswith("État du réseau")]
-# Les trois réglages sur une même grille horizontale, plus la case Auto-écoles.
-f1, f2, f3, f4 = st.columns([1.5, 1.2, 1.6, 0.9], vertical_alignment="bottom")
-nom_couche = f1.selectbox("Couche", COUCHES_THEMATIQUES, key="ca_couche")
-trace = f2.selectbox("Tracé", ["Routes classées par type", "État des tronçons relevés", "Aucun"], key="ca_trace")
-equip = f3.selectbox("Équipements de sécurité routière (hors indicateurs)",
-                     ["Masqués", "Panneau de signalisation", "Ralentisseur", "Passage piéton", "Feu tricolore"],
-                     key="ca_equip")
-montrer_ae = f4.checkbox("Auto-écoles", value=True, key="ca_ae")
+# Réglages propres à la page, placés dans la barre latérale (ils n'apparaissent que sur la page Carte) pour
+# laisser toute la largeur aux trois cartes. Les filtres de territoire par défaut restent au-dessus.
+with st.sidebar:
+    st.markdown('<div class="reglages-carte-titre">Réglages de la carte</div>', unsafe_allow_html=True)
+    nom_couche = st.selectbox("Couche (carte 1)", COUCHES_THEMATIQUES, key="ca_couche")
+    trace = st.selectbox("Tracé (carte 1)", ["Routes classées par type", "État des tronçons relevés", "Aucun"],
+                         key="ca_trace")
+    montrer_ae = st.checkbox("Auto-écoles", value=True, key="ca_ae")
+    equip = st.selectbox("Équipements de sécurité routière (hors indicateurs)",
+                         ["Masqués", "Panneau de signalisation", "Ralentisseur", "Passage piéton", "Feu tricolore"],
+                         key="ca_equip")
+    etats_aff = st.multiselect("États du réseau (carte 3)", list(ETAT_LIGNE), default=[], key="ca_etats",
+                               help="Vide = les 5 états sont affichés.")
+etats_vus = etats_aff or list(ETAT_LIGNE)
 
 cfg = COUCHES[nom_couche]
 classes = cfg["classes"]
@@ -463,31 +468,76 @@ def dessiner(cible: str, inset: bool):
                            selected=dict(marker=dict(opacity=1)), unselected=dict(marker=dict(opacity=1)))
 
 
+ZONES_ORDRE = list(COULEUR_ZONE)
+
+
+def dessiner_etat(cible: str):
+    """Carte 3 : fond coloré par zone, limites de régions colorées, tronçons par état dominant, et équipements."""
+    comm = dict(geojson=GEO, featureidkey="properties.code", marker_line_color="#ffffff", marker_line_width=0.8,
+                showscale=False, geo=cible, selected=dict(marker=dict(opacity=1)),
+                unselected=dict(marker=dict(opacity=1)))
+    if hors:
+        fig.add_choropleth(locations=sorted(hors), z=[0] * len(hors), colorscale=_uni(HORS_SELECTION),
+                           zmin=0, zmax=1, hoverinfo="skip", **comm)
+    dd = [p for p in D.index if p not in hors]
+    fig.add_choropleth(locations=dd, z=[ZONES_ORDRE.index(D.loc[p, "Zone"]) + 0.5 for p in dd], zmin=0,
+                       zmax=len(ZONES_ORDRE), colorscale=_echelle([COULEUR_ZONE[z] for z in ZONES_ORDRE]),
+                       marker_opacity=0.45,
+                       text=[f"<b>{p}</b><br>{D.loc[p, 'Zone']} · région {D.loc[p, 'Région']}" for p in dd],
+                       hovertemplate="%{text}<extra></extra>", **comm)
+    for reg_nom, (lon, lat) in _lignes_regions_colorees().items():
+        fig.add_scattergeo(lon=lon, lat=lat, mode="lines", hoverinfo="skip", showlegend=False, geo=cible,
+                           line=dict(width=2.0, color=COULEUR_REGION.get(reg_nom, "#55534e")))
+    etats5 = _routes_par_etat_5()
+    for etat in ["Non évalué", "En travaux", "Bon", "Moyen", "Mauvais"]:   # le mauvais dessiné en dernier (au-dessus)
+        if etat in etats_vus:
+            lon, lat = etats5[etat]
+            fig.add_scattergeo(lon=lon, lat=lat, mode="lines", hoverinfo="skip", showlegend=False, geo=cible,
+                               line=dict(width=2.6 if etat == "Mauvais" else 1.8, color=ETAT_LIGNE[etat],
+                                         dash="dash" if etat == "Non évalué" else "solid"))
+    if equip != "Masqués":
+        lons, lats, prefs = _points_equipements(equip)
+        fig.add_scattergeo(lon=lons, lat=lats, mode="markers", geo=cible, text=prefs, showlegend=False,
+                           marker=dict(size=3.5, color=EQUIPEMENT, opacity=0.75),
+                           selected=dict(marker=dict(opacity=1)), unselected=dict(marker=dict(opacity=1)),
+                           hovertemplate=f"{equip} — %{{text}}<extra></extra>")
+
+
 dessiner("geo", inset=False)
 dessiner("geo2", inset=True)
+dessiner_etat("geo3")
 
-# Noms des préfectures sur l'agrandissement, comme sur la figure du notebook « 04 — O3 ».
+# Noms des préfectures sur l'agrandissement (carte 2), comme sur la figure du notebook « 04 — O3 ».
 SUD = [p for p in D.index if D.loc[p, "Région"] == "Maritime"]
 cen = _centroides()
 fig.add_scattergeo(lon=[cen[p][0] for p in SUD], lat=[cen[p][1] for p in SUD], mode="text", geo="geo2",
-                   text=SUD, textfont=dict(size=10, color="#141413"), hoverinfo="skip", showlegend=False)
+                   text=SUD, textfont=dict(size=9, color="#141413"), hoverinfo="skip", showlegend=False)
 
 base_geo = dict(visible=False, bgcolor="#ffffff", projection=dict(type="mercator"))
 lon_t, lat_t = _fenetre()
 lon_s, lat_s = _fenetre(set(SUD), marge=0.03)
+# Les trois cartes côte à côte sur une même grille horizontale : Togo principal, zoom Maritime, état du réseau.
 fig.update_layout(
-    geo=dict(**base_geo, domain=dict(x=[0, 0.46], y=[0, 1]),
-             lonaxis=dict(range=lon_t), lataxis=dict(range=lat_t)),
-    geo2=dict(**base_geo, domain=dict(x=[0.48, 1], y=[0.02, 0.80]),
+    geo=dict(**base_geo, domain=dict(x=[0, 0.30], y=[0, 1]), lonaxis=dict(range=lon_t), lataxis=dict(range=lat_t)),
+    geo2=dict(**base_geo, domain=dict(x=[0.33, 0.62], y=[0.04, 0.82]),
               lonaxis=dict(range=lon_s), lataxis=dict(range=lat_s)),
-    height=640, margin=dict(l=0, r=0, t=22, b=0), paper_bgcolor="#ffffff",
+    geo3=dict(**base_geo, domain=dict(x=[0.69, 1.0], y=[0, 1]), lonaxis=dict(range=lon_t), lataxis=dict(range=lat_t)),
+    height=620, margin=dict(l=0, r=0, t=48, b=0), paper_bgcolor="#ffffff",
     font=dict(family="IBM Plex Sans, system-ui, sans-serif", color=ENCRE),
     hoverlabel=dict(bgcolor="#ffffff"), separators=", ",
-    annotations=[dict(x=0.48, y=0.90, xref="paper", yref="paper", xanchor="left", showarrow=False,
-                      text="<b>Région Maritime et Grand Lomé, agrandi</b><br>"
-                           "<span style='font-size:10px;color:#55534e'>la région la plus dense : "
-                           "103 des 132 auto-écoles agréées</span>",
-                      font=dict(size=12, color=ENCRE), align="left")])
+    annotations=[
+        dict(x=0.0, y=1.05, xref="paper", yref="paper", xanchor="left", showarrow=False, align="left",
+             font=dict(size=12, color=ENCRE),
+             text="<b>1 · Le Togo, préfecture par préfecture</b><br>"
+                  f"<span style='font-size:10px;color:#55534e'>{html.escape(nom_couche)}</span>"),
+        dict(x=0.33, y=1.05, xref="paper", yref="paper", xanchor="left", showarrow=False, align="left",
+             font=dict(size=12, color=ENCRE),
+             text="<b>2 · Maritime et Grand Lomé, agrandi</b><br>"
+                  "<span style='font-size:10px;color:#55534e'>103 des 132 auto-écoles agréées</span>"),
+        dict(x=0.69, y=1.05, xref="paper", yref="paper", xanchor="left", showarrow=False, align="left",
+             font=dict(size=12, color=ENCRE),
+             text="<b>3 · L'état du réseau routier</b><br>"
+                  "<span style='font-size:10px;color:#55534e'>zones en fond, tronçons par état</span>")])
 st.plotly_chart(fig, key="ca_carte", on_select="rerun", selection_mode="points",
                 config={"displayModeBar": True, "scrollZoom": True, "displaylogo": False,
                         "modeBarButtonsToRemove": ["select2d", "lasso2d"]})
@@ -544,77 +594,31 @@ if equip != "Masqués":
     sur_carte.append(f'<span style="display:inline-flex;align-items:center;gap:5px">'
                      f'<span style="width:9px;height:9px;border-radius:50%;background:{EQUIPEMENT}"></span>'
                      f'{equip.lower()}s — non utilisés dans les indicateurs</span>')
-st.markdown(f'<div class="filtres-actifs"><b>{html.escape(nom_couche)}</b> '
+st.markdown(f'<div class="filtres-actifs"><b>Carte 1 — {html.escape(nom_couche)}</b> '
             f'<span style="color:#55534e">({html.escape(cfg["unite"])})</span><br>{chips}<br>'
             f'<span style="font-size:.74rem"><b>Sur la carte :</b> {"".join(sur_carte)}</span></div>',
             unsafe_allow_html=True)
-note(f"Niveau {cfg['niveau']} — {cfg['note']} A = mesuré, B = calculé, C = estimé.")
+# Légende de la carte 3 (état du réseau) : états des tronçons + fond coloré par zone.
+etat_badges = "".join(
+    f'<span style="display:inline-flex;align-items:center;gap:5px;margin-right:12px;font-size:.74rem">'
+    f'<span style="width:18px;height:0;border-top:3px {"dashed" if e == "Non évalué" else "solid"} '
+    f'{ETAT_LIGNE[e]}"></span>{e.lower()}</span>' for e in ETAT_LIGNE)
+zone_badges = "".join(
+    f'<span style="display:inline-flex;align-items:center;gap:5px;margin-right:12px;font-size:.74rem">'
+    f'<span style="width:13px;height:13px;border-radius:3px;background:{COULEUR_ZONE[z]};'
+    f'border:1px solid #d8d6cc;opacity:.55"></span>{html.escape(z)}</span>' for z in COULEUR_ZONE)
+st.markdown(f'<div class="filtres-actifs"><b>Carte 3 — état des tronçons :</b> {etat_badges}'
+            f'<br><b>Fond coloré par zone :</b> {zone_badges}</div>', unsafe_allow_html=True)
+note(f"Carte 1 — niveau {cfg['niveau']} : {cfg['note']} A = mesuré, B = calculé, C = estimé. "
+     "Carte 3 — état dominant par tronçon (le plus de km parmi bon, moyen, mauvais, en travaux), relevé 2020, "
+     "routes nationales (niveau C).")
 exp = D.reset_index()[["Préfecture", "Zone", "Région", "Population", cfg["col"]]]
 export_csv(exp, "couche_affichee.csv", "ca_exp_couche", "Télécharger la couche (CSV)")
 
 # La carte des constats sous la section (comme sur les autres pages).
 constat(f'<strong>{html.escape(nom_couche)}</strong><br>{cfg["constat"]}')
-st.caption("Projection Mercator, cadrée sur le Togo, sans fond de carte. Les contours des 5 régions sont "
-           "toujours tracés ; le territoire choisi dans la barre latérale garde ses couleurs, les autres "
-           "préfectures passent en beige.")
-
-# ---------------------------------------------------------- Section 3 — Carte de l'état du réseau routier
-st.markdown("")
-titre_bloc("L'état du réseau routier",
-           "Une seconde carte : chaque zone dans sa couleur, les tronçons relevés colorés selon leur état "
-           "dominant, les limites des 5 régions. Elle suit les filtres de la barre latérale.")
-etats_aff = st.multiselect("États du réseau à afficher", list(ETAT_LIGNE), default=[], key="ca_etats",
-                           help="Vide = les 5 états sont affichés.")
-etats_vus = etats_aff or list(ETAT_LIGNE)
-# Pastilles colorées des états (le menu déroulant ne pouvant pas les afficher lui-même).
-etat_badges = "".join(
-    f'<span style="display:inline-flex;align-items:center;gap:5px;margin-right:12px;font-size:.74rem">'
-    f'<span style="width:18px;height:0;border-top:3px {"dashed" if e == "Non évalué" else "solid"} '
-    f'{ETAT_LIGNE[e]}"></span>{e.lower()}</span>' for e in ETAT_LIGNE)
-st.markdown(f'<div class="filtres-actifs"><b>État des tronçons :</b> {etat_badges}</div>', unsafe_allow_html=True)
-
-ZONES_ORDRE = list(COULEUR_ZONE)
-dedans2 = [p for p in D.index if p not in hors]
-fig2 = go.Figure()
-if hors:
-    fig2.add_choropleth(geojson=GEO, featureidkey="properties.code", locations=sorted(hors), z=[0] * len(hors),
-                        colorscale=_uni(HORS_SELECTION), zmin=0, zmax=1, showscale=False,
-                        marker_line_color="#ffffff", marker_line_width=0.8, hoverinfo="skip")
-fig2.add_choropleth(
-    geojson=GEO, featureidkey="properties.code", locations=dedans2,
-    z=[ZONES_ORDRE.index(D.loc[p, "Zone"]) + 0.5 for p in dedans2], zmin=0, zmax=len(ZONES_ORDRE),
-    colorscale=_echelle([COULEUR_ZONE[z] for z in ZONES_ORDRE]), showscale=False,
-    marker_line_color="#ffffff", marker_line_width=0.8, marker_opacity=0.45,
-    text=[f"<b>{p}</b><br>{D.loc[p, 'Zone']} · région {D.loc[p, 'Région']}" for p in dedans2],
-    hovertemplate="%{text}<extra></extra>")
-for reg_nom, (lon, lat) in _lignes_regions_colorees().items():
-    fig2.add_scattergeo(lon=lon, lat=lat, mode="lines", hoverinfo="skip", showlegend=False,
-                        line=dict(width=2.6, color=COULEUR_REGION.get(reg_nom, "#55534e")))
-etats5 = _routes_par_etat_5()
-for etat in ["Non évalué", "En travaux", "Bon", "Moyen", "Mauvais"]:   # le mauvais dessiné en dernier (au-dessus)
-    if etat in etats_vus:
-        lon, lat = etats5[etat]
-        fig2.add_scattergeo(lon=lon, lat=lat, mode="lines", hoverinfo="skip", showlegend=False,
-                            line=dict(width=2.8 if etat == "Mauvais" else 2.0, color=ETAT_LIGNE[etat],
-                                      dash="dash" if etat == "Non évalué" else "solid"))
-fig2.update_layout(
-    geo=dict(visible=False, bgcolor="#ffffff", projection=dict(type="mercator"),
-             lonaxis=dict(range=lon_t), lataxis=dict(range=lat_t)),
-    height=600, margin=dict(l=0, r=0, t=10, b=0), paper_bgcolor="#ffffff",
-    font=dict(family="IBM Plex Sans, system-ui, sans-serif", color=ENCRE),
-    hoverlabel=dict(bgcolor="#ffffff"), separators=", ")
-st.plotly_chart(fig2, key="ca_carte2",
-                config={"displayModeBar": True, "scrollZoom": True, "displaylogo": False,
-                        "modeBarButtonsToRemove": ["select2d", "lasso2d"]})
-zone_badges = "".join(
-    f'<span style="display:inline-flex;align-items:center;gap:5px;margin-right:12px;font-size:.74rem">'
-    f'<span style="width:13px;height:13px;border-radius:3px;background:{COULEUR_ZONE[z]};'
-    f'border:1px solid #d8d6cc;opacity:.55"></span>{html.escape(z)}</span>' for z in COULEUR_ZONE)
-st.markdown('<div class="filtres-actifs"><b>État du réseau routier sur cette carte.</b> '
-            '<span style="color:#55534e">Fond coloré par zone :</span><br>' + zone_badges + '</div>',
-            unsafe_allow_html=True)
-note("État dominant par tronçon (le plus de km parmi bon, moyen, mauvais et en travaux). Relevé de 2020, routes "
-     "nationales seulement. Niveau C.")
+st.caption("Projection Mercator, cadrée sur le Togo, sans fond de carte. Les 3 cartes partagent les filtres de la "
+           "barre latérale ; le territoire choisi garde ses couleurs, les autres préfectures passent en beige.")
 
 # ---------------------------------------------------------- Section 4 — Fiche de la préfecture choisie
 titre_bloc("La préfecture choisie")

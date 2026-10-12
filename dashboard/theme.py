@@ -304,6 +304,9 @@ div.st-key-topbar_droite [data-testid="stMarkdownContainer"] { display: flex; ju
 .note-carte.lisere-vert { border-left-color: #16834a; } .note-carte.lisere-vert .info-i { background: #16834a; }
 .note-carte.lisere-rouge { border-left-color: #ce1126; } .note-carte.lisere-rouge .info-i { background: #ce1126; }
 .note-carte.lisere-jaune { border-left-color: #e6b422; } .note-carte.lisere-jaune .info-i { background: #e6b422; color: #3a2e00; }
+/* Titre du bloc de réglages propre à la page Carte, dans la barre latérale */
+.reglages-carte-titre { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+  color: #1769aa; margin: 0.6rem 0 0.2rem; border-top: 1px solid #e2e8f0; padding-top: 0.7rem; }
 /* Chiffres clés centrés (rangee_kpi(centre=True)) */
 .kpi-grille.centre .kpi { border-bottom-width: 3px; }
 .kpi-grille.centre .kpi-reserve { text-align: center; border-top: 0; margin-top: 8px; color: #64748b; }

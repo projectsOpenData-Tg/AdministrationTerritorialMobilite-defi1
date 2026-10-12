@@ -307,3 +307,15 @@ Couleurs fixes par donnée, dans `theme.py`, pour qu'un indicateur garde sa coul
   nouvelle classe CSS `.lisere-jaune`).
 - **i18n** : nouveaux segments traduits (en/ee/kbp) ; correctif `html.escape(quote=False)` sur les noms propres du
   tableau des auto-écoles (l'apostrophe échappée fragmentait les noms à la traduction).
+
+## 21. Carte — les 3 cartes sur une même grille horizontale (sur design/palette-a)
+
+- Les **3 cartes réunies dans une seule figure** (panneaux `geo` / `geo2` / `geo3`) côte à côte, pleine largeur :
+  carte 1 (Togo, couche thématique), carte 2 (zoom Maritime), carte 3 (état du réseau : zones en fond, tronçons
+  par état, régions colorées). Titres numérotés au-dessus de chaque panneau.
+- **Réglages déplacés dans la barre latérale** (bloc « Réglages de la carte », visible seulement sur la page Carte,
+  sous les filtres de territoire) : Couche, Tracé, Auto-écoles, Équipements et États du réseau.
+- **Filtre « Équipements » appliqué aussi à la carte 3** (`dessiner_etat` ajoute les points d'équipement).
+- Suppression de la seconde `st.plotly_chart` séparée ; légendes des cartes 1 et 3 réunies sous la figure unique.
+- Maquette de validation générée hors-ligne (rendu cartésien, le fond Plotly interactif n'étant pas chargeable
+  dans le bac à sable ; la vraie appli garde survol/zoom/clic).
