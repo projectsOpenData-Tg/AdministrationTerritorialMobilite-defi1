@@ -802,10 +802,10 @@ with g:
     synthese("21,2 %", "des km évalués en mauvais état dans le pays (669,34 km sur 3 163 km)",
              ["13 préfectures au-delà du seuil de 22,13 %.",
               "Mô sans route classée : 38 préfectures évaluées sur 39.",
-              "103 des 132 auto-écoles agréées dans le Grand Lomé."])
+              "103 des 132 auto-écoles agréées dans le Grand Lomé."], egale=True)
 with d:
     limite(puces=["État relevé en 2020, sur les routes nationales seulement.",
                   "Accès rural estimé avec une population répartie uniformément dans chaque préfecture.",
                   "Distance à vol d'oiseau, depuis le chef-lieu ou un point central.",
-                  "Équipements recensés en 2021-2022, non vérifiés, hors indicateurs."])
+                  "Équipements recensés en 2021-2022, non vérifiés, hors indicateurs."], egale=True)
 pied()
