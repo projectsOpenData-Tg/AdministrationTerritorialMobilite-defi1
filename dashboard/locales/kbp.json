@@ -7,10 +7,6 @@
   "texte": "% nɛ kɩɖaɣlɩyʋ",
   "relu": false
  },
- "(% des km évalués)": {
-  "texte": "(Papɩsɩna-kɛ nɛ keteŋa kpeekpe)",
-  "relu": false
- },
  "(101,1 km évalués)": {
   "texte": "(101,1 km mbʋ yɔ)",
   "relu": false
@@ -51,8 +47,16 @@
   "texte": "(49,8 km mbʋ yɔ)",
   "relu": false
  },
+ "(antennes comprises) et": {
+  "texte": "(kɩkpɛndɩnɩ antennas) nɛ",
+  "relu": false
+ },
  "(de 579 845 à 965 702), dont": {
   "texte": "(Kɩpɩsɩnaʋ takayɩhayʋʋ)",
+  "relu": false
+ },
+ "(habitants)": {
+  "texte": "(tɛtʋ taa ɛyaa)",
   "relu": false
  },
  "(la formation)": {
@@ -143,14 +147,6 @@
   "texte": "Lɩmaɣza wena a-yɔɔ pɩwɛɛ se ɖɩtɩŋna yɔ",
   "relu": false
  },
- "0 tronçons relevés": {
-  "texte": "Kʋyɩsɩ nzɩ palɩzɩ-sɩ yɔ",
-  "relu": false
- },
- "0,0 km évalués": {
-  "texte": "0,0 km mbʋ yɔ",
-  "relu": false
- },
  "0,2 % des routes en mauvais état (87,9 km évalués, 2 tronçons critiques).": {
   "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ lɛ, nʋmɔʋ ŋgʋ kɩwɛ kaɖɛ yɔ, kɩwɛ ɛzɩ 0.2% yɔ.",
   "relu": false
@@ -195,10 +191,6 @@
   "texte": "1 patasɩ-ɩ tɔzʋʋ",
   "relu": false
  },
- "1 tronçons relevés": {
-  "texte": "Kʋyɩsɩ nzɩ palɩzɩ-sɩ yɔ",
-  "relu": false
- },
  "1,1 % des routes en mauvais état (24,8 km évalués, un tronçon critique).": {
   "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ lɛ, nʋmɔʋ ŋgʋ kɩ-taa palakaɣ tʋmɩyɛ yɔ, kɩwɛ kaɖɛ.",
   "relu": false
@@ -239,14 +231,6 @@
   "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa ɛyaa kɛ 101 300",
   "relu": false
  },
- "101,1 km évalués": {
-  "texte": "101,1 km mbʋ yɔ",
-  "relu": false
- },
- "101,2 km évalués": {
-  "texte": "101,2 km mbʋ yɔ",
-  "relu": false
- },
  "103 des 132": {
   "texte": "Lɩmaɣza wena a-yɔɔ ɖɩtɩŋɩɣna yɔ:",
   "relu": false
@@ -259,20 +243,8 @@
   "texte": "11.5% nɛ pɩtalɩ 124.9 km nɛ pɩtalɩ hɔɔlʋʋ sɔsɔʋ ŋgʋ kɩ-taa.",
   "relu": false
  },
- "110,7 km évalués": {
-  "texte": "110,7 km mbʋ yɔ",
-  "relu": false
- },
- "110,8 km évalués": {
-  "texte": "110,8 km weyi ɩ-yɔɔ palabɩ akɔnta yɔ",
-  "relu": false
- },
  "111 214 habitants": {
   "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa ɛyaa wɛ 111 214",
-  "relu": false
- },
- "113,5 km évalués": {
-  "texte": "113,5 km mbʋ yɔ",
   "relu": false
  },
  "114 172 habitants": {
@@ -287,10 +259,6 @@
   "texte": "12,1% nɛ pɩtɛ lɛ, nʋmɔŋ weyi ɩwɛ kaɖɛ yɔ, ɩ-taa (36.0 km, hɔɔlʋʋ naalɛ kɩcɛyɩm).",
   "relu": false
  },
- "120,3 km évalués": {
-  "texte": "120,3 km mbʋ yɔ",
-  "relu": false
- },
  "123 330 habitants": {
   "texte": "123,330 ɛyaa",
   "relu": false
@@ -299,28 +267,12 @@
   "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa ɛyaa wɛ 124 848",
   "relu": false
  },
- "124,1 km évalués": {
-  "texte": "124,1 km mbʋ yɔ",
-  "relu": false
- },
- "124,9 km évalués": {
-  "texte": "124,9 km mbʋ yɔ",
-  "relu": false
- },
- "125,7 km évalués": {
-  "texte": "125,7 km mbʋ yɔ",
-  "relu": false
- },
  "128 687 habitants": {
   "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa ɛyaa wɛ 128 687",
   "relu": false
  },
  "128 959 habitants": {
   "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa ɛyaa wɛ 128 959",
-  "relu": false
- },
- "129,9 km évalués": {
-  "texte": "129,9 km mbʋ yɔ",
   "relu": false
  },
  "13 au réseau dégradé (2 868 523 habitants).": {
@@ -343,8 +295,12 @@
   "texte": "13 nɛ 38",
   "relu": false
  },
- "131,7 km évalués": {
-  "texte": "131,7 km mbʋ yɔ",
+ "13 à vérifier": {
+  "texte": "13 Pɩcɛyaa se ɖɩna",
+  "relu": false
+ },
+ "132 agréées": {
+  "texte": "132 pa-tɩ yɔɔ",
   "relu": false
  },
  "132 auto-écoles agréées": {
@@ -373,10 +329,6 @@
  },
  "140 non agréées ou au statut non renseigné": {
   "texte": "Pɩtɩmʋna se patɩlɩ-wɛ yaa pɛtɛzɩ-wɛ tɔm susuu",
-  "relu": false
- },
- "140,6 km évalués": {
-  "texte": "140,6 km mbʋ yɔ",
   "relu": false
  },
  "145 986 habitants": {
@@ -415,20 +367,12 @@
   "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa tɛtʊ sɔsɔtʊ 16",
   "relu": false
  },
- "161,4 km évalués": {
-  "texte": "161,4 km mbʋ yɔ",
-  "relu": false
- },
  "163 272 habitants": {
   "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa ɛyaa kɛ 163 272",
   "relu": false
  },
  "164 460 habitants": {
   "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa ɛyaa wɛ 164 460",
-  "relu": false
- },
- "167,5 km évalués": {
-  "texte": "167,5 km mbʋ yɔ",
   "relu": false
  },
  "17 vérifications et hypothèses": {
@@ -517,10 +461,6 @@
  },
  "2 références sans action nouvelle": {
   "texte": "2 Tʋma kɩfatʋ",
-  "relu": false
- },
- "2 tronçons relevés": {
-  "texte": "Kʋyɩsɩ nzɩ sɩ-taa",
   "relu": false
  },
  "2,63 fois": {
@@ -695,10 +635,6 @@
   "texte": "Lɩmaɣza wena a-yɔɔ pɔcɔŋna yɔ, a-taa 23,3% wɛ kaɖɛ ñɩnɖɛ taa.",
   "relu": false
  },
- "24,8 km évalués": {
-  "texte": "24,8 km mbʋ yɔ",
-  "relu": false
- },
  "240 360 habitants": {
   "texte": "Ɛyaa 240 360",
   "relu": false
@@ -733,14 +669,6 @@
  },
  "27,2 % des routes en mauvais état (113,5 km évalués, 2 tronçons critiques).": {
   "texte": "Lɩmaɣza wena a-yɔɔ pɔcɔŋna yɔ, a-taa 27,2% wɛ kaɖɛ taa (113.5 km, hɔɔlʋʋ naalɛ kɩcɛyɩm).",
-  "relu": false
- },
- "27,8 km évalués": {
-  "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ pɩwɛɛ se ɖɩla tʋmɩyɛ yɔ",
-  "relu": false
- },
- "272 auto-écoles affichées, dont 132 agréées (antennes comprises) et 13 à vérifier : non agréées dans une préfecture qui n'a aucune auto-école agréée. La préfecture est le rattachement par la position (utilisé par les indicateurs) ; il diffère de la préfecture déclarée pour 4 auto-écoles.": {
-  "texte": "272 lɔɔɖɩyɛ ɖʋʋ sukuli weyi ɩ-taa palakaɣ tʊmɩyɛ yɔ, pɛkpɛndɩ 132 nɛ patɩŋɩɣna se peɖiɣni ñɩnʋʋ. 13: pataaha nʋmɔʋ lɩzʋʋ sɔnzɩ Prefecture nɖɩ ɖɩfɛyɩnɩ tɩlasɩ kpaŋʊʊ sukulinaa cɔlɔ yɔ.",
   "relu": false
  },
  "28,0 % des routes en mauvais état (167,5 km évalués, un tronçon critique).": {
@@ -805,10 +733,6 @@
  },
  "3 recensées, non agréées": {
   "texte": "3 Pɩtɩkɛ takayaɣ ŋga pasɩ-kɛ yɔ",
-  "relu": false
- },
- "3 tronçons relevés": {
-  "texte": "3 Kʋyɩsɩ nzɩ sɩ-taa",
   "relu": false
  },
  "3,3 % des routes en mauvais état (45,2 km évalués, 2 tronçons critiques).": {
@@ -887,14 +811,6 @@
   "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ lɛ, nʋmɔʋ ŋgʋ kɩ-taa palakaɣ tʋmɩyɛ yɔ, kɩwɛ kaɖɛ.",
   "relu": false
  },
- "35,8 km évalués": {
-  "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ pɩwɛɛ se ɖɩla tʋmɩyɛ yɔ",
-  "relu": false
- },
- "36,0 km évalués": {
-  "texte": "36 km mbʋ yɔ",
-  "relu": false
- },
  "36,9 % des routes en mauvais état (125,7 km évalués, 3 tronçons critiques).": {
   "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ lɛ, nʋmɔʋ ŋgʋ kɩ-taa kɩ-lakasɩ wɛɛ yɔ, kɩwɛ kɩ-taa 36.9%.",
   "relu": false
@@ -943,10 +859,6 @@
   "texte": "4 Pɩkɩlɩ ɖeu.",
   "relu": false
  },
- "4 tronçons relevés": {
-  "texte": "4 Kʋyɩsɩ nzɩ palɩzɩ-sɩ yɔ",
-  "relu": false
- },
  "4 vues": {
   "texte": "4 lɩmaɣza",
   "relu": false
@@ -991,20 +903,12 @@
   "texte": "Lɩmaɣza ana a-yɔɔ lɛ, ɛyaa mba pɛwɛnɩ lɩmaɣza kɩdɛkɛda yɔ, pa-taa 40.0% wɛ kaɖɛ nʋmɔʋ taa.",
   "relu": false
  },
- "40,3 km évalués": {
-  "texte": "Kiloonaa 40,3 mbʋ yɔ",
-  "relu": false
- },
  "41 auto-écoles": {
   "texte": "Kpaɣnɩ sukuli 41 taa",
   "relu": false
  },
  "41 auto-écoles à ouvrir": {
   "texte": "Sɔɔndʋ kpaɣnɩ sukuli 41 mbʋ yɔ",
-  "relu": false
- },
- "41,5 km évalués": {
-  "texte": "Kiloonaa 41,5",
   "relu": false
  },
  "43 indicateurs": {
@@ -1015,16 +919,8 @@
   "texte": "449 226 motocicles",
   "relu": false
  },
- "45,2 km évalués": {
-  "texte": "45,2 km mbʋ yɔ",
-  "relu": false
- },
  "450 807 habitants": {
   "texte": "Ɛyaa 450 807",
-  "relu": false
- },
- "46,1 km évalués": {
-  "texte": "46,1 km mbʋ yɔ",
   "relu": false
  },
  "48 auto-écoles": {
@@ -1061,10 +957,6 @@
  },
  "49 tronçons sur 84 en mauvais état, 669,34 km, dont 292,15 km sur les Plateaux (Réseau).": {
   "texte": "Kpaagbaa 84 taa 49 wɛ kaɖɛ, pɛcɛzɩ kilomɛtanaa 669.34, piyele nɛ hɔɔlɩŋ weyi ɩ-taa pɔkɔma yɔ ɛtalɩ 292.15 (Réseau).",
-  "relu": false
- },
- "49,8 km évalués": {
-  "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ lɛ,",
   "relu": false
  },
  "4 401 312 à 4 437 334 selon la répartition de la population": {
@@ -1119,10 +1011,6 @@
   "texte": "Kpaɣna ajɛɛ wena a-taa ɛyaa kɩlɩ ɖɔʋ yɔ, 5 taa lɛ pɛkpɛndaɣ 641 955 nɛ kajalaɣ 10 taa lɛ pɛwɛ ɛzɩ 1 416 859.",
   "relu": false
  },
- "5 tronçons relevés": {
-  "texte": "5 Kʋyɩsɩ nzɩ palɩzɩ-sɩ yɔ",
-  "relu": false
- },
  "5,2 % des routes en mauvais état (57,9 km évalués, un tronçon critique).": {
   "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ pɔcɔŋnɩ nʋmɔʋ lɩzʋʋ tʋmɩyɛ yɔɔ yɔ, kɩkɛna hɔɔlʋʋ sɔsɔʋ.",
   "relu": false
@@ -1145,18 +1033,6 @@
  },
  "52 448 habitants concernés": {
   "texte": "52 448 ɛyaa mba pɛwɛ peeɖe yɔ",
-  "relu": false
- },
- "57,9 km évalués": {
-  "texte": "57,9 km mbʋ yɔ",
-  "relu": false
- },
- "58,5 km évalués": {
-  "texte": "58,5 km mbʋ yɔ",
-  "relu": false
- },
- "58,8 km évalués": {
-  "texte": "58,8 km mbʋ yɔ",
   "relu": false
  },
  "6 auto-écoles": {
@@ -1183,10 +1059,6 @@
   "texte": "6 Kɩhɛyʋʋ pʋ-ñʋʋ taa",
   "relu": false
  },
- "6 tronçons relevés": {
-  "texte": "6 Kʋyɩtʋ ndʋ tɩ-taa",
-  "relu": false
- },
  "6 zones": {
   "texte": "6 Hɔɔlɩŋ nɩɩyɩ",
   "relu": false
@@ -1209,10 +1081,6 @@
  },
  "60 % ou plus": {
   "texte": "Pɩcɛzɩ 60 pɔɔyɩ",
-  "relu": false
- },
- "63,1 km évalués": {
-  "texte": "63,1 km mbʋ yɔ",
   "relu": false
  },
  "641 955 habitants concernés": {
@@ -1271,20 +1139,12 @@
   "texte": "Kpaagbaa lʋbɛ",
   "relu": false
  },
- "7 tronçons relevés": {
-  "texte": "Kpaagbaa lʋbɛ",
-  "relu": false
- },
  "7 vues": {
   "texte": "7 lɩmaɣza",
   "relu": false
  },
  "7 vérifications confirmées sur 17, 2 infirmées, 1 nuancée, 7 non testables (onglet Synthèse).": {
   "texte": "Kʋñɔŋ weyi ɩ-taa palɩzɩ kʋdɔmɩŋ waɖaa mba yɔ, paawɛɛ nɛ pana se pasɩba.",
-  "relu": false
- },
- "7,0 km évalués": {
-  "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ lɛ, pɩwɛɛ se ɖiwolo pɩsɩɩna kɩɖaʋ ŋgʋ.",
   "relu": false
  },
  "7,8 % des routes en mauvais état (7,0 km évalués, un tronçon critique).": {
@@ -1299,14 +1159,6 @@
   "texte": "7. Ɛjaɖɛ ɖɩnɛ, ɛyaa mba pɛwɛnɩ pɩnzɩ 18 nɛ pɩkpaɖɩ yɔ pa-taa 51.8% kɛ kɩgalʊʊ pɩnaɣ 2022 taa nɛ 55.6% mbʊ payaɣ se 2023. (A1-R1)",
   "relu": false
  },
- "70,0 km évalués": {
-  "texte": "70 km mbʋ yɔ",
-  "relu": false
- },
- "72,5 km évalués": {
-  "texte": "72,5 km mbʋ yɔ",
-  "relu": false
- },
  "73 830 habitants": {
   "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa ɛyaa kɛ 73 830",
   "relu": false
@@ -1317,10 +1169,6 @@
  },
  "74,4 % des immatriculations de 2024 sont des motos ; 40 motos pour un permis moto sur 2007": {
   "texte": "Pɩnaɣ 2024 taa lɛ, ɛyaa mba paakpaɣ pa-tɩ nɛ patɩŋnɩ takayɩsɩ yɔɔ yɔ, pa-taa 74,4% kɛ motooɖoowaa; pɩnaɣ 2007 taa lɛ, motooɖoowaa 40 kɛ patɩŋnɩ takayɩsɩ yɔɔ",
-  "relu": false
- },
- "75,6 km évalués": {
-  "texte": "75,6 km mbʋ yɔ",
   "relu": false
  },
  "751 398 véhicules": {
@@ -1351,10 +1199,6 @@
   "texte": "8 Prefektiwaa",
   "relu": false
  },
- "8 tronçons relevés": {
-  "texte": "8 Kɩ-hɔɔlʋʋ ŋgʋ kɩ-taa",
-  "relu": false
- },
  "8,1 % des routes en mauvais état (58,5 km évalués, 3 tronçons critiques).": {
   "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ lɛ, nʋmɔʋ ŋgʋ kɩwɛ kaɖɛ yɔ, kɩ-taa kɩwɛna ɛyaa 8.1%.",
   "relu": false
@@ -1375,10 +1219,6 @@
   "texte": "80 km nɛ pɩkpaɖɩ",
   "relu": false
  },
- "82,5 km évalués": {
-  "texte": "82,5 km mbʋ yɔ",
-  "relu": false
- },
  "84 199 habitants": {
   "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa ɛyaa wɛ 84 199",
   "relu": false
@@ -1391,20 +1231,12 @@
   "texte": "Patɩŋnɩ hɔɔlʋʋ 84 yɔɔ nɛ palɩzɩ-kʋ.",
   "relu": false
  },
- "84,0 km évalués": {
-  "texte": "84,0 km mbʋ yɔ",
-  "relu": false
- },
  "84,8 % des auto-écoles agréées dans les 4 préfectures urbaines.": {
   "texte": "84,8% kɛ sukuli kɩtɛzʊʊ tɛ sukuli kɩtɛzʊʊ tɛ sukuli kɩtɛzʊʊ tɛtʊ naanza taa.",
   "relu": false
  },
  "85 793 habitants": {
   "texte": "Ɛyaa 85 793",
-  "relu": false
- },
- "87,9 km évalués": {
-  "texte": "87,9 km mbʋ yɔ",
   "relu": false
  },
  "88 365 habitants": {
@@ -1421,10 +1253,6 @@
  },
  "9 indicateurs non calculables": {
   "texte": "9 Paapɩzɩɣ nɛ patɩlɩ-wɛ",
-  "relu": false
- },
- "9 tronçons relevés": {
-  "texte": "9 Kpaagbaa",
   "relu": false
  },
  "9 étapes": {
@@ -1447,14 +1275,6 @@
   "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa ɛyaa wɛ 90 505",
   "relu": false
  },
- "90,1 km évalués": {
-  "texte": "Kɔɔyɩsɩ nzɩ sɩ-taa palʋkɩ yɔ:",
-  "relu": false
- },
- "90,5 km évalués": {
-  "texte": "Kɔɔyɩsɩ nzɩ sɩ-taa palʋkɩ yɔ:",
-  "relu": false
- },
  "94 860 habitants": {
   "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa ɛyaa wɛ 94 860",
   "relu": false
@@ -1463,160 +1283,172 @@
   "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa ɛyaa wɛ 956 482",
   "relu": false
  },
- "96,6 km évalués": {
-  "texte": "96,6 km mbʋ yɔ",
+ ": 1 305 681 habitants": {
+  "texte": "Ɛyaa: 1 305 681",
   "relu": false
  },
- ": 0,0 % des km évalués": {
-  "texte": ": 0,0 % kms weyi ɩ-yɔɔ pɔyɔɔdʊʊ yɔ",
+ ": 101 300 habitants": {
+  "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa ɛyaa kɛ 101 300",
   "relu": false
  },
- ": 0,2 % des km évalués": {
-  "texte": ": 0.2% kms weyi ɩ-yɔɔ pɔcɔnaa yɔ",
+ ": 111 214 habitants": {
+  "texte": "Ɛyaa: 111 214",
   "relu": false
  },
- ": 0,5 % des km évalués": {
-  "texte": ": Kɔɔmiilii ni yɔɔ miishɛɛ lɛ anɔ",
+ ": 114 172 habitants": {
+  "texte": "Ɛyaa mba pɛwɛ peeɖe yɔ: 114 172",
   "relu": false
  },
- ": 1,1 % des km évalués": {
-  "texte": "Kɩ-taa lɛ: % 1.1",
+ ": 123 330 habitants": {
+  "texte": "Ɛyaa: 123 330",
   "relu": false
  },
- ": 100,0 % des km évalués": {
-  "texte": "Kɩ-taa: % 100.0",
+ ": 124 848 habitants": {
+  "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa ɛyaa kɛ 124 848",
   "relu": false
  },
- ": 11,5 % des km évalués": {
-  "texte": "Kɩ-taa lɛ: 11.5%",
+ ": 128 687 habitants": {
+  "texte": "Ɛyaa 128 687",
   "relu": false
  },
- ": 12,1 % des km évalués": {
-  "texte": "Lɩm: Kɔɔmiye nɖɩ ɖɩ-taa pakpaɣ-ɖɩ yɔ ɖɩ-taa 12,1%",
+ ": 128 959 habitants": {
+  "texte": "Ɛyaa 128 959",
   "relu": false
  },
  ": 13 des 38 préfectures, et Mô.": {
   "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa tɛtʊ 38 taa 13 nɛ Mo.",
   "relu": false
  },
- ": 14,3 % des km évalués": {
-  "texte": "Kɩ-taa lɛ: Kɔɔmiilii 14,3%",
+ ": 138 864 habitants": {
+  "texte": "Ɛyaa 138 864",
   "relu": false
  },
- ": 14,4 % des km évalués": {
-  "texte": "Kɩ-taa lɛ: Kɔɔmiilii 14,4%",
+ ": 138 867 habitants": {
+  "texte": "Ɛyaa 138 867",
   "relu": false
  },
- ": 17,2 % des km évalués": {
-  "texte": "Hɔɔlɩŋ weyi ɩ-taa: Kɔɔyʊʊ kʊnʊŋ",
+ ": 145 986 habitants": {
+  "texte": "Ɛyaa 145 986",
   "relu": false
  },
- ": 2,7 % des km évalués": {
-  "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ lɛ:",
+ ": 150 376 habitants": {
+  "texte": "Ɛyaa 150 376",
   "relu": false
  },
- ": 21,1 % des km évalués": {
-  "texte": "Kɩ-taa lɛ: Kɔɔyʊʊ kʊnʊŋ taa lɛ, %21,1%",
+ ": 152 065 habitants": {
+  "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa ɛyaa kɛ 152 065",
   "relu": false
  },
- ": 21,8 % des km évalués": {
-  "texte": "Kɩ-taa lɛ: Kɔɔyʊʊ kʊnʊŋ % 21.8",
+ ": 163 272 habitants": {
+  "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa ɛyaa kɛ 163 272",
   "relu": false
  },
- ": 22,3 % des km évalués": {
-  "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ lɛ:",
+ ": 164 460 habitants": {
+  "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa ɛyaa wɛ 164 460",
   "relu": false
  },
- ": 23,0 % des km évalués": {
-  "texte": "Kɩ-taa lɛ: 23.0 %",
+ ": 174 851 habitants": {
+  "texte": "Ɛyaa mba paawɛ peeɖe yɔ: 174 851",
   "relu": false
  },
- ": 23,3 % des km évalués": {
-  "texte": "Kɩ-taa lɛ: km 23,3%",
+ ": 180 158 habitants": {
+  "texte": "Ɛyaa mba paawɛ peeɖe yɔ: 180 158",
   "relu": false
  },
- ": 26,0 % des km évalués": {
-  "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ lɛ:",
+ ": 185 662 habitants": {
+  "texte": "Ɛyaa 185 662",
   "relu": false
  },
- ": 27,2 % des km évalués": {
-  "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ pɔcɔŋna yɔ:",
+ ": 200 585 habitants": {
+  "texte": "Ɛyaa 200 585",
   "relu": false
  },
- ": 28,0 % des km évalués": {
-  "texte": "Kɩ-taa: 28.0 %",
+ ": 224 411 habitants": {
+  "texte": "Ɛyaa 224 411",
   "relu": false
  },
- ": 29,5 % des km évalués": {
-  "texte": "Kɩ-taa: % 29.5",
+ ": 240 360 habitants": {
+  "texte": "Ɛyaa 240 360",
+  "relu": false
+ },
+ ": 241 247 habitants": {
+  "texte": "Ɛyaa 241 247",
+  "relu": false
+ },
+ ": 253 467 habitants": {
+  "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa ɛyaa kɛ 253 467",
+  "relu": false
+ },
+ ": 283 738 habitants": {
+  "texte": "Ɛyaa 283 738",
   "relu": false
  },
  ": 3 en priorité haute, 10 en moyenne, 2 en faible ; 5 préfectures cumulent les deux déficits.": {
   "texte": "Piyele nɛ piɖeni-wɛ yɔ, pɛcɛtɩɣ pa-lɩmaɣza.",
   "relu": false
  },
- ": 3,3 % des km évalués": {
-  "texte": ": Kɔɔmiilii 3,3%",
+ ": 305 096 habitants": {
+  "texte": "Ɛyaa: 305 096",
   "relu": false
  },
- ": 3,4 % des km évalués": {
-  "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ lɛ, ɛyaa mba palakaɣ tʊmɩyɛ yɔ:",
+ ": 388 775 habitants": {
+  "texte": "Ɛyaa 388 775",
   "relu": false
  },
- ": 34,0 % des km évalués": {
-  "texte": "Kɩ-taa: 34.0 %",
+ ": 40 240 habitants": {
+  "texte": "Ɛyaa 40 240",
   "relu": false
  },
- ": 36,9 % des km évalués": {
-  "texte": ": Kɔɔmiilii 36.9%",
+ ": 500 032 habitants": {
+  "texte": "Ɛyaa 500 032",
   "relu": false
  },
- ": 4,5 % des km évalués": {
-  "texte": "Kɩ-taa: 4,5 %",
+ ": 52 448 habitants": {
+  "texte": "Ɛyaa: 52 448",
   "relu": false
  },
- ": 4,6 % des km évalués": {
-  "texte": "Kɩ-taa lɛ: 4,6 %",
+ ": 66 394 habitants": {
+  "texte": "Ɛyaa: 66 394",
   "relu": false
  },
- ": 40,0 % des km évalués": {
-  "texte": ": Kɔɔmiilii 40.0 %",
+ ": 73 830 habitants": {
+  "texte": "Ɛyaa: 73 830",
   "relu": false
  },
- ": 5,2 % des km évalués": {
-  "texte": "Kɩ-taa: % 5,2",
-  "relu": false
- },
- ": 6,0 % des km évalués": {
-  "texte": "Lɩm mbʋ pɩ-yɔɔ pɔyɔɔdɩɣ yɔ: 6.0%",
-  "relu": false
- },
- ": 65,0 % des km évalués": {
-  "texte": ": 65.0 % kms weyi ɩ-yɔɔ pɔcɔnaa yɔ",
-  "relu": false
- },
- ": 68,2 % des km évalués": {
-  "texte": ": Kɔɔmiilii 68.2%",
-  "relu": false
- },
- ": 7,8 % des km évalués": {
-  "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ lɛ:",
-  "relu": false
- },
- ": 8,1 % des km évalués": {
-  "texte": "Kɩ-taa lɛ: 8,1%",
+ ": 80 939 habitants": {
+  "texte": "Ɛyaa 80 939",
   "relu": false
  },
  ": 80,6 % des immatriculations supplémentaires entre 2002 et 2022.": {
   "texte": "Kpaɣ pɩnaɣ 2002 nɛ ŋwolo pɩnaɣ 2022 lɛ, ɛyaa mba paakpaɣ pa-tɩ nɛ patasɩ-wɛ maʋ yɔ, pa-taa 80.6%.",
   "relu": false
  },
- ": 9,2 % des km évalués": {
-  "texte": "Kɩ-taa: 9,2%",
+ ": 84 199 habitants": {
+  "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa ɛyaa wɛ 84 199",
   "relu": false
  },
- ": 9,4 % des km évalués": {
-  "texte": "Kɩ-taa: 9,4%",
+ ": 84 767 habitants": {
+  "texte": "Ɛyaa: 84 767",
+  "relu": false
+ },
+ ": 85 793 habitants": {
+  "texte": "Ɛyaa 85 793",
+  "relu": false
+ },
+ ": 88 365 habitants": {
+  "texte": "Ɛyaa 88 365",
+  "relu": false
+ },
+ ": 882 695 habitants": {
+  "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa ɛyaa wɛ 882 695",
+  "relu": false
+ },
+ ": 90 505 habitants": {
+  "texte": "Ɛyaa: 90 505",
+  "relu": false
+ },
+ ": 94 860 habitants": {
+  "texte": "Ɛyaa: 94 860",
   "relu": false
  },
  ": ceux qui traversent les Plateaux en portent le plus (292,15 km, 23 tronçons), puis ceux de la Centrale (236,25 km, 6 tronçons).": {
@@ -1647,8 +1479,8 @@
   "texte": "Paɣtʋ ndʋ tɩ-yɔɔ pɔyɔɔdɩɣ yɔ, tɩ-taa lɛ, pɔñɔɔzʋʋ-tʋ nɛ pɔñɔɔzʋʋ-tʋ nɛ pɔñɔɔzʋʋ-tʋ.",
   "relu": false
  },
- ": non définie : aucune route classée": {
-  "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ pɔyɔɔdɩɣ yɔ",
+ ": non agréées dans une préfecture qui n'a aucune auto-école agréée. La préfecture est le rattachement par la position (utilisé par les indicateurs) ; il diffère de la préfecture déclarée pour 4 auto-écoles.": {
+  "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ pɔcɔŋna yɔ (kɩɖaɣ ŋga palakɩnɩ tʋmɩyɛ kɩlɛmɩŋ yɔɔ) nɛ pɩtatɩlɩnɩ lɔɔɖɩyɛ lɩzʋʋ sukuli 4 ñɩnɖɛ.",
   "relu": false
  },
  ": part en mauvais état non définie (aucune route classée).": {
@@ -2227,10 +2059,6 @@
   "texte": "Lɩmaɣzɩyɛ",
   "relu": false
  },
- "Canton": {
-  "texte": "Canton",
-  "relu": false
- },
  "Carte du réseau et des auto-écoles": {
   "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ pɩwɛɛ se ɖɩwɛɛ nɛ ɖɩlakɩ tʋmɩyɛ yɔ",
   "relu": false
@@ -2399,8 +2227,8 @@
   "texte": "Kpɛtɩ nɛ ŋna ɛ-lɩmɩyɛ",
   "relu": false
  },
- "Cliquez sur une préfecture, une auto-école ou un équipement : la préfecture s'affiche ici, avec ses actions et un lien vers sa fiche.": {
-  "texte": "Kpɛlɩ kpɛlɛkʋʋ sukuli nakʋyʋ yaa wondu natʋyʋ yɔɔ: kpɛlɛkɩ kpɛlɛkʋʋ sukuli ŋgʋ kɩ-taa nɛ kɩ-lakasɩ nɛ kɩ-takayaɣ yɔɔ.",
+ "Cliquez sur une préfecture, une auto-école ou un équipement de la première carte : la préfecture s'affiche ici, avec ses actions et un lien vers sa fiche.": {
+  "texte": "Kpɛlɩ kpɛlɛkʋʋ sukuli nakʋyʋ yaa wondu ndʋ tɩwɛ takayaɣ kanɛ ka-taa yɔ: kpɛlɛkɩ kpɛlɛkʋʋ sukuli ŋgʋ kɩ-taa kɩ-lakasɩ wɛɛ nɛ kɩ-hɔɔlʋʋ nakʋyʋ wɛ kɩ-taa.",
   "relu": false
  },
  "Collecte 2021-2022, non vérifiée ; hors indicateurs.": {
@@ -2843,6 +2671,10 @@
   "texte": "Kɩsɛmʋʋ",
   "relu": false
  },
+ "En travaux": {
+  "texte": "Lɩmaɣza wena a-yɔɔ palakɩ tʋmɩyɛ yɔ",
+  "relu": false
+ },
  "Enquête harmonisée sur les conditions de vie des ménages 2021-2022 (EHCVM-2), fichiers CSV": {
   "texte": "Pɩsɩ takayɩhayʋʋ Tɛtʊ tʊnɛ tɩ-yɔɔ yɔ:",
   "relu": false
@@ -2911,6 +2743,10 @@
   "texte": "Tɛtʊ ndʊ tɩ-taa",
   "relu": false
  },
+ "Fond coloré par zone :": {
+  "texte": "Hɔɔlʋʋ ŋgʋ kɩ-taa hɔɔlɩŋ weyi ɩ-taa hɔɔlɩŋ nɩɩyɩ wɛna yɔ:",
+  "relu": false
+ },
  "Formation": {
   "texte": "Tɔm susuu tʋmɩyɛ",
   "relu": false
@@ -2967,16 +2803,16 @@
   "texte": "Ɛyaa mba paawɛ peeɖe yɔ",
   "relu": false
  },
+ "Habitants / agréée": {
+  "texte": "Ɛyaa mba pacaɣ wezuu yɔ / pa-taa nɔɔyʋ",
+  "relu": false
+ },
  "Habitants : 9 384 000.": {
   "texte": "Ɛyaa mba pacaɣ peeɖe yɔ: 9 384 000",
   "relu": false
  },
  "Habitants par auto-école": {
   "texte": "Ɛyaa mba paawɛ sukuli ŋgʋ kɩ-taa paawɛ yɔ",
-  "relu": false
- },
- "Habitants par auto-école agréée": {
-  "texte": "Lone nɖɩ ɖɩ-taa pacaɣ yɔ, ɖɩ-taa ɛyaa sakɩyɛ wɛna nʋmɔʋ lɩzʋʋ sukuli ŋgʋ kɩmʋnaa yɔ kɩ-taa.",
   "relu": false
  },
  "Habitants par auto-école agréée (B)": {
@@ -3347,6 +3183,10 @@
   "texte": "Ɛnʋŋ",
   "relu": false
  },
+ "Le Grand Lomé (Golfe et Agoè-Nyivé) regroupe 27,0 % de la population ; Danyi, la moins peuplée, a 40 240 habitants.": {
+  "texte": "Ɛjaɖɛ nɖɩ ɖɩ-taa ɛyaa kɩlɩ ɖɔʊ yɔ, ɖɩ-taa ɛyaa wɛ 40.240.",
+  "relu": false
+ },
  "Le Grand Lomé concentre les accidents en volume, mais le risque par habitant est plus élevé ailleurs, en milieu rural": {
   "texte": "Lomé tɛtʊ sɔsɔtʊ taa lɛ, ɛyaa sakɩyɛ wɛna kɩdɔmɩŋ, ɛlɛ ɛyaa mba pɛwɛna kɩdɔmɩŋ yɔ, pa-taa sakɩyɛ wɛna kɩdɔmɩŋ.",
   "relu": false
@@ -3449,10 +3289,6 @@
  },
  "Le réseau est inégalement entretenu selon les régions": {
   "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa lɛ, ɖɩ-taa lɛ, ɛyaa sakɩyɛ wɛna lɩmaɣza kɩbana.",
-  "relu": false
- },
- "Le réseau le plus dégradé est au centre du pays : la Centrale a 40,3 % de ses routes en mauvais état, et Danyi 100 % de ses 49,8 km évalués.": {
-  "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa tɛtʊ ndʊ tɩɖɔɔ yɔ, tɩwɛna ɛjaɖɛ hɛkʋ taa: ñɩɣyʊʊ ŋgʊ kɩfɛyɩ ɖeu kɔyɔ 40.3%, nɛ Danyi ñɛwɛ ɖɔɖɔ ɛzɩ 100% mbʋ pɩtalɩ 49.8 km.",
   "relu": false
  },
  "Le tableau de bord affiche le chiffre de la source, avec sa définition": {
@@ -4084,12 +3920,12 @@
   "texte": "Lɩmaɣzɩyɛ:",
   "relu": false
  },
- "Niveau A. Données nationales : les permis n'ont ni territoire, ni âge.": {
-  "texte": "Lone A. Lone nɖɩ ɖɩ-taa paɖʋʋ paɣtʋ yɔ: pa-taa nɔɔyʋ ɛɛwɛna ageeta yaa ageeta.",
+ "Niveau A": {
+  "texte": "Lɩmaɣzɩyɛ A",
   "relu": false
  },
- "Niveau C": {
-  "texte": "Lɩmaɣzɩyɛ C",
+ "Niveau A. Données nationales : les permis n'ont ni territoire, ni âge.": {
+  "texte": "Lone A. Lone nɖɩ ɖɩ-taa paɖʋʋ paɣtʋ yɔ: pa-taa nɔɔyʋ ɛɛwɛna ageeta yaa ageeta.",
   "relu": false
  },
  "Niveau C. Dernier point : d'après une seule enquête auprès des ménages (2021-2022) ; l'ordre des zones change d'une enquête à l'autre.": {
@@ -4968,6 +4804,10 @@
   "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ",
   "relu": false
  },
+ "Recensement de 2022. A = mesuré, B = calculé, C = estimé.": {
+  "texte": "Pɩnaɣ 2022 tɛ ɛyaa kɩlɩzɩtʋ: A = kɩlɩna, B = kɩlɩna, C = kɩlɩna.",
+  "relu": false
+ },
  "Recensement des données ouvertes : immatriculations, permis, accidents, réseau, auto-écoles, population, enquêtes. Licences, mailles et années vérifiées une à une.": {
   "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ pɔcɔŋnaa yɔ, pɩwɩlɩɣ se patɩŋnɩ nʋmɔʋ lɩzʋʋ sɔnzɩ yɔɔ nɛ pañɩɣ niye tɔm kɩcɛyɩtʋ natʋyʋ taa.",
   "relu": false
@@ -4994,10 +4834,6 @@
  },
  "Recommandations en C : vérifier avant d": {
   "texte": "C-taa lɔŋ tasʋʋ: yele nɛ ɖɩna pʋcɔ nɛ ɖɩpaɣzɩ",
-  "relu": false
- },
- "Relevé de 2020, routes nationales seulement ; part des km évalués de la préfecture. A = mesuré, B = calculé, C = estimé.": {
-  "texte": "Pɩnaɣ 2020 ñɩŋga taa lɛ, ajɛya kɩkpɛndɩɣ nʋmɔŋ ɖeke; tɛtʊ ndʊ tɩ-taa kilomɛtanaa sakɩyɛ wɛna yɔ.",
   "relu": false
  },
  "Remettre en état 113,6 km et ouvrir 6 auto-écoles en premier": {
@@ -5625,6 +5461,10 @@
   "texte": "Kɩyakʋ nakʋyʋ wɛɛ nɛ kɩwɛɛ nɛ kɩlɛɣzɩɣ.",
   "relu": false
  },
+ "Une seconde carte : chaque zone dans sa couleur, les tronçons relevés colorés selon leur état dominant, les limites des 5 régions. Elle suit les filtres de la barre latérale.": {
+  "texte": "Lɩmaɣzɩyɛ naalɛ ñɩnɖɛ lɛ se: paa hɔɔlɩŋ weyi ɩ-taa yɔ, ɛ-wɛtʋ wɛ ndɩ nɛ hɔɔlʋʋ ŋgʋ kɩ-hɔɔlʋʋ taa.",
+  "relu": false
+ },
  "Une seule auto-école agréée : si elle ferme, la préfecture n'en a plus": {
   "texte": "Lone nɖɩ ɖɩ-taa palakaɣ nʋmɔʋ lɩzʋʋ tʋmɩyɛ yɔ, ɖɩ-taa kʋɖʋm koŋ: yee ɖɩsɩɣ yɔ, ɖɩ-taa nɔɔyʋ ɛɛtasɩɣ wɛʋ",
   "relu": false
@@ -5659,6 +5499,10 @@
  },
  "Victimes, %": {
   "texte": "Ɛyaa mba pasɩba yɔ, pa-taa %",
+  "relu": false
+ },
+ "Vide = les 5 états sont affichés.": {
+  "texte": "Lone nɖɩ ɖɩ-taa ɛyaa mba pɛwɛ yɔ, pa-tɩŋa pa-tɩŋa pa-tɩŋa pa-taa.",
   "relu": false
  },
  "Voir l'horizon de cette action": {
@@ -6025,6 +5869,10 @@
   "texte": "kpɛlɛkʋʋ sukuli 2021-2022",
   "relu": false
  },
+ "auto-écoles affichées, dont": {
+  "texte": "takayasɩ nzɩ sɩ-taa paayɔɔdʋʋ ɛyaa yɔ",
+  "relu": false
+ },
  "auto-écoles agréées sont dans le Grand Lomé, et": {
   "texte": "Lone nɖɩ ɖɩ-taa palakaɣ tʋmɩyɛ yɔ, ɖɩ-taa palakaɣ tʋmɩyɛ.",
   "relu": false
@@ -6079,6 +5927,10 @@
  },
  "blessés(an) / population(an) × 100 000 (R-06)": {
   "texte": "ɛyaa mba pasɩba yɔ (pɩnaɣ) / ɛyaa (pɩnaɣ) × 100 000 (R-06)",
+  "relu": false
+ },
+ "bon": {
+  "texte": "Pɩwɛ ɖeu",
   "relu": false
  },
  "calculé": {
@@ -6303,6 +6155,10 @@
  },
  "en ont aucun. La nature du zéro : 15 préfectures sans aucune auto-école recensée (25 auto-écoles), 8 avec des auto-écoles recensées non agréées (16 auto-écoles).": {
   "texte": "Lone nɖɩ ɖɩ-taa paayɔɔdʋʋ tɔm yɔ, ɖɩɩwɛ ɛzɩ tɛʋ kʋɖʋmʋʋ mbʋ yɔ: Prefektii 15 mba pɛfɛyɩnɩ sukuli ŋgʋ kɩhaɣ waɖɛ se pɔcɔŋna nʋmɔʋ lɩzʋʋ yɔɔ yɔ (25).",
+  "relu": false
+ },
+ "en travaux": {
+  "texte": "tʋmɩyɛ labʋ taa",
   "relu": false
  },
  "en tête : Danyi (100,0 %).": {
@@ -6617,6 +6473,10 @@
   "texte": "Pɩnaɣ 2021 ñɩŋga: 22,7 nɛ 8,62 /100 000",
   "relu": false
  },
+ "les 49 en mauvais état. Cochez « Afficher les 84 tronçons » pour voir aussi les autres.": {
+  "texte": "Pɩwɛɛ se ŋcosi nɛ ŋna ɛzɩma pɩlakɩ yɔ nɛ ŋna ɖɔɖɔ ɛzɩma pɩlakɩ yɔ.",
+  "relu": false
+ },
  "les deux": {
   "texte": "paalɛ",
   "relu": false
@@ -6657,6 +6517,10 @@
   "texte": "Paa mbʋ yɔ, ɛyaa mba palakaɣ tʋmɩyɛ nɖɩ camɩyɛ nɛ pɩtaawɛɛ kɛlɛʋ yɔ pɛ-ɛjaɖɛ taa.",
   "relu": false
  },
+ "mauvais": {
+  "texte": "kɩdɛkɛdɩm",
+  "relu": false
+ },
  "mettent 56,7 % de la population de ces préfectures à moins de 10 km d'une auto-école, contre 32,2 % si elles ouvrent toutes au chef-lieu : 719 730 habitants de plus.": {
   "texte": "Pɩɩkɛna ɛyaa mba pa-tɩŋa pa-taa ɛyaa ɛzɩ 56.7 yɔ, mba pa-tɩŋa pa-taa ɛyaa kɩlɩna kpaŋnaʊ sukuli kɩtɛzʊʊ taa ɛzɩ kilomɛtanaa 10 yɔ.",
   "relu": false
@@ -6679,6 +6543,10 @@
  },
  "motos": {
   "texte": "kpɩkpɩkpɩ",
+  "relu": false
+ },
+ "moyen": {
+  "texte": "hɔɔlʊʊ taa",
   "relu": false
  },
  "n'a aucun véhicule correspondant.": {
@@ -6717,10 +6585,6 @@
   "texte": "tɛtʊ ndʊ tɩ-taa paayɔɔdɩ-tʊ yɔ",
   "relu": false
  },
- "non définie : aucune route classée": {
-  "texte": "tɛtʊ ndʊ tɩ-yɔɔ pɔyɔɔdʊʊ yɔ: tɛtʊ ndʊ tɩ-yɔɔ pɔyɔɔdʊʊ yɔ",
-  "relu": false
- },
  "non renseignée": {
   "texte": "pɩtaafɛyɩ",
   "relu": false
@@ -6731,6 +6595,10 @@
  },
  "non testable": {
   "texte": "pɩtaapɩzɩɣ nɛ patɩlɩ",
+  "relu": false
+ },
+ "non évalué": {
+  "texte": "paatɩlɩ",
   "relu": false
  },
  "nuancé": {
@@ -7069,6 +6937,10 @@
   "texte": "kpɩkpɩkpɩkpɩ",
   "relu": false
  },
+ "tronçons affichés": {
+  "texte": "kpasɩ nzɩ sɩ-taa",
+  "relu": false
+ },
  "tronçons critiques": {
   "texte": "kpekpeka tɔm",
   "relu": false
@@ -7257,28 +7129,16 @@
   "texte": "Lɩmaɣzɩyɛ",
   "relu": false
  },
+ "État des tronçons :": {
+  "texte": "Ñɩɣlɩm mbʋ pɩ-taa yɔ:",
+  "relu": false
+ },
  "État des tronçons relevés": {
   "texte": "Kʋnʋmɩŋ weyi ɩ-taa palɩzɩ-wɛ yɔ",
   "relu": false
  },
- "État du réseau : bon": {
-  "texte": "Nɔɔɖɛyaa waɖɛ: camɩyɛ",
-  "relu": false
- },
- "État du réseau : mauvais": {
-  "texte": "Tɛtʊ tʊmɩyɛ wɛtʋ: tɩfɛyɩ ɖeu",
-  "relu": false
- },
- "État du réseau : moyen": {
-  "texte": "Tɛtʊ tʊmɩyɛ yɔɔ wɛʊ: tɛtɛ",
-  "relu": false
- },
- "État du réseau : non évalué": {
-  "texte": "Tɔɔnaɣ ŋga ka-taa paayɔɔdʋʋ yɔ",
-  "relu": false
- },
- "État du réseau : travaux": {
-  "texte": "Tɛtʊ yɔɔ tɔm susuu: tʋma",
+ "État dominant par tronçon (le plus de km parmi bon, moyen, mauvais et en travaux). Relevé de 2020, routes nationales seulement. Niveau C.": {
+  "texte": "Ɛjaɖɛ nɖɩ ɖɩ-taa ɛyaa kɩlɩ ɖɔʊ yɔ (pɩtalɩ kilomɛtanaa sakɩyɛ mbʋ pɩwɛ ɖeu, cikpeɖe nɛ kɩdɛkɛdɩm yaa tʋma ɖɩlaɖɛ taa) Pɩnaɣ 2020 ñɩŋga.",
   "relu": false
  },
  "État du réseau par zone": {
@@ -7293,12 +7153,20 @@
   "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ pañakɩ pana nɛ pañɩɣ nesi yɔ",
   "relu": false
  },
+ "État du réseau routier sur cette carte.": {
+  "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ lɛ, ɖɩ-taa lɛ se:",
+  "relu": false
+ },
  "État relevé en 2020, sur les routes nationales seulement, méthode de notation non publiée. L": {
   "texte": "Ɛjaɖɛ nɖɩ ɖɩ-taa palakaɣ tʊmɩyɛ pɩnaɣ 2020 taa yɔ, ɖɩ-taa lɛ, paayɔɔdʋʋ tʊmɩyɛ nɖɩ ɖɩ-yɔɔ.",
   "relu": false
  },
  "État relevé en 2020, sur les routes nationales seulement. Accès rural estimé avec une population répartie uniformément dans chaque préfecture. Distance à vol d": {
   "texte": "Pɩnaɣ 2020 taa lɛ, tɛtʊ ndʊ tɩ-taa ɛyaa kɩlɩna ɖɔm yɔ.",
+  "relu": false
+ },
+ "États du réseau à afficher": {
+  "texte": "Nɔɔɖɛyaa mba pɔsɔɔlaa se palɩzɩ pa-tɩ yɔ",
   "relu": false
  },
  "Évolution de l’état": {
@@ -7339,6 +7207,10 @@
  },
  "état du réseau en 2020 : l": {
   "texte": "Pɩnaɣ 2020 taa tɛtʊ ñɔɔzɩtʋ: l",
+  "relu": false
+ },
+ "état du réseau routier": {
+  "texte": "tɛtʊ ndʊ tɩ-yɔɔ yɔ",
   "relu": false
  },
  "état du réseau, cartographier le réseau et les auto-écoles, recommander.": {

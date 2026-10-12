@@ -7,10 +7,6 @@
   "texte": "%, multiplier",
   "relu": false
  },
- "(% des km évalués)": {
-  "texte": "(% of estimated km)",
-  "relu": false
- },
  "(101,1 km évalués)": {
   "texte": "(Valued 101.1 km)",
   "relu": false
@@ -51,8 +47,16 @@
   "texte": "(evaluated at 49,8 km)",
   "relu": false
  },
+ "(antennes comprises) et": {
+  "texte": "(including antennas) and",
+  "relu": false
+ },
  "(de 579 845 à 965 702), dont": {
   "texte": "(from 579 845 to 965 702), of which:",
+  "relu": false
+ },
+ "(habitants)": {
+  "texte": "(inhabitants)",
   "relu": false
  },
  "(la formation)": {
@@ -143,14 +147,6 @@
   "texte": "Driving schools to be opened",
   "relu": false
  },
- "0 tronçons relevés": {
-  "texte": "0 samples taken",
-  "relu": false
- },
- "0,0 km évalués": {
-  "texte": "0.0 km assessed",
-  "relu": false
- },
  "0,2 % des routes en mauvais état (87,9 km évalués, 2 tronçons critiques).": {
   "texte": "0.2% of roads in poor condition (87.9 km assessed, 2 critical sections).",
   "relu": false
@@ -195,10 +191,6 @@
   "texte": "1 registered, not approved",
   "relu": false
  },
- "1 tronçons relevés": {
-  "texte": "1 sampled pieces",
-  "relu": false
- },
  "1,1 % des routes en mauvais état (24,8 km évalués, un tronçon critique).": {
   "texte": "1.1% of roads in poor condition (24.8 km assessed, a critical stretch).",
   "relu": false
@@ -239,14 +231,6 @@
   "texte": "101 300 inhabitants",
   "relu": false
  },
- "101,1 km évalués": {
-  "texte": "101,1 km assessed",
-  "relu": false
- },
- "101,2 km évalués": {
-  "texte": "101,2 km assessed",
-  "relu": false
- },
  "103 des 132": {
   "texte": "103 of the 132",
   "relu": false
@@ -259,20 +243,8 @@
   "texte": "11.5% of roads in poor condition (124.9 km assessed, 3 critical sections).",
   "relu": false
  },
- "110,7 km évalués": {
-  "texte": "110,7 km assessed",
-  "relu": false
- },
- "110,8 km évalués": {
-  "texte": "110,8 km assessed",
-  "relu": false
- },
  "111 214 habitants": {
   "texte": "The population of the municipality is 111,214",
-  "relu": false
- },
- "113,5 km évalués": {
-  "texte": "113,5 km assessed",
   "relu": false
  },
  "114 172 habitants": {
@@ -287,10 +259,6 @@
   "texte": "12.1% of roads in poor condition (36.0 km assessed, 2 critical sections).",
   "relu": false
  },
- "120,3 km évalués": {
-  "texte": "120,3 km assessed",
-  "relu": false
- },
  "123 330 habitants": {
   "texte": "123 330 inhabitants",
   "relu": false
@@ -299,28 +267,12 @@
   "texte": "The population is 124,848",
   "relu": false
  },
- "124,1 km évalués": {
-  "texte": "124,1 km assessed",
-  "relu": false
- },
- "124,9 km évalués": {
-  "texte": "124,9 km assessed",
-  "relu": false
- },
- "125,7 km évalués": {
-  "texte": "125,7 km assessed",
-  "relu": false
- },
  "128 687 habitants": {
   "texte": "128 687 inhabitants",
   "relu": false
  },
  "128 959 habitants": {
   "texte": "128 959 inhabitants",
-  "relu": false
- },
- "129,9 km évalués": {
-  "texte": "129,9 km assessed",
   "relu": false
  },
  "13 au réseau dégradé (2 868 523 habitants).": {
@@ -343,8 +295,12 @@
   "texte": "13 out of 38",
   "relu": false
  },
- "131,7 km évalués": {
-  "texte": "131,7 km assessed",
+ "13 à vérifier": {
+  "texte": "13 to be checked",
+  "relu": false
+ },
+ "132 agréées": {
+  "texte": "132 authorised",
   "relu": false
  },
  "132 auto-écoles agréées": {
@@ -373,10 +329,6 @@
  },
  "140 non agréées ou au statut non renseigné": {
   "texte": "140 unlicensed or unlisted status",
-  "relu": false
- },
- "140,6 km évalués": {
-  "texte": "140,6 km assessed",
   "relu": false
  },
  "145 986 habitants": {
@@ -415,20 +367,12 @@
   "texte": "16 out of 39 prefectures",
   "relu": false
  },
- "161,4 km évalués": {
-  "texte": "161,4 km assessed",
-  "relu": false
- },
  "163 272 habitants": {
   "texte": "163 272 inhabitants",
   "relu": false
  },
  "164 460 habitants": {
   "texte": "164 460 inhabitants",
-  "relu": false
- },
- "167,5 km évalués": {
-  "texte": "167,5 km assessed",
   "relu": false
  },
  "17 vérifications et hypothèses": {
@@ -517,10 +461,6 @@
  },
  "2 références sans action nouvelle": {
   "texte": "2 References without new action",
-  "relu": false
- },
- "2 tronçons relevés": {
-  "texte": "2 samples taken",
   "relu": false
  },
  "2,63 fois": {
@@ -695,10 +635,6 @@
   "texte": "23.3% of roads in poor condition (161.4 km assessed, 3 critical sections).",
   "relu": false
  },
- "24,8 km évalués": {
-  "texte": "24,8 km assessed",
-  "relu": false
- },
  "240 360 habitants": {
   "texte": "240 360 inhabitants",
   "relu": false
@@ -733,14 +669,6 @@
  },
  "27,2 % des routes en mauvais état (113,5 km évalués, 2 tronçons critiques).": {
   "texte": "27.2% of roads in poor condition (113.5 km assessed, 2 critical sections).",
-  "relu": false
- },
- "27,8 km évalués": {
-  "texte": "27,8 km assessed",
-  "relu": false
- },
- "272 auto-écoles affichées, dont 132 agréées (antennes comprises) et 13 à vérifier : non agréées dans une préfecture qui n'a aucune auto-école agréée. La préfecture est le rattachement par la position (utilisé par les indicateurs) ; il diffère de la préfecture déclarée pour 4 auto-écoles.": {
-  "texte": "272 driving schools are shown, of which 132 are accredited (including antennas) and 13 are to be verified: not accredited in a prefecture which has no accredited driving schools.",
   "relu": false
  },
  "28,0 % des routes en mauvais état (167,5 km évalués, un tronçon critique).": {
@@ -805,10 +733,6 @@
  },
  "3 recensées, non agréées": {
   "texte": "3 registered, not approved",
-  "relu": false
- },
- "3 tronçons relevés": {
-  "texte": "3 pieces taken",
   "relu": false
  },
  "3,3 % des routes en mauvais état (45,2 km évalués, 2 tronçons critiques).": {
@@ -887,14 +811,6 @@
   "texte": "34.0% of roads in poor condition (120.3 km assessed, a critical stretch).",
   "relu": false
  },
- "35,8 km évalués": {
-  "texte": "35,8 km assessed",
-  "relu": false
- },
- "36,0 km évalués": {
-  "texte": "36,0 km assessed",
-  "relu": false
- },
  "36,9 % des routes en mauvais état (125,7 km évalués, 3 tronçons critiques).": {
   "texte": "36.9% of roads in poor condition (125.7 km assessed, 3 critical sections).",
   "relu": false
@@ -943,10 +859,6 @@
   "texte": "I'd rather have four.",
   "relu": false
  },
- "4 tronçons relevés": {
-  "texte": "4 samples taken",
-  "relu": false
- },
  "4 vues": {
   "texte": "4 views",
   "relu": false
@@ -991,20 +903,12 @@
   "texte": "40.0% of roads in poor condition (124.1 km assessed, 5 critical sections).",
   "relu": false
  },
- "40,3 km évalués": {
-  "texte": "40,3 km assessed",
-  "relu": false
- },
  "41 auto-écoles": {
   "texte": "41 driving schools",
   "relu": false
  },
  "41 auto-écoles à ouvrir": {
   "texte": "41 driving schools to be opened",
-  "relu": false
- },
- "41,5 km évalués": {
-  "texte": "41,5 km assessed",
   "relu": false
  },
  "43 indicateurs": {
@@ -1015,16 +919,8 @@
   "texte": "449 226 motorcycles",
   "relu": false
  },
- "45,2 km évalués": {
-  "texte": "45,2 km assessed",
-  "relu": false
- },
  "450 807 habitants": {
   "texte": "450 807 inhabitants",
-  "relu": false
- },
- "46,1 km évalués": {
-  "texte": "46,1 km assessed",
   "relu": false
  },
  "48 auto-écoles": {
@@ -1061,10 +957,6 @@
  },
  "49 tronçons sur 84 en mauvais état, 669,34 km, dont 292,15 km sur les Plateaux (Réseau).": {
   "texte": "49 of the 84 sections in poor condition, 669.34 km, of which 292.15 km on the Plateaux (Network).",
-  "relu": false
- },
- "49,8 km évalués": {
-  "texte": "49,8 km assessed",
   "relu": false
  },
  "4 401 312 à 4 437 334 selon la répartition de la population": {
@@ -1119,10 +1011,6 @@
   "texte": "5 prefectures with a combined population of 641 955; 10 first prefectures with a population of 1 416 859.",
   "relu": false
  },
- "5 tronçons relevés": {
-  "texte": "5 samples taken",
-  "relu": false
- },
  "5,2 % des routes en mauvais état (57,9 km évalués, un tronçon critique).": {
   "texte": "5.2% of roads in poor condition (57.9 km assessed, a critical stretch).",
   "relu": false
@@ -1145,18 +1033,6 @@
  },
  "52 448 habitants concernés": {
   "texte": "52 448 inhabitants",
-  "relu": false
- },
- "57,9 km évalués": {
-  "texte": "57,9 km assessed",
-  "relu": false
- },
- "58,5 km évalués": {
-  "texte": "58,5 km assessed",
-  "relu": false
- },
- "58,8 km évalués": {
-  "texte": "58,8 km assessed",
   "relu": false
  },
  "6 auto-écoles": {
@@ -1183,10 +1059,6 @@
   "texte": "6 rates",
   "relu": false
  },
- "6 tronçons relevés": {
-  "texte": "6 samples taken",
-  "relu": false
- },
  "6 zones": {
   "texte": "6 areas",
   "relu": false
@@ -1209,10 +1081,6 @@
  },
  "60 % ou plus": {
   "texte": "60% or more",
-  "relu": false
- },
- "63,1 km évalués": {
-  "texte": "63,1 km assessed",
   "relu": false
  },
  "641 955 habitants concernés": {
@@ -1271,20 +1139,12 @@
   "texte": "7 sections",
   "relu": true
  },
- "7 tronçons relevés": {
-  "texte": "7 samples taken",
-  "relu": false
- },
  "7 vues": {
   "texte": "7 views",
   "relu": false
  },
  "7 vérifications confirmées sur 17, 2 infirmées, 1 nuancée, 7 non testables (onglet Synthèse).": {
   "texte": "7 confirmed checks out of 17, 2 confirmed, 1 shaded, 7 untested (Table Synthesis).",
-  "relu": false
- },
- "7,0 km évalués": {
-  "texte": "7,0 km assessed",
   "relu": false
  },
  "7,8 % des routes en mauvais état (7,0 km évalués, un tronçon critique).": {
@@ -1300,14 +1160,6 @@
   "relu": false,
   "suspect": true
  },
- "70,0 km évalués": {
-  "texte": "70,0 km assessed",
-  "relu": false
- },
- "72,5 km évalués": {
-  "texte": "72,5 km assessed",
-  "relu": false
- },
  "73 830 habitants": {
   "texte": "73 830 inhabitants",
   "relu": false
@@ -1318,10 +1170,6 @@
  },
  "74,4 % des immatriculations de 2024 sont des motos ; 40 motos pour un permis moto sur 2007": {
   "texte": "74.4% of 2024 registrations are motorcycles; 40 motorcycles for a motorcycle licence in 2007",
-  "relu": false
- },
- "75,6 km évalués": {
-  "texte": "75,6 km assessed",
   "relu": false
  },
  "751 398 véhicules": {
@@ -1352,10 +1200,6 @@
   "texte": "8 prefectures",
   "relu": false
  },
- "8 tronçons relevés": {
-  "texte": "8 pieces taken",
-  "relu": false
- },
  "8,1 % des routes en mauvais état (58,5 km évalués, 3 tronçons critiques).": {
   "texte": "8.1% of roads in poor condition (58.5 km assessed, 3 critical sections).",
   "relu": false
@@ -1376,10 +1220,6 @@
   "texte": "80 km or more",
   "relu": false
  },
- "82,5 km évalués": {
-  "texte": "82,5 km assessed",
-  "relu": false
- },
  "84 199 habitants": {
   "texte": "84 199 inhabitants",
   "relu": false
@@ -1392,20 +1232,12 @@
   "texte": "Eighty-four pieces were pulled up.",
   "relu": false
  },
- "84,0 km évalués": {
-  "texte": "84,0 km assessed",
-  "relu": false
- },
  "84,8 % des auto-écoles agréées dans les 4 préfectures urbaines.": {
   "texte": "84.8% of accredited driving schools in the four urban prefectures.",
   "relu": false
  },
  "85 793 habitants": {
   "texte": "85 793 inhabitants",
-  "relu": false
- },
- "87,9 km évalués": {
-  "texte": "87,9 km assessed",
   "relu": false
  },
  "88 365 habitants": {
@@ -1422,10 +1254,6 @@
  },
  "9 indicateurs non calculables": {
   "texte": "9 non-calculable indicators",
-  "relu": false
- },
- "9 tronçons relevés": {
-  "texte": "9 samples taken",
   "relu": false
  },
  "9 étapes": {
@@ -1448,14 +1276,6 @@
   "texte": "90 505 inhabitants",
   "relu": false
  },
- "90,1 km évalués": {
-  "texte": "90,1 km assessed",
-  "relu": false
- },
- "90,5 km évalués": {
-  "texte": "90,5 km assessed",
-  "relu": false
- },
  "94 860 habitants": {
   "texte": "94 860 inhabitants",
   "relu": false
@@ -1464,160 +1284,172 @@
   "texte": "956 482 inhabitants",
   "relu": false
  },
- "96,6 km évalués": {
-  "texte": "96.6 km assessed",
+ ": 1 305 681 habitants": {
+  "texte": ": 1 305 681 inhabitants",
   "relu": false
  },
- ": 0,0 % des km évalués": {
-  "texte": ": 0.0% of the km evaluated",
+ ": 101 300 habitants": {
+  "texte": "Population: 101 300 people",
   "relu": false
  },
- ": 0,2 % des km évalués": {
-  "texte": ": 0.2% of the km evaluated",
+ ": 111 214 habitants": {
+  "texte": "Population: 111 214 people",
   "relu": false
  },
- ": 0,5 % des km évalués": {
-  "texte": "0,5% of the km evaluated",
+ ": 114 172 habitants": {
+  "texte": ": 114 172 people",
   "relu": false
  },
- ": 1,1 % des km évalués": {
-  "texte": ": 1.1% of the km evaluated",
+ ": 123 330 habitants": {
+  "texte": "Number of inhabitants: 123 330",
   "relu": false
  },
- ": 100,0 % des km évalués": {
-  "texte": ": 100.0% of the km evaluated",
+ ": 124 848 habitants": {
+  "texte": "Population: 124,848 people",
   "relu": false
  },
- ": 11,5 % des km évalués": {
-  "texte": ": 11.5% of the km evaluated",
+ ": 128 687 habitants": {
+  "texte": ": 128 687 people",
   "relu": false
  },
- ": 12,1 % des km évalués": {
-  "texte": ": 12.1% of the km evaluated",
+ ": 128 959 habitants": {
+  "texte": ": 128 959 inhabitants",
   "relu": false
  },
  ": 13 des 38 préfectures, et Mô.": {
   "texte": ": 13 of the 38 prefectures, and Mo.",
   "relu": false
  },
- ": 14,3 % des km évalués": {
-  "texte": ": 14.3% of the km evaluated",
+ ": 138 864 habitants": {
+  "texte": "Number of inhabitants: 138 864",
   "relu": false
  },
- ": 14,4 % des km évalués": {
-  "texte": ": 14.4% of the km evaluated",
+ ": 138 867 habitants": {
+  "texte": "Population: 138 867 people",
   "relu": false
  },
- ": 17,2 % des km évalués": {
-  "texte": ": 17.2% of the km evaluated",
+ ": 145 986 habitants": {
+  "texte": "Population: 145 986 people",
   "relu": false
  },
- ": 2,7 % des km évalués": {
-  "texte": ": 2.7 per cent of the km evaluated",
+ ": 150 376 habitants": {
+  "texte": ": 150 376 people",
   "relu": false
  },
- ": 21,1 % des km évalués": {
-  "texte": ": 21.1% of the km evaluated",
+ ": 152 065 habitants": {
+  "texte": ": 152 065 inhabitants",
   "relu": false
  },
- ": 21,8 % des km évalués": {
-  "texte": ": 21.8% of the km evaluated",
+ ": 163 272 habitants": {
+  "texte": "163 272 people",
   "relu": false
  },
- ": 22,3 % des km évalués": {
-  "texte": ": 22.3% of the km evaluated",
+ ": 164 460 habitants": {
+  "texte": ": 164 460 inhabitants",
   "relu": false
  },
- ": 23,0 % des km évalués": {
-  "texte": ": 23.0% of the km evaluated",
+ ": 174 851 habitants": {
+  "texte": ": 174 851 inhabitants",
   "relu": false
  },
- ": 23,3 % des km évalués": {
-  "texte": ": 23.3% of the km evaluated",
+ ": 180 158 habitants": {
+  "texte": ": 180 158 inhabitants",
   "relu": false
  },
- ": 26,0 % des km évalués": {
-  "texte": ": 26.0% of the km evaluated",
+ ": 185 662 habitants": {
+  "texte": "185 662 people",
   "relu": false
  },
- ": 27,2 % des km évalués": {
-  "texte": ": 27.2% of the km evaluated",
+ ": 200 585 habitants": {
+  "texte": ": 200 585 inhabitants",
   "relu": false
  },
- ": 28,0 % des km évalués": {
-  "texte": ": 28.0% of the km evaluated",
+ ": 224 411 habitants": {
+  "texte": "Population: 224 411 people",
   "relu": false
  },
- ": 29,5 % des km évalués": {
-  "texte": ": 29.5% of the km evaluated",
+ ": 240 360 habitants": {
+  "texte": ": 240 360 inhabitants",
+  "relu": false
+ },
+ ": 241 247 habitants": {
+  "texte": "Population: 241 247 people",
+  "relu": false
+ },
+ ": 253 467 habitants": {
+  "texte": "Population: 253 467 people",
+  "relu": false
+ },
+ ": 283 738 habitants": {
+  "texte": "Population: 283 738",
   "relu": false
  },
  ": 3 en priorité haute, 10 en moyenne, 2 en faible ; 5 préfectures cumulent les deux déficits.": {
   "texte": "Three high-priority, 10 on average, two low; five prefectures combine the two deficits.",
   "relu": false
  },
- ": 3,3 % des km évalués": {
-  "texte": ": 3,3% of the km evaluated",
+ ": 305 096 habitants": {
+  "texte": ": 305 096 people",
   "relu": false
  },
- ": 3,4 % des km évalués": {
-  "texte": ": 3,4% of the km evaluated",
+ ": 388 775 habitants": {
+  "texte": "Population: 388 775",
   "relu": false
  },
- ": 34,0 % des km évalués": {
-  "texte": ": 34.0% of the km evaluated",
+ ": 40 240 habitants": {
+  "texte": "Population: 40 240",
   "relu": false
  },
- ": 36,9 % des km évalués": {
-  "texte": ": 36.9% of the km evaluated",
+ ": 500 032 habitants": {
+  "texte": ": 500 032 inhabitants",
   "relu": false
  },
- ": 4,5 % des km évalués": {
-  "texte": ": 4.5% of the km evaluated",
+ ": 52 448 habitants": {
+  "texte": "Population: 52 448 people",
   "relu": false
  },
- ": 4,6 % des km évalués": {
-  "texte": ": 4.6% of the km evaluated",
+ ": 66 394 habitants": {
+  "texte": "Population: 66,394 people",
   "relu": false
  },
- ": 40,0 % des km évalués": {
-  "texte": ": 40.0% of the km evaluated",
+ ": 73 830 habitants": {
+  "texte": "Population: 73 830 people",
   "relu": false
  },
- ": 5,2 % des km évalués": {
-  "texte": ": 5,2% of the km evaluated",
-  "relu": false
- },
- ": 6,0 % des km évalués": {
-  "texte": ": 6.0% of the km evaluated",
-  "relu": false
- },
- ": 65,0 % des km évalués": {
-  "texte": ": 65.0% of the km evaluated",
-  "relu": false
- },
- ": 68,2 % des km évalués": {
-  "texte": ": 68.2% of the km evaluated",
-  "relu": false
- },
- ": 7,8 % des km évalués": {
-  "texte": ": 7.8% of the km evaluated",
-  "relu": false
- },
- ": 8,1 % des km évalués": {
-  "texte": "8,1% of the km evaluated",
+ ": 80 939 habitants": {
+  "texte": ": 80 939 inhabitants",
   "relu": false
  },
  ": 80,6 % des immatriculations supplémentaires entre 2002 et 2022.": {
   "texte": ": 80.6% of additional registrations between 2002 and 2022.",
   "relu": false
  },
- ": 9,2 % des km évalués": {
-  "texte": ": 9.2% of the km evaluated",
+ ": 84 199 habitants": {
+  "texte": "84 199 inhabitants",
   "relu": false
  },
- ": 9,4 % des km évalués": {
-  "texte": ": 9.4% of the km evaluated",
+ ": 84 767 habitants": {
+  "texte": "84 767 people",
+  "relu": false
+ },
+ ": 85 793 habitants": {
+  "texte": "Population: 85 793 people",
+  "relu": false
+ },
+ ": 88 365 habitants": {
+  "texte": ": 88 365 people",
+  "relu": false
+ },
+ ": 882 695 habitants": {
+  "texte": "Population: 882 695 people",
+  "relu": false
+ },
+ ": 90 505 habitants": {
+  "texte": ": 90 505 people",
+  "relu": false
+ },
+ ": 94 860 habitants": {
+  "texte": "94 860 people",
   "relu": false
  },
  ": ceux qui traversent les Plateaux en portent le plus (292,15 km, 23 tronçons), puis ceux de la Centrale (236,25 km, 6 tronçons).": {
@@ -1648,8 +1480,8 @@
   "texte": "The prefectures above the 22.13% km threshold are in poor condition.",
   "relu": false
  },
- ": non définie : aucune route classée": {
-  "texte": ": not defined: no classified roads",
+ ": non agréées dans une préfecture qui n'a aucune auto-école agréée. La préfecture est le rattachement par la position (utilisé par les indicateurs) ; il diffère de la préfecture déclarée pour 4 auto-écoles.": {
+  "texte": "The prefecture is the linkage by position (used in indicators); it differs from that declared for 4 driving schools.",
   "relu": false
  },
  ": part en mauvais état non définie (aucune route classée).": {
@@ -2228,10 +2060,6 @@
   "texte": "Calculation",
   "relu": false
  },
- "Canton": {
-  "texte": "Canton",
-  "relu": false
- },
  "Carte du réseau et des auto-écoles": {
   "texte": "Road network and driving schools map",
   "relu": true
@@ -2408,8 +2236,8 @@
   "texte": "Click to view his file",
   "relu": false
  },
- "Cliquez sur une préfecture, une auto-école ou un équipement : la préfecture s'affiche ici, avec ses actions et un lien vers sa fiche.": {
-  "texte": "Click on a prefecture, driving school or equipment: the prefecture is shown here, with its actions and a link to its file.",
+ "Cliquez sur une préfecture, une auto-école ou un équipement de la première carte : la préfecture s'affiche ici, avec ses actions et un lien vers sa fiche.": {
+  "texte": "Click on a prefecture, driving school or equipment on the first map: the prefecture is shown here, with its actions and a link to its file.",
   "relu": false
  },
  "Collecte 2021-2022, non vérifiée ; hors indicateurs.": {
@@ -2853,6 +2681,10 @@
   "texte": "In red",
   "relu": false
  },
+ "En travaux": {
+  "texte": "In progress",
+  "relu": false
+ },
  "Enquête harmonisée sur les conditions de vie des ménages 2021-2022 (EHCVM-2), fichiers CSV": {
   "texte": "Harmonized survey on household living conditions 2021-2022 (EHCVM-2), CSV files",
   "relu": false
@@ -2921,6 +2753,10 @@
   "texte": "Filters",
   "relu": true
  },
+ "Fond coloré par zone :": {
+  "texte": "Coloured background by area:",
+  "relu": false
+ },
  "Formation": {
   "texte": "Training",
   "relu": false
@@ -2977,16 +2813,16 @@
   "texte": "Residents",
   "relu": false
  },
+ "Habitants / agréée": {
+  "texte": "Residents / authorised",
+  "relu": false
+ },
  "Habitants : 9 384 000.": {
   "texte": "Inhabitants: 9,384,000",
   "relu": false
  },
  "Habitants par auto-école": {
   "texte": "Residents by driving school",
-  "relu": false
- },
- "Habitants par auto-école agréée": {
-  "texte": "Residents per approved driving school",
   "relu": false
  },
  "Habitants par auto-école agréée (B)": {
@@ -3359,6 +3195,10 @@
   "texte": "Language",
   "relu": true
  },
+ "Le Grand Lomé (Golfe et Agoè-Nyivé) regroupe 27,0 % de la population ; Danyi, la moins peuplée, a 40 240 habitants.": {
+  "texte": "The Greater Lomé (Gulf and Agoé-Nyivé) comprises 27.0% of the population; Danyi, the least populated, has 40,240.",
+  "relu": false
+ },
  "Le Grand Lomé concentre les accidents en volume, mais le risque par habitant est plus élevé ailleurs, en milieu rural": {
   "texte": "The Greater Lomé region concentrates accidents in volume, but the per capita risk is higher elsewhere, in rural areas",
   "relu": false
@@ -3461,10 +3301,6 @@
  },
  "Le réseau est inégalement entretenu selon les régions": {
   "texte": "The network is maintained unevenly by region",
-  "relu": false
- },
- "Le réseau le plus dégradé est au centre du pays : la Centrale a 40,3 % de ses routes en mauvais état, et Danyi 100 % de ses 49,8 km évalués.": {
-  "texte": "The most deteriorating network is in the centre of the country: 40.3% of its roads are in poor condition, and Danyi 100% of its 49.8 km assessed.",
   "relu": false
  },
  "Le tableau de bord affiche le chiffre de la source, avec sa définition": {
@@ -4099,12 +3935,12 @@
   "texte": "Level:",
   "relu": false
  },
- "Niveau A. Données nationales : les permis n'ont ni territoire, ni âge.": {
-  "texte": "Level A. National data: permits do not have territory or age.",
+ "Niveau A": {
+  "texte": "Level A",
   "relu": false
  },
- "Niveau C": {
-  "texte": "Level C",
+ "Niveau A. Données nationales : les permis n'ont ni territoire, ni âge.": {
+  "texte": "Level A. National data: permits do not have territory or age.",
   "relu": false
  },
  "Niveau C. Dernier point : d'après une seule enquête auprès des ménages (2021-2022) ; l'ordre des zones change d'une enquête à l'autre.": {
@@ -4991,6 +4827,10 @@
   "texte": "Ratio",
   "relu": false
  },
+ "Recensement de 2022. A = mesuré, B = calculé, C = estimé.": {
+  "texte": "Census of 2022. A = measured, B = calculated, C = estimated.",
+  "relu": false
+ },
  "Recensement des données ouvertes : immatriculations, permis, accidents, réseau, auto-écoles, population, enquêtes. Licences, mailles et années vérifiées une à une.": {
   "texte": "Census of open data: registrations, permits, accidents, network, driving schools, population, surveys, licenses, grids and years verified one by one.",
   "relu": false
@@ -5017,10 +4857,6 @@
  },
  "Recommandations en C : vérifier avant d": {
   "texte": "Recommendations in C: verify before d",
-  "relu": false
- },
- "Relevé de 2020, routes nationales seulement ; part des km évalués de la préfecture. A = mesuré, B = calculé, C = estimé.": {
-  "texte": "Released from 2020, national roads only; share of the prefecture's assessed km. A = measured, B = calculated, C = estimated.",
   "relu": false
  },
  "Remettre en état 113,6 km et ouvrir 6 auto-écoles en premier": {
@@ -5647,6 +5483,10 @@
   "texte": "A date has a variation; it does not explain it.",
   "relu": false
  },
+ "Une seconde carte : chaque zone dans sa couleur, les tronçons relevés colorés selon leur état dominant, les limites des 5 régions. Elle suit les filtres de la barre latérale.": {
+  "texte": "A second map: each area in its colour, the stripped-down sections colored according to their dominant state, the boundaries of the 5 regions.",
+  "relu": false
+ },
  "Une seule auto-école agréée : si elle ferme, la préfecture n'en a plus": {
   "texte": "Only one licensed driving school: if it closes, the prefecture has no more",
   "relu": false
@@ -5681,6 +5521,10 @@
  },
  "Victimes, %": {
   "texte": "Victims, %",
+  "relu": false
+ },
+ "Vide = les 5 états sont affichés.": {
+  "texte": "Empty = all 5 states are displayed.",
   "relu": false
  },
  "Voir l'horizon de cette action": {
@@ -6051,6 +5895,10 @@
   "texte": "driving schools 2021-2022",
   "relu": false
  },
+ "auto-écoles affichées, dont": {
+  "texte": "displayed driving schools, including",
+  "relu": false
+ },
  "auto-écoles agréées sont dans le Grand Lomé, et": {
   "texte": "approved driving schools are in the Greater Lomé region, and",
   "relu": false
@@ -6105,6 +5953,10 @@
  },
  "blessés(an) / population(an) × 100 000 (R-06)": {
   "texte": "Injured (s) / population (s)",
+  "relu": false
+ },
+ "bon": {
+  "texte": "good",
   "relu": false
  },
  "calculé": {
@@ -6329,6 +6181,10 @@
  },
  "en ont aucun. La nature du zéro : 15 préfectures sans aucune auto-école recensée (25 auto-écoles), 8 avec des auto-écoles recensées non agréées (16 auto-écoles).": {
   "texte": "The nature of the zero: 15 prefectures without any registered driving schools (25), 8 with unapproved registered drivers' colleges (16).",
+  "relu": false
+ },
+ "en travaux": {
+  "texte": "working",
   "relu": false
  },
  "en tête : Danyi (100,0 %).": {
@@ -6643,6 +6499,10 @@
   "texte": "the reported rate for 2021: 22,7 versus 8,62 /100 000",
   "relu": false
  },
+ "les 49 en mauvais état. Cochez « Afficher les 84 tronçons » pour voir aussi les autres.": {
+  "texte": "The 49s are in poor condition. Check the 84s to see the rest.",
+  "relu": false
+ },
  "les deux": {
   "texte": "both",
   "relu": false
@@ -6683,6 +6543,10 @@
   "texte": "The network remains unevenly maintained, and",
   "relu": false
  },
+ "mauvais": {
+  "texte": "bad",
+  "relu": false
+ },
  "mettent 56,7 % de la population de ces préfectures à moins de 10 km d'une auto-école, contre 32,2 % si elles ouvrent toutes au chef-lieu : 719 730 habitants de plus.": {
   "texte": "In addition, the number of pupils in these prefectures is estimated at 56.7% of the population within 10 km of a driving school, compared with 32.2% if they all open in the capital: 719 730 more.",
   "relu": false
@@ -6705,6 +6569,10 @@
  },
  "motos": {
   "texte": "motorcycles",
+  "relu": false
+ },
+ "moyen": {
+  "texte": "average",
   "relu": false
  },
  "n'a aucun véhicule correspondant.": {
@@ -6743,10 +6611,6 @@
   "texte": "not defined (no classified road)",
   "relu": false
  },
- "non définie : aucune route classée": {
-  "texte": "not defined: no classified roads",
-  "relu": false
- },
  "non renseignée": {
   "texte": "not filled in",
   "relu": false
@@ -6758,6 +6622,10 @@
  "non testable": {
   "texte": "not testable",
   "relu": true
+ },
+ "non évalué": {
+  "texte": "not evaluated",
+  "relu": false
  },
  "nuancé": {
   "texte": "shade",
@@ -7095,6 +6963,10 @@
   "texte": "cuts",
   "relu": false
  },
+ "tronçons affichés": {
+  "texte": "cuts shown",
+  "relu": false
+ },
  "tronçons critiques": {
   "texte": "critical sections",
   "relu": false
@@ -7283,28 +7155,16 @@
   "texte": "Step by step",
   "relu": false
  },
+ "État des tronçons :": {
+  "texte": "Road-section state:",
+  "relu": true
+ },
  "État des tronçons relevés": {
   "texte": "State of the sampled pieces",
   "relu": false
  },
- "État du réseau : bon": {
-  "texte": "State of the network: good",
-  "relu": false
- },
- "État du réseau : mauvais": {
-  "texte": "State of the network: bad",
-  "relu": false
- },
- "État du réseau : moyen": {
-  "texte": "State of the network: average",
-  "relu": false
- },
- "État du réseau : non évalué": {
-  "texte": "State of the network: not evaluated",
-  "relu": false
- },
- "État du réseau : travaux": {
-  "texte": "State of the network: work",
+ "État dominant par tronçon (le plus de km parmi bon, moyen, mauvais et en travaux). Relevé de 2020, routes nationales seulement. Niveau C.": {
+  "texte": "State dominant by section (most km among good, medium, bad and under construction). Released from 2020, national roads only.",
   "relu": false
  },
  "État du réseau par zone": {
@@ -7319,6 +7179,10 @@
   "texte": "Road network condition",
   "relu": true
  },
+ "État du réseau routier sur cette carte.": {
+  "texte": "Road network condition on this map.",
+  "relu": true
+ },
  "État relevé en 2020, sur les routes nationales seulement, méthode de notation non publiée. L": {
   "texte": "State recorded in 2020 on national roads only, unpublished rating method",
   "relu": false
@@ -7326,6 +7190,10 @@
  "État relevé en 2020, sur les routes nationales seulement. Accès rural estimé avec une population répartie uniformément dans chaque préfecture. Distance à vol d": {
   "texte": "Country recorded in 2020 on national roads only. Rural access estimated with a population evenly distributed in each prefecture.",
   "relu": false
+ },
+ "États du réseau à afficher": {
+  "texte": "Road states to show",
+  "relu": true
  },
  "Évolution de l’état": {
   "texte": "State development",
@@ -7365,6 +7233,10 @@
  },
  "état du réseau en 2020 : l": {
   "texte": "State of the network in 2020:",
+  "relu": false
+ },
+ "état du réseau routier": {
+  "texte": "State of the road network",
   "relu": false
  },
  "état du réseau, cartographier le réseau et les auto-écoles, recommander.": {

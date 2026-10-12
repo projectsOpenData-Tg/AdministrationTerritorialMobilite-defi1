@@ -15,10 +15,10 @@ import plotly.graph_objects as go  # noqa: E402
 import streamlit as st  # noqa: E402
 from shapely.geometry import shape  # noqa: E402
 
-from composants import (ariane, badge, carte_kpi, constat, entete, export_csv, limite, note, pied,  # noqa: E402
-                        rangee_kpi, synthese, table_html, titre_bloc)
+from composants import (ariane, badge, carte_kpi, constat, entete, export_csv, limite, note, note_carte,  # noqa: E402
+                        pied, rangee_kpi, synthese, table_html, titre_bloc)
 from donnees import contours, contours_regions, couche, fr, lire, lire_processed  # noqa: E402
-from theme import BLEUS, COULEUR_ZONE, ENCRE, HORS_SELECTION  # noqa: E402
+from theme import BLEUS, COULEUR_REGION, COULEUR_ZONE, ENCRE, HORS_SELECTION  # noqa: E402
 
 INF = float("inf")
 
@@ -45,9 +45,13 @@ ROUTE_STYLE = {"Route nationale revêtue": ("#141413", "solid", 1.7),
                "Route nationale non revêtue": ("#8a5a00", "dash", 1.4),
                "Voirie urbaine": ("#55534e", "solid", 0.9),
                "Piste rurale": ("#8a8780", "dot", 1.2)}
-# Auto-écoles : deux statuts, deux couleurs (le gris ne porte aucun jugement, il dit « hors indicateurs »).
-AE_COUL = {"agréée": "#0d366b", "non agréée": "#8a8780"}
+# Auto-écoles : agréées en vert (comptées dans les indicateurs), non agréées / statut non renseigné en jaune-or
+# (bien visibles sur la carte, sans porter de jugement).
+AE_COUL = {"agréée": "#16834a", "non agréée": "#e6b422"}
 EQUIPEMENT = "#eb6834"
+# Couleur d'un tronçon selon son état dominant, pour la carte de l'état du réseau (2e carte).
+ETAT_LIGNE = {"Bon": "#16834a", "Moyen": "#e6b422", "Mauvais": "#ce1126", "En travaux": "#2474c6",
+              "Non évalué": "#b9b6ad"}
 
 # --- Les classes des couches (design-page4 section 3) ----------------------------------------------------
 CL_ETAT = [(0, 10, "moins de 10 %"), (10, 25, "10 à 25 %"), (25, 40, "25 à 40 %"), (40, 60, "40 à 60 %"),
@@ -244,6 +248,47 @@ def _routes_par_etat() -> dict:
 
 
 @st.cache_data(show_spinner=False)
+def _lignes_regions_colorees() -> dict:
+    """Limites de chaque région séparément, pour les tracer dans la couleur de la région (COULEUR_REGION)."""
+    out = {}
+    for ft in contours_regions()["features"]:
+        nom = ft["properties"].get("nom") or ft["properties"].get("code")
+        g = shape(ft["geometry"])
+        lon, lat = [], []
+        for poly in (g.geoms if g.geom_type == "MultiPolygon" else [g]):
+            xs, ys = poly.exterior.xy
+            lon += list(xs) + [None]
+            lat += list(ys) + [None]
+        out[nom] = (lon, lat)
+    return out
+
+
+@st.cache_data(show_spinner=False)
+def _routes_par_etat_5() -> dict:
+    """Chaque tronçon relevé rattaché à son état dominant (le plus de km des 4 états relevés) ; les routes nationales
+    non relevées sont « non évaluées ». Le rattachement au tracé se fait par le nom du tronçon (sélection, pas calcul)."""
+    routes = couche("routes_classees")
+    nat = routes[routes.Type.str.startswith("Route nationale")]
+    km_nom, releves = {}, set()
+    for _, r in tron.iterrows():
+        for nom in str(r["Noms du tracé"] or "").split(" | "):
+            if not nom:
+                continue
+            releves.add(nom)
+            acc = km_nom.setdefault(nom, {"Bon": 0.0, "Moyen": 0.0, "Mauvais": 0.0, "En travaux": 0.0})
+            for etat, col in [("Bon", "km_bon"), ("Moyen", "km_moyen"), ("Mauvais", "km_mauvais"),
+                              ("En travaux", "km_travaux")]:
+                v = r[col]
+                if v == v:
+                    acc[etat] += v
+    etat_par_nom = {nom: max(d, key=d.get) for nom, d in km_nom.items()}
+    sortie = {etat: _coords(nat[nat["Nom"].isin([n for n, e in etat_par_nom.items() if e == etat])])
+              for etat in ["Bon", "Moyen", "Mauvais", "En travaux"]}
+    sortie["Non évalué"] = _coords(nat[~nat["Nom"].isin(releves)])
+    return sortie
+
+
+@st.cache_data(show_spinner=False)
 def _points_equipements(typ: str):
     """Un point par équipement. Les passages piétons, publiés en polygones, sont montrés par un point intérieur :
     une transformation d'affichage, pas un calcul d'indicateur."""
@@ -257,280 +302,347 @@ ariane("Carte du réseau et des auto-écoles")
 entete("Carte du réseau et des auto-écoles", "Que voit-on, préfecture par préfecture ?",
        "Le mauvais état du réseau se concentre au centre du pays (<strong>40,3 %</strong> des km évalués dans la "
        "Centrale) ; <strong>103 des 132</strong> auto-écoles agréées sont dans le Grand Lomé, et <strong>26 "
-       "préfectures</strong> ont leur chef-lieu à plus de 10 km de la plus proche.")
+       "préfectures</strong> ont leur chef-lieu à plus de 10 km de la plus proche.", carte=True)
 
 # ------------------------------------------------------------------ Section 1 — 4 chiffres clés
 n_agree = len(AE_AGREEES)
 rangee_kpi("Ce que montre la carte", [
     carte_kpi("Préfectures au réseau dégradé", "13 sur 38", "plus de 22,13 % de routes en mauvais état",
-              "2 868 523 habitants. Mô : aucune route classée (38 évaluées).", etiquette="C", ton="alerte"),
+              "2 868 523 habitants. Mô : aucune route classée (38 évaluées).", etiquette="C", ton="alerte",
+              icone="route_rouge"),
     carte_kpi("Auto-écoles recensées", f"{len(ae)}", f"dont {n_agree} agréées (85 agréées, 47 antennes)",
-              "Activité non publiée : aucune n'est vérifiée en activité.", etiquette="A"),
+              "Activité non publiée : aucune n'est vérifiée en activité.", etiquette="A", icone="etablissement"),
     carte_kpi("Préfectures sans auto-école agréée", "23 sur 39", "2 932 492 habitants",
-              "Dont 15 sans aucune auto-école recensée (1 822 046 hab.).", etiquette="B", ton="alerte"),
+              "Dont 15 sans aucune auto-école recensée (1 822 046 hab.).", etiquette="B", ton="alerte",
+              icone="ecole_jaune"),
     carte_kpi("Équipements de sécurité routière", "16 797", "panneaux, ralentisseurs, passages, feux",
-              "Collecte 2021-2022, non vérifiée ; hors indicateurs.", etiquette="C"),
-])
+              "Collecte 2021-2022, non vérifiée ; hors indicateurs.", etiquette="C", icone="signalisation"),
+], centre=True)
 
 # ------------------------------------------------------------------ Section 2 — Réglages et carte
 st.markdown("")
-g, d = st.columns([2.1, 1], vertical_alignment="top")
-with g:
-    titre_bloc("Le Togo, préfecture par préfecture",
-               "Une couche à la fois, en 5 classes fixes ; l'agrandissement montre la région Maritime et le Grand "
-               "Lomé, où se concentrent les auto-écoles. Molette ou barre d'outils pour zoomer.")
-    r1, r2 = st.columns([1.3, 1])
-    nom_couche = r1.selectbox("Couche", list(COUCHES), key="ca_couche")
-    trace = r2.selectbox("Tracé", ["Routes classées par type", "État des tronçons relevés", "Aucun"], key="ca_trace")
-    r3, r4 = st.columns([1, 1.3])
-    montrer_ae = r3.checkbox("Auto-écoles", value=True, key="ca_ae")
-    equip = r4.selectbox("Équipements de sécurité routière (hors indicateurs)",
-                         ["Masqués", "Panneau de signalisation", "Ralentisseur", "Passage piéton", "Feu tricolore"],
-                         key="ca_equip")
+titre_bloc("Le Togo, préfecture par préfecture",
+           "Une couche à la fois, en 5 classes fixes ; l'agrandissement montre la région Maritime et le Grand "
+           "Lomé, où se concentrent les auto-écoles. Molette ou barre d'outils pour zoomer.")
+# Les 5 vues « État du réseau » ont désormais leur propre filtre et leur propre carte (plus bas) : le filtre
+# « Couche » ne garde que les couches thématiques.
+COUCHES_THEMATIQUES = [k for k in COUCHES if not k.startswith("État du réseau")]
+# Les trois réglages sur une même grille horizontale, plus la case Auto-écoles.
+f1, f2, f3, f4 = st.columns([1.5, 1.2, 1.6, 0.9], vertical_alignment="bottom")
+nom_couche = f1.selectbox("Couche", COUCHES_THEMATIQUES, key="ca_couche")
+trace = f2.selectbox("Tracé", ["Routes classées par type", "État des tronçons relevés", "Aucun"], key="ca_trace")
+equip = f3.selectbox("Équipements de sécurité routière (hors indicateurs)",
+                     ["Masqués", "Panneau de signalisation", "Ralentisseur", "Passage piéton", "Feu tricolore"],
+                     key="ca_equip")
+montrer_ae = f4.checkbox("Auto-écoles", value=True, key="ca_ae")
 
-    cfg = COUCHES[nom_couche]
-    classes = cfg["classes"]
-    categorique = classes is None
-    vals = D[cfg["col"]]
+cfg = COUCHES[nom_couche]
+classes = cfg["classes"]
+categorique = classes is None
+vals = D[cfg["col"]]
 
-    # Trois groupes de préfectures : dans la couche, valeur absente, hors du territoire choisi.
-    hors = set(D.index[~D["Zone"].isin(f_zones)]) if f_zones else set()
-    if f_prio:
-        hors |= set(D.index[~D["Priorité"].isin(f_prio)])
+# Trois groupes de préfectures : dans la couche, valeur absente, hors du territoire choisi.
+hors = set(D.index[~D["Zone"].isin(f_zones)]) if f_zones else set()
+if f_prio:
+    hors |= set(D.index[~D["Priorité"].isin(f_prio)])
+if categorique:
+    cl = {p: ["Haute", "Moyenne", "Aucune action"].index(v) if v in PRIO_COUL else None for p, v in vals.items()}
+else:
+    cl = {p: _classe(v, classes) for p, v in vals.items()}
+
+dedans = [p for p in D.index if p not in hors and cl[p] is not None]
+absents = [p for p in D.index if p not in hors and cl[p] is None]
+
+
+def _texte(p):
+    r = D.loc[p]
+    v = vals[p]
     if categorique:
-        cl = {p: ["Haute", "Moyenne", "Aucune action"].index(v) if v in PRIO_COUL else None for p, v in vals.items()}
+        valeur = str(v)
+    elif v != v:
+        valeur = cfg["absent"] or "non définie"
     else:
-        cl = {p: _classe(v, classes) for p, v in vals.items()}
+        valeur = f"{fr(v, cfg['dec'])} {cfg['unite']}"
+    lignes = [f"<b>{p}</b>", f"{r['Zone']} · région {r['Région']}", f"{fr(r['Population'])} habitants",
+              f"<b>{nom_couche}</b> : {valeur}"]
+    if nom_couche == "Distance à l'auto-école agréée la plus proche":
+        lignes.append(f"Départ : {r['Origine du point de départ']} → {r['Préfecture de l’auto-école la plus proche']}")
+    lignes.append(f"Priorité : {r['Priorité']} · leviers : {r['Leviers']}")
+    lignes.append("<i>Cliquez pour afficher sa fiche</i>")
+    return "<br>".join(lignes)
 
-    dedans = [p for p in D.index if p not in hors and cl[p] is not None]
-    absents = [p for p in D.index if p not in hors and cl[p] is None]
 
-    def _texte(p):
-        r = D.loc[p]
-        v = vals[p]
-        if categorique:
-            valeur = str(v)
-        elif v != v:
-            valeur = cfg["absent"] or "non définie"
-        else:
-            valeur = f"{fr(v, cfg['dec'])} {cfg['unite']}"
-        lignes = [f"<b>{p}</b>", f"{r['Zone']} · région {r['Région']}", f"{fr(r['Population'])} habitants",
-                  f"<b>{nom_couche}</b> : {valeur}"]
-        if nom_couche.startswith("État du réseau"):
-            lignes.append(f"{fr(r['Km évalués'], 1)} km évalués · {int(r['Tronçons du relevé'])} tronçons relevés"
-                          if r["Km évalués"] == r["Km évalués"] else "aucune route classée")
-        if nom_couche == "Distance à l'auto-école agréée la plus proche":
-            lignes.append(f"Départ : {r['Origine du point de départ']} → {r['Préfecture de l’auto-école la plus proche']}")
-        lignes.append(f"Priorité : {r['Priorité']} · leviers : {r['Leviers']}")
-        lignes.append("<i>Cliquez pour afficher sa fiche</i>")
-        return "<br>".join(lignes)
+textes = {p: _texte(p) for p in D.index}
+couleurs = ([PRIO_COUL["Haute"], PRIO_COUL["Moyenne"], PRIO_COUL["Aucune action"]] if categorique else BLEUS)
 
-    textes = {p: _texte(p) for p in D.index}
-    couleurs = ([PRIO_COUL["Haute"], PRIO_COUL["Moyenne"], PRIO_COUL["Aucune action"]] if categorique else BLEUS)
 
-    # La préfecture cliquée au passage précédent : l'état du graphique est déjà posé quand la page se rejoue,
-    # ce qui permet de la cercler de noir sur la carte (design-page4 section 4).
-    def _cliquee() -> str | None:
-        etat = st.session_state.get("ca_carte") or {}
-        for pt in ((etat.get("selection") or {}).get("points") or []):
-            loc = pt.get("location")
-            if loc in D.index:                       # clic sur une préfecture
-                return loc
-            txt = pt.get("text")
-            if isinstance(txt, str):                 # clic sur une auto-école ou un équipement : sa préfecture
-                if txt in D.index:
-                    return txt
-                debut = re.match(r"<b>(.+?)</b>", txt)
-                if debut and debut.group(1) in D.index:
-                    return debut.group(1)
-        return None
+# La préfecture cliquée au passage précédent : l'état du graphique est déjà posé quand la page se rejoue,
+# ce qui permet de la cercler de noir sur la carte (design-page4 section 4).
+def _cliquee() -> str | None:
+    etat = st.session_state.get("ca_carte") or {}
+    for pt in ((etat.get("selection") or {}).get("points") or []):
+        loc = pt.get("location")
+        if loc in D.index:                       # clic sur une préfecture
+            return loc
+        txt = pt.get("text")
+        if isinstance(txt, str):                 # clic sur une auto-école ou un équipement : sa préfecture
+            if txt in D.index:
+                return txt
+            debut = re.match(r"<b>(.+?)</b>", txt)
+            if debut and debut.group(1) in D.index:
+                return debut.group(1)
+    return None
 
-    # La sélection de Plotly est effacée dès que la figure change (ici, le cerclage de la préfecture choisie) ou
-    # qu'un autre bouton rejoue la page : on garde donc la préfecture retenue à part.
-    retenue = _cliquee()
-    if retenue:
-        st.session_state["ca_prefecture"] = retenue
-    choisie = st.session_state.get("ca_prefecture")
 
-    fig = go.Figure()
+# La sélection de Plotly est effacée dès que la figure change (ici, le cerclage de la préfecture choisie) ou
+# qu'un autre bouton rejoue la page : on garde donc la préfecture retenue à part.
+retenue = _cliquee()
+if retenue:
+    st.session_state["ca_prefecture"] = retenue
+choisie = st.session_state.get("ca_prefecture")
 
-    def dessiner(cible: str, inset: bool):
-        # Opacité figée : sans cela, Plotly estompe tout le fond dès qu'un point est sélectionné.
-        comm = dict(geojson=GEO, featureidkey="properties.code", marker_line_color="#ffffff",
-                    marker_line_width=0.8, showscale=False, geo=cible,
-                    selected=dict(marker=dict(opacity=1)), unselected=dict(marker=dict(opacity=1)))
-        if hors:
-            fig.add_choropleth(locations=sorted(hors), z=[0] * len(hors), colorscale=_uni(HORS_SELECTION),
-                               zmin=0, zmax=1, hoverinfo="skip", **comm)
-        if absents:
-            fig.add_choropleth(locations=absents, z=[0] * len(absents), colorscale=_uni(ABSENT), zmin=0, zmax=1,
-                               text=[textes[p] for p in absents], hovertemplate="%{text}<extra></extra>", **comm)
-        if dedans:
-            fig.add_choropleth(locations=dedans, z=[cl[p] + 0.5 for p in dedans], zmin=0, zmax=len(couleurs),
-                               colorscale=_echelle(couleurs), text=[textes[p] for p in dedans],
-                               hovertemplate="%{text}<extra></extra>", **comm)
-        lon, lat = _lignes_regions()
-        fig.add_scattergeo(lon=lon, lat=lat, mode="lines", line=dict(width=3.4, color="rgba(20,20,19,.38)"),
-                           hoverinfo="skip", showlegend=False, geo=cible)
-        if trace == "Routes classées par type":
-            for typ, (coul, dash, largeur) in ROUTE_STYLE.items():
-                lon, lat = _routes_par_type()[typ]
-                fig.add_scattergeo(lon=lon, lat=lat, mode="lines", hoverinfo="skip", showlegend=False, geo=cible,
-                                   line=dict(width=largeur * (1.2 if inset else 1), color=coul, dash=dash))
-        elif trace == "État des tronçons relevés":
-            etats = _routes_par_etat()
-            lon, lat = etats["sans"]
-            fig.add_scattergeo(lon=lon, lat=lat, mode="lines", hoverinfo="skip", showlegend=False, geo=cible,
-                               line=dict(width=1.1, color="#b9b6ad", dash="dash"))
-            lon, lat = etats["autres"]
-            fig.add_scattergeo(lon=lon, lat=lat, mode="lines", hoverinfo="skip", showlegend=False, geo=cible,
-                               line=dict(width=1.4, color="#55534e"))
-            for largeur, (lon, lat) in etats["mauvais"].items():
-                fig.add_scattergeo(lon=lon, lat=lat, mode="lines", hoverinfo="skip", showlegend=False, geo=cible,
-                                   line=dict(width=largeur * (1.3 if inset else 1), color="#e34948"))
-        plein = dict(selected=dict(marker=dict(opacity=1)), unselected=dict(marker=dict(opacity=1)))
-        if montrer_ae:
-            fig.add_scattergeo(lon=AE_NON.geometry.x, lat=AE_NON.geometry.y, mode="markers", geo=cible,
-                               marker=dict(size=5 if inset else 4, color=AE_COUL["non agréée"],
-                                           line=dict(width=0.6, color="#ffffff")),
-                               text=AE_NON["Préfecture"], showlegend=False, **plein,
-                               hovertemplate="Auto-école non agréée — %{text}<extra></extra>")
-            fig.add_scattergeo(lon=AE_AGREEES.geometry.x, lat=AE_AGREEES.geometry.y, mode="markers", geo=cible,
-                               marker=dict(size=8 if inset else 6, color=AE_COUL["agréée"],
-                                           line=dict(width=1.1, color="#ffffff")),
-                               text=AE_AGREEES["Préfecture"], showlegend=False, **plein,
-                               hovertemplate="Auto-école agréée — %{text}<extra></extra>")
-        if equip != "Masqués":
-            lons, lats, prefs = _points_equipements(equip)
-            fig.add_scattergeo(lon=lons, lat=lats, mode="markers", geo=cible, text=prefs, showlegend=False,
-                               marker=dict(size=3.5, color=EQUIPEMENT, opacity=0.75), **plein,
-                               hovertemplate=f"{equip} — %{{text}}<extra></extra>")
-        if choisie:                                  # la préfecture cliquée, cerclée de noir
-            fig.add_choropleth(geojson=GEO, featureidkey="properties.code", locations=[choisie], z=[0],
-                               colorscale=_uni("rgba(0,0,0,0)"), zmin=0, zmax=1, showscale=False, geo=cible,
-                               marker_line_color="#141413", marker_line_width=3, hoverinfo="skip",
-                               selected=dict(marker=dict(opacity=1)), unselected=dict(marker=dict(opacity=1)))
+fig = go.Figure()
 
-    dessiner("geo", inset=False)
-    dessiner("geo2", inset=True)
 
-    # Noms des préfectures sur l'agrandissement, comme sur la figure du notebook « 04 — O3 ».
-    SUD = [p for p in D.index if D.loc[p, "Région"] == "Maritime"]
-    cen = _centroides()
-    fig.add_scattergeo(lon=[cen[p][0] for p in SUD], lat=[cen[p][1] for p in SUD], mode="text", geo="geo2",
-                       text=SUD, textfont=dict(size=10, color="#141413"), hoverinfo="skip", showlegend=False)
-
-    base_geo = dict(visible=False, bgcolor="#ffffff", projection=dict(type="mercator"))
-    lon_t, lat_t = _fenetre()
-    lon_s, lat_s = _fenetre(set(SUD), marge=0.03)
-    fig.update_layout(
-        geo=dict(**base_geo, domain=dict(x=[0, 0.46], y=[0, 1]),
-                 lonaxis=dict(range=lon_t), lataxis=dict(range=lat_t)),
-        geo2=dict(**base_geo, domain=dict(x=[0.48, 1], y=[0.02, 0.80]),
-                  lonaxis=dict(range=lon_s), lataxis=dict(range=lat_s)),
-        height=620, margin=dict(l=0, r=0, t=22, b=0), paper_bgcolor="#ffffff",
-        font=dict(family="IBM Plex Sans, system-ui, sans-serif", color=ENCRE),
-        hoverlabel=dict(bgcolor="#ffffff"), separators=", ",
-        annotations=[dict(x=0.48, y=0.90, xref="paper", yref="paper", xanchor="left", showarrow=False,
-                          text="<b>Région Maritime et Grand Lomé, agrandi</b><br>"
-                               "<span style='font-size:10px;color:#55534e'>la région la plus dense : "
-                               "103 des 132 auto-écoles agréées</span>",
-                          font=dict(size=12, color=ENCRE), align="left")])
-    st.plotly_chart(fig, key="ca_carte", on_select="rerun", selection_mode="points",
-                          config={"displayModeBar": True, "scrollZoom": True, "displaylogo": False,
-                                  "modeBarButtonsToRemove": ["select2d", "lasso2d"]})
-
-    # --- Légende : les 5 classes avec leur effectif, les valeurs absentes, et ce qui est dessiné
-    eff = {i: sum(1 for p in dedans if cl[p] == i) for i in range(len(couleurs))}
-    libelles = (["haute", "moyenne", "aucune action"] if categorique else [lib for _, _, lib in classes])
-    chips = "".join(
-        f'<span style="display:inline-flex;align-items:center;gap:5px;margin-right:12px;font-size:.74rem">'
-        f'<span style="width:13px;height:13px;border-radius:3px;background:{couleurs[i]};'
-        f'border:1px solid #d8d6cc"></span>{html.escape(lib)} <b>({eff[i]})</b></span>'
-        for i, lib in enumerate(libelles))
-    if absents:
-        chips += (f'<span style="display:inline-flex;align-items:center;gap:5px;margin-right:12px;font-size:.74rem">'
-                  f'<span style="width:13px;height:13px;border-radius:3px;background:{ABSENT};'
-                  f'border:1px solid #d8d6cc"></span>{html.escape(cfg["absent"] or "valeur absente")} '
-                  f'<b>({len(absents)})</b></span>')
+def dessiner(cible: str, inset: bool):
+    # Opacité figée : sans cela, Plotly estompe tout le fond dès qu'un point est sélectionné.
+    comm = dict(geojson=GEO, featureidkey="properties.code", marker_line_color="#ffffff",
+                marker_line_width=0.8, showscale=False, geo=cible,
+                selected=dict(marker=dict(opacity=1)), unselected=dict(marker=dict(opacity=1)))
     if hors:
-        chips += (f'<span style="display:inline-flex;align-items:center;gap:5px;font-size:.74rem">'
-                  f'<span style="width:13px;height:13px;border-radius:3px;background:{HORS_SELECTION};'
-                  f'border:1px solid #d8d6cc"></span>hors du territoire choisi <b>({len(hors)})</b></span>')
-
-    sur_carte = ['<span style="display:inline-flex;align-items:center;gap:5px;margin-right:14px">'
-                 '<span style="width:16px;height:0;border-top:3px solid rgba(20,20,19,.38)"></span>'
-                 'limites des 5 régions</span>']
+        fig.add_choropleth(locations=sorted(hors), z=[0] * len(hors), colorscale=_uni(HORS_SELECTION),
+                           zmin=0, zmax=1, hoverinfo="skip", **comm)
+    if absents:
+        fig.add_choropleth(locations=absents, z=[0] * len(absents), colorscale=_uni(ABSENT), zmin=0, zmax=1,
+                           text=[textes[p] for p in absents], hovertemplate="%{text}<extra></extra>", **comm)
+    if dedans:
+        fig.add_choropleth(locations=dedans, z=[cl[p] + 0.5 for p in dedans], zmin=0, zmax=len(couleurs),
+                           colorscale=_echelle(couleurs), text=[textes[p] for p in dedans],
+                           hovertemplate="%{text}<extra></extra>", **comm)
+    # Limites des régions, chacune dans sa couleur (COULEUR_REGION).
+    for reg_nom, (lon, lat) in _lignes_regions_colorees().items():
+        fig.add_scattergeo(lon=lon, lat=lat, mode="lines", hoverinfo="skip", showlegend=False, geo=cible,
+                           line=dict(width=2.4, color=COULEUR_REGION.get(reg_nom, "rgba(20,20,19,.38)")))
     if trace == "Routes classées par type":
-        km = {"Route nationale revêtue": "2 236,4 km", "Route nationale non revêtue": "863,1 km",
-              "Voirie urbaine": "233,2 km", "Piste rurale": "33,8 km"}
-        for typ, (coul, dash, _) in ROUTE_STYLE.items():
-            style = "dashed" if dash == "dash" else ("dotted" if dash == "dot" else "solid")
-            sur_carte.append(f'<span style="display:inline-flex;align-items:center;gap:5px;margin-right:14px">'
-                             f'<span style="width:18px;height:0;border-top:2.5px {style} {coul}"></span>'
-                             f'{typ.lower()} ({km[typ]})</span>')
+        for typ, (coul, dash, largeur) in ROUTE_STYLE.items():
+            lon, lat = _routes_par_type()[typ]
+            fig.add_scattergeo(lon=lon, lat=lat, mode="lines", hoverinfo="skip", showlegend=False, geo=cible,
+                               line=dict(width=largeur * (1.2 if inset else 1), color=coul, dash=dash))
     elif trace == "État des tronçons relevés":
-        sur_carte += ['<span style="display:inline-flex;align-items:center;gap:5px;margin-right:14px">'
-                      '<span style="width:18px;height:0;border-top:3px solid #e34948"></span>49 tronçons en mauvais '
-                      'état (épaisseur selon les km)</span>',
-                      '<span style="display:inline-flex;align-items:center;gap:5px;margin-right:14px">'
-                      '<span style="width:18px;height:0;border-top:2.5px solid #55534e"></span>35 autres tronçons '
-                      'relevés</span>',
-                      '<span style="display:inline-flex;align-items:center;gap:5px;margin-right:14px">'
-                      '<span style="width:18px;height:0;border-top:2.5px dashed #b9b6ad"></span>99,0 km de routes '
-                      'nationales sans état relevé</span>']
+        etats = _routes_par_etat()
+        lon, lat = etats["sans"]
+        fig.add_scattergeo(lon=lon, lat=lat, mode="lines", hoverinfo="skip", showlegend=False, geo=cible,
+                           line=dict(width=1.1, color="#b9b6ad", dash="dash"))
+        lon, lat = etats["autres"]
+        fig.add_scattergeo(lon=lon, lat=lat, mode="lines", hoverinfo="skip", showlegend=False, geo=cible,
+                           line=dict(width=1.4, color="#55534e"))
+        for largeur, (lon, lat) in etats["mauvais"].items():
+            fig.add_scattergeo(lon=lon, lat=lat, mode="lines", hoverinfo="skip", showlegend=False, geo=cible,
+                               line=dict(width=largeur * (1.3 if inset else 1), color="#e34948"))
+    plein = dict(selected=dict(marker=dict(opacity=1)), unselected=dict(marker=dict(opacity=1)))
     if montrer_ae:
-        sur_carte += [f'<span style="display:inline-flex;align-items:center;gap:5px;margin-right:14px">'
-                      f'<span style="width:11px;height:11px;border-radius:50%;background:{AE_COUL["agréée"]};'
-                      f'border:1.5px solid #fff"></span>{n_agree} auto-écoles agréées</span>',
-                      f'<span style="display:inline-flex;align-items:center;gap:5px;margin-right:14px">'
-                      f'<span style="width:9px;height:9px;border-radius:50%;background:{AE_COUL["non agréée"]};'
-                      f'border:1px solid #fff"></span>{len(AE_NON)} non agréées ou au statut non renseigné</span>']
+        fig.add_scattergeo(lon=AE_NON.geometry.x, lat=AE_NON.geometry.y, mode="markers", geo=cible,
+                           marker=dict(size=8 if inset else 7, color=AE_COUL["non agréée"],
+                                       line=dict(width=0.8, color="#7a5a00")),
+                           text=AE_NON["Préfecture"], showlegend=False, **plein,
+                           hovertemplate="Auto-école non agréée — %{text}<extra></extra>")
+        fig.add_scattergeo(lon=AE_AGREEES.geometry.x, lat=AE_AGREEES.geometry.y, mode="markers", geo=cible,
+                           marker=dict(size=12 if inset else 10, color=AE_COUL["agréée"],
+                                       line=dict(width=1.3, color="#ffffff")),
+                           text=AE_AGREEES["Préfecture"], showlegend=False, **plein,
+                           hovertemplate="Auto-école agréée — %{text}<extra></extra>")
     if equip != "Masqués":
-        sur_carte.append(f'<span style="display:inline-flex;align-items:center;gap:5px">'
-                         f'<span style="width:9px;height:9px;border-radius:50%;background:{EQUIPEMENT}"></span>'
-                         f'{equip.lower()}s — non utilisés dans les indicateurs</span>')
-    st.markdown(f'<div class="filtres-actifs"><b>{html.escape(nom_couche)}</b> '
-                f'<span style="color:#55534e">({html.escape(cfg["unite"])})</span><br>{chips}<br>'
-                f'<span style="font-size:.74rem"><b>Sur la carte :</b> {"".join(sur_carte)}</span></div>',
-                unsafe_allow_html=True)
-    note(f"Niveau {cfg['niveau']} — {cfg['note']} A = mesuré, B = calculé, C = estimé.")
-    exp = D.reset_index()[["Préfecture", "Zone", "Région", "Population", cfg["col"]]]
-    export_csv(exp, "couche_affichee.csv", "ca_exp_couche", "Télécharger la couche (CSV)")
+        lons, lats, prefs = _points_equipements(equip)
+        fig.add_scattergeo(lon=lons, lat=lats, mode="markers", geo=cible, text=prefs, showlegend=False,
+                           marker=dict(size=3.5, color=EQUIPEMENT, opacity=0.75), **plein,
+                           hovertemplate=f"{equip} — %{{text}}<extra></extra>")
+    if choisie:                                  # la préfecture cliquée, cerclée de noir
+        fig.add_choropleth(geojson=GEO, featureidkey="properties.code", locations=[choisie], z=[0],
+                           colorscale=_uni("rgba(0,0,0,0)"), zmin=0, zmax=1, showscale=False, geo=cible,
+                           marker_line_color="#141413", marker_line_width=3, hoverinfo="skip",
+                           selected=dict(marker=dict(opacity=1)), unselected=dict(marker=dict(opacity=1)))
 
-with d:
-    constat(f'<strong>{html.escape(nom_couche)}</strong><br>{cfg["constat"]}')
-    st.caption("Projection Mercator, cadrée sur le Togo, sans fond de carte. Les contours des 5 régions sont "
-               "toujours tracés ; le territoire choisi dans la barre latérale garde ses couleurs, les autres "
-               "préfectures passent en beige.")
 
-    # ---------------------------------------------------------- Section 7 — Fiche de la préfecture choisie
-    titre_bloc("La préfecture choisie")
-    if choisie is None:
-        st.caption("Cliquez sur une préfecture, une auto-école ou un équipement : la préfecture s'affiche ici, "
-                   "avec ses actions et un lien vers sa fiche.")
-    else:
-        r = D.loc[choisie]
-        st.markdown(
-            f'<div style="border:1px solid #e2dfd6;border-left:3px solid {PRIO_COUL.get(r["Priorité"], ABSENT)};'
-            f'border-radius:10px;padding:12px;background:#fff">'
-            f'<div style="font-weight:700;font-size:1.05rem">{html.escape(choisie)}</div>'
-            f'<div style="color:#55534e;font-size:.8rem">{html.escape(r["Zone"])} · région '
-            f'{html.escape(r["Région"])}</div>'
-            f'<div style="font-size:1.3rem;font-weight:700;color:#0d366b;margin:3px 0">{fr(r["Population"])}'
-            f'<span style="font-size:.7rem;font-weight:400;color:#55534e"> habitants</span></div>'
-            f'<div style="margin:4px 0">{badge(r["Priorité"], PRIO_COUL.get(r["Priorité"], ABSENT))}'
-            f'<span style="font-size:.78rem;color:#55534e">leviers : {html.escape(str(r["Leviers"]))}</span></div>'
-            f'<div style="background:#f4f2ec;border-left:3px solid #55534e;padding:7px 9px;font-size:.82rem">'
-            f'<b>Actions recommandées :</b> {html.escape(str(r["Actions"]))}</div></div>', unsafe_allow_html=True)
-        b1, b2 = st.columns([2, 1])
-        if b1.button(f"Voir la fiche de {choisie} →", key="ca_fiche"):
-            st.session_state["fiche_prefecture"] = choisie
-            st.session_state["recommandations_rang"] = 6
-            st.switch_page("views/recommandations.py")
-        if b2.button("Effacer", key="ca_effacer"):
-            st.session_state["ca_prefecture"] = None
-            st.rerun()
+dessiner("geo", inset=False)
+dessiner("geo2", inset=True)
+
+# Noms des préfectures sur l'agrandissement, comme sur la figure du notebook « 04 — O3 ».
+SUD = [p for p in D.index if D.loc[p, "Région"] == "Maritime"]
+cen = _centroides()
+fig.add_scattergeo(lon=[cen[p][0] for p in SUD], lat=[cen[p][1] for p in SUD], mode="text", geo="geo2",
+                   text=SUD, textfont=dict(size=10, color="#141413"), hoverinfo="skip", showlegend=False)
+
+base_geo = dict(visible=False, bgcolor="#ffffff", projection=dict(type="mercator"))
+lon_t, lat_t = _fenetre()
+lon_s, lat_s = _fenetre(set(SUD), marge=0.03)
+fig.update_layout(
+    geo=dict(**base_geo, domain=dict(x=[0, 0.46], y=[0, 1]),
+             lonaxis=dict(range=lon_t), lataxis=dict(range=lat_t)),
+    geo2=dict(**base_geo, domain=dict(x=[0.48, 1], y=[0.02, 0.80]),
+              lonaxis=dict(range=lon_s), lataxis=dict(range=lat_s)),
+    height=640, margin=dict(l=0, r=0, t=22, b=0), paper_bgcolor="#ffffff",
+    font=dict(family="IBM Plex Sans, system-ui, sans-serif", color=ENCRE),
+    hoverlabel=dict(bgcolor="#ffffff"), separators=", ",
+    annotations=[dict(x=0.48, y=0.90, xref="paper", yref="paper", xanchor="left", showarrow=False,
+                      text="<b>Région Maritime et Grand Lomé, agrandi</b><br>"
+                           "<span style='font-size:10px;color:#55534e'>la région la plus dense : "
+                           "103 des 132 auto-écoles agréées</span>",
+                      font=dict(size=12, color=ENCRE), align="left")])
+st.plotly_chart(fig, key="ca_carte", on_select="rerun", selection_mode="points",
+                config={"displayModeBar": True, "scrollZoom": True, "displaylogo": False,
+                        "modeBarButtonsToRemove": ["select2d", "lasso2d"]})
+
+# --- Légende : les 5 classes avec leur effectif, les valeurs absentes, et ce qui est dessiné
+eff = {i: sum(1 for p in dedans if cl[p] == i) for i in range(len(couleurs))}
+libelles = (["haute", "moyenne", "aucune action"] if categorique else [lib for _, _, lib in classes])
+chips = "".join(
+    f'<span style="display:inline-flex;align-items:center;gap:5px;margin-right:12px;font-size:.74rem">'
+    f'<span style="width:13px;height:13px;border-radius:3px;background:{couleurs[i]};'
+    f'border:1px solid #d8d6cc"></span>{html.escape(lib)} <b>({eff[i]})</b></span>'
+    for i, lib in enumerate(libelles))
+if absents:
+    chips += (f'<span style="display:inline-flex;align-items:center;gap:5px;margin-right:12px;font-size:.74rem">'
+              f'<span style="width:13px;height:13px;border-radius:3px;background:{ABSENT};'
+              f'border:1px solid #d8d6cc"></span>{html.escape(cfg["absent"] or "valeur absente")} '
+              f'<b>({len(absents)})</b></span>')
+if hors:
+    chips += (f'<span style="display:inline-flex;align-items:center;gap:5px;font-size:.74rem">'
+              f'<span style="width:13px;height:13px;border-radius:3px;background:{HORS_SELECTION};'
+              f'border:1px solid #d8d6cc"></span>hors du territoire choisi <b>({len(hors)})</b></span>')
+
+# Limites des régions : un segment par couleur de région.
+reg_segments = "".join(f'<span style="width:14px;height:0;border-top:3px solid {COULEUR_REGION[rg]};'
+                       f'display:inline-block;vertical-align:middle;margin-right:2px"></span>' for rg in COULEUR_REGION)
+sur_carte = [f'<span style="display:inline-flex;align-items:center;gap:5px;margin-right:14px">'
+             f'{reg_segments} limites des 5 régions</span>']
+if trace == "Routes classées par type":
+    km = {"Route nationale revêtue": "2 236,4 km", "Route nationale non revêtue": "863,1 km",
+          "Voirie urbaine": "233,2 km", "Piste rurale": "33,8 km"}
+    for typ, (coul, dash, _) in ROUTE_STYLE.items():
+        style = "dashed" if dash == "dash" else ("dotted" if dash == "dot" else "solid")
+        sur_carte.append(f'<span style="display:inline-flex;align-items:center;gap:5px;margin-right:14px">'
+                         f'<span style="width:18px;height:0;border-top:2.5px {style} {coul}"></span>'
+                         f'{typ.lower()} ({km[typ]})</span>')
+elif trace == "État des tronçons relevés":
+    sur_carte += ['<span style="display:inline-flex;align-items:center;gap:5px;margin-right:14px">'
+                  '<span style="width:18px;height:0;border-top:3px solid #e34948"></span>49 tronçons en mauvais '
+                  'état (épaisseur selon les km)</span>',
+                  '<span style="display:inline-flex;align-items:center;gap:5px;margin-right:14px">'
+                  '<span style="width:18px;height:0;border-top:2.5px solid #55534e"></span>35 autres tronçons '
+                  'relevés</span>',
+                  '<span style="display:inline-flex;align-items:center;gap:5px;margin-right:14px">'
+                  '<span style="width:18px;height:0;border-top:2.5px dashed #b9b6ad"></span>99,0 km de routes '
+                  'nationales sans état relevé</span>']
+if montrer_ae:
+    sur_carte += [f'<span style="display:inline-flex;align-items:center;gap:5px;margin-right:14px">'
+                  f'<span style="width:13px;height:13px;border-radius:50%;background:{AE_COUL["agréée"]};'
+                  f'border:1.5px solid #fff"></span>{n_agree} auto-écoles agréées</span>',
+                  f'<span style="display:inline-flex;align-items:center;gap:5px;margin-right:14px">'
+                  f'<span style="width:11px;height:11px;border-radius:50%;background:{AE_COUL["non agréée"]};'
+                  f'border:1px solid #7a5a00"></span>{len(AE_NON)} non agréées ou au statut non renseigné</span>']
+if equip != "Masqués":
+    sur_carte.append(f'<span style="display:inline-flex;align-items:center;gap:5px">'
+                     f'<span style="width:9px;height:9px;border-radius:50%;background:{EQUIPEMENT}"></span>'
+                     f'{equip.lower()}s — non utilisés dans les indicateurs</span>')
+st.markdown(f'<div class="filtres-actifs"><b>{html.escape(nom_couche)}</b> '
+            f'<span style="color:#55534e">({html.escape(cfg["unite"])})</span><br>{chips}<br>'
+            f'<span style="font-size:.74rem"><b>Sur la carte :</b> {"".join(sur_carte)}</span></div>',
+            unsafe_allow_html=True)
+note(f"Niveau {cfg['niveau']} — {cfg['note']} A = mesuré, B = calculé, C = estimé.")
+exp = D.reset_index()[["Préfecture", "Zone", "Région", "Population", cfg["col"]]]
+export_csv(exp, "couche_affichee.csv", "ca_exp_couche", "Télécharger la couche (CSV)")
+
+# La carte des constats sous la section (comme sur les autres pages).
+constat(f'<strong>{html.escape(nom_couche)}</strong><br>{cfg["constat"]}')
+st.caption("Projection Mercator, cadrée sur le Togo, sans fond de carte. Les contours des 5 régions sont "
+           "toujours tracés ; le territoire choisi dans la barre latérale garde ses couleurs, les autres "
+           "préfectures passent en beige.")
+
+# ---------------------------------------------------------- Section 3 — Carte de l'état du réseau routier
+st.markdown("")
+titre_bloc("L'état du réseau routier",
+           "Une seconde carte : chaque zone dans sa couleur, les tronçons relevés colorés selon leur état "
+           "dominant, les limites des 5 régions. Elle suit les filtres de la barre latérale.")
+etats_aff = st.multiselect("États du réseau à afficher", list(ETAT_LIGNE), default=[], key="ca_etats",
+                           help="Vide = les 5 états sont affichés.")
+etats_vus = etats_aff or list(ETAT_LIGNE)
+# Pastilles colorées des états (le menu déroulant ne pouvant pas les afficher lui-même).
+etat_badges = "".join(
+    f'<span style="display:inline-flex;align-items:center;gap:5px;margin-right:12px;font-size:.74rem">'
+    f'<span style="width:18px;height:0;border-top:3px {"dashed" if e == "Non évalué" else "solid"} '
+    f'{ETAT_LIGNE[e]}"></span>{e.lower()}</span>' for e in ETAT_LIGNE)
+st.markdown(f'<div class="filtres-actifs"><b>État des tronçons :</b> {etat_badges}</div>', unsafe_allow_html=True)
+
+ZONES_ORDRE = list(COULEUR_ZONE)
+dedans2 = [p for p in D.index if p not in hors]
+fig2 = go.Figure()
+if hors:
+    fig2.add_choropleth(geojson=GEO, featureidkey="properties.code", locations=sorted(hors), z=[0] * len(hors),
+                        colorscale=_uni(HORS_SELECTION), zmin=0, zmax=1, showscale=False,
+                        marker_line_color="#ffffff", marker_line_width=0.8, hoverinfo="skip")
+fig2.add_choropleth(
+    geojson=GEO, featureidkey="properties.code", locations=dedans2,
+    z=[ZONES_ORDRE.index(D.loc[p, "Zone"]) + 0.5 for p in dedans2], zmin=0, zmax=len(ZONES_ORDRE),
+    colorscale=_echelle([COULEUR_ZONE[z] for z in ZONES_ORDRE]), showscale=False,
+    marker_line_color="#ffffff", marker_line_width=0.8, marker_opacity=0.45,
+    text=[f"<b>{p}</b><br>{D.loc[p, 'Zone']} · région {D.loc[p, 'Région']}" for p in dedans2],
+    hovertemplate="%{text}<extra></extra>")
+for reg_nom, (lon, lat) in _lignes_regions_colorees().items():
+    fig2.add_scattergeo(lon=lon, lat=lat, mode="lines", hoverinfo="skip", showlegend=False,
+                        line=dict(width=2.6, color=COULEUR_REGION.get(reg_nom, "#55534e")))
+etats5 = _routes_par_etat_5()
+for etat in ["Non évalué", "En travaux", "Bon", "Moyen", "Mauvais"]:   # le mauvais dessiné en dernier (au-dessus)
+    if etat in etats_vus:
+        lon, lat = etats5[etat]
+        fig2.add_scattergeo(lon=lon, lat=lat, mode="lines", hoverinfo="skip", showlegend=False,
+                            line=dict(width=2.8 if etat == "Mauvais" else 2.0, color=ETAT_LIGNE[etat],
+                                      dash="dash" if etat == "Non évalué" else "solid"))
+fig2.update_layout(
+    geo=dict(visible=False, bgcolor="#ffffff", projection=dict(type="mercator"),
+             lonaxis=dict(range=lon_t), lataxis=dict(range=lat_t)),
+    height=600, margin=dict(l=0, r=0, t=10, b=0), paper_bgcolor="#ffffff",
+    font=dict(family="IBM Plex Sans, system-ui, sans-serif", color=ENCRE),
+    hoverlabel=dict(bgcolor="#ffffff"), separators=", ")
+st.plotly_chart(fig2, key="ca_carte2",
+                config={"displayModeBar": True, "scrollZoom": True, "displaylogo": False,
+                        "modeBarButtonsToRemove": ["select2d", "lasso2d"]})
+zone_badges = "".join(
+    f'<span style="display:inline-flex;align-items:center;gap:5px;margin-right:12px;font-size:.74rem">'
+    f'<span style="width:13px;height:13px;border-radius:3px;background:{COULEUR_ZONE[z]};'
+    f'border:1px solid #d8d6cc;opacity:.55"></span>{html.escape(z)}</span>' for z in COULEUR_ZONE)
+st.markdown('<div class="filtres-actifs"><b>État du réseau routier sur cette carte.</b> '
+            '<span style="color:#55534e">Fond coloré par zone :</span><br>' + zone_badges + '</div>',
+            unsafe_allow_html=True)
+note("État dominant par tronçon (le plus de km parmi bon, moyen, mauvais et en travaux). Relevé de 2020, routes "
+     "nationales seulement. Niveau C.")
+
+# ---------------------------------------------------------- Section 4 — Fiche de la préfecture choisie
+titre_bloc("La préfecture choisie")
+if choisie is None:
+    st.caption("Cliquez sur une préfecture, une auto-école ou un équipement de la première carte : la préfecture "
+               "s'affiche ici, avec ses actions et un lien vers sa fiche.")
+else:
+    r = D.loc[choisie]
+    st.markdown(
+        f'<div style="border:1px solid #e2dfd6;border-left:3px solid {PRIO_COUL.get(r["Priorité"], ABSENT)};'
+        f'border-radius:10px;padding:12px;background:#fff;max-width:520px">'
+        f'<div style="font-weight:700;font-size:1.05rem">{html.escape(choisie)}</div>'
+        f'<div style="color:#55534e;font-size:.8rem">{html.escape(r["Zone"])} · région '
+        f'{html.escape(r["Région"])}</div>'
+        f'<div style="font-size:1.3rem;font-weight:700;color:#0d366b;margin:3px 0">{fr(r["Population"])}'
+        f'<span style="font-size:.7rem;font-weight:400;color:#55534e"> habitants</span></div>'
+        f'<div style="margin:4px 0">{badge(r["Priorité"], PRIO_COUL.get(r["Priorité"], ABSENT))}'
+        f'<span style="font-size:.78rem;color:#55534e">leviers : {html.escape(str(r["Leviers"]))}</span></div>'
+        f'<div style="background:#f4f2ec;border-left:3px solid #55534e;padding:7px 9px;font-size:.82rem">'
+        f'<b>Actions recommandées :</b> {html.escape(str(r["Actions"]))}</div></div>', unsafe_allow_html=True)
+    b1, b2, _ = st.columns([1.2, 0.8, 2])
+    if b1.button(f"Voir la fiche de {choisie} →", key="ca_fiche"):
+        st.session_state["fiche_prefecture"] = choisie
+        st.session_state["recommandations_rang"] = 6
+        st.switch_page("views/recommandations.py")
+    if b2.button("Effacer", key="ca_effacer"):
+        st.session_state["ca_prefecture"] = None
+        st.rerun()
 
 # ------------------------------------------------------------------ Section 9 — Les couches, préfecture par préfecture
 st.markdown("")
@@ -621,34 +733,46 @@ if stat:
     vue = vue[vue["Statut"].isin(stat)]
 vue = vue.sort_values(["Zone", "Préfecture", "Statut", "Nom"])
 
-STATUT_COUL = {"Agréée": "#0d366b", "Antenne agréée": "#cde2fb", "Non agréée": "#efece4", "Non renseigné": "#ffffff"}
+# Statut en badge coloré, dans la même logique que la carte (agréée vert, non agréée / non renseigné jaune-or).
+STATUT_BADGE = {"Agréée": ("#16834a", "#ffffff"), "Antenne agréée": ("#d7ebe0", "#0b4d2e"),
+                "Non agréée": ("#fbf3d9", "#7a5a00"), "Non renseigné": ("#eef2f6", "#475569")}
 
 
-def _c_statut(v):
-    coul = STATUT_COUL.get(v)
-    if not coul:
-        return ""
-    return f"background-color:{coul};color:{'#ffffff' if v == 'Agréée' else '#141413'};font-weight:600"
+def _badge_statut(v) -> str:
+    bg, fg = STATUT_BADGE.get(v, ("#eef2f6", "#475569"))
+    return (f'<span style="display:inline-block;background:{bg};color:{fg};border-radius:999px;'
+            f'padding:1px 9px;font-size:.72rem;font-weight:600;white-space:nowrap">{html.escape(str(v))}</span>')
 
 
-def _c_verif(v):
-    return "background-color:#fef3c7;color:#8a5a00;font-weight:600" if v else ""
-
-
-def _c_sans_agreee(v):
-    return "color:#8a5a00;font-style:italic" if v == "aucune agréée" else ""
-
-
-style = (vue.style
-         .map(_c_sans_agreee, subset=["Habitants par auto-école agréée"])
-         .map(_c_statut, subset=["Statut"])
-         .map(_c_verif, subset=["À vérifier"]))
-st.dataframe(style, hide_index=True, use_container_width=True, height=360)
+lignes_ae = []
+for _, r in vue.iterrows():
+    hab = r["Habitants par auto-école agréée"]
+    # quote=False : garder l'apostrophe telle quelle (html.escape la transforme en entité que le découpage i18n
+    # prend pour un séparateur, ce qui fragmenterait les noms propres).
+    lignes_ae.append({
+        "Nom": f'<b>{html.escape(str(r["Nom"]), quote=False)}</b>',
+        "Statut": _badge_statut(r["Statut"]),
+        "Localité": html.escape(str(r["Localité"]), quote=False),
+        "Commune": html.escape(str(r["Commune"]), quote=False),
+        "Préfecture": html.escape(str(r["Préfecture"]), quote=False),
+        "Zone": (f'<span style="color:{COULEUR_ZONE.get(r["Zone"], ENCRE)};font-weight:600">'
+                 f'{html.escape(str(r["Zone"]), quote=False)}</span>'),
+        "Région": html.escape(str(r["Région"]), quote=False),
+        "À vérifier": ('<span style="display:inline-block;background:#fef3c7;color:#8a5a00;border-radius:999px;'
+                       'padding:1px 9px;font-size:.72rem;font-weight:600">à vérifier</span>'
+                       if r["À vérifier"] else ""),
+        "Habitants / agréée": (f'<i style="color:#8a5a00">{html.escape(hab)}</i>' if hab == "aucune agréée"
+                               else html.escape(str(hab))),
+    })
+st.markdown(f'<div style="max-height:380px;overflow:auto;border-radius:10px">{table_html(lignes_ae)}</div>',
+            unsafe_allow_html=True)
 n_verif = int((vue["À vérifier"] != "").sum())
-st.caption(f"{len(vue)} auto-écoles affichées, dont {int(vue['Statut'].isin(['Agréée', 'Antenne agréée']).sum())} "
-           f"agréées (antennes comprises) et {n_verif} à vérifier : non agréées dans une préfecture qui n'a aucune "
-           "auto-école agréée. La préfecture est le rattachement par la position (utilisé par les indicateurs) ; "
-           "il diffère de la préfecture déclarée pour 4 auto-écoles.")
+n_agr_vue = int(vue["Statut"].isin(["Agréée", "Antenne agréée"]).sum())
+note_carte(f"<strong>{len(vue)}</strong> auto-écoles affichées, dont "
+           f"<strong style='color:#16834a'>{n_agr_vue} agréées</strong> (antennes comprises) et "
+           f"<strong style='color:#8a5a00'>{n_verif} à vérifier</strong> : non agréées dans une préfecture qui n'a "
+           "aucune auto-école agréée. La préfecture est le rattachement par la position (utilisé par les "
+           "indicateurs) ; il diffère de la préfecture déclarée pour 4 auto-écoles.", couleur="vert")
 exp = ae[["Nom", "Statut", "Localité", "Commune", "Canton", "Préfecture", "Zone", "Région"]].copy()
 exp["longitude"] = ae.geometry.x
 exp["latitude"] = ae.geometry.y
@@ -657,13 +781,14 @@ export_csv(exp, "auto_ecoles_272.csv", "ca_exp_ae")
 # ------------------------------------------------------------------ Section 11 — Ce que la carte ne montre pas
 st.markdown("")
 titre_bloc("Ce que la carte ne montre pas")
-for t in ["Les accidents, les tués et les blessés : publiés pour tout le pays seulement (page Évolutions, onglet "
-          "Sécurité routière).",
-          "Les permis et les immatriculations : publiés pour tout le pays seulement (page Évolutions, onglet Mobilité).",
-          "Le risque par préfecture : non classé, faute d'accidents par territoire. La priorité ne porte que sur le "
-          "réseau et la formation.",
-          "L'accès aux secours, le trafic et la vitesse : aucune donnée."]:
-    st.markdown(f"- {t}")
+note_carte("<ul style='margin:0;padding-left:18px'>"
+           "<li>Les accidents, les tués et les blessés : publiés pour tout le pays seulement (page Évolutions, "
+           "onglet Sécurité routière).</li>"
+           "<li>Les permis et les immatriculations : publiés pour tout le pays seulement (page Évolutions, onglet "
+           "Mobilité).</li>"
+           "<li>Le risque par préfecture : non classé, faute d'accidents par territoire. La priorité ne porte que "
+           "sur le réseau et la formation.</li>"
+           "<li>L'accès aux secours, le trafic et la vitesse : aucune donnée.</li></ul>", couleur="jaune")
 
 # ------------------------------------------------------------------ Section 12 — Synthèse et limite
 st.markdown("")

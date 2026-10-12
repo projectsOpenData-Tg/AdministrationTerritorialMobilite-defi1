@@ -280,3 +280,30 @@ Couleurs fixes par donnée, dans `theme.py`, pour qu'un indicateur garde sa coul
   « Niveau C » retirées.
 - **i18n** : 20 nouveaux segments traduits (en/ee/kbp) ; « 7 tronçons » / « 49 tronçons » fixés en anglais
   (« sections »).
+
+## 20. Carte du réseau et des auto-écoles (sur design/palette-a)
+
+- Texte d'introduction dans une **carte blanche** (`entete(carte=True)`).
+- 4 chiffres clés avec **icône de thème** et **liseré assorti** (couleur de l'icône) : réseau dégradé → *route rouge*,
+  auto-écoles recensées → *établissement vert*, préfectures sans auto-école → *école jaune*, équipements →
+  *signalisation bleue*. Contenu **centré** (`centre=True`). Nouvelles icônes `etablissement`, `ecole_jaune`,
+  `signalisation` dans `composants.ICONES`.
+- **Carte principale en pleine largeur** (suppression de la colonne de droite) ; les 3 réglages **sur une même
+  rangée** (Couche, Tracé, Équipements) + case Auto-écoles. La carte **Constat** passe **sous la section**.
+- **Filtre « État du réseau » séparé** : les 5 vues « État du réseau : … » sont retirées de « Couche » (qui ne
+  garde que les couches thématiques) et pilotent une **seconde carte**.
+- **Seconde carte « L'état du réseau routier »** : préfectures colorées **par zone** (COULEUR_ZONE, fond atténué),
+  **tronçons colorés selon leur état dominant** (bon vert, moyen jaune-or, mauvais rouge, en travaux bleu, non
+  évalué gris pointillé), **limites des 5 régions en couleurs distinctes** (COULEUR_REGION). Filtre multiselect des
+  états avec pastilles de couleur ; suit les filtres de la barre latérale. Label « État du réseau routier sur cette
+  carte ».
+- **Limites des 5 régions colorées** aussi sur la carte principale (au lieu du trait gris unique).
+- **Points des auto-écoles** : agréées en **vert** et agrandies ; non agréées / statut non renseigné en **jaune-or**
+  (visibles) avec contour foncé.
+- **Tableau des 272 auto-écoles** : passé en tableau HTML avec **badge de statut coloré** (agréée vert, antenne vert
+  pâle, non agréée jaune-or, non renseigné gris), colonne **« À vérifier » en badge** (au lieu de colorer la ligne),
+  **zones colorées**. Légende de bas de tableau en **carte « i » verte** (chiffres en gras/couleur).
+- Section **« Ce que la carte ne montre pas »** : passée en **carte « i » à liseré jaune** (`note_carte(couleur="jaune")`,
+  nouvelle classe CSS `.lisere-jaune`).
+- **i18n** : nouveaux segments traduits (en/ee/kbp) ; correctif `html.escape(quote=False)` sur les noms propres du
+  tableau des auto-écoles (l'apostrophe échappée fragmentait les noms à la traduction).

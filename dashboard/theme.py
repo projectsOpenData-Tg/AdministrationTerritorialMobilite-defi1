@@ -303,6 +303,7 @@ div.st-key-topbar_droite [data-testid="stMarkdownContainer"] { display: flex; ju
 /* « À savoir » : pictogramme « i » cerclé avant le texte */
 .note-carte.lisere-vert { border-left-color: #16834a; } .note-carte.lisere-vert .info-i { background: #16834a; }
 .note-carte.lisere-rouge { border-left-color: #ce1126; } .note-carte.lisere-rouge .info-i { background: #ce1126; }
+.note-carte.lisere-jaune { border-left-color: #e6b422; } .note-carte.lisere-jaune .info-i { background: #e6b422; color: #3a2e00; }
 /* Chiffres clés centrés (rangee_kpi(centre=True)) */
 .kpi-grille.centre .kpi { border-bottom-width: 3px; }
 .kpi-grille.centre .kpi-reserve { text-align: center; border-top: 0; margin-top: 8px; color: #64748b; }

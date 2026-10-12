@@ -152,7 +152,9 @@ MANUEL = {"en": {"Tableau de bord": "Dashboard", "Principal": "Main", "Analyses"
                   "Verdict": "Verdict", "Énoncé": "Statement", "Niveau": "Level",
                   "État du réseau routier": "Road network condition",
                   "7 tronçons": "7 sections", "49 tronçons": "49 sections",
-                  "Limites analytiques": "Analytical limits"}}
+                  "Limites analytiques": "Analytical limits",
+                  "État des tronçons :": "Road-section state:", "États du réseau à afficher": "Road states to show",
+                  "État du réseau routier sur cette carte.": "Road network condition on this map."}}
 
 
 def suspecte(src: str, trad: str) -> bool:

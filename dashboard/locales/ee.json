@@ -7,10 +7,6 @@
   "texte": "%, ameƒomevi",
   "relu": false
  },
- "(% des km évalués)": {
-  "texte": "(% le km siwo ŋu wotrɔ asi le me)",
-  "relu": false
- },
  "(101,1 km évalués)": {
   "texte": "(Kilometre 101,1 ƒe xexlẽme)",
   "relu": false
@@ -51,8 +47,16 @@
   "texte": "(49,8 km ƒe didime)",
   "relu": false
  },
+ "(antennes comprises) et": {
+  "texte": "(aɖetenuwo le eme) kple",
+  "relu": false
+ },
  "(de 579 845 à 965 702), dont": {
   "texte": "(wotso 579,845 va se ɖe 965,702)",
+  "relu": false
+ },
+ "(habitants)": {
+  "texte": "(ame siwo le afi ma)",
   "relu": false
  },
  "(la formation)": {
@@ -143,14 +147,6 @@
   "texte": "Ʋukulawo ƒe sukuwo",
   "relu": false
  },
- "0 tronçons relevés": {
-  "texte": "Wotsrɔ̃a akpa siwo ŋu woƒo nu tsoe",
-  "relu": false
- },
- "0,0 km évalués": {
-  "texte": "0,0 km siwo ŋu woke ɖo",
-  "relu": false
- },
  "0,2 % des routes en mauvais état (87,9 km évalués, 2 tronçons critiques).": {
   "texte": "Mɔ siwo me nɔnɔme sesẽwo le la ƒe alafa memama 0.2% (87.9 km, 2 kpekpeme).",
   "relu": false
@@ -195,10 +191,6 @@
   "texte": "1 womede dzesi o, womeɖe mɔ nɛ o",
   "relu": false
  },
- "1 tronçons relevés": {
-  "texte": "1 kpekpeme",
-  "relu": false
- },
  "1,1 % des routes en mauvais état (24,8 km évalués, un tronçon critique).": {
   "texte": "Mɔ siwo me nɔnɔme sesẽwo le la dometɔ 1.1 le alafa me (24.8 km, si nye ɣeyiɣi vevi aɖe).",
   "relu": false
@@ -239,14 +231,6 @@
   "texte": "Ame siwo katã le afi ma la ƒe xexlẽme nye 101 300",
   "relu": false
  },
- "101,1 km évalués": {
-  "texte": "101,1 km siwo ŋu woke ɖo",
-  "relu": false
- },
- "101,2 km évalués": {
-  "texte": "101,2 km siwo ŋu woke ɖo",
-  "relu": false
- },
  "103 des 132": {
   "texte": "103 le 132 me",
   "relu": false
@@ -259,20 +243,8 @@
   "texte": "Mɔwo ƒe nɔnɔme sesẽwo dometɔ 11.5% (124.9 km, 3 ƒe akpa vevi)",
   "relu": false
  },
- "110,7 km évalués": {
-  "texte": "110,7 km siwo ŋu woke ɖo",
-  "relu": false
- },
- "110,8 km évalués": {
-  "texte": "110,8 km siwo ŋu woke ɖo",
-  "relu": false
- },
  "111 214 habitants": {
   "texte": "Ame siwo le afi ma nye 111,214",
-  "relu": false
- },
- "113,5 km évalués": {
-  "texte": "113,5 km siwo ŋu woke ɖo",
   "relu": false
  },
  "114 172 habitants": {
@@ -287,10 +259,6 @@
   "texte": "Mɔ siwo me nɔnɔme sesẽwo le la ƒe alafa memama 12.1 (36.0 km, 2 kpekpeme).",
   "relu": false
  },
- "120,3 km évalués": {
-  "texte": "120,3 km siwo ŋu woke ɖo",
-  "relu": false
- },
  "123 330 habitants": {
   "texte": "Ame siwo le afi ma ƒe xexlẽme nye 123 330",
   "relu": false
@@ -299,28 +267,12 @@
   "texte": "Ame siwo katã le afi ma nye 124,848",
   "relu": false
  },
- "124,1 km évalués": {
-  "texte": "124,1 km siwo ŋu woke ɖo",
-  "relu": false
- },
- "124,9 km évalués": {
-  "texte": "124,9 km siwo ŋu woke ɖo",
-  "relu": false
- },
- "125,7 km évalués": {
-  "texte": "125,7 km siwo ŋu woke ɖo",
-  "relu": false
- },
  "128 687 habitants": {
   "texte": "Ame siwo le afi ma nye 128,687",
   "relu": false
  },
  "128 959 habitants": {
   "texte": "Ame siwo le afi ma nye 128,959",
-  "relu": false
- },
- "129,9 km évalués": {
-  "texte": "129,9 km siwo ŋu woke ɖo",
   "relu": false
  },
  "13 au réseau dégradé (2 868 523 habitants).": {
@@ -343,8 +295,12 @@
   "texte": "13 le 38",
   "relu": false
  },
- "131,7 km évalués": {
-  "texte": "131,7 km siwo ŋu woke ɖo",
+ "13 à vérifier": {
+  "texte": "13 be woalé ŋku ɖe eŋu",
+  "relu": false
+ },
+ "132 agréées": {
+  "texte": "132, siwo ŋu woɖe asi le",
   "relu": false
  },
  "132 auto-écoles agréées": {
@@ -373,10 +329,6 @@
  },
  "140 non agréées ou au statut non renseigné": {
   "texte": "140, si womede asi na o alo si womede asi na o",
-  "relu": false
- },
- "140,6 km évalués": {
-  "texte": "140,6 km siwo ŋu woke ɖo",
   "relu": false
  },
  "145 986 habitants": {
@@ -415,20 +367,12 @@
   "texte": "16 le 39 me",
   "relu": false
  },
- "161,4 km évalués": {
-  "texte": "161,4 km siwo ŋu woke ɖo",
-  "relu": false
- },
  "163 272 habitants": {
   "texte": "Ame siwo le afi ma le 163,272",
   "relu": false
  },
  "164 460 habitants": {
   "texte": "Ame 164,460",
-  "relu": false
- },
- "167,5 km évalués": {
-  "texte": "167,5 km siwo ŋu woke ɖo",
   "relu": false
  },
  "17 vérifications et hypothèses": {
@@ -517,10 +461,6 @@
  },
  "2 références sans action nouvelle": {
   "texte": "2 Ŋusẽfianuwo si me dɔ yeye aɖeke mele o",
-  "relu": false
- },
- "2 tronçons relevés": {
-  "texte": "2 Wotsrɔ̃e",
   "relu": false
  },
  "2,63 fois": {
@@ -695,10 +635,6 @@
   "texte": "Mɔwo ƒe akpa 23.3 le alafa me le nɔnɔme gbegblẽ me (161.4 km, 3 ƒe akpa vevi).",
   "relu": false
  },
- "24,8 km évalués": {
-  "texte": "24,8 km siwo ŋu woke ɖo",
-  "relu": false
- },
  "240 360 habitants": {
   "texte": "240 360",
   "relu": false
@@ -733,14 +669,6 @@
  },
  "27,2 % des routes en mauvais état (113,5 km évalués, 2 tronçons critiques).": {
   "texte": "Mɔwo ƒe 27.2% le nɔnɔme gbegblẽ me (113.5 km, 2 ƒe akpa vevi).",
-  "relu": false
- },
- "27,8 km évalués": {
-  "texte": "27,8 km siwo ŋu woke ɖo",
-  "relu": false
- },
- "272 auto-écoles affichées, dont 132 agréées (antennes comprises) et 13 à vérifier : non agréées dans une préfecture qui n'a aucune auto-école agréée. La préfecture est le rattachement par la position (utilisé par les indicateurs) ; il diffère de la préfecture déclarée pour 4 auto-écoles.": {
-  "texte": "Ʋukulawo ƒe suku 272 le afi ma, siwo dometɔ 132 nye mɔ̃ɖaŋunu siwo dzi woxɔa mɔ̃ɖaŋunuwo ɖo, eye 13 nye mɔ̃ɖaŋunu siwo dzi woxɔa mɔ̃ɖaŋunuwo ɖo: womena mɔ̃ɖaŋunuwo le dugã aɖe si me ʋukulawo ƒe suku aɖeke mele o me o.",
   "relu": false
  },
  "28,0 % des routes en mauvais état (167,5 km évalués, un tronçon critique).": {
@@ -805,10 +733,6 @@
  },
  "3 recensées, non agréées": {
   "texte": "3 Womeɖe asi le wo ŋu o",
-  "relu": false
- },
- "3 tronçons relevés": {
-  "texte": "3 Wotsrɔ̃a akpa etɔ̃",
   "relu": false
  },
  "3,3 % des routes en mauvais état (45,2 km évalués, 2 tronçons critiques).": {
@@ -887,14 +811,6 @@
   "texte": "Mɔwo ƒe akpa 34.0 le alafa me le nɔnɔme gbegblẽ me (120.3 km, si nye ɣeyiɣi vevi aɖe).",
   "relu": false
  },
- "35,8 km évalués": {
-  "texte": "35,8 km siwo ŋu woke ɖo",
-  "relu": false
- },
- "36,0 km évalués": {
-  "texte": "36,0 km kpɔ",
-  "relu": false
- },
  "36,9 % des routes en mauvais état (125,7 km évalués, 3 tronçons critiques).": {
   "texte": "Mɔwo ƒe akpa 36.9 le alafa me le nɔnɔme gbegblẽ me (125.7 km le akɔntabubu me, akpa etɔ̃ siwo me afɔku aɖeke mele o).",
   "relu": false
@@ -943,10 +859,6 @@
   "texte": "4 boŋ.",
   "relu": false
  },
- "4 tronçons relevés": {
-  "texte": "4 Wotsɔ ɖe asi le eŋu",
-  "relu": false
- },
  "4 vues": {
   "texte": "4 susuwo",
   "relu": false
@@ -991,20 +903,12 @@
   "texte": "Mɔ siwo me nɔnɔme sesẽwo le la dometɔ 40.0 le alafa me (124.1 km le akɔntabubu me, 5 nye nu vevi aɖewo).",
   "relu": false
  },
- "40,3 km évalués": {
-  "texte": "40,3 km siwo ŋu woke ɖo",
-  "relu": false
- },
  "41 auto-écoles": {
   "texte": "Ʋukulawo ƒe suku 41",
   "relu": false
  },
  "41 auto-écoles à ouvrir": {
   "texte": "Ʋukulawo ƒe suku 41",
-  "relu": false
- },
- "41,5 km évalués": {
-  "texte": "41,5 km siwo ŋu woke ɖo",
   "relu": false
  },
  "43 indicateurs": {
@@ -1015,16 +919,8 @@
   "texte": "449 226",
   "relu": false
  },
- "45,2 km évalués": {
-  "texte": "45,2 km siwo ŋu woke ɖo",
-  "relu": false
- },
  "450 807 habitants": {
   "texte": "Ame 450 807",
-  "relu": false
- },
- "46,1 km évalués": {
-  "texte": "46,1 km siwo ŋu woke ɖo",
   "relu": false
  },
  "48 auto-écoles": {
@@ -1061,10 +957,6 @@
  },
  "49 tronçons sur 84 en mauvais état, 669,34 km, dont 292,15 km sur les Plateaux (Réseau).": {
   "texte": "Akpa 49 le 84 siwo mele nɔnɔme nyui me o la dometɔ 669.34 km, tso wo dome 292.15 km le Plateaux-towo dzi (Xexea).",
-  "relu": false
- },
- "49,8 km évalués": {
-  "texte": "49,8 km siwo ŋu woke ɖo",
   "relu": false
  },
  "4 401 312 à 4 437 334 selon la répartition de la population": {
@@ -1119,10 +1011,6 @@
   "texte": "Nutoa me tɔ siwo le nuto atɔ̃ me la le 641 955; nuto gbãtɔ ewo me tɔwo le 1 416 859.",
   "relu": false
  },
- "5 tronçons relevés": {
-  "texte": "Woɖe akpa atɔ̃",
-  "relu": false
- },
  "5,2 % des routes en mauvais état (57,9 km évalués, un tronçon critique).": {
   "texte": "Mɔwo ƒe akpa si le nɔnɔme gbegblẽ me la ƒe alafa memama 5.2 (57.9 km, si nye ɣeyiɣi vevi aɖe).",
   "relu": false
@@ -1145,18 +1033,6 @@
  },
  "52 448 habitants concernés": {
   "texte": "52 448",
-  "relu": false
- },
- "57,9 km évalués": {
-  "texte": "57,9 km siwo ŋu woke ɖo",
-  "relu": false
- },
- "58,5 km évalués": {
-  "texte": "58,5 km siwo ŋu woke ɖo",
-  "relu": false
- },
- "58,8 km évalués": {
-  "texte": "58,8 km siwo ŋu woke ɖo",
   "relu": false
  },
  "6 auto-écoles": {
@@ -1183,10 +1059,6 @@
   "texte": "6 Taɖodzinu",
   "relu": false
  },
- "6 tronçons relevés": {
-  "texte": "Woɖe akpa ade",
-  "relu": false
- },
  "6 zones": {
   "texte": "Akpa 6",
   "relu": false
@@ -1209,10 +1081,6 @@
  },
  "60 % ou plus": {
   "texte": "60 le alafa me kple edzivɔ",
-  "relu": false
- },
- "63,1 km évalués": {
-  "texte": "63,1 km siwo ŋu woke ɖo",
   "relu": false
  },
  "641 955 habitants concernés": {
@@ -1271,20 +1139,12 @@
   "texte": "7 kpl",
   "relu": false
  },
- "7 tronçons relevés": {
-  "texte": "Wotsɔ akpa adre siwo ŋu woke ɖo",
-  "relu": false
- },
  "7 vues": {
   "texte": "Ŋutinya adre",
   "relu": false
  },
  "7 vérifications confirmées sur 17, 2 infirmées, 1 nuancée, 7 non testables (onglet Synthèse).": {
   "texte": "Wova kpɔ ame siwo ŋu woke ɖo la dometɔ adre le 17, 2 nye dɔnɔwo, 1 nye nuwɔametɔ eye 7 mele be woada asi ɖe edzi o (Kpɔ aɖaka si Nye Nuŋɔŋlɔ).",
-  "relu": false
- },
- "7,0 km évalués": {
-  "texte": "7,0 km siwo ŋu woke ɖo",
   "relu": false
  },
  "7,8 % des routes en mauvais état (7,0 km évalués, un tronçon critique).": {
@@ -1299,14 +1159,6 @@
   "texte": "7. Ʋukulawo ƒe xexlẽme medoa go tso afi aɖe yi teƒe bubu o: ame siwo xɔ ƒe 18 kple edzivɔ la nye dukɔ bliboa me tɔ 51.8% le 2022 ŋuti akɔntabubu dzi, eye 55.6%e anɔ 2023 ŋu dɔ wɔm (A1-R1 dzedzeme).",
   "relu": false
  },
- "70,0 km évalués": {
-  "texte": "70.0 km siwo ŋu woke ɖo",
-  "relu": false
- },
- "72,5 km évalués": {
-  "texte": "72,5 km siwo ŋu woke ɖo",
-  "relu": false
- },
  "73 830 habitants": {
   "texte": "Ame 73,830",
   "relu": false
@@ -1317,10 +1169,6 @@
  },
  "74,4 % des immatriculations de 2024 sont des motos ; 40 motos pour un permis moto sur 2007": {
   "texte": "Mɔfiamenuwo ƒe xexlẽme le ƒe 2024 me le alafa memama 74,4; mɔfiamenu 40 le ƒe 2007 me",
-  "relu": false
- },
- "75,6 km évalués": {
-  "texte": "75,6 km siwo ŋu woke ɖo",
   "relu": false
  },
  "751 398 véhicules": {
@@ -1351,10 +1199,6 @@
   "texte": "8 nutowo",
   "relu": false
  },
- "8 tronçons relevés": {
-  "texte": "8 Woɖe wo ɖe aga",
-  "relu": false
- },
  "8,1 % des routes en mauvais état (58,5 km évalués, 3 tronçons critiques).": {
   "texte": "Mɔ siwo me nɔnɔme sesẽwo le la dometɔ 8,1 le alafa me (58.5 km, 3 ƒe akpa vevi).",
   "relu": false
@@ -1375,10 +1219,6 @@
   "texte": "Km 80 kple edzivɔ",
   "relu": false
  },
- "82,5 km évalués": {
-  "texte": "82,5 km siwo ŋu woke ɖo",
-  "relu": false
- },
  "84 199 habitants": {
   "texte": "84 199",
   "relu": false
@@ -1391,20 +1231,12 @@
   "texte": "Wotsrɔ̃e le teƒe 84 me.",
   "relu": false
  },
- "84,0 km évalués": {
-  "texte": "84,0 km siwo ŋu woke ɖo",
-  "relu": false
- },
  "84,8 % des auto-écoles agréées dans les 4 préfectures urbaines.": {
   "texte": "Ʋukulawo ƒe suku siwo xɔ mɔ le dugã eneawo me ƒe agbɔsɔsɔ si nye 84.8%.",
   "relu": false
  },
  "85 793 habitants": {
   "texte": "85 793",
-  "relu": false
- },
- "87,9 km évalués": {
-  "texte": "87,9 km siwo ŋu woke ɖo",
   "relu": false
  },
  "88 365 habitants": {
@@ -1421,10 +1253,6 @@
  },
  "9 indicateurs non calculables": {
   "texte": "9 Indikator siwo womate ŋu axlẽ o",
-  "relu": false
- },
- "9 tronçons relevés": {
-  "texte": "9 Wova kpɔ wo dometɔ aɖewo",
   "relu": false
  },
  "9 étapes": {
@@ -1447,14 +1275,6 @@
   "texte": "90 505",
   "relu": false
  },
- "90,1 km évalués": {
-  "texte": "90.1 km siwo ŋu woke ɖo",
-  "relu": false
- },
- "90,5 km évalués": {
-  "texte": "90.5 km siwo ŋu woke ɖo",
-  "relu": false
- },
  "94 860 habitants": {
   "texte": "Ame siwo le afi ma ƒe xexlẽme nye 94,860",
   "relu": false
@@ -1463,160 +1283,172 @@
   "texte": "956 482 le dukɔa me",
   "relu": false
  },
- "96,6 km évalués": {
-  "texte": "96,6 km siwo ŋu woke ɖo",
+ ": 1 305 681 habitants": {
+  "texte": "Ame 1,305,681 ye nɔ afi ma",
   "relu": false
  },
- ": 0,0 % des km évalués": {
-  "texte": ": 0,0 % tso km siwo ŋu wotrɔ asi le la me",
+ ": 101 300 habitants": {
+  "texte": "Ame siwo le afi ma: 101,300",
   "relu": false
  },
- ": 0,2 % des km évalués": {
-  "texte": ": 0.2% le km siwo ŋu wotrɔ asi le la ŋu",
+ ": 111 214 habitants": {
+  "texte": "Ame siwo le afi ma: 111,214",
   "relu": false
  },
- ": 0,5 % des km évalués": {
-  "texte": ": 0,5 le alafa me le km siwo ŋu wotrɔ asi le la me",
+ ": 114 172 habitants": {
+  "texte": "Ame siwo le afi ma: 114 172",
   "relu": false
  },
- ": 1,1 % des km évalués": {
-  "texte": ": 1.1 le alafa me le km siwo ŋu wotrɔ asi le ŋu",
+ ": 123 330 habitants": {
+  "texte": "Ame siwo le afi ma: 123 330",
   "relu": false
  },
- ": 100,0 % des km évalués": {
-  "texte": ": 100.0 % tso km siwo ŋu wotrɔ asi le la me",
+ ": 124 848 habitants": {
+  "texte": "Ame siwo le afi ma: 124,848",
   "relu": false
  },
- ": 11,5 % des km évalués": {
-  "texte": ": 11.5% le km siwo ŋu wotrɔ asi le ŋu",
+ ": 128 687 habitants": {
+  "texte": "Ame siwo le afi ma: 128,687",
   "relu": false
  },
- ": 12,1 % des km évalués": {
-  "texte": ": Kilometre siwo ŋu wotrɔ asi le la ƒe alafa memama 12,1",
+ ": 128 959 habitants": {
+  "texte": "Ame siwo le afi ma: 128,959",
   "relu": false
  },
  ": 13 des 38 préfectures, et Mô.": {
   "texte": "Eyae nye be, le nuto 38 siwo me wole me la, wo dometɔ 13 kple Mo.",
   "relu": false
  },
- ": 14,3 % des km évalués": {
-  "texte": ": 14.3 le alafa me le km siwo ŋu wotrɔ asi le ŋu",
+ ": 138 864 habitants": {
+  "texte": "Ame siwo le afi ma: 138 864",
   "relu": false
  },
- ": 14,4 % des km évalués": {
-  "texte": ": 14.4 le alafa me le km siwo ŋu wotrɔ asi le ŋu",
+ ": 138 867 habitants": {
+  "texte": "Ame siwo le afi ma: 138 867",
   "relu": false
  },
- ": 17,2 % des km évalués": {
-  "texte": ": 17.2 le alafa me le km siwo ŋu wotrɔ asi le ŋu",
+ ": 145 986 habitants": {
+  "texte": "Ame siwo le afi ma: 145 986",
   "relu": false
  },
- ": 2,7 % des km évalués": {
-  "texte": ": 2.7 le alafa me le km siwo ŋu wotrɔ asi le la me",
+ ": 150 376 habitants": {
+  "texte": "Ame 150 376 ye nɔ afi ma",
   "relu": false
  },
- ": 21,1 % des km évalués": {
-  "texte": ": 21.1% le km siwo ŋu wotrɔ asi le ŋu",
+ ": 152 065 habitants": {
+  "texte": "Ame siwo le afi ma nye: 152 065",
   "relu": false
  },
- ": 21,8 % des km évalués": {
-  "texte": ": 21.8 le alafa me le km siwo ŋu wotrɔ asi le ŋu",
+ ": 163 272 habitants": {
+  "texte": "Ame siwo le afi ma: 163 272",
   "relu": false
  },
- ": 22,3 % des km évalués": {
-  "texte": ": 22.3 le alafa me le km siwo ŋu wotrɔ asi le la me",
+ ": 164 460 habitants": {
+  "texte": "Ame siwo le afi ma: 164,460",
   "relu": false
  },
- ": 23,0 % des km évalués": {
-  "texte": ": 23.0 % le km siwo ŋu wotrɔ asi le la me",
+ ": 174 851 habitants": {
+  "texte": "Ame siwo le afi ma: 174,851",
   "relu": false
  },
- ": 23,3 % des km évalués": {
-  "texte": ": 23.3% le km siwo ŋu wotrɔ asi le ŋu",
+ ": 180 158 habitants": {
+  "texte": "Ame siwo le afi ma: 180 158",
   "relu": false
  },
- ": 26,0 % des km évalués": {
-  "texte": ": 26.0 % le km siwo ŋu wotrɔ asi le la me",
+ ": 185 662 habitants": {
+  "texte": "Ame 185 662",
   "relu": false
  },
- ": 27,2 % des km évalués": {
-  "texte": ": 27.2% le km siwo ŋu wotrɔ asi le ŋu",
+ ": 200 585 habitants": {
+  "texte": "Ame siwo katã le afi ma nye 200 585",
   "relu": false
  },
- ": 28,0 % des km évalués": {
-  "texte": ": 28.0 % le km siwo ŋu wotrɔ asi le ŋu",
+ ": 224 411 habitants": {
+  "texte": "Ame siwo le afi ma: 224 411",
   "relu": false
  },
- ": 29,5 % des km évalués": {
-  "texte": ": km siwo ŋu wotrɔ asi le la ƒe alafa memama 29,5",
+ ": 240 360 habitants": {
+  "texte": "Du sia me tɔwo nye 240 360",
+  "relu": false
+ },
+ ": 241 247 habitants": {
+  "texte": "Ame siwo le afi ma: 241 247",
+  "relu": false
+ },
+ ": 253 467 habitants": {
+  "texte": "Ame 253,467 ye nɔ afi ma",
+  "relu": false
+ },
+ ": 283 738 habitants": {
+  "texte": "Ame 283 738",
   "relu": false
  },
  ": 3 en priorité haute, 10 en moyenne, 2 en faible ; 5 préfectures cumulent les deux déficits.": {
   "texte": "Wo dometɔ aɖewoe nye: 3 le dziƒonutowo me, 10 nɔa edzi yim eye 2 mele eme o; 5 ƒo wo nɔewo ta.",
   "relu": false
  },
- ": 3,3 % des km évalués": {
-  "texte": ": 3,3 le alafa me le km siwo ŋu wotrɔ asi le la me",
+ ": 305 096 habitants": {
+  "texte": "Ame 305 096",
   "relu": false
  },
- ": 3,4 % des km évalués": {
-  "texte": ": 3.4 le alafa me le km siwo ŋu wotrɔ asi le ŋu",
+ ": 388 775 habitants": {
+  "texte": "Ame 388 775",
   "relu": false
  },
- ": 34,0 % des km évalués": {
-  "texte": ": 34.0 % tso km siwo ŋu wotrɔ asi le la me",
+ ": 40 240 habitants": {
+  "texte": "Ame siwo le afi ma: 40 240",
   "relu": false
  },
- ": 36,9 % des km évalués": {
-  "texte": ": 36,9 le alafa me le km siwo ŋu wotrɔ asi le la me",
+ ": 500 032 habitants": {
+  "texte": "Ame 500 032",
   "relu": false
  },
- ": 4,5 % des km évalués": {
-  "texte": ": 4,5 le alafa me le km siwo ŋu wotrɔ asi le ŋu",
+ ": 52 448 habitants": {
+  "texte": "Ame siwo le afi ma: 52,448",
   "relu": false
  },
- ": 4,6 % des km évalués": {
-  "texte": ": 4,6 le alafa me le kilometa siwo ŋu wotrɔ asi le la me",
+ ": 66 394 habitants": {
+  "texte": "Ame siwo le afi ma: 66,394",
   "relu": false
  },
- ": 40,0 % des km évalués": {
-  "texte": ": 40.0% le km siwo ŋu wotrɔ asi le la ŋu",
+ ": 73 830 habitants": {
+  "texte": "Ame 73,830",
   "relu": false
  },
- ": 5,2 % des km évalués": {
-  "texte": ": 5.2% le km siwo ŋu wotrɔ asi le ŋu",
-  "relu": false
- },
- ": 6,0 % des km évalués": {
-  "texte": ": 6.0 % le km siwo ŋu wotrɔ asi le la me",
-  "relu": false
- },
- ": 65,0 % des km évalués": {
-  "texte": ": 65.0 % le km siwo ŋu wotrɔ asi le ŋu",
-  "relu": false
- },
- ": 68,2 % des km évalués": {
-  "texte": ": 68.2 le alafa me le km siwo ŋu wotrɔ asi le ŋu",
-  "relu": false
- },
- ": 7,8 % des km évalués": {
-  "texte": ": 7.8 le alafa me le km siwo ŋu wotrɔ asi le la me",
-  "relu": false
- },
- ": 8,1 % des km évalués": {
-  "texte": ": 8,1% le km siwo ŋu wotrɔ asi le la ŋu",
+ ": 80 939 habitants": {
+  "texte": "Ame 80 939 ye nɔ afi ma",
   "relu": false
  },
  ": 80,6 % des immatriculations supplémentaires entre 2002 et 2022.": {
   "texte": ": 80.6 le alafa me tso ƒe 2002 va se ɖe ƒe 2022 me.",
   "relu": false
  },
- ": 9,2 % des km évalués": {
-  "texte": ": 9.2 le alafa me le km siwo ŋu wotrɔ asi le la me",
+ ": 84 199 habitants": {
+  "texte": "Ame siwo le eme: 84 199",
   "relu": false
  },
- ": 9,4 % des km évalués": {
-  "texte": ": 9,4% le km siwo ŋu wotrɔ asi le la ŋu",
+ ": 84 767 habitants": {
+  "texte": "Ame siwo le afi ma: 84,767",
+  "relu": false
+ },
+ ": 85 793 habitants": {
+  "texte": "Ame siwo le afi ma: 85 793",
+  "relu": false
+ },
+ ": 88 365 habitants": {
+  "texte": "Ame siwo le afi ma: 88,365",
+  "relu": false
+ },
+ ": 882 695 habitants": {
+  "texte": "Ame 882 695",
+  "relu": false
+ },
+ ": 90 505 habitants": {
+  "texte": "Ame 90 505",
+  "relu": false
+ },
+ ": 94 860 habitants": {
+  "texte": "Ame siwo le afi ma: 94,860",
   "relu": false
  },
  ": ceux qui traversent les Plateaux en portent le plus (292,15 km, 23 tronçons), puis ceux de la Centrale (236,25 km, 6 tronçons).": {
@@ -1647,8 +1479,8 @@
   "texte": "(trg) =\"5\"> Le kpɔɖeŋu me , nuto siwo le nɔnɔme gbegblẽ me wu kilometa 22.13 le alafa me la ƒe ŋkɔwo kple nutowo ƒe dzedzeme le abe nɔnɔmetata ene .",
   "relu": false
  },
- ": non définie : aucune route classée": {
-  "texte": ": womeka ɖe eme o: mɔ aɖeke meli si woɖo anyi o",
+ ": non agréées dans une préfecture qui n'a aucune auto-école agréée. La préfecture est le rattachement par la position (utilisé par les indicateurs) ; il diffère de la préfecture déclarée pour 4 auto-écoles.": {
+  "texte": "Mɔ̃ɖaŋununyawo mefiaa mɔ ʋukula ƒe suku aɖeke o, eye wodea dzesi wo le teƒe si wole (si wozãna ɖe mawunyakpukpuiawo dzi) la ŋu; woto vovo tso esi wogblɔ na ʋuʋula ƒe sukua ene gbɔ.",
   "relu": false
  },
  ": part en mauvais état non définie (aucune route classée).": {
@@ -2227,10 +2059,6 @@
   "texte": "Xexlẽ",
   "relu": false
  },
- "Canton": {
-  "texte": "Canton",
-  "relu": false
- },
  "Carte du réseau et des auto-écoles": {
   "texte": "Ʋukulawo kple ʋukulawo ƒe kadodo",
   "relu": false
@@ -2399,8 +2227,8 @@
   "texte": "Miɖe asi le eŋu ne miava kpɔ eƒe agbalẽa",
   "relu": false
  },
- "Cliquez sur une préfecture, une auto-école ou un équipement : la préfecture s'affiche ici, avec ses actions et un lien vers sa fiche.": {
-  "texte": "Ne èdi be yeakpɔe la, dze mɔɖemɔ̃dzikpɔƒe aɖe, ʋukulawo ƒe suku aɖe alo dɔwɔnu aɖe dzi: Kpɔ mɔɖemɔ̃dzikpɔƒea ƒe dɔwɔnawo kple kadodo si le eƒe agbalẽa me.",
+ "Cliquez sur une préfecture, une auto-école ou un équipement de la première carte : la préfecture s'affiche ici, avec ses actions et un lien vers sa fiche.": {
+  "texte": "Ne èdi be yeakpɔ mɔ ayi ʋukulawo ƒe suku alo mɔ̃ɖaŋunu aɖe si le mɔ̃a dzi la, dze mɔ̃a dzi.",
   "relu": false
  },
  "Collecte 2021-2022, non vérifiée ; hors indicateurs.": {
@@ -2843,6 +2671,10 @@
   "texte": "Dzĩ",
   "relu": false
  },
+ "En travaux": {
+  "texte": "Wole Dɔ Wɔm",
+  "relu": false
+ },
  "Enquête harmonisée sur les conditions de vie des ménages 2021-2022 (EHCVM-2), fichiers CSV": {
   "texte": "Home Ŋuti Agbenɔnɔ Ƒe Nɔnɔme Nyuiwo Ŋuti Numekuku 2021-2022 (EHCVM-2), CSV Files",
   "relu": false
@@ -2911,6 +2743,10 @@
   "texte": "Aʋawɔnuwo",
   "relu": false
  },
+ "Fond coloré par zone :": {
+  "texte": "Anyigba si me amadede le:",
+  "relu": false
+ },
  "Formation": {
   "texte": "Hehe",
   "relu": false
@@ -2967,16 +2803,16 @@
   "texte": "Ame siwo le aƒea me",
   "relu": false
  },
+ "Habitants / agréée": {
+  "texte": "Anyigba si dzi ame aɖe le / ame si xɔ mɔ",
+  "relu": false
+ },
  "Habitants : 9 384 000.": {
   "texte": "Ame siwo le eme: 9,384,000",
   "relu": false
  },
  "Habitants par auto-école": {
   "texte": "Ʋukulawo ƒe sukuwo ƒe xexlẽme",
-  "relu": false
- },
- "Habitants par auto-école agréée": {
-  "texte": "Ʋukulawo le ʋukulawo ƒe suku si xɔ mɔ ɖo la nu",
   "relu": false
  },
  "Habitants par auto-école agréée (B)": {
@@ -3347,6 +3183,10 @@
   "texte": "Gbegbɔgblɔ",
   "relu": false
  },
+ "Le Grand Lomé (Golfe et Agoè-Nyivé) regroupe 27,0 % de la population ; Danyi, la moins peuplée, a 40 240 habitants.": {
+  "texte": "Le Greater Lomé (Gulf kple Agoè-Nyivé) la, amewo ƒe agbɔsɔsɔ nye 27.0%, eye Danyi, si nye nuto si me amewo mele o la, le ame 40,240.",
+  "relu": false
+ },
  "Le Grand Lomé concentre les accidents en volume, mais le risque par habitant est plus élevé ailleurs, en milieu rural": {
   "texte": "Ʋufɔkuwo ƒe agbɔsɔsɔ dzi koŋue le Lomé Gã la me, gake afɔku siwo le edzi yim le agblewo me la sɔ gbɔ wu le teƒe bubuwo.",
   "relu": false
@@ -3449,10 +3289,6 @@
  },
  "Le réseau est inégalement entretenu selon les régions": {
   "texte": "Le nutowo me la, womekpɔa nu si tututu wole wɔwɔm la gbɔ o.",
-  "relu": false
- },
- "Le réseau le plus dégradé est au centre du pays : la Centrale a 40,3 % de ses routes en mauvais état, et Danyi 100 % de ses 49,8 km évalués.": {
-  "texte": "Ʋu siwo ŋu nu gblẽ le wu le dukɔa ƒe titina: Ʋu siwo ŋu nu gblẽ le la dometɔ 40.3 le alafa me le dukɔa me, eye Danyi ƒe kilometa 49.8 le alafa me.",
   "relu": false
  },
  "Le tableau de bord affiche le chiffre de la source, avec sa définition": {
@@ -4083,12 +3919,12 @@
   "texte": "Dziƒo:",
   "relu": false
  },
- "Niveau A. Données nationales : les permis n'ont ni territoire, ni âge.": {
-  "texte": "Dukɔwo ƒe nyatakakawo: Ŋutilã alo ƒe aɖeke mele mɔɖeɖewo ŋu o.",
+ "Niveau A": {
+  "texte": "Afɔ A",
   "relu": false
  },
- "Niveau C": {
-  "texte": "Afɔ C",
+ "Niveau A. Données nationales : les permis n'ont ni territoire, ni âge.": {
+  "texte": "Dukɔwo ƒe nyatakakawo: Ŋutilã alo ƒe aɖeke mele mɔɖeɖewo ŋu o.",
   "relu": false
  },
  "Niveau C. Dernier point : d'après une seule enquête auprès des ménages (2021-2022) ; l'ordre des zones change d'une enquête à l'autre.": {
@@ -4967,6 +4803,10 @@
   "texte": "Alesi Wowɔa Nu",
   "relu": false
  },
+ "Recensement de 2022. A = mesuré, B = calculé, C = estimé.": {
+  "texte": "Ƒe 2022 ƒe akɔntabubu.",
+  "relu": false
+ },
  "Recensement des données ouvertes : immatriculations, permis, accidents, réseau, auto-écoles, population, enquêtes. Licences, mailles et années vérifiées une à une.": {
   "texte": "Nyatakakawo ƒe akɔntabubu: ame siwo xɔ ʋu, woƒe mɔɖegbalẽwo, afɔkuawo, kadodoa, ʋukulawo ƒe sukudedeƒewo, wo me tɔwo kple numekukuwo.",
   "relu": false
@@ -4993,10 +4833,6 @@
  },
  "Recommandations en C : vérifier avant d": {
   "texte": "C: kpɔ egbɔ do ŋgɔ na d",
-  "relu": false
- },
- "Relevé de 2020, routes nationales seulement ; part des km évalués de la préfecture. A = mesuré, B = calculé, C = estimé.": {
-  "texte": "Le ƒe 2020 me la, dukɔa ƒe mɔwo ɖeɖe ko; kpɔ ale si gbegbe nuto si me wole la ƒe km sɔ gbɔe la ɖa.",
   "relu": false
  },
  "Remettre en état 113,6 km et ouvrir 6 auto-écoles en premier": {
@@ -5623,6 +5459,10 @@
   "texte": "Ɣeyiɣi si dzi nuwo trɔ ɖo la mefia nu si tae o.",
   "relu": false
  },
+ "Une seconde carte : chaque zone dans sa couleur, les tronçons relevés colorés selon leur état dominant, les limites des 5 régions. Elle suit les filtres de la barre latérale.": {
+  "texte": "Ewɔ anyigbatata evelia: teƒe ɖe sia ɖe le eƒe amadede me, ɖe sia ɖe ƒe amadede le eƒe nɔnɔme si le edzi yim la nu, ɖe nuto atɔ̃awo ƒe liƒowo ŋu.",
+  "relu": false
+ },
  "Une seule auto-école agréée : si elle ferme, la préfecture n'en a plus": {
   "texte": "Ʋukulawo ƒe suku ɖeka koe xɔ asi: Ne woxe mɔ la, suku aɖeke megali o",
   "relu": false
@@ -5657,6 +5497,10 @@
  },
  "Victimes, %": {
   "texte": "Amesiwo Wokpe la ƒe alafa memama",
+  "relu": false
+ },
+ "Vide = les 5 états sont affichés.": {
+  "texte": "Woɖe nɔnɔme atɔ̃awo katã ɖe go.",
   "relu": false
  },
  "Voir l'horizon de cette action": {
@@ -6023,6 +5867,10 @@
   "texte": "ʋukulawo ƒe sukuwo 2021-2022",
   "relu": false
  },
+ "auto-écoles affichées, dont": {
+  "texte": "Aʋafiawo ƒe suku siwo ŋu woƒo nu tsoe, siwo dometɔ aɖewoe nye:",
+  "relu": false
+ },
  "auto-écoles agréées sont dans le Grand Lomé, et": {
   "texte": "Ʋukulawo ƒe sukuwo le Grand Lomé, eye",
   "relu": false
@@ -6077,6 +5925,10 @@
  },
  "blessés(an) / population(an) × 100 000 (R-06)": {
   "texte": "ame siwo ŋu dɔ dzɔ ɖo (R-06)",
+  "relu": false
+ },
+ "bon": {
+  "texte": "enyo",
   "relu": false
  },
  "calculé": {
@@ -6301,6 +6153,10 @@
  },
  "en ont aucun. La nature du zéro : 15 préfectures sans aucune auto-école recensée (25 auto-écoles), 8 avec des auto-écoles recensées non agréées (16 auto-écoles).": {
   "texte": "Xexeame ƒe nutowo: nuto 15 siwo me ʋukulawo ƒe suku aɖeke mele o (25), 8 siwo me ʋukulawo ƒe suku siwo womede dzesi o (16 ye nye ʋukulawo ƒe sukuwo).",
+  "relu": false
+ },
+ "en travaux": {
+  "texte": "le dɔ wɔm",
   "relu": false
  },
  "en tête : Danyi (100,0 %).": {
@@ -6615,6 +6471,10 @@
   "texte": "Ƒe 2021 ƒe nyatakaka: 22,7 tso 8,62 /100 000 gbɔ",
   "relu": false
  },
+ "les 49 en mauvais état. Cochez « Afficher les 84 tronçons » pour voir aussi les autres.": {
+  "texte": "Kpɔ nu siwo katã le eme la ɖa, eye nàkpɔ nu siwo katã le eme la ɖa.",
+  "relu": false
+ },
  "les deux": {
   "texte": "wo ame evea",
   "relu": false
@@ -6655,6 +6515,10 @@
   "texte": "Ke hã, nu sia nu si dzɔna ɖe edzi le nu sia nu me la ƒe dzidziɖedzi le edzi yim.",
   "relu": false
  },
+ "mauvais": {
+  "texte": "vɔ̃ɖi",
+  "relu": false
+ },
  "mettent 56,7 % de la population de ces préfectures à moins de 10 km d'une auto-école, contre 32,2 % si elles ouvrent toutes au chef-lieu : 719 730 habitants de plus.": {
   "texte": "Le nuto siawo me la, ame 56.7 le alafa me nyea ʋukulawo ƒe sukuxɔa ƒe didime si mede 10 km o, eye ame 32.2 le alafa me nyea ʋukulawo ƒe sukuxɔa ƒe didime: ame 719 730 le alafa me.",
   "relu": false
@@ -6677,6 +6541,10 @@
  },
  "motos": {
   "texte": "motowo",
+  "relu": false
+ },
+ "moyen": {
+  "texte": "ale si wowɔa nu",
   "relu": false
  },
  "n'a aucun véhicule correspondant.": {
@@ -6715,10 +6583,6 @@
   "texte": "womeka ɖe eme o (mɔ aɖeke meli si woɖo ɖe eme o)",
   "relu": false
  },
- "non définie : aucune route classée": {
-  "texte": "womegblɔe ɖi o: mɔ aɖeke meli si woɖo anyi o",
-  "relu": false
- },
  "non renseignée": {
   "texte": "womegblɔe na ame aɖeke o",
   "relu": false
@@ -6729,6 +6593,10 @@
  },
  "non testable": {
   "texte": "womate ŋu akpɔe o",
+  "relu": false
+ },
+ "non évalué": {
+  "texte": "womebu eŋu kpɔ o",
   "relu": false
  },
  "nuancé": {
@@ -7067,6 +6935,10 @@
   "texte": "akpa aɖewo",
   "relu": false
  },
+ "tronçons affichés": {
+  "texte": "akpa siwo le afi ma",
+  "relu": false
+ },
  "tronçons critiques": {
   "texte": "akpa vevi aɖewo",
   "relu": false
@@ -7255,28 +7127,16 @@
   "texte": "Afɔɖeɖe",
   "relu": false
  },
+ "État des tronçons :": {
+  "texte": "Akpaawo ƒe nɔnɔme:",
+  "relu": false
+ },
  "État des tronçons relevés": {
   "texte": "Nu siwo ŋu woƒo nu tsoe la ƒe nɔnɔme",
   "relu": false
  },
- "État du réseau : bon": {
-  "texte": "Dɔwɔƒea ƒe nɔnɔme: enyo",
-  "relu": false
- },
- "État du réseau : mauvais": {
-  "texte": "Dɔwɔƒea ƒe nɔnɔme: vɔ̃ɖi",
-  "relu": false
- },
- "État du réseau : moyen": {
-  "texte": "Dɔwɔƒea ƒe nɔnɔme: vidzĩ",
-  "relu": false
- },
- "État du réseau : non évalué": {
-  "texte": "Dɔwɔƒea ƒe nɔnɔme: womeka ɖe edzi o",
-  "relu": false
- },
- "État du réseau : travaux": {
-  "texte": "Dɔwɔƒea ƒe nɔnɔme: Dɔ",
+ "État dominant par tronçon (le plus de km parmi bon, moyen, mauvais et en travaux). Relevé de 2020, routes nationales seulement. Niveau C.": {
+  "texte": "Dukɔ si me dziɖuɖua le la ƒe akpa aɖe (mɔ si dzi wòto wu le nyui, vidzĩ, vɔ̃ kple dɔ siwo wɔm wole la dome).",
   "relu": false
  },
  "État du réseau par zone": {
@@ -7291,12 +7151,20 @@
   "texte": "Mɔzɔzɔƒe ƒe nɔnɔme",
   "relu": false
  },
+ "État du réseau routier sur cette carte.": {
+  "texte": "Mɔwo ŋuti nyatakaka si le anyigbatata sia dzi.",
+  "relu": false
+ },
  "État relevé en 2020, sur les routes nationales seulement, méthode de notation non publiée. L": {
   "texte": "Le ƒe 2020 me la, dukɔmeviwo ƒe mɔwo dzi koe woƒe xexlẽme le, eye womeɖe gbeƒãe o.",
   "relu": false
  },
  "État relevé en 2020, sur les routes nationales seulement. Accès rural estimé avec une population répartie uniformément dans chaque préfecture. Distance à vol d": {
   "texte": "Nutoa me tɔwo ƒe agbɔsɔsɔ si ŋu wodea dzesi le ƒe 2020 me la le dukɔmeviwo ƒe mɔwo dzi ko.",
+  "relu": false
+ },
+ "États du réseau à afficher": {
+  "texte": "Network Statewo",
   "relu": false
  },
  "Évolution de l’état": {
@@ -7337,6 +7205,10 @@
  },
  "état du réseau en 2020 : l": {
   "texte": "Dɔwɔƒea ƒe nɔnɔme le ƒe 2020 me: l",
+  "relu": false
+ },
+ "état du réseau routier": {
+  "texte": "mɔzɔzɔƒe ƒe nɔnɔme",
   "relu": false
  },
  "état du réseau, cartographier le réseau et les auto-écoles, recommander.": {

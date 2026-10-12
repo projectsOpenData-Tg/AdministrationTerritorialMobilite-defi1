@@ -114,6 +114,16 @@ ICONES = {
                  '<path d="M12 9v4"/><path d="M12 17h.01"/>', "#e6b422"),
     # Alerte générique (estimation OMS plus forte) : cercle avec point d'exclamation, en rouge
     "alerte": ('<circle cx="12" cy="12" r="9"/><path d="M12 8v4"/><path d="M12 16h.01"/>', "#ce1126"),
+    # Établissement scolaire (auto-écoles recensées) : bâtiment, en vert
+    "etablissement": ('<path d="M3 21h18"/><path d="M5 21V8l7-4 7 4v13"/><path d="M9 21v-5h6v5"/>'
+                      '<path d="M9 11h.01"/><path d="M15 11h.01"/>', "#16834a"),
+    # École (préfectures sans auto-école agréée) : toque de diplômé, en jaune-or
+    "ecole_jaune": ('<path d="M21.42 10.92a1 1 0 0 0-.02-1.84L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.83'
+                    'l8.57 3.91a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/>',
+                    "#e6b422"),
+    # Signalisation / feux (équipements de sécurité routière) : feu tricolore, en bleu
+    "signalisation": ('<rect x="9" y="2" width="6" height="16" rx="3"/><path d="M12 6h.01"/><path d="M12 10h.01"/>'
+                      '<path d="M12 14h.01"/><path d="M9 20h6"/>', "#2474c6"),
 }
 
 
