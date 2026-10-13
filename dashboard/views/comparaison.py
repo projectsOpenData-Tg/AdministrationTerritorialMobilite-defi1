@@ -405,7 +405,7 @@ style = (tab.style
          .map(_c_region, subset=["Région"])
          .map(_c_zone, subset=["Zone"])
          .map(_c_mauvais, subset=["Mauvais état (%)"]))
-st.dataframe(style, hide_index=True, use_container_width=True, height=440)
+st.dataframe(style, hide_index=True, width="stretch", height=440)
 st.markdown(
     f'<div class="filtres-actifs"><b>Priorité :</b> {_badge("Haute", PRIO_COUL["Haute"])}'
     f'{_badge("Moyenne", PRIO_COUL["Moyenne"])}{_badge("Aucune action", PRIO_COUL["Aucune action"])}'

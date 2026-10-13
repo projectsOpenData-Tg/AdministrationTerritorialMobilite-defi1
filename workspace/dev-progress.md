@@ -521,3 +521,59 @@ le total sous le tableau.
   déploiement ni de Telegram.
 - `workspace/README_technique.md` créé : notes internes de développement, déploiement Streamlit Cloud, alerte
   Telegram, tests Playwright, conventions du projet.
+
+## 2026-10-13 — Page « Vue nationale » : équipements routiers et filtre Zone sur la carte
+
+### Bouton « Équipements routiers »
+- Nouveau choix après « Routes nationales seules » dans le sélecteur de couche de la carte (`vue_nationale.py`).
+- Affiche les 16 797 équipements de `geo/equipements.geojson` sur la carte principale et sur l'agrandissement
+  Maritime / Grand Lomé, avec le style de la page Carte (petits points, opacité 0,75). Les passages piétons, publiés en
+  polygones, sont montrés par un point intérieur.
+- Les 4 types sont affichés ensemble, chacun dans sa couleur (panneaux 9 089, ralentisseurs 6 121, passages piétons
+  1 041, feux 546), le plus rare dessiné en dernier. Un clic sur un type dans la légende le masque sur les deux cartes
+  (`legendgroup`).
+- Une note dans la colonne de droite rappelle que la collecte date de 2021-2022, n'est pas vérifiée et n'entre dans
+  aucun indicateur. Le sous-titre de l'agrandissement devient « 8 217 des 16 797 équipements ».
+
+### 🐛 Filtre Zone sans effet sur la carte
+- Cause : la page ne lisait pas `st.session_state["f_zones"]` ; seule la page Carte l'appliquait.
+- Correction : comme sur la page Carte, les préfectures hors des zones choisies passent en beige (`HORS_SELECTION`,
+  sans info-bulle), dans toutes les couches. La couche Population compte ses classes sur les seules préfectures
+  choisies.
+- Dans les couches sans fond coloré (Auto-écoles, Routes, Équipements), le territoire choisi prend sa couleur de zone
+  (`COULEUR_ZONE`, opacité 0,35) : sinon il se confondait avec le beige du reste.
+- Filtres Priorité et Levier ajoutés à la même carte, avec la règle des pages Carte et Priorités : « ou » dans un
+  filtre, « et » entre filtres ; un levier « réseau ; formation » répond aux deux.
+- Une ligne « Filtres : zone … · priorité … · levier … — n préfectures sur 39 · hors des filtres (n) » s'affiche dans
+  la colonne de droite ; si rien ne répond (ex. Grand Lomé + priorité haute), elle le dit.
+- Vérifié (AppTest) : priorité haute → 5 gardées ; levier réseau → 13 ; levier formation → 23 ; Centrale + formation
+  → 3 ; Grand Lomé + haute → 0.
+
+### Traductions mises à jour (EN, éwé, kabiyè)
+- Avant : 84 segments sans traduction dans chaque langue (textes modifiés depuis le 12/10).
+- `pip install ctranslate2 sentencepiece huggingface_hub` dans `.venv`, puis `scripts/traduire_dashboard.py` :
+  modèle NLLB téléchargé (~600 Mo, cache Hugging Face), plus aucun segment manquant.
+- 🐛 **Phrases coupées aux apostrophes** : `html.escape()` écrit l'apostrophe `&#x27;`, que le découpage de
+  `i18n.py` traitait comme un séparateur. 116 segments sur 1 853 étaient des morceaux (« Le coût des actions n » /
+  « est pas dans les données »), traduits chacun à part. Correction dans `i18n.py` : `_APOSTROPHE` rend
+  `&#x27;` / `&#39;` en apostrophe avant le découpage (`bi()` et `segments()`). Le français s'affiche à l'identique.
+  Après une nouvelle passe du script : 1 787 segments, aucun fragment d'apostrophe.
+- **Relecture de l'anglais** : 73 entrées corrigées à la main dans `en.json` (`"relu": true`, jamais écrasées par
+  le script). Défauts du modèle : 2e et 3e phrases supprimées, contresens (« covered road », « shares », « Always on
+  my mind », « Get out of here »), noms propres altérés (Tchamba → Chamba), et un nom de tronçon remplacé par une
+  phrase inventée (« RN33 AGOU GADJEPE… » → « The Commission has decided… », remis tel quel dans les 3 langues).
+- Éwé et kabiyè : non relus (pas de locuteur) ; relecture nécessaire avant une présentation officielle.
+- Limite : les textes qui n'apparaissent qu'après un clic (ex. légende des équipements, ligne « Filtres ») ne sont
+  pas collectés par le script, qui exécute les pages dans leur état par défaut ; ils restent en français.
+
+### Avertissement Streamlit `use_container_width` supprimé
+- `use_container_width` est déprécié (retrait annoncé après le 31/12/2025). Les 12 appels valaient `True` et sont
+  remplacés par `width="stretch"` : `app.py` (bouton « Réinitialiser les filtres »), `comparaison.py`, `horizon.py`
+  et `methodologie.py` (`st.dataframe`). Streamlit 1.61.0 (version figée dans `dashboard/requirements.txt`).
+- Vérifié (AppTest) : 8 pages sans exception, plus aucun avertissement.
+
+### Vérifié
+- AppTest sur 7 combinaisons couche × zone : aucune exception, effectifs hors sélection justes (Centrale → 34,
+  Grand Lomé + Savanes → 30, Kara → 32, Plateaux → 27, Maritime hors Grand Lomé → 33).
+- Captures Playwright : équipements seuls, avec la Centrale, avec Centrale + Grand Lomé, et couches Population et
+  Auto-écoles filtrées.

@@ -1,0 +1,26 @@
+# Contexte de build minimal pour dashboard/Dockerfile (contexte = racine du dépôt).
+# Tout ce qui n'est pas lu par le tableau de bord est exclu pour garder l'image légère.
+
+.git
+.github
+.venv
+venv
+**/__pycache__
+*.pyc
+*.pyo
+
+# Travail interne, livrables lourds, notebooks
+tmp
+workspace
+methodology
+notebooks
+*.pptx
+*.zip
+*.ipynb
+
+# Données non lues par le tableau de bord
+data/interim
+data/analysis/04_understanding/rapports
+data/raw
+# …sauf le registre des sources, lu par la page Méthodologie
+!data/raw/_SOURCES.csv

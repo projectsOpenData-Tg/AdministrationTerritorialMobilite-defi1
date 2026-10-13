@@ -280,6 +280,11 @@ CORRECTIONS À APPORTER À LA PAGE « PRIORITÉS » :
     - ajouter la portion de la région Maritime et du Grand Lomé comme sur la page « Carte », section « Le Togo, préf. par préf. », afin de bien voir les auto-écoles dans la région
     - appliquer un fond coloré pour chaque région comme sur la page « Carte » : chaque région a sa couleur si on l'a sélectionnée ; utiliser celles déjà définies sur la page « Carte »
 
+  - après le bouton « Routes nationales seules », ajouter un bouton « Équipements routiers » :
+    il affiche la position des équipements sur la carte, comme sur la page « Carte ».
+    - aussi : lorsqu'une zone est sélectionnée dans la barre latérale, la carte devrait afficher cette zone dans
+      ses couleurs ; il semble que ce ne soit pas le cas : à vérifier.
+
 
 - Modif sur page 'méthodologie':
   - appliquer le card sous le titre comme fait sur toutes les autres pages
@@ -299,3 +304,4 @@ CORRECTIONS À APPORTER À LA PAGE « PRIORITÉS » :
     "Une base d'accidents par préfecture, avec le mois, l'âge et la catégorie de véhicule, rendrait ces 7 questions testables (recommandation « Créer une base d'accidents par préfecture », page Recommandations)."
     "La grille place la population là où elle vit, au lieu de l'étaler sur toute la préfecture : l'accès monte partout. Les Plateaux restent sous la médiane dans les deux mesures. La zone qui cumule les deux retards est la Centrale dans la première mesure et les Savanes dans la seconde."
     (n'hésite pas à reformuler pour que ça soit plus parlant au décideur de notre méthode de travail)
+
