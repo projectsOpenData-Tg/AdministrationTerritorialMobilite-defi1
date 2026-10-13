@@ -85,7 +85,7 @@ with st.sidebar:
     st.pills("Levier", LEVIERS, selection_mode="multi", key="f_leviers")
     # Emplacement des réglages propres à la page (ex. la page Carte y place ses sélecteurs) : au-dessus du bouton.
     st.session_state["sidebar_reglages"] = st.container()
-    st.button("Réinitialiser les filtres", on_click=reinitialiser, use_container_width=True, icon=":material/restart_alt:")
+    st.button("Réinitialiser les filtres", on_click=reinitialiser, width="stretch", icon=":material/restart_alt:")
     st.markdown(
         '<ul class="sidebar-stats">'
         '<li>39 préfectures · 6 zones</li>'

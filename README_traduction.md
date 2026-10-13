@@ -112,6 +112,43 @@ git add dashboard/locales dashboard/static && git commit -m "Traductions mises �
 - Options : `--langues en` (une seule langue), `--collecte-seule` (lister sans traduire), `--limite 50` (essai).
 - Un texte supprimé du code disparaît des fichiers de langue au lancement suivant (sauf s'il est marqué `relu`).
 
+## Où sont le modèle et les dépendances (poste de développement)
+
+Installés le 13/10/2026 ; rien de tout cela n'est dans le dépôt.
+
+| Élément | Emplacement | Taille |
+|---|---|---|
+| `ctranslate2`, `sentencepiece`, `huggingface_hub` | environnement virtuel du projet, `.venv/` | — |
+| Modèle CTranslate2 int8 (`JustFrederik/nllb-200-distilled-600M-ct2-int8`) | cache Hugging Face, `~/.cache/huggingface/hub/` | ≈ 615 Mo |
+| Découpeur de mots (`sentencepiece.bpe.model` de `facebook/nllb-200-distilled-600M`) | même cache | quelques Mo |
+
+- Le cache est **partagé par tous les projets** de l'utilisateur : supprimer `.venv/` ne supprime pas le modèle.
+- Pour libérer la place : `rm -rf ~/.cache/huggingface/hub/models--JustFrederik--nllb-200-distilled-600M-ct2-int8 ~/.cache/huggingface/hub/models--facebook--nllb-200-distilled-600M`
+  (le prochain lancement le retéléchargera).
+- Pour placer le cache ailleurs : définir `HF_HOME=/chemin/voulu` avant de lancer le script.
+- Sur un autre poste : refaire le `pip install` ci-dessus ; le premier lancement retélécharge le modèle.
+
+### Utiliser le modèle directement
+
+Pour traduire une phrase sans passer par la collecte des 8 pages, on peut réutiliser la classe `Traducteur` du script.
+`HF_HUB_OFFLINE=1` interdit tout accès réseau : le modèle est lu dans le cache, ce qui prend environ 8 secondes.
+
+```bash
+HF_HUB_OFFLINE=1 .venv/bin/python -c "
+import sys; sys.path.insert(0, 'scripts')
+from traduire_dashboard import Traducteur
+t = Traducteur()
+for lg in ['en', 'ee', 'kbp']:
+    print(lg, t.traduire(['Les accidents augmentent en volume, mais les taux baissent.'], lg))
+"
+```
+
+- Langues : `en` (anglais), `ee` (éwé), `kbp` (kabiyè) ; codes NLLB dans `dashboard/i18n.py` (`CODES_NLLB`).
+- `t.traduire([...], lg, prudent=True)` : passe plus lente qui limite les répétitions (celle que le script utilise
+  pour les traductions suspectes).
+- Pour garder un résultat dans le tableau de bord, l'écrire dans `dashboard/locales/<langue>.json` avec
+  `"relu": true` (voir ci-dessous).
+
 ## Corriger une traduction à la main
 
 1. Ouvrir `dashboard/locales/ee.json` (par exemple) et chercher le segment français.
@@ -120,7 +157,11 @@ git add dashboard/locales dashboard/static && git commit -m "Traductions mises �
 
 ## Qualité et limites
 
-- **Anglais** : correct dans l'ensemble ; quelques termes d'interface fixés à la main.
+- **Anglais** : correct dans l'ensemble ; quelques termes d'interface fixés à la main. Le modèle supprime parfois
+  la 2e ou la 3e phrase d'un segment et peut inventer une phrase sur un nom propre : relire les entrées nouvelles
+  après chaque lancement (73 corrigées à la main le 13/10/2026).
+- **Textes visibles seulement après un clic** (légende des équipements, ligne « Filtres » de la carte) : le script
+  exécute les pages dans leur état par défaut et ne les collecte pas ; ils restent en français.
 - **Éwé et kabiyè** : approximatifs (contresens sur le vocabulaire technique, syllabes parfois répétées). Une
   **relecture par des locuteurs** est nécessaire avant toute présentation officielle.
 - Une phrase coupée par du gras (`<strong>…</strong>`) est traduite morceau par morceau : la grammaire de la

@@ -474,7 +474,7 @@ et = e[["Préfecture", "Zone", "Auto-écoles à ouvrir (2029)", "Couverte à 10 
         "Couverte, site indicatif du 10 (%)", "Couverte, sites optimisés (%)"]].rename(
     columns={"Auto-écoles à ouvrir (2029)": "À ouvrir (2029)", "Couverte à 10 km, avant (%)": "Avant (%)",
              "Couverte, site indicatif du 10 (%)": "Au chef-lieu (%)", "Couverte, sites optimisés (%)": "Répartis (%)"})
-st.dataframe(et, hide_index=True, use_container_width=True, height=380)
+st.dataframe(et, hide_index=True, width="stretch", height=380)
 if len(empl_total):
     t = empl_total.iloc[0]
     st.caption(f"Ensemble des 23 préfectures : {int(t['Auto-écoles à ouvrir (2029)'])} auto-écoles à ouvrir en 2029 ; "

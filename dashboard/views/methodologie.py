@@ -77,7 +77,7 @@ titre_bloc("Sources", f"{len(src)} fichiers, issus de {src['Jeu de données'].nu
 vue = src[["Jeu de données", "Producteur", "Licence déclarée", "Statut", "Date de téléchargement"]].copy()
 vue["Statut"] = vue["Statut"].str.split(" :").str[0]
 with st.container(border=True):
-    st.dataframe(vue, hide_index=True, use_container_width=True, height=360)
+    st.dataframe(vue, hide_index=True, width="stretch", height=360)
 note_carte("La population rurale est localisée par la grille WorldPop (carreaux de 100 m), et non répartie "
            "uniformément par préfecture : l'accès rural et le placement des auto-écoles (page Horizon 2031) en "
            "dépendent. Source ajoutée après l'inventaire initial ; empreinte dans sources_A1.csv.")
@@ -126,7 +126,7 @@ with g:
     with st.container(border=True):
         st.dataframe(pd.DataFrame({"Niveau": ["A", "B", "C", "Total"],
                                    "Indicateurs du cadre": ["5", "10", "17", "32"]}),
-                     hide_index=True, use_container_width=True)
+                     hide_index=True, width="stretch")
     note_carte("Au-delà des 32 indicateurs du cadre, 3 compléments à l'énoncé et l'accès rural à une route "
                "revêtue ont été estimés (niveau C). Décompte complet dans le catalogue (catalogue_07.csv).")
 with d:
@@ -140,7 +140,7 @@ with d:
         lignes.append({"Hypothèse": r["Énoncé"], "Pourquoi non testable": r["Raison"],
                        "Donnée qui la rendrait testable": manque})
     with st.container(border=True):
-        st.dataframe(pd.DataFrame(lignes), hide_index=True, use_container_width=True, height=300)
+        st.dataframe(pd.DataFrame(lignes), hide_index=True, width="stretch", height=300)
     note_carte("Une seule donnée manquante bloque 7 hypothèses : la localisation des accidents par préfecture "
                "(avec mois, âge et type de véhicule). Sa création est recommandée page Recommandations.")
 
@@ -154,7 +154,7 @@ acc = pd.DataFrame({
     "Grille WorldPop (%)": ["39,55", "25,12", "23,65", "23,37", "21,26", "23,65", "27,12"],
     "Position (grille)": ["au-dessus", "au-dessus", "au-dessus (médiane)", "sous la médiane", "sous la médiane", "", ""]})
 with st.container(border=True):
-    st.dataframe(acc, hide_index=True, use_container_width=True)
+    st.dataframe(acc, hide_index=True, width="stretch")
 note_carte("La grille localise la population là où elle vit réellement : l'accès rural mesuré est plus élevé "
            "partout. Les Plateaux restent sous la médiane dans les deux mesures. La zone cumulant les deux retards "
            "d'accès est la Centrale (mesure uniforme) ou les Savanes (mesure par grille).")
@@ -217,17 +217,17 @@ for nom, (coul, formules) in BLOCS.items():
                 f'border-radius:3px;background:{coul};margin-right:7px"></span>{html.escape(nom)}</div>',
                 unsafe_allow_html=True)
     st.dataframe(pd.DataFrame(formules, columns=["Formule", "Calcul", "Exemple chiffré"]),
-                 hide_index=True, use_container_width=True)
+                 hide_index=True, width="stretch")
 with st.expander("Toutes les autres formules du cadre d'analyse"):
     cat = lire("07_indicateurs", "catalogue_07")
-    st.dataframe(cat[["Indicateur", "Formule", "Unité", "Niveau (04)"]], hide_index=True, use_container_width=True)
+    st.dataframe(cat[["Indicateur", "Formule", "Unité", "Niveau (04)"]], hide_index=True, width="stretch")
 
 # ------------------------------------------------------------------ Section 8 — Corrections et contrôles
 st.markdown("")
 titre_bloc("Corrections et contrôles")
 with st.expander("Ce qu'une analyse plus fine a corrigé", expanded=True):
     err = lire("A1_horizon", "erratum_A1")
-    st.dataframe(err[["Type", "Objet", "Conséquence"]], hide_index=True, use_container_width=True)
+    st.dataframe(err[["Type", "Objet", "Conséquence"]], hide_index=True, width="stretch")
     st.caption("Les analyses ont été gelées étape par étape. Une analyse plus fine, faite ensuite, a corrigé une "
                "conclusion et mis un chiffre en réserve. Les deux sont ici, avec leur source.")
 with st.expander("Les contrôles, étape par étape", expanded=True):
@@ -245,7 +245,7 @@ with st.expander("Les contrôles, étape par étape", expanded=True):
         res = d["Résultat"].astype(str).str.strip().str.lower()
         conformes = res.str.startswith("conforme").sum()
         lignes.append({"Étape": etape, "Contrôles": len(d), "Conformes": int(conformes)})
-    st.dataframe(pd.DataFrame(lignes), hide_index=True, use_container_width=True)
+    st.dataframe(pd.DataFrame(lignes), hide_index=True, width="stretch")
     st.caption("Chaque étape vérifie ses propres chiffres avant de passer à la suivante : les sommes, les totaux, les "
                "bornes, et chaque chiffre écrit dans le document correspondant. Comptés à l'affichage, aucun en dur.")
 
@@ -261,7 +261,7 @@ st.dataframe(pd.DataFrame([
     ("Jeux de l'INSEED et catalogue du géoportail", "Licence non déclarée ; usage couvert par l'énoncé"),
     ("WorldPop", "CC BY 4.0 ; grille de population 2020 (accès rural, emplacement des auto-écoles)"),
     ("Armoiries du Togo (écu, static/)", "CC BY-SA 4.0, Edem Fiadjoe — attribution obligatoire"),
-], columns=["Source", "Licence"]), hide_index=True, use_container_width=True)
+], columns=["Source", "Licence"]), hide_index=True, width="stretch")
 
 # ------------------------------------------------------------------ Section 10 — Constat, synthèse, limite
 st.markdown("")

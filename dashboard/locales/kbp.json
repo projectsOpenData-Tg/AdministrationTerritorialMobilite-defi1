@@ -7,6 +7,10 @@
   "texte": "% nɛ kɩɖaɣlɩyʋ",
   "relu": false
  },
+ "%Y-%m-%d %H:%M UTC": {
+  "texte": "%Y-%m-%d %H:%M UTC",
+  "relu": false
+ },
  "(101,1 km évalués)": {
   "texte": "(101,1 km mbʋ yɔ)",
   "relu": false
@@ -103,6 +107,10 @@
   "texte": ", nɛ pa-ñɩma",
   "relu": false
  },
+ ", avec une méthode de notation non publiée. L'annuaire national de la même année donne d'autres parts par état.": {
+  "texte": "Pɩnaɣ kʋɖʋmaɣ ŋga ka-taa, National Yearbook wɩlɩɣ ajɛya wena a-taa palɩzɩ ajɛya wena a-taa palɩzɩ ajɛya yɔ.",
+  "relu": false
+ },
  ", contre seulement": {
   "texte": ", nɛ pɩtasɩnɩ",
   "relu": false
@@ -113,6 +121,10 @@
  },
  ", l'état est réparti le long de l'axe.": {
   "texte": "Lone nɖɩ ɖɩ-taa ɛyaa sakɩyɛ wɛna yɔ, ɖɩ-taa ɛyaa sakɩyɛ wɛna.",
+  "relu": false
+ },
+ ", pas des prévisions : elles supposent la population projetée par l'INSEED et les leviers à leur dernière observation.": {
+  "texte": "Pɩtɩkɛ takayɩsɩ nzɩ sɩyɔɔdʋʋ ɛyaa mba INSEED ñɩnaɣ se pakpa yɔ pɔ-tɔm yɔ, ɛlɛ sɩyɔɔdʋʋ ɛyaa mba pɔ-tɔm pɔyɔɔdʋʋ yɔ pɔ-tɔm.",
   "relu": false
  },
  ", porté par les motos. Les accidents augmentent en volume": {
@@ -143,6 +155,10 @@
   "texte": ". Paapɩzɩɣ patɩlɩ ɖenɖe pɔcɔŋna yɔ: pamaɣzaɣ-kʋ takayɩsɩ nzɩ sɩhaɣaɣ ɛyaa waɖɛ se pɛwɛɛ nɛ pacaɣ wezuu ɛzɩ paa kpɩtaʋ ŋgʋ kɩ-taa kɔyɔ (pɩnzɩ hiŋ lʋbɛ kɛ moto nakʋyʋ yɔɔ).",
   "relu": false
  },
+ "/sendMessage": {
+  "texte": "/sendMessage",
+  "relu": false
+ },
  "0 auto-écoles à ouvrir": {
   "texte": "Lɩmaɣza wena a-yɔɔ pɩwɛɛ se ɖɩtɩŋna yɔ",
   "relu": false
@@ -155,20 +171,8 @@
   "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ lɛ, nʋmɔʋ ŋgʋ kɩ-taa kɩ-lakasɩ wɛɛ yɔ, kɩwɛ kɩ-taa nɛ kɩ-lakasɩ wɛɛ kɩ-taa.",
   "relu": false
  },
- "1 110 446 habitants concernés": {
-  "texte": "1 110 446 ɛyaa mba pɛwɛ peeɖe yɔ",
-  "relu": false
- },
  "1 305 681 habitants": {
   "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa ɛyaa wɛ 1 305 681",
-  "relu": false
- },
- "1 635 946 habitants concernés": {
-  "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa ɛyaa 1 635 946",
-  "relu": false
- },
- "1 822 046 habitants concernés": {
-  "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa ɛyaa ɛzɩ 1 822 046 yɔ",
   "relu": false
  },
  "1 auto-écoles à ouvrir": {
@@ -181,10 +185,6 @@
  },
  "1 préf.": {
   "texte": "Pɩkɩlɩ ɖeu.",
-  "relu": false
- },
- "1 préfecture": {
-  "texte": "1 Prefekturɩ",
   "relu": false
  },
  "1 recensées, non agréées": {
@@ -205,10 +205,6 @@
  },
  "1. Danyi": {
   "texte": "1. Danyi",
-  "relu": false
- },
- "1. Les accidents ne sont publiés qu'au niveau national : ni préfecture, ni mois, ni âge, ni véhicule.": {
-  "texte": "1. Kʋdɔmɩŋ weyi ɩ-tɔm pɔyɔɔdʋʋ yɔ, ɩ-tɔm pɔyɔɔdʋʋ ɛjaɖɛ kpeekpe yɔɔ ɖeke: pɩtaakɛ egeetiye, fenaɣ, pɩnzɩ yaa aleɣya.",
   "relu": false
  },
  "10 conditionnelles, 5 immédiates.": {
@@ -241,6 +237,10 @@
  },
  "103 des 132 auto-écoles agréées dans le Grand Lomé.": {
   "texte": "Lɩmaɣza wena a-yɔɔ ɖɩtɩŋɩɣna nɛ ɖihiɣ nʋmɔʋ lɩzʋʋ waɖɛ yɔ, awɩlɩɣnɩ se ɖɩwɛɛnɩ lɩmaɣza kɩbana.",
+  "relu": false
+ },
+ "108 des 132 auto-écoles agréées": {
+  "texte": "Lɩmaɣza wena a-yɔɔ ɖɩtɩŋɩɣna yɔ, a-taa lɛ, ɖɩnɩɣ ɛzɩma ɖɩlakɩ tʋmɩyɛ yɔ.",
   "relu": false
  },
  "11,5 % des routes en mauvais état (124,9 km évalués, 3 tronçons critiques).": {
@@ -343,10 +343,6 @@
   "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa ɛyaa wɛ 145 986",
   "relu": false
  },
- "15 préfectures": {
-  "texte": "15 Prefekturɩ",
-  "relu": false
- },
  "15 préfectures n’ont aucune auto-école, ni agréée ni recensée : l’auto-école agréée la plus proche est à 12,9 à 84,0 km, selon la préfecture. Atteindre la médiane des préfectures équipées (1,065 pour 100 000 habitants) suppose 25 auto-écoles, après vérification sur place. 1 822 046 habitants concernés.": {
   "texte": "15 Prefekturɩ taa lɛ, patɩtasɩ wɛnʋʋ nʋmɔʋ lɩzɩyaa sukuli nakʋyʋ yaa pɛwɛɛ nɛ pɔñɔɔzʋʋ-tʋ: kɩ-taa kɩlɩʋ wɛna ɛzɩ kilomɛtanaa 12.9 nɛ 84.0 mbʋ yɔ, pɩlɩnɩ prefekturɩ taa.",
   "relu": false
@@ -407,24 +403,12 @@
   "texte": "Tɔm pɔzʋʋ 18 nɛ tɔm pɔzʋʋ 7",
   "relu": false
  },
- "18 préfectures": {
-  "texte": "18 Prefektiwaa",
-  "relu": false
- },
  "180 158 habitants": {
   "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa ɛyaa wɛ 180 158",
   "relu": false
  },
  "185 662 habitants": {
   "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa ɛyaa wɛ 185 662",
-  "relu": false
- },
- "2 226 568 habitants concernés": {
-  "texte": "2 226 568 ɛyaa mba pɛwɛ peeɖe yɔ",
-  "relu": false
- },
- "2 490 135 habitants concernés": {
-  "texte": "2 490 135 ɛyaa mba pɛwɛ peeɖe yɔ",
   "relu": false
  },
  "2 868 523 habitants": {
@@ -485,10 +469,6 @@
  },
  "2. Blitta": {
   "texte": "2. Blitta",
-  "relu": false
- },
- "2. L'activité des auto-écoles n'est pas publiée : une auto-école agréée n'est pas forcément active.": {
-  "texte": "2. Pataahaɣ-wɛ nʋmɔʋ se pala mbʋ pɔsɔɔlaa se pala yɔ: Pɩtɩcɛyɩ se pala mbʋ pɔsɔɔlaa yɔ.",
   "relu": false
  },
  "20 règles": {
@@ -571,8 +551,8 @@
   "texte": "Pɩnaɣ 2029: ɛyaa 5 131 425 mba paawɛnɩ pɩnzɩ 18 nɛ pɩɖɛɛ yɔ, pakaɣ-wɛ haʋ nʋmɔʋ se pɛtɛzɩ kpazʋʋ moto.",
   "relu": false
  },
- "2031 (fourchette des deux variantes en bande)": {
-  "texte": "Pɩnaɣ 2031 (hɛkʊ naalɛ ñɩŋgʋ)",
+ "2031 (fourchette des deux variantes en bande).": {
+  "texte": "Pɩnaɣ 2031 (pɩ-naalɛ pɛɖɛwaɣ ɖama taa)",
   "relu": false
  },
  "2031 : de 144 à 182 tués, pour un écart à la cible de 231 à 380": {
@@ -727,10 +707,6 @@
   "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa ɛyaa ɛzɩ 2 932 492 yɔ.",
   "relu": false
  },
- "3 311 579 habitants concernés": {
-  "texte": "3 311 579 ɛyaa mba pɛwɛ peeɖe yɔ",
-  "relu": false
- },
  "3 ans": {
   "texte": "Pɩnzɩ naadozo",
   "relu": false
@@ -765,10 +741,6 @@
  },
  "3. Agou": {
   "texte": "3. Agou",
-  "relu": false
- },
- "3. L'état du réseau vient du relevé des tronçons de 2020, avec une méthode de notation non publiée. L'annuaire national de la même année donne d'autres parts par état ; aucune ne concorde.": {
-  "texte": "3. Ɛjaɖɛ ɖɩnɛ ɖɩ-tɛ intɛrnɛɛtɩ lone nɖɩ ɖɩlɩna pɩnaɣ 2020 ñɩnɖɛ taa nɛ kɩwɛ ɛzɩ takayɩhatʋ ndʋ tɩtatasɩ lɩzʋʋ yɔ.",
   "relu": false
  },
  "30 % ou plus": {
@@ -863,10 +835,6 @@
   "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa ɛyaa wɛ ɛzɩ 3 482 856 yɔ.",
   "relu": false
  },
- "4 193 458 habitants concernés": {
-  "texte": "4 193 458 ɛyaa mba pɛwɛ peeɖe yɔ",
-  "relu": false
- },
  "4 auto-écoles à ouvrir": {
   "texte": "4 Sɔɔndʋ kpaɣʋ sukuli wena a-taa palakaɣ-wɛ tʋmɩyɛ yɔ",
   "relu": false
@@ -905,10 +873,6 @@
  },
  "4,6 millions de ruraux": {
   "texte": "Ɛyaa miiliyɔɔwaa 4,6 tɛtʊ taa",
-  "relu": false
- },
- "4. Le parc de véhicules en circulation n'est pas publié : il est estimé dans une fourchette.": {
-  "texte": "4. Paayɔɔdʋʋ ɛyaa mba pɔɖɔŋaɣ nʋmɔʋ taa yɔ pɔ-tɔm.",
   "relu": false
  },
  "4. Tchamba": {
@@ -1023,8 +987,8 @@
   "texte": "5 Prefekturɩ naalɛ nzɩ sɩ-taa kɩkalasɩ wɛ ndɩ kpem:",
   "relu": false
  },
- "5 préfectures cumulent les deux déficits, 26 en ont un, 8 n": {
-  "texte": "5 Prefektiwaa mba pɛfɛyɩnɩ liidiye sakɩyɛ yɔ, pɛkpɛndɩ 26 nɛ pɛfɛyɩnɩ liidiye sakɩyɛ.",
+ "5 préfectures cumulent les deux déficits, 26 en ont un, 8 n'en ont aucun. La nature du zéro : 15 préfectures sans aucune auto-école recensée (25 auto-écoles), 8 avec des auto-écoles recensées non agréées (16 auto-écoles).": {
+  "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ lɛ, kɩwɛ ɛzɩ tɛtɛ kpɛlɛkʊʊ taa sukuli kɩtɛzʊnaa yɔ: 15 pɛfɛyɩna takayasɩ nzɩ sɩwɩlɩɣ ɛzɩma pɔcɔŋnɩ kpaamɩŋ yɔɔ yɔ (takayasɩ 25), 8 ñɛwɛɛ nɛ pakpaɣ takaysɩ wena atɩlɩɣ kpaamɩmɩyɛ labʋ yɔ (16).",
   "relu": false
  },
  "5 préfectures cumulent un réseau dégradé et aucune auto-école agréée (641 955 habitants).": {
@@ -1047,20 +1011,12 @@
   "texte": "5. Bazaarɩ",
   "relu": false
  },
- "5. Le coût des actions n'est pas dans les données : les quantités sont des ordres de grandeur, pas des devis.": {
-  "texte": "5. Pɩtɩkɛ takayɩsɩ taa lɛ, pɔyɔɔdʋʋ liidiye nɖɩ ɖɩ-yɔɔ pɔcɔŋnaa yɔ.",
-  "relu": false
- },
  "500 032 habitants": {
   "texte": "Ɛyaa 500 032",
   "relu": false
  },
  "52 448 habitants": {
   "texte": "Ɛyaa 52 448",
-  "relu": false
- },
- "52 448 habitants concernés": {
-  "texte": "52 448 ɛyaa mba pɛwɛ peeɖe yɔ",
   "relu": false
  },
  "6 auto-écoles": {
@@ -1079,10 +1035,6 @@
   "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ lɛ se:",
   "relu": false
  },
- "6 préfectures": {
-  "texte": "6 Prefektiwaa",
-  "relu": false
- },
  "6 taux": {
   "texte": "6 Kɩhɛyʋʋ pʋ-ñʋʋ taa",
   "relu": false
@@ -1095,10 +1047,6 @@
   "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ lɛ, nʋmɔʋ ŋgʋ kɩwɛ kaɖɛ yɔ, kɩ-taa ɛyaa mba paawɛɛ yɔ, pa-taa 6.0%.",
   "relu": false
  },
- "6. Les recommandations en C demandent une vérification avant tout investissement.": {
-  "texte": "6. C-kewiyitu takayaɣ ŋga ka-taa paayɔɔdʋʋ yɔ, kasɩnɩ ɛyaa nɛ patɩlɩ mbʋ pɩ-yɔɔ pɔñɔɔzʋʋ pa-tɩ yɔ.",
-  "relu": false
- },
  "6. Oti": {
   "texte": "6. Pɔɔyɩsɩ",
   "relu": false
@@ -1109,10 +1057,6 @@
  },
  "60 % ou plus": {
   "texte": "Pɩcɛzɩ 60 pɔɔyɩ",
-  "relu": false
- },
- "641 955 habitants concernés": {
-  "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa ɛyaa ɛzɩ 641 955 yɔ",
   "relu": false
  },
  "641 955 habitants. Déjà repérées à l'exploration (pire quart des deux dimensions).": {
@@ -1155,8 +1099,8 @@
   "texte": "Tɔm pɔzʋʋ lʋbɛ",
   "relu": false
  },
- "7 questions restent non testables faute d": {
-  "texte": "Tɔm pɔzʋʋ lʋbɛ mbʋ pɩ-yɔɔ lɛ, ɖɩtaapɩzɩɣ nɛ ɖiyele se tɔm ndʋ tɩtɔlɩ.",
+ "7 questions restent non testables faute d'accidents par préfecture, par mois et par âge des conducteurs. Les tués sont ceux que déclarent la police et la gendarmerie.": {
+  "texte": "Pɩtasɩ lɛ, tɔm pɔzʋʋ lʋbɛ mbʋ pɩ-yɔɔ patapɩzɩɣ nɛ pɔcɔŋna yɔ.",
   "relu": false
  },
  "7 questions restent ouvertes : voir la page Méthodologie.": {
@@ -1191,10 +1135,6 @@
   "texte": "7.Papɩsɩna-kɛ nɛ mononaa",
   "relu": false
  },
- "7. La population en âge de conduire ne se raccorde pas d'une source à l'autre : les 18 ans et plus font 51,8 % de la population au recensement de 2022 et 55,6 % dans la projection de 2023 (réserve A1-R1).": {
-  "texte": "7. Ɛjaɖɛ ɖɩnɛ, ɛyaa mba pɛwɛnɩ pɩnzɩ 18 nɛ pɩkpaɖɩ yɔ pa-taa 51.8% kɛ kɩgalʊʊ pɩnaɣ 2022 taa nɛ 55.6% mbʊ payaɣ se 2023. (A1-R1)",
-  "relu": false
- },
  "73 830 habitants": {
   "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa ɛyaa kɛ 73 830",
   "relu": false
@@ -1211,16 +1151,8 @@
   "texte": "751 398 lɔɔɖɩyɛ",
   "relu": false
  },
- "795 529 habitants concernés": {
-  "texte": "795 529 ɛyaa mba pɛwɛ peeɖe yɔ",
-  "relu": false
- },
  "7 507 accidents constatés la même année.": {
   "texte": "Pɩnaɣ ŋga ka-taa, ɛyaa lʋbɛ nɛ 507 katɩba.",
-  "relu": false
- },
- "8 095 498 habitants concernés": {
-  "texte": "8 095 498 ɛyaa mba pɛwɛ peeɖe yɔ",
   "relu": false
  },
  "8 auto-écoles": {
@@ -1231,20 +1163,12 @@
   "texte": "Takayɩhatʋ 8",
   "relu": false
  },
- "8 préfectures": {
-  "texte": "8 Prefektiwaa",
-  "relu": false
- },
  "8,1 % des routes en mauvais état (58,5 km évalués, 3 tronçons critiques).": {
   "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ lɛ, nʋmɔʋ ŋgʋ kɩwɛ kaɖɛ yɔ, kɩ-taa kɩwɛna ɛyaa 8.1%.",
   "relu": false
  },
  "8. Est-Mono": {
   "texte": "8. Ɛst-Mono",
-  "relu": false
- },
- "8. Les quantités d'ici 2031 sont des estimations, pas des prévisions : elles supposent la population projetée par l'INSEED et les leviers à leur dernière observation.": {
-  "texte": "8. Pɩtalɩ pɩnaɣ 2031 lɛ, ɛyaa mba pɛwɛ peeɖe yɔ pɔ-tɔm kɛ akɔnta nɛ pɩtɩkɛ takayasɩ.",
   "relu": false
  },
  "80 939 habitants": {
@@ -1487,12 +1411,32 @@
   "texte": "Ɛyaa: 94 860",
   "relu": false
  },
+ ": Centrale, puis Plateaux, Savanes, Kara et Maritime. La Centrale est en tête dans les deux lectures.": {
+  "texte": "Payaɣ-wɛ se: Central, pʋwayɩ lɛ Plateaux, Savanes, Kara nɛ Maritime.",
+  "relu": false
+ },
+ ": Danyi, Blitta, Agou, Tchamba, Bassar, Oti, Bas-Mono.": {
+  "texte": "Payaɣ-wɛ se: Danɩi, Blitta, Agou, Chamba, Bassar, Oti, Bas-Mono.",
+  "relu": false
+ },
+ ": Est-Mono et Oti-Sud (4 tests sur 6), Tchaoudjo (3 sur 6).": {
+  "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa: Ɛst-Mono nɛ Oti-Sud (4 pa-taa 6) nɛ Chaoudjo (3 pa-taa 6).",
+  "relu": false
+ },
+ ": Le classement est stable si aucun test ne change plus de 2 des 10 premières.": {
+  "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ lɛ se: Ye tɔm ndʋ tɩ-taa natʋyʋ tɩlɛɣzɩ nɛ pɩkɩlɩ 10 taa naalɛ yɔ, tɩ-taa natʋyʋ ɛɛpɩzɩɣ nɛ tɩlɛɣzɩ.",
+  "relu": false
+ },
  ": aucun test ne change plus de 2 des 10 premières.": {
   "texte": "Lɩmaɣza wena awɛ kajalaɣ 10 taa yɔ, a-taa naalɛ fɛyɩ se ɛlɛɣzɩ.",
   "relu": false
  },
  ": ceux qui traversent les Plateaux en portent le plus (292,15 km, 23 tronçons), puis ceux de la Centrale (236,25 km, 6 tronçons).": {
   "texte": "Ɛyaa mba pɛɖɛɣ Petaayɔɔ yɔ, pa-taa sakɩyɛ wɛna (292.15 km, hɔɔlɩŋ 23), nɛ pʋwayɩ lɛ, mba pɛɖɛɣ Petaayɔɔ yɔ, pa-taa sakɩyɛ wɛna 236.25 km, hɔɔlɩŋ 6.",
+  "relu": false
+ },
+ ": il est estimé dans une fourchette.": {
+  "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ lɛ se:",
   "relu": false
  },
  ": la population grandit plus vite que l'offre. Les km à remettre en état, eux, ne bougent pas : c'est un retard déjà constitué.": {
@@ -1515,8 +1459,24 @@
   "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-taa lɛ, kɩlɩnɩ tɔm ndʋ pama yɔ tɩ-yɔɔ nɛ pɩhaɣ ɛyaa waɖɛ se patɩŋna takayɩsɩ nasɩyɩ yɔɔ.",
   "relu": false
  },
+ ": les deux références sans action nouvelle (taux inchangé, tendance) et la cible de la Décennie, moitié de la valeur de 2021 en 2030. Les accidents constatés n'ont pas de cible : la résolution porte sur les tués et les blessés.": {
+  "texte": "Kpaɣnɩ pɩnaɣ 2021 nɛ pɩkɔɔ pɩsɩɩnɩ pɩnaɣ 2030 taa lɛ, ɛyaa mba pasɩba yɔ, pa-taa kʋɖʋm palɩzaa se pakaɣ-wɛ kpaʋ.",
+  "relu": false
+ },
  ": les préfectures au-dessus du seuil de 22,13 % de km en mauvais état. Le nom de la zone et de la région prend sa couleur de carte.": {
   "texte": "Paɣtʋ ndʋ tɩ-yɔɔ pɔyɔɔdɩɣ yɔ, tɩ-taa lɛ, pɔñɔɔzʋʋ-tʋ nɛ pɔñɔɔzʋʋ-tʋ nɛ pɔñɔɔzʋʋ-tʋ.",
+  "relu": false
+ },
+ ": les quantités sont des ordres de grandeur, pas des devis.": {
+  "texte": "Tɔm ndʋ tɩ-taa lɛ se: \"Papɩsɩna-wɛ size, pɩtɛkɛ tɔm ndʋ pɔyɔɔdʋʋ yɔ\".",
+  "relu": false
+ },
+ ": mesuré avec la grille, les Savanes passent sous la médiane et la Centrale au-dessus. La Centrale garde la première place : elle reste la zone avec un réseau routier le plus dégradé, et la formation des conducteurs dans cette zone ne change pas.": {
+  "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ lɛ, Savanes lɩɣna hɔɔlɩŋ weyi ɩwɛ tɛtɛɛ yɔ nɛ Hɛkʊ Sɔsɔʋ ñɩŋgʋ ñɛwɛɛ kajalaɣ lone taa.",
+  "relu": false
+ },
+ ": ni préfecture, ni mois, ni âge, ni véhicule.": {
+  "texte": "Pɩtɩkɛ egeetiye nɖɩ ɖɩ-taa palʋlaa yɔ, ɖɩ-taa lɛ, pɛfɛyɩna fenaɣ, pɩnzɩ yaa lɔɔɖɩyɛ.",
   "relu": false
  },
  ": non agréées dans une préfecture qui n'a aucune auto-école agréée. La préfecture est le rattachement par la position (utilisé par les indicateurs) ; il diffère de la préfecture déclarée pour 4 auto-écoles.": {
@@ -1529,6 +1489,10 @@
  },
  ": sans population rurale. Une valeur nulle mesurée s'écrit 0 (23 préfectures à 0 auto-école agréée).": {
   "texte": "Lone nɖɩ ɖɩ-taa ɛyaa fɛyɩ yɔ, ɖɩ-taa lɛ, paayɔɔdʋʋnɩ ɛyaa mba paawɛ peeɖe yɔ.",
+  "relu": false
+ },
+ ": une auto-école agréée n'est pas forcément active.": {
+  "texte": "Pɩtɩcɛyɩ se ɛyʋ ɛñɩnɩ nʋmɔʋ lɩzʋʋ sukuli ŋgʋ kɩmʋnaa yɔ.",
   "relu": false
  },
  "= calculé (formule maîtrisée)": {
@@ -1613,6 +1577,10 @@
  },
  "Accès rural (%)": {
   "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa tɛtʊ sɔsɔtʊ (%)",
+  "relu": false
+ },
+ "Accès rural (grille WorldPop)": {
+  "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa tɛtʊ sʊzɔtʊ (WorldPop grid)",
   "relu": false
  },
  "Accès rural estimé avec une population répartie uniformément dans chaque préfecture.": {
@@ -1723,8 +1691,12 @@
   "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa (%)",
   "relu": false
  },
- "Au niveau national seulement : les accidents ne sont publiés que pour tout le pays, cette section n": {
-  "texte": "Lone nɖɩ ɖɩ-taa tɔm kɩcɛyɩtʋ natʋyʋ wɛɛ yɔ, ɖɩ-taa lɛ, tɔm kɩcɛyɩtʋ ndʋ tɩ-taa tɔm kɩcɛyɩtʋ natʋyʋ wɛɛ yɔ:",
+ "Au niveau national seulement : les accidents ne sont publiés que pour tout le pays, cette section n'a pas de carte.": {
+  "texte": "Lone nɖɩ ɖɩ-taa tɔm kɩcɛyɩtʋ wɛ ɛjaɖɛ kpeekpe yɔɔ: ɖɩ-taa tɔm kɩcɛyɩtʋ wɛ ɛjaɖɛ kpeekpe yɔɔ.",
+  "relu": false
+ },
+ "Au-delà des 32 indicateurs du cadre, 3 compléments à l'énoncé et l'accès rural à une route revêtue ont été estimés (niveau C). Décompte complet dans le catalogue (catalogue_07.csv).": {
+  "texte": "Pɩtasɩna kɩlɛmʋʋ yɔɔ cɔnɩyaa 32 taa lɛ, pakpaɣ kɩlɛmʋʋ yɔɔ cɔnɩyaa 3 nɛ pamaɣzaɣ ɖɔɖɔ ɛzɩma pɔñɔɔzʋʋ nʋmɔʋ ŋgʋ kɩ-taa pañɔɔzʋʋ kɩ-tɩ yɔ kɩ-yɔɔ yɔ.",
   "relu": false
  },
  "Aucune action": {
@@ -1823,8 +1795,12 @@
   "texte": "Paanaɣ nʋmɔʋ lɩzʋʋ sukuli nakʋyʋ, paanaɣ nʋmɔʋ lɩzʋʋ sukuli nakʋyʋ, paanaɣ ɖɔɖɔ nʋmɔʋ lɩzʋʋ sukuli nakʋyʋ.",
   "relu": false
  },
- "Aucune recommandation ne s": {
-  "texte": "Paapɩzɩɣ nɛ pɔyɔɔdɩ tɔm natʋyʋ",
+ "Aucune donnée ne mesure l'usure du réseau : la quantité à remettre en état ne dépend pas de l'horizon. Classes fixes d'un horizon à l'autre, pour que les couleurs se comparent. Projection Mercator, cadrée sur le Togo ; l'agrandissement reprend la région Maritime et le Grand Lomé.": {
+  "texte": "Tɔm natʋyʋ fɛyɩ nɛ tɩmaɣnɩ ɛzɩma tʊmɩyɛ nɖɩ ɖɩwɛɛ yɔ: pɔɔyɩsɩ nzɩ pɩpɔzʋʋ se sɩɖaɣnɩ labʋ yɔ, pa-taa nabʋyʋ ɛɛlɩɣ hɔɔlɩŋ weyi ɩwɛ kɩlɛmʋʋ yɔɔ yɔ.",
+  "relu": false
+ },
+ "Aucune recommandation ne s'y appuie. La donnée qui les rendrait testables est en page Méthodologie.": {
+  "texte": "Pɩtɩkɛ paɣtʋ ndʋ tɩ-yɔɔ ɖɩtɩŋɩɣna yɔ, tɩwɩlɩɣ se tɔm ndʋ tɩpɩzɩɣ nɛ tɩha-ɖʋ waɖɛ se ɖɩmaɣzɩ tɩ-yɔɔ yɔ, tɩlɩnɩ Feŋuu Tilimiye yɔɔ.",
   "relu": false
  },
  "Aucune route classée : ni état ni km évalué.": {
@@ -1839,8 +1815,8 @@
   "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ lɛ, nʋmɔʋ ŋgʋ kɩwɛ kaɖɛ yɔ, kɩ-taa nabʋyʋ fɛyɩ (58,8 km yɔ, kɩ-taa natʋyʋ fɛyɩ).",
   "relu": false
  },
- "Aucune zone n": {
-  "texte": "Teŋgɛ teŋgɛ te",
+ "Aucune zone n'atteint la cible aujourd'hui en dehors du Grand Lomé, et l'écart se creuse partout : le taux national passe de 1,63 à 1,35 auto-école pour 100 000 habitants.": {
+  "texte": "Lɛɛlɛɛyɔ, lone naɖɩyɛ fɛyɩ nɛ ɖɩtalɩ kaɖʋwa ŋga kɔ-cɔlɔ Lomé tɛtʋ sɔsɔtʋ tɛtʊ taa yɔ. Pɩɩwɛɛ se kɩɖɛɛnɩ ɛsɩndaa paa le: ɛjaɖɛ kpeekpe yɔɔ sukuli kɩtɛzʊʊ hɔɔlɩŋ weyi ɩwɛ ɛzɩ 1.63 mbʋ yɔ lɛ 1,35 pɛkpɛndɩ ɛyaa 100 000.",
   "relu": false
  },
  "Auto Ecole / Garage la Patience": {
@@ -1907,8 +1883,8 @@
   "texte": "Lɩmaɣza wena a-yɔɔ pɩwɛɛ se pɔñɔɔzɩ pa-tɩ yɔ:",
   "relu": false
  },
- "Auto-écoles agréées pour 100 000 habitants, par zone, si rien n'ouvre": {
-  "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ pɩwɛɛ se pɔñɔɔzɩ pa-tɩ nɛ patɩŋnɩ nʋmɔʋ lɩzʋʋ sɔnzɩ yɔɔ yɔ.",
+ "Auto-écoles agréées pour 100 000 habitants, par zone, si rien n'ouvre.": {
+  "texte": "Lɩmaɣza wena a-yɔɔ pɩwɛɛ se ɖɩtɩŋna yɔ, a-yɔɔ lɛ ɖɩtɩŋɩɣna nɛ ɖɩñɩɣ niye tɔm ndʋ ɖɩyɔɔdaa yɔ.",
   "relu": false
  },
  "Auto-écoles déjà comptées dans les autres recommandations ; leur activité n’est pas publiée. Les Savanes sont un cas limite pour la route.": {
@@ -2115,24 +2091,28 @@
   "texte": "Takayɩhatʋ ndʋ tɩwɛ pɩ-tɛɛ yɔ tɩwɛna kpasɩ Lɩmaɣzɩyɛ naɖɩyɛ yɔɔ:",
   "relu": false
  },
+ "Ce qu'elles ne disent pas": {
+  "texte": "Tɔm ndʋ paayɔɔdʋʋ yɔ",
+  "relu": false
+ },
+ "Ce qu'il faut ajouter": {
+  "texte": "Tɔm ndʋ pɩwɛɛ se ŋtasɩ yɔɔdʋʋ yɔ",
+  "relu": false
+ },
  "Ce qu'une analyse plus fine a corrigé": {
   "texte": "Tɔm ndʋ lɛɣzɩtʋ kɩfatʋ taa yɔ, tɩsɩnɩ-ɖʋ nɛ ɖɩtɩlɩ",
   "relu": false
  },
- "Ce que chaque verdict change pour l": {
-  "texte": "Tɔm hʋʋ ŋgʋ kɩɖɛɣ yɔ kɩ-yɔɔ lɛ,",
+ "Ce que chaque verdict change pour l'action": {
+  "texte": "Tɔm hʋʋ ŋgʋ kɩ-taa lɛ, kɩlɛɣzɩɣ tɔm ndʋ ɖɩlaba yɔ.",
   "relu": false
  },
  "Ce que cumule chacune des 10 premières": {
   "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ lɛ, ɖɩ-taa kʋɖʋmɖɩyɛ lɛ se:",
   "relu": false
  },
- "Ce que dit chaque zone": {
-  "texte": "Tɔm ndʋ egeetiye nɖɩ ɖɩ-taa ɛyaa sakɩyɛ yɔɔdʋʋ yɔ",
-  "relu": false
- },
- "Ce que l": {
-  "texte": "Mbʋ pɩ-yɔɔ",
+ "Ce que l'énoncé demande": {
+  "texte": "Tɔm ndʋ tɔm ñʋʋ ŋgʋ kɩyɔɔdʋʋ yɔ",
   "relu": false
  },
  "Ce que la carte ne montre pas": {
@@ -2155,12 +2135,12 @@
   "texte": "Tɔm ndʋ tɩlɩnɩ kɩlɛmɩŋ yɔɔ yɔ",
   "relu": false
  },
- "Ce qui change pour l": {
-  "texte": "Mbʋ pɩlɛɣzɩ ɛjaɖɛ",
+ "Ce qui change pour l'action": {
+  "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ pɩwɛɛ se ɖɩtɩŋna yɔ",
   "relu": false
  },
- "Ce qui n": {
-  "texte": "Tɔm ndʋ tɩ-taa",
+ "Ce qui n'a pas de territoire": {
+  "texte": "Mbʋ pɩfɛyɩnɩ egeetiye yɔ",
   "relu": false
  },
  "Ce tableau de bord, qui lit des fichiers de résultats sans rien recalculer, et une présentation.": {
@@ -2191,10 +2171,6 @@
   "texte": "Pɩtɩkɛ ageeta ana a-taa lɛ, ɛyaa mba pɔcɔŋnɩ tɔm susuu yɔɔ yɔ pɛwɛɛ nɛ pañɩnɩɣ se patɩlɩ mbʋ pɩkaɣ labʋ alɩwaatʋ ndʋ tɩtaawɛɛ yɔ.",
   "relu": false
  },
- "Ces chiffres sont des estimations, pas des prévisions. Ils supposent la population projetée par l": {
-  "texte": "Paɣtʋ ndʋ tɩwɩlɩɣ se ɛyaa mba pɛwɛ tɛtʋ yɔɔ yɔ, pa-taa paa anɩ ɛɛpɩzɩɣ nɛ ɛpɩzɩ eɖiɣzina.",
-  "relu": false
- },
  "Ces sites orientent une vérification sur place. Ce ne sont pas des adresses : ils sont choisis parmi les chefs-lieux et les points de canton, sur une grille de population modélisée (niveau C).": {
   "texte": "Pɩtɩkɛ lone nɖɩ ɖɩ-taa pɔcɔŋnɩ tɔm susuu yɔɔ yɔ.",
   "relu": false
@@ -2207,24 +2183,24 @@
   "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ lɛ, ɖɩ-taa lɛ se:",
   "relu": false
  },
- "Cette quantité ne change pas avec l": {
-  "texte": "Pɩtasɩɣ lɛɣzʋʋ nɛ pɩtɛ lɛɣzʋʋ",
+ "Cette quantité ne change pas avec l'horizon : aucune donnée ne mesure l'usure du réseau.": {
+  "texte": "Pɩtasɩɣ lɛɣzʋʋ alɩwaatʋ ndʋ tɩ-taa lɛɣzʋʋ wɛɛ yɔ.",
   "relu": false
  },
  "Changements": {
   "texte": "Lɛɣzɩtʋ",
   "relu": false
  },
- "Chaque indicateur affiché vient d": {
-  "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ lɛ se:",
+ "Chaque indicateur affiché vient d'une de ces formules. L'exemple reprend une valeur affichée ailleurs dans le tableau de bord.": {
+  "texte": "Kɩɖaʋ ŋgʋ kɩ-taa lɛ, kɩwɛna kɩjaʋ ŋgʋ kɩwɛ tablɛtɩ taa yɔ kɩ-taa.",
   "relu": false
  },
  "Chaque objectif devient des indicateurs mesurables, des hypothèses à trancher et des seuils, fixés avant de regarder les données. La sécurité routière en compte 14 à elle seule.": {
   "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-taa lɛ, ɖɩ-taa lɛ, ɖɩ-taa wɛ kɩɖaŋ weyi ɩpɩzɩɣ nɛ ɩmaɣzɩ nɛ ɩmaɣzɩ nɛ ɩtɩlɩ mbʋ pɩkaɣ labʋ yɔ nɛ pʋcɔ nɛ ɖɩna kɩɖaŋ weyi ɩ-yɔɔ ɖɩtɩŋna yɔ.",
   "relu": false
  },
- "Chaque préfecture reçoit le levier de chaque seuil qu": {
-  "texte": "Paa egeetiye nɖɩ ɖɩ-taa lɛ, ɖɩ-taa lɛ, ɖɩ-ñɩm paɣzʋʋ nɛ ɖɩ-yɔɔ cɛyɩsɩ nzɩ sɩ-yɔɔ ɖɩtɩŋɩɣ yɔ.",
+ "Chaque préfecture reçoit le levier de chaque seuil qu'elle franchit.": {
+  "texte": "Paa egeetiye nɖɩ ɖɩ-taa lɛ, kɩwɛna waɖɛ naɖɩyɛ.",
   "relu": false
  },
  "Chaque étape a été gelée avant de passer à la suivante : les seuils ont été fixés avant de voir les résultats, et aucun chiffre affiché ici n'a été recopié à la main.": {
@@ -2251,8 +2227,8 @@
   "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ pɩwɛɛ se ɖɩtɩŋna nɛ ɖɩɖʋ nesi ɛyaa mba pɔɖɔm yɔ.",
   "relu": false
  },
- "Cinq objectifs : retracer les immatriculations et les permis, analyser la sécurité routière, évaluer l": {
-  "texte": "Kaɖʋsɩ kagbanzɩ: se patɩŋnɩ nʋmɔʋ lɩzʋʋ sɔnzɩ nɛ aleɣya yɔɔ.",
+ "Cinq objectifs : retracer les immatriculations et les permis, analyser la sécurité routière, évaluer l'état du réseau, cartographier le réseau et les auto-écoles, recommander.": {
+  "texte": "Kaɖʋsɩ kagbanzɩ: patɩŋnɩ nʋmɔʋ lɩzʋʋ sɔnzɩ yɔɔ nɛ peheyi-wɛ se pacaɣ wezuu, pana ɛzɩma pɔñɔɔzɩ nʋmɔŋ camɩyɛ yɔ.",
   "relu": false
  },
  "Classement": {
@@ -2263,16 +2239,8 @@
   "texte": "Lone nɖɩ ɖɩ-taa ɖɩ-tɩŋa ɖɩ-taa 38 yɔ",
   "relu": false
  },
- "Classement en C : vérification avant investissement. Le risque n": {
-  "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ pɩwɛɛ se ɖɩmaɣzɩ yɔ, ɖɩ-yɔɔ lɛ, ɖɩwɩlɩɣ se ɖɩwɛnɩ lɩmaɣza kɩbana.",
-  "relu": false
- },
  "Classement stable : aucun test ne change plus de 2 des 10 premières.": {
   "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ pɩwɛɛ se ɛyʋ ɛmaɣzɩ nɛ ɛwɛɛnɩ lɩmaɣza kɩbana yɔ lɛ, pɩfɛyɩ ɖeu.",
-  "relu": false
- },
- "Classes fixes d'un horizon à l'autre, pour que les couleurs se comparent. Projection Mercator, cadrée sur le Togo ; l'agrandissement reprend la région Maritime et le Grand Lomé.": {
-  "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ pamaɣlɩm yɔ, ɖɩwɛ Togo tɛtʋ taa.",
   "relu": false
  },
  "Cliquez pour afficher sa fiche": {
@@ -2287,8 +2255,8 @@
   "texte": "Pɩnaɣ 2021-2022 alɩwaatʊ ndʊ tɩ-taa paayɔɔdɩ-tʊ yɔ; tɩ-taa paayɔɔdɩ-tʋ.",
   "relu": false
  },
- "Combien en faudra-t-il d": {
-  "texte": "Ɛzɩma pɩkaɣ pɔzʋʋ se pala mbʋ yɔ",
+ "Combien en faudra-t-il d'ici 2031 ?": {
+  "texte": "Pɩkaɣ pɔzʋʋ ɛzɩma nɛ pɩtalɩ pɩnaɣ 2031?",
   "relu": false
  },
  "Commencer par la": {
@@ -2415,6 +2383,30 @@
   "texte": "Kpaagbaa mba",
   "relu": false
  },
+ "D'ici 2029, horizon de cette action : 17 auto-écoles à ouvrir, la population ayant grandi.": {
+  "texte": "Pɩtalɩ pɩnaɣ 2029 lɛ, paɖaɣnɩ labʋ mbʋ yɔ: paɖaɣnɩ labʋ sukuli 17 mbʋ yɔ, mbʋ pʋyɔɔ yɔ ɛyaa ɖɔŋ sakɩyɛ.",
+  "relu": false
+ },
+ "D'ici 2029, horizon de cette action : 18 auto-écoles à ouvrir, la population ayant grandi.": {
+  "texte": "Pɩtalɩ pɩnaɣ 2029 lɛ, paɖaɣnɩ labʋ mbʋ: paɖaɣnɩ labʋ sukuli 18 mbʋ pʋyɔɔ yɔ, ɛyaa ɖɔŋ sakɩyɛ.",
+  "relu": false
+ },
+ "D'ici 2029, horizon de cette action : 30 auto-écoles à ouvrir, la population ayant grandi.": {
+  "texte": "Pɩtalɩ pɩnaɣ 2029 lɛ, paɖaɣnɩ-ɖʋ sɩnʋʋ nɛ ɖɩpaɣzɩ sukuli 30 mbʋ yɔ.",
+  "relu": false
+ },
+ "D'ici 2029, horizon de cette action : 6 540 permis A à délivrer dans l’année, la population ayant grandi.": {
+  "texte": "Pɩtalɩ pɩnaɣ 2029 lɛ, paɖaɣnɩ-ɩ haʋ waɖɛ se ɛcɛlɩ ɛyaa mba pɛwɛ peeɖe yɔ, pa-taa 6 540.",
+  "relu": false
+ },
+ "D'ici 2029, horizon de cette action : 6 auto-écoles à ouvrir.": {
+  "texte": "Pɩtalɩ pɩnaɣ 2029 lɛ, pañakɩ pana se pakpaɣ nʋmɔʋ nɛ patɩŋnɩ nʋmɔʋ ŋgʋ kɩ-yɔɔ.",
+  "relu": false
+ },
+ "D'ici 2031, horizon de cette action : 33,6 km de routes classées, la population ayant grandi.": {
+  "texte": "Pɩtalɩ pɩnaɣ 2031 lɛ, nʋmɔʋ ŋgʋ kɩ-taa palakɩnɩ tʋmɩyɛ yɔ kɩ-taa lɛ: palakɩnɩ nʋmɔʋ ŋgʋ kɩ-taa palakɩnɩ nʋmɔʋ yɔ nɛ ɛyaa ɖɔʊ ɖɔʊ yɔ kɩpaɣlɩna nɛ kɩtalɩ kilomɛtanaa 33.6.",
+  "relu": false
+ },
  "D'une année à l'autre, les séries varient fortement avant 2017 : l'évolution se lit sur des moyennes de trois ans (bloc ci-dessus). Sources, déclaré par la police et la gendarmerie.": {
   "texte": "Pɩnaɣ ŋga ka-taa lɛ, ɛyaa sakɩyɛ wɛna lɩmaɣza wena a-yɔɔ pɔyɔɔdʋʋ tɔm ndʋ yɔ a-tɔm.",
   "relu": false
@@ -2429,10 +2421,6 @@
  },
  "DHS": {
   "texte": "Ɛjaɖɛ yɔɔ tɔm susuyaa",
-  "relu": false
- },
- "DONNÉES": {
-  "texte": "HƆƆƆƆ TƆM",
   "relu": false
  },
  "Dalia": {
@@ -2495,8 +2483,8 @@
   "texte": "Kʋɖʊmɩŋ naalɛ nɛ naadozo",
   "relu": false
  },
- "Deux mesures de l": {
-  "texte": "Lɩmaɣza ana a-taa naalɛ yɔ:",
+ "Deux mesures de l'accès rural, côte à côte.": {
+  "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ lɛ, ɖɩ-taa lɛ, ɖɩ-taa wɛ ɛyaa sakɩyɛ.",
   "relu": false
  },
  "Deux publications de la même année ne concordent pas.": {
@@ -2511,8 +2499,8 @@
   "texte": "Kʋdɔŋ weyi pakaɣ labʋ yɔ",
   "relu": false
  },
- "Diagnostic territorial et aide à la décision pour la mobilité, la sécurité routière et l": {
-  "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ pɩwɛɛ se pɔñɔɔzɩ nʋmɔʋ lɩzʋʋ tʋmɩyɛ nɛ patɩŋnɩ nʋmɔŋ ndɩ ndɩ yɔɔ.",
+ "Diagnostic par zone": {
+  "texte": "Tʋma wena awɛ ndɩ ndɩ yɔ",
   "relu": false
  },
  "Diagnostic territorial et aide à la décision pour la mobilité, la sécurité routière et l'entretien du réseau au Togo": {
@@ -2527,16 +2515,16 @@
   "texte": "Lɩmaɣzɩyɛ (km)",
   "relu": false
  },
- "Distance à l": {
-  "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ",
-  "relu": false
- },
  "Distance à l'auto-école agréée la plus proche": {
   "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ pɩwɛɛ se ŋtɩŋna yɔ, ɖɩ-yɔɔ lɛ, ŋpɩzɩɣ nɛ ŋtɩŋna nɛ ŋtɩlɩ nʋmɔʋ ŋgʋ kɩ-yɔɔ ŋtɩŋna yɔ.",
   "relu": false
  },
  "Distance à l'auto-école agréée la plus proche (C)": {
   "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ pɩwɛɛ se ɖɩtɩŋna yɔ:",
+  "relu": false
+ },
+ "Distance à l'auto-école, au lieu du nombre d'auto-écoles": {
+  "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ pɩwɛɛ se pɔñɔɔzɩ nʋmɔʋ lɩzʋʋ sukuli yɔ",
   "relu": false
  },
  "Distance à l'auto-école, de la plus longue": {
@@ -2547,8 +2535,8 @@
   "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ pɩwɛɛ se ŋtɩŋna yɔ",
   "relu": false
  },
- "Distance à vol d": {
-  "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ",
+ "Distance à vol d'oiseau, depuis le chef-lieu ou un point central.": {
+  "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ pɩwɛɛ se ɖɩtɩŋna yɔ, ɖɩ-yɔɔ pɩwɛɛ se ɖɩtɩŋna.",
   "relu": false
  },
  "Distance à vol d’oiseau (R-16) de chaque maille de population à l’auto-école la plus proche ; moyenne pondérée par la population ; population à plus de SE-08 km": {
@@ -2695,10 +2683,6 @@
   "texte": "EPSG:4326",
   "relu": false
  },
- "Efficacité du Service Public et de la Transformation Numérique": {
-  "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa ɛyaa sakɩyɛ wɛna waɖɛ se patɩŋnɩ tɔm susuu tʋmɩyɛ yɔɔ nɛ patɩŋnɩ tɔm susuu tʋmɩyɛ yɔɔ.",
-  "relu": false
- },
  "Elavagnon": {
   "texte": "Elavagnon",
   "relu": false
@@ -2759,6 +2743,10 @@
   "texte": "OMS ñɩɣ niye Togo ɛjaɖɛ",
   "relu": false
  },
+ "Et d'ici 2031 ?": {
+  "texte": "Nɛ pɩnaɣ 2031 taa?",
+  "relu": false
+ },
  "Exemple chiffré": {
   "texte": "Kɩɖaʋ kɩdɛɛka",
   "relu": false
@@ -2769,10 +2757,6 @@
  },
  "Exporter les 15 recommandations (CSV)": {
   "texte": "Pɩsɩ nɛ ŋna-ɩ tɔm pɔzʋʋ:",
-  "relu": false
- },
- "FORMATION": {
-  "texte": "Tayɩ Tayɩ",
   "relu": false
  },
  "Faible": {
@@ -2923,10 +2907,6 @@
   "texte": "Tʋma ɖɩlaɖɛ nɛ a-taa wobu",
   "relu": false
  },
- "INSEED et les leviers à leur dernière observation : auto-écoles de 2021-2022, état du réseau relevé en 2020. Ils ne chiffrent aucun coût, et ne prêtent aux actions aucun effet sur les accidents : les données ne permettent pas de le mesurer.": {
-  "texte": "Pɩnaɣ 2021-2022 taa tɛtʊ ndʊ tɩ-yɔɔ paɖʊʊ tʊmɩyɛ yɔ: INSEED nɛ kɩɖaʋ ŋgʊ pakpaɣna se palɩzɩ kʊdɔŋ kpɛlɛkʊʊ yɔɔ yɔ.",
-  "relu": false
- },
  "INSEED, avec la Banque mondiale et la Commission de l’UEMOA": {
   "texte": "INSEED, nɛ kedeŋa kpeekpe banka nɛ UEMOA komina",
   "relu": false
@@ -2939,16 +2919,16 @@
   "texte": "Pɩnaɣ 1990 taa",
   "relu": false
  },
- "Immatriculations de l": {
-  "texte": "Pɩsɩ takayɩhayʋʋ",
-  "relu": false
- },
  "Immatriculations de l'année": {
   "texte": "Pɩnaɣ ŋga ka-taa pa-taa nɔɔyʋ maɣzɩ tɔm",
   "relu": false
  },
  "Immatriculations de l'année, pas le parc en circulation.": {
   "texte": "Pɩnaɣ ŋga ka-taa pa-taa nɔɔyʋ kaawɛ nɛ ɛpaɣzɩ-ɩ nʋmɔʋ lɩzʋʋ.",
+  "relu": false
+ },
+ "Immatriculations de l'année, pas parc en circulation. Ruptures de série en 1995 et 2004. Permis de 2013 non renseignés. Le parc est estimé (C), et les taux par habitant hors 2010 et 2022 reposent sur une population projetée.": {
+  "texte": "Pɩnaɣ ŋga ka-taa paayɔɔdaa lɛ, pɛfɛyɩna tɛtʊ ndʊ tɩlakɩ tʋmɩyɛ yɔ. Ɛjaɖɛ ɖɩnɛ nɖɩ ɖiwoki pɩnaɣ 1995 nɛ 2004 taa. Pɩɩwɛɛ se patɩlɩ ɛyaa mba pɔyɔɔdɩɣ kɩlɛmɩŋ ɛnɩ ɛlɛ palɩzɩ paɣtʋ ndʋ ɖooo 2013 ñɩŋga taa.",
   "relu": false
  },
  "Immatriculations et permis, 1990": {
@@ -3135,8 +3115,20 @@
   "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ pɔcɔŋna yɔ lɛ se: paapɩzɩɣ nɛ palɩzɩ tɔm ndʋ tɩlɩnɩ kediɣzisi taa.",
   "relu": false
  },
+ "L'accès rural est estimé : avec la population rurale supposée répartie uniformément dans chaque préfecture, ou placée par la grille de population WorldPop 2020 (carreaux de 100 m). Les deux mesures sont affichées ; la seconde est la plus fine, mais la grille est elle-même un modèle.": {
+  "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa ɛyaa mba pɛwɛ tɛtʋ taa yɔ, pɔcɔna nɛ pana se pɛwɛnɩ waɖɛ nɖɩ. Paɣtʋ ndʋ tɩlɩnɩ tɔm susuu tʋmɩyɛ ɖɩlaɖɛ naɖɩyɛ yɔɔ yaa paɣtʊ takayaɣ ŋga payaɣ size WorldPop 2020 yɔ kɔ-yɔɔ.",
+  "relu": false
+ },
+ "L'activité des auto-écoles n'est pas publiée": {
+  "texte": "Paapɩzɩɣ patɩlɩ nʋmɔʋ lɩzʋʋ sukuli tʋmɩyɛ",
+  "relu": false
+ },
  "L'estimation de l'OMS ne corrige pas les tués déclarés.": {
   "texte": "WHO ñɩɣ niye se ɛyaa mba pasɩba yɔ, patɩpɩzɩ nɛ pala mbʋ.",
+  "relu": false
+ },
+ "L'horizon 2029": {
+  "texte": "Pɩnaɣ 2029",
   "relu": false
  },
  "L'énoncé est vérifié, sauf « les accidents augmentent », qui est": {
@@ -3145,6 +3137,10 @@
  },
  "L'état du réseau routier": {
   "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ lɛ, nʋmɔʋ ŋgʋ kɩ-taa palakaɣ tʋmɩyɛ yɔ, kɩwɛɛ kɩ-taa.",
+  "relu": false
+ },
+ "L'état du réseau vient d'un relevé de 2020": {
+  "texte": "Pɩnaɣ 2020 ñɩŋga taa lɛ, ɖɩlɩnɩ tɔm susuu taa nɛ ɖɩna ɛzɩma lone nɖɩ ɖɩwɛɛ yɔ.",
   "relu": false
  },
  "La campagne PRISE a relevé le personnel, l’activité, les horaires et les véhicules de 272 auto-écoles, sans les publier. Ces données diraient lesquelles fonctionnent, et vérifieraient le manque dans les 23 préfectures sans auto-école agréée.": {
@@ -3171,12 +3167,8 @@
   "texte": "Pɩtɩkɛ hɔɔlʋʋ ŋgʋ kɩ-taa pakpakɩɣ kɩ-tɩ yɔ kɩ-cɔlɔ pɔkɔŋna nɛ pɔkɔŋna kɩ-tɩ.",
   "relu": false
  },
- "La grille de population WorldPop, recensée seulement à l": {
-  "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa ɛyaa kɩlɩ ɖɔʊ yɔ WorldPop.",
-  "relu": false
- },
- "La grille place la population là où elle vit, au lieu de l'étaler sur toute la préfecture : l'accès monte partout. Les Plateaux restent sous la médiane dans les deux mesures.": {
-  "texte": "Piyele nɛ tɛʋ ŋgʋ kɩ-taa ɛyaa wɛ yɔ, pacaɣ ɖenɖe pɔcɔŋna yɔ. Pɩtɩkɛ egeetiye nɖɩ ɖɩtɩŋa payɩ taa lɛ pɛwɛɛ mbʋ pʋyɔɔ yɔ pɩhaɣ waɖɛ se patɩŋ paa le.",
+ "La grille localise la population là où elle vit réellement : l'accès rural mesuré est plus élevé partout. Les Plateaux restent sous la médiane dans les deux mesures. La zone cumulant les deux retards d'accès est la Centrale (mesure uniforme) ou les Savanes (mesure par grille).": {
+  "texte": "Ɛjaɖɛ nɖɩ ɖɩ-taa ɛyaa wɛɛ nɛ pacaɣ wezuu siŋŋ yɔ: tɛtʊ tʊmɩyɛ taa lɛ, panaɣ se paa le pɛwɛɛ.",
   "relu": false
  },
  "La mobilité et la sécurité routière au Togo : où en est-on ?": {
@@ -3207,8 +3199,16 @@
   "texte": "Ɛyaa mba pa-tɩŋa pa-lɩmaɣza wɛna yɔ.",
   "relu": false
  },
+ "La population en âge de conduire ne se raccorde pas": {
+  "texte": "Ɛyaa mba pɛwɛnɩ pɩnzɩ sakɩyɛ se pɔcɔŋnɩ lɔɔɖɩyɛ yɔɔ yɔ, pa-taa nɔɔyʋ ɛɛpɩzɩɣ nɛ ɛyɔɔdɩnɩ-ɩ",
+  "relu": false
+ },
  "La population projetée est appliquée à chaque levier : combien faudra-t-il ajouter dans 1, 3 et 5 ans, et que demande la cible internationale de sécurité routière.": {
   "texte": "Ɛyaa mba pɔcɔŋnɩ pɔ-yɔɔ yɔ, pa-taa paa weyi lɛ, ɛpɩzɩɣ nɛ ɛtɩlɩ ɛzɩma pɩpɔzʋʋ se ɛpaɣzɩ labʋ pɩnzɩ 1, 3 nɛ 5 taa yɔ nɛ tɔm ndʋ payaɣ se International Road Safety Target yɔ.",
+  "relu": false
+ },
+ "La population rurale est localisée par la grille WorldPop (carreaux de 100 m), et non répartie uniformément par préfecture : l'accès rural et le placement des auto-écoles (page Horizon 2031) en dépendent. Source ajoutée après l'inventaire initial ; empreinte dans sources_A1.csv.": {
+  "texte": "Ɛjaɖɛ nɖɩ ɖɩ-taa ɛyaa kɩla ɖɔʊ yɔ, payaɣ se WorldPop (m 100 m) ñɩɣlɩyɛ nɛ pɩtɩkɛ ajɛya kpeekpe taa paɣtʊ ndʊʊ: piɖeni nʋmɔʋ lɩzʋʋ sukuli kɩtɛzʊʊ yɔɔ yaa pɔɔyɩtʊ lɩŋgamʋʋ cɔlɔ (Horizon 2031 lone).",
   "relu": false
  },
  "La population tient surtout à Agoè-Nyivé, pour peu de km. L’état date d’un relevé de 2020.": {
@@ -3233,10 +3233,6 @@
  },
  "La zone qui cumule les deux retards : accès à la route et formation": {
   "texte": "Kpaagbaa ana a-naalɛ: nʋmɔʋ lɩzʋʋ waɖɛ nɛ sukuli",
-  "relu": false
- },
- "La zone qui cumule les deux retards est la Centrale dans la première mesure et les Savanes dans la seconde.": {
-  "texte": "Lone nɖɩ ɖɩ-taa pacaɣ yɔ, kajalaɣ lone taa lɛ Central nɛ naalɛ ñɩnɖɛ taa lɛ Savanes.",
   "relu": false
  },
  "Langue": {
@@ -3267,10 +3263,6 @@
   "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-taa",
   "relu": false
  },
- "Le classement est stable si aucun test ne change plus de 2 des 10 premières. Toujours en tête : Danyi, Blitta, Agou, Tchamba, Bassar, Oti, Bas-Mono. Les moins sûres : Est-Mono et Oti-Sud (4 tests sur 6), Tchaoudjo (3 sur 6).": {
-  "texte": "Pɩwɛɣ ɖeu se ɖɩtɩlɩ se ye ɖɩtatasɩ labʋ takayɩsɩ nasɩyɩ yɔ, ɖɩ-taa naalɛ wɛna 10 ñɩnzɩ taa nɛ pɩtasɩɣ lɛɣzɩtʋ.",
-  "relu": false
- },
  "Le classement tient-il ?": {
   "texte": "Pɩwɛɣ ɖeu se ɖɩmaɣzɩnɩ-ɩ?",
   "relu": false
@@ -3281,6 +3273,10 @@
  },
  "Le corridor de la RN1 ne devient pas une cible commune d’entretien et de contrôle": {
   "texte": "Lone nɖɩ ɖɩ-taa palakaɣ tʋmɩyɛ yɔ, ɖɩ-taa paayɔɔdʋʋ-ɖɩ nɛ pɔñɔɔzɩ-ɖɩ.",
+  "relu": false
+ },
+ "Le coût des actions n'est pas dans les données": {
+  "texte": "Pɩtɩkɛ tɔm ndʋ tɩlɩnɩ liidiye nɖɩ ɖɩ-taa paahɛyɩɣ yɔ tɩ-taa.",
   "relu": false
  },
  "Le curseur est masqué dans cette maille : les seuils y sont les médianes des 6 zones, tracées en pointillé. À droite de la ligne rouge, le réseau est dégradé ; sous la ligne verte, l'offre de formation est faible.": {
@@ -3321,6 +3317,10 @@
  },
  "Le nombre laisse les 23 préfectures sans auto-école agréée toutes à zéro ; la distance les distingue : de 11,0 km (Agou) à 84,0 km (Oti-Sud). Ligne rouge : seuil de 10 km. Barre bleu foncé : aucune auto-école agréée. Le chiffre, au bout de la barre, prend la couleur de son palier de dix kilomètres.": {
   "texte": "Pa-taa 23 taa lɛ, pɛfɛyɩnɩ sukuli sukuli ŋgʋ kɩha-wɛ nʋmɔʋ yɔ kɩ-taa. Pɩɩwɛ ɛzɩ kilomɛtanaa 11.0 (Agou) nɛ 84.0 (Oti-Sud) yɔ.",
+  "relu": false
+ },
+ "Le parc de véhicules en circulation n'est pas publié": {
+  "texte": "Paayɔɔdʋʋ ɛyaa mba pɔɖɔŋ nʋmɔʋ taa yɔ",
   "relu": false
  },
  "Le parc immatriculé a": {
@@ -3387,6 +3387,10 @@
   "texte": "Kpaagbaa hiu kajalaɣ ñɩŋgʋ",
   "relu": false
  },
+ "Les 10 premières préfectures en priorité": {
+  "texte": "Kpaagbaa 10 wena a-tɔm kɩlɩ cɛyʋʋ yɔ",
+  "relu": false
+ },
  "Les 17 vérifications et hypothèses": {
   "texte": "17 Tɔm ndʋ ɖɩkpɛlɩkɩɣ nɛ ɖɩmaɣzɩɣ yɔ",
   "relu": false
@@ -3407,8 +3411,8 @@
   "texte": "Lɩmaɣza wena awɛ kajalaɣ ñɩŋgʋ yɔ, a-taa naadozo lɛ tɔm kɩfatʋ ndʋ tɩlɩnɩ takayɩsɩ nzɩ sɩkpɛlɩkɩɣ ɛyaa mba paawɛ peeɖe yɔ pɔ-yɔɔ.",
   "relu": false
  },
- "Les 3 taux du cadre, puis les 3 compléments à l": {
-  "texte": "Lɩmaɣza ana a-yɔɔ lɛ, paɖaɣnɩ tɩŋnʋʋ nɛ paɖaɣnɩ-wɛ tɩŋnʋʋ.",
+ "Les 3 taux du cadre, puis les 3 compléments à l'énoncé.": {
+  "texte": "Pɩtasɩ lɛ, pɩpɔzʋʋ se ɖɩkpaɣ lɩmaɣza wena a-yɔɔ ɖɩyɔɔdʋʋ yɔ nɛ ɖɩkpaɣ lɩmaɣza wena a-yɔɔ ɖɩyɔɔdʋʋ yɔ.",
   "relu": false
  },
  "Les 39 fiches préfectures": {
@@ -3431,12 +3435,12 @@
   "texte": "Kpaagbaa kagbanzɩ:",
   "relu": false
  },
- "Les 5 régions sont tracées en couleur sur toutes les couches (Maritime, Plateaux, Centrale, Kara, Savanes). Survolez une préfecture pour sa zone, sa région, sa population, ses auto-écoles agréées et l'état de son réseau.": {
-  "texte": "Hɔɔlɩŋ weyi ɩ-taa pɔcɔŋnɩ tɛtʊ natʊyʊ yɔɔ yɔ, pɩlɩna hɔɔlʊʊ kpeekpe taa (Maritime, Plateaux, Centrale, Kara, Savanes).",
+ "Les 5 régions sont tracées en couleur ; l'agrandissement montre la région Maritime et le Grand Lomé. Molette ou barre d'outils pour zoomer.": {
+  "texte": "Hɔɔlɩŋ 5 taa lɛ, pɔcɔŋnɩ hɔɔlɩŋ weyi ɩ-yɔɔ yɔ ɩ-yɔɔ nɛ patɩlɩ-wɛ nɛ hɔɔlɩŋ weyi ɩ-taa pɔcɔŋna yɔ ɩ-taa: Maritime nɛ Grand Lomé.",
   "relu": false
  },
- "Les 5 régions sont tracées en couleur. Molette ou barre d": {
-  "texte": "Hɔɔlɩŋ loɖo taa lɛ, pɔcɔŋnɩ hɔɔlʊʊ ŋgʊ kɩ-yɔɔ.",
+ "Les 5 régions sont tracées en couleur sur toutes les couches (Maritime, Plateaux, Centrale, Kara, Savanes). Survolez une préfecture pour sa zone, sa région, sa population, ses auto-écoles agréées et l'état de son réseau. Les filtres de la barre latérale (zone, priorité, levier) gardent en couleur les préfectures choisies ; les autres passent en beige.": {
+  "texte": "Lɩmaɣza wena a-yɔɔ pɔcɔŋna yɔ, awɛ: tɛtʊ natʊyʊ taa lɛ paɖʊʊ tʊmɩyɛ naɖɩyɛ nɛ pɔɔyɩsɩ nzɩ sɩwɛ lɩm hɔɔlɩŋ kpeekpe yɔɔ (Maritime, Plateaux, Centrale, Kara, Savanes).",
   "relu": false
  },
  "Les 6 taux : 2010": {
@@ -3459,12 +3463,12 @@
   "texte": "Kʋɖɔɔnaa 84 nɛ ɛzɩma pɛwɛna yɔ",
   "relu": false
  },
- "Les Savanes et la Maritime hors Grand Lomé ont le moins d’auto-écoles par habitant : 0,35 et 0,37 pour 100 000 habitants. 8 de leurs préfectures n’en ont aucune agréée : 15 auto-écoles à ouvrir en premier, après vérification. 2 490 135 habitants concernés.": {
-  "texte": "Ɛjaɖɛ nɖɩ ɖɩ-taa ɛyaa kɩla ɖɔʊ yɔ: Savanes nɛ Maritime pɛfɛyɩna sukuli sɔsɔŋ sakɩyɛ. Ɛyaa mba pɛwɛ peeɖe lɛ, paɖuwaɣ pɔyɔɔdʊʊ lɔɔɖɩyɛ taa ɛzɩ 0.35 yaa 0.37 paa 100 000 ɛyʊ weyi.",
+ "Les Savanes": {
+  "texte": "Payaɣ-wɛ se Savanne",
   "relu": false
  },
- "Les Savanes sont un cas limite pour la route : 16,9 %, pour 17,2 % dans le pays.": {
-  "texte": "Savanes tɛtʊ taa lɛ, nʋmɔʋ lɩzʋʋ nʋmɔʋ taa lɛ, ɛyaa kɩlɩna ɖɔʊ: 16.9%, piyele nɛ ɛjaɖɛ kpeekpe taa lɛ, ɛyaa kɩlɩna ɖɔʊ 17.2%.",
+ "Les Savanes et la Maritime hors Grand Lomé ont le moins d’auto-écoles par habitant : 0,35 et 0,37 pour 100 000 habitants. 8 de leurs préfectures n’en ont aucune agréée : 15 auto-écoles à ouvrir en premier, après vérification. 2 490 135 habitants concernés.": {
+  "texte": "Ɛjaɖɛ nɖɩ ɖɩ-taa ɛyaa kɩla ɖɔʊ yɔ: Savanes nɛ Maritime pɛfɛyɩna sukuli sɔsɔŋ sakɩyɛ. Ɛyaa mba pɛwɛ peeɖe lɛ, paɖuwaɣ pɔyɔɔdʊʊ lɔɔɖɩyɛ taa ɛzɩ 0.35 yaa 0.37 paa 100 000 ɛyʊ weyi.",
   "relu": false
  },
  "Les accidents augmentent": {
@@ -3479,12 +3483,16 @@
   "texte": "Ɛyaa mba pasɩba nɛ pasɩba yɔ",
   "relu": false
  },
- "Les accidents ne sont publiés qu": {
-  "texte": "Pɩtɩkɛ aleɣya tɔm ɖeke pɔyɔɔdʋʋ",
+ "Les accidents ne sont publiés qu'au niveau national": {
+  "texte": "Pɩtɩkɛ ajɛɛ kpeekpe yɔɔ ɖeke pasɩɣ tɔm susuu",
   "relu": false
  },
- "Les accidents ne sont publiés que pour tout le pays. L": {
-  "texte": "Pɩkɛ ɛjaɖɛ kpeekpe yɔɔ tɔm susuu ɖeke.",
+ "Les accidents ne sont publiés qu'au niveau national. Les volumes et les taux portent sur les accidents déclarés par la police et la gendarmerie, pas sur l'ensemble des accidents. Les taux par véhicule dépendent d'un parc estimé. Le coût des actions n'est pas dans les données.": {
+  "texte": "Pɩtɩkɛ ɛyaa mba pɔɖɔŋaɣ nʋmɔʋ taa yɔ, pa-taa nabɛyɛ yɔɔdɩ mbʋ pɩlaba yɔ. Pa-taa nabɛyɛ yɔɔdɩ mbʋ pɩlaba yɔ, pɩ-tɔm.",
+  "relu": false
+ },
+ "Les accidents ne sont publiés que pour tout le pays. L'activité des auto-écoles n'est pas publiée. Le coût des actions est absent. Chaque manque est écrit, jamais comblé par une hypothèse.": {
+  "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ lɛ, tɔm ndʋ tɩlɩnɩ ɛjaɖɛ kpeekpe yɔɔ yɔ. Paayɔɔdʋʋ nʋmɔʋ lɩzʋʋ sukuli ŋgʋ kɩlakɩ tʋmɩyɛ peeɖe yɔ nɛ pataalakɩ takayɩsɩ mbʋ pɩpɔzʋʋ se pɔcɔnɩ kʋdɔmɩŋ weyi ɩwɛ tɛtʋ taa yɔ ɩ-tɔm.",
   "relu": false
  },
  "Les accidents ne sont publiés qu’au niveau national : 7 507 accidents et 683 tués en 2022, sans préfecture, mois, âge ni véhicule. Cette base permettrait de croiser risque et territoire, et de trancher 7 questions que les données laissent ouvertes.": {
@@ -3559,20 +3567,24 @@
   "texte": "Piya evelisi mba pɔcɔŋnɩ lɔɔɖɩyɛ yɔɔ yɔ (18",
   "relu": false
  },
- "Les km de route par habitant baissent quand la densité monte : l": {
-  "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ lɛ, ɛyaa mba palakaɣ nʋmɔʋ lɩzʋʋ tʋmɩyɛ yɔ, pa-taa sakɩyɛ taa lɛ, palakaɣ nʋmɔʋ lɩzʋʋ tʋmɩyɛ.",
+ "Les km de route par habitant baissent quand la densité monte : l'accès rural dit mieux qui est loin de la route.": {
+  "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ lɛ, paa ɛyʋ weyi ɛpɩzɩɣ nɛ ɛtɩŋnɩ nʋmɔʋ ŋgʋ kɩ-taa yɔ.",
   "relu": false
  },
  "Les km sont inscrits dans chaque segment ; la part en mauvais état se lit au bout de la barre, en rouge pour les zones au-dessus de la médiane. Centrale : 40,3 %, la part la plus forte. Détail par tronçon en page Carte.": {
   "texte": "Paɖʋwa se paa hɔɔlʋʋ ŋgʋ kɩ-taa lɛ, pɔcɔŋnɩ kilomɛtanaa (km) yɔɔ; pʊtʊ weyi ɛfɛyɩ ɖeu yɔ ɛnɩɣ pɩ-tɛ taa.",
   "relu": false
  },
- "Les km évalués sont écrits à côté de la part : le taux ne dit pas le volume. Danyi est en tête avec 100 % de km en mauvais état, sur 49,8 km évalués, pour 40 240 habitants. Les 10 premières comptent 1 416 859 habitants ; ni le Golfe ni Agoè-Nyivé n": {
-  "texte": "Kiloo waa mba pɔcɔna yɔ, pama-wɛ hɔɔlʋʋ ŋgʋ kɩ-cɔlɔ: pɛ-wɛtʋ tɩwɩlɩɣ ɛzɩma pɔcɔna yɔ. Danyi wɛna kajalaɣ lone nɖɩ ɖɩ-taa nɛ kɩwɛna ɛzɩ kilomɛtanaa 100 mbʋ yɔ, pɩtalɩ ɛzɩ kilomɛtanaa 49.8 mbʋ yɔ.",
+ "Les km évalués sont écrits à côté de la part : le taux ne dit pas le volume. Danyi est en tête avec 100 % de km en mauvais état, sur 49,8 km évalués, pour 40 240 habitants. Les 10 premières comptent 1 416 859 habitants ; ni le Golfe ni Agoè-Nyivé n'en font partie.": {
+  "texte": "Ɛjaɖɛ nɖɩ ɖɩ-taa ɛyaa kɩlɩ ɖɔʊ yɔ, pɛwɛɛ ɛzɩ kilomɛtanaa 40 240 mbʋ yɔ. Ɛyaa 10 mba paawɛ kajalaɣ lone taa lɛ patalɩ 1 416 859, nɛ Golfu yaa Agoé Nivé tɛtʊ tɩkɛna hɔɔlʋʋ nakʋyʋ.",
   "relu": false
  },
  "Les leviers restent à leur dernière observation : auto-écoles de 2021-2022, état du réseau relevé en 2020. Seule la population avance.": {
   "texte": "Pɩnaɣ 2021-2022 ñɩŋga taa lɛ, ɛyaa mba pɛɖɛɣ ɛsɩndaa yɔ pe-ɖeke pɔɖɔŋaɣ.",
+  "relu": false
+ },
+ "Les moins sûres": {
+  "texte": "Ɛyaa mba paatasɩ wɛnʋʋ tɩ luzuu yɔ",
   "relu": false
  },
  "Les motos portent la hausse": {
@@ -3603,6 +3615,10 @@
   "texte": "Lɩm sɔsɔm mbʋ pɩlɩna Lomé lɔɔɖa tɛ nɛ kiŋ yɔ, piyeba se pʊtʊ ɛnɩ ɩwɛɛ kɩ-taa.",
   "relu": false
  },
+ "Les quantités d'ici 2031 sont des estimations": {
+  "texte": "Pɩnaɣ 2031 taa lɛ, ɛyaa maɣzɩɣ se pɩkaɣ labʋ ɛzɩma.",
+  "relu": false
+ },
  "Les quantités des recommandations de zone sont déjà comptées dans les leviers : elles ne s'additionnent pas.": {
   "texte": "Tɔɔnaɣ ŋga ka-taa palakaɣ tɔɔnaɣ yɔ, ka-taa lɛ, paɖaɣnɩɣ-kɛ kpaɣʋ nɛ paɖaɣnɩ-kɛ kpaɣʋ.",
   "relu": false
@@ -3619,10 +3635,13 @@
   "texte": "Tɔm ndʋ tɩ-taa lɛ, tɔm ndʋ tɩ-taa paayɔɔdaa yɔ, tɩ-taa",
   "relu": false
  },
+ "Les recommandations en C": {
+  "texte": "Lɔŋ tasʋʋ C",
+  "relu": false
+ },
  "Les taux de 2023 et 2024 dépendent de ce saut ; leur niveau de preuve reste C. L’annexe garde le niveau du recensement et la seule croissance des projections : 4 193 458 habitants de 18 ans et plus en 2022, 5 398 017 en 2031. Le document 07 n’est pas corrigé : aucun de ses calculs n’est faux": {
-  "texte": "",
-  "relu": false,
-  "suspect": true
+  "texte": "Pɩnaɣ 2023 nɛ pɩnaɣ 2024 pa-taa lɛ, pɩlɩna kpaagbaa ŋga ka-yɔɔ. Paɣtʋ ñɩndʋ ndʋ tɩwɛɛ ɖɔɖɔ ɛzɩ C yɔ. Takayɩhatʋ taa pʊtɔbʊʊ se ɛyaa kɩkpɛndɩ 4 193 458 mba pɛwɛnɩ pɩnzɩ 18 yaa ɛɖɛwa yɔ: 2022, 5 398 017 pɩnaɣ 2031.",
+  "relu": false
  },
  "Les territoires": {
   "texte": "Tɛtʋ ndʋ tɩ-taa",
@@ -3640,8 +3659,8 @@
   "texte": "Paɖʋʋ tɛtʋ ndʋ tɩ-taa ɛyaa wɛɛ yɔ kɩ-taa nɛ pakpaɣ-tʋ nɛ pɔñɔɔzʋʋ-tʋ. Pʋwayɩ lɛ, pakpaɣ tɛtʋ ndʋ pɔñɔɔzaa yɔ nɛ pɔñɔɔzʋʋ-tʋ.",
   "relu": false
  },
- "Les tués par type d": {
-  "texte": "Ɛyaa mba pa-taa nɔɔyʋ sɩba yɔ, pa-tɩŋa pa-taa nɔɔyʋ sɩba",
+ "Les tués par type d'usager, 2021": {
+  "texte": "Pɩnaɣ 2021 taa ɛyaa mba pakpa-wɛ yɔ, pa-taa kʋɖʋm kʋɖʋm",
   "relu": false
  },
  "Les zones en difficulté": {
@@ -3696,8 +3715,8 @@
   "texte": "Hɔɔlʋʋ kʋnɛ kɩ-taa",
   "relu": false
  },
- "Limite de l": {
-  "texte": "Lɩmaɣzɩyɛ",
+ "Limite de l'accès rural": {
+  "texte": "Pɩcɛyaa se ɛyaa ɩpɩzɩ nɛ panɩɩ tɔm ndʋ tɩ-taa.",
   "relu": false
  },
  "Limites administratives du Togo (COD-AB)": {
@@ -3706,6 +3725,10 @@
  },
  "Limites analytiques": {
   "texte": "Tʋma ana a-taa lɛ,",
+  "relu": false
+ },
+ "Limites de cette page": {
+  "texte": "Takayɩhatʋ ndʋ tɩwɛ pɩ-tɛɛ yɔ tɩwɛna kpasɩ",
   "relu": false
  },
  "Limites majeures": {
@@ -3812,20 +3835,12 @@
   "texte": "Kɩdɛkɛdɩm mbʋ pɩtalɩ-wɛ yɔ",
   "relu": false
  },
- "Mesuré avec une grille de population, l": {
-  "texte": "Paɖaɣnɩ-ɩ kpaɣʋ ɛyaa mba pɛwɛ peeɖe yɔ, nɛ paɖaɣnɩ-ɩ kpaɣʋ ɛyaa mba pɛwɛ peeɖe yɔ.",
-  "relu": false
- },
  "Mesuré avec une grille de population, l'accès rural change de lecture : les Savanes passent sous la médiane et la Centrale au-dessus. La Centrale garde la première place : elle reste la zone au réseau le plus dégradé, et sa formation ne change pas. Les deux mesures sont en page Méthodologie.": {
   "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa lɛ, ɖɩ-tɛtʊ sɔsɔtʊ wɛna ɛyaa sakɩyɛ nɛ ɖɩ-tɛtʊ sɔsɔtʊ wɛna ɛyaa sakɩyɛ nɛ ɖɩ-tɛtʊ sɔsɔtʊ wɛna ɛyaa sakɩyɛ.",
   "relu": false
  },
  "Ministère chargé des transports, auto-écoles": {
   "texte": "Lɔɔɖɩyɛ nɖɩ ɖɩ-taa palakaɣ tʊmɩyɛ yɔ, ɖɩ-taa palakaɣ tʊmɩyɛ nɛ palakɩnɩ tʊmɩyɛ.",
-  "relu": false
- },
- "Ministère de l": {
-  "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-hɛkʊ taa",
   "relu": false
  },
  "Ministère de l'Efficacité du Service Public et de la Transformation Numérique": {
@@ -3936,8 +3951,8 @@
   "texte": "Mo tɛtʊ ndʊ tɩ-taa lɔɔɖa fɛyɩ yɔ: Prefekturɩ 38 nɛ 39.",
   "relu": false
  },
- "Mô, hors classement": {
-  "texte": "Mo, pɩtaatalɩ-ɩ",
+ "Mô, hors class.": {
+  "texte": "Mo, ŋtɩkɛ sukuli taa tʋ.",
   "relu": false
  },
  "Mô, hors classement, n’a aucune route classée : ni état, ni km évalué, et une desserte nulle. Elle n’a aucune auto-école, ni agréée ni recensée, pour 52 448 habitants, à 52,2 km de la plus proche.": {
@@ -3946,10 +3961,6 @@
  },
  "Namoundjoga": {
   "texte": "Pɩsɩ nɛ ŋna-ɩ:",
-  "relu": false
- },
- "National": {
-  "texte": "Ɛjaɖɛ kpeekpe yɔɔ",
   "relu": false
  },
  "Nations unies, Division de la population": {
@@ -4068,16 +4079,8 @@
   "texte": "OCHA / HDX, ɛzɩ GAUL (FAO) yɔ",
   "relu": false
  },
- "OMS": {
-  "texte": "OMS",
-  "relu": false
- },
  "OMS (profil du Togo)": {
   "texte": "OMS (Togo ɛjaɖɛ kɩfaɖɛ)",
-  "relu": false
- },
- "OMS, 2021": {
-  "texte": "WHO, pɩnaɣ 2021",
   "relu": false
  },
  "Objet": {
@@ -4168,8 +4171,8 @@
   "texte": "Le pɩwɛɛ se ɖɩpaɣzɩ?",
   "relu": false
  },
- "Par région : Centrale, puis Plateaux, Savanes, Kara et Maritime. La Centrale est en tête dans les deux lectures.": {
-  "texte": "Ɛjaɖɛ nɖɩ ɖɩ-taa: Central, pʋwayɩ lɛ Plateaux, Savanes, Kara nɛ Maritime.",
+ "Par région": {
+  "texte": "Tɛtʋ ndɩ ndɩ",
   "relu": false
  },
  "Parc estimé": {
@@ -4412,8 +4415,8 @@
   "texte": "Kʋñɔŋ sɔsɔŋ",
   "relu": false
  },
- "Points d": {
-  "texte": "Tɛtʊ ndʊ tɩ-taa",
+ "Points d'attention": {
+  "texte": "Tɔm ndʋ pɩwɛɛ se ɖɩtɩlɩ yɔ",
   "relu": false
  },
  "Points de %": {
@@ -4600,8 +4603,8 @@
   "texte": "Tɛtʊ ndʊ tɩ-taa tɛtʊ ndʊ tɩ-taa tɛtʊ ndʊ tɩwɛɛ yɔ",
   "relu": false
  },
- "Préfectures loin d": {
-  "texte": "Kedeŋa kpeekpe taa tɛtʊ sɔsɔtʊ",
+ "Préfectures loin d'une auto-école": {
+  "texte": "Lone nɖɩ ɖɩ-taa palakaɣ nʋmɔʋ lɩzʋʋ sukuli yɔ, ɖɩ-taa yɔ",
   "relu": false
  },
  "Préfectures qui cumulent": {
@@ -4650,6 +4653,10 @@
  },
  "Publié pour tout le pays seulement.": {
   "texte": "Pɩkɛ ɛjaɖɛ kpeekpe yɔɔ takayaɣ ɖeke.",
+  "relu": false
+ },
+ "Qu'est-ce qui change, et que confirment les données ?": {
+  "texte": "Ɛbɛ lɛɣzɩ nɛ ɛzɩma kɩɖaʋ ŋgʋ kɩwɩlɩɣ?",
   "relu": false
  },
  "Quantité": {
@@ -4806,7 +4813,7 @@
  },
  "RN33 AGOU GADJEPE(RN5)-AGOTIME-FRE GHANA": {
   "texte": "RN33 AGOU GADJEPE(RN5)-AGOTIME-FRE GHANA",
-  "relu": false
+  "relu": true
  },
  "RN35 AKOUMAKPE-TCHEKPO": {
   "texte": "RN35 AKOUMAKPE-TCHEKPO",
@@ -4908,8 +4915,12 @@
   "texte": "Tɔɔnaɣ ŋga ka-taa",
   "relu": false
  },
- "Recommandations en C : vérifier avant d": {
-  "texte": "C-taa lɔŋ tasʋʋ: yele nɛ ɖɩna pʋcɔ nɛ ɖɩpaɣzɩ",
+ "Recommandations par estimation : vérifier avant d'investir ; pas d'accidents par territoire ; le coût n'est pas dans les données. Le détail par horizon, zone et préfecture est en page Horizon 2031.": {
+  "texte": "Tɔɔnaɣ ŋga ka-taa lɛ, kɩɖaʋ ŋgʋ kɩ-tɔm kɩlɩ cɛyʋʋ yɔ, kɩ-taa lɛ se: ŋtɩlɩ nɛ ŋna pʋcɔ nɛ ŋhɛyɩ liidiye naɖɩyɛ. Pɩtaalabɩ-ŋ kaɖɛ se ŋkpaɣ liidiye naɖɩyɛ nɛ ŋhɛyɩ liidiye naɖɩyɛ.",
+  "relu": false
+ },
+ "Referer": {
+  "texte": "Ñɩɣ niye",
   "relu": false
  },
  "Remettre en état 113,6 km et ouvrir 6 auto-écoles en premier": {
@@ -4948,8 +4959,8 @@
   "texte": "Ñɩɣyɩŋ:",
   "relu": false
  },
- "Repères de l": {
-  "texte": "Lɩmaɣza wena a-yɔɔ pɩlɩna yɔ",
+ "Repères de l'exploration. Ils ne sont pas des seuils de décision et ne changent pas le classement.": {
+  "texte": "Pɩtɩkɛ lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ pɩwɛɛ se ɖɩkpaɣ lɩmaɣza nɛ ɖɩlɛɣzɩ lone nɖɩ ɖɩ-taa ɖɩwɛɛ yɔ.",
   "relu": false
  },
  "Route nationale non revêtue": {
@@ -4976,8 +4987,8 @@
   "texte": "Ɛjaɖɛ nɖɩ ɖɩ-taa ɛyaa kɩlɩ ɖɔʊ yɔ, pɩnaɣ 1995 nɛ 2004 ñɩŋga taa.",
   "relu": false
  },
- "Ruraux loin d": {
-  "texte": "Tɛtʋ ndʋ tɩwɛ poliŋ taa yɔ",
+ "Ruraux loin d'une route": {
+  "texte": "Tɛtʋ ndʋ tɩ-taa ɖɩwɛɛ yɔ, tɩwɛ kaɖaɣ ka-taa",
   "relu": false
  },
  "Ruraux à plus de 2 km": {
@@ -4988,8 +4999,8 @@
   "texte": "Tɛtʋ ndʋ tɩwɛ pɩ-taa yɔ: 4 401 312.",
   "relu": false
  },
- "RÉSEAU": {
-  "texte": "Tayɩ Tayɩ",
+ "Règle": {
+  "texte": "Lɩmaɣzɩyɛ",
   "relu": false
  },
  "Région": {
@@ -5012,8 +5023,8 @@
   "texte": "Teŋgu hɔɔlʋʋ",
   "relu": false
  },
- "Région Maritime (5e des 5 régions) : avec le Grand Lomé, elle ne franchit que le seuil de la desserte (1,79 km pour 10 000 habitants). Son offre (3,06 auto-écoles pour 100 000 habitants) cache celle de la Maritime hors Grand Lomé (0,37). Les 4 autres régions sont les zones du même nom.": {
-  "texte": "Tɛtʊ tʊnɛ tɩ-taa tɛtʊ natʊyʊ (kpaŋ kagbanzɩ) kɛna lone nɖɩ payaɣ se Lomé Sɔsɔʋ yɔ, ɖɩɖɛɣ ɛzɩ keteŋa ŋga ka-walanzɩ ɖɔkɩyaa kɩlɩnaa yɔ (1.79 km paa ɛyaa 10 000).",
+ "Région Maritime (5": {
+  "texte": "Teŋgu hɔɔlʋʋ (5)",
   "relu": false
  },
  "Région Maritime et Grand Lomé, agrandi": {
@@ -5108,10 +5119,6 @@
   "texte": "Ñɔɔzɩtʋ:",
   "relu": false
  },
- "S'y ajoutent les 3 compléments à l'énoncé (C) et l'accès rural à une route revêtue (C). Décompte lu dans catalogue_07.csv.": {
-  "texte": "Pɩtasɩ lɛ, pasɩɣ tɔm ndʋ tɩ-taa (C) nɛ paɖaɣnɩ-tʋ tɩŋnʋʋ nɛ paɖaɣnɩ-tʋ tɩŋʋʋ nɛ pɔñɔɔzʋʋ yɔ tɩ-yɔɔ.",
-  "relu": false
- },
  "Sans action, le taux baisse": {
   "texte": "Ye nɔɔyʋ ɛtaacɛkɩ yɔ, ɛ-wɛtʋ wɛɛ nɛ tɩtɔlʋʋ",
   "relu": false
@@ -5144,8 +5151,8 @@
   "texte": "Lɩmaɣzɩyɛ (network part + formation part)",
   "relu": false
  },
- "Score = poids du réseau × rang percentile du réseau + poids de la formation × rang percentile de la formation ; à score égal, la préfecture la plus peuplée passe devant. Valeurs de contrôle : à 50 %, le classement publié ; à 65 %, Kloto et Ogou entrent, Est-Mono et Oti-Sud sortent ; à 35 %, Haho entre et Tchaoudjo sort.": {
-  "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-taa ɛyaa kɩlɩ ɖɔʊ yɔ: 50%, ñɩɣyʊʊ ŋgá palɩzɩ; 65% taa, Kloto nɛ Ogou pasʋʋ, Est-Mono nɛ Oti-Sud lɩɣna; 35%. Haho ɛsʋʋ nɛ Chaoudjo lɩɩ.",
+ "Score = poids du réseau × rang percentile du réseau + poids de la formation × rang percentile de la formation ; à score égal, la préfecture la plus peuplée passe devant.": {
+  "texte": "Lɩmaɣzɩyɛ = tʊmɩyɛ nɖɩ ɖɩ-taa ɛyaa sakɩyɛ wɛna yɔ.",
   "relu": false
  },
  "Score décomposé : la part du réseau et la part de la formation, et la robustesse.": {
@@ -5208,6 +5215,10 @@
   "texte": "Pɩnaɣ 2007",
   "relu": false
  },
+ "Sur fond gris": {
+  "texte": "Kɩ-tɛ ñɩɣlɩm",
+  "relu": false
+ },
  "Sur la carte :": {
   "texte": "Maɣzɩ tɔm tʋnɛ tɩ-yɔɔ:",
   "relu": false
@@ -5222,10 +5233,6 @@
  },
  "Synthèse chiffrée": {
   "texte": "Kɩ-hɔɔlʋʋ ŋgʋ kɩ-taa tɔm kɩlɩ cɛyʋʋ yɔ",
-  "relu": false
- },
- "SÉCURITÉ ROUTIÈRE": {
-  "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ pɩwɛɛ se ɖɩwɛɛ yɔ",
   "relu": false
  },
  "Sécurité routière": {
@@ -5248,8 +5255,8 @@
   "texte": "Lone nɖɩ ɖɩ-taa paɖʋʋ nesi tɔm hʋyaa yɔ, ɖɩ-taa lɛ, paɖʋʋ nesi tɔm hʋyaa nɛ paɖʋʋ nesi tɔm hʋyaa.",
   "relu": false
  },
- "Tableau triable. Cliquez sur l": {
-  "texte": "Pɩsɩ nɛ ŋna-ɩ kɩlɛmʋʋ yɔɔ:",
+ "Tableau triable. Cliquez sur l'en-tête d'une colonne pour trier.": {
+  "texte": "Ŋpɩzɩɣ nɛ ŋcosi kɩlɛmʋʋ yɔɔ tɔm ñʋʋ nakʋyʋ wiye.",
   "relu": false
  },
  "Takpamba": {
@@ -5324,20 +5331,24 @@
   "texte": "Pɩtɩŋa payɩ",
   "relu": false
  },
- "Total : 641 955 habitants ; 175,6 km à remettre en état ; 9 auto-écoles à ouvrir. Déjà repérées à l": {
-  "texte": "Ɛjaɖɛ nɖɩ ɖɩ-taa ɛyaa ɛzɩ 641 955 yɔ; pɛwɛɛ nɛ pɔñɔɔzʋʋ kɩɖaʋ nakʋyʋ kɛ kilomɛtanaa 175.6 yɔɔ.",
+ "Total : 641 955 habitants ; 175,6 km à remettre en état ; 9 auto-écoles à ouvrir. Déjà repérées à l'exploration : ces 5 préfectures étaient dans le pire quart des deux dimensions.": {
+  "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa ɛyaa ɛzɩ 641 955 yɔ; pɛwɛɛ nɛ pɔñɔɔzʋʋ kɩ-tɛtʋ nɛ pɛwɛɛ nɛ pɔñɔɔzʋʋ kɩ-tɛtʋ nɛ pɛwɛɛ nɛ pɔñɔɔzʋʋ kɩ-tɛtʋ.",
   "relu": false
  },
  "Total et décomposition par catégorie": {
   "texte": "Ñʋŋ weyi ɩ-taa paɖʊʊ yɔ",
   "relu": false
  },
+ "Toujours en tête": {
+  "texte": "Lɔŋ weyi ɩ-taa ŋwɛɛ yɔ",
+  "relu": false
+ },
  "Toutes": {
   "texte": "Pa-tɩŋa",
   "relu": false
  },
- "Toutes les années ; l": {
-  "texte": "Pɩnzɩ kpeekpe taa;",
+ "Toutes les années ; l'horizon choisi est marqué.": {
+  "texte": "Paa pɩnaɣ ŋga lɛ, ŋnaɣ kɩlɛmʋʋ yɔɔ nɛ ŋnaɣ kɩlɛmʋʋ yɔɔ.",
   "relu": false
  },
  "Toutes les autres formules du cadre d'analyse": {
@@ -5352,8 +5363,8 @@
   "texte": "Kɩɖaʋ ŋgʋ kɩ-taa pɔyɔɔdɩ tɔm ndʋ yɔ",
   "relu": false
  },
- "Trait plein : observé jusqu": {
-  "texte": "Tʋma ɖɩlaɖɛ nɛ a-taa wobu:",
+ "Trait plein : observé jusqu'en 2024.": {
+  "texte": "Tɛtʊ ndʊ tɩ-taa ɛyaa sakɩyɛ wɛna yɔ: panaɣ-tʊ nɛ pɩkɔɔ pɩsɩɩnɩ pɩnaɣ 2024 taa.",
   "relu": false
  },
  "Transport en commun": {
@@ -5429,12 +5440,12 @@
   "texte": "Pakpa ɛyaa mba pasɩba yɔ (poliisi, sɔɔjanaa)",
   "relu": false
  },
- "Tués déclarés et estimation de l": {
-  "texte": "Ɛyaa mba pasɩ yɔ nɛ ɛyaa mba pasɩ yɔ pa-lɩmaɣza",
+ "Tués déclarés et estimation de l'OMS, 2021": {
+  "texte": "Ɛyaa mba pasɩyaa yɔ nɛ OMS ñɩɣlɩm, 2021",
   "relu": false
  },
- "Tués estimés par l": {
-  "texte": "Ɛyaa mba pakʋ yɔ",
+ "Tués estimés par l'OMS": {
+  "texte": "WHO ñɩnaɣ se ɛyaa mba pakʋ yɔ",
   "relu": false
  },
  "Tués pour 10 000 véhicules": {
@@ -5485,8 +5496,8 @@
   "texte": "Pɩlɩʋ kɩlɛmʋʋ yɔɔ",
   "relu": false
  },
- "Un constat frappant sur l": {
-  "texte": "Tɔm ndʋ tɩ-yɔɔ ɖɩtɔzʋʋ yɔ:",
+ "Un constat frappant sur l'état du réseau en 2020 : l'annuaire national": {
+  "texte": "Pɩnaɣ 2020 taa tɛtʊ ndʊ tɩ-yɔɔ tɔm kɩcɛyɩtʋ natʋyʋ: National Directory",
   "relu": false
  },
  "Un indicateur en C demande une vérification avant tout investissement.": {
@@ -5529,10 +5540,6 @@
   "texte": "Lɩŋgamʋʋ ŋgʋ kɩ-taa pakpakɩɣ ñɩɣyʋʋ kʋɖʋmʋm yɔ.",
   "relu": false
  },
- "Une base d'accidents par préfecture, avec le mois, l'âge et la catégorie de véhicule, rendrait ces 7 questions testables (recommandation « Créer une base d'accidents par préfecture », page Recommandations).": {
-  "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ lɛ, kɩɖaʋ ŋgʋ pɔcɔŋnɩ tɔm ndʋ yɔ.",
-  "relu": false
- },
  "Une couche à la fois, en 5 classes fixes ; l'agrandissement montre la région Maritime et le Grand Lomé, où se concentrent les auto-écoles. Molette ou barre d'outils pour zoomer.": {
   "texte": "Lone nɖɩ ɖɩ-taa ɖɩwɛɛna sukuli wena payaɣ se Maritime nɛ Grand Lomé yɔ, ɖɩ-taa.",
   "relu": false
@@ -5545,8 +5552,12 @@
   "texte": "Lone nɖɩ ɖɩ-taa palakaɣ nʋmɔʋ lɩzʋʋ tʋmɩyɛ yɔ, ɖɩ-taa kʋɖʋm koŋ: yee ɖɩsɩɣ yɔ, ɖɩ-taa nɔɔyʋ ɛɛtasɩɣ wɛʋ",
   "relu": false
  },
- "Une zone est moins bien desservie si elle est sous la médiane des zones : 16,9 % des ruraux à moins de 2 km d": {
-  "texte": "Ɛjaɖɛ nɖɩ ɖɩ-taa tɛtʊ ndʊ tɩfɛyɩ ɖeu yɔ: 16.9% ɛyaa kɩlaɣna hɔɔlɩŋ weyi ɩwɛ ɛzɩ 2 km mbʋ yɔ.",
+ "Une seule donnée manquante bloque 7 hypothèses : la localisation des accidents par préfecture (avec mois, âge et type de véhicule). Sa création est recommandée page Recommandations.": {
+  "texte": "Tɔm kʋɖʋmtʋ ndʋ tɩtɩtɔyɩ yɔ, tɩhaɣ ɛyaa waɖɛ se patɩlɩ ɖenɖe pɩlɩnaa yɔ: ɖenɖe pɩlɩnaa se pɩlɩnɩ tɛtʋ sɔsɔtʋ natʋyʋ taa (pɩnaɣ, pɩnzɩ nɛ lɔɔɖɩyɛ nɖɩ ɖɩ-taa ɖɩwɛɛ yɔ ɖɩ-yɔɔ).",
+  "relu": false
+ },
+ "Une zone est moins bien desservie si elle est sous la médiane des zones : 16,9 % des ruraux à moins de 2 km d'une route revêtue pour la route, 0,53 auto-école pour 100 000 habitants pour la formation.": {
+  "texte": "Ɛjaɖɛ nɖɩ ɖɩ-taa ɛyaa sakɩyɛ fɛyɩnɩ nʋmɔʋ kɩbaŋʋ ŋgʋ kɩtɩɖɔɔ yɔ.",
   "relu": false
  },
  "Uniforme (%)": {
@@ -5557,8 +5568,16 @@
   "texte": "Ɛyʋ kʋɖʋmtʋ",
   "relu": false
  },
+ "User-Agent": {
+  "texte": "Tʋma ɖɩlaɖɛ nɛ a-taa wobu",
+  "relu": false
+ },
  "Valeur centrale et fourchette ; sert de dénominateur aux taux par véhicule.": {
   "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ pɩwɛɛ se ɛyʋ ɛmaɣzɩ nɛ ɛla mbʋ pɩpɔzʋʋ yɔ.",
+  "relu": false
+ },
+ "Valeurs de contrôle : à 50 %, le classement publié ; à 65 %,": {
+  "texte": "Tʋma wena a-yɔɔ palakaɣ tʋmɩyɛ yɔ: 50%, takayɩsɩ nzɩ palakaɣ tʋmɩyɛ yɔ; 65%,",
   "relu": false
  },
  "Verdict": {
@@ -5749,8 +5768,16 @@
   "texte": "WorldPop (Southampton University)",
   "relu": false
  },
- "ZONES LES MOINS DESSERVIES": {
-  "texte": "Hɔɔlɩŋ weyi ɩ-taa ɛyaa fɛyɩnɩ waɖɛ yɔ",
+ "X-Forwarded-For": {
+  "texte": "X-Forwarded-For",
+  "relu": false
+ },
+ "X-Real-IP": {
+  "texte": "X-Real-IP",
+  "relu": false
+ },
+ "X-Real-Ip": {
+  "texte": "X-Real-Ip",
   "relu": false
  },
  "Zone": {
@@ -5785,14 +5812,6 @@
   "texte": "Kɩ-hɔɔlɩŋ weyi ɩ-taa paɖɔɔ yɔ",
   "relu": false
  },
- "a pas de carte.": {
-  "texte": "Ɛfɛyɩnɩ takayaɣ nakɛyɛ.",
-  "relu": false
- },
- "a pas de territoire": {
-  "texte": "ɛfɛyɩna tɛtʊ",
-  "relu": false
- },
  "accidents constatés (2022)": {
   "texte": "Yɔɔdɩyaa mba palɩzaa yɔ (2022)",
   "relu": false
@@ -5801,84 +5820,16 @@
   "texte": "tomnaɣ taa kɩdɔmɩŋ (t, ann) / ɛyaa (t, ann) × 100 000 (R-09)",
   "relu": false
  },
- "accidents par préfecture, par mois et par âge des conducteurs. Les tués sont ceux que déclarent la police et la gendarmerie.": {
-  "texte": "Lɩmaɣza ana a-yɔɔ lɛ, ɛyaa mba pasɩba yɔ, pɔ-tɔm lɛ poliisi nɛ kpɩtaʋ taa sɔɔjanaa.",
-  "relu": false
- },
- "accidents par préfecture. L": {
-  "texte": "Kʋdɔmɩŋ weyi ɩ-taa ɛyaa kɩlɩna yɔ, ɩ-taa.",
-  "relu": false
- },
- "accidents par territoire ; le coût n": {
-  "texte": "tɛtʊ kpeekpe taa kañatʋ; liidiye nɖɩ ɖɩ-yɔɔ",
-  "relu": false
- },
  "accidents(an) / parc(an) × 10 000 ; parc estimé en fourchette (R-11)": {
   "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ lɛ, ɖɩ-taa lɛ, ɖɩ-taa wɛ ɛyaa sakɩyɛ nɛ ɖɩ-taa wɛ ɛyaa sakɩyɛ.",
   "relu": false
  },
- "accès rural": {
-  "texte": "tɛtʊ taa",
-  "relu": false
- },
- "accès rural change de lecture : les Savanes passent sous la médiane et la Centrale au-dessus. La Centrale garde la première place : elle reste la zone au réseau le plus dégradé, et sa formation ne change pas. Les deux mesures sont en page Méthodologie.": {
-  "texte": "Ɛjaɖɛ nɖɩ ɖɩ-taa tɛtʊ ndʊ tɩwɛɛ yɔ, tɩwɛna hɔɔlʊʊ ŋgʊ kɩkɩlɩ cɛtɩm nɛ pɔɔyɩsɩ nzɩ sɩwɛ peeɖe yɔ.",
-  "relu": false
- },
- "accès rural dit mieux qui est loin de la route.": {
-  "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa lɛ, ɛyʋ weyi ɛwɛ kaɖaɣ taa yɔ, ɛpɩzɩɣ nɛ ɛtɩŋnɩ nʋmɔʋ ŋgʋ kɩ-yɔɔ nɛ ɛpɩzɩ nɛ ɛtalɩ kɩ-taa yɔ.",
-  "relu": false
- },
- "accès rural est estimé : avec la population rurale supposée répartie uniformément dans chaque préfecture, ou placée par la grille de population WorldPop 2020 (carreaux de 100 m). Les deux mesures sont affichées ; la seconde est la plus fine, mais la grille est elle-même un modèle.": {
-  "texte": "Ɛjaɖɛ nɖɩ ɖɩ-taa lɛ, ɛyaa mba pɛwɛ tɛtʋ taa yɔ pɛwɛɛ nɛ pɔcɔŋnɩ kɩɖaʋ nakʋyʋ yɔɔ.",
-  "relu": false
- },
- "accès rural et placer les auto-écoles (page Horizon 2031). Son empreinte est dans sources_A1.csv. Le registre reste celui de l": {
-  "texte": "Pɩsɩ nɛ ŋna-ɩ tɔm kɩcɛyɩtʋ ndʋ tɩ-taa:",
-  "relu": false
- },
- "accès rural, côte à côte.": {
-  "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa lɛ, ɛyaa sakɩyɛ pɩzɩɣ nɛ patɩŋnɩ nʋmɔʋ ŋgʋ kɩ-yɔɔ.",
-  "relu": false
- },
- "accès rural, qui désigne les zones en retard sur la route, est estimé avec une population répartie uniformément dans chaque préfecture.": {
-  "texte": "Lone nɖɩ ɖɩ-taa ɛyaa sakɩyɛ wɛɛ nɛ pɔcɔŋnɩ nʋmɔʋ taa yɔ, ɖiyeba se pɛwɛɛ ɖɔɖɔ ɛzɩ tɛtʊ kpeekpe yɔɔ.",
-  "relu": false
- },
- "action": {
-  "texte": "lakasɩ",
-  "relu": false
- },
- "activité des auto-écoles n": {
-  "texte": "kpɩkpɩkpɩkpɩkpɩkpɩkpɩkpɩkpɩkpɩkpɩkpɩkpɩkpɩkpɩkpɩkpɩkpɩkpɩkpɩkpɩkpɩkpɩkpɩ",
-  "relu": false
- },
- "annuaire national": {
-  "texte": "ɛjaɖɛ kpeekpe takayaɣ",
-  "relu": false
- },
- "annuaire national de la même année donne d": {
-  "texte": "Pɩnaɣ ŋga ka-taa lɛ, ɖɩnaɣ takayaɣ kanɛ ka-taa",
-  "relu": false
- },
- "année, pas parc en circulation. Ruptures de série en 1995 et 2004. Permis de 2013 non renseignés. Le parc est estimé (C), et les taux par habitant hors 2010 et 2022 reposent sur une population projetée.": {
-  "texte": "Pɩnaɣ 2010 taa nɛ pɩnaɣ 2022 taa lɛ, ɛyaa kɩlɩɣ ɖɔʊ. Pɩɩwɛɛ se palɩzɩ pa-tʊmɩyɛ nɖɩ ɖɩtɩŋɩɣna pɔyɔɔdʊʊ yɔ (C).",
-  "relu": false
- },
- "atteint la cible aujourd": {
-  "texte": "ɛtalɩ ɛ-kaɖʋwa taa sɔnɔ",
-  "relu": false
- },
- "attention": {
-  "texte": "ɩkpa mɩ-tɩ",
+ "accès direct": {
+  "texte": "nɛ pɩtalɩ ɛyaa",
   "relu": false
  },
  "attribution obligatoire": {
   "texte": "pɩcɛyaa se pakpaɣ",
-  "relu": false
- },
- "au niveau national. Les volumes et les taux portent sur les accidents déclarés par la police et la gendarmerie, pas sur l": {
-  "texte": "Lɩmaɣza wena a-yɔɔ pɔcɔŋna yɔ, awɛ ajɛɛ kpeekpe taa.",
   "relu": false
  },
  "au-dessus": {
@@ -5925,20 +5876,8 @@
   "texte": "lʊlʊlʊ lʊlʊlʊlʊ lʊlʊlʊ lʊlʊlʊ",
   "relu": false
  },
- "auto-école agréée la plus proche": {
-  "texte": "kpɛlɛkʋʋ sukuli ŋgʋ kɩñɔtɩnɩ-ŋ yɔ",
-  "relu": false
- },
  "auto-école agréée pour 100 000 habitants.": {
   "texte": "Lɩmaɣza wena a-yɔɔ ɖɩtɩŋɩɣna yɔ, a-yɔɔ lɛ ɖɩtɩŋɩɣna.",
-  "relu": false
- },
- "auto-école, au lieu du nombre d": {
-  "texte": "Lɩmaɣza wena a-yɔɔ ɖɩtɩŋɩɣna yɔ, a-yɔɔ lɛ ɖɩtɩŋɩɣna nɛ ɖɩñɩɣ niye tɔm ndʋ ɖɩkpɛlɩkɩɣ yɔ tɩ-yɔɔ.",
-  "relu": false
- },
- "auto-écoles": {
-  "texte": "kpɛlɛkʋʋ sukuli",
   "relu": false
  },
  "auto-écoles affichées, dont": {
@@ -5967,14 +5906,6 @@
  },
  "auto-écoles(t) / population(t) × 100 000 (R-06)": {
   "texte": "kpɩtaʋ sukuli (t) / ɛyaa (t) × 100 000 (R-06)",
-  "relu": false
- },
- "autres parts (29,75 % en mauvais état, contre 21,2 %). Les tronçons sont rattachés au tracé par leur nom ; pour 7 d": {
-  "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ pɔyɔɔdɩɣ tɔm ndʋ yɔ, ɖɩ-yɔɔ lɛ, pɔyɔɔdɩɣ tɔm ndʋ tɩ-yɔɔ pɔyɔɔdɩɣ yɔ.",
-  "relu": false
- },
- "axe.": {
-  "texte": "Lɩmɩyɛ.",
   "relu": false
  },
  "baissent ;": {
@@ -6053,16 +5984,28 @@
   "texte": "ɛzɩma palɩzɩ-ɩ yɔ",
   "relu": false
  },
+ "concernés": {
+  "texte": "pɔ-tɔm",
+  "relu": false
+ },
  "confirmée": {
   "texte": "nɛ pɩwɩlɩ se",
+  "relu": false
+ },
+ "constat carte-egale": {
+  "texte": "kpɛlɛkʊʊ tʊmɩyɛ",
   "relu": false
  },
  "cumulent les deux déficits": {
   "texte": "kpɩtaŋnaa mba pa-naalɛ pɛkpɛndɩ",
   "relu": false
  },
- "d'une carte à l'autre.": {
-  "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ lɛ, ɖɩ-taa lɛ se:",
+ "d'une carte à l'autre. Priorité et zone se choisissent dans la barre latérale.": {
+  "texte": "Lɩmaɣzɩyɛ nɛ hɔɔlʋʋ pɔ-yɔɔ lɛ, palɩzɩ hɔɔlʋʋ ŋgʋ kɩ-taa.",
+  "relu": false
+ },
+ "d'une source à l'autre : 51,8 % de 18 ans et plus en 2022, 55,6 % dans la projection de 2023. Les permis par habitant en âge de conduire de 2023 et 2024 dépendent de ce saut.": {
+  "texte": "Pɩnaɣ 2022 taa ɛyaa mba paawɛnɩ pɩnzɩ 18 nɛ pɩɖɛɛ yɔ, pɛcɛzɩ 51.8%, pɩnaɣ 2023 ñɩŋga lɛ 55.6%. Pa-taa paa ɛyʋ weyi ɛwɛna alɩwaatʊ ndʊ ɛpɩzaɣ se ɛtɔɔ aleɣya kpaɣnɩ 2023.",
   "relu": false
  },
  "dans 1 an": {
@@ -6137,6 +6080,14 @@
   "texte": "tʋmɩyɛ ɖɩlaɖɛ nɛ pɩ-taa tɛyɛ",
   "relu": false
  },
+ "demandent une vérification avant tout investissement.": {
+  "texte": "Pañɩnɩɣ se pɛtɛzɩ-wɛ ñɩnʋʋ pʋcɔ nɛ pala pa-tʋmɩyɛ.",
+  "relu": false
+ },
+ "des 5 régions) : avec le Grand Lomé, elle ne franchit que le seuil de la desserte (1,79 km pour 10 000 habitants). Son offre (3,06 auto-écoles pour 100 000 habitants) cache celle de la Maritime hors Grand Lomé (0,37). Les 4 autres régions sont les zones du même nom.": {
+  "texte": "Ɛjaɖɛ ɖɩnɛ, kɩ-taa tɛtʊ natʊyʊ wɛna ɛzɩ keteŋa kpeekpe taa yɔ: lone nɖɩ ɖɩwɛ Lomé tɛtʋ sɔsɔtʋ cɔlɔ nɛ ɖiɖuu lɩm hɔɔlʊʊ yɔɔ kɔyɔ 1.79 km paa ɛyaa 10 000 mbʋ yɔ.",
+  "relu": false
+ },
  "des auto-écoles agréées pour": {
   "texte": "kpɛlɛkʋʋ sukuli wena a-yɔɔ paha tʊmɩyɛ yɔ",
   "relu": false
@@ -6197,14 +6148,6 @@
   "texte": "tʊmɩyɛ",
   "relu": false
  },
- "elle franchit.": {
-  "texte": "Ɛɖɛwa nɛ pɩɖɛɛ.",
-  "relu": false
- },
- "elles ne disent pas": {
-  "texte": "pɔyɔɔdʋʋ",
-  "relu": false
- },
  "en 20 ans (2002": {
   "texte": "Pɩnzɩ 20 taa (2002)",
   "relu": false
@@ -6213,24 +6156,12 @@
   "texte": "Pɩnzɩ 20 nzɩ sɩɖɛwa yɔ sɩ-taa lɛ, ɛyaa mba pɔɖɔŋaɣ pɔ-yɔɔ yɔ, pɛwɛɛ nɛ pɔɖɔŋaɣ pɔ-yɔɔ nɛ pɔɖɔŋaɣ pɔ-yɔɔ.",
   "relu": false
  },
- "en 2024. Sur fond gris : les deux références sans action nouvelle (taux inchangé, tendance) et la cible de la Décennie, moitié de la valeur de 2021 en 2030. Les accidents constatés n": {
-  "texte": "Pɩnaɣ 2024 taa lɛ, kɩɖaʋ ŋgʋ payaɣ se: gray background yɔ kɩ-taa kɔyɔ: ɛyaa naalɛ mba pɛfɛyɩna takayɩsɩ nasɩyɩ (sandɩyɛ nɖɩ ɖɩtɩlɛɣzɩ nɛ ɛzɩma pɩlakɩ yɔ) nɛ pɩnzɩ mɩnʋʋ hɔɔlʊʊ ŋgʊ pɔcɔŋnɩ pɩnaɣ 2021 n̄ɩŋga yɔɔ.",
-  "relu": false
- },
  "en difficulté ; 5 préfectures cumulent les deux déficits": {
   "texte": "Kʋñɔŋ weyi ɩwɛna yɔ ɩ-taa yɔ: Prefektiwaa kagbanzɩ wɛna liidiye sakɩyɛ",
   "relu": false
  },
- "en font partie.": {
-  "texte": "Pa-taa nabɛyɛ wɛna.",
-  "relu": false
- },
  "en mauvais état (669 km)": {
   "texte": "pɩfɛyɩ ɖeu (669 km)",
-  "relu": false
- },
- "en ont aucun. La nature du zéro : 15 préfectures sans aucune auto-école recensée (25 auto-écoles), 8 avec des auto-écoles recensées non agréées (16 auto-écoles).": {
-  "texte": "Lone nɖɩ ɖɩ-taa paayɔɔdʋʋ tɔm yɔ, ɖɩɩwɛ ɛzɩ tɛʋ kʋɖʋmʋʋ mbʋ yɔ: Prefektii 15 mba pɛfɛyɩnɩ sukuli ŋgʋ kɩhaɣ waɖɛ se pɔcɔŋna nʋmɔʋ lɩzʋʋ yɔɔ yɔ (25).",
   "relu": false
  },
  "en travaux": {
@@ -6245,24 +6176,12 @@
   "texte": "Kajalaɣ ñɩŋga lɛ: Haho, tɛtʋ ndʋ tɩ-taa ɛyaa kɩlɩ ɖɔʊ yɔ (305 096).",
   "relu": false
  },
- "en-tête d": {
-  "texte": "kpɛlɛkʊʊ",
+ "entre et": {
+  "texte": "ɖʋʋ nɛ ɖʋʋ",
   "relu": false
  },
- "ensemble des accidents. Les taux par véhicule dépendent d": {
-  "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ lɛ, pɩpɔzʋʋ se ɛyʋ ɛmaɣzɩnɩ kɩɖaʋ ŋgʋ.",
-  "relu": false
- },
- "entre eux, l": {
-  "texte": "pa-taa lɛ,",
-  "relu": false
- },
- "entretien du réseau au Togo": {
-  "texte": "Togo ɛjaɖɛ taa tʊmɩyɛ labʋ",
-  "relu": false
- },
- "essentiel": {
-  "texte": "tɔm kɩcɛyɩtʋ",
+ "entrent,": {
+  "texte": "nɛ pasʋʋ.",
   "relu": false
  },
  "est la seule zone": {
@@ -6273,32 +6192,8 @@
   "texte": "kɛwɛna lone nɖɩ ɖɩ-taa ɛyaa ɖʋʋ nʋmɔʋ taa yɔ",
   "relu": false
  },
- "est pas classé par territoire, faute d": {
-  "texte": "Pɩtɩkɛ egeetiye yɔɔ cɔnʋʋ yɔɔ yɔ",
-  "relu": false
- },
- "est pas dans les données.": {
-  "texte": "Pɩtɩkɛ takayɩsɩ taa.",
-  "relu": false
- },
- "est pas dans les données. Le détail par horizon, zone et préfecture est en page Horizon 2031.": {
-  "texte": "Pɩtɩkɛ takayɩhatʋ ndʋ tɩ-taa paayɔɔdʋʋ tɔm ndʋ yɔ tɩ-taa.",
-  "relu": false
- },
- "est pas publiée. Le coût des actions est absent. Chaque manque est écrit, jamais comblé par une hypothèse.": {
-  "texte": "Pɩtɩkɛ tɔm ndʋ tɩlɩnɩ tɔm ndʋ tɩ-taa yɔ tɩ-yɔɔ.",
-  "relu": false
- },
- "est pas réécrit après coup.": {
-  "texte": "Pɩtɩkɛ pʋwayɩ lɛ, pamaɣ-kʋ.",
-  "relu": false
- },
  "est seule à franchir les seuils du réseau": {
   "texte": "nɛ ɛ-tɩ yɔɔ wɛna ɖɔkɔtɔ hɛkʋ taa",
-  "relu": false
- },
- "est-ce qui change, et que confirment les données ?": {
-  "texte": "Ye mbʋ, tɔm ndʋ tɩ-taa lɛɣtʋ ndʋ tɩwɩlɩɣ se tɩlɛɣzɩ?",
   "relu": false
  },
  "estimé": {
@@ -6311,18 +6206,6 @@
  },
  "et la seule région": {
   "texte": "nɛ lone nɖɩ ɖɩ-taa ɖeke",
-  "relu": false
- },
- "exemple reprend une valeur affichée ailleurs dans le tableau de bord.": {
-  "texte": "Kɩɖaʋ ŋgʋ kɩ-taa lɛ, kɩ-taa wɛ ñɩm mbʋ pɩwɛ tablaɣ taa yɔ.",
-  "relu": false
- },
- "exploration : ces 5 préfectures étaient dans le pire quart des deux dimensions.": {
-  "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ lɛ se: piyele nɛ ɛyaa mba paawɛ tɛtʋ ndʋ tɩ-taa yɔ, pɛwɛɛ hɔɔlʋʋ kʋɖʋmʋʋ taa.",
-  "relu": false
- },
- "exploration. Ils ne sont pas des seuils de décision et ne changent pas le classement.": {
-  "texte": "Pɩtɩkɛ lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ ɛyʋ pɩzɩɣ nɛ ɛkpaɣ lɩmaɣza yɔ.",
   "relu": false
  },
  "faute de données par territoire, par mois ou par âge": {
@@ -6355,58 +6238,6 @@
  },
  "habitants, très inégalement répartis : le Grand Lomé en concentre près du quart. La densité des auto-écoles agréées suit les grandes villes, tandis que": {
   "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa lɛ, ɛyaa sakɩyɛ fɛyɩnɩ waɖɛ se pɔcɔŋna kpaamɩŋ ndɩ ndɩ yɔɔ.",
-  "relu": false
- },
- "horizon 2029": {
-  "texte": "Pɩnaɣ 2029",
-  "relu": false
- },
- "horizon 2029, préfecture par préfecture.": {
-  "texte": "Tʋma ɖɩlaɖɛ nɛ a-taa wobu: Aŋgletɛɛrɩ",
-  "relu": false
- },
- "horizon : aucune donnée ne mesure l": {
-  "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ lɛ, ɖɩ-taa natʋyʋ fɛyɩ",
-  "relu": false
- },
- "horizon choisi est marqué.": {
-  "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ pakpa-ɩ yɔ, ɖɩ-yɔɔ pamaɣ.",
-  "relu": false
- },
- "hui en dehors du Grand Lomé, et l": {
-  "texte": "Lɔɔɖɩyɛ nɖɩ ɖɩwɛɛ Lomé tɛtʋ taa yɔ, ɖɩ-taa.",
-  "relu": false
- },
- "ici 2029, horizon de cette action : 17 auto-écoles à ouvrir, la population ayant grandi.": {
-  "texte": "Pɩnaɣ 2029 taa lɛ, ɖɩkaɣ labʋ tʋmɩyɛ nɖɩ.",
-  "relu": false
- },
- "ici 2029, horizon de cette action : 18 auto-écoles à ouvrir, la population ayant grandi.": {
-  "texte": "Pɩnaɣ 2029 taa lɛ, ɖɩkaɣ labʋ tʋmɩyɛ nɖɩ se ɖihiɣ nʋmɔʋ lɩzʋʋ sukuli 18 mbʋ yɔ.",
-  "relu": false
- },
- "ici 2029, horizon de cette action : 30 auto-écoles à ouvrir, la population ayant grandi.": {
-  "texte": "Pɩnaɣ 2029 taa lɛ, ɖɩnaɣ nʋmɔʋ ŋgʋ kɩ-yɔɔ ɖɩtɩŋɩɣna yɔ: ɖɩpaɣzɩ sukuli 30 kpaŋʋʋ nʋmɔʋ taa.",
-  "relu": false
- },
- "ici 2029, horizon de cette action : 6 540 permis A à délivrer dans l’année, la population ayant grandi.": {
-  "texte": "Pɩnaɣ 2029 taa lɛ, ɛyaa mba pɛwɛ peeɖe yɔ, pa-taa ɛyaa ɛzɩ 6 540 yɔ, pakaɣ-wɛ haʋ nʋmɔʋ se pala tʋmɩyɛ.",
-  "relu": false
- },
- "ici 2029, horizon de cette action : 6 auto-écoles à ouvrir.": {
-  "texte": "Pɩnaɣ 2029 taa lɛ, ɖɩkaɣ labʋ tʋmɩyɛ nɖɩ.",
-  "relu": false
- },
- "ici 2031 ?": {
-  "texte": "Pɩkɛ pɩnaɣ 2031 taa?",
-  "relu": false
- },
- "ici 2031, horizon de cette action : 33,6 km de routes classées, la population ayant grandi.": {
-  "texte": "Pɩnaɣ 2031 taa lɛ, nʋmɔʋ ŋgʋ kɩ-taa palakaɣ tʋmɩyɛ yɔ: pɔcɔna nɛ patɩŋnɩ nʋmɔŋ ndɩ ndɩ yɔɔ.",
-  "relu": false
- },
- "il faut ajouter": {
-  "texte": "pɩcɛyaa se ɖɩtasɩ",
   "relu": false
  },
  "immatriculations (2024)": {
@@ -6443,18 +6274,6 @@
  },
  "infirmée": {
   "texte": "kʋdɔndʋ",
-  "relu": false
- },
- "inventaire : il n": {
-  "texte": "takayɩhatʋ ndʋ tɩtamsɩna \\\\",
-  "relu": false
- },
- "inventaire, a été téléchargée ensuite pour mesurer l": {
-  "texte": "Paɖaɣnɩ-ɩ kpaɣʋ nɛ palɩzɩ-ɩ nɛ ɛmaɣzɩna",
-  "relu": false
- },
- "investir ; pas d": {
-  "texte": "tɛma nɛ tʊma",
   "relu": false
  },
  "km de routes classées": {
@@ -6517,6 +6336,10 @@
   "texte": "km, ɛyaa",
   "relu": false
  },
+ "l'essentiel": {
+  "texte": "tɔm kɩcɛyɩtʋ",
+  "relu": false
+ },
  "la formation": {
   "texte": "kpɛlɩkʋʋ",
   "relu": false
@@ -6559,10 +6382,6 @@
  },
  "les deux": {
   "texte": "paalɛ",
-  "relu": false
- },
- "les habitants ne s'additionnent pas d'une carte à l'autre": {
-  "texte": "tɛtʊ ndʊ tɩ-taa ɛyaa ɛɛsɔkɩna ɖama nɛ pɔcɔna ɖama yɔ",
   "relu": false
  },
  "les immatriculations de 2022 face à celles de 2002": {
@@ -6633,6 +6452,10 @@
   "texte": "Pɩtɩkɛ nʋmɔʋ ŋgʋ kɩ-yɔɔ ɛyʋ tɩŋɩɣna yɔ.",
   "relu": false
  },
+ "n'ont aucune auto-école agréée": {
+  "texte": "pɛfɛyɩnɩ sukuli ŋgʊ kɩ-yɔɔ paha tʊma yɔ",
+  "relu": false
+ },
  "n'ont aucune auto-école agréée ;": {
   "texte": "pɛfɛyɩnɩ nʋmɔʋ lɩzɩyaa sukuli nakʋyʋ;",
   "relu": false
@@ -6697,32 +6520,16 @@
   "texte": "pɔcɔna",
   "relu": false
  },
- "oiseau, depuis le chef-lieu ou un point central.": {
-  "texte": "Lone nɖɩ ɖɩlɩnɩ lone sɔsɔɖɛ naɖɩyɛ yaa lone naɖɩyɛ taa yɔ ɖɩ-taa.",
-  "relu": false
- },
  "ont au moins une auto-école agréée (41,0 %)": {
   "texte": "pa-taa nabɛyɛ wɛnɩ nʋmɔʋ lɩzɩyaa sukuli (41,0%)",
-  "relu": false
- },
- "ont aucune auto-école agréée": {
-  "texte": "paanaɣ nʋmɔʋ lɩzʋʋ sukuli nakʋyʋ",
   "relu": false
  },
  "ont leur chef-lieu à plus de 10 km de la plus proche.": {
   "texte": "Pɛwɛna ɛzɩ kilomɛtanaa 10 mbʋ yɔ nɛ pɔñɔtɩnɩ tɛtʋ sɔsɔtʋ ndʋ tɩ-taa pacaɣ yɔ.",
   "relu": false
  },
- "ont pas de cible : la résolution porte sur les tués et les blessés.": {
-  "texte": "Pa-taa nɔɔyʋ fɛyɩ se ɛñɩnɩɣ se ɛkʋ-wɛ.",
-  "relu": false
- },
  "ont un réseau dégradé.": {
   "texte": "Pa-tɩ yɔɔ wɛ kaɖɛ.",
-  "relu": false
- },
- "outils pour zoomer.": {
-  "texte": "Pɩsɩ nɛ ŋna-ɩ wondu ndʋ ŋpɩzɩɣ nɛ ŋkpaɣ nɛ ŋmaɣzɩ tɩ-yɔɔ yɔ.",
   "relu": false
  },
  "où elle s'arrête": {
@@ -6839,10 +6646,6 @@
  },
  "premières délivrances(cat, an) / population(âge ≥ âge minimal PA-05, an) × 1 000": {
   "texte": "Lone nɖɩ ɖɩ-taa pacalɩ lɩʋ yɔ ((cat, an) / population ((age ≥ minimum age PA-05, an) × 1000",
-  "relu": false
- },
- "priorité et zone se choisissent dans la barre latérale.": {
-  "texte": "Pɩwɛɛ se ŋlɩzɩ kajalaɣ lone nɛ hɔɔlʋʋ hɔɔlʋʋ hɔɔlʋʋ taa.",
   "relu": false
  },
  "projeté": {
@@ -6981,6 +6784,18 @@
   "texte": "Tɛtʊ ndʊ tɩ-taa: tɛtʊ natʋ ndʋ tɩwɛna hɔɔlɩŋ loɖo taa yɔ (14,0%)",
   "relu": false
  },
+ "sont un cas limite pour la route : 16,9 %, pour 17,2 % dans le pays.": {
+  "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ lɛ, ɛyaa mba palakaɣ nʋmɔʋ lɩzʋʋ tʋmɩyɛ yɔ: 16.9%, nɛ 17.2% kɛ ɛjaɖɛ kpeekpe yɔɔ.",
+  "relu": false
+ },
+ "sort.": {
+  "texte": "Kpaɣ nɛ ŋlɩɩ.",
+  "relu": false
+ },
+ "sortent ; à 35 %,": {
+  "texte": "nɛ palɩzɩ-wɛ nɛ palɩzɩ-wɛ nɛ pɛɖɛɛ; pɛcɛzɩ 35%,",
+  "relu": false
+ },
  "sous la médiane": {
   "texte": "tɛtɛɛ ñɩɣlɩm",
   "relu": false
@@ -7085,24 +6900,8 @@
   "texte": "ɛyaa mba pasɩba yɔ (t, pɩnaɣ) / ɛyaa (t, pɩnaɣ) × 100 000; SE-01 taa: palɩkɩ pɩnzɩ PA-02 taa (R-09)",
   "relu": false
  },
- "un parc estimé. Le coût des actions n": {
-  "texte": "Lone nɖɩ ɖɩ-yɔɔ lɛ, kɩwɛna liidiye sakɩyɛ.",
-  "relu": false
- },
- "une auto-école": {
-  "texte": "kpɛlɛkʋʋ sukuli",
-  "relu": false
- },
  "une baisse des déclarations ressemblerait à un progrès.": {
   "texte": "Pɩwɩlɩɣ se ɖɩɖɛɣnɩ ɛsɩndaa.",
-  "relu": false
- },
- "une colonne pour trier.": {
-  "texte": "Pɩwɛɛ se ɖɩlɩzɩ ɖɩ-taa tɔm.",
-  "relu": false
- },
- "une de ces formules. L": {
-  "texte": "Lɩmaɣza ana a-taa natʋyʋ.",
   "relu": false
  },
  "une fourchette sur chaque quantité": {
@@ -7111,26 +6910,6 @@
  },
  "une présentation": {
   "texte": "tɔm susuu tʋmɩyɛ",
-  "relu": false
- },
- "une route": {
-  "texte": "nʋmɔʋ nakʋyʋ",
-  "relu": false
- },
- "une route nationale revêtue": {
-  "texte": "tɛtʊ ndʊ tɩ-taa yɔ",
-  "relu": false
- },
- "une route revêtue pour la route, 0,53 auto-école pour 100 000 habitants pour la formation.": {
-  "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ lɛ se pɔñɔɔzɩ nʋmɔʋ nakʋyʋ nɛ palakɩnɩ kʋnʋmɩŋ sakɩyɛ.",
-  "relu": false
- },
- "usager, 2021": {
-  "texte": "tʊmɩyɛ tɩnaa, 2021",
-  "relu": false
- },
- "usure du réseau.": {
-  "texte": "Nɔɔyʋ ɛɛpɩzɩɣ nɛ ɛtɩŋnɩ nʋmɔʋ ŋgʋ kɩ-yɔɔ nɛ ɛla tʋmɩyɛ yɔ kɩ-yɔɔ.",
   "relu": false
  },
  "valeur de 2021 diminuée de moitié en 2030, trajectoire régulière": {
@@ -7153,10 +6932,6 @@
   "texte": "kpataa",
   "relu": false
  },
- "y appuie. La donnée qui les rendrait testables est en page Méthodologie.": {
-  "texte": "Tɔm ndʋ tɩpɩzɩɣ nɛ tɩsɩnɩ-wɛ nɛ patɩlɩ-tʋ yɔ, tɩlɩnɩ \"Methodology\" hɔɔlʋʋ taa.",
-  "relu": false
- },
  "zones en fond, tronçons par état": {
   "texte": "hɔɔlɩŋ weyi ɩ-wayɩ yɔ, hɔɔlʋʋ kʋɖʋmʋʋ",
   "relu": false
@@ -7171,6 +6946,10 @@
  },
  "À droite de chaque barre : le nombre de tests de robustesse, sur 6, où la préfecture reste dans les 10 premières.": {
   "texte": "Hɔɔlʋʋ ŋgʋ kɩ-nɩwaŋ yɔɔ yɔ: tɛtɛ kpekpeka takayasɩ nzɩ palakaɣ yɔ, sɩ-ñʋŋ yɔɔ yɔ, sɩ-taa 6.",
+  "relu": false
+ },
+ "À l'horizon 2029, préfecture par préfecture.": {
+  "texte": "Pɩtalɩ pɩnaɣ 2029 lɛ, egeetiye nɖɩ ɖɩ-taa ɖɩwɛɛ yɔ ɖɩ-taa lɛ, ɖɩ-tɩŋa ɖɩwɛɛ.",
   "relu": false
  },
  "À ouvrir": {
@@ -7233,6 +7012,10 @@
   "texte": "Tʊma wena a-taa palɩza yɔ, ajɛya kɩkpɛndɩɣ ŋgbɛyɛ naɖɩyɛ taa.",
   "relu": false
  },
+ "Équipements routiers": {
+  "texte": "Lɩmaɣza wena a-yɔɔ pɩwɛɛ se ɖɩtɩŋna yɔ",
+  "relu": false
+ },
  "Étape": {
   "texte": "Lɩmaɣzɩyɛ",
   "relu": false
@@ -7253,8 +7036,8 @@
   "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ pañakɩ pana nɛ pañɩɣ nesi yɔ",
   "relu": false
  },
- "État relevé en 2020, sur les routes nationales seulement, méthode de notation non publiée. L": {
-  "texte": "Ɛjaɖɛ nɖɩ ɖɩ-taa palakaɣ tʊmɩyɛ pɩnaɣ 2020 taa yɔ, ɖɩ-taa lɛ, paayɔɔdʋʋ tʊmɩyɛ nɖɩ ɖɩ-yɔɔ.",
+ "État relevé en 2020, sur les routes nationales seulement, méthode de notation non publiée. L'annuaire national de la même année donne d'autres parts (29,75 % en mauvais état, contre 21,2 %). Les tronçons sont rattachés au tracé par leur nom ; pour 7 d'entre eux, l'état est réparti le long de l'axe.": {
+  "texte": "Ɛjaɖɛ nɖɩ ɖɩ-taa palakaɣ tʊmɩyɛ pɩnaɣ 2020 taa yɔ, tɛtʊ ndɔnzɩ yɔɔ ɖeke. Pɩnaɣ kʋɖʋmaɣ ŋga ka-hɛkʊ taa takayasɩ lɩzɩna hɔɔlɩŋ nɩɩyɩ (29,75 pɔɔyʊʊ nɛ pɩtalɩ 21,2 pɔɔyiyu). Hɩla wena a-yɔɔ pɔcɔŋnaa yɔ atɩŋnɩ ɛ-nʋmɔʋ ŋgʋ kɩ-hɩɖɛ cɔlɔ; ɛyaa lʋbɛ ñɩŋgʋ lɛ pɛkpɛnda ɛjaɖɛ kpeekpe hɔɔlʋʋ sɔsɔʋ kʋnɛ kɩ-cɔlɔ.",
   "relu": false
  },
  "État relevé en 2020, sur les routes nationales seulement.": {
@@ -7281,24 +7064,12 @@
   "texte": "ɛjaɖɛ kpeekpe yɔɔ",
   "relu": false
  },
- "à plus de 2 km d": {
-  "texte": "nɛ pɩcɛzɩ kilomɛtanaa 2",
+ "à plus de 2 km d'une route nationale revêtue": {
+  "texte": "nɛ pɩcɛzɩ kilomɛtanaa 2 nɛ pɩtalɩ tɛtʊ ndʊ tɩ-yɔɔ pɔcɔna yɔ",
   "relu": false
  },
  "à vérifier": {
   "texte": "nɛ ɖɩna",
-  "relu": false
- },
- "écart se creuse partout : le taux national passe de 1,63 à 1,35 auto-école pour 100 000 habitants.": {
-  "texte": "Ɛjaɖɛ ɖɩnɛ ɖɩ-taa lɛ, ɖɩ-taa ɛyaa 100 000 taa lɛ, sukuli kɩtɛzʊʊ tɛ sukuli kɩtɛzʊʊ wɛɛ nɛ pɩpaɣlɩɣ 1.63 nɛ pɩtalɩ 1.35 mbʋ yɔ.",
-  "relu": false
- },
- "énoncé demande": {
-  "texte": "pɔpɔzɩ tɔm",
-  "relu": false
- },
- "énoncé.": {
-  "texte": "Tɔm ndʋ tɩ-yɔɔ pɔyɔɔdɩ.",
   "relu": false
  },
  "état des tronçons :": {
@@ -7307,18 +7078,6 @@
  },
  "état dominant par tronçon (le plus de km parmi bon, moyen, mauvais, en travaux), relevé 2020, routes nationales (niveau C).": {
   "texte": "Tɛtʊ ndʊ tɩ-taa tɛtʊ ñʊʊ tʊ (kɩlɛɛfɩyɔm kɩlɩna yɔ: camɩyɛ, hɛkʋ nɛ kɩdɛkɛdɩm), pɩnaɣ 2020 ñɩŋga taa.",
-  "relu": false
- },
- "état du réseau en 2020 : l": {
-  "texte": "Pɩnaɣ 2020 taa tɛtʊ ñɔɔzɩtʋ: l",
-  "relu": false
- },
- "état du réseau, cartographier le réseau et les auto-écoles, recommander.": {
-  "texte": "Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ pɩwɛɛ se ɖɩtɩŋna yɔ, ɖɩ-yɔɔ lɛ, pɩwɛɛ se ɖɩmaɣzɩ nɛ ɖɩna ɛzɩma pɩlakɩ yɔ.",
-  "relu": false
- },
- "état est réparti le long de l": {
-  "texte": "ɛjaɖɛ ɖɩnɛ ɖɩ-taa ɛyaa sakɩyɛ wɛna ɛzɩ",
   "relu": false
  },
  "évalués (relevé de 2020)": {
@@ -7359,6 +7118,30 @@
  },
  "“Des routes plus sûres pour une mobilité durable au Togo”": {
   "texte": "⁇ Togo ɛjaɖɛ taa nʋmɔŋ weyi ɩwɛ ɖeu nɛ ɩwɛɛ ɖeu yɔ ɩ-yɔɔ",
+  "relu": false
+ },
+ "• Ces chiffres sont des estimations, pas des prévisions.": {
+  "texte": "• Tɔm ndʋ tɩ-taa lɛ, tɩkɛ akɔnta, pɩtɩkɛ tɔm ndʋ ɛyaa maɣzɩɣ yɔ.",
+  "relu": false
+ },
+ "• Classement par estimation : vérification avant investissement.": {
+  "texte": "• Lɩmaɣzɩyɛ nɖɩ ɖɩ-yɔɔ pɔcɔŋnaa yɔ: pɛcɛtɩɣ pʋcɔ nɛ petisi.",
+  "relu": false
+ },
+ "• Ils ne chiffrent aucun coût, et ne prêtent aux actions aucun effet sur les accidents : les données ne permettent pas de le mesurer.": {
+  "texte": "• Paapɩzɩɣ nɛ patɩlɩ liidiye nɖɩ ɖɩ-yɔɔ pɔcɔŋnaa yɔ, nɛ paapɩzɩɣ ɖɔɖɔ patɩlɩ mbʋ pɩ-yɔɔ pɔcɔŋnaa yɔ: Paapɩzɩɣ nɛ patɩlɩ mbʋ pɩ-yɔɔ pɔcɔŋnaa yɔ.",
+  "relu": false
+ },
+ "• Ils supposent la population projetée par l'INSEED et les leviers à leur dernière observation : auto-écoles de 2021-2022, état du réseau relevé en 2020.": {
+  "texte": "• Pɔkɔŋ maɣzʋʋ ɛyaa mba INSEED ñɩnɩɣ se pakaa yɔ pɔ-yɔɔ nɛ patɩlɩ tɔm kɩfatʋ ndʋ paɖaɣnɩ yɔɔdʋʋ: lɔɔɖɩyɛ ɖʋʋ sukuli 2021-2022 taa.",
+  "relu": false
+ },
+ "• L'accès rural, qui désigne les zones en retard sur la route, est estimé avec une population répartie uniformément dans chaque préfecture.": {
+  "texte": "• Ɛjaɖɛ nɖɩ ɖɩ-taa ɛyaa sakɩyɛ wɛɛ nɛ pɔcɔŋnɩ nʋmɔʋ lɩzʋʋ tʋmɩyɛ yɔɔ.",
+  "relu": false
+ },
+ "• Le risque n'est pas classé par territoire, faute d'accidents par préfecture.": {
+  "texte": "• Pɩtɩkɛ egeetiye naɖɩyɛ taa lɛ, ɖɩɖʋʋ ɖɩ-taa ɛyaa mba pɛwɛ kaɖɛ yɔ, pa-taa nɔɔyʋ fɛyɩ.",
   "relu": false
  },
  "⌈1,065 × population ÷ 100 000⌉ − auto-écoles agréées (≥ 0, par préfecture)": {

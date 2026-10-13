@@ -102,10 +102,16 @@ def _noter(seg: str):
             f.write(json.dumps(seg, ensure_ascii=False) + "\n")
 
 
+# html.escape() écrit l'apostrophe « &#x27; » : comme toute entité, elle couperait la phrase en morceaux
+# (« L » / « activité… ») traduits chacun à part. On la rend en apostrophe avant de découper.
+_APOSTROPHE = re.compile(r"&#(?:x27|39);")
+
+
 def segments(texte: str) -> list[str]:
     """Segments traduisibles d'un texte (clés des fichiers de langue)."""
     if not isinstance(texte, str):
         return []
+    texte = _APOSTROPHE.sub("'", texte)
     return [m.strip() for m in _SEP.split(texte) if m and not _SEP.fullmatch(m) and _a_traduire(m)]
 
 
@@ -117,7 +123,7 @@ def bi(texte, code: str | None = None):
     if code == "fr" and not _COLLECTE:
         return texte
     trad = _dictionnaire(code) if code != "fr" else {}
-    morceaux = _SEP.split(texte)
+    morceaux = _SEP.split(_APOSTROPHE.sub("'", texte))
     out = []
     for m in morceaux:
         if not m or _SEP.fullmatch(m) or not _a_traduire(m):

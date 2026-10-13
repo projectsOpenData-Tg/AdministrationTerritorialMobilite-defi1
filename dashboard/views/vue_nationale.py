@@ -13,7 +13,8 @@ from shapely.geometry import shape as shp_shape  # noqa: E402
 from composants import (ariane, carte_kpi, constat, entete, export_csv, fenetre_geo, habiller, limite,  # noqa: E402
                         note, pied, rangee_kpi, synthese, titre_bloc, tracer)
 from donnees import contours, contours_regions, couche, fr, lire  # noqa: E402
-from theme import BLEUS, COULEUR_REGION, ENCRE, ROUGE_DRAPEAU, SERIE, THEME  # noqa: E402
+from theme import (BLEUS, COULEUR_REGION, COULEUR_ZONE, ENCRE, HORS_SELECTION, ROUGE_DRAPEAU, SERIE,  # noqa: E402
+                   THEME)
 
 ind = lire("07_indicateurs", "indicateurs_07")
 reg = lire("08_priorisation", "regions_08")
@@ -81,6 +82,9 @@ CLASSES_POP = [(0, 100_000, "moins de 100 000"), (100_000, 150_000, "100 000 à 
                (300_000, float("inf"), "300 000 ou plus")]
 COUL_ROUTE = {"Route nationale revêtue": "#0d366b", "Route nationale non revêtue": "#3987e5",
               "Voirie urbaine": "#eb6834", "Piste rurale": "#1baf7a"}
+# Du plus fréquent au plus rare : le plus rare est dessiné en dernier, pour rester visible.
+COUL_EQUIP = {"Panneau de signalisation": "#eb6834", "Ralentisseur": "#2a78d6", "Passage piéton": "#1baf7a",
+              "Feu tricolore": "#eda100"}
 
 
 def _classe_pop(v):
@@ -123,10 +127,21 @@ def _centroides_vn():
 
 
 @st.cache_data(show_spinner=False)
+def _equipements():
+    """Par type : lon, lat et préfecture de chaque équipement. Les passages piétons, publiés en polygones, sont
+    montrés par un point intérieur, comme sur la page Carte."""
+    eq = couche("equipements")
+    pts = eq.geometry.representative_point()
+    return {t: (list(pts[eq.Type == t].x), list(pts[eq.Type == t].y),
+                list(eq.loc[eq.Type == t, "Préfecture"].fillna("hors des 39 préfectures")))
+            for t in COUL_EQUIP}
+
+
+@st.cache_data(show_spinner=False)
 def _table_carte():
     """Une ligne par préfecture, avec tout ce que l'info-bulle affiche (design-page1 §2)."""
     p = pref10[["Préfecture", "Zone", "Région", "Population", "Formation — auto-écoles comptées",
-                "Réseau — km évalués", "Réseau — part en mauvais état (%)"]].copy()
+                "Réseau — km évalués", "Réseau — part en mauvais état (%)", "Priorité", "Leviers"]].copy()
     p = p.rename(columns={"Préfecture": "code", "Formation — auto-écoles comptées": "ae",
                           "Réseau — km évalués": "km", "Réseau — part en mauvais état (%)": "part"})
     p["nom"] = p["code"]
@@ -140,6 +155,21 @@ pcarte = _table_carte()
 geo = contours("prefectures")
 geo_reg = contours_regions()
 
+# Filtres de la barre latérale, comme sur les pages Carte et Priorités : « ou » dans un filtre, « et » entre filtres ;
+# les préfectures écartées passent en beige.
+f_zones = st.session_state.get("f_zones", [])
+f_prio = st.session_state.get("f_priorites", [])
+f_leviers = st.session_state.get("f_leviers", [])
+garde = pcarte["code"].notna()
+if f_zones:
+    garde &= pcarte["Zone"].isin(f_zones)
+if f_prio:
+    garde &= pcarte["Priorité"].isin(f_prio)
+if f_leviers:
+    garde &= pcarte["Leviers"].astype(str).apply(lambda s: any(lv.lower() in s for lv in f_leviers))
+hors = set(pcarte.loc[~garde, "code"])
+pvis = pcarte[garde]
+
 titre_bloc("Le Togo, préfecture par préfecture",
            "Les 5 régions sont tracées en couleur ; l'agrandissement montre la région Maritime et le Grand Lomé. "
            "Molette ou barre d'outils pour zoomer.")
@@ -151,13 +181,14 @@ gauche, droite = st.columns([1.25, 1], vertical_alignment="top")   # carte resse
 with gauche:
     couche_choisie = st.radio(
         "Couche", ["Toutes les couches", "Population", "Régions", "Auto-écoles", "Routes classées",
-                   "Routes nationales seules"],
+                   "Routes nationales seules", "Équipements routiers"],
         horizontal=True, label_visibility="collapsed", key="vn_couche")
 
     montre_pop = couche_choisie in ("Toutes les couches", "Population")
     montre_ae = couche_choisie in ("Toutes les couches", "Auto-écoles")
     montre_routes = couche_choisie in ("Toutes les couches", "Routes classées")
     montre_rn = couche_choisie == "Routes nationales seules"
+    montre_equip = couche_choisie == "Équipements routiers"
     regions_pleines = couche_choisie == "Régions"
 
     ae_data = couche("auto_ecoles")
@@ -168,15 +199,20 @@ with gauche:
     fig = go.Figure()
     for cible, inset in [("geo", False), ("geo2", True)]:
         sl = not inset
+        if hors:
+            fig.add_choropleth(
+                geojson=geo, featureidkey="properties.code", locations=sorted(hors), z=[0] * len(hors),
+                colorscale=[[0, HORS_SELECTION], [1, HORS_SELECTION]], showscale=False, geo=cible,
+                marker_line_color="#ffffff", marker_line_width=0.7, hoverinfo="skip")
         if montre_pop:
             fig.add_choropleth(
-                geojson=geo, featureidkey="properties.code", locations=list(pcarte["code"]),
-                z=[c + 0.5 for c in pcarte["classe"]], zmin=0, zmax=len(BLEUS),
+                geojson=geo, featureidkey="properties.code", locations=list(pvis["code"]),
+                z=[c + 0.5 for c in pvis["classe"]], zmin=0, zmax=len(BLEUS),
                 colorscale=_echelle_discrete(BLEUS), showscale=False, geo=cible,
                 marker_line_color="#ffffff", marker_line_width=0.7,
                 customdata=[[z, r, fr(p), int(a), k, pt] for z, r, p, a, k, pt in zip(
-                    pcarte["Zone"], pcarte["Région"], pcarte["Population"], pcarte["ae"], pcarte["km_txt"],
-                    pcarte["part_txt"])],
+                    pvis["Zone"], pvis["Région"], pvis["Population"], pvis["ae"], pvis["km_txt"],
+                    pvis["part_txt"])],
                 hovertemplate="<b>%{location}</b><br>Zone : %{customdata[0]} · Région : %{customdata[1]}"
                               "<br>Population : %{customdata[2]} habitants"
                               "<br>Auto-écoles agréées : %{customdata[3]}"
@@ -184,8 +220,8 @@ with gauche:
                               "<br>En mauvais état : %{customdata[5]}<extra></extra>")
         elif regions_pleines:
             for nom_reg, coul_r in COULEUR_REGION.items():
-                mask = pcarte["Région"] == nom_reg
-                prefs = list(pcarte.loc[mask, "code"])
+                mask = pvis["Région"] == nom_reg
+                prefs = list(pvis.loc[mask, "code"])
                 if not prefs:
                     continue
                 fig.add_choropleth(
@@ -194,18 +230,24 @@ with gauche:
                     showscale=False, geo=cible, marker_line_color="#ffffff", marker_line_width=0.7,
                     marker_opacity=0.55,
                     customdata=[[z, nom_reg, fr(p), int(a)] for z, p, a in zip(
-                        pcarte.loc[mask, "Zone"], pcarte.loc[mask, "Population"], pcarte.loc[mask, "ae"])],
+                        pvis.loc[mask, "Zone"], pvis.loc[mask, "Population"], pvis.loc[mask, "ae"])],
                     hovertemplate="<b>%{location}</b><br>Zone : %{customdata[0]} · Région : %{customdata[1]}"
                                   "<br>Population : %{customdata[2]} habitants"
                                   "<br>Auto-écoles agréées : %{customdata[3]}<extra></extra>")
         else:
-            fond = "#f6f5f0" if (montre_routes or montre_rn) else "#f2f1ec"
+            fond = "#f6f5f0" if (montre_routes or montre_rn or montre_equip) else "#f2f1ec"
+            if hors:   # sans couche de fond, le territoire choisi se confondrait avec le beige du reste
+                zones = list(COULEUR_ZONE)
+                z, echelle, zmax, opacite = ([zones.index(v) + 0.5 for v in pvis["Zone"]],
+                                             _echelle_discrete(list(COULEUR_ZONE.values())), len(zones), 0.35)
+            else:
+                z, echelle, zmax, opacite = [0] * len(pvis), [[0, fond], [1, fond]], 1, 1
             fig.add_choropleth(
-                geojson=geo, featureidkey="properties.code", locations=list(pcarte["code"]),
-                z=[0] * len(pcarte), colorscale=[[0, fond], [1, fond]], showscale=False, geo=cible,
+                geojson=geo, featureidkey="properties.code", locations=list(pvis["code"]),
+                z=z, zmin=0, zmax=zmax, colorscale=echelle, marker_opacity=opacite, showscale=False, geo=cible,
                 marker_line_color="#d8d6cc", marker_line_width=0.6,
                 customdata=[[z, r, fr(p), int(a)] for z, r, p, a in zip(
-                    pcarte["Zone"], pcarte["Région"], pcarte["Population"], pcarte["ae"])],
+                    pvis["Zone"], pvis["Région"], pvis["Population"], pvis["ae"])],
                 hovertemplate="<b>%{location}</b><br>Zone : %{customdata[0]} · Région : %{customdata[1]}"
                               "<br>Population : %{customdata[2]} habitants"
                               "<br>Auto-écoles agréées : %{customdata[3]}<extra></extra>")
@@ -239,6 +281,12 @@ with gauche:
                                            line=dict(width=1.3, color="#ffffff")),
                                text=ae_agree["Préfecture"], showlegend=sl,
                                hovertemplate="Auto-école agréée — %{text}<extra></extra>")
+        if montre_equip:
+            for typ, (lon, lat, prefs) in _equipements().items():
+                fig.add_scattergeo(lon=lon, lat=lat, mode="markers", geo=cible, text=prefs,
+                                   name=f"{typ} ({fr(len(lon))})", legendgroup=typ, showlegend=sl,
+                                   marker=dict(size=4.5 if inset else 3.5, color=COUL_EQUIP[typ], opacity=0.75),
+                                   hovertemplate=f"{typ} — %{{text}}<extra></extra>")
 
     SUD = [c for c, r in zip(pcarte["code"], pcarte["Région"]) if r == "Maritime"]
     cen = _centroides_vn()
@@ -258,7 +306,13 @@ with gauche:
             x0, y0, x1, y1 = ft["bbox"]
             xs_s += [x0, x1]; ys_s += [y0, y1]
     lon_s, lat_s = [min(xs_s) - 0.03, max(xs_s) + 0.03], [min(ys_s) - 0.03, max(ys_s) + 0.03]
-    n_agree_sud = sum(1 for p in ae_agree["Préfecture"] if p in sud_set)
+    if montre_equip:
+        eq = _equipements()
+        n_eq_sud = sum(p in sud_set for _, _, prefs in eq.values() for p in prefs)
+        sous_titre_sud = f"{fr(n_eq_sud)} des {fr(sum(len(v[0]) for v in eq.values()))} équipements"
+    else:
+        n_agree_sud = sum(1 for p in ae_agree["Préfecture"] if p in sud_set)
+        sous_titre_sud = f"{n_agree_sud} des {len(ae_agree)} auto-écoles agréées"
 
     base_geo = dict(visible=False, bgcolor="#ffffff", projection=dict(type="mercator"))
     fig.update_layout(
@@ -277,8 +331,7 @@ with gauche:
             dict(x=0.52, y=1.05, xref="paper", yref="paper", xanchor="left", showarrow=False,
                  font=dict(size=11, color=ENCRE),
                  text="<b>Maritime et Grand Lomé, agrandi</b><br>"
-                      f"<span style='font-size:10px;color:#55534e'>{n_agree_sud} des {len(ae_agree)} "
-                      "auto-écoles agréées</span>")])
+                      f"<span style='font-size:10px;color:#55534e'>{sous_titre_sud}</span>")])
     st.plotly_chart(fig, key="vn_carte", config={"displayModeBar": True, "scrollZoom": True,
                                                  "displaylogo": False,
                                                  "modeBarButtonsToRemove": ["select2d", "lasso2d"]})
@@ -292,8 +345,25 @@ with droite:
         for r, c in COULEUR_REGION.items())
     st.markdown(f'<div class="filtres-actifs"><b>Les 5 régions :</b> {pastilles_reg}</div>', unsafe_allow_html=True)
 
+    if hors:
+        filtres = []
+        if f_zones:
+            filtres.append("zone " + ", ".join(f'<b style="color:{COULEUR_ZONE[z]}">{z}</b>' for z in f_zones))
+        if f_prio:
+            filtres.append("priorité " + ", ".join(f"<b>{p.lower()}</b>" for p in f_prio))
+        if f_leviers:
+            filtres.append("levier " + ", ".join(f"<b>{lv.lower()}</b>" for lv in f_leviers))
+        resultat = (f"{len(pvis)} préfecture{'s' if len(pvis) > 1 else ''} sur {len(pcarte)}." if len(pvis)
+                    else "aucune préfecture ne répond à ces filtres.")
+        st.markdown(
+            f'<div class="filtres-actifs"><b>Filtres :</b> {" · ".join(filtres)} — {resultat} '
+            f'<span style="display:inline-flex;align-items:center;gap:5px;font-size:.74rem">'
+            f'<span style="width:13px;height:13px;border-radius:3px;background:{HORS_SELECTION};'
+            f'border:1px solid #d8d6cc"></span>hors des filtres <b>({len(hors)})</b></span></div>',
+            unsafe_allow_html=True)
+
     if montre_pop:
-        effectifs = pcarte["classe"].value_counts()
+        effectifs = pvis["classe"].value_counts()
         chips = "".join(
             f'<span style="display:inline-flex;align-items:center;gap:5px;margin-right:12px;font-size:.74rem">'
             f'<span style="width:13px;height:13px;border-radius:3px;background:{BLEUS[i]};'
@@ -302,12 +372,25 @@ with droite:
         st.markdown(f'<div class="filtres-actifs"><b>Population 2022, 5 classes :</b><br>{chips}</div>',
                     unsafe_allow_html=True)
 
+    if montre_equip:
+        eq = _equipements()
+        chips_eq = "".join(
+            f'<span style="display:inline-flex;align-items:center;gap:5px;margin-right:12px;font-size:.74rem">'
+            f'<span style="width:10px;height:10px;border-radius:50%;background:{c}"></span>{t} '
+            f'<b>({fr(len(eq[t][0]))})</b></span>'
+            for t, c in COUL_EQUIP.items())
+        st.markdown(f'<div class="filtres-actifs"><b>Équipements de sécurité routière :</b><br>{chips_eq}<br>'
+                    'Collecte 2021-2022, non vérifiée ; ils n\'entrent dans aucun indicateur. Cliquez sur un type '
+                    'dans la légende de la carte pour le masquer.</div>', unsafe_allow_html=True)
+
     st.markdown('<div class="filtres-actifs"><b>Permis : données nationales seulement.</b> '
                 '38 531 permis délivrés en 2024, dont 10 165 permis moto. Les permis n\'ont ni territoire, ni âge, ni mois.</div>',
                 unsafe_allow_html=True)
     st.markdown('<div class="filtres-actifs">Les 5 régions sont tracées en couleur sur toutes les couches (Maritime, '
                 'Plateaux, Centrale, Kara, Savanes). Survolez une préfecture pour sa zone, sa région, sa population, '
-                'ses auto-écoles agréées et l\'état de son réseau.</div>', unsafe_allow_html=True)
+                'ses auto-écoles agréées et l\'état de son réseau. Les filtres de la barre latérale (zone, '
+                'priorité, levier) gardent en couleur les préfectures choisies ; les autres passent en beige.</div>',
+                unsafe_allow_html=True)
     st.markdown('<div class="filtres-actifs">Réseau : relevé de 2020. Auto-écoles : collecte 2021-2022, activité non '
                 'vérifiée.</div>', unsafe_allow_html=True)
     if st.button("Voir la carte détaillée →", key="vn_lien_carte"):
