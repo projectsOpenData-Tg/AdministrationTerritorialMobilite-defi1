@@ -29,12 +29,12 @@ jobs:
   # 1) Quels fichiers ce push a-t-il modifiés ? Le déclencheur est dashboard/ ; on signale
   #    aussi tout autre fichier de code d'application touché (scripts/, notebooks/, data/, requirements racine).
   changements:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     outputs:
       autres_code: ${{ steps.diff.outputs.autres_code }}
       resume: ${{ steps.diff.outputs.resume }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           fetch-depth: 0
       - id: diff
@@ -70,10 +70,10 @@ jobs:
   # 2) Vérifications Python : installation des dépendances, compilation (syntaxe) et import des modules.
   verifier-python:
     needs: changements
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: '3.11'
           cache: pip
@@ -93,9 +93,9 @@ jobs:
   # 3) Conteneur : build de l'image, lancement, et test que l'app répond vraiment.
   conteneur:
     needs: [changements, verifier-python]
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Construire l'image Docker
         run: docker build -f dashboard/Dockerfile -t "$IMAGE" .
@@ -138,9 +138,9 @@ jobs:
   # 4) Tout est vert → ouvrir (ou mettre à jour) une PR dev → main.
   ouvrir-pr:
     needs: [changements, verifier-python, conteneur]
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           fetch-depth: 0
       - name: Créer la PR dev → main si nécessaire
